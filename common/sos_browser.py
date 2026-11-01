@@ -149,6 +149,47 @@ class SOSBrowser:
         return text.encode("utf-8")
 
 
+_JS_BYTES = """async u => {
+  const r = await fetch(u, {cache: 'no-store'});
+  const b = new Uint8Array(await r.arrayBuffer());
+  let s = ''; for (let i = 0; i < b.length; i += 8192) s += String.fromCharCode.apply(null, b.subarray(i, i + 8192));
+  return {status: r.status, type: r.headers.get('content-type') || '', b64: btoa(s)};
+}"""
+
+
+def fetch_file_via_page(url: str, page_url: str, cdp_url: str = CDP_URL) -> bytes:
+    """Fetch a binary file (e.g. a county results PDF on www.boe.ohio.gov)
+    through the owner's Chrome window: open a tab on `page_url` (same origin
+    as `url`), fetch the file from there, close the tab. Used for SOS-hosted
+    county BOE sites, which are behind the same Cloudflare check."""
+    import base64
+    from playwright.sync_api import sync_playwright
+    if urlparse(url).netloc != urlparse(page_url).netloc:
+        raise ValueError("url and page_url must be on the same host")
+    with sync_playwright() as pw:
+        try:
+            browser = pw.chromium.connect_over_cdp(cdp_url, timeout=10_000)
+        except Exception as e:
+            raise RuntimeError(f"No Chrome debugging port at {cdp_url}. Start the window with "
+                               f"tools/sos_chrome.sh (from Terminal) and keep it open. ({e})") from None
+        tab = browser.contexts[0].new_page()
+        try:
+            tab.goto(page_url, timeout=60_000)
+            time.sleep(PAUSE)
+            r = tab.evaluate(_JS_BYTES, url)
+            if r["status"] == 429:
+                raise RateLimited(f"HTTP 429 (rate limited): {url}")
+            data = base64.b64decode(r["b64"])
+            if _is_challenge(r["status"], r["type"], data[:5000].decode("utf-8", "ignore")):
+                raise ChallengeNotCleared(f"Cloudflare check on {url}. Complete it in the Chrome window, then rerun.")
+            if r["status"] != 200:
+                raise RuntimeError(f"{r['status']} for {url}")
+            return data
+        finally:
+            tab.close()   # our own tab only
+            browser.close()
+
+
 _shared: SOSBrowser | None = None
 
 

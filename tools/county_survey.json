@@ -1,0 +1,1899 @@
+{
+ "Lake": {
+  "county": "Lake",
+  "boe_url": "https://www.lakecountyohio.gov/lakeelections",
+  "pages": [
+   {
+    "url": "https://www.lakecountyohio.gov/boe/",
+    "via": "http",
+    "chars": 80780
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/election-results/",
+    "via": "http",
+    "chars": 74863
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/election-results-archive/",
+    "via": "http",
+    "chars": 71671
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/99result-internet_files.zip",
+    "via": "http",
+    "chars": 142617
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/10/15161638/2026-Candidate-Filings.pdf",
+    "label": "November 3, 2026 General Election Candidates"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/10/01155449/Issues-for-11-3-26.pdf",
+    "label": "Questions and Issues"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/10/15161638/2026-Candidate-Filings.pdf",
+    "label": "November 3, 2026 General Election Candidates",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 98643,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Walk"
+    ],
+    "senate_excerpt": "PARTY NAME ADDRESS CITY/ZIP U.S. SENATOR D Sherrod Brown 970 Vernon Rd Columbus, OH 43209 Unexpired term ending 1/3/29 R Jon Husted 4110 Fenwick Rd Columbus, OH 43220 (Held by Husted) Other-party Greg Levy 3834 Faversham Rd University Heights, OH 44118 L William B. Redpath 1223 Timberbrook Ct Perrysburg, OH 43551 Stephen Faris (Write-in) 1009 Ashbrooke Lane Xenia, OH 45385 Anthony Holliman (Write-in) 1609 Flora Ave Cincinnati, OH 45231 Timothy Telymonde (Write-in) 5077 State Rt 348 Otway, OH 45657 Representative to Congress District 14 PARTY NAME ADDRESS CITY/ZIP (Held by Joyce) All of Ashtabula, Geauga, Lake, R David P. Joyce 116 Manor Brook Dr. Chagrin Falls, OH 44022 and Trumbull Counties",
+    "chars": 4843
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/10/01155449/Issues-for-11-3-26.pdf",
+    "label": "Questions and Issues",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 110924,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "In Person",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 6914
+   }
+  ]
+ },
+ "Montgomery": {
+  "county": "Montgomery",
+  "boe_url": "https://www.montgomery.boe.ohio.gov/",
+  "pages": [
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/",
+    "via": "chrome",
+    "chars": 104635
+   },
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/current-election/",
+    "via": "chrome",
+    "chars": 117187
+   },
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/election-day/",
+    "via": "chrome",
+    "chars": 96910
+   },
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/election-results/",
+    "via": "chrome",
+    "chars": 115447
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/wp-content/uploads/2021/01/46-Day-FWAB-11.3.2026-General-Election-1.pdf",
+    "label": "46 Day"
+   },
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/wp-content/uploads/2021/04/100-Day-FWAB-11.3.2026-General-Election-1.pdf",
+    "label": "100 Day"
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/Montgomery-County-OH/elections/2026NovemberGeneralElection",
+    "label": "view now"
+   }
+  ],
+  "live_links": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/Montgomery-County-OH/elections/2026NovemberGeneralElection",
+    "label": "view now"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/wp-content/uploads/2021/01/46-Day-FWAB-11.3.2026-General-Election-1.pdf",
+    "label": "46 Day",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 231670,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "ttorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton and David Pepper Governor and Lt. Governor DEM All Precincts in Montgomery County Don Kissick and James L. Mills Governor and Lt. Governor LIB All Precincts in Montgomery County Vivek Ramaswamy and Robert A. McColley Governor and Lt. Governor REP All Precincts in Montgomery County Timothy Grady and Andrea Neutzling Governor and Lt. Governor Write-In All Precincts in Montgomery County Heather Hill and Patrick Manley Governor and Lt. Governor Write-In All Precincts in Montgomery County Renea Turner and Jalen Turner Governor and Lt. Governor Write-In All Precincts in Mon",
+    "chars": 15918
+   },
+   {
+    "url": "https://www.montgomery.boe.ohio.gov/wp-content/uploads/2021/04/100-Day-FWAB-11.3.2026-General-Election-1.pdf",
+    "label": "100 Day",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 189953,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "n Notice for use with the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Montgomery County Board of Elections BOE to check one: \uf0fc Initial notification (to be posted 100 days prior to date of election) \uf0a8 Updated notification (to be posted 46 days prior to date of election) November 3, 2026 General Election (month, date, year, primary/general/special) State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton and David Pepper Governor and Lt. Governor DEM All Precincts in Montgomery County Don Kissick and James L. Mills Governor and Lt. Governor LIB All Precincts in Montgo",
+    "chars": 13332
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/Montgomery-County-OH/elections/2026NovemberGeneralElection",
+    "label": "view now",
+    "status": 200,
+    "type": "text/html",
+    "bytes": 9684,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 22
+   }
+  ]
+ },
+ "Hamilton": {
+  "county": "Hamilton",
+  "boe_url": "https://votehamiltoncountyohio.gov/",
+  "pages": [
+   {
+    "url": "https://votehamiltoncountyohio.gov/",
+    "via": "chrome",
+    "chars": 214492
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/results/",
+    "via": "chrome",
+    "chars": 124785
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/election-night-worker/",
+    "via": "chrome",
+    "chars": 92757
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/application-for-temporary-employment/",
+    "via": "chrome",
+    "chars": 132417
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/register/",
+    "label": "Voter Registration Deadline for the November 3, 2026 General Election is October"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/06/Nov-2026-Election-Cal-.pdf",
+    "label": "Important Dates - November 3, 2026 General Election   June 02, 2026       View E"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/09/G26-46-Day-Notice-9-15-26.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election   September 15, 2026    "
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/application-for-temporary-employment/",
+    "label": "Election Night Workers Needed for November 3, 2026   October 14, 2026       Sign"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/register/",
+    "label": "Voter Registration Deadline for the November 3, 2026 General Election is October"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/06/Nov-2026-Election-Cal-.pdf",
+    "label": "Important Dates - November 3, 2026 General Election   June 02, 2026       View E"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/09/G26-46-Day-Notice-9-15-26.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election   September 15, 2026    "
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/application-for-temporary-employment/",
+    "label": "Election Night Workers Needed for November 3, 2026   October 14, 2026       Sign"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://votehamiltoncountyohio.gov/november-2026-general-election/",
+    "label": "November 2026 General Election",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 91099,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Early",
+     "Mail",
+     "Vote by Mail"
+    ],
+    "senate_excerpt": "",
+    "chars": 2934
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/register/",
+    "label": "Voter Registration Deadline for the November 3, 2026 General Election is October",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 90953,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Early",
+     "Mail",
+     "In Person",
+     "In-Person",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 6810
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/06/Nov-2026-Election-Cal-.pdf",
+    "label": "Important Dates - November 3, 2026 General Election   June 02, 2026       View E",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 6129351,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Early",
+     "Polls",
+     "In Person"
+    ],
+    "senate_excerpt": "",
+    "chars": 1537
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/wp-content/uploads/2026/09/G26-46-Day-Notice-9-15-26.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election   September 15, 2026    ",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 62956,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "n Notice for use with the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Hamilton County Board of Elections BOE to check one: \uf06f Initial notification (to be posted 100 days prior to date of election) \uf078 Updated notification (to be posted 46 days prior to date of election) NOVEMBER 3, 2026 GENERAL ELECTION State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton & David Pepper Governor & Lieutenant Governor Democratic Hamilton County Don Kissick & James L. Mills Libertarian Vivek Ramaswamy & Robert A. McColley Republican Timothy Grady & Andrea Neutzling (Write-In) Heather",
+    "chars": 17630
+   },
+   {
+    "url": "https://votehamiltoncountyohio.gov/application-for-temporary-employment/",
+    "label": "Election Night Workers Needed for November 3, 2026   October 14, 2026       Sign",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 130391,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Early",
+     "Mail"
+    ],
+    "senate_excerpt": "",
+    "chars": 8757
+   }
+  ]
+ },
+ "Summit": {
+  "county": "Summit",
+  "boe_url": "https://www.summitcountyboe.gov/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/summit/",
+    "via": "chrome",
+    "chars": 57508
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/summit-county-oh/elections/Nov2026General",
+    "label": "ELECTION RESULTS"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_CandidateList.pdf",
+    "label": "Official Candidate List November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_60IssueSynopsis.pdf",
+    "label": "60 Day Issue Synopsis 11-3-2026"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/election/20261103/90IssueSynopsisNov.pdf",
+    "label": "90 Day Issue Synopsis 11-3-2026"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/11032026PollingLocationChangePressRelease.pdf",
+    "label": "Polling Location Change Press Release November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_QandIIncomeTax.pdf",
+    "label": "Questions and Issues November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_PollPostings.pdf",
+    "label": "Poll Postings November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/FWAB_11November46Day.pdf",
+    "label": "46 Day FWAB November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_PublicTest.pdf",
+    "label": "Public Test November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/FWAB_11November100Day.pdf",
+    "label": "100 Day FWAB November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_EquipmentAllocation.pdf",
+    "label": "Equipment Allocation November 3, 2026 General Election"
+   }
+  ],
+  "live_links": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/summit-county-oh/elections/Nov2026General",
+    "label": "ELECTION RESULTS"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/summit-county-oh/elections/Nov2026General",
+    "label": "ELECTION RESULTS",
+    "status": 200,
+    "type": "text/html",
+    "bytes": 9684,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 22
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_CandidateList.pdf",
+    "label": "Official Candidate List November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 226617,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "SUMMIT COUNTY General Election - November 3, 2026 NAME ADDRESS SUMMIT COUNTY BOARD OF ELECTIONS 1050 E. TALLMADGE AVE AKRON, OHIO 44310 U.S. SENATOR VOTE FOR NO MORE THAN 1 UNEXPIRED TERM TO END 01/03/29 Sherrod Brown (D) 970 VERNON RD COLUMBUS 43209 Stephen Faris (WRITE-IN) Anthony Holliman (WRITE-IN) Jon Husted (R) 4110 FENWICK RD COLUMBUS 43220 Greg Levy (Other-party candidate) 3834 FAVERSHAM RD UNIVERSITY HEIGHTS 44118 William B. Redpath (L) 1223 TIMBERBROOK CT PERRYSBURG 43551 Timothy Telymonde (WRITE-IN) GOVERNOR VOTE FOR NO MORE THAN 1 - TERM COMM 01/11/27 Amy Acton / David Pepper (D) 932 PLEASANT RIDGE AVE BEXLEY 43209 Timothy Grady / Andrea Neutzling (WRITE-IN) Heather Hill / Patric",
+    "chars": 6423
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_60IssueSynopsis.pdf",
+    "label": "60 Day Issue Synopsis 11-3-2026",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 737825,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Mail",
+     "In Person",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 36527
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/election/20261103/90IssueSynopsisNov.pdf",
+    "label": "90 Day Issue Synopsis 11-3-2026",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 530811,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 25500
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/11032026PollingLocationChangePressRelease.pdf",
+    "label": "Polling Location Change Press Release November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 173985,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 2481
+   },
+   {
+    "url": "https://www.boe.ohio.gov/summit/c/upload/Election_QandIIncomeTax.pdf",
+    "label": "Questions and Issues November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 332276,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 19
+   }
+  ]
+ },
+ "Lorain": {
+  "county": "Lorain",
+  "boe_url": "https://www.voteloraincountyohio.gov/",
+  "pages": [
+   {
+    "url": "https://www.voteloraincountyohio.gov/",
+    "via": "http",
+    "chars": 1068865
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/elections-results-search",
+    "via": "http",
+    "chars": 911815
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2026-primary-election-information",
+    "via": "http",
+    "chars": 870479
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2025-primary%2Fspecial-election-information",
+    "via": "http",
+    "chars": 872810
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
+    "label": "2026 General Election - Polling Places"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
+    "label": "2026 General Election - Polling Places"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
+    "label": "2026 General Election - Polling Places"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
+    "label": "2026 General Election - Polling Places"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
+    "label": "2026 General Election - Polling Places",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 211565,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Walk",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 7052
+   }
+  ]
+ },
+ "Mahoning": {
+  "county": "Mahoning",
+  "boe_url": "https://vote.mahoningcountyoh.gov",
+  "pages": [
+   {
+    "url": "https://vote.mahoningcountyoh.gov/",
+    "via": "http",
+    "chars": 110793
+   },
+   {
+    "url": "https://vote.mahoningcountyoh.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
+    "via": "http",
+    "chars": 93660
+   },
+   {
+    "url": "https://vote.mahoningcountyoh.gov/DocumentCenter/View/2621/Final-Unofficial-with-write-Ins-",
+    "via": "http",
+    "chars": 145130
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://vote.mahoningcountyoh.gov/DocumentCenter/View/2646/Absentee-Ballot-Information-for-November-3-2026-General-Election",
+    "label": "Absentee Ballot Information for November 3 2026 General Election"
+   },
+   {
+    "url": "https://vote.mahoningcountyoh.gov/DocumentCenter/View/2674/Polling-Location-Changes-November-General-2026?bidId=",
+    "label": "Polling Location Changes for November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.ohiosos.gov/elections/voting-schedule",
+    "label": "Early Voting Hours for November 3, 2026 General Election"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://vote.mahoningcountyoh.gov/DocumentCenter/View/2646/Absentee-Ballot-Information-for-November-3-2026-General-Election",
+    "label": "Absentee Ballot Information for November 3 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 310035,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "In Person"
+    ],
+    "senate_excerpt": "",
+    "chars": 926
+   },
+   {
+    "url": "https://vote.mahoningcountyoh.gov/DocumentCenter/View/2674/Polling-Location-Changes-November-General-2026?bidId=",
+    "label": "Polling Location Changes for November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 331102,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 1547
+   },
+   {
+    "url": "https://www.ohiosos.gov/elections/voting-schedule",
+    "label": "Early Voting Hours for November 3, 2026 General Election",
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "bytes": 330776,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Absentee"
+    ],
+    "senate_excerpt": "",
+    "chars": 1268
+   }
+  ]
+ },
+ "Delaware": {
+  "county": "Delaware",
+  "boe_url": "https://vote.delawarecountyohio.gov/",
+  "pages": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/",
+    "via": "http",
+    "chars": 80927
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/data/pastresults/",
+    "via": "http",
+    "chars": 169114
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/event/regular-board-meeting-and-general-election-day/",
+    "label": "3       Tuesday, November 3, 2026   6:30 am - 7:30 pm      Regular Board Meeting"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/event/regular-board-meeting-and-general-election-day/",
+    "label": "3       Tuesday, November 3, 2026   6:30 am - 7:30 pm      Regular Board Meeting",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 81163,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day"
+    ],
+    "senate_excerpt": "",
+    "chars": 1438
+   }
+  ]
+ },
+ "Clermont": {
+  "county": "Clermont",
+  "boe_url": "https://boe.clermontcountyohio.gov/",
+  "pages": [
+   {
+    "url": "https://boe.clermontcountyohio.gov/",
+    "via": "http",
+    "chars": 51607
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/election_results/index.php",
+    "via": "http",
+    "chars": 243585
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/Clermont",
+    "via": "http-error",
+    "chars": 0
+   },
+   {
+    "url": "https://cms2.revize.com/revize/clermontcounty/Official%20Canvass%20Summary%20with%20Groups.HTM?t=202606171348320",
+    "via": "chrome",
+    "chars": 29283
+   }
+  ],
+  "nov_links": [],
+  "live_links": [
+   {
+    "url": "https://boe.clermontcountyohio.gov/13ElectionResultsCSV2025SPE.CSV?t=202511040615560",
+    "label": "2025 May 6 - Special Election - Ballots Cast By Precinct - Official Results"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://boe.clermontcountyohio.gov/13ElectionResultsCSV2025SPE.CSV?t=202511040615560",
+    "label": "2025 May 6 - Special Election - Ballots Cast By Precinct - Official Results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18)\n    at UtilityScript.<anonymous> (<anonymous>:1:"
+   }
+  ]
+ },
+ "Trumbull": {
+  "county": "Trumbull",
+  "boe_url": "https://boe.co.trumbull.oh.gov/",
+  "pages": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/",
+    "via": "http",
+    "chars": 18504
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/boe_current.html",
+    "via": "http",
+    "chars": 14042
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/boe_results.html",
+    "via": "http",
+    "chars": 16893
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/Election Summary.pdf",
+    "label": "Election Results for the November 3, 2026 General Election"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/46 day notice.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/CAND 11-3-26.pdf",
+    "label": "Candidates for the November 3, 2026 General Election"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/Questions and Issues Running List 11-3-26.pdf",
+    "label": "Questions & Issues for the General Election on November 3, 2026"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/46 day notice.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election"
+   }
+  ],
+  "live_links": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/ElectionResults03192024.pdf",
+    "label": "March 19, 2024"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/ElectionResults110525.pdf",
+    "label": "November 5, 2024"
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/ElectionResults03192024.pdf",
+    "label": "March 19, 2024"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/Election Summary.pdf",
+    "label": "Election Results for the November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 33073,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "OUNTY STATISTICS TOTAL 0 of 158Election Day Precincts Reporting 0 of 158Precincts Complete 0 of 158Precincts Partially Reported 0 of 158Absentee/ Early Precincts Reporting Registered Voters - Total 131,517 0Ballots Cast - Total 0Ballots Cast - Blank Voter Turnout - Total 0.00% 14Page 1 ofElection Summary - 10/21/2026 09:37AM SUMMARY RESULTS REPORT GENERAL ELECTION NOVEMBER 3, 2026 UNOFFICIAL RESULTS TRUMBULL COUNTY Governor and Lieutenant Governor Vote For 1 TOTAL VOTE % DEM Amy Acton and David Pepper 0 LIB Don Kissick and James L. Mills 0 REP Vivek Ramaswamy and Robert A. 0 Write-In Totals 0 Not Assigned 0 Total Votes Cast 0 0.00% Attorney General Vote For 1 TOTAL VOTE % REP Keith Faber 0 D",
+    "chars": 9264
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/46 day notice.pdf",
+    "label": "46 Day Notice for the November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 253331,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "In Person",
+     "Precinct"
+    ],
+    "senate_excerpt": " Form No. 120 Prescribed by Secretary of State (07-22) Election Notice for use with the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Trumbull County Board of Elections BOE to check one: \uf06f Initial notification (to be posted 100 days prior to date of election) \uf078 Updated notification (to be posted 46 days prior to date of election) NOVEMBER 3, 2026 GENERAL ELECTION (month, date, year, primary/general/special) State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts AMY ACTON/ DAVID PEPPER GOVERNOR/ LT GOVERNOR DEM ALL TRUMBULL COUNTY VIVEK RAMASWAMY/ ROBERT A. MCCOLLEY GOVERNOR/ ",
+    "chars": 11938
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/CAND 11-3-26.pdf",
+    "label": "Candidates for the November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 176616,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 828
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/Questions and Issues Running List 11-3-26.pdf",
+    "label": "Questions & Issues for the General Election on November 3, 2026",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 129770,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 9525
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/ElectionResults03192024.pdf",
+    "label": "March 19, 2024",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 43251,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "SUMMARY RESULTS REPORT PRIMARY ELECTION MARCH 19, 2024 OFFICIAL RESULTS TRUMBULL COUNTY STATISTICS TOTAL 158 of 158Election Day Precincts Reporting 158 of 158Precincts Complete 0 of 158Precincts Partially Reported 158 of 158Absentee/ Early Precincts Reporting Registered Voters - Total 135,100 36,978Ballots Cast - Total 121Ballots Cast - NONPARTISAN 15,718Ballots Cast - DEMOCRATIC 21,139Ballots Cast - REPUBLICAN 11Ballots Cast - Blank Voter Turnout - Total 27.37% 18Page 1 ofElection Summary - 04/01/2024 01:59PM SUMMARY RESULTS REPORT PRIMARY ELECTION MARCH 19, 2024 OFFICIAL RESULTS TRUMBULL COUNTY Dem-President-at-Large Vote For 1 TOTAL VOTE % Joseph R. Biden Jr. 11,204 78.85% Dean Phillips 3",
+    "chars": 13552
+   },
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/ElectionResults110525.pdf",
+    "label": "November 5, 2024",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 65282,
+    "via": "http",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "TAL 158 of 158Election Day Precincts Reporting 158 of 158Precincts Complete 158 of 158Absentee/ Early Precincts Reporting Registered Voters - Total 137,685 95,737Ballots Cast - Total 1,050Ballots Cast - Blank Voter Turnout - Total 69.53% 17Page 1 ofElection Summary - 11/05/2024 10:11PM SUMMARY RESULTS REPORT GENERAL ELECTION NOVEMBER 5, 2024 UNOFFICIAL RESULTS TRUMBULL COUNTY For President and Vice President Vote For 1 TOTAL VOTE % Richard Duncan and Mitchell Preston Bupp 249 0.26% Kamala D. Harris and Tim Walz 38,839 40.99% Chase Oliver and Mike ter Maat 392 0.41% Peter Sonski and Lauren Onak 113 0.12% Jill Stein and Anita Rios 336 0.35% Donald J. Trump and JD Vance 54,575 57.60% Write-In T",
+    "chars": 14153
+   }
+  ]
+ },
+ "Medina": {
+  "county": "Medina",
+  "boe_url": "https://www.boe.ohio.gov/medina",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/medina",
+    "via": "chrome",
+    "chars": 51982
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/",
+    "via": "chrome",
+    "chars": 45592
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/election-workers/",
+    "via": "chrome",
+    "chars": 47078
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48998
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/upload/FWAB_11November100Day.pdf",
+    "label": "100 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Ge"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/upload/FWAB_11November46Day.pdf",
+    "label": "46 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Gen"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/upload/FWAB_11November100Day.pdf",
+    "label": "100 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Ge",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 169669,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "Page 1 of 7 Revised: 7/24/2026 12:58 PM ELECTION NOTICE FOR USE WITH THE FEDERAL WRITE-IN ABSENTEE BALLOT (FWAB) R.C. 3511.16 Issued by the Medina County Board of Elections 100 Day Notice (to be posted 100 days prior to date of election) November 3, 2026 General Election All Offices Name of Candidate (Party) Office, To Elect, Term Precincts SHERROD BROWN (Dem) JON HUSTED (Rep) WILLIAM B. REDPATH (Lib) U.S. SENATOR (1) 1 to be elected Unexpired Term Ending 01/03/2029 All Precincts AMY ACTON (Dem) Lt Gov: DAVID PEPPER DONALD C. KISSICK (Lib) Lt Gov: JAMES L. MILLS VIVEK RAMASWAMY (Rep) Lt Gov: ROBERT A. McCOLLEY GOVERNOR AND LIEUTENANT GOVERNOR 1 to be elected Full 4 Year Term Commencing 01/11",
+    "chars": 9326
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/upload/FWAB_11November46Day.pdf",
+    "label": "46 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Gen",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 247645,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Walk",
+     "Precinct"
+    ],
+    "senate_excerpt": "Page 1 of 14 Revised: 9/18/2026 4:14 PM ELECTION NOTICE FOR USE WITH THE FEDERAL WRITE-IN ABSENTEE BALLOT (FWAB) R.C. 3511.16 Issued by the Medina County Board of Elections 46 Day Notice (to be posted 46 days prior to date of election) November 3, 2026 General Election All Offices Name of Candidate (Party) Office, To Elect, Term Precincts GREG LEVY (Other-Party Candidate) SHERROD BROWN (Dem) WILLIAM B. REDPATH (Lib) JON HUSTED (Rep) STEPHEN FARIS (Write-In) ANTHONY HOLLIMAN (Write-In) TIMOTHY TELYMONDE (Write-In) U.S. SENATOR (1) 1 to be elected Unexpired Term Ending 01/03/2029 All Precincts BRIAN POINDEXTER (Dem) MAX MILLER (Rep) THAHBIA ASAD (Write-In) ANDREY JOSEPH MARTINICHIN (Write-In) ",
+    "chars": 19951
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 18366,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "November 3, 2026 General Election Medina County's Unofficial CanvassMedina County's Unofficial Canvass November 3, 2026 General Election ZERO REPORTZERO REPORT Statistics TOTAL Election Day Precincts Reporting 0 of 124 Precincts Complete 0 of 124 Absentee/ Early Precincts Reporting 0 of 124 Registered Voters - Total 0 0Ballots Cast - Total Voter Turnout - Total 0.00% Governor and Lieutenant Governor Vote For 1 TOTAL VOTE % DEM Acton/ Pepper 0 LIB Kissick/ Mills 0 REP Ramaswamy/ McColley 0 Write-In Totals 0 Attorney General Vote For 1 TOTAL VOTE % REP Keith Faber 0 DEM John J. Kulewicz 0 Auditor of State Vote For 1 TOTAL VOTE % DEM Annette Blackwell 0 REP Frank LaRose 0 Secretary of State Vot",
+    "chars": 6683
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Licking": {
+  "county": "Licking",
+  "boe_url": "https://www.boe.ohio.gov/licking/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/licking/",
+    "via": "chrome",
+    "chars": 50517
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/election-info/",
+    "via": "chrome",
+    "chars": 45003
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/election-info/early-voting-hours/",
+    "via": "chrome",
+    "chars": 45939
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/election-info/election-results/",
+    "via": "chrome",
+    "chars": 51057
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 86724,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "ovisionalVOTE % Annette Blackwell 0 0 0 0 0 Frank LaRose 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Report generated with Electionware Copyright \u00a9 2007-2018 Election Summary - 10/30/2026 15:25 PM Page 2 of 17 Summary Report Group Detail November 3, 2026 General Election Licking's Unofficial Canvass Licking County, Ohio Secretary of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Tom Pruss 0 0 0 0 0 Allison Russo 0 0 0 0 0 Robert Sprague 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Treasurer of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Jay Edwards 0 0",
+    "chars": 15372
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 86724,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "ovisionalVOTE % Annette Blackwell 0 0 0 0 0 Frank LaRose 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Report generated with Electionware Copyright \u00a9 2007-2018 Election Summary - 10/30/2026 15:25 PM Page 2 of 17 Summary Report Group Detail November 3, 2026 General Election Licking's Unofficial Canvass Licking County, Ohio Secretary of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Tom Pruss 0 0 0 0 0 Allison Russo 0 0 0 0 0 Robert Sprague 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Treasurer of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Jay Edwards 0 0",
+    "chars": 15372
+   },
+   {
+    "url": "https://www.boe.ohio.gov/licking/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 86724,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "ovisionalVOTE % Annette Blackwell 0 0 0 0 0 Frank LaRose 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Report generated with Electionware Copyright \u00a9 2007-2018 Election Summary - 10/30/2026 15:25 PM Page 2 of 17 Summary Report Group Detail November 3, 2026 General Election Licking's Unofficial Canvass Licking County, Ohio Secretary of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Tom Pruss 0 0 0 0 0 Allison Russo 0 0 0 0 0 Robert Sprague 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Treasurer of State Vote For 1 Election Day Absentee OfficeTOTAL Absentee Mail ProvisionalVOTE % Jay Edwards 0 0",
+    "chars": 15372
+   }
+  ]
+ },
+ "Greene": {
+  "county": "Greene",
+  "boe_url": "https://www.boe.ohio.gov/greene/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/greene/",
+    "via": "chrome",
+    "chars": 52655
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/election-info/",
+    "via": "chrome",
+    "chars": 47515
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/election-info/election-night-results",
+    "via": "chrome",
+    "chars": 4242
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48395
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Portage": {
+  "county": "Portage",
+  "boe_url": "https://www.portagecounty-oh.gov/board-elections",
+  "pages": [
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections",
+    "via": "chrome",
+    "chars": 77107
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections",
+    "via": "chrome",
+    "chars": 72545
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/pages/voter-information",
+    "via": "chrome",
+    "chars": 63512
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/pages/current-election",
+    "via": "chrome",
+    "chars": 62677
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/notice-11326",
+    "label": "Notice of Regular Meeting, November 3, 2026"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/revised-46-day-notice-10",
+    "label": "46 Day Notice, November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/zero-report-11326",
+    "label": "Zero Report for November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/notice-11326",
+    "label": "Notice of Regular Meeting, November 3, 2026"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/revised-46-day-notice-10",
+    "label": "46 Day Notice, November 3, 2026 General Election"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/zero-report-11326",
+    "label": "Zero Report for November 3, 2026 General Election"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/notice-11326",
+    "label": "Notice of Regular Meeting, November 3, 2026",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 21592,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 0
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/revised-46-day-notice-10",
+    "label": "46 Day Notice, November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 197537,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": " Form No. 120 Prescribed by Secretary of State (03-19) Election Notice for use With the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Portage County Board of Elections BOE to check one: \u25a1 Initial notification (to be posted 100 days prior to date of election) \u221a Updated notification (to be posted 46 days prior to date of election) GENERAL ELECTION (November 3, 2026) State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton and David Pepper Governor and Lieutenant Governor Democratic Portage County Don Kissick and James L. Mills Libertarian Vivek Ramaswamy and Robert A. M",
+    "chars": 11432
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/files/zero-report-11326",
+    "label": "Zero Report for November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 227592,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 10
+   }
+  ]
+ },
+ "Fairfield": {
+  "county": "Fairfield",
+  "boe_url": "https://www.boe.ohio.gov/fairfield",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/fairfield",
+    "via": "chrome",
+    "chars": 44563
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/",
+    "via": "chrome",
+    "chars": 43958
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48046
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/federal-write-in-absentee-ballots/",
+    "via": "chrome",
+    "chars": 42711
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/upload/Election_Candidates.pdf",
+    "label": "2026 General Election Certified Candidates &amp; Issues"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Official Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/upload/Election_Candidates.pdf",
+    "label": "2026 General Election Certified Candidates &amp; Issues",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 216620,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Precinct"
+    ],
+    "senate_excerpt": "FAIRFIELD COUNTY General Election - November 3, 2026 NAME ADDRESS FAIRFIELD COUNTY BOARD OF ELECTIONS 951 LIBERTY DRIVE LANCASTER, OH 43130 US SENATOR VOTE FOR NO MORE THAN 1 UNEXPIRED TERM TO END 01/03/29 SHERROD BROWN (D) STEPHEN FARIS (Write-in) ANTHONY HOLLIMAN (Write-in) JON HUSTED (R) GREG LEVY (Other-party candidate) WILLIAM B. REDPATH (L) TIMOTHY TELYMONDE (Write-in) GOVERNOR AND LIEUTENANT GOVERNOR VOTE FOR NO MORE THAN 1 - TERM COMM 01/11/27 AMY ACTON and DAVID PEPPER (D) TIMOTHY GRADY and ANDREA NEUTZLING (Write-in) HEATHER HILL and PATRICK MANLEY (Write-in) DON KISSICK and JAMES L. MILLS (L) VIVEK RAMASWAMY and ROBERT A. MCCOLLEY (R) RENEA TURNER and JALEN TURNER (Write-in) RON U",
+    "chars": 5877
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 216181,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Total"
+    ],
+    "senate_excerpt": "h Faber 0 John J. Kulewicz 0 Total Votes 0 Total Times Cast 0 / 111,349 0.00% Attorney General (Vote for 1 ) --- Voters Cast: 0 of 111,349 ( 0.00% ) Election Summary Report County Wide Summary for: All Contests, All Districts, All Tabulators, All Counting Groups Unofficial Pre-Election Zero Report November 03, 2026 General Election 10/12/2026 11:06:47 AM Page: 2 of 8 Candidate Total Annette Blackwell 0 Frank LaRose 0 Total Votes 0 Total Times Cast 0 / 111,349 0.00% Auditor of State (Vote for 1 ) --- Candidate Total Tom Pruss 0 Allison Russo 0 Robert Sprague 0 Total Votes 0 Total Times Cast 0 / 111,349 0.00% Secretary of State (Vote for 1 ) --- Candidate Total Jay Edwards 0 Seth Walsh 0 Total",
+    "chars": 6204
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Wood": {
+  "county": "Wood",
+  "boe_url": "https://boe.woodcountyohio.gov/",
+  "pages": [
+   {
+    "url": "https://boe.woodcountyohio.gov/",
+    "via": "http",
+    "chars": 78637
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
+    "via": "http",
+    "chars": 80458
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/174/Election-Results",
+    "via": "http",
+    "chars": 135397
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/174/Election-Results",
+    "via": "http",
+    "chars": 135397
+   }
+  ],
+  "nov_links": [],
+  "live_links": [],
+  "docs": []
+ },
+ "Richland": {
+  "county": "Richland",
+  "boe_url": "https://www.boe.ohio.gov/richland/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/richland/",
+    "via": "chrome",
+    "chars": 59172
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/",
+    "via": "chrome",
+    "chars": 45729
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48206
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/federal-write-in-absentee-ballots/",
+    "via": "chrome",
+    "chars": 44144
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Summary Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Summary Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 233767,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Vote by Mail",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "ll DEM 0 N/A Frank LaRose REP 0 N/A Total Votes 0 Total Times Cast 0 / 77,903 0.00% Precincts Reported: 0 of 83 (0.00%) For Auditor of State (Vote for 1) Candidate Party Total Tom Pruss LIB 0 N/A Allison Russo DEM 0 N/A Robert Sprague REP 0 N/A Total Votes 0 Total Times Cast 0 / 77,903 0.00% Precincts Reported: 0 of 83 (0.00%) For Secretary of State (Vote for 1) Candidate Party Total Jay Edwards REP 0 N/A Seth Walsh DEM 0 N/A Total Votes 0 Total Times Cast 0 / 77,903 0.00% Precincts Reported: 0 of 83 (0.00%) For Treasurer of State (Vote for 1) Candidate Party Total Daniel R. Hawkins REP 0 N/A Marilyn Zayas DEM 0 N/A Total Votes 0 Total Times Cast 0 / 77,903 0.00% Precincts Reported: 0 of 83 ",
+    "chars": 12761
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Allen": {
+  "county": "Allen",
+  "boe_url": "https://www.allen.boe.ohio.gov/",
+  "pages": [
+   {
+    "url": "https://allen.boe.ohio.gov/",
+    "via": "chrome",
+    "chars": 136080
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/",
+    "via": "chrome",
+    "chars": 137439
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/05/21/official-results-may-5-2026-primary-election/",
+    "via": "chrome",
+    "chars": 128776
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-results/",
+    "via": "chrome",
+    "chars": 133441
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "General Election November 3, 2026"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "July 23, 2026"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/2e7gtmv9d30h0wyztnces/2026_GENERAL_FWAB.pdf?rlkey=zseu69mlokl60inwapljzmsga&amp;dl=0",
+    "label": "UOCAVA Notice &nbsp;\u2013&nbsp;Federal Write-In Absentee Ballot (FWAB)"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "General Election November 3, 2026"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "July 23, 2026"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/2e7gtmv9d30h0wyztnces/2026_GENERAL_FWAB.pdf?rlkey=zseu69mlokl60inwapljzmsga&amp;dl=0",
+    "label": "UOCAVA Notice &nbsp;\u2013&nbsp;Federal Write-In Absentee Ballot (FWAB)"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "General Election November 3, 2026"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://allen.boe.ohio.gov/2026/07/23/general-election-november-3-2026/",
+    "label": "General Election November 3, 2026",
+    "status": 200,
+    "type": "text/html; charset=UTF-8",
+    "bytes": 123677,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "In Person",
+     "In-Person",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 4522
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/2e7gtmv9d30h0wyztnces/2026_GENERAL_FWAB.pdf?rlkey=zseu69mlokl60inwapljzmsga&amp;dl=0",
+    "label": "UOCAVA Notice &nbsp;\u2013&nbsp;Federal Write-In Absentee Ballot (FWAB)",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Wayne": {
+  "county": "Wayne",
+  "boe_url": "https://www.WayneCountyOH.gov",
+  "pages": [
+   {
+    "url": "https://www.waynecountyoh.gov/",
+    "via": "http",
+    "chars": 193956
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/pri26results/",
+    "via": "http",
+    "chars": 179454
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/gen25results/",
+    "via": "http",
+    "chars": 180247
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/prispec25results/",
+    "via": "http",
+    "chars": 180473
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2026/09/Gen-26-Combined-Notices-09292026.pdf",
+    "label": "Legal Notices for the November 3, 2026 General Election"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2026/09/Gen-26-Combined-Notices-09292026.pdf",
+    "label": "Legal Notices for the November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 771430,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Absentee",
+     "Early",
+     "Mail",
+     "In Person"
+    ],
+    "senate_excerpt": "",
+    "chars": 2349
+   }
+  ]
+ },
+ "Columbiana": {
+  "county": "Columbiana",
+  "boe_url": "https://www.columbiana.boe.ohio.gov/",
+  "pages": [
+   {
+    "url": "https://columbiana.boe.ohio.gov/",
+    "via": "chrome",
+    "chars": 95806
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/elections/election-results/",
+    "via": "chrome",
+    "chars": 110702
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2020/11/Columbianas-Official-Canvass.htm",
+    "via": "chrome",
+    "chars": 13146
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2020/11/Columbiana-Precinct-Report.htm",
+    "via": "chrome",
+    "chars": 107877
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/08/2026-November-General-Filed-Candidates-and-Issues.pdf",
+    "label": "Candidates &amp; Filings&nbsp;"
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/09/46-Day-FWAB-Nov-3-2026-General.pdf",
+    "label": "46 Day FWAB"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/08/2026-November-General-Filed-Candidates-and-Issues.pdf",
+    "label": "Candidates &amp; Filings&nbsp;",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 243012,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Precinct"
+    ],
+    "senate_excerpt": " COLUMBIANA COUNTY BOARD OF ELECTIONS Board Members: David W. Johnson, Chair Patricia Colian, Vice Chair Kim Fusco, Director Charley Kidder Niki Wilkinson, Deputy Director Peggy Caratelli November 3, 2026 Election Filings Federal Contests: U.S. Senator \u2013 Files with Franklin County \u2022 Sherrod Brown - Dem \u2022 Jon Husted - Rep \u2022 William B. Redpath - Lib \u2022 Greg Levy \u2013 Other Party \u2022 Stephen Faris - Write \u2013 in \u2022 Anthony Holliman - Write\u2013 in \u2022 Timothy Telymonde \u2013 Write\u2013in U.S. Representative to Congress, 6th District: Files with Stark County \u2022 Michael A. Rulli - 402 Lisbon Rd., Salem, Ohio 44460 \u2013 Rep \u2022 Elizabeth Kirtley \u2013 929 Ray Ave NE., New Philadelphia, Ohio 44663 - Dem State Contests: Files with ",
+    "chars": 5000
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/09/46-Day-FWAB-Nov-3-2026-General.pdf",
+    "label": "46 Day FWAB",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 232896,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": "rick Manley Governor Lieutenant Governor Write-in All Columbiana County Precincts Renea Turner Jalen Turner Governor Lieutenant Governor Write-in All Columbiana County Precincts Ron Ula Michael C. Lehnerd Governor Lieutenant Governor Write-in All Columbiana County Precincts Keith Faber Attorney General Rep All Columbiana County Precincts John J. Kulewicz Attorney General Dem All Columbiana County Precincts Frank LaRose Auditor of State Rep All Columbiana County Precincts Annette Blackwell Auditor of State Dem All Columbiana County Precincts Allison Russo Secretary of State Dem All Columbiana County Precincts Robert Sprague Secretary of State Rep All Columbiana County Precincts Tom Pruss Secr",
+    "chars": 8172
+   }
+  ]
+ },
+ "Miami": {
+  "county": "Miami",
+  "boe_url": "https://www.boe.ohio.gov/miami/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/miami/",
+    "via": "chrome",
+    "chars": 57855
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/election-info/",
+    "via": "chrome",
+    "chars": 45302
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/election-info/poll-workers/",
+    "via": "chrome",
+    "chars": 48147
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48671
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/FWAB__PiquaSpecialNovember3,2026.pdf",
+    "label": "Piqua Special Election November 3, 2026 FWAB"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/SpecialElection_PiquaSpecialElection.pdf",
+    "label": "Piqua Special Election November 3, 2026 Summary Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/SpecialElection_PiquaSpecialElectionPrecinctResults.pdf",
+    "label": "Piqua Special Election November 3, 2026 Precinct Results"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/FWAB__PiquaSpecialNovember3,2026.pdf",
+    "label": "Piqua Special Election November 3, 2026 FWAB",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 298588,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Walk",
+     "Precinct"
+    ],
+    "senate_excerpt": "",
+    "chars": 3388
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 14008,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": " registered voters, turnout 0.00% Annette Blackwell 0 0.00% 0 0 0 0 Frank LaRose 0 0.00% 0 0 0 0 Total 0 0.00% 0 0 0 0 Overvotes 0 Undervotes 0 Secretary of State (Vote for 1) 0 ballots (0 over voted ballots, 0 overvotes, 0 undervotes), 77679 registered voters, turnout 0.00% Tom Pruss 0 0.00% 0 0 0 0 Allison Russo 0 0.00% 0 0 0 0 Robert Sprague 0 0.00% 0 0 0 0 Total 0 0.00% 0 0 0 0 Overvotes 0 Undervotes 0 Treasurer of State (Vote for 1) 0 ballots (0 over voted ballots, 0 overvotes, 0 undervotes), 77679 registered voters, turnout 0.00% Jay Edwards 0 0.00% 0 0 0 0 Seth Walsh 0 0.00% 0 0 0 0 Total 0 0.00% 0 0 0 0 Overvotes 0 Undervotes 0 Justice of The Supreme Court (1-1-2027) (Vote for 1) 0 b",
+    "chars": 9787
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/SpecialElection_PiquaSpecialElection.pdf",
+    "label": "Piqua Special Election November 3, 2026 Summary Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 3579,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "",
+    "chars": 1844
+   },
+   {
+    "url": "https://www.boe.ohio.gov/miami/c/upload/SpecialElection_PiquaSpecialElectionPrecinctResults.pdf",
+    "label": "Piqua Special Election November 3, 2026 Precinct Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 16568,
+    "via": "chrome",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 35
+   }
+  ]
+ }
+}

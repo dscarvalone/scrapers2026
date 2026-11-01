@@ -62,6 +62,13 @@ METHOD_MAP = {
     # Summit's "Timely Absentee" is deliberately NOT mapped: likely mail
     # ballots received after Election Day, but not confirmed. Passes through
     # as its own column.
+    # County PDF reports (common/pdf_results.py):
+    "Absentee Office": "Early In-Person",  # Licking (Electionware): in-office absentee = early in-person
+    "Absentee Mail": "Mail",                # Licking
+    "AB": "Mail",                           # Miami (Dominion): absentee, next to a separate EV column
+    "ED": "Election Day",                   # Miami
+    "EV": "Early In-Person",                # Miami
+    "PR": "Provisional",                    # Miami
 }
 # Counties with no county-level scraper get their total from the statewide
 # SOS site (common/ohio_statewide.py), which has no method split. Their votes
@@ -69,6 +76,23 @@ METHOD_MAP = {
 # split is missing.
 UNSPLIT = "Not split by method"
 STATEWIDE_CSV = RESULTS_DIR / "senate_statewide_by_county.csv"
+
+# Enhanced Voting feeds (common/enhanced_voting.py, e.g. Montgomery) report
+# "Absentee" NEXT TO a separate "Early Voting" group, so there it means mail,
+# unlike the ENR CSV's combined "Absentee". Checked first for those rows.
+# The "... Add-In" groups (votes added after election night) are left
+# unmapped, like Cuyahoga's Post Election Day / Post VBM.
+EV_METHOD_MAP = {
+    "Absentee": "Mail",
+    "Early Voting": "Early In-Person",
+    "Election Day": "Election Day",
+    "Provisional": "Provisional",
+    # Summit (Enhanced Voting, Nov 2026). "Timely Abs" is left unmapped,
+    # like the Timely Absentee column in Summit's older ENR schema.
+    "Abs Mail": "Mail",
+    "Polls": "Election Day",
+    "Abs Walk-in": "Early In-Person",
+}
 
 METHOD_ORDER = [
     "Election Day", "Early In-Person", "Mail",
@@ -114,6 +138,7 @@ def county_rows(county: str, path: Path) -> list[dict]:
             raise RuntimeError(f"{county}: unexpected Senate candidate {r[name_col]!r}")
         name, party = CANDIDATES[key]
         method_sum = 0
+        mapping = {**METHOD_MAP, **EV_METHOD_MAP} if r.get("source_format") == "enhanced_voting" else METHOD_MAP
         for m in methods:
             votes = int(r[m] or 0)
             method_sum += votes
@@ -121,7 +146,7 @@ def county_rows(county: str, path: Path) -> list[dict]:
                 "county": county.replace("_", " ").title(),  # van_wert -> Van Wert
                 "candidate": name,
                 "party": party,
-                "method": METHOD_MAP.get(m, m),
+                "method": mapping.get(m, m),
                 "method_county_label": m,
                 "votes": votes,
                 "precincts_reported": r.get("precincts_reported", ""),

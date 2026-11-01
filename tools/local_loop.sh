@@ -46,6 +46,22 @@ PY="${PY:-.venv/bin/python}"
 
 log() { echo "[$(TZ=America/New_York date '+%Y-%m-%d %H:%M:%S %Z')] $*"; }
 
+# Files this loop commits: the statewide CSV plus every county data file
+# except those of counties the Actions bot scrapes (COUNTIES in the workflow).
+owned_files() {
+  local bot f c
+  bot=$(sed -n 's/^ *COUNTIES: *"\(.*\)".*/\1/p' .github/workflows/election-night.yml)
+  [ -f "$FILE" ] && echo "$FILE"
+  for f in counties/*/data/summary_wide.csv; do
+    [ -f "$f" ] || continue
+    c=${f#counties/}; c=${c%%/*}
+    case " $bot " in
+      *" $c "*) ;;
+      *) echo "$f" ;;
+    esac
+  done
+}
+
 end_epoch=$(TZ=America/New_York date -j -f "%Y-%m-%d %H:%M" "$END" +%s 2>/dev/null) || {
   echo "Bad END value: $END (expected YYYY-MM-DD HH:MM)"; exit 1; }
 [ -x "$PY" ] || { echo "No Python at $PY (create the venv: see README)"; exit 1; }
@@ -86,8 +102,8 @@ while :; do
     log "Dry run: skipping git."
   else
     # Only the files this loop owns. Cuyahoga/Franklin are the bot's.
-    owned=$( { [ -f "$FILE" ] && echo "$FILE"; ls counties/*/data/summary_wide.csv 2>/dev/null \
-               | grep -v -e '^counties/cuyahoga/' -e '^counties/franklin/'; } )
+    # Skip counties the Actions bot scrapes (COUNTIES in the workflow).
+    owned=$(owned_files)
     [ -n "$owned" ] && git add $owned
     if git diff --cached --quiet; then
       log "No change in results."

@@ -26,8 +26,14 @@ DISCOVERY = ROOT / "tools" / "enr_discovery.json"
 
 
 def sos_folders() -> list[str]:
+    """SOS ENR counties from discovery, plus any scraper that declares
+    NEEDS_LOCAL_CHROME = True (e.g. county PDFs on SOS-hosted BOE sites)."""
     found = json.loads(DISCOVERY.read_text())
-    return sorted(c.lower().replace(" ", "_") for c, r in found.items() if r.get("election_id"))
+    folders = {c.lower().replace(" ", "_") for c, r in found.items() if r.get("election_id")}
+    for p in (ROOT / "counties").glob("*/scraper.py"):
+        if "NEEDS_LOCAL_CHROME = True" in p.read_text():
+            folders.add(p.parent.name)
+    return sorted(folders)
 
 
 def main(argv=None) -> int:
@@ -38,7 +44,11 @@ def main(argv=None) -> int:
         out = ROOT / "counties" / f / "output"
         name = f.replace("_", " ").title()
         try:
-            run(name, mod.URLS, out, argv=[], expect_year="2026")
+            if hasattr(mod, "main"):
+                if mod.main([]) not in (0, None):
+                    raise RuntimeError("scraper reported a problem (see above)")
+            else:
+                run(name, mod.URLS, out, argv=[], expect_year="2026")
             shutil.copyfile(out / "summary_wide_latest.csv", ROOT / "counties" / f / "data" / "summary_wide.csv")
             ok.append(f)
         except (Exception, SystemExit) as e:

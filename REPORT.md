@@ -2,13 +2,14 @@
 
 ## Summary
 
-- **By vote method, 8 counties:**
-  - Cuyahoga and Franklin, from county-hosted feeds over plain HTTP (these
-    also run in Actions).
-  - Butler, Carroll, Clark, Lucas, Stark and Warren, from their SOS ENR
-    summary XML, read through a Chrome window the owner opens
-    (`tools/sos_chrome.sh`, `common/sos_browser.py`).
-- **Totals only, no method split: the other 80 counties,** from the SOS
+- **By vote method, 12 counties:**
+  - Cuyahoga and Franklin (county-hosted feeds), plus Montgomery and Summit
+    (Enhanced Voting), all over plain HTTP and run in Actions.
+  - Butler, Carroll, Clark, Lucas, Stark and Warren (SOS ENR summary XML),
+    plus Licking and Miami (election-night PDFs). These are read through a
+    Chrome window the owner opens (`tools/sos_chrome.sh`,
+    `common/sos_browser.py`) and run in the local loop.
+- **Totals only, no method split: the other 76 counties,** from the SOS
   statewide site (`common/ohio_statewide.py`). A scan of all 86 non-Cuyahoga,
   non-Franklin counties on the SOS ENR (`tools/discover_enr.py`, results in
   `tools/enr_discovery.json`) found no Nov 3 file for them. Those that were
@@ -74,6 +75,35 @@ Limits: class C is "no live link found on the site today". A county could
 add a non-SOS link on election night. Class E sites were not opened
 individually (SOS-hosted, so script-blocked); that their live results are on
 the SOS ENR is presumed, not verified per county.
+
+### Survey of the 20 largest remaining counties (2026-11-01 evening)
+
+`tools/survey_counties.py` visited each county's official BOE site, followed
+its results pages, and opened every Nov 3, 2026 document or live-results
+link it found. Raw output: `tools/county_survey.json`. Four more counties
+have a vote-method split and now have scrapers:
+
+| County | Source | Vote groups | Runs in |
+|---|---|---|---|
+| Montgomery | Enhanced Voting public JSON | Absentee, Early Voting, Election Day, Provisional (+ 3 "Add-In" groups) | Actions |
+| Summit | Enhanced Voting public JSON | Abs Mail, Polls, Abs Walk-in, Provisional, Timely Abs | Actions |
+| Licking | Election-night PDF (ES&S Electionware) | Election Day, Absentee Office, Absentee Mail, Provisional | local loop |
+| Miami | Election-night PDF (Dominion) | AB, ED, EV, PR | local loop |
+
+- Licking's column order was verified on its May 2026 report, where the
+  columns sum to TOTAL for every race. Miami's order is taken from the
+  printed header. Its May PDF has no text layer, so that's not yet
+  confirmed on real votes.
+- Enhanced Voting's "Absentee" sits next to a separate "Early Voting" group,
+  so it is mapped to Mail, unlike the ENR CSV's combined "Absentee".
+  Add-In and Timely groups are left unmapped.
+- **Totals only** (their Nov 3 zero-report PDF has just a TOTAL column):
+  Fairfield, Richland, Medina, Trumbull.
+- **Nothing found yet** (no Nov 3 results document or live link on the
+  site; may appear on election night): Hamilton, Lorain, Lake, Mahoning,
+  Delaware, Clermont, Greene, Portage, Wood, Allen, Wayne, Columbiana.
+  Worth rechecking on Nov 3.
+- The other 60 smaller counties have not been surveyed this way.
 
 ### SOS ENR via the owner's Chrome window (added 2026-11-01, later the same day)
 
