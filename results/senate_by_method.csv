@@ -1,0 +1,51 @@
+county,candidate,party,method,method_county_label,votes,precincts_reported,precincts_total,source,source_generated_at
+Cuyahoga,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,
+Cuyahoga,Sherrod Brown,Democratic,Early In-Person,Early In-Person,0,,,county_feed,
+Cuyahoga,Sherrod Brown,Democratic,Mail,Vote By Mail,0,,,county_feed,
+Cuyahoga,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,
+Cuyahoga,Sherrod Brown,Democratic,Post Election Day,Post Election Day,0,,,county_feed,
+Cuyahoga,Sherrod Brown,Democratic,Post VBM,Post VBM,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Election Day,Election Day,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Early In-Person,Early In-Person,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Mail,Vote By Mail,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Post Election Day,Post Election Day,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,Post VBM,Post VBM,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Election Day,Election Day,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Early In-Person,Early In-Person,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Mail,Vote By Mail,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Post Election Day,Post Election Day,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,Post VBM,Post VBM,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Election Day,Election Day,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Early In-Person,Early In-Person,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Mail,Vote By Mail,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Post Election Day,Post Election Day,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,Post VBM,Post VBM,0,,,county_feed,
+Cuyahoga,Write-in,,Election Day,Election Day,0,,,county_feed,
+Cuyahoga,Write-in,,Early In-Person,Early In-Person,0,,,county_feed,
+Cuyahoga,Write-in,,Mail,Vote By Mail,0,,,county_feed,
+Cuyahoga,Write-in,,Provisional,Provisional,0,,,county_feed,
+Cuyahoga,Write-in,,Post Election Day,Post Election Day,0,,,county_feed,
+Cuyahoga,Write-in,,Post VBM,Post VBM,0,,,county_feed,
+Franklin,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Sherrod Brown,Democratic,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Sherrod Brown,Democratic,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Sherrod Brown,Democratic,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Jon Husted,Republican,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Jon Husted,Republican,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Jon Husted,Republican,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Jon Husted,Republican,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Greg Levy,Other-party,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Greg Levy,Other-party,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Greg Levy,Other-party,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Greg Levy,Other-party,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,William B. Redpath,Libertarian,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,William B. Redpath,Libertarian,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,William B. Redpath,Libertarian,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,William B. Redpath,Libertarian,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Write-in,,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Write-in,,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Write-in,,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Write-in,,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00

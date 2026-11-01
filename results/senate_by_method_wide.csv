@@ -1,0 +1,11 @@
+county,candidate,party,Election Day,Early In-Person,Mail,Provisional,Post Election Day,Post VBM,total,precincts_reported,precincts_total,source,source_generated_at
+Cuyahoga,Sherrod Brown,Democratic,0,0,0,0,0,0,0,,,county_feed,
+Cuyahoga,Jon Husted,Republican,0,0,0,0,0,0,0,,,county_feed,
+Cuyahoga,Greg Levy,Other-party,0,0,0,0,0,0,0,,,county_feed,
+Cuyahoga,William B. Redpath,Libertarian,0,0,0,0,0,0,0,,,county_feed,
+Cuyahoga,Write-in,,0,0,0,0,0,0,0,,,county_feed,
+Franklin,Sherrod Brown,Democratic,0,0,0,0,,,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Jon Husted,Republican,0,0,0,0,,,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Greg Levy,Other-party,0,0,0,0,,,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,William B. Redpath,Libertarian,0,0,0,0,,,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Franklin,Write-in,,0,0,0,0,,,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
