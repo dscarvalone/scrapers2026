@@ -65,6 +65,11 @@ METHOD_MAP = {
     # County PDF reports (common/pdf_results.py):
     "Absentee Office": "Early In-Person",  # Licking (Electionware): in-office absentee = early in-person
     "Absentee Mail": "Mail",                # Licking
+    # Hamilton (Clarity): only "Election" and "Early". "Early" isn't defined
+    # on the site as mail-only or in-person-only, so it goes in the combined
+    # absentee bucket rather than guessing.
+    "Election": "Election Day",
+    "Early": "Absentee (early in-person + mail)",
     "AB": "Mail",                           # Miami (Dominion): absentee, next to a separate EV column
     "ED": "Election Day",                   # Miami
     "EV": "Early In-Person",                # Miami
@@ -107,7 +112,7 @@ NON_METHOD_COLS = {
     "race_id", "race", "vote_for", "contestant_id", "contestant", "write_in",
     "withdrawn", "pct", "winner", "race_total_votes", "ballots_cast",
     "over_votes", "under_votes", "blank_voted", "precincts_reported",
-    "precincts_total", "generated_at", "source_format", "precinct",
+    "precincts_total", "generated_at", "source_format", "precinct", "write_in_detail",
 }
 
 

@@ -2,14 +2,15 @@
 
 ## Summary
 
-- **By vote method, 12 counties:**
-  - Cuyahoga and Franklin (county-hosted feeds), plus Montgomery and Summit
-    (Enhanced Voting), all over plain HTTP and run in Actions.
+- **By vote method, 13 counties:**
+  - Cuyahoga and Franklin (county-hosted feeds), Montgomery and Summit
+    (Enhanced Voting), and Hamilton (Clarity), all over plain HTTP and run
+    in Actions.
   - Butler, Carroll, Clark, Lucas, Stark and Warren (SOS ENR summary XML),
     plus Licking and Miami (election-night PDFs). These are read through a
     Chrome window the owner opens (`tools/sos_chrome.sh`,
     `common/sos_browser.py`) and run in the local loop.
-- **Totals only, no method split: the other 76 counties,** from the SOS
+- **Totals only, no method split: the other 75 counties,** from the SOS
   statewide site (`common/ohio_statewide.py`). A scan of all 86 non-Cuyahoga,
   non-Franklin counties on the SOS ENR (`tools/discover_enr.py`, results in
   `tools/enr_discovery.json`) found no Nov 3 file for them. Those that were
@@ -76,6 +77,27 @@ add a non-SOS link on election night. Class E sites were not opened
 individually (SOS-hosted, so script-blocked); that their live results are on
 the SOS ENR is presumed, not verified per county.
 
+### Hamilton via Clarity (2026-11-01, link from the owner)
+
+Hamilton publishes on a Clarity/Scytl site,
+results.votehamiltoncountyohio.gov/OH/Hamilton/127473/, which
+`tools/survey_counties.py` missed (its live-results pattern didn't match a
+`results.<county>` host). `common/clarity.py` reads `current_ver.txt`, then
+`<ver>/reports/detailxml.zip`. That's plain HTTP, so it runs in Actions.
+Hamilton has only two vote types:
+- "Election" maps to Election Day.
+- "Early" maps to the combined "Absentee (early in-person + mail)" bucket,
+  because the site doesn't say whether it is mail, in-person or both.
+
+There is no separate provisional column. The three named write-in
+candidates ("(W)") are summed into Write-in.
+
+`tools/probe_clarity.py` then checked every non-itemized county for a
+Clarity site: Clarity-hosted (`results.enr.clarityelections.com/OH/<County>/`)
+and `results.<county domain>`. The only other account is **Fulton**, and its
+election list is empty for now ("Elections not available"), so it's worth
+rechecking on Nov 3. Results: `tools/clarity_probe.json`.
+
 ### Survey of the 20 largest remaining counties (2026-11-01 evening)
 
 `tools/survey_counties.py` visited each county's official BOE site, followed
@@ -100,7 +122,7 @@ have a vote-method split and now have scrapers:
 - **Totals only** (their Nov 3 zero-report PDF has just a TOTAL column):
   Fairfield, Richland, Medina, Trumbull.
 - **Nothing found yet** (no Nov 3 results document or live link on the
-  site; may appear on election night): Hamilton, Lorain, Lake, Mahoning,
+  site; may appear on election night): Lorain, Lake, Mahoning,
   Delaware, Clermont, Greene, Portage, Wood, Allen, Wayne, Columbiana.
   Worth rechecking on Nov 3.
 - The other 60 smaller counties have not been surveyed this way.

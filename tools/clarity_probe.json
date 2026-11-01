@@ -1,0 +1,761 @@
+{
+ "Adams": {
+  "county": "Adams",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Adams/",
+    404
+   ]
+  ]
+ },
+ "Allen": {
+  "county": "Allen",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Allen/",
+    404
+   ]
+  ]
+ },
+ "Ashland": {
+  "county": "Ashland",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Ashland/",
+    404
+   ]
+  ]
+ },
+ "Ashtabula": {
+  "county": "Ashtabula",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Ashtabula/",
+    404
+   ]
+  ]
+ },
+ "Athens": {
+  "county": "Athens",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Athens/",
+    404
+   ]
+  ]
+ },
+ "Auglaize": {
+  "county": "Auglaize",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Auglaize/",
+    404
+   ]
+  ]
+ },
+ "Belmont": {
+  "county": "Belmont",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Belmont/",
+    404
+   ]
+  ]
+ },
+ "Brown": {
+  "county": "Brown",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Brown/",
+    404
+   ]
+  ]
+ },
+ "Champaign": {
+  "county": "Champaign",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Champaign/",
+    404
+   ]
+  ]
+ },
+ "Clermont": {
+  "county": "Clermont",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Clermont/",
+    404
+   ],
+   [
+    "https://results.clermontcountyohio.gov/OH/Clermont/",
+    null
+   ]
+  ]
+ },
+ "Clinton": {
+  "county": "Clinton",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Clinton/",
+    404
+   ]
+  ]
+ },
+ "Columbiana": {
+  "county": "Columbiana",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Columbiana/",
+    404
+   ]
+  ]
+ },
+ "Coshocton": {
+  "county": "Coshocton",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Coshocton/",
+    404
+   ]
+  ]
+ },
+ "Crawford": {
+  "county": "Crawford",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Crawford/",
+    404
+   ],
+   [
+    "https://results.crawfordcountyohioboe.gov/OH/Crawford/",
+    null
+   ]
+  ]
+ },
+ "Darke": {
+  "county": "Darke",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Darke/",
+    404
+   ]
+  ]
+ },
+ "Defiance": {
+  "county": "Defiance",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Defiance/",
+    404
+   ]
+  ]
+ },
+ "Delaware": {
+  "county": "Delaware",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Delaware/",
+    404
+   ],
+   [
+    "https://results.delawarecountyohio.gov/OH/Delaware/",
+    null
+   ]
+  ]
+ },
+ "Erie": {
+  "county": "Erie",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Erie/",
+    404
+   ]
+  ]
+ },
+ "Fairfield": {
+  "county": "Fairfield",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Fairfield/",
+    404
+   ]
+  ]
+ },
+ "Fayette": {
+  "county": "Fayette",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Fayette/",
+    404
+   ]
+  ]
+ },
+ "Fulton": {
+  "county": "Fulton",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Fulton/",
+    200
+   ]
+  ]
+ },
+ "Gallia": {
+  "county": "Gallia",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Gallia/",
+    404
+   ]
+  ]
+ },
+ "Geauga": {
+  "county": "Geauga",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Geauga/",
+    404
+   ]
+  ]
+ },
+ "Greene": {
+  "county": "Greene",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Greene/",
+    404
+   ]
+  ]
+ },
+ "Guernsey": {
+  "county": "Guernsey",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Guernsey/",
+    404
+   ],
+   [
+    "https://results.guernseycounty.gov/OH/Guernsey/",
+    null
+   ]
+  ]
+ },
+ "Hancock": {
+  "county": "Hancock",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Hancock/",
+    404
+   ],
+   [
+    "https://results.hancockcountyohioelections.gov/OH/Hancock/",
+    null
+   ]
+  ]
+ },
+ "Hardin": {
+  "county": "Hardin",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Hardin/",
+    404
+   ]
+  ]
+ },
+ "Harrison": {
+  "county": "Harrison",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Harrison/",
+    404
+   ]
+  ]
+ },
+ "Henry": {
+  "county": "Henry",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Henry/",
+    404
+   ],
+   [
+    "https://results.henrycountyohio.gov/OH/Henry/",
+    null
+   ]
+  ]
+ },
+ "Highland": {
+  "county": "Highland",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Highland/",
+    404
+   ]
+  ]
+ },
+ "Hocking": {
+  "county": "Hocking",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Hocking/",
+    404
+   ]
+  ]
+ },
+ "Holmes": {
+  "county": "Holmes",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Holmes/",
+    404
+   ]
+  ]
+ },
+ "Huron": {
+  "county": "Huron",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Huron/",
+    404
+   ]
+  ]
+ },
+ "Jackson": {
+  "county": "Jackson",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Jackson/",
+    404
+   ]
+  ]
+ },
+ "Jefferson": {
+  "county": "Jefferson",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Jefferson/",
+    404
+   ]
+  ]
+ },
+ "Knox": {
+  "county": "Knox",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Knox/",
+    404
+   ],
+   [
+    "https://results.oh.gov/OH/Knox/",
+    null
+   ]
+  ]
+ },
+ "Lake": {
+  "county": "Lake",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Lake/",
+    404
+   ],
+   [
+    "https://results.lakecountyohio.gov/OH/Lake/",
+    null
+   ]
+  ]
+ },
+ "Lawrence": {
+  "county": "Lawrence",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Lawrence/",
+    404
+   ]
+  ]
+ },
+ "Logan": {
+  "county": "Logan",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Logan/",
+    404
+   ]
+  ]
+ },
+ "Lorain": {
+  "county": "Lorain",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Lorain/",
+    404
+   ],
+   [
+    "https://results.voteloraincountyohio.gov/OH/Lorain/",
+    null
+   ]
+  ]
+ },
+ "Madison": {
+  "county": "Madison",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Madison/",
+    404
+   ]
+  ]
+ },
+ "Mahoning": {
+  "county": "Mahoning",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Mahoning/",
+    404
+   ],
+   [
+    "https://results.mahoningcountyoh.gov/OH/Mahoning/",
+    null
+   ]
+  ]
+ },
+ "Marion": {
+  "county": "Marion",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Marion/",
+    404
+   ]
+  ]
+ },
+ "Medina": {
+  "county": "Medina",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Medina/",
+    404
+   ]
+  ]
+ },
+ "Meigs": {
+  "county": "Meigs",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Meigs/",
+    404
+   ]
+  ]
+ },
+ "Mercer": {
+  "county": "Mercer",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Mercer/",
+    404
+   ],
+   [
+    "https://results.mercercountyohio.gov/OH/Mercer/",
+    null
+   ]
+  ]
+ },
+ "Monroe": {
+  "county": "Monroe",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Monroe/",
+    404
+   ]
+  ]
+ },
+ "Morgan": {
+  "county": "Morgan",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Morgan/",
+    404
+   ]
+  ]
+ },
+ "Morrow": {
+  "county": "Morrow",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Morrow/",
+    404
+   ],
+   [
+    "https://results.morrowcountyohio.gov/OH/Morrow/",
+    null
+   ]
+  ]
+ },
+ "Muskingum": {
+  "county": "Muskingum",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Muskingum/",
+    404
+   ]
+  ]
+ },
+ "Noble": {
+  "county": "Noble",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Noble/",
+    404
+   ]
+  ]
+ },
+ "Ottawa": {
+  "county": "Ottawa",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Ottawa/",
+    404
+   ],
+   [
+    "https://results.oh.gov/OH/Ottawa/",
+    null
+   ]
+  ]
+ },
+ "Paulding": {
+  "county": "Paulding",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Paulding/",
+    404
+   ]
+  ]
+ },
+ "Perry": {
+  "county": "Perry",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Perry/",
+    404
+   ],
+   [
+    "https://results.perrycountyohio.gov/OH/Perry/",
+    null
+   ]
+  ]
+ },
+ "Pickaway": {
+  "county": "Pickaway",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Pickaway/",
+    404
+   ]
+  ]
+ },
+ "Pike": {
+  "county": "Pike",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Pike/",
+    404
+   ]
+  ]
+ },
+ "Portage": {
+  "county": "Portage",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Portage/",
+    404
+   ],
+   [
+    "https://results.portagecounty-oh.gov/OH/Portage/",
+    null
+   ]
+  ]
+ },
+ "Preble": {
+  "county": "Preble",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Preble/",
+    404
+   ]
+  ]
+ },
+ "Putnam": {
+  "county": "Putnam",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Putnam/",
+    404
+   ]
+  ]
+ },
+ "Richland": {
+  "county": "Richland",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Richland/",
+    404
+   ]
+  ]
+ },
+ "Ross": {
+  "county": "Ross",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Ross/",
+    404
+   ]
+  ]
+ },
+ "Sandusky": {
+  "county": "Sandusky",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Sandusky/",
+    404
+   ],
+   [
+    "https://results.sanduskycountyoh.gov/OH/Sandusky/",
+    null
+   ]
+  ]
+ },
+ "Scioto": {
+  "county": "Scioto",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Scioto/",
+    404
+   ]
+  ]
+ },
+ "Seneca": {
+  "county": "Seneca",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Seneca/",
+    404
+   ]
+  ]
+ },
+ "Shelby": {
+  "county": "Shelby",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Shelby/",
+    404
+   ]
+  ]
+ },
+ "Trumbull": {
+  "county": "Trumbull",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Trumbull/",
+    404
+   ],
+   [
+    "https://results.oh.gov/OH/Trumbull/",
+    null
+   ]
+  ]
+ },
+ "Tuscarawas": {
+  "county": "Tuscarawas",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Tuscarawas/",
+    404
+   ]
+  ]
+ },
+ "Union": {
+  "county": "Union",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Union/",
+    404
+   ],
+   [
+    "https://results.unioncountyohio.gov/OH/Union/",
+    null
+   ]
+  ]
+ },
+ "Van Wert": {
+  "county": "Van Wert",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Van_Wert/",
+    404
+   ]
+  ]
+ },
+ "Vinton": {
+  "county": "Vinton",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Vinton/",
+    404
+   ]
+  ]
+ },
+ "Washington": {
+  "county": "Washington",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Washington/",
+    404
+   ]
+  ]
+ },
+ "Wayne": {
+  "county": "Wayne",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Wayne/",
+    404
+   ],
+   [
+    "https://results.waynecountyoh.gov/OH/Wayne/",
+    null
+   ]
+  ]
+ },
+ "Williams": {
+  "county": "Williams",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Williams/",
+    404
+   ],
+   [
+    "https://results.williamscountyoh.gov/OH/Williams/",
+    null
+   ]
+  ]
+ },
+ "Wood": {
+  "county": "Wood",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Wood/",
+    404
+   ],
+   [
+    "https://results.woodcountyohio.gov/OH/Wood/",
+    null
+   ]
+  ]
+ },
+ "Wyandot": {
+  "county": "Wyandot",
+  "tried": [
+   [
+    "https://results.enr.clarityelections.com/OH/Wyandot/",
+    404
+   ]
+  ]
+ }
+}
