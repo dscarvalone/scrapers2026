@@ -57,9 +57,7 @@ jobs:
           failed=""
           for c in $COUNTIES; do
             echo "::group::$c"
-            extra=""
-            [ "$c" = "cuyahoga" ] && extra="--precincts"
-            if python -m counties.$c.scraper $extra; then
+            if python -m counties.$c.scraper; then
               cp counties/$c/output/summary_wide_latest.csv counties/$c/data/summary_wide.csv
             else
               echo "::error::$c scraper failed"
@@ -69,16 +67,23 @@ jobs:
           done
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
+      # The deliverable: U.S. Senate results by vote method, all counties.
+      # Uses each county's last good data/ file, so one failed scrape
+      # doesn't drop that county from the combined file.
+      - name: Build Senate results
+        if: steps.guard.outputs.run == 'true'
+        run: python -m common.senate
+
       - name: Commit changed results
         id: commit
         if: steps.guard.outputs.run == 'true'
         run: |
-          git add counties/*/data/summary_wide.csv
+          git add counties/*/data/summary_wide.csv results/
           if git diff --cached --quiet; then
             echo "No change in results."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            changed=$(git diff --cached --name-only | cut -d/ -f2 | sort -u | tr '\n' ' ')
+            changed=$(git diff --cached --name-only -- counties | cut -d/ -f2 | sort -u | tr '\n' ' ')
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git commit -m "Results update ($changed) $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
@@ -86,16 +91,6 @@ jobs:
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
-
-      # Cuyahoga's precinct file is ~20 MB, so it's kept as a short-lived
-      # download on the run rather than committed.
-      - name: Upload Cuyahoga precinct results
-        if: steps.commit.outputs.changed == 'true' && hashFiles('counties/cuyahoga/output/precincts_wide_latest.csv') != ''
-        uses: actions/upload-artifact@v4
-        with:
-          name: cuyahoga-precincts-${{ github.run_number }}
-          path: counties/cuyahoga/output/precincts_wide_latest.csv
-          retention-days: 3
 
       - name: Report failed counties
         if: steps.scrape.outputs.failed != ''

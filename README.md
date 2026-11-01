@@ -1,6 +1,28 @@
 # scrapers2026
 
-Election results scrapers, organized by county.
+Goal: **2026 U.S. Senate (Ohio) results by county, itemized by vote method.**
+
+The combined result lives in `results/`:
+
+- `senate_by_method_wide.csv`: one row per county and candidate, a column per
+  vote method, plus total and precincts reported
+- `senate_by_method.csv`: the same data with one row per county, candidate and
+  method, including each county's original label for the method
+
+Each county's scraper pulls that county's full results feed; `common/senate.py`
+extracts the Senate race and maps vote methods to common names:
+
+| Common method | County labels |
+|---|---|
+| Election Day | Election Day |
+| Early In-Person | Early In-Person (Cuyahoga), Early Voting (ENR XML) |
+| Mail | Vote By Mail (Cuyahoga), Mail Ballots (ENR XML) |
+| Absentee (early in-person + mail) | Absentee (ENR CSV; not split by the county) |
+| Provisional | Provisional |
+| Post Election Day, Post VBM | Cuyahoga only, kept as reported |
+
+A blank cell means that county doesn't report that method. Build it locally with
+`python -m common.senate` (or `--from-output` after running scrapers locally).
 
 ## Layout
 
@@ -13,6 +35,8 @@ counties/
     output/      # local run output (git-ignored)
 common/
   ohio_enr.py    # shared parser for Ohio's liveresults.boe.ohio.gov feed (XML or CSV)
+  senate.py      # combines all counties into results/ (Senate race by vote method)
+results/         # the deliverable
 .github/workflows/
   election-night.yml  # runs every county every 5 min on election night
 ```
@@ -43,8 +67,9 @@ python -m counties.<county>.scraper
 
 `.github/workflows/election-night.yml` runs every county listed in its
 `COUNTIES` setting every 5 minutes from 6 PM ET Nov 3, 2026 to 8 AM ET Nov 4.
-When results change it commits each county's `data/summary_wide.csv`, so the
-commit history is a timeline of the count. If one county fails, the others
+After scraping it rebuilds `results/`; when anything changes it commits each
+county's `data/summary_wide.csv` and the results files, so the commit history
+is a timeline of the count. If one county fails, the others
 still run and the run is marked failed. Use "Run workflow" on the Actions tab
 to run it manually.
 

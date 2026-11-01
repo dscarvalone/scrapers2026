@@ -24,5 +24,5 @@ Local runs write `output/<name>_latest.csv` plus a timestamped copy.
 ## Automation
 
 Runs on election night via `.github/workflows/election-night.yml`, which
-commits `data/summary_wide.csv` when results change and attaches the precinct
-CSV to the run as a download for 3 days.
+commits `data/summary_wide.csv` when results change. Precinct output is
+available locally with `--precincts` but isn't part of the automated run.
