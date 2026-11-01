@@ -7,8 +7,8 @@ for election night. They are Ohio's two largest counties. The rest of the plan
 is blocked: the Ohio Secretary of State's hosts, including the shared ENR
 results feed most counties use, serve a Cloudflare JavaScript challenge to
 datacenter IPs. Our egress and GitHub Actions runners are both datacenter
-IPs. The project rules forbid bypassing blocks, so no attempt was made to
-solve the challenge.
+IPs. The owner later waived the no-bypass rule. A real browser does get
+through, but no browser-based scraper exists yet (see "Browser access" below).
 
 ## What is blocked, and how it was confirmed
 
@@ -34,24 +34,51 @@ SOS host, so it is not a mirror for Nov 2026.
 
 ## Counties
 
-| Status | Counties | Source |
-|---|---|---|
-| Working | Cuyahoga | Enhanced Voting xlsx |
-| Working | Franklin | County-hosted ENR (liveresults.franklincountyohio.gov), election ID 4 |
-| Blocked (SOS ENR confirmed) | Warren, Butler, Stark | County pages link liveresults.boe.ohio.gov |
-| Blocked (SOS-hosted or Cloudflare site; source likely SOS ENR) | Summit, Hamilton, Montgomery, Lucas, Greene, Portage | Not directly confirmed |
-| Reachable, no live feed found | Lake, Clermont, Lorain | Post-election PDF/HTM only |
-| BOE site not found by guessing | Mahoning, Delaware, Trumbull, Medina, Licking | Needs a manual lookup |
-| Not yet surveyed | 69 others | See counties.csv |
+Working: Cuyahoga (Enhanced Voting xlsx) and Franklin (county-hosted ENR,
+election ID 4). All 88 counties are classified in the canonical access list
+below. A DNS check of 8 common hostname patterns across all 88 also found
+no other county-hosted ENR besides Franklin.
 
-It is NOT established that every non-working county uses the SOS feed. Only
-Warren, Butler and Stark are confirmed. A DNS check of 8 common hostname
-patterns (liveresults.<county>countyohio.gov etc.) across all 88 counties
-found no other county-hosted ENR besides Franklin; the other hits were
-wildcard DNS. Counties on another vendor or a differently named host would
-not show up in that check.
+## Canonical access list (all 88 counties, surveyed 2026-11-01)
 
-Full per-county registry: `counties.csv` (88 rows).
+Each county's official BOE website was taken from the SOS County Boards of
+Elections Directory (saved by the owner from
+https://www.ohiosos.gov/directories/county-boards-of-elections). Every
+county-owned site was then fetched by script, crawling up to 8 election and
+results pages, to see where results are published. Per-county detail is in
+`counties.csv` (columns access_class, boe_url, boe_host).
+
+| Class | Meaning | Count | Counties |
+|---|---|---|---|
+| A | Live results on a county-hosted feed, scriptable today | 2 | Cuyahoga, Franklin |
+| B | County site reachable; it links election-night results to the SOS ENR (blocked to scripts) | 3 | Butler, Stark, Warren |
+| C | County site reachable; no live-results link found, only PDF/CSV results posted after the fact. Election-night source unknown, probably SOS ENR | 18 | Clermont, Crawford, Delaware, Guernsey, Hancock, Henry, Lake, Lorain, Mahoning, Mercer, Morrow, Ottawa, Sandusky, Trumbull, Union, Wayne, Williams, Wood |
+| D | County-owned BOE site itself behind a Cloudflare challenge | 3 | Hamilton, Lucas, Portage |
+| E | BOE site hosted by SOS (boe.ohio.gov path or subdomain, or redirects there); blocked to scripts | 62 | Adams, Allen, Ashland, Ashtabula, Athens, Auglaize, Belmont, Brown, Carroll, Champaign, Clark, Clinton, Columbiana, Coshocton, Darke, Defiance, Erie, Fairfield, Fayette, Fulton, Gallia, Geauga, Greene, Hardin, Harrison, Highland, Hocking, Holmes, Huron, Jackson, Jefferson, Knox, Lawrence, Licking, Logan, Madison, Marion, Medina, Meigs, Miami, Monroe, Montgomery, Morgan, Muskingum, Noble, Paulding, Perry, Pickaway, Pike, Preble, Putnam, Richland, Ross, Scioto, Seneca, Shelby, Summit, Tuscarawas, Van Wert, Vinton, Washington, Wyandot |
+
+"With BOE" vs "without": only class A counties publish election-night
+results somewhere other than the SOS platform that a script can reach. For
+B, C and E the SOS platform is the only identified live source. For D the
+county's own site can't be read by script either.
+
+Limits: class C is "no live link found on the site today". A county could
+add a non-SOS link on election night. Class E sites were not opened
+individually (SOS-hosted, so script-blocked); that their live results are on
+the SOS ENR is presumed, not verified per county.
+
+### Browser access (owner waived the no-bypass rule on 2026-11-01)
+
+A real browser (the Kiro dashboard browser panel) gets through the Cloudflare
+check: liveresults.boe.ohio.gov returned genuine pages and genuine 404s, not
+the block page. So the SOS ENR is reachable by browser automation. It was not
+turned into a scraper here because:
+- the dashboard panel can't read XML content, and
+- the local `playwright-cli` Chromium crashes on launch in this sandbox.
+
+A Playwright-based fetcher for the SOS ENR summary XML is the remaining path
+to classes B, C and E. It would need testing from wherever it will run on
+election night. Cloudflare often treats headless browsers on datacenter
+IPs, such as GitHub Actions, more strictly than a desktop browser.
 
 ## Vote-method mapping
 
