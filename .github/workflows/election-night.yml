@@ -18,7 +18,7 @@ concurrency:
 env:
   # Counties to scrape: each needs counties/<name>/scraper.py that writes
   # counties/<name>/output/summary_wide_latest.csv
-  COUNTIES: "cuyahoga warren"
+  COUNTIES: "cuyahoga warren butler"
 
 jobs:
   scrape:
