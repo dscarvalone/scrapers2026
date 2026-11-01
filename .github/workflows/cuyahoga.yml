@@ -46,15 +46,14 @@ jobs:
 
       - name: Scrape
         if: steps.guard.outputs.run == 'true'
-        run: python -m scrapers.cuyahoga --precincts --out output/cuyahoga
+        run: python -m counties.cuyahoga.scraper --precincts
 
       - name: Commit county summary if changed
         id: commit
         if: steps.guard.outputs.run == 'true'
         run: |
-          mkdir -p data/cuyahoga
-          cp output/cuyahoga/summary_wide_latest.csv data/cuyahoga/summary_wide.csv
-          git add data/cuyahoga/summary_wide.csv
+          cp counties/cuyahoga/output/summary_wide_latest.csv counties/cuyahoga/data/summary_wide.csv
+          git add counties/cuyahoga/data/summary_wide.csv
           if git diff --cached --quiet; then
             echo "No change in results."
             echo "changed=false" >> "$GITHUB_OUTPUT"
@@ -74,5 +73,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: cuyahoga-precincts-${{ github.run_number }}
-          path: output/cuyahoga/precincts_wide_latest.csv
+          path: counties/cuyahoga/output/precincts_wide_latest.csv
           retention-days: 3

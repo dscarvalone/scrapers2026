@@ -6,12 +6,12 @@ Election Day, Early In-Person, Vote By Mail, Provisional, Post Election Day,
 and Post VBM.
 
 Usage:
-    python -m scrapers.cuyahoga                      # county totals, download live file
-    python -m scrapers.cuyahoga --precincts          # also precinct-level (slow, ~1M rows)
-    python -m scrapers.cuyahoga --file results.xlsx  # parse a local copy instead
-    python -m scrapers.cuyahoga --long               # one row per vote type instead of wide
+    python -m counties.cuyahoga.scraper                      # county totals, download live file
+    python -m counties.cuyahoga.scraper --precincts          # also precinct-level (slow, ~1M rows)
+    python -m counties.cuyahoga.scraper --file results.xlsx  # parse a local copy instead
+    python -m counties.cuyahoga.scraper --long               # one row per vote type instead of wide
 
-Outputs go to output/cuyahoga/.
+Outputs go to counties/cuyahoga/output/ (git-ignored).
 """
 
 from __future__ import annotations
@@ -50,7 +50,7 @@ VOTE_TYPE_ORDER = [
 
 SPECIAL_ROWS = {"Ballots Cast", "Over Votes", "Under Votes"}
 
-OUT_DIR = Path(__file__).resolve().parent.parent / "output" / "cuyahoga"
+OUT_DIR = Path(__file__).resolve().parent / "output"
 
 
 def clean(text) -> str:
