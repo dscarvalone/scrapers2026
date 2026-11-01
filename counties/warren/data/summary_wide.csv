@@ -1,0 +1,55 @@
+race_id,race,vote_for,contestant_id,contestant,party,write_in,withdrawn,Early Voting,Mail Ballots,Election Day,Provisional,total,pct,winner,race_total_votes,ballots_cast,over_votes,under_votes,blank_voted,precincts_reported,precincts_total,generated_at,source_format
+381,County Auditor,1,83,Matt Nolan,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+383,Judge Court Common Pleas (Probate & Juvenile Division),1,95,Joseph W. Kirby,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+394,Judge of the Court of Appeals (12th District) 1-1-27,1,683,Write-in,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+395,Judge of the Court of Appeals (12th District) 2-9-27,1,175,Robert A. Hendrickson,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+396,U.S. Senator,1,6,Sherrod Brown,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+396,U.S. Senator,1,7,Jon Husted,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+396,U.S. Senator,1,681,Greg Levy,Other-party candidate,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+396,U.S. Senator,1,646,William B. Redpath,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+396,U.S. Senator,1,682,Write-in,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+397,Governor and Lieutenant Governor,1,17,Amy Acton and David Pepper,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+397,Governor and Lieutenant Governor,1,660,Don Kissick and James L. Mills,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+397,Governor and Lieutenant Governor,1,659,Vivek Ramaswamy and Robert A. McColley,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+397,Governor and Lieutenant Governor,1,680,Write-in,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+398,Attorney General,1,664,Keith Faber,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+398,Attorney General,1,27,John J. Kulewicz,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+399,Auditor of State,1,33,Annette Blackwell,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+399,Auditor of State,1,663,Frank LaRose,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+400,Secretary of State,1,653,Tom Pruss,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+400,Secretary of State,1,43,Allison Russo,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+400,Secretary of State,1,652,Robert Sprague,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+401,Treasurer of State,1,647,Jay Edwards,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+401,Treasurer of State,1,51,Seth Walsh,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+403,Justice of the Supreme Court (1-2-27),1,67,Jennifer Brunner,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+403,Justice of the Supreme Court (1-2-27),1,656,Colleen O'Donnell,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+408,Representative to Congress (1st District),1,655,Eric Conroy,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+408,Representative to Congress (1st District),1,107,Greg Landsman,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+408,Representative to Congress (1st District),1,679,Nathan Weise,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+409,State Senator (7th District),1,118,Cara Jacob,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+409,State Senator (7th District),1,648,Zac Haines,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+415,State Representative (55th House),1,155,Paul Michael Kurtz,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,98,2026-10-17T08:17:32.809-04:00,xml
+415,State Representative (55th House),1,651,Philip L. Pirdy,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,98,2026-10-17T08:17:32.809-04:00,xml
+415,State Representative (55th House),1,650,C. Michelle Teska,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,98,2026-10-17T08:17:32.809-04:00,xml
+416,State Representative (56th House),1,161,Laalitya Acharya,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,89,2026-10-17T08:17:32.809-04:00,xml
+416,State Representative (56th House),1,649,Adam Mathews,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,89,2026-10-17T08:17:32.809-04:00,xml
+426,Justice of the Supreme Court (1-1-27),1,60,Daniel R. Hawkins,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+426,Justice of the Supreme Court (1-1-27),1,658,Marilyn Zayas,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+428,County Commissioner,1,662,Katherine Bowles,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+428,County Commissioner,1,80,Tom Grossmann,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+428,County Commissioner,1,661,Ian Logan,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+430,Judge Court Common Pleas (General Division),1,93,Gary A. Loxley,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+511,4 Franklin City School Income Tax,1,667,FOR THE TAX,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,18,2026-10-17T08:17:32.809-04:00,xml
+511,4 Franklin City School Income Tax,1,668,AGAINST THE TAX,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,18,2026-10-17T08:17:32.809-04:00,xml
+512,5 Lebanon City School Income Tax,1,669,FOR THE TAX,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,42,2026-10-17T08:17:32.809-04:00,xml
+512,5 Lebanon City School Income Tax,1,670,AGAINST THE TAX,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,42,2026-10-17T08:17:32.809-04:00,xml
+513,6 Mental Health Recovery Board Tax Levy,1,671,FOR THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+513,6 Mental Health Recovery Board Tax Levy,1,672,AGAINST THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+514,8 Franklin Twp Senior Levy,1,675,FOR THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,24,2026-10-17T08:17:32.809-04:00,xml
+514,8 Franklin Twp Senior Levy,1,676,AGAINST THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,24,2026-10-17T08:17:32.809-04:00,xml
+515,9 Turtlecreek Twp Fire Levy,1,677,FOR THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,15,2026-10-17T08:17:32.809-04:00,xml
+515,9 Turtlecreek Twp Fire Levy,1,678,AGAINST THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,15,2026-10-17T08:17:32.809-04:00,xml
+516,7 Warren County Senior Tax Levy,1,673,FOR THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+516,7 Warren County Senior Tax Levy,1,674,AGAINST THE TAX LEVY,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+517,3 State Issue,1,665,YES,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml
+517,3 State Issue,1,666,NO,Nonpartisan,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,185,2026-10-17T08:17:32.809-04:00,xml

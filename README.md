@@ -62,16 +62,26 @@ python -m common.ohio_statewide           # writes results/senate_statewide_by_c
 python -m common.senate                   # merges it: "Not split by method" column
 ```
 
-That site blocks GitHub Actions, so on election night run the loop from a
-desktop, in a normal Terminal window:
+Some SOS-hosted counties do publish the vote-method split in their ENR
+summary XML. Those files load in an ordinary Chrome window but not for
+scripts, so `common/sos_browser.py` reads them through a Chrome window you
+open (`tools/sos_chrome.sh`). `tools/discover_enr.py` found each such
+county's Nov 3 election ID (`tools/enr_discovery.json`), and
+`tools/make_sos_scrapers.py` generated their `counties/<name>/` scrapers.
+
+The SOS sites block GitHub Actions, so on election night run the local loop
+from a desktop, in a normal Terminal window:
 
 ```bash
-tools/statewide_loop.sh                    # asks for a GitHub token once; every 5 min until 8 AM ET Nov 4
-DRY_RUN=1 ONCE=1 tools/statewide_loop.sh   # test: one fetch, no git writes
+tools/sos_chrome.sh                      # opens the SOS Chrome window; leave it open
+tools/local_loop.sh                      # asks for a GitHub token once; every 5 min until 8 AM ET Nov 4
+DRY_RUN=1 ONCE=1 tools/local_loop.sh     # test: one cycle, no git writes
 ```
 
-It commits and pushes only the statewide file. The workflow's combine step
-merges it on the next bot run. The token needs Contents: Read and write.
+Each cycle runs the SOS county scrapers (`python -m tools.run_sos_counties`)
+and the statewide fetch, then commits and pushes only those files. The
+workflow's combine step merges everything on the next bot run. The token
+needs Contents: Read and write.
 
 See REPORT.md.
 

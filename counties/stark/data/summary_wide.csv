@@ -1,0 +1,110 @@
+race_id,race,vote_for,contestant_id,contestant,party,write_in,withdrawn,Early In Person,Vote by Mail,Election Day,Provisional,total,pct,winner,race_total_votes,ballots_cast,over_votes,under_votes,blank_voted,precincts_reported,precincts_total,generated_at,source_format
+1,Governor and Lieutenant Governor,1,1,Amy Acton and David Pepper,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+1,Governor and Lieutenant Governor,1,2,Don Kissick and James L. Mills,LIB,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+1,Governor and Lieutenant Governor,1,3,Vivek Ramaswamy and Robert A. McColley,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+1,Governor and Lieutenant Governor,1,2062,Write-in,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+2,Attorney General,1,5,Keith Faber,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+2,Attorney General,1,6,John J. Kulewicz,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+3,Auditor of State,1,7,Annette Blackwell,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+3,Auditor of State,1,8,Frank LaRose,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+4,Secretary of State,1,10,Tom Pruss,LIB,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+4,Secretary of State,1,11,Allison Russo,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+4,Secretary of State,1,12,Robert Sprague,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+5,Treasurer of State,1,13,Jay Edwards,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+5,Treasurer of State,1,14,Seth Walsh,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+6,Justice of the Supreme Court (1-1-2027),1,19,Daniel R. Hawkins,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+6,Justice of the Supreme Court (1-1-2027),1,20,Marilyn Zayas,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+7,Justice of the Supreme Court (1-2-2027),1,21,Jennifer Brunner,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+7,Justice of the Supreme Court (1-2-2027),1,22,Colleen O'Donnell,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+8,U.S. Senator (UTE 1-3-2029),1,15,Sherrod Brown,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+8,U.S. Senator (UTE 1-3-2029),1,16,Jon Husted,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+8,U.S. Senator (UTE 1-3-2029),1,17,Greg Levy,OTH,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+8,U.S. Senator (UTE 1-3-2029),1,18,William B. Redpath,LIB,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+8,U.S. Senator (UTE 1-3-2029),1,2063,Write-in,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+9,Representative to Congress (6th District),1,23,Elizabeth Kirtley,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,136,2026-10-23T10:07:03.530-04:00,xml
+9,Representative to Congress (6th District),1,24,Michael A. Rulli,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,136,2026-10-23T10:07:03.530-04:00,xml
+10,Representative to Congress (13th District),1,25,Carey Coleman,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,144,2026-10-23T10:07:03.530-04:00,xml
+10,Representative to Congress (13th District),1,26,Sandeep Dixit,NON,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,144,2026-10-23T10:07:03.530-04:00,xml
+10,Representative to Congress (13th District),1,27,Emilia Sykes,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,144,2026-10-23T10:07:03.530-04:00,xml
+13,State Senator (29th District),1,28,Jane Timken,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,259,2026-10-23T10:07:03.530-04:00,xml
+13,State Senator (29th District),1,29,Thomas West,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,259,2026-10-23T10:07:03.530-04:00,xml
+14,State Senator (31st District),1,30,Al Landis,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,17,2026-10-23T10:07:03.530-04:00,xml
+14,State Senator (31st District),1,31,Laura Sirot,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,17,2026-10-23T10:07:03.530-04:00,xml
+15,State Representative (48th District),1,32,Christina M. Hagan,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,97,2026-10-23T10:07:03.530-04:00,xml
+15,State Representative (48th District),1,33,Nick Morris,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,97,2026-10-23T10:07:03.530-04:00,xml
+16,State Representative (49th District),1,34,Krista L. Allison,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,90,2026-10-23T10:07:03.530-04:00,xml
+16,State Representative (49th District),1,35,Jim Thomas,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,90,2026-10-23T10:07:03.530-04:00,xml
+17,State Representative (50th District),1,36,Rylan Zachary Finzer,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,85,2026-10-23T10:07:03.530-04:00,xml
+17,State Representative (50th District),1,37,Matthew Kishman,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,85,2026-10-23T10:07:03.530-04:00,xml
+18,State Representative (51st District),1,38,Amanda Fontana,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,17,2026-10-23T10:07:03.530-04:00,xml
+18,State Representative (51st District),1,39,Jodi Salvo,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,17,2026-10-23T10:07:03.530-04:00,xml
+24,"Judge of the Court of Appeals, 5th District (2-9-2027)",1,40,Matthew George,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+27,"Judge of Common Pleas, General Div. (1-1-2027)",1,45,Kristin G. Farmer,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+28,"Judge of Common Pleas, General Div. (1-4-2027)",1,46,Frank G. Forchione,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+29,"Judge of Common Pleas, General Div. (2-9-2027)",1,47,Jennifer L. Dave,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+29,"Judge of Common Pleas, General Div. (2-9-2027)",1,48,Kristen S. Moore,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+30,"Judge of Common Pleas, Probate Div. (2-9-2027)",1,49,Curt Werren,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+31,County Commissioner,1,41,Alan Harold,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+31,County Commissioner,1,42,Tony M. Townsend,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+32,County Auditor,1,43,Chalice E. Brown,DEM,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+32,County Auditor,1,44,Angela Kinsey,REP,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+33,Issue 3 - Proposed Constitutional Amendment,1,50,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+33,Issue 3 - Proposed Constitutional Amendment,1,51,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+36,Issue 4 - Stark County Library District,1,2004,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,195,2026-10-23T10:07:03.530-04:00,xml
+36,Issue 4 - Stark County Library District,1,2005,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,195,2026-10-23T10:07:03.530-04:00,xml
+37,Wayne County Joint Vocational School District,1,2006,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+37,Wayne County Joint Vocational School District,1,2007,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+38,Issue 5 - Plain Local School District,1,2008,For the Bond Issue,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,50,2026-10-23T10:07:03.530-04:00,xml
+38,Issue 5 - Plain Local School District,1,2009,Against the Bond Issue,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,50,2026-10-23T10:07:03.530-04:00,xml
+39,Issue 6 - Sandy Valley Local School District,1,2010,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,5,2026-10-23T10:07:03.530-04:00,xml
+39,Issue 6 - Sandy Valley Local School District,1,2011,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,5,2026-10-23T10:07:03.530-04:00,xml
+40,Issue 7 - Massillon City School District,1,2012,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,28,2026-10-23T10:07:03.530-04:00,xml
+40,Issue 7 - Massillon City School District,1,2013,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,28,2026-10-23T10:07:03.530-04:00,xml
+41,Issue 8 - Alliance City School District,1,2014,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,18,2026-10-23T10:07:03.530-04:00,xml
+41,Issue 8 - Alliance City School District,1,2015,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,18,2026-10-23T10:07:03.530-04:00,xml
+42,Issue 9 - Stark Area Regional Transit Authority (SARTA),1,2016,For the Sales and Use Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+42,Issue 9 - Stark Area Regional Transit Authority (SARTA),1,2017,Against the Sales and Use Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,274,2026-10-23T10:07:03.530-04:00,xml
+43,"Issue 10 - Village of East Sparta, Current Expenses",1,2018,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+43,"Issue 10 - Village of East Sparta, Current Expenses",1,2019,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+44,"Issue 11 - Village of East Sparta, Police",1,2020,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+44,"Issue 11 - Village of East Sparta, Police",1,2021,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+45,Issue 12 - Local Option - Alliance 1-B,1,2026,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+45,Issue 12 - Local Option - Alliance 1-B,1,2027,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+46,Issue 13 - Village of Beach City,1,2022,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+46,Issue 13 - Village of Beach City,1,2023,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+47,Issue 14 - Local Option - Lake Township A - Hartville Mini Mart (C2),1,2024,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+47,Issue 14 - Local Option - Lake Township A - Hartville Mini Mart (C2),1,2025,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+48,Issue 15 - Local Option - Lake Township A - Hartville Mini Mart (C1),1,2028,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+48,Issue 15 - Local Option - Lake Township A - Hartville Mini Mart (C1),1,2029,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+49,Issue 16 - Local Option - Paris Township A,1,2030,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+49,Issue 16 - Local Option - Paris Township A,1,2031,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+50,Issue 17 - Village of Magnolia,1,2032,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+50,Issue 17 - Village of Magnolia,1,2033,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+51,Issue 18 - Village of Navarre,1,2034,For the Income Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+51,Issue 18 - Village of Navarre,1,2035,Against the Income Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+52,Issue 19 - Village of Wilmot,1,2036,For the Income Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+52,Issue 19 - Village of Wilmot,1,2037,Against the Income Tax,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+53,Issue 20 - Local Option - Canal Fulton B,1,2038,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+53,Issue 20 - Local Option - Canal Fulton B,1,2039,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+54,Issue 21 - Local Option - Massillon 5-B,1,2040,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+54,Issue 21 - Local Option - Massillon 5-B,1,2041,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+55,Issue 22 - Pike Township Fire District,1,2042,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+55,Issue 22 - Pike Township Fire District,1,2043,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+56,Issue 23 - Nimishillen Township,1,2044,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,8,2026-10-23T10:07:03.530-04:00,xml
+56,Issue 23 - Nimishillen Township,1,2045,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,8,2026-10-23T10:07:03.530-04:00,xml
+57,Issue 24 - Lake Township Fire District,1,2046,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,21,2026-10-23T10:07:03.530-04:00,xml
+57,Issue 24 - Lake Township Fire District,1,2047,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,21,2026-10-23T10:07:03.530-04:00,xml
+58,Issue 25 - Lawrence Township Fire District,1,2048,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,6,2026-10-23T10:07:03.530-04:00,xml
+58,Issue 25 - Lawrence Township Fire District,1,2049,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,6,2026-10-23T10:07:03.530-04:00,xml
+59,Issue 26 - Plain Township Road District,1,2050,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,29,2026-10-23T10:07:03.530-04:00,xml
+59,Issue 26 - Plain Township Road District,1,2051,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,29,2026-10-23T10:07:03.530-04:00,xml
+60,Issue 27 - Marlboro Township,1,2052,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+60,Issue 27 - Marlboro Township,1,2053,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+61,Issue 28 - Paris Township Road District Number One,1,2054,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+61,Issue 28 - Paris Township Road District Number One,1,2055,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-23T10:07:03.530-04:00,xml
+62,Issue 29 - Lexington Township,1,2056,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,4,2026-10-23T10:07:03.530-04:00,xml
+62,Issue 29 - Lexington Township,1,2057,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,4,2026-10-23T10:07:03.530-04:00,xml
+63,Issue 30 - Perry Township,1,2058,For the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,22,2026-10-23T10:07:03.530-04:00,xml
+63,Issue 30 - Perry Township,1,2059,Against the Tax Levy,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,22,2026-10-23T10:07:03.530-04:00,xml
+64,Issue 31 - Local Option - Lake Township 10,1,2060,Yes,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml
+64,Issue 31 - Local Option - Lake Township 10,1,2061,No,,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-23T10:07:03.530-04:00,xml

@@ -48,6 +48,18 @@ XML_VOTE_LABELS = {
     "EarlyVotingVotes": "Early Voting",
     "MailBallotsVotes": "Mail Ballots",
     "AbsenteeBallotsVotes": "Absentee Ballots",
+    "AbsenteeVotingVotes": "Absentee Voting",   # SOS ENR, e.g. Butler (live, 2026)
+    # Stark's install doubles the suffix (labels seen in discovery:
+    # "Early In Person Votes", "Voteby Mail Votes").
+    "EarlyInPersonVotesVotes": "Early In Person",
+    "VotebyMailVotesVotes": "Vote by Mail",
+    # Summit's install (live, 2026): absentee split into walk-in and mail,
+    # plus "timely" absentee, which is left as its own column (meaning
+    # unconfirmed; see REPORT.md).
+    "PollsVotes": "Election Day",
+    "ABSWalkinVotes": "Absentee Walk-in",
+    "ABSMailVotes": "Absentee Mail",
+    "TimelyABSVotes": "Timely Absentee",
     "ProvisionalVotes": "Provisional",
     "ProvisionalVotingVotes": "Provisional",
 }
@@ -79,6 +91,13 @@ def fields_for(vote_types: list[str]) -> list[str]:
 def fetch(url: str) -> bytes:
     # The site appends ?v=<epoch ms> to dodge caches; do the same.
     sep = "&" if "?" in url else "?"
+    if "liveresults.boe.ohio.gov" in url:
+        # SOS-hosted ENR blocks plain HTTP; go through the owner's Chrome
+        # window (see common/sos_browser.py).
+        from common import sos_browser
+        data = sos_browser.fetch_bytes(f"{url}{sep}v={int(time.time() * 1000)}")
+        detect(data)
+        return data
     resp = requests.get(
         f"{url}{sep}v={int(time.time() * 1000)}",
         timeout=60,
@@ -105,7 +124,10 @@ def _int(text) -> int:
     return int(text) if text else 0
 
 
-REQUIRED_XML_TAGS = {"RaceName", "ContestantName", "ElectionDayVotes"}
+# Election-day votes are <ElectionDayVotes> in most installs, <PollsVotes> in
+# Summit's. One of them has to be present.
+REQUIRED_XML_TAGS = {"RaceName", "ContestantName"}
+ELECTION_DAY_TAGS = {"ElectionDayVotes", "PollsVotes"}
 
 
 def _xml_vote_tags(tags: list[str]) -> list[tuple[str, str]]:
@@ -122,6 +144,8 @@ def parse_xml(data: bytes):
     if tables:
         present = [child.tag for child in tables[0]]
         missing = REQUIRED_XML_TAGS - set(present)
+        if not ELECTION_DAY_TAGS & set(present):
+            missing |= {"ElectionDayVotes|PollsVotes"}
         vote_tags = _xml_vote_tags(present)
         if missing or len(vote_tags) < 2 or not ({"Votes", "TotalVotes"} & set(present)):
             raise RuntimeError(

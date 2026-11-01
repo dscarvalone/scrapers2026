@@ -2,13 +2,18 @@
 
 ## Summary
 
-- **By vote method:** 2 counties, Cuyahoga and Franklin (Ohio's two
-  largest), from county-hosted feeds that work with plain HTTP.
-- **Totals only, no method split:** the other 86 counties, from the SOS
-  statewide site via a headed browser (`common/ohio_statewide.py`).
-- **Not reachable:** the method split for those 86. It exists only in each
-  county's SOS ENR summary XML/CSV, which is behind a Cloudflare Turnstile
-  CAPTCHA.
+- **By vote method, 8 counties:**
+  - Cuyahoga and Franklin, from county-hosted feeds over plain HTTP (these
+    also run in Actions).
+  - Butler, Carroll, Clark, Lucas, Stark and Warren, from their SOS ENR
+    summary XML, read through a Chrome window the owner opens
+    (`tools/sos_chrome.sh`, `common/sos_browser.py`).
+- **Totals only, no method split: the other 80 counties,** from the SOS
+  statewide site (`common/ohio_statewide.py`). A scan of all 86 non-Cuyahoga,
+  non-Franklin counties on the SOS ENR (`tools/discover_enr.py`, results in
+  `tools/enr_discovery.json`) found no Nov 3 file for them. Those that were
+  spot-checked (Adams, Allen) publish election-night results as PDFs with
+  totals only.
 
 The SOS hosts serve a Cloudflare check to every non-browser client, from
 datacenter and residential IPs alike, and to headless browsers. The owner
@@ -70,6 +75,54 @@ add a non-SOS link on election night. Class E sites were not opened
 individually (SOS-hosted, so script-blocked); that their live results are on
 the SOS ENR is presumed, not verified per county.
 
+### SOS ENR via the owner's Chrome window (added 2026-11-01, later the same day)
+
+Supersedes the "not reachable" conclusion in the next section. The summary
+XML loads in an ordinary Chrome window that a person opens. Playwright-
+launched browsers are refused. So `common/sos_browser.py` doesn't launch
+anything. It connects to a Chrome window the owner starts with
+`tools/sos_chrome.sh`: a dedicated empty profile, with a debugging port on
+127.0.0.1 only. It then makes same-origin `fetch()` calls from that window.
+It never interacts with a challenge; if one appears it stops and asks a
+person.
+
+- **Rate limit:** the host returned HTTP 429 after about 30 requests at
+  1 per second. Requests are now paced at one per 3 s, with a 60/120/240 s
+  backoff on 429.
+- **Discovery:** each county's newest ENR file is found with a coarse probe
+  (IDs 40, 32, 24, ...) and then stepped up. A file counts only if it is a
+  2026 general election with Brown and Husted in the same U.S. Senate race.
+  Six counties have one:
+
+| County | ENR ID | Vote types in feed | CSV |
+|---|---|---|---|
+| Butler | 24 | Early Voting, Absentee Voting, Election Day, Provisional | yes |
+| Carroll | 23 | Early Voting, Mail Ballots, Election Day, Provisional | no |
+| Clark | 20 | Early Voting, Absentee Ballots, Election Day, Provisional | yes |
+| Lucas | 23 | Early Voting, Absentee Ballots, Election Day, Provisional | no |
+| Stark | 14 | Early In Person, Vote by Mail, Election Day, Provisional | yes |
+| Warren | 18 | Early Voting, Mail Ballots, Election Day, Provisional | yes |
+
+  Hamilton and Lake have ENR folders, but only for older elections (newest:
+  2025 and 2022). Summit's folder stops at 2024; one older Summit file uses a
+  different schema (PollsVotes, ABSWalkinVotes, ABSMailVotes,
+  TimelyABSVotes), which the parser now accepts. Summit's "Timely Absentee"
+  is left unmapped.
+- **Mapping:** "Absentee Voting" / "Absentee Ballots" are mapped to Mail
+  because Early Voting is its own column. On Butler's ENR page this is
+  stated directly: its hidden setting `hdnMailVote` has the value
+  "Absentee Voting".
+- **Lucas** publishes no Write-in line in its Senate race, so its Write-in
+  row is missing from the combined file (439 rows, not 440).
+- **Connection drops:** the debugging connection dropped about every 40
+  minutes during the long discovery scan. The fetcher reconnects
+  automatically. A drop in the middle of a request can still fail that one
+  cycle; the next cycle retries.
+- **Election night:** `tools/local_loop.sh` runs these six
+  (`tools.run_sos_counties`) and the statewide fetch every 5 minutes, and
+  commits only the files it owns. Six counties at 3 s each is about 20 s
+  per cycle.
+
 ### Browser access (owner waived the no-bypass rule on 2026-11-01)
 
 The owner waived the no-bypass rule for this. Self-imposed limits: a real,
@@ -112,7 +165,7 @@ run on 2026-11-01 confirmed that the statewide site blocks GitHub's runners
 even with a headed browser under xvfb (stuck on "Just a moment..."). From the
 owner's Mac it works in about 5 seconds. So:
 
-- `tools/statewide_loop.sh` runs on the Mac on election night. Every 5
+- `tools/local_loop.sh` (formerly statewide_loop.sh) runs on the Mac on election night. Every 5
   minutes it fetches the county totals and, if they changed, commits and
   pushes only `results/senate_statewide_by_county.csv`, pulling with rebase
   first. It asks for a GitHub token once at startup and holds it only in

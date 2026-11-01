@@ -1,0 +1,801 @@
+{
+ "Adams": {
+  "checked_at": "2026-11-01T22:23:41+00:00",
+  "county": "Adams",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Allen": {
+  "checked_at": "2026-11-01T22:24:00+00:00",
+  "county": "Allen",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Ashland": {
+  "checked_at": "2026-11-01T22:24:21+00:00",
+  "county": "Ashland",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Ashtabula": {
+  "checked_at": "2026-11-01T22:24:43+00:00",
+  "county": "Ashtabula",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Athens": {
+  "checked_at": "2026-11-01T22:25:04+00:00",
+  "county": "Athens",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Auglaize": {
+  "checked_at": "2026-11-01T22:29:22+00:00",
+  "county": "Auglaize",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Belmont": {
+  "checked_at": "2026-11-01T22:29:41+00:00",
+  "county": "Belmont",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Brown": {
+  "checked_at": "2026-11-01T22:30:02+00:00",
+  "county": "Brown",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Butler": {
+  "checked_at": "2026-11-01T22:22:28+00:00",
+  "county": "Butler",
+  "csv_ok": true,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.csv",
+  "election_id": 24,
+  "generated_at": "2026-09-30T09:42:47.898-04:00",
+  "older_seen": [],
+  "requests": 7,
+  "senate_race": "UNITED STATES SENATOR UTE 1-3-2029",
+  "slug": "butler",
+  "top_id": 24,
+  "vote_types": [
+   "Early Voting",
+   "Absentee Voting",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.xml"
+ },
+ "Carroll": {
+  "checked_at": "2026-11-01T22:30:24+00:00",
+  "county": "Carroll",
+  "csv_ok": false,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/carrollohenr/23/summary_23.csv",
+  "election_id": 23,
+  "generated_at": "2026-10-26T19:00:14.287-04:00",
+  "older_seen": [],
+  "requests": 14,
+  "senate_race": "United States Senator (Unexpired term)",
+  "slug": "carroll",
+  "top_id": 23,
+  "vote_types": [
+   "Early Voting",
+   "Mail Ballots",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/carrollohenr/23/summary_23.xml"
+ },
+ "Champaign": {
+  "checked_at": "2026-11-01T22:31:08+00:00",
+  "county": "Champaign",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Clark": {
+  "checked_at": "2026-11-01T22:31:29+00:00",
+  "county": "Clark",
+  "csv_ok": true,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/clarkohenr/20/summary_20.csv",
+  "election_id": 20,
+  "generated_at": "2026-10-30T14:57:13.507-04:00",
+  "older_seen": [],
+  "requests": 12,
+  "senate_race": "United States Senator (U.T.E. 1-3-2029)",
+  "slug": "clark",
+  "top_id": 20,
+  "vote_types": [
+   "Early Voting",
+   "Absentee Ballots",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/clarkohenr/20/summary_20.xml"
+ },
+ "Clermont": {
+  "checked_at": "2026-11-01T22:32:06+00:00",
+  "county": "Clermont",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Clinton": {
+  "checked_at": "2026-11-01T22:32:28+00:00",
+  "county": "Clinton",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Columbiana": {
+  "checked_at": "2026-11-01T22:32:50+00:00",
+  "county": "Columbiana",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Coshocton": {
+  "checked_at": "2026-11-01T22:33:12+00:00",
+  "county": "Coshocton",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Crawford": {
+  "checked_at": "2026-11-01T22:33:33+00:00",
+  "county": "Crawford",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Darke": {
+  "checked_at": "2026-11-01T22:33:55+00:00",
+  "county": "Darke",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Defiance": {
+  "checked_at": "2026-11-01T22:34:17+00:00",
+  "county": "Defiance",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Delaware": {
+  "checked_at": "2026-11-01T22:34:38+00:00",
+  "county": "Delaware",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Erie": {
+  "checked_at": "2026-11-01T22:35:00+00:00",
+  "county": "Erie",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Fairfield": {
+  "checked_at": "2026-11-01T22:35:22+00:00",
+  "county": "Fairfield",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Fayette": {
+  "checked_at": "2026-11-01T22:35:43+00:00",
+  "county": "Fayette",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Fulton": {
+  "checked_at": "2026-11-01T22:36:05+00:00",
+  "county": "Fulton",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Gallia": {
+  "checked_at": "2026-11-01T22:36:26+00:00",
+  "county": "Gallia",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Geauga": {
+  "checked_at": "2026-11-01T22:36:48+00:00",
+  "county": "Geauga",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Greene": {
+  "checked_at": "2026-11-01T22:37:09+00:00",
+  "county": "Greene",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Guernsey": {
+  "checked_at": "2026-11-01T22:37:31+00:00",
+  "county": "Guernsey",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Hamilton": {
+  "checked_at": "2026-11-01T22:37:52+00:00",
+  "county": "Hamilton",
+  "election_id": null,
+  "older_seen": [
+   {
+    "generated_at": "2025-06-30T13:54:46.245-04:00",
+    "id": 1,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [],
+    "slug": "hamilton",
+    "vote_types": [
+     "Early Voting",
+     "Mail Ballots",
+     "Election Day",
+     "Provisional"
+    ]
+   }
+  ],
+  "requests": 9
+ },
+ "Hancock": {
+  "checked_at": "2026-11-01T22:38:20+00:00",
+  "county": "Hancock",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Hardin": {
+  "checked_at": "2026-11-01T22:38:44+00:00",
+  "county": "Hardin",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Harrison": {
+  "checked_at": "2026-11-01T22:39:06+00:00",
+  "county": "Harrison",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Henry": {
+  "checked_at": "2026-11-01T22:39:27+00:00",
+  "county": "Henry",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Highland": {
+  "checked_at": "2026-11-01T22:39:49+00:00",
+  "county": "Highland",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Hocking": {
+  "checked_at": "2026-11-01T22:40:10+00:00",
+  "county": "Hocking",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Holmes": {
+  "checked_at": "2026-11-01T22:40:32+00:00",
+  "county": "Holmes",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Huron": {
+  "checked_at": "2026-11-01T22:40:53+00:00",
+  "county": "Huron",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Jackson": {
+  "checked_at": "2026-11-01T22:41:15+00:00",
+  "county": "Jackson",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Jefferson": {
+  "checked_at": "2026-11-01T22:41:36+00:00",
+  "county": "Jefferson",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Knox": {
+  "checked_at": "2026-11-01T22:41:57+00:00",
+  "county": "Knox",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Lake": {
+  "checked_at": "2026-11-01T22:42:19+00:00",
+  "county": "Lake",
+  "election_id": null,
+  "older_seen": [
+   {
+    "generated_at": "2022-05-03T12:31:34.723-04:00",
+    "id": 8,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [
+     "Dem U.S. Senator",
+     "Rep U.S. Senator"
+    ],
+    "slug": "lake",
+    "vote_types": [
+     "Early Voting",
+     "Mail Ballots",
+     "Election Day",
+     "Provisional"
+    ]
+   },
+   {
+    "generated_at": "2022-07-07T17:30:37.550-04:00",
+    "id": 6,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [
+     "Dem U.S. Senator",
+     "Rep U.S. Senator"
+    ],
+    "slug": "lake",
+    "vote_types": [
+     "Early Voting",
+     "Mail Ballots",
+     "Election Day",
+     "Provisional"
+    ]
+   },
+   {
+    "generated_at": "2020-11-18T14:44:29.230-05:00",
+    "id": 5,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [],
+    "slug": "lake",
+    "vote_types": [
+     "Early Voting",
+     "Mail Ballots",
+     "Election Day",
+     "Provisional"
+    ]
+   }
+  ],
+  "requests": 11
+ },
+ "Lawrence": {
+  "checked_at": "2026-11-01T22:42:53+00:00",
+  "county": "Lawrence",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Licking": {
+  "checked_at": "2026-11-01T22:43:14+00:00",
+  "county": "Licking",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Logan": {
+  "checked_at": "2026-11-01T22:43:36+00:00",
+  "county": "Logan",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Lorain": {
+  "checked_at": "2026-11-01T22:43:57+00:00",
+  "county": "Lorain",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Lucas": {
+  "checked_at": "2026-11-01T22:44:19+00:00",
+  "county": "Lucas",
+  "csv_ok": false,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/lucasohenr/23/summary_23.csv",
+  "election_id": 23,
+  "generated_at": "2026-10-28T14:08:15.089-04:00",
+  "older_seen": [],
+  "requests": 14,
+  "senate_race": "U.S. Senator",
+  "slug": "lucas",
+  "top_id": 23,
+  "vote_types": [
+   "Early Voting",
+   "Absentee Ballots",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/lucasohenr/23/summary_23.xml"
+ },
+ "Madison": {
+  "checked_at": "2026-11-01T22:45:02+00:00",
+  "county": "Madison",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Mahoning": {
+  "checked_at": "2026-11-01T22:52:42+00:00",
+  "county": "Mahoning",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Marion": {
+  "checked_at": "2026-11-01T22:54:46+00:00",
+  "county": "Marion",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Medina": {
+  "checked_at": "2026-11-01T22:55:05+00:00",
+  "county": "Medina",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Meigs": {
+  "checked_at": "2026-11-01T22:55:27+00:00",
+  "county": "Meigs",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Mercer": {
+  "checked_at": "2026-11-01T22:55:48+00:00",
+  "county": "Mercer",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Miami": {
+  "checked_at": "2026-11-01T22:56:10+00:00",
+  "county": "Miami",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Monroe": {
+  "checked_at": "2026-11-01T22:56:31+00:00",
+  "county": "Monroe",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Montgomery": {
+  "checked_at": "2026-11-01T22:56:53+00:00",
+  "county": "Montgomery",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Morgan": {
+  "checked_at": "2026-11-01T22:57:38+00:00",
+  "county": "Morgan",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Morrow": {
+  "checked_at": "2026-11-01T22:57:59+00:00",
+  "county": "Morrow",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Muskingum": {
+  "checked_at": "2026-11-01T22:58:21+00:00",
+  "county": "Muskingum",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Noble": {
+  "checked_at": "2026-11-01T22:58:42+00:00",
+  "county": "Noble",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Ottawa": {
+  "checked_at": "2026-11-01T22:59:04+00:00",
+  "county": "Ottawa",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Paulding": {
+  "checked_at": "2026-11-01T22:59:25+00:00",
+  "county": "Paulding",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Perry": {
+  "checked_at": "2026-11-01T22:59:47+00:00",
+  "county": "Perry",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Pickaway": {
+  "checked_at": "2026-11-01T23:00:08+00:00",
+  "county": "Pickaway",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Pike": {
+  "checked_at": "2026-11-01T23:00:30+00:00",
+  "county": "Pike",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Portage": {
+  "checked_at": "2026-11-01T23:00:51+00:00",
+  "county": "Portage",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Preble": {
+  "checked_at": "2026-11-01T23:01:12+00:00",
+  "county": "Preble",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Putnam": {
+  "checked_at": "2026-11-01T23:01:34+00:00",
+  "county": "Putnam",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Richland": {
+  "checked_at": "2026-11-01T23:01:55+00:00",
+  "county": "Richland",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Ross": {
+  "checked_at": "2026-11-01T23:02:17+00:00",
+  "county": "Ross",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Sandusky": {
+  "checked_at": "2026-11-01T23:02:38+00:00",
+  "county": "Sandusky",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Scioto": {
+  "checked_at": "2026-11-01T23:03:00+00:00",
+  "county": "Scioto",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Seneca": {
+  "checked_at": "2026-11-01T23:03:21+00:00",
+  "county": "Seneca",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Shelby": {
+  "checked_at": "2026-11-01T23:03:43+00:00",
+  "county": "Shelby",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Stark": {
+  "checked_at": "2026-11-01T22:22:46+00:00",
+  "county": "Stark",
+  "csv_ok": true,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/starkohenr/14/summary_14.csv",
+  "election_id": 14,
+  "generated_at": "2026-10-23T10:07:03.530-04:00",
+  "older_seen": [],
+  "requests": 14,
+  "senate_race": "U.S. Senator (UTE 1-3-2029)",
+  "slug": "stark",
+  "top_id": 14,
+  "vote_types": [
+   "Early In Person Votes",
+   "Voteby Mail Votes",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/starkohenr/14/summary_14.xml"
+ },
+ "Summit": {
+  "checked_at": "2026-11-01T23:12:53+00:00",
+  "county": "Summit",
+  "election_id": null,
+  "older_seen": [
+   {
+    "generated_at": "2024-04-11T14:19:12.306-04:00",
+    "id": 12,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [
+     "For U.S. Senator (DEM)",
+     "For U.S. Senator (REP)"
+    ],
+    "slug": "summit",
+    "vote_types": [
+     "Absentee Walk-in",
+     "Absentee Mail",
+     "Election Day",
+     "Provisional",
+     "Timely Absentee"
+    ]
+   },
+   {
+    "generated_at": "2023-11-29T10:17:23.727-05:00",
+    "id": 10,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [],
+    "slug": "summit",
+    "vote_types": [
+     "Absentee Walk-in",
+     "Absentee Mail",
+     "Election Day",
+     "Provisional",
+     "Timely Absentee"
+    ]
+   },
+   {
+    "generated_at": "2023-09-12T20:25:00.248-04:00",
+    "id": 9,
+    "kind": "other",
+    "senate_race": "",
+    "senate_races_seen": [],
+    "slug": "summit",
+    "vote_types": [
+     "Absentee Walk-in",
+     "Absentee Mail",
+     "Election Day",
+     "Provisional",
+     "Timely Absentee"
+    ]
+   }
+  ],
+  "requests": 12
+ },
+ "Trumbull": {
+  "checked_at": "2026-11-01T23:13:28+00:00",
+  "county": "Trumbull",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Tuscarawas": {
+  "checked_at": "2026-11-01T23:13:49+00:00",
+  "county": "Tuscarawas",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Union": {
+  "checked_at": "2026-11-01T23:18:19+00:00",
+  "county": "Union",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Van Wert": {
+  "checked_at": "2026-11-01T23:18:41+00:00",
+  "county": "Van Wert",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 21
+ },
+ "Vinton": {
+  "checked_at": "2026-11-01T23:19:45+00:00",
+  "county": "Vinton",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Warren": {
+  "checked_at": "2026-11-01T23:20:07+00:00",
+  "county": "Warren",
+  "csv_ok": true,
+  "csv_url": "https://liveresults.boe.ohio.gov/ENR/warrenohenr/18/summary_18.csv",
+  "election_id": 18,
+  "generated_at": "2026-10-17T08:17:32.809-04:00",
+  "older_seen": [],
+  "requests": 10,
+  "senate_race": "U.S. Senator",
+  "slug": "warren",
+  "top_id": 18,
+  "vote_types": [
+   "Early Voting",
+   "Mail Ballots",
+   "Election Day",
+   "Provisional"
+  ],
+  "xml_ok": true,
+  "xml_url": "https://liveresults.boe.ohio.gov/ENR/warrenohenr/18/summary_18.xml"
+ },
+ "Washington": {
+  "checked_at": "2026-11-01T23:20:37+00:00",
+  "county": "Washington",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Wayne": {
+  "checked_at": "2026-11-01T23:20:59+00:00",
+  "county": "Wayne",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Williams": {
+  "checked_at": "2026-11-01T23:21:20+00:00",
+  "county": "Williams",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Wood": {
+  "checked_at": "2026-11-01T23:25:24+00:00",
+  "county": "Wood",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ },
+ "Wyandot": {
+  "checked_at": "2026-11-01T23:25:42+00:00",
+  "county": "Wyandot",
+  "election_id": null,
+  "older_seen": [],
+  "requests": 7
+ }
+}

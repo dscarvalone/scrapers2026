@@ -1,0 +1,63 @@
+race_id,race,vote_for,contestant_id,contestant,party,write_in,withdrawn,Early Voting,Mail Ballots,Election Day,Provisional,total,pct,winner,race_total_votes,ballots_cast,over_votes,under_votes,blank_voted,precincts_reported,precincts_total,generated_at,source_format
+1,United States Senator (Unexpired term),1,1,Sherrod Brown,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+1,United States Senator (Unexpired term),1,2,Jon Husted,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+1,United States Senator (Unexpired term),1,3,Greg Levy,Other-party Candidate,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+1,United States Senator (Unexpired term),1,4,William B. Redpath,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+1,United States Senator (Unexpired term),1,60,Write-in,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+2,Justice Of The Supreme Court 1/1/27,1,5,Daniel R. Hawkins,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+2,Justice Of The Supreme Court 1/1/27,1,6,Marilyn Zayas,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+3,Justice Of The Supreme Court 1/2/27,1,7,Jennifer Brunner,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+3,Justice Of The Supreme Court 1/2/27,1,8,Colleen O'Donnell,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+4,Governor/ Lt. Governor,1,9,Amy Acton and David Pepper,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+4,Governor/ Lt. Governor,1,10,Don Kissick and James L. Mills,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+4,Governor/ Lt. Governor,1,11,Vivek Ramaswamy and Robert A. McColley,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+4,Governor/ Lt. Governor,1,59,Write-in,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+5,Attorney General,1,12,Keith Faber,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+5,Attorney General,1,13,John J. Kulewicz,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+6,Auditor Of State,1,14,Annette Blackwell,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+6,Auditor Of State,1,15,Frank LaRose,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+7,Secretary Of State,1,16,Tom Pruss,Libertarian,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+7,Secretary Of State,1,17,Allison Russo,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+7,Secretary Of State,1,18,Robert Sprague,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+8,Treasurer Of State,1,19,Jay Edwards,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+8,Treasurer Of State,1,20,Seth Walsh,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+9,Judge Of The Court Of Common Pleas Probate And Juvenile,1,21,Maureen E. Stoneman,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+9,Judge Of The Court Of Common Pleas Probate And Juvenile,1,22,Jennifer L. Thomas,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+9,Judge Of The Court Of Common Pleas Probate And Juvenile,1,58,Write-in,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+10,County Commissioner 1,1,23,Ron Eick,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+11,County Auditor,1,24,Staci L. Brady,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+12,Representative To Congress 6th District,1,25,Elizabeth Kirtley,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+12,Representative To Congress 6th District,1,26,Michael A. Rulli,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+13,State Senator 33rd District,1,27,Al Cutrona,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+13,State Senator 33rd District,1,28,Michael L. Kripchak,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+14,State Representative 79th District,1,29,Bob Guy,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+14,State Representative 79th District,1,30,Monica Robb Blasdel,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+15,Court Of Appeals 7th District - 2/9/27,1,31,Molly K. Johnson,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+16,Court Of Appeals 7th District - 2/10/27,1,32,Mark Anthony Hanni,Republican,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+16,Court Of Appeals 7th District - 2/10/27,1,33,Katherine Rudzik,Democratic,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+17,Carroll County - Golden Age,1,34,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+17,Carroll County - Golden Age,1,35,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+18,Village of Carrollton - Fire,1,36,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,2,2026-10-26T19:00:14.287-04:00,xml
+18,Village of Carrollton - Fire,1,37,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,2,2026-10-26T19:00:14.287-04:00,xml
+19,Village of Dellroy - Current Expenses,1,38,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+19,Village of Dellroy - Current Expenses,1,39,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+20,Rose Twp - Excluding Village of Magnolia - Fire,1,40,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+20,Rose Twp - Excluding Village of Magnolia - Fire,1,41,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+21,Rose Twp - Excluding the Village of Magnolia - Roads,1,42,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+21,Rose Twp - Excluding the Village of Magnolia - Roads,1,43,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+22,Fox Twp - Fire,1,44,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+22,Fox Twp - Fire,1,45,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+23,Sandy Valley Local School District,1,46,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,2,2026-10-26T19:00:14.287-04:00,xml
+23,Sandy Valley Local School District,1,47,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,2,2026-10-26T19:00:14.287-04:00,xml
+24,Stark Library,1,48,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+24,Stark Library,1,49,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+25,Edison Local School District,1,50,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+25,Edison Local School District,1,51,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+26,Jefferson County Joint Vocational School 1,1,52,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+26,Jefferson County Joint Vocational School 1,1,53,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+27,Jefferson County Joint Vocational School 2,1,54,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+27,Jefferson County Joint Vocational School 2,1,55,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,3,2026-10-26T19:00:14.287-04:00,xml
+28,Issue 3,1,56,YES,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+28,Issue 3,1,57,NO,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,23,2026-10-26T19:00:14.287-04:00,xml
+29,Village of Magnolia-Police,1,61,FOR THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml
+29,Village of Magnolia-Police,1,62,AGAINST THE TAX LEVY,NONPARTISAN,False,False,0,0,0,0,0,0.0,False,0,,0,0,0,0,1,2026-10-26T19:00:14.287-04:00,xml

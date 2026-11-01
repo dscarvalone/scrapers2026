@@ -50,6 +50,18 @@ METHOD_MAP = {
     # is the mailed-ballot count. ASSUMPTION, inferred from the column
     # structure, not from a county definition; see REPORT.md.
     "Absentee Ballots": "Mail",
+    # SOS-hosted ENR (e.g. Butler): Early Voting / Absentee Voting / Election
+    # Day / Provisional. The ENR page's own hidden setting hdnMailVote has the
+    # value "Absentee Voting", so the software itself calls this column the
+    # mail vote.
+    "Absentee Voting": "Mail",
+    "Early In Person": "Early In-Person",  # Stark
+    "Vote by Mail": "Mail",               # Stark
+    "Absentee Walk-in": "Early In-Person",  # Summit (in-person absentee = early voting)
+    "Absentee Mail": "Mail",                # Summit
+    # Summit's "Timely Absentee" is deliberately NOT mapped: likely mail
+    # ballots received after Election Day, but not confirmed. Passes through
+    # as its own column.
 }
 # Counties with no county-level scraper get their total from the statewide
 # SOS site (common/ohio_statewide.py), which has no method split. Their votes

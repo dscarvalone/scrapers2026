@@ -72,8 +72,9 @@ jobs:
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
       # County TOTALS for the 86 counties without a county scraper come from
-      # results/senate_statewide_by_county.csv, which tools/statewide_loop.sh
-      # commits from a desktop. The SOS statewide site blocks GitHub's runners
+      # results/senate_statewide_by_county.csv, and SOS-hosted counties'
+      # data/summary_wide.csv files, both committed by tools/local_loop.sh
+      # from a desktop. The SOS statewide site blocks GitHub's runners
       # even with a headed browser (manual run, 2026-11-01), so it can't be
       # fetched here. common.senate below merges it.
 

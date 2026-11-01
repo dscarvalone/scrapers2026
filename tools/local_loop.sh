@@ -1,22 +1,25 @@
 #!/usr/bin/env bash
-# Election-night loop for the SOS statewide county totals.
+# Election-night loop for the sources GitHub Actions can't reach.
 #
-# Why this runs on a desktop and not in GitHub Actions: the SOS statewide site
-# (liveresults.ohiosos.gov) needs a headed browser and still blocks GitHub's
-# runners. Confirmed on a manual workflow run, 2026-11-01. From a home
-# connection it works. See REPORT.md.
+# Why this runs on a desktop: the SOS sites block GitHub's runners (manual
+# workflow run, 2026-11-01). From the owner's Mac they work:
+#   - SOS-hosted county ENR feeds (vote-method split): through the Chrome
+#     window opened by tools/sos_chrome.sh. Skipped, with a warning, if that
+#     window isn't open.
+#   - SOS statewide site (county totals, all 88): headed Playwright Chromium.
 #
 # Every INTERVAL seconds:
-#   1. python -m common.ohio_statewide   (rewrites the CSV only if numbers changed)
-#   2. if results/senate_statewide_by_county.csv changed: commit just that file
-#   3. git pull --rebase, then git push   (the Actions bot commits county data
-#      and the combined results to the same branch)
-# The Actions workflow's combine step reads the committed statewide file, so
-# results/senate_by_method_wide.csv picks it up on the bot's next run.
+#   1. python -m tools.run_sos_counties  -> counties/<name>/data/summary_wide.csv
+#   2. python -m common.ohio_statewide   -> results/senate_statewide_by_county.csv
+#      (each file is rewritten only when its numbers changed)
+#   3. commit just those files if changed; git pull --rebase; git push
+# The Actions bot commits Cuyahoga/Franklin and rebuilds the combined
+# results/senate_by_method_wide.csv from everything committed, on its next run.
 #
 # Usage, from the repo root, in a normal Terminal window:
-#   tools/statewide_loop.sh                 # asks for a GitHub token once, runs until END
-#   DRY_RUN=1 ONCE=1 tools/statewide_loop.sh  # one fetch, no commit/pull/push
+#   tools/sos_chrome.sh                    # first: open the SOS Chrome window
+#   tools/local_loop.sh                    # asks for a GitHub token once, runs until END
+#   DRY_RUN=1 ONCE=1 tools/local_loop.sh   # one cycle, no commit/pull/push
 #
 # Settings (environment variables):
 #   INTERVAL  seconds between cycles               (default 300)
@@ -70,17 +73,29 @@ caffeinate -dims -w $$ &
 
 log "Starting: every ${INTERVAL}s until $END ET$([ "$DRY_RUN" = 1 ] && echo ' (DRY RUN)')"
 while :; do
-  if "$PY" -m common.ohio_statewide; then
-    if [ "$DRY_RUN" = "1" ]; then
-      log "Dry run: skipping git."
+  # 1. SOS-hosted county ENR feeds (vote-method split), via the Chrome window.
+  if curl -s --max-time 3 "http://127.0.0.1:${SOS_CDP_PORT:-9333}/json/version" >/dev/null; then
+    "$PY" -m tools.run_sos_counties || log "WARNING: some SOS counties failed (see above)."
+  else
+    log "WARNING: SOS Chrome window not open (run tools/sos_chrome.sh); skipping county ENR feeds."
+  fi
+  # 2. Statewide county totals (all 88, no method split).
+  "$PY" -m common.ohio_statewide || log "ERROR: statewide fetch failed (see above)."
+
+  if [ "$DRY_RUN" = "1" ]; then
+    log "Dry run: skipping git."
+  else
+    # Only the files this loop owns. Cuyahoga/Franklin are the bot's.
+    owned=$( { [ -f "$FILE" ] && echo "$FILE"; ls counties/*/data/summary_wide.csv 2>/dev/null \
+               | grep -v -e '^counties/cuyahoga/' -e '^counties/franklin/'; } )
+    [ -n "$owned" ] && git add $owned
+    if git diff --cached --quiet; then
+      log "No change in results."
     else
-      git add "$FILE"
-      if git diff --cached --quiet -- "$FILE"; then
-        log "No change in county totals."
-      else
-        git commit -q -m "Statewide county totals $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')" -- "$FILE"
-        log "Committed new county totals."
-      fi
+      changed=$(git diff --cached --name-only | sed -e 's#^counties/\([^/]*\)/.*#\1#' -e 's#^results/.*#statewide#' | sort -u | tr '\n' ' ')
+      git commit -q -m "Local results update (${changed% }) $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
+      log "Committed: $changed"
+    fi
       # Push whenever we're ahead of origin, including a commit left over
       # from a cycle whose push failed.
       if [ "$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 1)" != "0" ]; then
@@ -93,9 +108,6 @@ while :; do
         done
         [ "$pushed" = 1 ] && log "Pushed." || log "ERROR: could not push; will retry next cycle."
       fi
-    fi
-  else
-    log "ERROR: statewide fetch failed (see message above); will retry next cycle."
   fi
 
   [ "$ONCE" = "1" ] && break
