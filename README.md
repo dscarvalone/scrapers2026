@@ -15,8 +15,8 @@ extracts the Senate race and maps vote methods to common names:
 | Common method | County labels |
 |---|---|
 | Election Day | Election Day |
-| Early In-Person | Early In-Person (Cuyahoga), Early Voting (ENR XML) |
-| Mail | Vote By Mail (Cuyahoga), Mail Ballots (ENR XML) |
+| Early In-Person | Early In-Person (Cuyahoga), Early Voting (ENR XML/CSV, incl. Franklin) |
+| Mail | Vote By Mail (Cuyahoga), Mail Ballots (ENR XML), Absentee Ballots (Franklin; assumed to be mail, see REPORT.md) |
 | Absentee (early in-person + mail) | Absentee (ENR CSV; not split by the county) |
 | Provisional | Provisional |
 | Post Election Day, Post VBM | Cuyahoga only, kept as reported |
@@ -45,10 +45,14 @@ results/         # the deliverable
 
 | County | Status | Source |
 |---|---|---|
-| [Cuyahoga](counties/cuyahoga/) | Working, scheduled for election night | Enhanced Voting Excel export |
-| [Warren](counties/warren/) | Working, scheduled for election night | Ohio ENR summary XML (liveresults.boe.ohio.gov) |
-| [Butler](counties/butler/) | Working, scheduled for election night | Ohio ENR summary XML, falling back to CSV |
-| [Franklin](counties/franklin/) | Source identified, data feed not yet found | vote.franklincountyohio.gov |
+| [Cuyahoga](counties/cuyahoga/) | Working live, scheduled | Enhanced Voting Excel export |
+| [Franklin](counties/franklin/) | Working live, scheduled | County-hosted ENR (liveresults.franklincountyohio.gov), XML then CSV |
+| [Warren](counties/warren/) | Blocked, not scheduled | SOS-hosted ENR, Cloudflare challenge |
+| [Butler](counties/butler/) | Blocked, not scheduled | SOS-hosted ENR, Cloudflare challenge |
+
+The SOS-hosted feed (liveresults.boe.ohio.gov), which most Ohio counties use,
+serves a Cloudflare JavaScript challenge to datacenter IPs, including GitHub
+Actions. See REPORT.md.
 
 ## Setup
 
