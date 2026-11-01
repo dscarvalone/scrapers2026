@@ -45,6 +45,11 @@ METHOD_MAP = {
     "Mail Ballots": "Mail",                # Ohio ENR XML
     "Provisional": "Provisional",
     "Absentee": "Absentee (early in-person + mail)",  # Ohio ENR CSV, not split
+    # Franklin's ENR reports "Early Voting" and "Absentee Ballots" side by
+    # side. Early in-person voting is its own column, so "Absentee Ballots"
+    # is the mailed-ballot count. ASSUMPTION, inferred from the column
+    # structure, not from a county definition; see REPORT.md.
+    "Absentee Ballots": "Mail",
 }
 METHOD_ORDER = [
     "Election Day", "Early In-Person", "Mail",
@@ -81,6 +86,11 @@ def county_rows(county: str, path: Path) -> list[dict]:
         if r.get("row_type", "candidate") != "candidate":
             continue  # Cuyahoga's Ballots Cast / Over / Under rows
         key = " ".join(r[name_col].split()).lower()
+        # Some ENR installs (Franklin) prefix the name with the party code
+        # from the party column: "Dem Sherrod Brown", "Opc Greg Levy".
+        party_code = (r.get("party") or "").strip().lower()
+        if party_code and key.startswith(party_code + " ") and key not in CANDIDATES:
+            key = key[len(party_code) + 1:]
         if key not in CANDIDATES:
             raise RuntimeError(f"{county}: unexpected Senate candidate {r[name_col]!r}")
         name, party = CANDIDATES[key]
@@ -89,7 +99,7 @@ def county_rows(county: str, path: Path) -> list[dict]:
             votes = int(r[m] or 0)
             method_sum += votes
             out.append({
-                "county": county.title(),
+                "county": county.replace("_", " ").title(),  # van_wert -> Van Wert
                 "candidate": name,
                 "party": party,
                 "method": METHOD_MAP.get(m, m),

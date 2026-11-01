@@ -12,6 +12,7 @@ from __future__ import annotations
 import argparse
 import csv
 import io
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -21,7 +22,7 @@ from pathlib import Path
 import requests
 
 # Fields common to both formats. Vote-type columns are inserted after
-# "withdrawn" and vary by source (see XML_VOTE_TYPES / CSV_VOTE_TYPES).
+# "withdrawn" and vary by source (detected per feed; see XML_VOTE_LABELS).
 BASE_FIELDS = [
     "race_id", "race", "vote_for", "contestant_id", "contestant", "party",
     "write_in", "withdrawn",
@@ -32,17 +33,41 @@ TAIL_FIELDS = [
     "precincts_reported", "precincts_total", "generated_at", "source_format",
 ]
 
-XML_VOTE_TYPES = [
-    ("ElectionDayVotes", "Election Day"),
-    ("EarlyVotingVotes", "Early Voting"),
-    ("MailBallotsVotes", "Mail Ballots"),
-    ("ProvisionalVotes", "Provisional"),
-]
-CSV_VOTE_TYPES = [
-    ("Election Day Votes", "Election Day"),
-    ("Absentee Voting Votes", "Absentee"),
-    ("Provisional Voting Votes", "Provisional"),
-]
+# Vote-method columns differ between ENR installs, so they are detected from
+# the feed itself: any XML tag / CSV column ending in "Votes" that isn't a
+# total or an over/under count. Known names get a stable label; anything new
+# gets a label derived from its name (and passes through common/senate.py
+# unmapped until someone adds it to METHOD_MAP).
+#
+#   Warren/Butler sample XML: ElectionDayVotes, EarlyVotingVotes,
+#                             MailBallotsVotes, ProvisionalVotes
+#   Franklin XML (live, 2026): EarlyVotingVotes, AbsenteeBallotsVotes,
+#                             ElectionDayVotes, ProvisionalVotingVotes
+XML_VOTE_LABELS = {
+    "ElectionDayVotes": "Election Day",
+    "EarlyVotingVotes": "Early Voting",
+    "MailBallotsVotes": "Mail Ballots",
+    "AbsenteeBallotsVotes": "Absentee Ballots",
+    "ProvisionalVotes": "Provisional",
+    "ProvisionalVotingVotes": "Provisional",
+}
+CSV_VOTE_LABELS = {
+    "Election Day Votes": "Election Day",
+    "Early Voting Votes": "Early Voting",
+    "Absentee Voting Votes": "Absentee",
+    "Absentee Ballots Votes": "Absentee Ballots",
+    "Mail Ballots Votes": "Mail Ballots",
+    "Provisional Voting Votes": "Provisional",
+    "Provisional Votes": "Provisional",
+}
+# MinimumVotes is a race setting (Franklin), not a vote count.
+NOT_METHODS_XML = {"Votes", "TotalVotes", "OverVotes", "UnderVotes", "MinimumVotes"}
+NOT_METHODS_CSV = {"Total Votes", "Over Votes", "Under Votes"}
+
+
+def _label_from_tag(tag: str) -> str:
+    # "AbsenteeBallotsVotes" -> "Absentee Ballots"
+    return " ".join(re.findall(r"[A-Z][a-z]*", tag[: -len("Votes")])) or tag
 
 
 def fields_for(vote_types: list[str]) -> list[str]:
@@ -80,20 +105,33 @@ def _int(text) -> int:
     return int(text) if text else 0
 
 
-REQUIRED_XML_TAGS = {"RaceName", "ContestantName", "Votes"} | {t for t, _ in XML_VOTE_TYPES}
+REQUIRED_XML_TAGS = {"RaceName", "ContestantName", "ElectionDayVotes"}
+
+
+def _xml_vote_tags(tags: list[str]) -> list[tuple[str, str]]:
+    return [
+        (t, XML_VOTE_LABELS.get(t) or _label_from_tag(t))
+        for t in tags if t.endswith("Votes") and t not in NOT_METHODS_XML
+    ]
 
 
 def parse_xml(data: bytes):
     root = ET.fromstring(data)
     tables = root.findall("Table")
+    vote_tags: list[tuple[str, str]] = []
     if tables:
-        present = {child.tag for child in tables[0]}
-        missing = REQUIRED_XML_TAGS - present
-        if missing:
+        present = [child.tag for child in tables[0]]
+        missing = REQUIRED_XML_TAGS - set(present)
+        vote_tags = _xml_vote_tags(present)
+        if missing or len(vote_tags) < 2 or not ({"Votes", "TotalVotes"} & set(present)):
             raise RuntimeError(
-                f"XML is missing expected fields {sorted(missing)}; "
+                f"XML is missing expected fields {sorted(missing) or '(vote/total tags)'}; "
                 f"it has {sorted(present)}"
             )
+        unknown = [t for t, _ in vote_tags if t not in XML_VOTE_LABELS]
+        if unknown:
+            print(f"NOTE: unrecognized vote-type tags {unknown}; labels derived from tag names",
+                  file=sys.stderr)
     t_ = lambda el, tag: (el.findtext(tag) or "").strip()
     meta = {
         "generated_at": t_(root, "GeneratedDate"),
@@ -112,13 +150,28 @@ def parse_xml(data: bytes):
             "write_in": t_(t, "ContestantWriteIn") == "Y",
             "withdrawn": t_(t, "ContestantWithdrawn") == "Y",
         }
-        for tag, label in XML_VOTE_TYPES:
+        method_sum = 0
+        for tag, label in vote_tags:
             row[label] = _int(t.findtext(tag))
+            method_sum += row[label]
+        # Installs disagree on which tag is the candidate's total: in the
+        # Warren/Butler samples it's <Votes> (and <TotalVotes> is the race
+        # total); in Franklin's live feed <Votes> is always 0 and
+        # <TotalVotes> is the candidate total. Use whichever matches the
+        # method sum; if neither does, keep <Votes> (when present) so
+        # check() reports the mismatch.
+        votes, total_votes = _int(t.findtext("Votes")), _int(t.findtext("TotalVotes"))
+        if t.find("Votes") is not None and (votes == method_sum or t.find("TotalVotes") is None):
+            total = votes
+        elif total_votes == method_sum:
+            total = total_votes
+        else:
+            total = votes if t.find("Votes") is not None else total_votes
         row.update({
-            "total": _int(t.findtext("Votes")),
+            "total": total,
             "pct": float(t_(t, "ContestantVotePercent").rstrip("%") or 0),
             "winner": t_(t, "ContestantWinner") == "Y",
-            "race_total_votes": _int(t.findtext("TotalVotes")),
+            "race_total_votes": None,  # filled below from candidate totals
             "ballots_cast": "",
             "over_votes": _int(t.findtext("OverVotes")),
             "under_votes": _int(t.findtext("UnderVotes")),
@@ -129,7 +182,22 @@ def parse_xml(data: bytes):
             "source_format": "xml",
         })
         rows.append(row)
-    return meta, rows, [label for _, label in XML_VOTE_TYPES]
+    _fill_race_totals(rows)
+    return meta, rows, _unique([label for _, label in vote_tags])
+
+
+def _unique(labels: list[str]) -> list[str]:
+    if len(set(labels)) != len(labels):
+        raise RuntimeError(f"Two vote-type columns map to the same label: {labels}")
+    return labels
+
+
+def _fill_race_totals(rows: list[dict]) -> None:
+    race_totals: dict[str, int] = {}
+    for row in rows:
+        race_totals[row["race"]] = race_totals.get(row["race"], 0) + row["total"]
+    for row in rows:
+        row["race_total_votes"] = race_totals[row["race"]]
 
 
 # ---------------------------------------------------------------- CSV
@@ -142,6 +210,12 @@ def parse_csv(data: bytes):
     start = next(i for i, l in enumerate(lines) if l.startswith("Contest Name"))
     reader = csv.reader(lines[start:])
     header = [h.strip() for h in next(reader)]
+    vote_cols = [
+        (h, CSV_VOTE_LABELS.get(h) or h[: -len(" Votes")])
+        for h in header if h.endswith(" Votes") and h not in NOT_METHODS_CSV
+    ]
+    if len(vote_cols) < 2 or "Total Votes" not in header:
+        raise RuntimeError(f"CSV is missing expected vote columns; header is {header}")
     meta = {"generated_at": "", "precincts_reported_overall": None}
     rows = []
     for rec in reader:
@@ -157,39 +231,36 @@ def parse_csv(data: bytes):
         row = {
             "race_id": "",
             "race": " ".join(r["Contest Name"].split()),
-            "vote_for": _int(r["Vote For"]),
+            "vote_for": _int(r.get("Vote For", "")),
             "contestant_id": "",
             "contestant": contestant,
-            "party": r["Party"],
+            "party": r.get("Party", ""),
             "write_in": contestant.lower() == "write-in",
             "withdrawn": "",
         }
-        for col, label in CSV_VOTE_TYPES:
+        for col, label in vote_cols:
             row[label] = _int(r[col])
         row.update({
             "total": _int(r["Total Votes"]),
             "pct": None,  # filled below
             "winner": "",
             "race_total_votes": None,  # filled below
-            "ballots_cast": _int(r["Ballots Cast"]),
-            "over_votes": _int(r["Over Votes"]),
-            "under_votes": _int(r["Under Votes"]),
+            "ballots_cast": _int(r.get("Ballots Cast", "")),
+            "over_votes": _int(r.get("Over Votes", "")),
+            "under_votes": _int(r.get("Under Votes", "")),
             "blank_voted": "",
-            "precincts_reported": _int(r["Precincts Reported"]),
-            "precincts_total": _int(r["Number Of Precincts"]),
+            "precincts_reported": _int(r.get("Precincts Reported", "")),
+            "precincts_total": _int(r.get("Number Of Precincts", "")),
             "generated_at": "",
             "source_format": "csv",
         })
         rows.append(row)
     # CSV has no percentages: compute share of the race's candidate votes.
-    race_totals: dict[str, int] = {}
+    _fill_race_totals(rows)
     for row in rows:
-        race_totals[row["race"]] = race_totals.get(row["race"], 0) + row["total"]
-    for row in rows:
-        rt = race_totals[row["race"]]
-        row["race_total_votes"] = rt
+        rt = row["race_total_votes"]
         row["pct"] = round(100 * row["total"] / rt, 2) if rt else 0.0
-    return meta, rows, [label for _, label in CSV_VOTE_TYPES]
+    return meta, rows, _unique([label for _, label in vote_cols])
 
 
 def parse(data: bytes):
@@ -225,7 +296,10 @@ def write_csv(path: Path, fields: list[str], rows: list[dict]) -> None:
         w.writerows(rows)
 
 
-def run(county: str, urls: list[str] | str, out_dir: Path, argv=None) -> int:
+def run(county: str, urls: list[str] | str, out_dir: Path, argv=None,
+        expect_year: str | None = None) -> int:
+    """expect_year: if set, fail when the feed's GeneratedDate is from another
+    year (catches a stale election ID). Only XML carries a timestamp."""
     urls = [urls] if isinstance(urls, str) else list(urls)
     ap = argparse.ArgumentParser(description=f"{county} County, OH results by vote type (Ohio ENR feed)")
     ap.add_argument("--url", action="append", help="Summary XML/CSV URL (repeatable; tried in order)")
@@ -251,6 +325,10 @@ def run(county: str, urls: list[str] | str, out_dir: Path, argv=None) -> int:
         if parsed is None:
             raise SystemExit(f"{county}: all sources failed:\n  " + "\n  ".join(errors))
         meta, rows, vote_types = parsed
+    gen = meta.get("generated_at") or ""
+    if expect_year and gen and not gen.startswith(expect_year):
+        raise SystemExit(f"{county}: feed generated {gen}, expected {expect_year}; "
+                         "the election ID is probably stale")
     print(
         f"{county}: {rows[0]['source_format'] if rows else '?'} feed, {len(rows)} rows, "
         f"{len({r['race'] for r in rows})} races"
