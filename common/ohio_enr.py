@@ -80,8 +80,20 @@ def _int(text) -> int:
     return int(text) if text else 0
 
 
+REQUIRED_XML_TAGS = {"RaceName", "ContestantName", "Votes"} | {t for t, _ in XML_VOTE_TYPES}
+
+
 def parse_xml(data: bytes):
     root = ET.fromstring(data)
+    tables = root.findall("Table")
+    if tables:
+        present = {child.tag for child in tables[0]}
+        missing = REQUIRED_XML_TAGS - present
+        if missing:
+            raise RuntimeError(
+                f"XML is missing expected fields {sorted(missing)}; "
+                f"it has {sorted(present)}"
+            )
     t_ = lambda el, tag: (el.findtext(tag) or "").strip()
     meta = {
         "generated_at": t_(root, "GeneratedDate"),
@@ -89,7 +101,7 @@ def parse_xml(data: bytes):
         "total_ballots_cast": _int(root.findtext("TotalBallotsCast")),
     }
     rows = []
-    for t in root.findall("Table"):
+    for t in tables:
         row = {
             "race_id": t_(t, "RaceID"),
             "race": t_(t, "RaceName"),
@@ -223,21 +235,22 @@ def run(county: str, urls: list[str] | str, out_dir: Path, argv=None) -> int:
     args = ap.parse_args(argv)
 
     if args.file:
-        data = Path(args.file).read_bytes()
+        meta, rows, vote_types = parse(Path(args.file).read_bytes())
     else:
-        data, errors = None, []
+        # Try each source in order; a download error or a file in an
+        # unexpected shape both fall through to the next one.
+        parsed, errors = None, []
         for url in args.url or urls:
             print(f"Downloading {url}", file=sys.stderr)
             try:
-                data = fetch(url)
+                parsed = parse(fetch(url))
                 break
-            except Exception as e:  # try the next source
+            except Exception as e:
                 errors.append(f"{url}: {e}")
                 print(f"  failed: {e}", file=sys.stderr)
-        if data is None:
+        if parsed is None:
             raise SystemExit(f"{county}: all sources failed:\n  " + "\n  ".join(errors))
-
-    meta, rows, vote_types = parse(data)
+        meta, rows, vote_types = parsed
     print(
         f"{county}: {rows[0]['source_format'] if rows else '?'} feed, {len(rows)} rows, "
         f"{len({r['race'] for r in rows})} races"
