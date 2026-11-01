@@ -20,8 +20,11 @@ enable JavaScript and cookies" page on 2026-11-01, including the site roots:
 - www.boe.ohio.gov (SOS-hosted BOE sites, e.g. Summit)
 - votehamiltoncountyohio.gov (Hamilton's own site, `cf-mitigated: challenge`)
 
-The challenge is IP-based. Requests came from an AWS IP (AS16509). From a
-residential connection the feed may load normally; that hasn't been tested.
+The challenge is NOT only for datacenter IPs. It was confirmed from an AWS IP
+(AS16509) and again from a residential Charter connection (AS12271), where
+`curl -sI` on Warren's summary XML also returned 403 from Cloudflare. It
+applies to any non-browser client. Scripted access is not possible from
+GitHub Actions or from a local machine.
 The block page asks visitors to contact the SOS office (1-877-767-6446) with
 the IP and reference ID to request access.
 
@@ -35,9 +38,18 @@ SOS host, so it is not a mirror for Nov 2026.
 |---|---|---|
 | Working | Cuyahoga | Enhanced Voting xlsx |
 | Working | Franklin | County-hosted ENR (liveresults.franklincountyohio.gov), election ID 4 |
-| Blocked | Warren, Butler, Summit, Hamilton | SOS ENR / SOS-hosted or Cloudflare-protected sites |
-| Reachable, no live feed found | Lake, Clermont | Post-election PDF/HTM only |
-| Not yet surveyed | 80 others | See counties.csv |
+| Blocked (SOS ENR confirmed) | Warren, Butler, Stark | County pages link liveresults.boe.ohio.gov |
+| Blocked (SOS-hosted or Cloudflare site; source likely SOS ENR) | Summit, Hamilton, Montgomery, Lucas, Greene, Portage | Not directly confirmed |
+| Reachable, no live feed found | Lake, Clermont, Lorain | Post-election PDF/HTM only |
+| BOE site not found by guessing | Mahoning, Delaware, Trumbull, Medina, Licking | Needs a manual lookup |
+| Not yet surveyed | 69 others | See counties.csv |
+
+It is NOT established that every non-working county uses the SOS feed. Only
+Warren, Butler and Stark are confirmed. A DNS check of 8 common hostname
+patterns (liveresults.<county>countyohio.gov etc.) across all 88 counties
+found no other county-hosted ENR besides Franklin; the other hits were
+wildcard DNS. Counties on another vendor or a differently named host would
+not show up in that check.
 
 Full per-county registry: `counties.csv` (88 rows).
 

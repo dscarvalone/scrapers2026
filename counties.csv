@@ -1,89 +1,89 @@
 county,status,platform,election_id,xml_url,csv_url,xml_ok,csv_ok,senate_race_name,vote_method_fields,generated_at,results_page,notes
-Adams,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Allen,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Ashland,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Ashtabula,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Athens,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Auglaize,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Belmont,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Brown,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Adams,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Allen,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Ashland,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Ashtabula,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Athens,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Auglaize,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Belmont,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Brown,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Butler,blocked,ohio_enr_sos,24 (unverified),https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.xml,https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.csv,n (403),n (403),,,,https://elections.bcohio.gov/data_and_resources/results.php,"County page embeds liveresults.boe.ohio.gov/widgets/butleroh/2026-11-03/ (SOS, blocked). livevoterturnout.com/Butler has only 2020 elections."
-Carroll,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Champaign,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Clark,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Carroll,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Champaign,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Clark,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Clermont,no_live_feed,county_pdf_htm,,,,,,,,,https://boe.clermontcountyohio.gov/election_results/index.php,Site reachable; PDF/HTM summaries posted after the fact. Election-night source not identified.
-Clinton,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Columbiana,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Coshocton,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Crawford,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Clinton,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Columbiana,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Coshocton,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Crawford,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Cuyahoga,working,enhanced_voting_xlsx,,https://app.enhancedvoting.com/cdn/results/6397b9a7-ccfa-406e-a155-6d2a595cf70d/All%20Results_6c376c4d-15e5-4aec-83b0-0e4cfeec59cb.xlsx,,y,,,Election Day; Early In-Person; Vote By Mail; Provisional; Post Election Day; Post VBM,,https://boe.cuyahogacounty.gov/,"Verified live 2026-11-01 (755 rows, sums match official totals). Post Election Day / Post VBM left unmapped pending county definition."
-Darke,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Defiance,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Delaware,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Erie,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Fairfield,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Fayette,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Darke,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Defiance,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Delaware,unknown,unknown,,,,,,,,,,BOE domain not resolved by guessing (delawareboe.org is a parked spam domain). Search hit: delco-gis.org 'Delaware County Election Results' (timed out from here).
+Erie,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Fairfield,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Fayette,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Franklin,working,ohio_enr_county_hosted,4,https://liveresults.franklincountyohio.gov/enr/franklinohenr/4/summary_4.xml,https://liveresults.franklincountyohio.gov/enr/franklinohenr/4/summary_4.csv,y,y,For U.S. Senator (UTE 1-3-29),EarlyVotingVotes; AbsenteeBallotsVotes; ElectionDayVotes; ProvisionalVotingVotes,2026-10-26T10:59:29.402-04:00,https://liveresults.franklincountyohio.gov/enr/franklinohenr/4/en/index_4.html,Verified live 2026-11-01. Not behind SOS Cloudflare. AbsenteeBallots mapped to Mail (assumption).
-Fulton,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Gallia,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Geauga,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Greene,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Guernsey,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Fulton,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Gallia,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Geauga,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Greene,blocked,unknown,,,,,,,,,https://www.greenecountyohio.gov/215/Board-of-Elections,Bing lists BOE on boe.ohio.gov (SOS); county site returns Cloudflare 'Attention Required'.
+Guernsey,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Hamilton,blocked,unknown,,,,,,,,,https://votehamiltoncountyohio.gov/,County site itself is behind a Cloudflare challenge (cf-mitigated: challenge).
-Hancock,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Hardin,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Harrison,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Henry,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Highland,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Hocking,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Holmes,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Huron,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Jackson,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Jefferson,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Knox,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Hancock,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Hardin,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Harrison,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Henry,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Highland,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Hocking,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Holmes,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Huron,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Jackson,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Jefferson,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Knox,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Lake,no_live_feed,county_pdf,,,,,,,,,https://www.lakecountyohio.gov/boe/election-results/,Site reachable; only post-election PDF summaries seen. Election-night source not identified.
-Lawrence,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Licking,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Logan,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Lorain,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Lucas,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Madison,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Mahoning,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Marion,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Medina,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Meigs,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Mercer,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Miami,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Monroe,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Montgomery,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Morgan,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Morrow,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Muskingum,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Noble,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Ottawa,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Paulding,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Perry,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Pickaway,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Pike,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Portage,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Preble,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Putnam,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Richland,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Ross,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Sandusky,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Scioto,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Seneca,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Shelby,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Stark,unknown,unknown,,,,,,,,,https://www.starkcountyohio.gov/government/offices/board_of_elections/index.php,Site reachable; results page not yet inspected.
+Lawrence,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Licking,unknown,unknown,,,,,,,,,,BOE domain not found (guessed domains do not resolve / 404).
+Logan,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Lorain,no_live_feed,county_pdf,,,,,,,,,https://www.voteloraincountyohio.gov/elections-results-search,County site (Wix) lists PDF results only; election-night source not identified (probably SOS ENR).
+Lucas,blocked,ohio_enr_sos (likely),,,,,,,,,https://co.lucas.oh.us/171/Board-of-Elections,Top search hit for county election-night results is the SOS 'Election Night Results' page. Not directly confirmed.
+Madison,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Mahoning,unknown,unknown,,,,,,,,,,"mahoningvotes.com redirects to BallotTrax (ballot tracking, not results). BOE results page not found."
+Marion,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Medina,unknown,unknown,,,,,,,,,,BOE domain not found (guessed domains do not resolve).
+Meigs,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Mercer,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Miami,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Monroe,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Montgomery,blocked,ohio_enr_sos (likely),,,,,,,,,https://montgomery.boe.ohio.gov/,"BOE site is SOS-hosted (boe.ohio.gov, per Bing 2026-11-01); unreachable from scripts."
+Morgan,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Morrow,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Muskingum,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Noble,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Ottawa,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Paulding,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Perry,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Pickaway,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Pike,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Portage,blocked,unknown,,,,,,,,,https://www.co.portage.oh.us/board-elections,County site behind Cloudflare challenge.
+Preble,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Putnam,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Richland,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Ross,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Sandusky,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Scioto,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Seneca,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Shelby,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Stark,blocked,ohio_enr_sos,"13 (seen on county page, unverified as Nov 2026)",https://liveresults.boe.ohio.gov/ENR/starkohenr/13/summary_13.xml,,,,,,,https://www.starkcountyohio.gov/government/offices/board_of_elections/election_results/index.php,"County results page links liveresults.boe.ohio.gov/ENR/starkohenr/13 (SOS, blocked). Official PDFs posted after the fact."
 Summit,blocked,unknown,,,,,,,,,https://www.boe.ohio.gov/summit/,"BOE site hosted on boe.ohio.gov (SOS), Cloudflare challenge."
-Trumbull,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Tuscarawas,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Union,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Van Wert,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Vinton,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Trumbull,unknown,unknown,,,,,,,,,,BOE domain not found (guessed domains do not resolve).
+Tuscarawas,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Union,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Van Wert,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Vinton,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
 Warren,blocked,ohio_enr_sos,18 (unverified),https://liveresults.boe.ohio.gov/ENR/warrenohenr/18/summary_18.xml,,n (403),,,,,https://www.votewarren.com/,SOS ENR serves Cloudflare JS challenge to datacenter IPs; election ID never verified.
-Washington,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Wayne,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Williams,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Wood,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
-Wyandot,not_surveyed,unknown,,,,,,,,,,"Not yet surveyed. Most Ohio counties publish via SOS ENR (liveresults.boe.ohio.gov), which is blocked from datacenter IPs."
+Washington,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Wayne,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Williams,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Wood,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
+Wyandot,not_surveyed,unknown,,,,,,,,,,Not yet surveyed; election-night source unknown.
