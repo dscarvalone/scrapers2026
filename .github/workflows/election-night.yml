@@ -72,6 +72,7 @@ jobs:
       # doesn't drop that county from the combined file.
       - name: Build Senate results
         if: steps.guard.outputs.run == 'true'
+        continue-on-error: true   # still commit county data if this step has a problem
         run: python -m common.senate
 
       - name: Commit changed results
