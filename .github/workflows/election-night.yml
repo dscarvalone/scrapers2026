@@ -1,4 +1,4 @@
-name: Cuyahoga results (election night)
+name: Election night results
 
 # Cron times are UTC. Ohio is on EST (UTC-5) on Nov 3, 2026.
 # Runs every 5 min from 6:00 PM ET Nov 3 through 7:55 AM ET Nov 4.
@@ -12,13 +12,18 @@ permissions:
   contents: write                # commit updated CSVs back to the repo
 
 concurrency:
-  group: cuyahoga-results
+  group: election-night
   cancel-in-progress: false
+
+env:
+  # Counties to scrape: each needs counties/<name>/scraper.py that writes
+  # counties/<name>/output/summary_wide_latest.csv
+  COUNTIES: "cuyahoga warren"
 
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       # The cron above would fire again every November; only run in 2026
       # unless started manually.
@@ -44,34 +49,56 @@ jobs:
         if: steps.guard.outputs.run == 'true'
         run: pip install -r requirements.txt
 
-      - name: Scrape
+      # One county failing (e.g. a changed URL) doesn't stop the others.
+      - name: Scrape counties
+        id: scrape
         if: steps.guard.outputs.run == 'true'
-        run: python -m counties.cuyahoga.scraper --precincts
+        run: |
+          failed=""
+          for c in $COUNTIES; do
+            echo "::group::$c"
+            extra=""
+            [ "$c" = "cuyahoga" ] && extra="--precincts"
+            if python -m counties.$c.scraper $extra; then
+              cp counties/$c/output/summary_wide_latest.csv counties/$c/data/summary_wide.csv
+            else
+              echo "::error::$c scraper failed"
+              failed="$failed $c"
+            fi
+            echo "::endgroup::"
+          done
+          echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
-      - name: Commit county summary if changed
+      - name: Commit changed results
         id: commit
         if: steps.guard.outputs.run == 'true'
         run: |
-          cp counties/cuyahoga/output/summary_wide_latest.csv counties/cuyahoga/data/summary_wide.csv
-          git add counties/cuyahoga/data/summary_wide.csv
+          git add counties/*/data/summary_wide.csv
           if git diff --cached --quiet; then
             echo "No change in results."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
+            changed=$(git diff --cached --name-only | cut -d/ -f2 | sort -u | tr '\n' ' ')
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Cuyahoga results update $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
+            git commit -m "Results update ($changed) $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
             git pull --rebase
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
-      # Precinct file is ~20 MB, so it's kept as a short-lived download rather
-      # than committed. Only uploaded when the results changed.
-      - name: Upload precinct results
-        if: steps.commit.outputs.changed == 'true'
+      # Cuyahoga's precinct file is ~20 MB, so it's kept as a short-lived
+      # download on the run rather than committed.
+      - name: Upload Cuyahoga precinct results
+        if: steps.commit.outputs.changed == 'true' && hashFiles('counties/cuyahoga/output/precincts_wide_latest.csv') != ''
         uses: actions/upload-artifact@v4
         with:
           name: cuyahoga-precincts-${{ github.run_number }}
           path: counties/cuyahoga/output/precincts_wide_latest.csv
           retention-days: 3
+
+      - name: Report failed counties
+        if: steps.scrape.outputs.failed != ''
+        run: |
+          echo "::error::Failed counties:${{ steps.scrape.outputs.failed }}"
+          exit 1

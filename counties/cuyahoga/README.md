@@ -23,7 +23,6 @@ Local runs write `output/<name>_latest.csv` plus a timestamped copy.
 
 ## Automation
 
-`.github/workflows/cuyahoga.yml` runs every 5 minutes from 6 PM ET Nov 3, 2026
-to 8 AM ET Nov 4. When results change it commits `data/summary_wide.csv` (the
-commit history is a timeline of the count) and attaches the precinct CSV to the
-run as a download for 3 days. Run it manually from the Actions tab.
+Runs on election night via `.github/workflows/election-night.yml`, which
+commits `data/summary_wide.csv` when results change and attaches the precinct
+CSV to the run as a download for 3 days.
