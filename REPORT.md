@@ -107,13 +107,28 @@ Butler's SOS ENR election ID for Nov 3, 2026 is 24 (confirmed: the page says
 November 3, 2026 and lists the Senate race). Warren's ID 18 returns 404, so
 it's not the current election.
 
-**Where it can run.** It needs a headed browser, so a desktop session, or
-`xvfb-run` on Linux. The workflow runs it under xvfb on GitHub Actions as an
-EXPERIMENTAL `continue-on-error` step. This is untested: Cloudflare may treat
-Actions' datacenter IPs more strictly. The fallback is running
-`python -m common.ohio_statewide && python -m common.senate` on the owner's
-Mac on election night (it works there today). Installing the browser in CI
-adds roughly 1-2 minutes per run.
+**Where it runs: the owner's Mac, not GitHub Actions.** A manual workflow
+run on 2026-11-01 confirmed that the statewide site blocks GitHub's runners
+even with a headed browser under xvfb (stuck on "Just a moment..."). From the
+owner's Mac it works in about 5 seconds. So:
+
+- `tools/statewide_loop.sh` runs on the Mac on election night. Every 5
+  minutes it fetches the county totals and, if they changed, commits and
+  pushes only `results/senate_statewide_by_county.csv`, pulling with rebase
+  first. It asks for a GitHub token once at startup and holds it only in
+  memory. It keeps the Mac awake with `caffeinate` and stops at 8 AM ET Nov 4.
+- The Actions workflow no longer tries the statewide site. Its combine step
+  reads the committed statewide file, so every bot run's
+  `results/senate_by_method_wide.csv` includes all 88 counties.
+
+Tested: a dry run against the live site, and the commit/rebase/push path
+against a local copy of the repo, including a bot commit landing in between
+and a no-change cycle that commits nothing. Not yet tested: pushing to
+GitHub itself.
+
+If the Mac is off or the loop stops, the 86 statewide-filled counties keep
+their last pushed totals (the `source_generated_at` timestamp shows how
+old they are).
 
 ## Vote-method mapping
 

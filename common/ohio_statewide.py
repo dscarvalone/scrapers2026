@@ -148,6 +148,16 @@ def parse(data: dict, fetched_at: str) -> list[dict]:
     return rows
 
 
+def unchanged(path: Path, rows: list[dict]) -> bool:
+    """True if `path` already holds the same numbers (ignoring fetched_at), so
+    a polling loop doesn't commit a new file every cycle."""
+    if not path.exists():
+        return False
+    key = lambda rs: [tuple(str(r[f]) for f in FIELDS if f != "fetched_at") for r in rs]
+    with path.open(encoding="utf-8") as f:
+        return key(list(csv.DictReader(f))) == key(rows)
+
+
 def write_csv(path: Path, rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8") as f:
@@ -174,11 +184,15 @@ def main(argv=None) -> int:
         (RAW_DIR / f"senate_county_{stamp}.json").write_text(json.dumps(data), encoding="utf-8")
 
     rows = parse(data, fetched_at)
-    write_csv(args.out, rows)
     reporting = sum(1 for r in rows if r["candidate"] == "Write-in" and r["precincts_reported"] not in ("", 0, "0"))
     total = sum(r["votes"] for r in rows)
-    print(f"Statewide U.S. Senate: 88 counties, {total:,} votes, {reporting} counties with "
-          f"precincts reporting -> {args.out}", file=sys.stderr)
+    summary = f"Statewide U.S. Senate: 88 counties, {total:,} votes, {reporting} counties with precincts reporting"
+    if unchanged(args.out, rows):
+        # fetched_at in the file is when these numbers were first seen.
+        print(f"{summary} (unchanged; {args.out} left as is)", file=sys.stderr)
+    else:
+        write_csv(args.out, rows)
+        print(f"{summary} -> {args.out}", file=sys.stderr)
     return 0
 
 

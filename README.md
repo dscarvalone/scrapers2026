@@ -62,6 +62,17 @@ python -m common.ohio_statewide           # writes results/senate_statewide_by_c
 python -m common.senate                   # merges it: "Not split by method" column
 ```
 
+That site blocks GitHub Actions, so on election night run the loop from a
+desktop, in a normal Terminal window:
+
+```bash
+tools/statewide_loop.sh                    # asks for a GitHub token once; every 5 min until 8 AM ET Nov 4
+DRY_RUN=1 ONCE=1 tools/statewide_loop.sh   # test: one fetch, no git writes
+```
+
+It commits and pushes only the statewide file. The workflow's combine step
+merges it on the next bot run. The token needs Contents: Read and write.
+
 See REPORT.md.
 
 ## Setup
