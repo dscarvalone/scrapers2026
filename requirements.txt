@@ -2,3 +2,4 @@ requests>=2.31
 beautifulsoup4>=4.12
 lxml>=5.0
 openpyxl>=3.1
+playwright==1.64.1  # common/ohio_statewide.py only; also run: python -m playwright install chromium

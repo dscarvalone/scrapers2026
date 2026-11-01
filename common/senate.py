@@ -51,9 +51,16 @@ METHOD_MAP = {
     # structure, not from a county definition; see REPORT.md.
     "Absentee Ballots": "Mail",
 }
+# Counties with no county-level scraper get their total from the statewide
+# SOS site (common/ohio_statewide.py), which has no method split. Their votes
+# go in this column so the wide file's total stays right and it's obvious the
+# split is missing.
+UNSPLIT = "Not split by method"
+STATEWIDE_CSV = RESULTS_DIR / "senate_statewide_by_county.csv"
+
 METHOD_ORDER = [
     "Election Day", "Early In-Person", "Mail",
-    "Absentee (early in-person + mail)", "Provisional",
+    "Absentee (early in-person + mail)", "Provisional", UNSPLIT,
 ]
 
 # Columns in a county's wide file that are not vote methods.
@@ -108,11 +115,50 @@ def county_rows(county: str, path: Path) -> list[dict]:
                 "precincts_reported": r.get("precincts_reported", ""),
                 "precincts_total": r.get("precincts_total", ""),
                 "source_generated_at": r.get("generated_at", ""),
+                "source": "county_feed",
             })
         if method_sum != int(r["total"] or 0):
             print(f"WARNING {county} / {name}: methods sum to {method_sum}, county total {r['total']}",
                   file=sys.stderr)
     return out
+
+
+def statewide_rows(path: Path, have: set[str]) -> tuple[list[dict], list[str]]:
+    """Long rows (method = UNSPLIT) for counties NOT in `have`, plus all
+    statewide rows (for cross_check)."""
+    rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    out = []
+    for r in rows:
+        county = r["county"].strip()
+        name = r["candidate"]
+        if name not in {v[0] for v in CANDIDATES.values()}:
+            raise RuntimeError(f"statewide: unexpected candidate {name!r}")
+        party = next(p for n, p in CANDIDATES.values() if n == name)
+        if county.lower() in have:
+            continue
+        out.append({
+            "county": county, "candidate": name, "party": party,
+            "method": UNSPLIT, "method_county_label": "(statewide total)",
+            "votes": int(r["votes"] or 0),
+            "precincts_reported": r["precincts_reported"], "precincts_total": r["precincts_total"],
+            "source_generated_at": r["fetched_at"], "source": "sos_statewide",
+        })
+    return out, rows
+
+
+def cross_check(long_rows: list[dict], statewide: list[dict]) -> list[str]:
+    feed: dict[tuple, int] = {}
+    for r in long_rows:
+        if r["source"] == "county_feed":
+            k = (r["county"].lower(), r["candidate"])
+            feed[k] = feed.get(k, 0) + r["votes"]
+    problems = []
+    for r in statewide:
+        k = (r["county"].strip().lower(), r["candidate"])
+        if k in feed and feed[k] != int(r["votes"] or 0):
+            problems.append(f"{r['county']} / {r['candidate']}: county feed {feed[k]}, "
+                            f"statewide {r['votes']}")
+    return problems
 
 
 def to_wide(long_rows: list[dict]):
@@ -127,7 +173,7 @@ def to_wide(long_rows: list[dict]):
         w = wide.setdefault(key, {
             "county": r["county"], "candidate": r["candidate"], "party": r["party"],
             "precincts_reported": r["precincts_reported"], "precincts_total": r["precincts_total"],
-            "source_generated_at": r["source_generated_at"],
+            "source_generated_at": r["source_generated_at"], "source": r["source"],
         })
         w[r["method"]] = w.get(r["method"], 0) + r["votes"]
     for w in wide.values():
@@ -135,8 +181,9 @@ def to_wide(long_rows: list[dict]):
             w.setdefault(m, "")  # blank = county doesn't report this method
         w["total"] = sum(v for m in methods if isinstance(v := w[m], int))
     fields = ["county", "candidate", "party", *methods, "total",
-              "precincts_reported", "precincts_total", "source_generated_at"]
-    return fields, list(wide.values())
+              "precincts_reported", "precincts_total", "source", "source_generated_at"]
+    return fields, sorted(wide.values(), key=lambda w: (w["county"], list(
+        n for n, _ in CANDIDATES.values()).index(w["candidate"])))
 
 
 def write_csv(path: Path, fields, rows):
@@ -151,6 +198,10 @@ def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--from-output", action="store_true", help="Read local output/summary_wide_latest.csv files")
     ap.add_argument("--out", type=Path, default=RESULTS_DIR)
+    ap.add_argument("--statewide", type=Path, default=STATEWIDE_CSV,
+                    help="Statewide county totals (from common.ohio_statewide); fills counties "
+                         "with no county scraper. Skipped if the file doesn't exist.")
+    ap.add_argument("--no-statewide", action="store_true", help="Use county feeds only")
     args = ap.parse_args(argv)
 
     rel = Path("output/summary_wide_latest.csv") if args.from_output else Path("data/summary_wide.csv")
@@ -167,15 +218,32 @@ def main(argv=None) -> int:
             failed.append(d.name)
             print(f"ERROR {d.name}: {e}", file=sys.stderr)
 
+    n_statewide = 0
+    if not args.no_statewide and args.statewide.exists():
+        have = {r["county"].lower() for r in long_rows}
+        try:
+            extra, statewide = statewide_rows(args.statewide, have)
+            for p in cross_check(long_rows, statewide):
+                print(f"WARNING county feed vs statewide: {p}", file=sys.stderr)
+            long_rows += extra
+            n_statewide = len({r["county"] for r in extra})
+        except Exception as e:
+            failed.append("statewide")
+            print(f"ERROR statewide: {e}", file=sys.stderr)
+
     write_csv(args.out / "senate_by_method.csv",
               ["county", "candidate", "party", "method", "method_county_label", "votes",
-               "precincts_reported", "precincts_total", "source_generated_at"], long_rows)
+               "precincts_reported", "precincts_total", "source", "source_generated_at"], long_rows)
     fields, wide = to_wide(long_rows)
     write_csv(args.out / "senate_by_method_wide.csv", fields, wide)
 
-    print(f"Senate results from {len(used)} counties: {', '.join(used) or 'none'}", file=sys.stderr)
+    print(f"Senate results by method from {len(used)} county feeds: {', '.join(used) or 'none'}",
+          file=sys.stderr)
+    if n_statewide:
+        print(f"Totals only (statewide site, no method split) for {n_statewide} more counties",
+              file=sys.stderr)
     if missing:
-        print(f"No data yet: {', '.join(missing)}", file=sys.stderr)
+        print(f"No county-feed data yet: {', '.join(missing)}", file=sys.stderr)
     return 1 if failed else 0
 
 

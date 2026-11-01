@@ -51,8 +51,18 @@ results/         # the deliverable
 | [Butler](counties/butler/) | Blocked, not scheduled | SOS-hosted ENR, Cloudflare challenge |
 
 The SOS-hosted feed (liveresults.boe.ohio.gov), which most Ohio counties use,
-serves a Cloudflare JavaScript challenge to datacenter IPs, including GitHub
-Actions. See REPORT.md.
+blocks scripts behind Cloudflare, and its vote-method files sit behind a
+Turnstile CAPTCHA. For the other 86 counties, `common/ohio_statewide.py`
+gets county **totals** (no method split) from the SOS statewide site using a
+headed Chromium:
+
+```bash
+python -m playwright install chromium     # once
+python -m common.ohio_statewide           # writes results/senate_statewide_by_county.csv
+python -m common.senate                   # merges it: "Not split by method" column
+```
+
+See REPORT.md.
 
 ## Setup
 

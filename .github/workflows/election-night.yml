@@ -71,6 +71,19 @@ jobs:
           done
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
 
+      # County TOTALS (no method split) for all 88 counties from the SOS
+      # statewide site. Needs a headed browser (headless is blocked by
+      # Cloudflare), hence xvfb. EXPERIMENTAL: untested on Actions, whose
+      # datacenter IPs Cloudflare may treat more strictly than a desktop.
+      # If it fails, the county scrapers above still run and commit.
+      - name: Statewide county totals (Ohio Decides)
+        id: statewide
+        if: steps.guard.outputs.run == 'true'
+        continue-on-error: true
+        run: |
+          python -m playwright install --with-deps chromium
+          xvfb-run -a python -m common.ohio_statewide
+
       # The deliverable: U.S. Senate results by vote method, all counties.
       # Uses each county's last good data/ file, so one failed scrape
       # doesn't drop that county from the combined file.

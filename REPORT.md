@@ -2,13 +2,17 @@
 
 ## Summary
 
-Two counties, Cuyahoga and Franklin, work live end to end and are scheduled
-for election night. They are Ohio's two largest counties. The rest of the plan
-is blocked: the Ohio Secretary of State's hosts, including the shared ENR
-results feed most counties use, serve a Cloudflare JavaScript challenge to
-datacenter IPs. Our egress and GitHub Actions runners are both datacenter
-IPs. The owner later waived the no-bypass rule. A real browser does get
-through, but no browser-based scraper exists yet (see "Browser access" below).
+- **By vote method:** 2 counties, Cuyahoga and Franklin (Ohio's two
+  largest), from county-hosted feeds that work with plain HTTP.
+- **Totals only, no method split:** the other 86 counties, from the SOS
+  statewide site via a headed browser (`common/ohio_statewide.py`).
+- **Not reachable:** the method split for those 86. It exists only in each
+  county's SOS ENR summary XML/CSV, which is behind a Cloudflare Turnstile
+  CAPTCHA.
+
+The SOS hosts serve a Cloudflare check to every non-browser client, from
+datacenter and residential IPs alike, and to headless browsers. The owner
+waived the no-bypass rule for a real browser. See "Browser access" below.
 
 ## What is blocked, and how it was confirmed
 
@@ -68,17 +72,48 @@ the SOS ENR is presumed, not verified per county.
 
 ### Browser access (owner waived the no-bypass rule on 2026-11-01)
 
-A real browser (the Kiro dashboard browser panel) gets through the Cloudflare
-check: liveresults.boe.ohio.gov returned genuine pages and genuine 404s, not
-the block page. So the SOS ENR is reachable by browser automation. It was not
-turned into a scraper here because:
-- the dashboard panel can't read XML content, and
-- the local `playwright-cli` Chromium crashes on launch in this sandbox.
+The owner waived the no-bypass rule for this. Self-imposed limits: a real,
+unmodified Chromium only; no stealth plugins, fingerprint spoofing or CAPTCHA
+solving; no more than 1 request per second per host. Findings with Playwright
+1.64.1 on a desktop (Charter residential IP), 2026-11-01:
 
-A Playwright-based fetcher for the SOS ENR summary XML is the remaining path
-to classes B, C and E. It would need testing from wherever it will run on
-election night. Cloudflare often treats headless browsers on datacenter
-IPs, such as GitHub Actions, more strictly than a desktop browser.
+| What | Headless Chromium | Headed Chromium |
+|---|---|---|
+| SOS ENR results page (`ENR/<county>ohenr/<id>/en/Index_<id>.html`) | Blocked ("Website Maintenance" page) | Loads (real page) |
+| SOS ENR summary XML/CSV (has the vote-method split) | Blocked | **Cloudflare Turnstile CAPTCHA**; doesn't clear. Stopped there. |
+| Statewide site, Ohio Decides (liveresults.ohiosos.gov) and its JSON API | Blocked | Loads; API returns live JSON |
+
+So with a headed browser:
+
+- **The vote-method split is not reachable** for the 86 counties without a
+  county-hosted feed. It exists only in each county's summary XML/CSV, which
+  is behind Turnstile. The county results page itself shows totals only, and
+  its vote-type "details" table is disabled in the HTML. (The page's own
+  details view would load the same Turnstile-protected XML.)
+- **County totals for all 88 counties are reachable** from Ohio Decides.
+  `common/ohio_statewide.py` loads the site and makes the same API call the
+  page makes for U.S. Senator, county level. That's two requests per run.
+  Output: `results/senate_statewide_by_county.csv`. `common/senate.py` uses it
+  to fill every county that has no county scraper, putting the votes in a
+  "Not split by method" column (`source` = sos_statewide). Where a county feed
+  exists it's cross-checked against the statewide total, with a warning on
+  mismatch (expected briefly on election night while the sites update).
+
+The statewide site lists three certified write-in candidates individually
+(Stephen Faris, Anthony Holliman, Timothy Telymonde). They are summed into
+"Write-in" to match county feeds; the breakdown is kept in `write_in_detail`.
+
+Butler's SOS ENR election ID for Nov 3, 2026 is 24 (confirmed: the page says
+November 3, 2026 and lists the Senate race). Warren's ID 18 returns 404, so
+it's not the current election.
+
+**Where it can run.** It needs a headed browser, so a desktop session, or
+`xvfb-run` on Linux. The workflow runs it under xvfb on GitHub Actions as an
+EXPERIMENTAL `continue-on-error` step. This is untested: Cloudflare may treat
+Actions' datacenter IPs more strictly. The fallback is running
+`python -m common.ohio_statewide && python -m common.senate` on the owner's
+Mac on election night (it works there today). Installing the browser in CI
+adds roughly 1-2 minutes per run.
 
 ## Vote-method mapping
 
