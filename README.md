@@ -40,3 +40,12 @@ python -m scrapers.cuyahoga --url <url>   # if the county posts a new file URL
 
 Output goes to `output/cuyahoga/` as `<name>_latest.csv` plus a timestamped copy
 per run.
+
+#### Election-night automation
+
+`.github/workflows/cuyahoga-election-night.yml` runs the scraper every 5 minutes
+from 6 PM ET on Nov 3, 2026 to 8 AM ET on Nov 4. Whenever results change, it
+commits `data/cuyahoga/summary_wide.csv` (so the commit history doubles as a
+timeline of results) and attaches the precinct CSV to that run as a download,
+kept for 3 days. Use the "Run workflow" button on the Actions tab to run it
+manually at any time.

@@ -1,0 +1,78 @@
+name: Cuyahoga results (election night)
+
+# Cron times are UTC. Ohio is on EST (UTC-5) on Nov 3, 2026.
+# Runs every 5 min from 6:00 PM ET Nov 3 through 7:55 AM ET Nov 4.
+on:
+  schedule:
+    - cron: "*/5 23 3 11 *"    # Nov 3, 6:00-6:55 PM ET
+    - cron: "*/5 0-12 4 11 *"  # Nov 3 7:00 PM ET -> Nov 4 7:55 AM ET
+  workflow_dispatch:             # "Run workflow" button for manual runs
+
+permissions:
+  contents: write                # commit updated CSVs back to the repo
+
+concurrency:
+  group: cuyahoga-results
+  cancel-in-progress: false
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      # The cron above would fire again every November; only run in 2026
+      # unless started manually.
+      - name: Year guard
+        id: guard
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ "$(date -u +%Y)" != "2026" ]; then
+            echo "run=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "run=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.guard.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.guard.outputs.run == 'true'
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        if: steps.guard.outputs.run == 'true'
+        run: pip install -r requirements.txt
+
+      - name: Scrape
+        if: steps.guard.outputs.run == 'true'
+        run: python -m scrapers.cuyahoga --precincts --out output/cuyahoga
+
+      - name: Commit county summary if changed
+        id: commit
+        if: steps.guard.outputs.run == 'true'
+        run: |
+          mkdir -p data/cuyahoga
+          cp output/cuyahoga/summary_wide_latest.csv data/cuyahoga/summary_wide.csv
+          git add data/cuyahoga/summary_wide.csv
+          if git diff --cached --quiet; then
+            echo "No change in results."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Cuyahoga results update $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
+            git pull --rebase
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      # Precinct file is ~20 MB, so it's kept as a short-lived download rather
+      # than committed. Only uploaded when the results changed.
+      - name: Upload precinct results
+        if: steps.commit.outputs.changed == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: cuyahoga-precincts-${{ github.run_number }}
+          path: output/cuyahoga/precincts_wide_latest.csv
+          retention-days: 3
