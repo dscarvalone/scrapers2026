@@ -30,6 +30,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import sys
 import time
 from datetime import datetime, timezone
@@ -90,6 +91,9 @@ def fetch_json(headless: bool = False, wait_s: int = 25) -> dict:
         from common.sos_browser import shared
         page = shared().tab_for(SITE)
         return _fetch_on_page(page, wait_s)
+    if os.environ.get("SOS_REQUIRE_WINDOW") == "1":   # set by tools/local_loop.sh: no pop-ups
+        raise RuntimeError("SOS Chrome window not open (run tools/sos_chrome.sh); statewide totals not "
+                           "fetched this cycle")
     print("SOS Chrome window not open; launching a temporary Chromium window "
           "(start tools/sos_chrome.sh to avoid this)", file=sys.stderr)
     from playwright.sync_api import sync_playwright  # optional dependency

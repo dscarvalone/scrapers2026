@@ -52,6 +52,9 @@ DRY_RUN="${DRY_RUN:-0}"
 ONCE="${ONCE:-0}"
 FILE="results/senate_statewide_by_county.csv"
 PY="${PY:-.venv/bin/python}"
+# Never pop up a temporary browser for the statewide fetch: without the SOS
+# Chrome window it logs a warning instead (common/ohio_statewide.py).
+export SOS_REQUIRE_WINDOW=1
 EXPORT_DIR="${EXPORT_DIR:-../exports}"
 BUILD_SHEET="${BUILD_SHEET:-1}"
 
@@ -103,12 +106,13 @@ caffeinate -dims -w $$ &
 
 log "Starting: every ${INTERVAL}s until $END ET$([ "$DRY_RUN" = 1 ] && echo ' (DRY RUN)')"
 while :; do
-  # 1. SOS-hosted county ENR feeds (vote-method split), via the Chrome window.
-  if curl -s --max-time 3 "http://127.0.0.1:${SOS_CDP_PORT:-9333}/json/version" >/dev/null; then
-    "$PY" -m tools.run_sos_counties || log "WARNING: some SOS counties failed (see above)."
-  else
-    log "WARNING: SOS Chrome window not open (run tools/sos_chrome.sh); skipping county ENR feeds."
-  fi
+  # 1. County scrapers that run locally: SOS ENR feeds and SOS-hosted PDFs (via
+  #    the Chrome window), plus Hamilton and Clermont (plain HTTP). If the
+  #    window is closed or a site shows a Cloudflare check, only that site's
+  #    counties are skipped; the rest still run.
+  curl -s --max-time 3 "http://127.0.0.1:${SOS_CDP_PORT:-9333}/json/version" >/dev/null \
+    || log "WARNING: SOS Chrome window not open (run tools/sos_chrome.sh); SOS counties will be skipped."
+  "$PY" -m tools.run_sos_counties || log "WARNING: some counties failed or were skipped (see above)."
   # 2. Statewide county totals (all 88, no method split).
   "$PY" -m common.ohio_statewide || log "ERROR: statewide fetch failed (see above)."
   # 2b. Before vs on Election Day: append the statewide snapshot (the time
