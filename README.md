@@ -97,6 +97,7 @@ agent sandbox. Keep the Mac plugged in and online.
 | ~8:30 PM, after the first absentee uploads | In a second Terminal tab: `.venv/bin/python -m tools.recheck_zero_reports --make-scrapers` | Lists every still-unknown SOS-hosted county as no_file / total_only / SPLIT, and writes scrapers for the SPLIT ones (the loop picks them up next cycle). Takes ~5 min |
 | ~9:30 PM | Run the recheck again, then commit the new scraper folders: `git add counties/ && git commit -m "Election-night recheck: new counties" && git push origin main` (or let the loop push on its next commit) | Catches counties that post later |
 | Any time | Spot-check `results/senate_by_method_wide.csv` on GitHub | `source` column: `county_feed` (by method) or `sos_statewide` (totals only) |
+| Any time | `.venv/bin/python -m tools.build_method_workbook ../exports` | Rebuilds the standalone vote-method sheet (`OH_Senate_2026_vote_method.xlsx` + one CSV per tab: votes_by_method, votes_long, sources). Re-import into the Google Sheet. Separate from the AP aggregator; joins on `county_fips` |
 | 8:00 AM Nov 4 | Loop and schedule stop on their own | |
 
 The recheck lists counties whose BOE site isn't SOS-hosted for a manual
