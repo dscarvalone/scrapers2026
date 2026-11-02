@@ -7,9 +7,10 @@
   breakdown. 7 run in Actions over plain HTTP; 14 (plus Allen) run in the
   local loop through the owner's Chrome window.
 - **Totals only, no method split: the other 67 counties,** from the SOS
-  statewide site (`common/ohio_statewide.py`). 9 of them are confirmed totals
-  only; 4 have a split we don't scrape yet; the rest are unknown until
-  election night.
+  statewide site (`common/ohio_statewide.py`). By past practice: 9 are
+  election-night candidates (Allen, 3 precinct-PDF counties, 5 likely
+  yes); 21 split only in the official canvass weeks later; 37 are
+  confirmed, likely or presumed totals only. See "History review" below.
 
 The SOS hosts serve a Cloudflare check to every non-browser client, from
 datacenter and residential IPs alike, and to headless browsers. The owner
@@ -108,11 +109,16 @@ still uses its own parser, with the order taken from the printed header.
 |---|---|---|
 | Itemized by method, scraper working | 21 | Cuyahoga, Franklin, Montgomery, Summit, Hamilton, Pickaway, Hocking (Actions); Butler, Carroll, Clark, Lucas, Stark, Warren, Licking, Miami, Erie, Madison, Preble, Paulding, Athens, Van Wert (local loop) |
 | Itemized, link appears on election night | 1 | Allen |
-| Split exists, not scraped | 4 | Putnam, Shelby, Highland (precinct PDFs), Jackson (scan) |
-| Confirmed totals only | 9 | Fairfield, Richland, Ashland, Holmes, Gallia, Meigs, Adams, Brown, Defiance |
-| Unknown, likely yes (past election-night report split) | 5 | Logan, Darke, Tuscarawas, Auglaize, Coshocton |
-| Unknown, possible (past official reports split) | 19 | Clermont, Lake, Columbiana, Champaign, Morgan, Sandusky, Belmont, Geauga, Ottawa, Noble, Ashtabula, Clinton, Fayette, Hardin, Huron, Vinton, Ross, Pike, Seneca |
-| Unknown, leaning no / no evidence | 29 | Greene, Wayne, Medina, Trumbull, Delaware, Lorain, Mahoning, Portage, Wood, Wyandot, Crawford, Jefferson, Scioto, Hancock, Perry, Knox, Mercer, Henry, Williams, Morrow, Guernsey, Lawrence, Monroe, Union, Fulton, Harrison, Marion, Muskingum, Washington |
+| Split in the Nov 3 file, precinct PDF only, not scraped | 3 | Putnam, Shelby, Highland |
+| Confirmed totals only (Nov 3 zero report) | 9 | Fairfield, Richland, Ashland, Holmes, Gallia, Meigs, Adams, Brown, Defiance |
+| Likely yes (past election-night report split) | 5 | Logan, Darke, Tuscarawas, Auglaize, Coshocton |
+| Split only in the official canvass, or only in some elections | 21 | Lake, Clermont, Medina, Columbiana, Ashtabula, Belmont, Champaign, Clinton, Fayette, Geauga, Hardin, Huron, Jackson, Morgan, Noble, Ottawa, Pike, Ross, Sandusky, Seneca, Vinton |
+| Likely no (no past report split) | 18 | Lorain, Mahoning, Wood, Wayne, Greene, Delaware, Trumbull, Crawford, Guernsey, Harrison, Jefferson, Lawrence, Marion, Monroe, Muskingum, Scioto, Washington, Wyandot |
+| No past results found to check | 10 | Fulton, Hancock, Henry, Knox, Mercer, Morrow, Perry, Union, Williams, Portage |
+
+Rows below the first two were revised by the history review of
+2026-11-01 late night (next section). Per-county verdicts and evidence:
+`counties.csv` columns `history_split` and `history_evidence`.
 
 Many SOS-hosted counties publish election-night results at
 `www.boe.ohio.gov/<county>/c/elecres/20261103results.pdf`, the same address
@@ -120,6 +126,47 @@ where the "past official" reports were found (the file is overwritten with
 the canvass later). So several "possible" counties may well post a split on
 election night. Rerunning the zero-report check on Nov 3 evening would
 settle them.
+
+### History review: did the unknown counties ever itemize? (2026-11-01 late night)
+
+Question: for the 66 counties without a scraper (Allen aside), has any past
+report (mainly Nov 4 2025 and May 5 2026) split votes by method? Sources:
+`tools/survey60_verdicts.json`, `tools/past_reports.json`, plus manual
+checks of the gaps those left: Lorain, Mahoning, Wood and Wayne documents
+fetched directly, and the scanned PDFs of Medina (May 2026), Greene (Nov 2025)
+and Delaware (Nov 2025) read page by page.
+
+**Main pattern: many counties itemize only in the official canvass**
+(certified "Summary with Group Detail", published about 2-3 weeks after the
+election), not in the election-night summary. If a late split is acceptable,
+these 21 counties become available around Nov 17-24.
+
+| `history_split` | # | Counties | Meaning for Nov 3 |
+|---|---|---|---|
+| `yes_election_night` | 1 | Allen | Scraper already waits for the link |
+| `yes_nov3_precinct_only` | 3 | Highland, Putnam, Shelby | Available on election night; needs a precinct-summing parser |
+| `likely_yes_election_night` | 5 | Auglaize, Coshocton, Darke, Logan, Tuscarawas | Past election-night reports split; recheck catches them |
+| `official_canvass_only` | 21 | Lake, Clermont, Medina, Columbiana, Ashtabula, Belmont, Champaign, Clinton, Fayette, Geauga, Hardin, Huron, Jackson, Morgan, Noble, Ottawa, Pike, Ross, Sandusky, Seneca, Vinton | Probably totals only on election night; split likely in the canvass |
+| `confirmed_no` | 9 | Adams, Ashland, Brown, Defiance, Fairfield, Gallia, Holmes, Meigs, Richland | Nov 3 zero report and past reports totals only |
+| `likely_no` | 18 | Lorain, Mahoning, Wood, Wayne, Greene, Delaware, Trumbull, Crawford, Guernsey, Harrison, Jefferson, Lawrence, Marion, Monroe, Muskingum, Scioto, Washington, Wyandot | No past report found with a split |
+| `no_history_found` | 10 | Fulton, Hancock, Henry, Knox, Mercer, Morrow, Perry, Union, Williams, Portage | Nothing to check (Portage's site returns 403) |
+
+Notes on the large counties:
+- Lake: official Group Detail split in every election checked (2024 general
+  through May 2026): Election Day / Election Day Paper / ABS By Mail /
+  Early Vote / Provisional.
+- Clermont: official summary with groups split in every election checked
+  (Mar 2024 through May 2026): Election Day / Absentee Mail / Absentee
+  In-Person / Provisional.
+- Medina: May 2026 official canvass split (Absentee / Early Voting /
+  Election Day / Provisional), but its Nov 3 zero report is TOTAL only.
+- Greene: even the FINAL official "Group Detail Report" shows counting
+  groups only in turnout; contests are Total only.
+
+Weak spots: Jefferson split once (May 2025) and is still filed as likely no.
+Marion's past reports are mostly scans and weren't read. Verdicts other than
+the hand-read scans come from text extraction of the first contest in each
+report.
 
 ### Past election reports for the 15 non-itemized large counties (2026-11-01)
 
