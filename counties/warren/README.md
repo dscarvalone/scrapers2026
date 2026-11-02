@@ -8,6 +8,10 @@ pass the new URL with `--url` or update `URL` in `scraper.py`.
 
 ## Output
 
+The scraper writes the whole feed to `output/` (local, git-ignored); the
+committed `data/summary_wide.csv` keeps only the U.S. Senate race
+(`tools/save_senate.py`).
+
 One row per race and contestant, with a column for each vote type: Election
 Day, Early Voting, Mail Ballots, Provisional, plus the total, percentage,
 winner flag, race-level over/under votes, precincts reported, and the feed's

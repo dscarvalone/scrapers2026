@@ -15,11 +15,11 @@ from __future__ import annotations
 
 import importlib
 import json
-import shutil
 import sys
 from pathlib import Path
 
 from common.ohio_enr import run
+from common.senate import save_senate_only
 
 ROOT = Path(__file__).resolve().parent.parent
 DISCOVERY = ROOT / "tools" / "enr_discovery.json"
@@ -54,7 +54,8 @@ def main(argv=None) -> int:
                 # e.g. Allen before its election-night link is posted
                 print(f"{f}: no data yet", file=sys.stderr)
                 continue
-            shutil.copyfile(latest, ROOT / "counties" / f / "data" / "summary_wide.csv")
+            # Commit the U.S. Senate race only (the scraper reads the whole feed).
+            save_senate_only(latest, ROOT / "counties" / f / "data" / "summary_wide.csv")
             ok.append(f)
         except (Exception, SystemExit) as e:
             # ChallengeNotCleared / RateLimited mean every later county will

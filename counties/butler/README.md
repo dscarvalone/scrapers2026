@@ -14,6 +14,10 @@ page's own setting names "Absentee Voting" as the mail vote).
 
 ## Output
 
+The scraper writes the whole feed to `output/` (local, git-ignored); the
+committed `data/summary_wide.csv` keeps only the U.S. Senate race
+(`tools/save_senate.py`).
+
 One row per race and choice with vote-type columns. The columns depend on
 which source was used (`source_format` says which):
 

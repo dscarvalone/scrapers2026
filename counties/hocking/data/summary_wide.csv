@@ -1,61 +1,6 @@
 race_id,race,contestant,party,write_in,Provisional,Election Day,Early Voting,Absentee,total,precincts_reported,precincts_total,generated_at,source_format
-01000000-9a88-e54e-7840-08df13f53342,Governor and Lieutenant Governor,Amy Acton and David Pepper,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-7840-08df13f53342,Governor and Lieutenant Governor,Don Kissick and James L. Mills,Lib,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-7840-08df13f53342,Governor and Lieutenant Governor,Vivek Ramaswamy and Robert A. McColley,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-7840-08df13f53342,Governor and Lieutenant Governor,Write-in,Non,True,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-d65f-08df13f53344,Attorney General,Keith Faber,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-d65f-08df13f53344,Attorney General,John J. Kulewicz,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-d928-08df13f53344,Auditor Of State,Annette Blackwell,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-d928-08df13f53344,Auditor Of State,Frank LaRose,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-da3c-08df13f53344,Secretary Of State,Tom Pruss,Lib,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-da3c-08df13f53344,Secretary Of State,Allison Russo,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-da3c-08df13f53344,Secretary Of State,Robert Sprague,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-dba9-08df13f53344,Treasurer Of State,Jay Edwards,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-dba9-08df13f53344,Treasurer Of State,Seth Walsh,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-dcb3-08df13f53344,Supreme Court Justice 1-1-27,Daniel R. Hawkins,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-dcb3-08df13f53344,Supreme Court Justice 1-1-27,Marilyn Zayas,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ddbe-08df13f53344,Supreme Court Justice 1-2-27,Jennifer Brunner,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ddbe-08df13f53344,Supreme Court Justice 1-2-27,Colleen O'Donnell,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
 01000000-9a88-e54e-deb9-08df13f53344,United States Senator,Sherrod Brown,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
 01000000-9a88-e54e-deb9-08df13f53344,United States Senator,Jon Husted,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
 01000000-9a88-e54e-deb9-08df13f53344,United States Senator,Greg Levy,candid,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
 01000000-9a88-e54e-deb9-08df13f53344,United States Senator,William B. Redpath,Lib,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
 01000000-9a88-e54e-deb9-08df13f53344,United States Senator,Write-in,Non,True,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e0e9-08df13f53344,Representative To Congress 2nd District,Jen Mazzuckelli,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e0e9-08df13f53344,Representative To Congress 2nd District,David J. Taylor,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e219-08df13f53344,State Senator 17th District,Brian A. Deer,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e219-08df13f53344,State Senator 17th District,Shane Wilkin,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e313-08df13f53344,State Representative 92nd District,Mark Johnson,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e313-08df13f53344,State Representative 92nd District,Sarah Senff,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e412-08df13f53344,Court Of Appeals 4th District,Todd L. Grace,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e412-08df13f53344,Court Of Appeals 4th District,Jayme Hartley Fountain,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e4b2-08df13f53344,Common Pleas Domestic/Juvenile and Probate Judge,Jonah M. Saving,Non,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e54b-08df13f53344,County Commissioner,Michael Schrader,Dem,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e54b-08df13f53344,County Commissioner,Tony Wheeler,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e658-08df13f53344,County Auditor,Christopher D. Robers,Rep,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e702-08df13f53344,State Issue 3,YES,Non,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e702-08df13f53344,State Issue 3,NO,Non,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e827-08df13f53344,Hocking County Scenic Hills Senior Center Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e827-08df13f53344,Hocking County Scenic Hills Senior Center Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,20,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e954-08df13f53344,Buchtel Village Current Expenses Additional Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e954-08df13f53344,Buchtel Village Current Expenses Additional Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e9c6-08df13f53344,Laurelville Village Current Expenses Renewal & Increase Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-e9c6-08df13f53344,Laurelville Village Current Expenses Renewal & Increase Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ea22-08df13f53344,Murray City Village Current Expenses Renewal Levy - 1,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ea22-08df13f53344,Murray City Village Current Expenses Renewal Levy - 1,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eab1-08df13f53344,Murray City Village Current Expenses Renewal Levy - 2,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eab1-08df13f53344,Murray City Village Current Expenses Renewal Levy - 2,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eb17-08df13f53344,Murray City Village Fire Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eb17-08df13f53344,Murray City Village Fire Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eb78-08df13f53344,Murray City Village Street Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-eb78-08df13f53344,Murray City Village Street Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ebd1-08df13f53344,Murray City Village Police Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ebd1-08df13f53344,Murray City Village Police Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ec3e-08df13f53344,Good Hope Township Fire Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ec3e-08df13f53344,Good Hope Township Fire Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ec98-08df13f53344,Laurel Township Road Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ec98-08df13f53344,Laurel Township Road Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ecfd-08df13f53344,Saltcreek Township Road Renewal Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ecfd-08df13f53344,Saltcreek Township Road Renewal Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,1,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ed66-08df13f53344,Falls Township Fire Renewal & Increase Levy,FOR THE TAX LEVY,Non,False,0,0,0,0,0,0,3,2026-10-30T17:55:37.4395158Z,enhanced_voting
-01000000-9a88-e54e-ed66-08df13f53344,Falls Township Fire Renewal & Increase Levy,AGAINST THE TAX LEVY,Non,False,0,0,0,0,0,0,3,2026-10-30T17:55:37.4395158Z,enhanced_voting

@@ -63,8 +63,9 @@ jobs:
           failed=""
           for c in $COUNTIES; do
             echo "::group::$c"
-            if python -m counties.$c.scraper; then
-              cp counties/$c/output/summary_wide_latest.csv counties/$c/data/summary_wide.csv
+            # Commit the U.S. Senate race only (the scraper reads the whole feed).
+            if python -m counties.$c.scraper && python -m tools.save_senate $c; then
+              :
             else
               echo "::error::$c scraper failed"
               failed="$failed $c"

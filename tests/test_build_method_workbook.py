@@ -140,3 +140,30 @@ def test_clermont_pick():
     # Election night: the summary, never the precinct report or the zero report
     assert pick([zero, *old, *night]).endswith("Unofficial Summary Group.pdf")
     assert pick(old) is None
+
+
+# --- Senate-only committed data -----------------------------------------
+
+def test_save_senate_only(tmp_path):
+    import csv
+    from common.senate import save_senate_only
+    src, dst = tmp_path / "latest.csv", tmp_path / "data.csv"
+    cols = ["race", "contestant", "Election Day", "total"]
+    def write(path, races):
+        with path.open("w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=cols)
+            w.writeheader()
+            for race, who in races:
+                w.writerow({"race": race, "contestant": who, "Election Day": 1, "total": 1})
+    write(src, [("Governor", "A"), ("U.S. Senator", "Sherrod Brown"), ("U.S. Senator", "Jon Husted"),
+                ("State Senator 7th District", "X")])  # a state senate race must not match
+    assert save_senate_only(src, dst) == 2
+    assert [r["contestant"] for r in csv.DictReader(dst.open())] == ["Sherrod Brown", "Jon Husted"]
+    # A feed with no U.S. Senate race is refused and the good file is kept.
+    write(src, [("Governor", "A")])
+    try:
+        save_senate_only(src, dst)
+        raise AssertionError("expected a refusal")
+    except RuntimeError:
+        pass
+    assert [r["contestant"] for r in csv.DictReader(dst.open())] == ["Sherrod Brown", "Jon Husted"]

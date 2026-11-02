@@ -125,6 +125,31 @@ NON_METHOD_COLS = {
 }
 
 
+def save_senate_only(src: Path, dst: Path) -> int:
+    """Copy a county's scraper output to its committed data file, keeping only
+    the U.S. Senate race (every row of that race, including Cuyahoga's ballots
+    cast / over / under rows). Raises, and leaves `dst` untouched, unless the
+    file holds exactly one U.S. Senate race. Returns the number of rows kept."""
+    with src.open(encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        fields = reader.fieldnames or []
+        rows = list(reader)
+    race_col = "office" if "office" in fields else "race"
+    keep = [r for r in rows if SENATE_RE.search(r.get(race_col) or "")]
+    races = {r[race_col] for r in keep}
+    if len(races) != 1:
+        raise RuntimeError(f"{src}: expected 1 U.S. Senate race, found {sorted(races) or 'none'}; "
+                           f"{dst} left as is")
+    tmp = dst.with_name(dst.name + ".tmp")
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    with tmp.open("w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=fields)
+        w.writeheader()
+        w.writerows(keep)
+    tmp.replace(dst)
+    return len(keep)
+
+
 def county_rows(county: str, path: Path) -> list[dict]:
     rows = list(csv.DictReader(path.open(encoding="utf-8")))
     if not rows:
