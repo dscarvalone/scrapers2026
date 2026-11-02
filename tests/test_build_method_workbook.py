@@ -205,3 +205,45 @@ def test_brown_husted_gate(tmp_path):
     # A write-in mismatch only warns: saved
     write([("Sherrod Brown", 5, 5, 10, ""), ("Jon Husted", 3, 4, 7, ""), ("Write-in", 1, 1, 1, "")])
     assert save_senate_only(src, dst) == 3
+
+
+# --- aggregator layout (tools/county_format.py) -------------------------
+
+def test_county_format_math():
+    from datetime import datetime
+    from common.timing import timing_rows, first_drop
+    from tools.build_method_workbook import vote_rows
+    from tools.county_format import county_rows
+    reg = [{"county": "Split", "county_fips": "39001"}, {"county": "Totals", "county_fips": "39007"},
+           {"county": "None", "county_fips": "39005"}]
+    wide, _ = vote_rows(reg, LONG)
+    snaps = (snap("2026-11-03T23:40:00+00:00", "Totals", {"Sherrod Brown": 70, "Jon Husted": 50}, 0)
+             + snap("2026-11-04T01:00:00+00:00", "Totals", {"Sherrod Brown": 100, "Jon Husted": 130}, 6))
+    tim = timing_rows(reg, LONG, first_drop(snaps))
+    statewide = {"Split": {"votes": {"dem": 157, "gop": 116, "breakout_2": 4, "other": 1},
+                           "precincts_reported": "3", "precincts_total": "12", "fetched_at": "2026-11-04T01:00:00+00:00"},
+                 "Totals": {"votes": {"dem": 100, "gop": 130}, "precincts_reported": "6", "precincts_total": "10",
+                            "fetched_at": "2026-11-04T01:00:00+00:00"},
+                 "None": {"votes": {}, "precincts_reported": "0", "precincts_total": "5",
+                          "fetched_at": "2026-11-04T01:00:00+00:00"}}
+    built = datetime(2026, 11, 3, 21, 0)
+    rows = county_rows(reg, wide, tim, {"Split": ("2026-11-03 20:55:00 EST", "local run")}, statewide, built)
+    st, n, s, t = rows  # Statewide first, then alphabetical: None, Split, Totals
+    assert [r["reporting_unit_name"] for r in rows] == ["Statewide", "None County", "Split County", "Totals County"]
+    # Split (itemized): Brown 100 eday + 30 evip + 20 vbm + 2 prov + 5 Post VBM = 157
+    assert s["total_votes"] == 157 + 116 + 4 + 1 and s["dem_votes"] == 157 and s["gop_votes"] == 116
+    assert s["dem_margin"] == 41 and s["two_way"] == round(157 / 273, 6)
+    assert s["eday_total_votes"] == 194 and s["eday_dem_margin"] == 10
+    assert s["early_dem_votes"] == 55  # evip 30 + vbm 20 + late mail 5
+    assert s["evip_total_votes"] == 40 and s["vbm_gop_votes"] == 15 and s["provisional_total_votes"] == 3
+    assert s["pct_eday"] == round(194 / 278, 6) and s["method_source"] == "itemized"
+    assert s["precincts_total"] == "2" and "precincts from the SOS statewide site" not in s["notes"]  # feed has them
+    assert s["latest_data_as_of"] == datetime(2026, 11, 3, 20, 55)
+    # Totals (first-drop estimate): early 70/50, eday 30/80; no evip/vbm/provisional
+    assert t["method_source"] == "first_drop" and t["early_dem_votes"] == 70 and t["eday_gop_votes"] == 80
+    assert t["evip_total_votes"] == "" and t["provisional_total_votes"] == ""
+    assert t["pct_precincts_in"] == 0.6 and t["reporting_status"] == "Reporting In Progress"
+    assert n["reporting_status"] == "Not Started" and n["method_source"] == "totals_only"
+    # Statewide row: toplines over all counties, precincts from the statewide site
+    assert st["total_votes"] == 278 + 230 and st["precincts_total"] == 27 and st["pct_eday"] == ""
+    assert st["eday_total_votes"] == 194 + 110

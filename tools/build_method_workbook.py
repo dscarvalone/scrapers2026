@@ -40,6 +40,7 @@ from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import Font, PatternFill
 
 from common import senate, timing
+from tools import county_format
 # Method buckets, candidate -> party column, and party columns are shared with
 # the timing model (common/timing.py) so the tabs always agree.
 from common.timing import BUCKET, CAND_COL, PARTY_COLS
@@ -276,7 +277,14 @@ ABOUT = [
     ("Purpose", "Ohio 2026 U.S. Senate results by vote method, from county sources scraped by "
                 "dscarvalone/scrapers2026. Separate from the AP-based county aggregator; join on county_fips."),
     ("Built at", None),
-    ("votes_by_timing (main tab)", "Before vs on Election Day for all 88 counties. pre_eday = early in-person "
+    ("county_results (main tab)", "Same column names, order and definitions as the AP county aggregator's "
+                                  "county_raw tab (its model columns exp_*, turnout, history and demographics "
+                                  "are left out). Statewide row first, then 88 counties. method_source: "
+                                  "itemized (county's own split; toplines from the same feed), first_drop "
+                                  "(eday/early ESTIMATED, toplines from the SOS statewide site), totals_only. "
+                                  "early = everything cast before Election Day. Statewide method columns sum "
+                                  "only the counties that report that method; pct_<method> left blank there."),
+    ("votes_by_timing", "Before vs on Election Day for all 88 counties. pre_eday = early in-person "
                                    "+ mail (incl. late-arriving mail); eday = Election Day; provisional kept "
                                    "separate (cast on Election Day or during early voting); unclassified = "
                                    "timing unknown. pre_eday_share_2way = pre_eday / (pre_eday + eday). "
@@ -370,8 +378,14 @@ def main(argv=None) -> int:
         if r["timing_source"] == "itemized" and r["county"] in fetched:
             r["as_of"] = fetched[r["county"]][0]
     sources = source_rows(reg)
-    built = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M %Z")
+    built_dt = datetime.now(ZoneInfo("America/New_York")).replace(tzinfo=None, microsecond=0)
+    built = built_dt.strftime("%Y-%m-%d %H:%M ET")
+    results = county_format.county_rows(reg, wide, timing_rows, fetched,
+                                        county_format.statewide_by_county(), built_dt)
 
+    write_csv(args.out_dir / "county_results.csv", county_format.COLUMNS,
+              [{k: (v.strftime("%Y-%m-%d %H:%M:%S") if isinstance(v, datetime) else v) for k, v in r.items()}
+               for r in results])
     write_csv(args.out_dir / "votes_by_timing.csv", timing.TIMING_COLS, timing_rows)
     write_csv(args.out_dir / "votes_by_method.csv", VOTE_COLS, wide)
     write_csv(args.out_dir / "votes_long.csv", TIDY_COLS, tidy)
@@ -380,6 +394,26 @@ def main(argv=None) -> int:
     wb = openpyxl.Workbook()
     wb.remove(wb.active)
     n = len(wide) + 1
+    # Main tab: the aggregator's county_raw layout (same column names/order).
+    ws = add_tab(wb, "county_results", county_format.COLUMNS, results, {"C": 20, "D": 22, "E": 18, "F": 18},
+                 freeze="H2")
+    for col_idx, name in enumerate(county_format.COLUMNS, start=1):
+        if name.endswith("_votes") or name.endswith("_margin") or name in ("precincts_reported", "precincts_total"):
+            fmt = "#,##0"
+        elif name.endswith("_share") or name.endswith("two_way") or name.startswith("pct_"):
+            fmt = "0.0%"
+        elif name in ("latest_data_as_of", "refreshed_sheet_as_of"):
+            fmt = "m/d/yyyy h:mm AM/PM"
+        else:
+            continue
+        for row in range(2, len(results) + 2):
+            ws.cell(row, col_idx).number_format = fmt
+    ws["C2"].font = Font(bold=True)  # Statewide row
+    src_col = openpyxl.utils.get_column_letter(county_format.COLUMNS.index("method_source") + 1)
+    last = len(results) + 1
+    for val, color in (("itemized", "D9EAD3"), ("first_drop", "FFF2CC"), ("totals_only", "EFEFEF")):
+        ws.conditional_formatting.add(f"{src_col}2:{src_col}{last}", FormulaRule(
+            formula=[f'${src_col}2="{val}"'], fill=PatternFill("solid", fgColor=color)))
     ws = add_tab(wb, "votes_by_timing", timing.TIMING_COLS, timing_rows,
                  {"B": 12, "C": 13, "D": 24, "G": 12, "H": 12, "I": 70})
     green, amber, grey = (PatternFill("solid", fgColor=c) for c in ("D9EAD3", "FFF2CC", "EFEFEF"))
