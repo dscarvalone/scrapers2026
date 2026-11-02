@@ -23,5 +23,9 @@ python -m counties.warren.scraper --long       # one row per vote type
 
 ## Automation
 
-Runs on election night via `.github/workflows/election-night.yml`, which
-commits `data/summary_wide.csv` when results change.
+The SOS host blocks scripts and GitHub Actions, so this county does **not**
+run in the Actions workflow. On election night `tools/local_loop.sh` runs it
+(via `tools/run_sos_counties.py`) through the Chrome window opened by
+`tools/sos_chrome.sh`, and commits `data/summary_wide.csv` when results
+change. Verified against the live feed on 2026-11-01. Status of all
+counties: [COUNTIES.md](../../COUNTIES.md).

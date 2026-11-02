@@ -1,4 +1,12 @@
-# Status report (interim, 2026-11-01)
+# Research log (2026-11-01)
+
+> **This is a dated log of how the current setup was reached, not the
+> current status.** For what each county has today, see
+> [COUNTIES.md](COUNTIES.md) (generated from `counties.csv`); for how to run
+> things, see [README.md](README.md). Older entries below are kept as
+> written. Where they conflict with COUNTIES.md (e.g. "Working: Cuyahoga and
+> Franklin", "Warren/Butler blocked"), COUNTIES.md is current. The newest
+> entries are "History review" and "Survey of the remaining 60 counties".
 
 ## Summary
 
@@ -40,8 +48,9 @@ SOS host, so it is not a mirror for Nov 2026.
 
 ## Counties
 
-Working: Cuyahoga (Enhanced Voting xlsx) and Franklin (county-hosted ENR,
-election ID 4). All 88 counties are classified in the canonical access list
+*(Early-afternoon entry; superseded. 21 counties are itemized now; see
+COUNTIES.md.)* Working at that point: Cuyahoga (Enhanced Voting xlsx) and
+Franklin (county-hosted ENR, election ID 4). All 88 counties are classified in the canonical access list
 below. A DNS check of 8 common hostname patterns across all 88 also found
 no other county-hosted ENR besides Franklin.
 

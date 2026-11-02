@@ -1,76 +1,62 @@
 # scrapers2026
 
-Goal: **2026 U.S. Senate (Ohio) results by county, itemized by vote method.**
+Goal: **2026 U.S. Senate (Ohio) results by county, split by vote method**
+(Election Day, early in-person, mail, provisional), for all 88 counties.
 
-The combined result lives in `results/`:
+## Start here
 
-- `senate_by_method_wide.csv`: one row per county and candidate, a column per
-  vote method, plus total and precincts reported
-- `senate_by_method.csv`: the same data with one row per county, candidate and
-  method, including each county's original label for the method
+- **Which counties have what:** [COUNTIES.md](COUNTIES.md), all 88 counties
+  with where each one's vote-method split comes from, where its scraper runs,
+  how its labels map, and the evidence behind each verdict. In short: 21
+  counties are scraped by vote method, Allen joins when it posts, 8 more might
+  split on election night, 21 split only in the official canvass weeks later,
+  and the rest are totals only.
+- **Election night:** the [runbook](#election-night-runbook-nov-3-2026-times-et) below.
+- **How we got here (research log):** [REPORT.md](REPORT.md), dated entries.
+  Where an older entry disagrees with COUNTIES.md, COUNTIES.md is current.
 
-Each county's scraper pulls that county's full results feed; `common/senate.py`
-extracts the Senate race and maps vote methods to common names:
+Every county has Senate **totals** from the SOS statewide site. The work in
+this repo is about the vote-method **split**, which only county sources have.
 
-| Common method | County labels |
-|---|---|
-| Election Day | Election Day |
-| Early In-Person | Early In-Person (Cuyahoga), Early Voting (ENR XML/CSV, incl. Franklin) |
-| Mail | Vote By Mail (Cuyahoga), Mail Ballots (ENR XML), Absentee Ballots (Franklin; assumed to be mail, see REPORT.md) |
-| Absentee (early in-person + mail) | Absentee (ENR CSV; not split by the county) |
-| Provisional | Provisional |
-| Post Election Day, Post VBM | Cuyahoga only, kept as reported |
+## Where things are
 
-A blank cell means that county doesn't report that method. Build it locally with
-`python -m common.senate` (or `--from-output` after running scrapers locally).
-
-## Layout
-
-```
-counties/
-  <county>/
-    scraper.py   # the scraper for that county
-    README.md    # source, output format, notes
-    data/        # results committed by automation (tracked)
-    output/      # local run output (git-ignored)
-common/
-  ohio_enr.py    # shared parser for Ohio's liveresults.boe.ohio.gov feed (XML or CSV)
-  senate.py      # combines all counties into results/ (Senate race by vote method)
-results/         # the deliverable
-.github/workflows/
-  election-night.yml  # runs every county every 5 min on election night
-```
-
-## Counties
-
-| County | Status | Source |
+| What | Where | Notes |
 |---|---|---|
-| [Cuyahoga](counties/cuyahoga/) | Working live, scheduled | Enhanced Voting Excel export |
-| [Franklin](counties/franklin/) | Working live, scheduled | County-hosted ENR (liveresults.franklincountyohio.gov), XML then CSV |
-| [Warren](counties/warren/) | Blocked, not scheduled | SOS-hosted ENR, Cloudflare challenge |
-| [Butler](counties/butler/) | Blocked, not scheduled | SOS-hosted ENR, Cloudflare challenge |
+| Per-county registry (machine-readable) | `counties.csv` | One row per county: FIPS, BOE site, platform, feed URLs, status, `history_split` verdict and evidence. Source for COUNTIES.md |
+| Per-county status (human-readable) | `COUNTIES.md` | Generated: `python -m tools.make_counties_md` |
+| One county's scraper | `counties/<county>/scraper.py` | Writes `output/summary_wide_latest.csv` (git-ignored) and `data/summary_wide.csv` (committed on change) |
+| Combined Senate results | `results/senate_by_method.csv`, `results/senate_by_method_wide.csv` | Built by `python -m common.senate` from every `counties/*/data/` file plus the statewide totals. The Actions bot rebuilds them on election night |
+| Statewide county totals (all 88, no split) | `results/senate_statewide_by_county.csv` | `python -m common.ohio_statewide` (headed Chromium; local only, blocked in Actions) |
+| Vote-label → method mapping | `common/senate.py` (`METHOD_MAP`, `EV_METHOD_MAP`) and the Buckets column of COUNTIES.md | Assumptions and unmapped labels are listed per county in COUNTIES.md |
+| Shared parsers | `common/` | `ohio_enr.py` (Ohio ENR XML/CSV), `enhanced_voting.py`, `clarity.py`, `pdf_results.py` (PDF layouts), `sos_browser.py` (reads SOS files through a real Chrome window), `ohio_statewide.py` |
+| Research outputs | `tools/*.json` | `survey60_verdicts.json` and `past_reports.json` (past-report checks, with document URLs and excerpts), `county_survey.json` (site crawl), `enr_discovery.json` (SOS ENR election IDs), `clarity_probe.json` |
+| Research and election-night tools | `tools/*.py`, `tools/*.sh` | `local_loop.sh` (election-night loop), `sos_chrome.sh`, `recheck_zero_reports.py`, `make_pdf_scraper.py`, `make_sos_scrapers.py`, `discover_enr.py`, `survey_counties.py`, `past_reports.py`, `build_method_workbook.py`, `make_counties_md.py` |
+| GitHub Actions schedule | `.github/workflows/election-night.yml` | Scrapes the 7 counties reachable from Actions every 5 min (6 PM Nov 3 to 8 AM Nov 4 ET) and rebuilds `results/` |
+| Tests | `tests/` | `python -c "import tests.test_build_method_workbook as t; t.test_buckets()"` (pytest not required) |
 
-The SOS-hosted feed (liveresults.boe.ohio.gov), which most Ohio counties use,
-blocks scripts behind Cloudflare, and its vote-method files sit behind a
-Turnstile CAPTCHA. For the other 86 counties, `common/ohio_statewide.py`
-gets county **totals** (no method split) from the SOS statewide site using a
-headed Chromium:
+**Not in git, on purpose:**
 
-```bash
-python -m playwright install chromium     # once
-python -m common.ohio_statewide           # writes results/senate_statewide_by_county.csv
-python -m common.senate                   # merges it: "Not split by method" column
-```
+| What | Where | Why |
+|---|---|---|
+| Vote-method workbook for the Google Sheet (`OH_Senate_2026_vote_method.xlsx` + `votes_by_method.csv`, `votes_long.csv`, `sources.csv`) | `../exports/` next to the clone on the loop machine | Rebuilt every loop cycle by `python -m tools.build_method_workbook ../exports`; anyone can rebuild it from the repo. Kept separate from the AP-based county aggregator; joins on `county_fips` |
+| Each scraper run's timestamped files | `counties/*/output/` | Run history; only `data/summary_wide.csv` is committed |
+| Past result PDFs used as evidence | The county and SOS URLs recorded in `tools/past_reports.json` and `tools/survey60_verdicts.json` | Public documents; SOS-hosted ones need a real browser to download |
+| SOS Chrome profile | `~/.scrapers2026-chrome` | Browser state for `tools/sos_chrome.sh` |
+| GitHub token | Typed into `tools/local_loop.sh` at start, held in memory only | Never written to disk or git config |
 
-Some SOS-hosted counties do publish the vote-method split in their ENR
-summary XML. Those files load in an ordinary Chrome window but not for
-scripts, so `common/sos_browser.py` reads them through a Chrome window you
-open (`tools/sos_chrome.sh`). `tools/discover_enr.py` found each such
-county's Nov 3 election ID (`tools/enr_discovery.json`), and
-`tools/make_sos_scrapers.py` generated their `counties/<name>/` scrapers.
+## Why some counties run on a Mac, not in Actions
 
-The SOS sites block GitHub Actions, so on election night run the local loop
-from a desktop, in a normal Terminal window:
+The SOS-hosted sites (liveresults.boe.ohio.gov, www.boe.ohio.gov,
+liveresults.ohiosos.gov) put a Cloudflare challenge in front of every script,
+headless browser and GitHub runner, and their vote-method files sit behind a
+Turnstile check. The repo owner waived the no-bypass rule for a real browser:
+`tools/sos_chrome.sh` opens an ordinary Chrome window, and
+`common/sos_browser.py` reads SOS files through it (same-origin fetch over
+the Chrome DevTools port, 3 s apart). So the SOS ENR counties, the PDF
+counties and the statewide totals run in `tools/local_loop.sh` on the owner's
+Mac, which commits and pushes them every 5 minutes. Counties on other hosts
+(Cuyahoga, Franklin, Hamilton, Montgomery, Summit, Pickaway, Hocking) run in
+Actions.
 
 ```bash
 tools/sos_chrome.sh                      # opens the SOS Chrome window; leave it open
@@ -78,10 +64,10 @@ tools/local_loop.sh                      # asks for a GitHub token once; every 5
 DRY_RUN=1 ONCE=1 tools/local_loop.sh     # test: one cycle, no git writes
 ```
 
-Each cycle runs the SOS county scrapers (`python -m tools.run_sos_counties`)
-and the statewide fetch, then commits and pushes only those files. The
-workflow's combine step merges everything on the next bot run. The token
-needs Contents: Read and write.
+Each cycle: SOS and PDF county scrapers (`python -m tools.run_sos_counties`),
+statewide totals, commit and push only those files, pull the bot's commits,
+then rebuild the vote-method workbook. The token needs Contents: Read and
+write.
 
 ## Election night runbook (Nov 3, 2026, times ET)
 
@@ -148,4 +134,13 @@ to run it manually.
 2. If the county uses Ohio's liveresults.boe.ohio.gov feed, the scraper is just
    its URL(s) plus a call to `common.ohio_enr.run` (see `counties/warren/` or
    `counties/butler/`). Both the summary XML and CSV are supported.
-3. Add the name to `COUNTIES` in the workflow.
+3. If its source is reachable from GitHub Actions, add the name to `COUNTIES`
+   in the workflow. If it needs the SOS Chrome window, `tools/local_loop.sh`
+   runs it instead (through `tools/run_sos_counties.py`): SOS-hosted ENR
+   counties are picked up from `tools/enr_discovery.json` (generate the
+   scraper with `tools/make_sos_scrapers.py`); any other scraper declares
+   `NEEDS_LOCAL_CHROME = True` (e.g. PDFs on www.boe.ohio.gov, generated by
+   `tools/make_pdf_scraper.py`).
+4. Update the county's row in `counties.csv` (status `working`, platform,
+   results page), add its label mapping to `SCRAPED` in
+   `tools/build_method_workbook.py`, then run `python -m tools.make_counties_md`.

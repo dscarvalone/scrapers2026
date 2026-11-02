@@ -8,8 +8,9 @@ The scraper tries, in order:
 1. `https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.xml`
 2. `https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/summary_24.csv`
 
-Both URLs follow the platform's pattern (as seen for Warren) but haven't been
-checked against the live site yet. `24` is the election ID.
+`24` is the election ID. The XML was verified against the live site on
+2026-11-01 (Early Voting, Absentee Voting, Election Day, Provisional; the ENR
+page's own setting names "Absentee Voting" as the mail vote).
 
 ## Output
 
@@ -33,5 +34,8 @@ python -m counties.butler.scraper --long       # one row per vote type
 
 ## Automation
 
-Runs on election night via `.github/workflows/election-night.yml`, which
-commits `data/summary_wide.csv` when results change.
+The SOS host blocks scripts and GitHub Actions, so this county does **not**
+run in the Actions workflow. On election night `tools/local_loop.sh` runs it
+(via `tools/run_sos_counties.py`) through the Chrome window opened by
+`tools/sos_chrome.sh`, and commits `data/summary_wide.csv` when results
+change. Status of all counties: [COUNTIES.md](../../COUNTIES.md).
