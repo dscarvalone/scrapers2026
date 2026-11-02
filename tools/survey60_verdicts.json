@@ -1,0 +1,699 @@
+{
+ "Adams": {
+  "county": "Adams",
+  "evidence": "Zero report candidate rows: 'Candidate | Party | Total' (Election Day/Absentee/Provisional only in turnout header). Nov 2025 report also 'Candidate | Party | Total'.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/adams/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Ashland": {
+  "county": "Ashland",
+  "evidence": "Nov 3 ZERO REPORT: 'Amy Acton and David Pepper (D) 0 0% ... 0Total Votes'; May 2026 and Nov 2025 results also single total column",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/ashland/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Ashtabula": {
+  "county": "Ashtabula",
+  "evidence": "Nov 3 2026 zero report (20261103results.pdf, 'Unofficial Results') is TOTAL VOTE % only; May 2026 official: 'Provisional Absentee Early Voting Election Day TOTAL ... Amy Acton 5,202 4,016 751 414 20'. Nov 2025/May 2025 official total-only.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/ashtabula/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Early Voting",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Athens": {
+  "county": "Athens",
+  "evidence": "Unofficial Results | Governor and Lieutenant Governor | TOTAL Election Day | Absentee Mail Out | Absentee In Office | Provisional | Dem Amy Acton and David Pepper 0 0 0 0 0",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/athens/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee Mail Out",
+   "Absentee In Office",
+   "Provisional"
+  ]
+ },
+ "Auglaize": {
+  "county": "Auglaize",
+  "evidence": "Unofficial Canvass | Final Results ... TOTAL Polling Place | Mail Absentee | Early Voting Absentee | Provisional | FOR THE TAX LEVY 1 1 0 0 0 (May 2026 official results also split: Election Day / Absentee Office / Absentee Mail / Provisional). Nov 3 2026 links listed but all 404.",
+  "lean": "likely_yes",
+  "source": "https://www.boe.ohio.gov/auglaize/c/elecres/20260505overlap.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Polling Place",
+   "Mail Absentee",
+   "Early Voting Absentee",
+   "Provisional"
+  ]
+ },
+ "Belmont": {
+  "county": "Belmont",
+  "evidence": "Nov 3 2026 zero report (20261103results.pdf) is total-only: 'Candidate | Party | Total | Keith Faber | REP | 0'. May 5 2026 report (dated 5/14/2026) split: 'Candidate | Party | Election Day | Absentee | Provisional | Total | For the Tax Levy | 848 | 619'. Nov 4 2025 and May 6 2025 reports total-only.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/belmont/c/elecres/20260505results.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Brown": {
+  "county": "Brown",
+  "evidence": "Zero report: 'Amy Acton and David Pepper (D) 0 0%' total+pct only; May 2026 'Vivek Ramaswamy ... 3,754 68.37%' total-only.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/brown/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Champaign": {
+  "county": "Champaign",
+  "evidence": "Nov 2025: 'Mary Ann Collier | 1018 | 58.64% | 50 | 692 | 272 | 4' under EV/PR headers; but Nov 3 2026 zero report and May 2025/May 2026 results are Votes/Vote% only",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/champaign/c/elecres/20251104results.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "EV",
+   "PR"
+  ]
+ },
+ "Clinton": {
+  "county": "Clinton",
+  "evidence": "Nov 3 2026 'Unofficial Canvass Summary Report - Zero Report' is 'Choice Votes ... Total 0' only; past results: 'Choice Votes AB ED EV PR ... YES 2020 60 1503 445 12' (May 2025; also May 2026, Nov 2025).",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/clinton/c/elecres/20250506results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "AB",
+   "ED",
+   "EV",
+   "PR"
+  ]
+ },
+ "Coshocton": {
+  "county": "Coshocton",
+  "evidence": "May 5 2026 unofficial: DEM Governor | Provisional Election Day Absentee TOTAL | Amy Acton and David Pepper 1,148 534 614 0 (Nov 4 2025 absentee-only upload was total-only; no Nov 3 2026 doc yet, 'Nov 3 2026 info' link points to the 2024 page)",
+  "lean": "likely_yes",
+  "source": "https://www.coshocton.boe.ohio.gov/wp-content/uploads/sites/5/2026/05/May-5th-2026-Unofficial-Results-23-of-23-Precincts-Reporting.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Crawford": {
+  "county": "Crawford",
+  "evidence": "UNOFFICIAL RESULTS ... Governor and Lieutenant Governor | Vote For 1 | TOTAL VOTE % | Amy Acton and David Pepper 1,244 100.00% (all past unofficial/official reports total-only; no Nov 3 2026 results doc, only FWAB notices)",
+  "lean": "leaning_no",
+  "source": "https://crawfordcountyohioboe.gov/wp-content/uploads/Unofficial-Summary-Report-5-5-2026.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Darke": {
+  "county": "Darke",
+  "evidence": "Nov 4 2025 'General Election | Results': 'TOTAL VOTE % Polling Place | Mail Absentee | Early Voting Absentee | Provisional | REP Doug Schmidt 1,433 100.00% 1,011 50 369 3'. Nov 3 2026 links listed but 404.",
+  "lean": "likely_yes",
+  "source": "https://www.boe.ohio.gov/darke/c/elecres/20251104results.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Polling Place",
+   "Mail Absentee",
+   "Early Voting Absentee",
+   "Provisional"
+  ]
+ },
+ "Defiance": {
+  "county": "Defiance",
+  "evidence": "Zero report: 'Vivek Ramaswamy and Robert A. McColley (R) 0 0%'; May 2026 'Amy Acton & David Pepper 1,573 100.00%' total-only.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/defiance/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Erie": {
+  "county": "Erie",
+  "evidence": "10-28-2026 Governor: 'Election Day ProvisionalTOTAL AbsenteeVOTE % | DEM Amy Acton and David Pepper 0 0 0 0'; same layout in May 2026/Nov 2025 with real numbers",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/erie/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Fayette": {
+  "county": "Fayette",
+  "evidence": "Nov 3 2026 results.pdf returns 200 but no extractable text (likely image PDF). May 2025 Official Canvass: 'TOTAL VOTE % Election Day | Absentee In Office | Absentee Mail | Provisional | Yes 727 ... 521 151 55 0'.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/fayette/c/elecres/20250506results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee In Office",
+   "Absentee Mail",
+   "Provisional"
+  ]
+ },
+ "Fulton": {
+  "county": "Fulton",
+  "evidence": "No Nov 3 2026 doc on BOE site; SOS-standard 20251104/20260505 results paths 404; Clarity account election list empty as of 2026-11-01",
+  "lean": "no_evidence",
+  "source": "https://results.enr.clarityelections.com/OH/Fulton/",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Gallia": {
+  "county": "Gallia",
+  "evidence": "Choice Votes Vote % All Precincts Governor ... Amy Acton and David Pepper 0 0.00% (zero report total-only; May 2026 report also Votes/Vote% only)",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/gallia/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Geauga": {
+  "county": "Geauga",
+  "evidence": "Only OFFICIAL 'Results by Groups' split: 'Election Day Provisional Mail In Absentee In Office Absentee 4 Day Absentee ... Christopher Grau 738 474 159 104 1 0'. Standard results.pdf total-only. Nov 3 2026 results.pdf 404; Nov 3 2026 Results by Groups is an empty 35-char placeholder.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/geauga/c/elecres/20251104resultsgroups.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Provisional",
+   "Mail In Absentee",
+   "In Office Absentee",
+   "4 Day Absentee"
+  ]
+ },
+ "Guernsey": {
+  "county": "Guernsey",
+  "evidence": "Unofficial Nov 2025 summary 'Candidate | Party | Total | Michael A. Sikora | DEM | 510'; county posts a separate absentee-only unofficial report, not columns. No Nov 3 2026 result doc yet.",
+  "lean": "leaning_no",
+  "source": "https://boe.guernseycounty.gov/wp-content/uploads/2025/11/Unofficial-Guernsey-County-1-4-25-General-Summary-All-35-Precincts-including-Absentees.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Hancock": {
+  "county": "Hancock",
+  "evidence": "Only 46-day notice and what's-on-the-ballot pages found; no Nov 3 or past result reports parsed",
+  "lean": "no_evidence",
+  "source": "https://hancockcountyohioelections.gov/live/",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Hardin": {
+  "county": "Hardin",
+  "evidence": "Nov 3 2026 results.pdf 200 but no extractable text. May 2025 (5/15/2025 report): 'Candidate Party Election Day Absentee by Mail Provisional Absentee ICX Total'. Nov 2025 report (Precincts Reported 0 of 4) total-only.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/hardin/c/elecres/20250506results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee by Mail",
+   "Provisional",
+   "Absentee ICX"
+  ]
+ },
+ "Harrison": {
+  "county": "Harrison",
+  "evidence": "May 2026: 'Candidate | Party | Total | YES | 228 | NO | 114'; Nov 2025 likewise total-only; Nov 3 2026 results.pdf 404",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/harrison/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Henry": {
+  "county": "Henry",
+  "evidence": "No Nov 3 2026 result links found and no past result docs parsed from henrycountyohio.gov pages.",
+  "lean": "no_evidence",
+  "source": "https://henrycountyohio.gov/409/2026-Results",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Highland": {
+  "county": "Highland",
+  "evidence": "Nov 3 2026 zero report contains the Senate contest, and every candidate row has 4 numeric columns after the percent: 'John J. Kulewicz 0 0.00% 0 0 0 0 Total 0 0.00% 0 0 0 0'. That matches the past layout: May 2026 'EV | PR ... Amy Acton and David Pepper | 953 | 100.00% | 81 | 562 | 305 | 5'. The Senate-block header was not captured verbatim.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/highland/c/elecres/20261103precinct.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "AB",
+   "ED",
+   "EV",
+   "PR"
+  ]
+ },
+ "Hocking": {
+  "county": "Hocking",
+  "evidence": "Nov 3 live feed exists but is a JS app shell (not inspectable). Past May 2025 SOS PDF split: 'YES | 916 | 58.72% | 39 | 642 | 230 | 5' under 'EV | PR' headers (official/unofficial status not stated).",
+  "lean": "possible",
+  "source": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+  "source_kind": "nov3_live_feed",
+  "verdict": "unknown",
+  "vote_types": [
+   "EV",
+   "PR"
+  ]
+ },
+ "Holmes": {
+  "county": "Holmes",
+  "evidence": "Nov 3 Training PROOF: 'Amy Acton and David Pepper (D) 0 0%'; May 2026 'McColley 1,886 75.68%' and Nov 2025 also total-only",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/holmes/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Huron": {
+  "county": "Huron",
+  "evidence": "No Nov 3 2026 results doc yet. May 2026 OFFICIAL: 'EV | PR ... Amy Acton and David Pepper | 2113 | 100.00% | 181 | 1356 | 569 | 7'. Unofficial canvass PDFs had no extractable text; May 2025 official total-only.",
+  "lean": "possible",
+  "source": "https://www.huron.boe.ohio.gov/wp-content/uploads/Huron-County-Official-Summary-Results-5-5-2026.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "AB",
+   "ED",
+   "EV",
+   "PR"
+  ]
+ },
+ "Jackson": {
+  "county": "Jackson",
+  "evidence": "Nov 3 2026 zero report (image PDF, OCR) total-only: 'US SENATE UNEXPIRED TERM... Sherrod Brown 0 0.00%'. But Nov 4 2025 amended official: 'Votes Vote % AB ED EV PR | Daniel D. Fulks 532 100.00% 23 289 213'. May 2026 official total-only",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/jackson/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "unknown",
+  "vote_types": [
+   "AB",
+   "ED",
+   "EV",
+   "PR"
+  ]
+ },
+ "Jefferson": {
+  "county": "Jefferson",
+  "evidence": "Unofficial Canvass Zero Report ... GOVERNOR (Vote for 1) Amy Acton and David Pepper 0 0.00% (total-only; May 2026 and Nov 2025 also total-only, but May 2025 cumulative was split with EV/PR columns)",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/jefferson/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Knox": {
+  "county": "Knox",
+  "evidence": "Only FWAB notices found for Nov 3 2026; past_reports found no result documents (1 page, 0 docs).",
+  "lean": "no_evidence",
+  "source": "",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Lawrence": {
+  "county": "Lawrence",
+  "evidence": "Nov 3 2026 results/precinct PDFs linked but return 404. Past official reports 'TOTAL VOTE % | Bob Cleary 1,016 15.02%' total-only.",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/lawrence/c/elecres/20251104results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Logan": {
+  "county": "Logan",
+  "evidence": "May 2025 Results Report: 'Election Day 17 Year OldAbsenteeTOTAL Early In-Person Provisional | Silas Augsburger 71 33 34 2 2 0'; May 2026/Nov 2025 Official Canvass also split. Nov 3 2026 results.pdf linked but not parsed",
+  "lean": "likely_yes",
+  "source": "https://www.boe.ohio.gov/logan/c/elecres/20250506results.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Early In-Person",
+   "Provisional",
+   "17 Year Old"
+  ]
+ },
+ "Madison": {
+  "county": "Madison",
+  "evidence": "Nov 3 2026 'MADISON COUNTY'S UNOFFICIAL RESULTS': 'TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional | Amy Acton and David Pepper 0 0 0 0 0'; same columns in precinct detail and all past reports.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/madison/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee Mail",
+   "Absentee Office",
+   "Provisional"
+  ]
+ },
+ "Marion": {
+  "county": "Marion",
+  "evidence": "Nov 3 2026 zero report (image PDF, OCR), Election Summary format: 'U.S. Senate (UTE 1-3-2029) ... Total Votes 0 | Sherrod Brown (D) 0 | Jon Husted (R) 0 0%' total-only; past reports are image PDFs, not checked",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/marion/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Meigs": {
+  "county": "Meigs",
+  "evidence": "Governor and Lieutenant Governor ... Amy Acton and David Pepper (D) 0 0% ... 0Total Votes (total-only; May 2026 and Nov 2025 also total-only). NOTE: posted zero report is headed 'Holmes County ... TRAINING PROOF'.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/meigs/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "no",
+  "vote_types": []
+ },
+ "Mercer": {
+  "county": "Mercer",
+  "evidence": "County site (mercercountyoh.gov) yielded only an early-voting-hours PDF; past_reports found no result documents.",
+  "lean": "no_evidence",
+  "source": "",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Monroe": {
+  "county": "Monroe",
+  "evidence": "No Nov 3 2026 doc readable. May 2026: 'TOTAL VOTE % | Amy Acton and David Pepper 490 100.00%' total-only.",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/monroe/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Morgan": {
+  "county": "Morgan",
+  "evidence": "May 2025 (dated 05/14/2025): 'TOTAL Election Day AbsenteeProvisional | YES 603 386 210 7'; but Nov 3 2026 zero report ('DEM Amy Acton and 0'), May 2026 and Nov 2025 are total-only",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/morgan/c/elecres/20250506results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Morrow": {
+  "county": "Morrow",
+  "evidence": "Only 2 pages crawled; no Nov 3 2026 links and no past result reports found.",
+  "lean": "no_evidence",
+  "source": null,
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Muskingum": {
+  "county": "Muskingum",
+  "evidence": "Nov 3 2026 results.pdf is a placeholder ('Absentee and unofficial results will be posted November 3rd, 2026 After 7:30 p.m.'). May 2026 amended canvass lists Election Day/Vote by Mail/Provisional/Early Vote only in a voters-cast statistics table; Nov 2025 'Candidate Party Total' total-only",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/muskingum/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Noble": {
+  "county": "Noble",
+  "evidence": "All Results ... TOTAL VOTE % Election Day | Absentee Provisional | Isaac Antill 181 16.05% | 113 66 2 (Nov 2025 & May 2025 split; but Nov 3 2026 zero report and May 2026 official canvass are total-only)",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/noble/c/elecres/20251104results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Ottawa": {
+  "county": "Ottawa",
+  "evidence": "Official Canvass group-detail split: 'TOTAL VOTE % Election Day | Absentee Provisional ... Contest Totals 741 557 178 6'. Plain official summaries total-only. No Nov 3 2026 doc on current-results page.",
+  "lean": "possible",
+  "source": "https://boe.ottawa.oh.gov/wp-content/uploads/2025/11/Election-Summary-Group-Detail.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Paulding": {
+  "county": "Paulding",
+  "evidence": "Pre-Test Zero: 'TOTAL VOTE % Election Day Absentee Provisional | DEM Amy Acton and David Pepper 0 0 0 0'; May 2026 '596 100.00% 349 247 0'.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/paulding/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Perry": {
+  "county": "Perry",
+  "evidence": "Only 1 page fetched; no Nov 3 links or past result reports found",
+  "lean": "no_evidence",
+  "source": "https://elections.perrycountyohio.gov",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Pickaway": {
+  "county": "Pickaway",
+  "evidence": "Nov 3 2026 live feed exists (https://app.enhancedvoting.com/results/public/pickaway-county-oh/GE2026_20261028170048) but no Senate text extracted (JS app). Past official: 'Election Day | In Office Absentee | Mail Absentee | Provisional | Amy Acton 2,137 ... 1,390 573 161 13'.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/pickaway/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "In Office Absentee",
+   "Mail Absentee",
+   "Provisional"
+  ]
+ },
+ "Pike": {
+  "county": "Pike",
+  "evidence": "Nov 3 2026 zero report (OCR) total-only: 'U.S. Senator (Vote for 1) Sherrod Brown 0 | Jon Husted 0'. Nov 2025: 'EV | PR ... Jennifer Chandler | 128 | 21.59% | 3 | 100 | 24 | 1' and May 2025 split; May 2026 total-only",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/pike/c/elecres/20251104results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "AB",
+   "ED",
+   "EV",
+   "PR"
+  ]
+ },
+ "Preble": {
+  "county": "Preble",
+  "evidence": "Zero Report Preble County Governor and Lieutenant Governor Vote For 1 Absentee Mail Absentee Late Election Day TOTAL Absentee Early Provisional VOTE % DEM Amy Acton and David Pepper 0 0 0 0 0 0",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/preble/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Absentee Mail",
+   "Absentee Late",
+   "Election Day",
+   "Absentee Early",
+   "Provisional"
+  ]
+ },
+ "Putnam": {
+  "county": "Putnam",
+  "evidence": "Nov 3 2026 Precinct Detail zero report (includes Senate/Husted): 'For Attorney General Vote For 1 TOTAL VOTE % Election Day Absentee Provisional Rep Keith Faber 0 0 0 0'. Same header on every contest. The cumulative 20261103results.pdf is total-only.",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/putnam/c/elecres/20261103precinct.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Ross": {
+  "county": "Ross",
+  "evidence": "No Nov 3 2026 doc readable. OFFICIAL May 2026: 'Provisional Absentee Election Day TOTAL | Amy Acton and David Pepper 3,151 1,996 1,138 17'; Nov 2025 official also split.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/ross/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Sandusky": {
+  "county": "Sandusky",
+  "evidence": "Nov 2025 Official Results: 'Election Day Absentee TOTAL In Office Provisional | Rep Ronald Smith 530 463 26 40 1'; no Nov 3 2026 results doc posted yet",
+  "lean": "possible",
+  "source": "https://sanduskycountyoh.gov/uploads/board%20of%20elections/2025/Sandusky%20County%20official%20results%2011.4.2025.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "In Office",
+   "Provisional"
+  ]
+ },
+ "Scioto": {
+  "county": "Scioto",
+  "evidence": "Nov 3 2026 'Unoficial Zero Report': 'CandidatePartyTotal Amy Acton and David Pepper Dem 0'. Past official reports flagged ABSENTEE/ELECTION DAY/PROVISIONAL but first-contest excerpts are 'CandidatePartyTotal' total-only (words likely from a later counting-group section).",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/scioto/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Seneca": {
+  "county": "Seneca",
+  "evidence": "May 2026 Official Canvass: 'Election Day Provisional TOTAL Absentee Early Vote | Amy Acton and David Pepper 2,162 1,522 162 13 465'; Nov 2025 'All Results' also split (ED/Absentee/Provisional); May 2025 total-only; Nov 3 2026 results.pdf 404",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/seneca/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Early Vote",
+   "Provisional"
+  ]
+ },
+ "Shelby": {
+  "county": "Shelby",
+  "evidence": "For Attorney General Vote For 1 TOTAL VOTE % Election Day In-Office Mail Prov Rep Keith Faber 0 0 0 0 0 (precinct-detail zero report split; cumulative zero report is total-only; May 2026 results split the same way)",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/shelby/c/elecres/20261103precinct.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "In-Office",
+   "Mail",
+   "Prov"
+  ]
+ },
+ "Tuscarawas": {
+  "county": "Tuscarawas",
+  "evidence": "Nov 4 2025 'General Election' results: 'ED Central Count Provisional Absentee Election Day TOTAL Absentee after ED | REP Justin David Perkowski 1,813 1,387 410 11 0 5'. May 2026 report total-only. Nov 3 2026 results.pdf 404.",
+  "lean": "likely_yes",
+  "source": "https://www.boe.ohio.gov/tuscarawas/c/elecres/20251104results.pdf",
+  "source_kind": "past_unofficial",
+  "verdict": "unknown",
+  "vote_types": [
+   "Election Day",
+   "Absentee",
+   "Absentee after ED",
+   "ED Central Count",
+   "Provisional"
+  ]
+ },
+ "Union": {
+  "county": "Union",
+  "evidence": "No Nov 3 2026 link found; only past doc (Official Canvass SOVC Nov 2025) could not be parsed.",
+  "lean": "no_evidence",
+  "source": "https://www.unioncountyohio.gov/departments/boe/boe-election-results",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Van Wert": {
+  "county": "Van Wert",
+  "evidence": "Nov 3 Proof, Governor: 'TOTAL VOTE % Election Day | Absentee Mail | Early Voting | Provisional | DEM Amy Acton and David Pepper 0 0 0 0 0'",
+  "lean": null,
+  "source": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103results.pdf",
+  "source_kind": "nov3_zero_report",
+  "verdict": "yes",
+  "vote_types": [
+   "Election Day",
+   "Absentee Mail",
+   "Early Voting",
+   "Provisional"
+  ]
+ },
+ "Vinton": {
+  "county": "Vinton",
+  "evidence": "No Nov 3 2026 doc (404). Nov 2025: 'TOTAL VOTE % In Person Early Vote Election Day Absentee Provisional | Michael L. Claar 47 49.47% 4 41 2 0'.",
+  "lean": "possible",
+  "source": "https://www.boe.ohio.gov/vinton/c/elecres/20251104results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": [
+   "In Person",
+   "Early Vote",
+   "Election Day",
+   "Absentee",
+   "Provisional"
+  ]
+ },
+ "Washington": {
+  "county": "Washington",
+  "evidence": "Nov 3 2026 results/precinct/overlap all 404. May 2026: 'Vivek Ramaswamy & Robert A. McColley | 4,897 68.88%' total-only; Nov 2025 total-only",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/washington/c/elecres/20260505results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Williams": {
+  "county": "Williams",
+  "evidence": "Only Nov 3 2026 FWAB notices found; no past result reports parsed.",
+  "lean": "no_evidence",
+  "source": "https://www.williamscountyoh.gov/152/Election-Results",
+  "source_kind": "none",
+  "verdict": "unknown",
+  "vote_types": []
+ },
+ "Wyandot": {
+  "county": "Wyandot",
+  "evidence": "Official canvass reports Nov 4 2025 and May 5 2026 total-only: 'TOTAL VOTE % | Rep Tom Karcher 1,038 26.98%'. No Nov 3 2026 doc found.",
+  "lean": "leaning_no",
+  "source": "https://www.boe.ohio.gov/wyandot/c/elecres/20251104results.pdf",
+  "source_kind": "past_official",
+  "verdict": "unknown",
+  "vote_types": []
+ }
+}

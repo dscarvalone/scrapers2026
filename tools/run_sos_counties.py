@@ -49,7 +49,12 @@ def main(argv=None) -> int:
                     raise RuntimeError("scraper reported a problem (see above)")
             else:
                 run(name, mod.URLS, out, argv=[], expect_year="2026")
-            shutil.copyfile(out / "summary_wide_latest.csv", ROOT / "counties" / f / "data" / "summary_wide.csv")
+            latest = out / "summary_wide_latest.csv"
+            if not latest.exists():
+                # e.g. Allen before its election-night link is posted
+                print(f"{f}: no data yet", file=sys.stderr)
+                continue
+            shutil.copyfile(latest, ROOT / "counties" / f / "data" / "summary_wide.csv")
             ok.append(f)
         except (Exception, SystemExit) as e:
             # ChallengeNotCleared / RateLimited mean every later county will

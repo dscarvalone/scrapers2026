@@ -2,20 +2,14 @@
 
 ## Summary
 
-- **By vote method, 13 counties:**
-  - Cuyahoga and Franklin (county-hosted feeds), Montgomery and Summit
-    (Enhanced Voting), and Hamilton (Clarity), all over plain HTTP and run
-    in Actions.
-  - Butler, Carroll, Clark, Lucas, Stark and Warren (SOS ENR summary XML),
-    plus Licking and Miami (election-night PDFs). These are read through a
-    Chrome window the owner opens (`tools/sos_chrome.sh`,
-    `common/sos_browser.py`) and run in the local loop.
-- **Totals only, no method split: the other 75 counties,** from the SOS
-  statewide site (`common/ohio_statewide.py`). A scan of all 86 non-Cuyahoga,
-  non-Franklin counties on the SOS ENR (`tools/discover_enr.py`, results in
-  `tools/enr_discovery.json`) found no Nov 3 file for them. Those that were
-  spot-checked (Adams, Allen) publish election-night results as PDFs with
-  totals only.
+- **By vote method, 21 counties now, 22 once Allen posts.** See the
+  88-county table under "Survey of the remaining 60 counties" for the full
+  breakdown. 7 run in Actions over plain HTTP; 14 (plus Allen) run in the
+  local loop through the owner's Chrome window.
+- **Totals only, no method split: the other 67 counties,** from the SOS
+  statewide site (`common/ohio_statewide.py`). 9 of them are confirmed totals
+  only; 4 have a split we don't scrape yet; the rest are unknown until
+  election night.
 
 The SOS hosts serve a Cloudflare check to every non-browser client, from
 datacenter and residential IPs alike, and to headless browsers. The owner
@@ -76,6 +70,56 @@ Limits: class C is "no live link found on the site today". A county could
 add a non-SOS link on election night. Class E sites were not opened
 individually (SOS-hosted, so script-blocked); that their live results are on
 the SOS ENR is presumed, not verified per county.
+
+### Survey of the remaining 60 counties, and new scrapers (2026-11-01 night)
+
+Six parallel agents ran `tools/survey_counties.py` and `tools/past_reports.py`
+over the 60 counties not yet covered (10 each, 6 s pacing through the
+shared Chrome window) and wrote per-county verdicts. Merged:
+`tools/survey60_verdicts.json`. The "yes" findings were then checked by
+hand on the Senate block itself, and scrapers built:
+
+- **Enhanced Voting (plain HTTP, run in Actions):** Pickaway (Election Day,
+  In Office Absentee, Mail Absentee, Provisional) and Hocking (Election Day,
+  Early Voting, Absentee, Provisional).
+- **Nov 3 results PDF already posted with the split (local loop, Chrome
+  window):** Van Wert, Madison, Preble, Erie, Paulding, Athens.
+- **Allen:** election-night PDF link not posted yet. The scraper watches
+  Allen's results page and reports "not posted yet" until it appears.
+- **Split exists but not scraped:** Putnam, Shelby, Highland (only their
+  per-precinct PDFs have the split; the summary is TOTAL only); Jackson
+  (scanned PDF, no text layer).
+
+**Position-based PDF parsing, and a Licking fix.** In ES&S/Electionware
+reports, multi-line column headers come out of plain text extraction in an
+order that differs between counties running the same software. So
+`common/pdf_results.parse_positional` assigns each number to the header
+printed above it on the page (pdfplumber word coordinates). Checked on May
+2026 reports with real votes for Licking, Madison, Preble, Erie, Paulding
+and Athens, and on Allen's Nov 2025 report. **It showed the earlier
+Licking scraper had Absentee Mail and Absentee Office swapped** (Mail and
+Early In-Person). The sum check couldn't catch that, since a swap still sums
+correctly. Licking now uses the positional parser. Miami (Dominion layout)
+still uses its own parser, with the order taken from the printed header.
+
+**All 88 counties, as of 2026-11-01 night:**
+
+| Status | # | Counties |
+|---|---|---|
+| Itemized by method, scraper working | 21 | Cuyahoga, Franklin, Montgomery, Summit, Hamilton, Pickaway, Hocking (Actions); Butler, Carroll, Clark, Lucas, Stark, Warren, Licking, Miami, Erie, Madison, Preble, Paulding, Athens, Van Wert (local loop) |
+| Itemized, link appears on election night | 1 | Allen |
+| Split exists, not scraped | 4 | Putnam, Shelby, Highland (precinct PDFs), Jackson (scan) |
+| Confirmed totals only | 9 | Fairfield, Richland, Ashland, Holmes, Gallia, Meigs, Adams, Brown, Defiance |
+| Unknown, likely yes (past election-night report split) | 5 | Logan, Darke, Tuscarawas, Auglaize, Coshocton |
+| Unknown, possible (past official reports split) | 19 | Clermont, Lake, Columbiana, Champaign, Morgan, Sandusky, Belmont, Geauga, Ottawa, Noble, Ashtabula, Clinton, Fayette, Hardin, Huron, Vinton, Ross, Pike, Seneca |
+| Unknown, leaning no / no evidence | 29 | Greene, Wayne, Medina, Trumbull, Delaware, Lorain, Mahoning, Portage, Wood, Wyandot, Crawford, Jefferson, Scioto, Hancock, Perry, Knox, Mercer, Henry, Williams, Morrow, Guernsey, Lawrence, Monroe, Union, Fulton, Harrison, Marion, Muskingum, Washington |
+
+Many SOS-hosted counties publish election-night results at
+`www.boe.ohio.gov/<county>/c/elecres/20261103results.pdf`, the same address
+where the "past official" reports were found (the file is overwritten with
+the canvass later). So several "possible" counties may well post a split on
+election night. Rerunning the zero-report check on Nov 3 evening would
+settle them.
 
 ### Past election reports for the 15 non-itemized large counties (2026-11-01)
 

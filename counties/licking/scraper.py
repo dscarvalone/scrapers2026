@@ -1,13 +1,14 @@
 """Licking County, OH U.S. Senate results by vote type, from the county's
-election-night PDF (ES&S Electionware "Summary Report").
+election-night PDF on its SOS-hosted BOE site.
 
-Source (linked from the county BOE's election-results page; zero report
-posted 2026-10-30): https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf
-Columns: Election Day, Absentee Office (early in-person), Absentee Mail,
-Provisional. Order verified on the May 2026 report (columns sum to TOTAL).
+Source: https://www.boe.ohio.gov/licking/c/elecres/20261103results.pdf
+(the zero report was already posted when checked on 2026-11-01)
+Columns in the Senate block: Election Day, Absentee Mail, Absentee Office, Provisional.
+Parsed by word position (common/pdf_results.parse_positional): each number is
+assigned to the header printed above it. Verified against the county's
+May 2026 report with real votes (every row's columns sum to its total).
 
-The BOE site is SOS-hosted and behind Cloudflare, so the PDF is fetched
-through the Chrome window opened by tools/sos_chrome.sh.
+Fetched through the Chrome window opened by tools/sos_chrome.sh.
 
 Usage:
     python -m counties.licking.scraper
@@ -31,7 +32,7 @@ def main(argv=None) -> int:
     ap.add_argument("--file")
     args = ap.parse_args(argv)
     data = Path(args.file).read_bytes() if args.file else fetch_file_via_page(URL, PAGE)
-    return run("Licking", "electionware", data, Path(__file__).resolve().parent / "output", URL)
+    return run("Licking", "positional", data, Path(__file__).resolve().parent / "output", URL)
 
 
 if __name__ == "__main__":

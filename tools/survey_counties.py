@@ -28,6 +28,8 @@ from __future__ import annotations
 
 import argparse
 import base64
+import html as htmlmod
+import os
 import csv
 import io
 import json
@@ -40,16 +42,16 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "tools" / "county_survey.json"
+OUT = Path(os.environ.get("SURVEY_OUT", ROOT / "tools" / "county_survey.json"))
 UA = {"User-Agent": "scrapers2026 (election results research)"}
-PAUSE = 2.0
+PAUSE = float(os.environ.get("SURVEY_PAUSE", "2.0"))
 MAX_PAGES = 4
 MAX_DOCS = 6
 
 RESULTS_WORDS = re.compile(r"result|election[-_ ]?night|election[-_ ]?info|unofficial|current[-_ ]?election", re.I)
 NOV = re.compile(r"(20261103|11[-_/.]?0?3[-_/.]?(20)?26|nov(ember)?[-_ .]*0?3[-_ ,]*2026|2026[-_ ]*(general|nov))", re.I)
-LIVE_HOSTS = re.compile(r"liveresults|enhancedvoting|clarityelections|electionstats|livevoterturnout|"
-                        r"electionresults|results\.enr|scytl|votecount|electionnight", re.I)
+LIVE_HOSTS = re.compile(r"liveresults|enhancedvoting|clarityelections|clarity|electionstats|livevoterturnout|"
+                        r"electionresults|results\.enr|scytl|votecount|electionnight|^results\.|/OH/[A-Za-z_]+/\d{5,}", re.I)
 SENATE = re.compile(r"(u\.?\s*s\.?|united\s+states)\s+senat", re.I)
 METHOD_WORDS = ["Election Day", "Absentee", "Early", "Mail", "Provisional", "Polls", "In Person",
                 "In-Person", "Walk", "Vote by Mail", "Precinct", "Total"]
@@ -77,23 +79,19 @@ class Fetcher:
 
     def _tab(self):
         if self.tab is None:
-            from playwright.sync_api import sync_playwright
-            self.pw = sync_playwright().start()
-            self.browser = self.pw.chromium.connect_over_cdp("http://127.0.0.1:9333", timeout=10_000)
-            self.tab = self.browser.contexts[0].new_page()
+            # One Playwright connection per process (common.sos_browser.shared):
+            # Playwright's sync API refuses a second one in the same process.
+            from common.sos_browser import shared
+            self.tab = shared()._browser.contexts[0].new_page()
         return self.tab
 
     def close(self):
         try:
             if self.tab:
-                self.tab.close()
-            if self.browser:
-                self.browser.close()
+                self.tab.close()   # our own tab only; the shared connection stays
         except Exception:
             pass
-        if self.pw:
-            self.pw.stop()
-        self.pw = self.browser = self.tab = None
+        self.tab = None
 
     def page(self, url: str) -> tuple[str, str, str]:
         """(final_url, html, via) for an HTML page."""
@@ -133,6 +131,12 @@ class Fetcher:
             time.sleep(2)
         self._pace(host)
         res = tab.evaluate(JS_FETCH, url)
+        for wait in (60, 120):
+            if res["s"] != 429:
+                break
+            print(f"429 on {url}; waiting {wait}s", file=sys.stderr, flush=True)
+            time.sleep(wait)
+            res = tab.evaluate(JS_FETCH, url)
         return res["s"], res["t"], base64.b64decode(res["b"]), "chrome"
 
 
@@ -184,8 +188,8 @@ def survey(f: Fetcher, county: str, boe_url: str) -> dict:
             continue
         rec["pages"].append({"url": final, "via": via, "chars": len(html)})
         for href, label in re.findall(r'<a[^>]+href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', html, re.I | re.S):
-            link = urljoin(final, href.strip())
-            label = re.sub(r"<[^>]+>|\s+", " ", label).strip()[:80]
+            link = urljoin(final, htmlmod.unescape(href.strip()))
+            label = htmlmod.unescape(re.sub(r"<[^>]+>|\s+", " ", label)).strip()[:80]
             p = urlparse(link)
             if p.scheme not in ("http", "https"):
                 continue

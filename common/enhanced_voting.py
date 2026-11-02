@@ -33,7 +33,12 @@ API = "https://app.enhancedvoting.com/results/public/api/elections/{jur}/{eid}/d
 UA = {"User-Agent": "scrapers2026 (election results research)"}
 BASE = ["race_id", "race", "contestant", "party", "write_in"]
 TAIL = ["total", "precincts_reported", "precincts_total", "generated_at", "source_format"]
-PARTY_PREFIX = re.compile(r"^(DEM|REP|LIB|OPC|GRN|NON|IND|NPA|OTH|CON|SOC|NAT)\s+(.+)$")
+PARTY_PREFIX = re.compile(r"^(DEM|REP|LIB|OPC|GRN|NON|IND|NPA|OTH|CON|SOC|NAT)\s+(.+)$", re.I)
+# Pickaway lists write-ins individually ("Write-in: Stephen Faris",
+# "Write-in: Not Assigned", "Write-in: -Invalid-"). They're summed into one
+# Write-in line; "-Invalid-" ones are left out of it.
+WRITE_IN = re.compile(r"^write-?in\b", re.I)
+INVALID = re.compile(r"invalid", re.I)
 
 
 def _en(v) -> str:
@@ -52,27 +57,36 @@ def parse(data: dict) -> tuple[dict, list[dict], list[str]]:
     for item in data.get("ballotItems") or []:
         race = _en(item.get("name"))
         rs = item.get("reportingStatus") or {}
+        merged: dict[str, dict] = {}
         for opt in (item.get("summaryResults") or {}).get("ballotOptions") or []:
             raw = " ".join(_en(opt.get("name")).split())
+            if WRITE_IN.match(raw) and INVALID.search(raw):
+                continue
             m = PARTY_PREFIX.match(raw)
-            row = {
-                "race_id": item.get("id", ""),
-                "race": race,
-                "contestant": m.group(2) if m else raw,
-                "party": m.group(1) if m else ((opt.get("party") or {}).get("abbreviation") or ""),
-                "write_in": bool(opt.get("isWriteIn")),
-                "total": int(opt.get("voteCount") or 0),
-                "precincts_reported": rs.get("reportingUnits", ""),
-                "precincts_total": rs.get("totalUnits", ""),
-                "generated_at": gen,
-                "source_format": "enhanced_voting",
-            }
+            name = m.group(2) if m else raw
+            if WRITE_IN.match(name):
+                name = "Write-in"
+            row = merged.get(name)
+            if row is None:
+                row = merged[name] = {
+                    "race_id": item.get("id", ""),
+                    "race": race,
+                    "contestant": name,
+                    "party": m.group(1).upper() if m else ((opt.get("party") or {}).get("abbreviation") or ""),
+                    "write_in": name == "Write-in" or bool(opt.get("isWriteIn")),
+                    "total": 0,
+                    "precincts_reported": rs.get("reportingUnits", ""),
+                    "precincts_total": rs.get("totalUnits", ""),
+                    "generated_at": gen,
+                    "source_format": "enhanced_voting",
+                }
+            row["total"] += int(opt.get("voteCount") or 0)
             for g in opt.get("groupResults") or []:
-                name = _en(g.get("groupName"))
-                if name not in groups:
-                    groups.append(name)
-                row[name] = row.get(name, 0) + int(g.get("voteCount") or 0)
-            rows.append(row)
+                gname = _en(g.get("groupName"))
+                if gname not in groups:
+                    groups.append(gname)
+                row[gname] = row.get(gname, 0) + int(g.get("voteCount") or 0)
+        rows.extend(merged.values())
     for r in rows:
         for g in groups:
             r.setdefault(g, 0)

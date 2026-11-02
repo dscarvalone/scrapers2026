@@ -21,7 +21,7 @@ env:
   # warren and butler are NOT listed: their feed (liveresults.boe.ohio.gov,
   # the SOS-hosted ENR) serves a Cloudflare JS challenge to datacenter IPs
   # (confirmed 2026-11-01), so they would fail every run. See REPORT.md.
-  COUNTIES: "cuyahoga franklin montgomery summit hamilton"
+  COUNTIES: "cuyahoga franklin montgomery summit hamilton pickaway hocking"
 
 jobs:
   scrape:

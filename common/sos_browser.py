@@ -157,45 +157,45 @@ _JS_BYTES = """async u => {
 }"""
 
 
-def fetch_file_via_page(url: str, page_url: str, cdp_url: str = CDP_URL) -> bytes:
+_shared: SOSBrowser | None = None
+
+
+def shared() -> SOSBrowser:
+    """One Playwright connection per process. (Playwright's sync API refuses
+    a second sync_playwright() in the same process, so every SOS fetch,
+    XML or PDF, goes through this one.)"""
+    global _shared
+    if _shared is None:
+        _shared = SOSBrowser().__enter__()
+    return _shared
+
+
+def fetch_file_via_page(url: str, page_url: str) -> bytes:
     """Fetch a binary file (e.g. a county results PDF on www.boe.ohio.gov)
     through the owner's Chrome window: open a tab on `page_url` (same origin
     as `url`), fetch the file from there, close the tab. Used for SOS-hosted
     county BOE sites, which are behind the same Cloudflare check."""
     import base64
-    from playwright.sync_api import sync_playwright
     if urlparse(url).netloc != urlparse(page_url).netloc:
         raise ValueError("url and page_url must be on the same host")
-    with sync_playwright() as pw:
-        try:
-            browser = pw.chromium.connect_over_cdp(cdp_url, timeout=10_000)
-        except Exception as e:
-            raise RuntimeError(f"No Chrome debugging port at {cdp_url}. Start the window with "
-                               f"tools/sos_chrome.sh (from Terminal) and keep it open. ({e})") from None
-        tab = browser.contexts[0].new_page()
-        try:
-            tab.goto(page_url, timeout=60_000)
-            time.sleep(PAUSE)
-            r = tab.evaluate(_JS_BYTES, url)
-            if r["status"] == 429:
-                raise RateLimited(f"HTTP 429 (rate limited): {url}")
-            data = base64.b64decode(r["b64"])
-            if _is_challenge(r["status"], r["type"], data[:5000].decode("utf-8", "ignore")):
-                raise ChallengeNotCleared(f"Cloudflare check on {url}. Complete it in the Chrome window, then rerun.")
-            if r["status"] != 200:
-                raise RuntimeError(f"{r['status']} for {url}")
-            return data
-        finally:
-            tab.close()   # our own tab only
-            browser.close()
-
-
-_shared: SOSBrowser | None = None
+    br = shared()
+    tab = br._browser.contexts[0].new_page()
+    try:
+        tab.goto(page_url, timeout=60_000)
+        time.sleep(PAUSE)
+        r = tab.evaluate(_JS_BYTES, url)
+        if r["status"] == 429:
+            raise RateLimited(f"HTTP 429 (rate limited): {url}")
+        data = base64.b64decode(r["b64"])
+        if _is_challenge(r["status"], r["type"], data[:5000].decode("utf-8", "ignore")):
+            raise ChallengeNotCleared(f"Cloudflare check on {url}. Complete it in the Chrome window, then rerun.")
+        if r["status"] != 200:
+            raise RuntimeError(f"{r['status']} for {url}")
+        return data
+    finally:
+        tab.close()   # our own tab only
 
 
 def fetch_bytes(url: str) -> bytes:
     """Module-level helper with a lazily opened shared connection."""
-    global _shared
-    if _shared is None:
-        _shared = SOSBrowser().__enter__()
-    return _shared.fetch_bytes(url)
+    return shared().fetch_bytes(url)

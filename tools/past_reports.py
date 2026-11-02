@@ -21,7 +21,9 @@ Usage:
 from __future__ import annotations
 
 import csv
+import html as htmlmod
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -30,7 +32,7 @@ from urllib.parse import urljoin, urlparse
 from tools.survey_counties import Fetcher, text_of
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "tools" / "past_reports.json"
+OUT = Path(os.environ.get("PAST_OUT", ROOT / "tools" / "past_reports.json"))
 MAX_PAGES, MAX_DOCS = 8, 8
 PAGE_WORDS = re.compile(r"result|archive|past|previous|election[-_ ]?info|canvass", re.I)
 DOC_EXT = re.compile(r"\.(pdf|xlsx?|csv|htm|html|txt)(\?|$)", re.I)
@@ -85,8 +87,8 @@ def collect(f: Fetcher, boe_url: str) -> tuple[list[dict], list[dict]]:
             continue
         pages.append({"url": final, "via": via})
         for href, label in re.findall(r'<a[^>]+href=["\']([^"\'#]+)["\'][^>]*>(.*?)</a>', html, re.I | re.S):
-            link = urljoin(final, href.strip())
-            label = re.sub(r"<[^>]+>|\s+", " ", label).strip()[:90]
+            link = urljoin(final, htmlmod.unescape(href.strip()))
+            label = htmlmod.unescape(re.sub(r"<[^>]+>|\s+", " ", label)).strip()[:90]
             p = urlparse(link)
             if p.scheme not in ("http", "https"):
                 continue

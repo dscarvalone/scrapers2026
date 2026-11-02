@@ -63,8 +63,13 @@ METHOD_MAP = {
     # ballots received after Election Day, but not confirmed. Passes through
     # as its own column.
     # County PDF reports (common/pdf_results.py):
-    "Absentee Office": "Early In-Person",  # Licking (Electionware): in-office absentee = early in-person
-    "Absentee Mail": "Mail",                # Licking
+    "Absentee Office": "Early In-Person",  # Licking, Madison (Electionware): in-office absentee = early in-person
+    "Absentee Mail": "Mail",                # Licking, Madison, Van Wert, Preble
+    "Absentee Mail Out": "Mail",            # Athens
+    "Absentee In Office": "Early In-Person",  # Athens
+    "Absentee Early": "Early In-Person",    # Preble
+    # Preble's "Absentee Late" (likely mail ballots arriving after Election
+    # Day) is deliberately left unmapped, like Summit's Timely Absentee.
     # Hamilton (Clarity): only "Election" and "Early". "Early" isn't defined
     # on the site as mail-only or in-person-only, so it goes in the combined
     # absentee bucket rather than guessing.
@@ -97,6 +102,8 @@ EV_METHOD_MAP = {
     "Abs Mail": "Mail",
     "Polls": "Election Day",
     "Abs Walk-in": "Early In-Person",
+    "In Office Absentee": "Early In-Person",  # Pickaway
+    "Mail Absentee": "Mail",                  # Pickaway
 }
 
 METHOD_ORDER = [
