@@ -26,7 +26,11 @@ from __future__ import annotations
 
 import argparse
 import csv
+import os
+import re
+import subprocess
 import sys
+import tempfile
 from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
@@ -192,12 +196,49 @@ def load_long(from_output: bool) -> tuple[list[dict], list[str], list[str]]:
     return rows, missing, failed
 
 
-VOTE_META = ["county_fips", "county", "itemized", "source_generated_at", "precincts_reported",
+ET = ZoneInfo("America/New_York")
+STAMP_RE = re.compile(r"summary_wide_(\d{8}_\d{6})\.csv$")
+
+
+def fetched_at(county_dir: Path, from_output: bool) -> tuple[str, str]:
+    """Wall-clock time (ET) of the data in this county's row, and how it was found.
+
+    - 'local run': newest counties/<c>/output/summary_wide_<stamp>.csv. Each
+      scraper run writes one, named with the machine's local time, so this is
+      the last successful fetch even when the numbers didn't change.
+    - 'last commit': for counties the Actions bot scrapes, the commit time of
+      data/summary_wide.csv (the bot commits only when numbers change, so this
+      is the last change, not the last fetch).
+    - 'file mtime': fallback when neither exists.
+    """
+    data = county_dir / "data" / "summary_wide.csv"
+    name = county_dir.name.replace("_", " ").title()
+    stamps = sorted(m.group(1) for p in (county_dir / "output").glob("summary_wide_*.csv")
+                    if (m := STAMP_RE.search(p.name)))
+    if stamps and (from_output or name not in ACTIONS):
+        t = datetime.strptime(stamps[-1], "%Y%m%d_%H%M%S").astimezone()  # naive = this machine's zone
+        return t.astimezone(ET).strftime("%Y-%m-%d %H:%M:%S %Z"), "local run"
+    try:
+        iso = subprocess.run(["git", "log", "-1", "--format=%cI", "--", str(data.relative_to(ROOT))],
+                             cwd=ROOT, capture_output=True, text=True, timeout=20).stdout.strip()
+    except (OSError, subprocess.SubprocessError):
+        iso = ""
+    if iso:
+        return datetime.fromisoformat(iso).astimezone(ET).strftime("%Y-%m-%d %H:%M:%S %Z"), "last commit"
+    if data.exists():
+        return datetime.fromtimestamp(data.stat().st_mtime, ET).strftime("%Y-%m-%d %H:%M:%S %Z"), "file mtime"
+    return "", ""
+
+
+VOTE_META = ["county_fips", "county", "itemized", "fetched_at", "fetched_at_basis", "source_generated_at",
+             "precincts_reported",
              "precincts_total", "early_combined_only", "unassigned_labels"]
 VOTE_COLS = VOTE_META + [f"{b}_{p}_votes" for b in BUCKETS for p in ["total", *PARTY_COLS]] + ["method_sum_total_votes"]
 
 
-def vote_rows(reg: list[dict], long_rows: list[dict]) -> tuple[list[dict], list[dict]]:
+def vote_rows(reg: list[dict], long_rows: list[dict],
+              fetched: dict[str, tuple[str, str]] | None = None) -> tuple[list[dict], list[dict]]:
+    fetched = fetched or {}
     by_county: dict[str, list[dict]] = {}
     for r in long_rows:
         by_county.setdefault(r["county"], []).append(r)
@@ -210,6 +251,7 @@ def vote_rows(reg: list[dict], long_rows: list[dict]) -> tuple[list[dict], list[
         if rs:
             unassigned = sorted({r["method_county_label"] for r in rs if r["method"] not in BUCKET})
             buckets = {BUCKET.get(r["method"], "unassigned") for r in rs}
+            out["fetched_at"], out["fetched_at_basis"] = fetched.get(c, ("", ""))
             out.update(source_generated_at=max(r["source_generated_at"] for r in rs),
                        precincts_reported=rs[0]["precincts_reported"], precincts_total=rs[0]["precincts_total"],
                        early_combined_only="early" in buckets and not {"evip", "vbm"} & buckets,
@@ -234,13 +276,13 @@ def vote_rows(reg: list[dict], long_rows: list[dict]) -> tuple[list[dict], list[
                              "party_col": CAND_COL[r["candidate"]], "bucket": BUCKET.get(r["method"], "unassigned"),
                              "county_label": r["method_county_label"], "votes": int(r["votes"]),
                              "precincts_reported": r["precincts_reported"], "precincts_total": r["precincts_total"],
-                             "source_generated_at": r["source_generated_at"]})
+                             "fetched_at": out["fetched_at"], "source_generated_at": r["source_generated_at"]})
         wide.append(out)
     return wide, tidy
 
 
 TIDY_COLS = ["county_fips", "county", "candidate", "party_col", "bucket", "county_label", "votes",
-             "precincts_reported", "precincts_total", "source_generated_at"]
+             "precincts_reported", "precincts_total", "fetched_at", "source_generated_at"]
 
 ABOUT = [
     ("Purpose", "Ohio 2026 U.S. Senate results by vote method, from county sources scraped by "
@@ -253,6 +295,12 @@ ABOUT = [
     ("Candidates", "dem = Sherrod Brown; gop = Jon Husted; breakout_1 = William B. Redpath (Libertarian); "
                    "breakout_2 = Greg Levy (other-party, ASSUMED to be the aggregator's Ind column); "
                    "other = write-ins."),
+    ("fetched_at", "Wall-clock time (ET) behind the row. fetched_at_basis 'local run' = the last successful "
+                   "fetch on the loop machine (updates every cycle even if numbers are unchanged); 'last commit' "
+                   "= counties the GitHub Actions bot scrapes: when the bot last committed new numbers (it "
+                   "doesn't commit unchanged numbers, so this is the last change, not the last check); 'file "
+                   "mtime' = fallback. source_generated_at is the county's own timestamp (a file fingerprint "
+                   "for PDF counties)."),
     ("Blank vs 0", "Blank = the county's source does not report that bucket. 0 = reported, no votes yet."),
     ("method_sum_total_votes", "eday + early + provisional + unassigned. Should equal the county's "
                                "Senate total in the aggregator; a difference means a mapping or timing gap."),
@@ -262,12 +310,27 @@ ABOUT = [
 ]
 
 
+def replace_atomically(path: Path, write) -> None:
+    """Write to a temp file in the same folder, then rename over `path`, so a
+    reader (or an upload) never sees a half-written file."""
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.", suffix=".tmp")
+    os.close(fd)
+    try:
+        write(Path(tmp))
+        os.replace(tmp, path)
+    finally:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+
+
 def write_csv(path: Path, cols: list[str], rows: list[dict]):
-    with path.open("w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=cols)
-        w.writeheader()
-        for r in rows:
-            w.writerow({c: ("TRUE" if v else "FALSE") if isinstance(v, bool) else v for c, v in r.items()})
+    def write(p: Path):
+        with p.open("w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=cols)
+            w.writeheader()
+            for r in rows:
+                w.writerow({c: ("TRUE" if v else "FALSE") if isinstance(v, bool) else v for c, v in r.items()})
+    replace_atomically(path, write)
 
 
 def add_tab(wb, title: str, cols: list[str], rows: list[dict], widths: dict | None = None, freeze="C2"):
@@ -296,7 +359,11 @@ def main(argv=None) -> int:
     reg = registry()
     assert len(reg) == 88 and all(r["county_fips"] for r in reg)
     long_rows, missing, failed = load_long(args.from_output)
-    wide, tidy = vote_rows(reg, long_rows)
+    names = {r["county"] for r in long_rows}
+    fetched = {d.name.replace("_", " ").title(): fetched_at(d, args.from_output)
+               for d in senate.COUNTIES_DIR.iterdir()
+               if d.is_dir() and d.name.replace("_", " ").title() in names}
+    wide, tidy = vote_rows(reg, long_rows, fetched)
     sources = source_rows(reg)
     built = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M %Z")
 
@@ -306,7 +373,7 @@ def main(argv=None) -> int:
 
     wb = openpyxl.Workbook()
     wb.remove(wb.active)
-    ws = add_tab(wb, "votes_by_method", VOTE_COLS, wide, {"B": 12, "D": 24, "H": 30})
+    ws = add_tab(wb, "votes_by_method", VOTE_COLS, wide, {"B": 12, "D": 24, "E": 14, "F": 24, "J": 30})
     n = len(wide) + 1
     ws.conditional_formatting.add(f"C2:C{n}", FormulaRule(formula=["$C2=TRUE"],
                                   fill=PatternFill("solid", fgColor="D9EAD3")))
@@ -330,7 +397,7 @@ def main(argv=None) -> int:
     about.column_dimensions["A"].width = 24
     about.column_dimensions["B"].width = 120
     out = args.out_dir / WORKBOOK
-    wb.save(out)
+    replace_atomically(out, lambda p: wb.save(p))
 
     itemized = sum(1 for r in wide if r["itemized"])
     print(f"{out}: {itemized} counties itemized, {len(tidy)} long rows", file=sys.stderr)

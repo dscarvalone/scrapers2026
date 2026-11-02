@@ -12,7 +12,9 @@
 #   1. python -m tools.run_sos_counties  -> counties/<name>/data/summary_wide.csv
 #   2. python -m common.ohio_statewide   -> results/senate_statewide_by_county.csv
 #      (each file is rewritten only when its numbers changed)
-#   3. commit just those files if changed; git pull --rebase; git push
+#   3. commit just those files if changed; git pull --rebase (every cycle); git push
+#   4. python -m tools.build_method_workbook $EXPORT_DIR  -> the standalone
+#      vote-method workbook + CSVs (outside the repo; not committed)
 # The Actions bot commits Cuyahoga/Franklin and rebuilds the combined
 # results/senate_by_method_wide.csv from everything committed, on its next run.
 #
@@ -28,6 +30,8 @@
 #   DRY_RUN=1 fetch only; no git writes
 #   ONCE=1    run one cycle and exit
 #   GH_TOKEN  GitHub token; if unset, prompted for (hidden) at start
+#   EXPORT_DIR  where the vote-method workbook goes   (default ../exports)
+#   BUILD_SHEET=0  skip the workbook build
 #
 # The token is held only in this process's environment and passed to git
 # per command. It is never written to git config, the keychain or a file.
@@ -43,6 +47,8 @@ DRY_RUN="${DRY_RUN:-0}"
 ONCE="${ONCE:-0}"
 FILE="results/senate_statewide_by_county.csv"
 PY="${PY:-.venv/bin/python}"
+EXPORT_DIR="${EXPORT_DIR:-../exports}"
+BUILD_SHEET="${BUILD_SHEET:-1}"
 
 log() { echo "[$(TZ=America/New_York date '+%Y-%m-%d %H:%M:%S %Z')] $*"; }
 
@@ -112,6 +118,9 @@ while :; do
       git commit -q -m "Local results update (${changed% }) $(TZ=America/New_York date '+%Y-%m-%d %H:%M %Z')"
       log "Committed: $changed"
     fi
+      # Pull every cycle, not only when pushing, so the Actions bot's counties
+      # are current for the vote-method workbook built below.
+      git_net pull --rebase --autostash -q origin "$BRANCH" || log "WARNING: pull failed; workbook may lag the bot's counties."
       # Push whenever we're ahead of origin, including a commit left over
       # from a cycle whose push failed.
       if [ "$(git rev-list --count "origin/$BRANCH..HEAD" 2>/dev/null || echo 1)" != "0" ]; then
@@ -124,6 +133,18 @@ while :; do
         done
         [ "$pushed" = 1 ] && log "Pushed." || log "ERROR: could not push; will retry next cycle."
       fi
+  fi
+
+  # 4. Standalone vote-method workbook (xlsx + CSVs) for the Google Sheet.
+  #    Written outside the repo, never committed. A failure here never stops
+  #    the loop.
+  if [ "$BUILD_SHEET" = "1" ]; then
+    "$PY" -m tools.build_method_workbook "$EXPORT_DIR" 2>&1 | sed 's/^/    /'
+    if [ "${PIPESTATUS[0]}" = "0" ]; then
+      log "Workbook refreshed: $EXPORT_DIR/OH_Senate_2026_vote_method.xlsx"
+    else
+      log "WARNING: workbook build reported errors (see above); files hold whatever parsed."
+    fi
   fi
 
   [ "$ONCE" = "1" ] && break

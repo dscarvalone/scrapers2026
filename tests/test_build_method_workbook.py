@@ -46,4 +46,26 @@ def test_buckets():
     assert c["provisional_total_votes"] == "" and c["early_combined_only"] is True
     assert c["method_sum_total_votes"] == 150
     assert n["itemized"] is False and n["eday_total_votes"] == ""
+    assert s["fetched_at"] == "" and s["fetched_at_basis"] == ""  # none passed
     assert sum(r["votes"] for r in tidy) == sum(r["votes"] for r in LONG)
+
+
+def test_fetched_at_passthrough():
+    wide, tidy = vote_rows(REG, LONG, {"Split": ("2026-11-03 20:05:00 EST", "local run")})
+    assert wide[0]["fetched_at"] == "2026-11-03 20:05:00 EST" and wide[0]["fetched_at_basis"] == "local run"
+    assert wide[1]["fetched_at"] == "" and wide[2]["fetched_at"] == ""
+    assert {r["fetched_at"] for r in tidy if r["county"] == "Split"} == {"2026-11-03 20:05:00 EST"}
+
+
+def test_fetched_at_from_output_stamp(tmp_path):
+    from tools.build_method_workbook import fetched_at
+    d = tmp_path / "warren"
+    (d / "output").mkdir(parents=True)
+    for s in ("20261103_200500", "20261103_201000"):
+        (d / "output" / f"summary_wide_{s}.csv").write_text("x")
+    (d / "output" / "summary_wide_latest.csv").write_text("x")
+    ts, basis = fetched_at(d, from_output=False)
+    from datetime import datetime
+    from tools.build_method_workbook import ET
+    want = datetime(2026, 11, 3, 20, 10).astimezone().astimezone(ET)  # stamps use the machine's zone
+    assert basis == "local run" and ts == want.strftime("%Y-%m-%d %H:%M:%S %Z")
