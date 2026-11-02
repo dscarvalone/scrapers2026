@@ -93,10 +93,12 @@ Raw output: `tools/past_reports.json`.
 | Greene | May 2026 results: total only | Probably no |
 | Medina | Nov 3 zero report total only; past PDFs had no text layer | Inconclusive |
 | Delaware | Past summaries are scans; "Key Canvass" text files didn't parse as split | Inconclusive |
-| Trumbull, Lorain, Mahoning, Portage, Wood, Wayne, Columbiana | Crawler found no past result documents | Inconclusive |
+| Wayne | Official May 2026 and zero reports: total only (Hart layout) | Probably no |
+| Columbiana | Mixed: two official summaries split (Election Day, Absentee In Office, ...), the May 2026 official is total only | Possible; unclear |
+| Trumbull, Lorain, Mahoning, Portage, Wood | Crawler found no past result documents | Inconclusive |
 
 So "totals only" is only confirmed for Fairfield and Richland (and probably
-Greene). The rest are unknown.
+Greene and Wayne). The rest are unknown.
 
 ### Hamilton via Clarity (2026-11-01, link from the owner)
 
