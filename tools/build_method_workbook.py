@@ -39,31 +39,16 @@ import openpyxl
 from openpyxl.formatting.rule import FormulaRule
 from openpyxl.styles import Font, PatternFill
 
-from common import senate
+from common import senate, timing
+# Method buckets, candidate -> party column, and party columns are shared with
+# the timing model (common/timing.py) so the tabs always agree.
+from common.timing import BUCKET, CAND_COL, PARTY_COLS
 
 ROOT = Path(__file__).resolve().parent.parent
 LAST_VERIFIED = "2026-11-01"
 WORKBOOK = "OH_Senate_2026_vote_method.xlsx"
 ACTIONS = {"Cuyahoga", "Franklin", "Montgomery", "Summit", "Hamilton", "Pickaway", "Hocking"}
-
-# Common method name (common/senate.py) -> bucket.
-BUCKET = {
-    "Election Day": "eday",
-    "Early In-Person": "evip",
-    "Mail": "vbm",
-    "Provisional": "provisional",
-    "Absentee (early in-person + mail)": "early",  # combined only; evip/vbm stay blank
-}
 BUCKETS = ["eday", "evip", "vbm", "early", "provisional", "unassigned"]
-# Candidate -> party column, matching the aggregator's Dem / GOP / Lib / Ind / Other.
-CAND_COL = {
-    "Sherrod Brown": "dem",
-    "Jon Husted": "gop",
-    "William B. Redpath": "breakout_1",  # Libertarian
-    "Greg Levy": "breakout_2",           # other-party candidate (ASSUMPTION: the Ind column)
-    "Write-in": "other",
-}
-PARTY_COLS = ["dem", "gop", "breakout_1", "breakout_2", "other"]
 
 # --- sources tab --------------------------------------------------------
 # county -> (label mapping, unmapped labels, mapping assumption).
@@ -288,6 +273,19 @@ ABOUT = [
     ("Purpose", "Ohio 2026 U.S. Senate results by vote method, from county sources scraped by "
                 "dscarvalone/scrapers2026. Separate from the AP-based county aggregator; join on county_fips."),
     ("Built at", None),
+    ("votes_by_timing (main tab)", "Before vs on Election Day for all 88 counties. pre_eday = early in-person "
+                                   "+ mail (incl. late-arriving mail); eday = Election Day; provisional kept "
+                                   "separate (cast on Election Day or during early voting); unclassified = "
+                                   "timing unknown. pre_eday_share_2way = pre_eday / (pre_eday + eday). "
+                                   "has_mail_inperson_split = TRUE where votes_by_method also splits pre_eday "
+                                   "into evip and vbm."),
+    ("timing_source", "itemized = from the county's own vote-type split. first_drop = ESTIMATE for counties "
+                      "with totals only: Ohio boards release absentee/early ballots first, so the county's last "
+                      "statewide report with 0 precincts reporting is its pre_eday vote and growth since then is "
+                      "eday (which then also holds any absentee or provisional ballots added after the first "
+                      "precinct, so it leans toward eday). none = no clean first drop (first report already had "
+                      "precincts) or no votes yet. For itemized counties first_drop_pre_eday_total_votes and "
+                      "first_drop_check_diff show how well the estimate matched where the truth is known."),
     ("Buckets", "eday = Election Day; evip = early in-person (incl. in-office absentee); vbm = mail; "
                 "provisional; early = evip + vbm, or the county's combined absentee number when it does not "
                 "separate in-person from mail (early_combined_only = TRUE); unassigned = county vote types "
@@ -364,17 +362,28 @@ def main(argv=None) -> int:
                for d in senate.COUNTIES_DIR.iterdir()
                if d.is_dir() and d.name.replace("_", " ").title() in names}
     wide, tidy = vote_rows(reg, long_rows, fetched)
+    timing_rows = timing.timing_rows(reg, long_rows, timing.first_drop(timing.read_snapshots()))
+    for r in timing_rows:  # wall-clock time for itemized rows (county stamps can be file fingerprints)
+        if r["timing_source"] == "itemized" and r["county"] in fetched:
+            r["as_of"] = fetched[r["county"]][0]
     sources = source_rows(reg)
     built = datetime.now(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M %Z")
 
+    write_csv(args.out_dir / "votes_by_timing.csv", timing.TIMING_COLS, timing_rows)
     write_csv(args.out_dir / "votes_by_method.csv", VOTE_COLS, wide)
     write_csv(args.out_dir / "votes_long.csv", TIDY_COLS, tidy)
     write_csv(args.out_dir / "sources.csv", SOURCE_COLS, sources)
 
     wb = openpyxl.Workbook()
     wb.remove(wb.active)
-    ws = add_tab(wb, "votes_by_method", VOTE_COLS, wide, {"B": 12, "D": 24, "E": 14, "F": 24, "J": 30})
     n = len(wide) + 1
+    ws = add_tab(wb, "votes_by_timing", timing.TIMING_COLS, timing_rows,
+                 {"B": 12, "C": 13, "D": 24, "G": 12, "H": 12, "I": 70})
+    green, amber, grey = (PatternFill("solid", fgColor=c) for c in ("D9EAD3", "FFF2CC", "EFEFEF"))
+    ws.conditional_formatting.add(f"C2:C{n}", FormulaRule(formula=['$C2="itemized"'], fill=green))
+    ws.conditional_formatting.add(f"C2:C{n}", FormulaRule(formula=['$C2="first_drop"'], fill=amber))
+    ws.conditional_formatting.add(f"C2:C{n}", FormulaRule(formula=['$C2="none"'], fill=grey))
+    ws = add_tab(wb, "votes_by_method", VOTE_COLS, wide, {"B": 12, "D": 24, "E": 14, "F": 24, "J": 30})
     ws.conditional_formatting.add(f"C2:C{n}", FormulaRule(formula=["$C2=TRUE"],
                                   fill=PatternFill("solid", fgColor="D9EAD3")))
     add_tab(wb, "votes_long", TIDY_COLS, tidy, {"B": 12, "C": 20, "F": 26, "J": 24})

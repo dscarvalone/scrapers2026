@@ -12,6 +12,9 @@
 #   1. python -m tools.run_sos_counties  -> counties/<name>/data/summary_wide.csv
 #   2. python -m common.ohio_statewide   -> results/senate_statewide_by_county.csv
 #      (each file is rewritten only when its numbers changed)
+#   2b. python -m common.timing -> results/statewide_snapshots.csv (appended on
+#      change; the first-drop estimate needs this time series, so DON'T lose
+#      it) and results/senate_by_timing.csv (before vs on Election Day)
 #   3. commit just those files if changed; git pull --rebase (every cycle); git push
 #   4. python -m tools.build_method_workbook $EXPORT_DIR  -> the standalone
 #      vote-method workbook + CSVs (outside the repo; not committed)
@@ -58,6 +61,9 @@ owned_files() {
   local bot f c
   bot=$(sed -n 's/^ *COUNTIES: *"\(.*\)".*/\1/p' .github/workflows/election-night.yml)
   [ -f "$FILE" ] && echo "$FILE"
+  for f in results/statewide_snapshots.csv results/senate_by_timing.csv; do
+    [ -f "$f" ] && echo "$f"
+  done
   for f in counties/*/data/summary_wide.csv; do
     [ -f "$f" ] || continue
     c=${f#counties/}; c=${c%%/*}
@@ -103,6 +109,9 @@ while :; do
   fi
   # 2. Statewide county totals (all 88, no method split).
   "$PY" -m common.ohio_statewide || log "ERROR: statewide fetch failed (see above)."
+  # 2b. Before vs on Election Day: append the statewide snapshot (the time
+  #     series the first-drop estimate needs) and rebuild results/senate_by_timing.csv.
+  "$PY" -m common.timing || log "WARNING: timing model reported errors (see above)."
 
   if [ "$DRY_RUN" = "1" ]; then
     log "Dry run: skipping git."

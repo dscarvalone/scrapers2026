@@ -113,8 +113,16 @@ def readme_summary(rows: list[dict]) -> str:
            f"- **Gap with no split expected (totals only):** {share({'confirmed_no', 'likely_no'}):.1f}% "
            f"({sum(r['history_split'] in ('confirmed_no', 'likely_no') for r in rows)} counties)",
            "",
-           "| # | County | Expected votes | % of state | Cumulative % | Split on election night | Source (runs in) | Gap |",
-           "|---|---|---|---|---|---|---|---|"]
+           "**Before vs on Election Day (the split that matters most) covers every county:** directly "
+           f"from the vote-type split for the {share({'n/a_scraped', 'yes_election_night'}):.1f}% above, "
+           "and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release "
+           "absentee and early ballots before any precinct, so a county's last report with 0 precincts "
+           "in is its pre-Election-Day vote. The estimate fails for a county whose first report already "
+           "includes precincts, and it needs the local loop running before the first results (~7:30 PM). "
+           "Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).",
+           "",
+           "| # | County | Expected votes | % of state | Cumulative % | Split on election night | Before / on Election Day | Source (runs in) | Gap |",
+           "|---|---|---|---|---|---|---|---|---|"]
     cum = 0.0
     for i, r in enumerate(order, 1):
         c, hs = r["county"], r["history_split"]
@@ -140,7 +148,8 @@ def readme_summary(rows: list[dict]) -> str:
         status = STATUS[hs]
         if status.startswith("No") or status == "Unknown" or status == "In precinct PDF only":
             status = f"**{status}**"
-        out.append(f"| {i} | {c} | {v:,} | {100 * v / total:.1f}% | {cum:.1f}% | {status} | {src} | {gap} |")
+        timing_col = "Direct" if c in SCRAPED else "Estimate (first drop)"
+        out.append(f"| {i} | {c} | {v:,} | {100 * v / total:.1f}% | {cum:.1f}% | {status} | {timing_col} | {src} | {gap} |")
     out += ["", END]
     return "\n".join(out)
 

@@ -1,0 +1,441 @@
+fetched_at,county,candidate,votes,precincts_reported,precincts_total
+2026-11-01T22:14:23+00:00,Adams,Sherrod Brown,0,0,21
+2026-11-01T22:14:23+00:00,Adams,Jon Husted,0,0,21
+2026-11-01T22:14:23+00:00,Adams,Greg Levy,0,0,21
+2026-11-01T22:14:23+00:00,Adams,William B. Redpath,0,0,21
+2026-11-01T22:14:23+00:00,Adams,Write-in,0,0,21
+2026-11-01T22:14:23+00:00,Allen,Sherrod Brown,0,0,88
+2026-11-01T22:14:23+00:00,Allen,Jon Husted,0,0,88
+2026-11-01T22:14:23+00:00,Allen,Greg Levy,0,0,88
+2026-11-01T22:14:23+00:00,Allen,William B. Redpath,0,0,88
+2026-11-01T22:14:23+00:00,Allen,Write-in,0,0,88
+2026-11-01T22:14:23+00:00,Ashland,Sherrod Brown,0,0,39
+2026-11-01T22:14:23+00:00,Ashland,Jon Husted,0,0,39
+2026-11-01T22:14:23+00:00,Ashland,Greg Levy,0,0,39
+2026-11-01T22:14:23+00:00,Ashland,William B. Redpath,0,0,39
+2026-11-01T22:14:23+00:00,Ashland,Write-in,0,0,39
+2026-11-01T22:14:23+00:00,Ashtabula,Sherrod Brown,0,0,104
+2026-11-01T22:14:23+00:00,Ashtabula,Jon Husted,0,0,104
+2026-11-01T22:14:23+00:00,Ashtabula,Greg Levy,0,0,104
+2026-11-01T22:14:23+00:00,Ashtabula,William B. Redpath,0,0,104
+2026-11-01T22:14:23+00:00,Ashtabula,Write-in,0,0,104
+2026-11-01T22:14:23+00:00,Athens,Sherrod Brown,0,0,50
+2026-11-01T22:14:23+00:00,Athens,Jon Husted,0,0,50
+2026-11-01T22:14:23+00:00,Athens,Greg Levy,0,0,50
+2026-11-01T22:14:23+00:00,Athens,William B. Redpath,0,0,50
+2026-11-01T22:14:23+00:00,Athens,Write-in,0,0,50
+2026-11-01T22:14:23+00:00,Auglaize,Sherrod Brown,0,0,42
+2026-11-01T22:14:23+00:00,Auglaize,Jon Husted,0,0,42
+2026-11-01T22:14:23+00:00,Auglaize,Greg Levy,0,0,42
+2026-11-01T22:14:23+00:00,Auglaize,William B. Redpath,0,0,42
+2026-11-01T22:14:23+00:00,Auglaize,Write-in,0,0,42
+2026-11-01T22:14:23+00:00,Belmont,Sherrod Brown,0,0,69
+2026-11-01T22:14:23+00:00,Belmont,Jon Husted,0,0,69
+2026-11-01T22:14:23+00:00,Belmont,Greg Levy,0,0,69
+2026-11-01T22:14:23+00:00,Belmont,William B. Redpath,0,0,69
+2026-11-01T22:14:23+00:00,Belmont,Write-in,0,0,69
+2026-11-01T22:14:23+00:00,Brown,Sherrod Brown,0,0,33
+2026-11-01T22:14:23+00:00,Brown,Jon Husted,0,0,33
+2026-11-01T22:14:23+00:00,Brown,Greg Levy,0,0,33
+2026-11-01T22:14:23+00:00,Brown,William B. Redpath,0,0,33
+2026-11-01T22:14:23+00:00,Brown,Write-in,0,0,33
+2026-11-01T22:14:23+00:00,Butler,Sherrod Brown,0,0,292
+2026-11-01T22:14:23+00:00,Butler,Jon Husted,0,0,292
+2026-11-01T22:14:23+00:00,Butler,Greg Levy,0,0,292
+2026-11-01T22:14:23+00:00,Butler,William B. Redpath,0,0,292
+2026-11-01T22:14:23+00:00,Butler,Write-in,0,0,292
+2026-11-01T22:14:23+00:00,Carroll,Sherrod Brown,0,0,23
+2026-11-01T22:14:23+00:00,Carroll,Jon Husted,0,0,23
+2026-11-01T22:14:23+00:00,Carroll,Greg Levy,0,0,23
+2026-11-01T22:14:23+00:00,Carroll,William B. Redpath,0,0,23
+2026-11-01T22:14:23+00:00,Carroll,Write-in,0,0,23
+2026-11-01T22:14:23+00:00,Champaign,Sherrod Brown,0,0,31
+2026-11-01T22:14:23+00:00,Champaign,Jon Husted,0,0,31
+2026-11-01T22:14:23+00:00,Champaign,Greg Levy,0,0,31
+2026-11-01T22:14:23+00:00,Champaign,William B. Redpath,0,0,31
+2026-11-01T22:14:23+00:00,Champaign,Write-in,0,0,31
+2026-11-01T22:14:23+00:00,Clark,Sherrod Brown,0,0,78
+2026-11-01T22:14:23+00:00,Clark,Jon Husted,0,0,78
+2026-11-01T22:14:23+00:00,Clark,Greg Levy,0,0,78
+2026-11-01T22:14:23+00:00,Clark,William B. Redpath,0,0,78
+2026-11-01T22:14:23+00:00,Clark,Write-in,0,0,78
+2026-11-01T22:14:23+00:00,Clermont,Sherrod Brown,0,0,168
+2026-11-01T22:14:23+00:00,Clermont,Jon Husted,0,0,168
+2026-11-01T22:14:23+00:00,Clermont,Greg Levy,0,0,168
+2026-11-01T22:14:23+00:00,Clermont,William B. Redpath,0,0,168
+2026-11-01T22:14:23+00:00,Clermont,Write-in,0,0,168
+2026-11-01T22:14:23+00:00,Clinton,Sherrod Brown,0,0,36
+2026-11-01T22:14:23+00:00,Clinton,Jon Husted,0,0,36
+2026-11-01T22:14:23+00:00,Clinton,Greg Levy,0,0,36
+2026-11-01T22:14:23+00:00,Clinton,William B. Redpath,0,0,36
+2026-11-01T22:14:23+00:00,Clinton,Write-in,0,0,36
+2026-11-01T22:14:23+00:00,Columbiana,Sherrod Brown,0,0,73
+2026-11-01T22:14:23+00:00,Columbiana,Jon Husted,0,0,73
+2026-11-01T22:14:23+00:00,Columbiana,Greg Levy,0,0,73
+2026-11-01T22:14:23+00:00,Columbiana,William B. Redpath,0,0,73
+2026-11-01T22:14:23+00:00,Columbiana,Write-in,0,0,73
+2026-11-01T22:14:23+00:00,Coshocton,Sherrod Brown,0,0,23
+2026-11-01T22:14:23+00:00,Coshocton,Jon Husted,0,0,23
+2026-11-01T22:14:23+00:00,Coshocton,Greg Levy,0,0,23
+2026-11-01T22:14:23+00:00,Coshocton,William B. Redpath,0,0,23
+2026-11-01T22:14:23+00:00,Coshocton,Write-in,0,0,23
+2026-11-01T22:14:23+00:00,Crawford,Sherrod Brown,0,0,35
+2026-11-01T22:14:23+00:00,Crawford,Jon Husted,0,0,35
+2026-11-01T22:14:23+00:00,Crawford,Greg Levy,0,0,35
+2026-11-01T22:14:23+00:00,Crawford,William B. Redpath,0,0,35
+2026-11-01T22:14:23+00:00,Crawford,Write-in,0,0,35
+2026-11-01T22:14:23+00:00,Cuyahoga,Sherrod Brown,0,0,897
+2026-11-01T22:14:23+00:00,Cuyahoga,Jon Husted,0,0,897
+2026-11-01T22:14:23+00:00,Cuyahoga,Greg Levy,0,0,897
+2026-11-01T22:14:23+00:00,Cuyahoga,William B. Redpath,0,0,897
+2026-11-01T22:14:23+00:00,Cuyahoga,Write-in,0,0,897
+2026-11-01T22:14:23+00:00,Darke,Sherrod Brown,0,0,43
+2026-11-01T22:14:23+00:00,Darke,Jon Husted,0,0,43
+2026-11-01T22:14:23+00:00,Darke,Greg Levy,0,0,43
+2026-11-01T22:14:23+00:00,Darke,William B. Redpath,0,0,43
+2026-11-01T22:14:23+00:00,Darke,Write-in,0,0,43
+2026-11-01T22:14:23+00:00,Defiance,Sherrod Brown,0,0,33
+2026-11-01T22:14:23+00:00,Defiance,Jon Husted,0,0,33
+2026-11-01T22:14:23+00:00,Defiance,Greg Levy,0,0,33
+2026-11-01T22:14:23+00:00,Defiance,William B. Redpath,0,0,33
+2026-11-01T22:14:23+00:00,Defiance,Write-in,0,0,33
+2026-11-01T22:14:23+00:00,Delaware,Sherrod Brown,0,0,180
+2026-11-01T22:14:23+00:00,Delaware,Jon Husted,0,0,180
+2026-11-01T22:14:23+00:00,Delaware,Greg Levy,0,0,180
+2026-11-01T22:14:23+00:00,Delaware,William B. Redpath,0,0,180
+2026-11-01T22:14:23+00:00,Delaware,Write-in,0,0,180
+2026-11-01T22:14:23+00:00,Erie,Sherrod Brown,0,0,62
+2026-11-01T22:14:23+00:00,Erie,Jon Husted,0,0,62
+2026-11-01T22:14:23+00:00,Erie,Greg Levy,0,0,62
+2026-11-01T22:14:23+00:00,Erie,William B. Redpath,0,0,62
+2026-11-01T22:14:23+00:00,Erie,Write-in,0,0,62
+2026-11-01T22:14:23+00:00,Fairfield,Sherrod Brown,0,0,111
+2026-11-01T22:14:23+00:00,Fairfield,Jon Husted,0,0,111
+2026-11-01T22:14:23+00:00,Fairfield,Greg Levy,0,0,111
+2026-11-01T22:14:23+00:00,Fairfield,William B. Redpath,0,0,111
+2026-11-01T22:14:23+00:00,Fairfield,Write-in,0,0,111
+2026-11-01T22:14:23+00:00,Fayette,Sherrod Brown,0,0,25
+2026-11-01T22:14:23+00:00,Fayette,Jon Husted,0,0,25
+2026-11-01T22:14:23+00:00,Fayette,Greg Levy,0,0,25
+2026-11-01T22:14:23+00:00,Fayette,William B. Redpath,0,0,25
+2026-11-01T22:14:23+00:00,Fayette,Write-in,0,0,25
+2026-11-01T22:14:23+00:00,Franklin,Sherrod Brown,0,0,889
+2026-11-01T22:14:23+00:00,Franklin,Jon Husted,0,0,889
+2026-11-01T22:14:23+00:00,Franklin,Greg Levy,0,0,889
+2026-11-01T22:14:23+00:00,Franklin,William B. Redpath,0,0,889
+2026-11-01T22:14:23+00:00,Franklin,Write-in,0,0,889
+2026-11-01T22:14:23+00:00,Fulton,Sherrod Brown,0,0,29
+2026-11-01T22:14:23+00:00,Fulton,Jon Husted,0,0,29
+2026-11-01T22:14:23+00:00,Fulton,Greg Levy,0,0,29
+2026-11-01T22:14:23+00:00,Fulton,William B. Redpath,0,0,29
+2026-11-01T22:14:23+00:00,Fulton,Write-in,0,0,29
+2026-11-01T22:14:23+00:00,Gallia,Sherrod Brown,0,0,26
+2026-11-01T22:14:23+00:00,Gallia,Jon Husted,0,0,26
+2026-11-01T22:14:23+00:00,Gallia,Greg Levy,0,0,26
+2026-11-01T22:14:23+00:00,Gallia,William B. Redpath,0,0,26
+2026-11-01T22:14:23+00:00,Gallia,Write-in,0,0,26
+2026-11-01T22:14:23+00:00,Geauga,Sherrod Brown,0,0,79
+2026-11-01T22:14:23+00:00,Geauga,Jon Husted,0,0,79
+2026-11-01T22:14:23+00:00,Geauga,Greg Levy,0,0,79
+2026-11-01T22:14:23+00:00,Geauga,William B. Redpath,0,0,79
+2026-11-01T22:14:23+00:00,Geauga,Write-in,0,0,79
+2026-11-01T22:14:23+00:00,Greene,Sherrod Brown,0,0,151
+2026-11-01T22:14:23+00:00,Greene,Jon Husted,0,0,151
+2026-11-01T22:14:23+00:00,Greene,Greg Levy,0,0,151
+2026-11-01T22:14:23+00:00,Greene,William B. Redpath,0,0,151
+2026-11-01T22:14:23+00:00,Greene,Write-in,0,0,151
+2026-11-01T22:14:23+00:00,Guernsey,Sherrod Brown,0,0,35
+2026-11-01T22:14:23+00:00,Guernsey,Jon Husted,0,0,35
+2026-11-01T22:14:23+00:00,Guernsey,Greg Levy,0,0,35
+2026-11-01T22:14:23+00:00,Guernsey,William B. Redpath,0,0,35
+2026-11-01T22:14:23+00:00,Guernsey,Write-in,0,0,35
+2026-11-01T22:14:23+00:00,Hamilton,Sherrod Brown,0,0,563
+2026-11-01T22:14:23+00:00,Hamilton,Jon Husted,0,0,563
+2026-11-01T22:14:23+00:00,Hamilton,Greg Levy,0,0,563
+2026-11-01T22:14:23+00:00,Hamilton,William B. Redpath,0,0,563
+2026-11-01T22:14:23+00:00,Hamilton,Write-in,0,0,563
+2026-11-01T22:14:23+00:00,Hancock,Sherrod Brown,0,0,60
+2026-11-01T22:14:23+00:00,Hancock,Jon Husted,0,0,60
+2026-11-01T22:14:23+00:00,Hancock,Greg Levy,0,0,60
+2026-11-01T22:14:23+00:00,Hancock,William B. Redpath,0,0,60
+2026-11-01T22:14:23+00:00,Hancock,Write-in,0,0,60
+2026-11-01T22:14:23+00:00,Hardin,Sherrod Brown,0,0,21
+2026-11-01T22:14:23+00:00,Hardin,Jon Husted,0,0,21
+2026-11-01T22:14:23+00:00,Hardin,Greg Levy,0,0,21
+2026-11-01T22:14:23+00:00,Hardin,William B. Redpath,0,0,21
+2026-11-01T22:14:23+00:00,Hardin,Write-in,0,0,21
+2026-11-01T22:14:23+00:00,Harrison,Sherrod Brown,0,0,16
+2026-11-01T22:14:23+00:00,Harrison,Jon Husted,0,0,16
+2026-11-01T22:14:23+00:00,Harrison,Greg Levy,0,0,16
+2026-11-01T22:14:23+00:00,Harrison,William B. Redpath,0,0,16
+2026-11-01T22:14:23+00:00,Harrison,Write-in,0,0,16
+2026-11-01T22:14:23+00:00,Henry,Sherrod Brown,0,0,23
+2026-11-01T22:14:23+00:00,Henry,Jon Husted,0,0,23
+2026-11-01T22:14:23+00:00,Henry,Greg Levy,0,0,23
+2026-11-01T22:14:23+00:00,Henry,William B. Redpath,0,0,23
+2026-11-01T22:14:23+00:00,Henry,Write-in,0,0,23
+2026-11-01T22:14:23+00:00,Highland,Sherrod Brown,0,0,31
+2026-11-01T22:14:23+00:00,Highland,Jon Husted,0,0,31
+2026-11-01T22:14:23+00:00,Highland,Greg Levy,0,0,31
+2026-11-01T22:14:23+00:00,Highland,William B. Redpath,0,0,31
+2026-11-01T22:14:23+00:00,Highland,Write-in,0,0,31
+2026-11-01T22:14:23+00:00,Hocking,Sherrod Brown,0,0,20
+2026-11-01T22:14:23+00:00,Hocking,Jon Husted,0,0,20
+2026-11-01T22:14:23+00:00,Hocking,Greg Levy,0,0,20
+2026-11-01T22:14:23+00:00,Hocking,William B. Redpath,0,0,20
+2026-11-01T22:14:23+00:00,Hocking,Write-in,0,0,20
+2026-11-01T22:14:23+00:00,Holmes,Sherrod Brown,0,0,17
+2026-11-01T22:14:23+00:00,Holmes,Jon Husted,0,0,17
+2026-11-01T22:14:23+00:00,Holmes,Greg Levy,0,0,17
+2026-11-01T22:14:23+00:00,Holmes,William B. Redpath,0,0,17
+2026-11-01T22:14:23+00:00,Holmes,Write-in,0,0,17
+2026-11-01T22:14:23+00:00,Huron,Sherrod Brown,0,0,46
+2026-11-01T22:14:23+00:00,Huron,Jon Husted,0,0,46
+2026-11-01T22:14:23+00:00,Huron,Greg Levy,0,0,46
+2026-11-01T22:14:23+00:00,Huron,William B. Redpath,0,0,46
+2026-11-01T22:14:23+00:00,Huron,Write-in,0,0,46
+2026-11-01T22:14:23+00:00,Jackson,Sherrod Brown,0,0,29
+2026-11-01T22:14:23+00:00,Jackson,Jon Husted,0,0,29
+2026-11-01T22:14:23+00:00,Jackson,Greg Levy,0,0,29
+2026-11-01T22:14:23+00:00,Jackson,William B. Redpath,0,0,29
+2026-11-01T22:14:23+00:00,Jackson,Write-in,0,0,29
+2026-11-01T22:14:23+00:00,Jefferson,Sherrod Brown,0,0,55
+2026-11-01T22:14:23+00:00,Jefferson,Jon Husted,0,0,55
+2026-11-01T22:14:23+00:00,Jefferson,Greg Levy,0,0,55
+2026-11-01T22:14:23+00:00,Jefferson,William B. Redpath,0,0,55
+2026-11-01T22:14:23+00:00,Jefferson,Write-in,0,0,55
+2026-11-01T22:14:23+00:00,Knox,Sherrod Brown,0,0,53
+2026-11-01T22:14:23+00:00,Knox,Jon Husted,0,0,53
+2026-11-01T22:14:23+00:00,Knox,Greg Levy,0,0,53
+2026-11-01T22:14:23+00:00,Knox,William B. Redpath,0,0,53
+2026-11-01T22:14:23+00:00,Knox,Write-in,0,0,53
+2026-11-01T22:14:23+00:00,Lake,Sherrod Brown,0,0,163
+2026-11-01T22:14:23+00:00,Lake,Jon Husted,0,0,163
+2026-11-01T22:14:23+00:00,Lake,Greg Levy,0,0,163
+2026-11-01T22:14:23+00:00,Lake,William B. Redpath,0,0,163
+2026-11-01T22:14:23+00:00,Lake,Write-in,0,0,163
+2026-11-01T22:14:23+00:00,Lawrence,Sherrod Brown,0,0,84
+2026-11-01T22:14:23+00:00,Lawrence,Jon Husted,0,0,84
+2026-11-01T22:14:23+00:00,Lawrence,Greg Levy,0,0,84
+2026-11-01T22:14:23+00:00,Lawrence,William B. Redpath,0,0,84
+2026-11-01T22:14:23+00:00,Lawrence,Write-in,0,0,84
+2026-11-01T22:14:23+00:00,Licking,Sherrod Brown,0,0,96
+2026-11-01T22:14:23+00:00,Licking,Jon Husted,0,0,96
+2026-11-01T22:14:23+00:00,Licking,Greg Levy,0,0,96
+2026-11-01T22:14:23+00:00,Licking,William B. Redpath,0,0,96
+2026-11-01T22:14:23+00:00,Licking,Write-in,0,0,96
+2026-11-01T22:14:23+00:00,Logan,Sherrod Brown,0,0,36
+2026-11-01T22:14:23+00:00,Logan,Jon Husted,0,0,36
+2026-11-01T22:14:23+00:00,Logan,Greg Levy,0,0,36
+2026-11-01T22:14:23+00:00,Logan,William B. Redpath,0,0,36
+2026-11-01T22:14:23+00:00,Logan,Write-in,0,0,36
+2026-11-01T22:14:23+00:00,Lorain,Sherrod Brown,0,0,210
+2026-11-01T22:14:23+00:00,Lorain,Jon Husted,0,0,210
+2026-11-01T22:14:23+00:00,Lorain,Greg Levy,0,0,210
+2026-11-01T22:14:23+00:00,Lorain,William B. Redpath,0,0,210
+2026-11-01T22:14:23+00:00,Lorain,Write-in,0,0,210
+2026-11-01T22:14:23+00:00,Lucas,Sherrod Brown,0,0,280
+2026-11-01T22:14:23+00:00,Lucas,Jon Husted,0,0,280
+2026-11-01T22:14:23+00:00,Lucas,Greg Levy,0,0,280
+2026-11-01T22:14:23+00:00,Lucas,William B. Redpath,0,0,280
+2026-11-01T22:14:23+00:00,Lucas,Write-in,0,0,280
+2026-11-01T22:14:23+00:00,Madison,Sherrod Brown,0,0,24
+2026-11-01T22:14:23+00:00,Madison,Jon Husted,0,0,24
+2026-11-01T22:14:23+00:00,Madison,Greg Levy,0,0,24
+2026-11-01T22:14:23+00:00,Madison,William B. Redpath,0,0,24
+2026-11-01T22:14:23+00:00,Madison,Write-in,0,0,24
+2026-11-01T22:14:23+00:00,Mahoning,Sherrod Brown,0,0,212
+2026-11-01T22:14:23+00:00,Mahoning,Jon Husted,0,0,212
+2026-11-01T22:14:23+00:00,Mahoning,Greg Levy,0,0,212
+2026-11-01T22:14:23+00:00,Mahoning,William B. Redpath,0,0,212
+2026-11-01T22:14:23+00:00,Mahoning,Write-in,0,0,212
+2026-11-01T22:14:23+00:00,Marion,Sherrod Brown,0,0,45
+2026-11-01T22:14:23+00:00,Marion,Jon Husted,0,0,45
+2026-11-01T22:14:23+00:00,Marion,Greg Levy,0,0,45
+2026-11-01T22:14:23+00:00,Marion,William B. Redpath,0,0,45
+2026-11-01T22:14:23+00:00,Marion,Write-in,0,0,45
+2026-11-01T22:14:23+00:00,Medina,Sherrod Brown,0,0,124
+2026-11-01T22:14:23+00:00,Medina,Jon Husted,0,0,124
+2026-11-01T22:14:23+00:00,Medina,Greg Levy,0,0,124
+2026-11-01T22:14:23+00:00,Medina,William B. Redpath,0,0,124
+2026-11-01T22:14:23+00:00,Medina,Write-in,0,0,124
+2026-11-01T22:14:23+00:00,Meigs,Sherrod Brown,0,0,27
+2026-11-01T22:14:23+00:00,Meigs,Jon Husted,0,0,27
+2026-11-01T22:14:23+00:00,Meigs,Greg Levy,0,0,27
+2026-11-01T22:14:23+00:00,Meigs,William B. Redpath,0,0,27
+2026-11-01T22:14:23+00:00,Meigs,Write-in,0,0,27
+2026-11-01T22:14:23+00:00,Mercer,Sherrod Brown,0,0,36
+2026-11-01T22:14:23+00:00,Mercer,Jon Husted,0,0,36
+2026-11-01T22:14:23+00:00,Mercer,Greg Levy,0,0,36
+2026-11-01T22:14:23+00:00,Mercer,William B. Redpath,0,0,36
+2026-11-01T22:14:23+00:00,Mercer,Write-in,0,0,36
+2026-11-01T22:14:23+00:00,Miami,Sherrod Brown,0,0,87
+2026-11-01T22:14:23+00:00,Miami,Jon Husted,0,0,87
+2026-11-01T22:14:23+00:00,Miami,Greg Levy,0,0,87
+2026-11-01T22:14:23+00:00,Miami,William B. Redpath,0,0,87
+2026-11-01T22:14:23+00:00,Miami,Write-in,0,0,87
+2026-11-01T22:14:23+00:00,Monroe,Sherrod Brown,0,0,20
+2026-11-01T22:14:23+00:00,Monroe,Jon Husted,0,0,20
+2026-11-01T22:14:23+00:00,Monroe,Greg Levy,0,0,20
+2026-11-01T22:14:23+00:00,Monroe,William B. Redpath,0,0,20
+2026-11-01T22:14:23+00:00,Monroe,Write-in,0,0,20
+2026-11-01T22:14:23+00:00,Montgomery,Sherrod Brown,0,0,381
+2026-11-01T22:14:23+00:00,Montgomery,Jon Husted,0,0,381
+2026-11-01T22:14:23+00:00,Montgomery,Greg Levy,0,0,381
+2026-11-01T22:14:23+00:00,Montgomery,William B. Redpath,0,0,381
+2026-11-01T22:14:23+00:00,Montgomery,Write-in,0,0,381
+2026-11-01T22:14:23+00:00,Morgan,Sherrod Brown,0,0,13
+2026-11-01T22:14:23+00:00,Morgan,Jon Husted,0,0,13
+2026-11-01T22:14:23+00:00,Morgan,Greg Levy,0,0,13
+2026-11-01T22:14:23+00:00,Morgan,William B. Redpath,0,0,13
+2026-11-01T22:14:23+00:00,Morgan,Write-in,0,0,13
+2026-11-01T22:14:23+00:00,Morrow,Sherrod Brown,0,0,33
+2026-11-01T22:14:23+00:00,Morrow,Jon Husted,0,0,33
+2026-11-01T22:14:23+00:00,Morrow,Greg Levy,0,0,33
+2026-11-01T22:14:23+00:00,Morrow,William B. Redpath,0,0,33
+2026-11-01T22:14:23+00:00,Morrow,Write-in,0,0,33
+2026-11-01T22:14:23+00:00,Muskingum,Sherrod Brown,0,0,68
+2026-11-01T22:14:23+00:00,Muskingum,Jon Husted,0,0,68
+2026-11-01T22:14:23+00:00,Muskingum,Greg Levy,0,0,68
+2026-11-01T22:14:23+00:00,Muskingum,William B. Redpath,0,0,68
+2026-11-01T22:14:23+00:00,Muskingum,Write-in,0,0,68
+2026-11-01T22:14:23+00:00,Noble,Sherrod Brown,0,0,19
+2026-11-01T22:14:23+00:00,Noble,Jon Husted,0,0,19
+2026-11-01T22:14:23+00:00,Noble,Greg Levy,0,0,19
+2026-11-01T22:14:23+00:00,Noble,William B. Redpath,0,0,19
+2026-11-01T22:14:23+00:00,Noble,Write-in,0,0,19
+2026-11-01T22:14:23+00:00,Ottawa,Sherrod Brown,0,0,36
+2026-11-01T22:14:23+00:00,Ottawa,Jon Husted,0,0,36
+2026-11-01T22:14:23+00:00,Ottawa,Greg Levy,0,0,36
+2026-11-01T22:14:23+00:00,Ottawa,William B. Redpath,0,0,36
+2026-11-01T22:14:23+00:00,Ottawa,Write-in,0,0,36
+2026-11-01T22:14:23+00:00,Paulding,Sherrod Brown,0,0,16
+2026-11-01T22:14:23+00:00,Paulding,Jon Husted,0,0,16
+2026-11-01T22:14:23+00:00,Paulding,Greg Levy,0,0,16
+2026-11-01T22:14:23+00:00,Paulding,William B. Redpath,0,0,16
+2026-11-01T22:14:23+00:00,Paulding,Write-in,0,0,16
+2026-11-01T22:14:23+00:00,Perry,Sherrod Brown,0,0,33
+2026-11-01T22:14:23+00:00,Perry,Jon Husted,0,0,33
+2026-11-01T22:14:23+00:00,Perry,Greg Levy,0,0,33
+2026-11-01T22:14:23+00:00,Perry,William B. Redpath,0,0,33
+2026-11-01T22:14:23+00:00,Perry,Write-in,0,0,33
+2026-11-01T22:14:23+00:00,Pickaway,Sherrod Brown,0,0,46
+2026-11-01T22:14:23+00:00,Pickaway,Jon Husted,0,0,46
+2026-11-01T22:14:23+00:00,Pickaway,Greg Levy,0,0,46
+2026-11-01T22:14:23+00:00,Pickaway,William B. Redpath,0,0,46
+2026-11-01T22:14:23+00:00,Pickaway,Write-in,0,0,46
+2026-11-01T22:14:23+00:00,Pike,Sherrod Brown,0,0,22
+2026-11-01T22:14:23+00:00,Pike,Jon Husted,0,0,22
+2026-11-01T22:14:23+00:00,Pike,Greg Levy,0,0,22
+2026-11-01T22:14:23+00:00,Pike,William B. Redpath,0,0,22
+2026-11-01T22:14:23+00:00,Pike,Write-in,0,0,22
+2026-11-01T22:14:23+00:00,Portage,Sherrod Brown,0,0,126
+2026-11-01T22:14:23+00:00,Portage,Jon Husted,0,0,126
+2026-11-01T22:14:23+00:00,Portage,Greg Levy,0,0,126
+2026-11-01T22:14:23+00:00,Portage,William B. Redpath,0,0,126
+2026-11-01T22:14:23+00:00,Portage,Write-in,0,0,126
+2026-11-01T22:14:23+00:00,Preble,Sherrod Brown,0,0,65
+2026-11-01T22:14:23+00:00,Preble,Jon Husted,0,0,65
+2026-11-01T22:14:23+00:00,Preble,Greg Levy,0,0,65
+2026-11-01T22:14:23+00:00,Preble,William B. Redpath,0,0,65
+2026-11-01T22:14:23+00:00,Preble,Write-in,0,0,65
+2026-11-01T22:14:23+00:00,Putnam,Sherrod Brown,0,0,25
+2026-11-01T22:14:23+00:00,Putnam,Jon Husted,0,0,25
+2026-11-01T22:14:23+00:00,Putnam,Greg Levy,0,0,25
+2026-11-01T22:14:23+00:00,Putnam,William B. Redpath,0,0,25
+2026-11-01T22:14:23+00:00,Putnam,Write-in,0,0,25
+2026-11-01T22:14:23+00:00,Richland,Sherrod Brown,0,0,83
+2026-11-01T22:14:23+00:00,Richland,Jon Husted,0,0,83
+2026-11-01T22:14:23+00:00,Richland,Greg Levy,0,0,83
+2026-11-01T22:14:23+00:00,Richland,William B. Redpath,0,0,83
+2026-11-01T22:14:23+00:00,Richland,Write-in,0,0,83
+2026-11-01T22:14:23+00:00,Ross,Sherrod Brown,0,0,65
+2026-11-01T22:14:23+00:00,Ross,Jon Husted,0,0,65
+2026-11-01T22:14:23+00:00,Ross,Greg Levy,0,0,65
+2026-11-01T22:14:23+00:00,Ross,William B. Redpath,0,0,65
+2026-11-01T22:14:23+00:00,Ross,Write-in,0,0,65
+2026-11-01T22:14:23+00:00,Sandusky,Sherrod Brown,0,0,58
+2026-11-01T22:14:23+00:00,Sandusky,Jon Husted,0,0,58
+2026-11-01T22:14:23+00:00,Sandusky,Greg Levy,0,0,58
+2026-11-01T22:14:23+00:00,Sandusky,William B. Redpath,0,0,58
+2026-11-01T22:14:23+00:00,Sandusky,Write-in,0,0,58
+2026-11-01T22:14:23+00:00,Scioto,Sherrod Brown,0,0,77
+2026-11-01T22:14:23+00:00,Scioto,Jon Husted,0,0,77
+2026-11-01T22:14:23+00:00,Scioto,Greg Levy,0,0,77
+2026-11-01T22:14:23+00:00,Scioto,William B. Redpath,0,0,77
+2026-11-01T22:14:23+00:00,Scioto,Write-in,0,0,77
+2026-11-01T22:14:23+00:00,Seneca,Sherrod Brown,0,0,51
+2026-11-01T22:14:23+00:00,Seneca,Jon Husted,0,0,51
+2026-11-01T22:14:23+00:00,Seneca,Greg Levy,0,0,51
+2026-11-01T22:14:23+00:00,Seneca,William B. Redpath,0,0,51
+2026-11-01T22:14:23+00:00,Seneca,Write-in,0,0,51
+2026-11-01T22:14:23+00:00,Shelby,Sherrod Brown,0,0,36
+2026-11-01T22:14:23+00:00,Shelby,Jon Husted,0,0,36
+2026-11-01T22:14:23+00:00,Shelby,Greg Levy,0,0,36
+2026-11-01T22:14:23+00:00,Shelby,William B. Redpath,0,0,36
+2026-11-01T22:14:23+00:00,Shelby,Write-in,0,0,36
+2026-11-01T22:14:23+00:00,Stark,Sherrod Brown,0,0,274
+2026-11-01T22:14:23+00:00,Stark,Jon Husted,0,0,274
+2026-11-01T22:14:23+00:00,Stark,Greg Levy,0,0,274
+2026-11-01T22:14:23+00:00,Stark,William B. Redpath,0,0,274
+2026-11-01T22:14:23+00:00,Stark,Write-in,0,0,274
+2026-11-01T22:14:23+00:00,Summit,Sherrod Brown,0,0,371
+2026-11-01T22:14:23+00:00,Summit,Jon Husted,0,0,371
+2026-11-01T22:14:23+00:00,Summit,Greg Levy,0,0,371
+2026-11-01T22:14:23+00:00,Summit,William B. Redpath,0,0,371
+2026-11-01T22:14:23+00:00,Summit,Write-in,0,0,371
+2026-11-01T22:14:23+00:00,Trumbull,Sherrod Brown,0,0,158
+2026-11-01T22:14:23+00:00,Trumbull,Jon Husted,0,0,158
+2026-11-01T22:14:23+00:00,Trumbull,Greg Levy,0,0,158
+2026-11-01T22:14:23+00:00,Trumbull,William B. Redpath,0,0,158
+2026-11-01T22:14:23+00:00,Trumbull,Write-in,0,0,158
+2026-11-01T22:14:23+00:00,Tuscarawas,Sherrod Brown,0,0,81
+2026-11-01T22:14:23+00:00,Tuscarawas,Jon Husted,0,0,81
+2026-11-01T22:14:23+00:00,Tuscarawas,Greg Levy,0,0,81
+2026-11-01T22:14:23+00:00,Tuscarawas,William B. Redpath,0,0,81
+2026-11-01T22:14:23+00:00,Tuscarawas,Write-in,0,0,81
+2026-11-01T22:14:23+00:00,Union,Sherrod Brown,0,0,53
+2026-11-01T22:14:23+00:00,Union,Jon Husted,0,0,53
+2026-11-01T22:14:23+00:00,Union,Greg Levy,0,0,53
+2026-11-01T22:14:23+00:00,Union,William B. Redpath,0,0,53
+2026-11-01T22:14:23+00:00,Union,Write-in,0,0,53
+2026-11-01T22:14:23+00:00,Van Wert,Sherrod Brown,0,0,32
+2026-11-01T22:14:23+00:00,Van Wert,Jon Husted,0,0,32
+2026-11-01T22:14:23+00:00,Van Wert,Greg Levy,0,0,32
+2026-11-01T22:14:23+00:00,Van Wert,William B. Redpath,0,0,32
+2026-11-01T22:14:23+00:00,Van Wert,Write-in,0,0,32
+2026-11-01T22:14:23+00:00,Vinton,Sherrod Brown,0,0,20
+2026-11-01T22:14:23+00:00,Vinton,Jon Husted,0,0,20
+2026-11-01T22:14:23+00:00,Vinton,Greg Levy,0,0,20
+2026-11-01T22:14:23+00:00,Vinton,William B. Redpath,0,0,20
+2026-11-01T22:14:23+00:00,Vinton,Write-in,0,0,20
+2026-11-01T22:14:23+00:00,Warren,Sherrod Brown,0,0,185
+2026-11-01T22:14:23+00:00,Warren,Jon Husted,0,0,185
+2026-11-01T22:14:23+00:00,Warren,Greg Levy,0,0,185
+2026-11-01T22:14:23+00:00,Warren,William B. Redpath,0,0,185
+2026-11-01T22:14:23+00:00,Warren,Write-in,0,0,185
+2026-11-01T22:14:23+00:00,Washington,Sherrod Brown,0,0,50
+2026-11-01T22:14:23+00:00,Washington,Jon Husted,0,0,50
+2026-11-01T22:14:23+00:00,Washington,Greg Levy,0,0,50
+2026-11-01T22:14:23+00:00,Washington,William B. Redpath,0,0,50
+2026-11-01T22:14:23+00:00,Washington,Write-in,0,0,50
+2026-11-01T22:14:23+00:00,Wayne,Sherrod Brown,0,0,66
+2026-11-01T22:14:23+00:00,Wayne,Jon Husted,0,0,66
+2026-11-01T22:14:23+00:00,Wayne,Greg Levy,0,0,66
+2026-11-01T22:14:23+00:00,Wayne,William B. Redpath,0,0,66
+2026-11-01T22:14:23+00:00,Wayne,Write-in,0,0,66
+2026-11-01T22:14:23+00:00,Williams,Sherrod Brown,0,0,26
+2026-11-01T22:14:23+00:00,Williams,Jon Husted,0,0,26
+2026-11-01T22:14:23+00:00,Williams,Greg Levy,0,0,26
+2026-11-01T22:14:23+00:00,Williams,William B. Redpath,0,0,26
+2026-11-01T22:14:23+00:00,Williams,Write-in,0,0,26
+2026-11-01T22:14:23+00:00,Wood,Sherrod Brown,0,0,99
+2026-11-01T22:14:23+00:00,Wood,Jon Husted,0,0,99
+2026-11-01T22:14:23+00:00,Wood,Greg Levy,0,0,99
+2026-11-01T22:14:23+00:00,Wood,William B. Redpath,0,0,99
+2026-11-01T22:14:23+00:00,Wood,Write-in,0,0,99
+2026-11-01T22:14:23+00:00,Wyandot,Sherrod Brown,0,0,23
+2026-11-01T22:14:23+00:00,Wyandot,Jon Husted,0,0,23
+2026-11-01T22:14:23+00:00,Wyandot,Greg Levy,0,0,23
+2026-11-01T22:14:23+00:00,Wyandot,William B. Redpath,0,0,23
+2026-11-01T22:14:23+00:00,Wyandot,Write-in,0,0,23
