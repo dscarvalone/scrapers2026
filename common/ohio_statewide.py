@@ -201,7 +201,10 @@ def main(argv=None) -> int:
     if args.file:
         data = json.loads(Path(args.file).read_text(encoding="utf-8"))
     else:
-        print(f"Opening {SITE} in Chromium ({'headless' if args.headless else 'headed'})", file=sys.stderr)
+        print(f"Fetching {SITE} "
+              + ("through the SOS Chrome window (background tab)" if _chrome_window_open()
+                 else f"in a temporary Chromium ({'headless' if args.headless else 'headed'})"),
+              file=sys.stderr)
         data = fetch_json(headless=args.headless)
         RAW_DIR.mkdir(parents=True, exist_ok=True)
         stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
