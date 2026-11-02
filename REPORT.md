@@ -77,6 +77,27 @@ add a non-SOS link on election night. Class E sites were not opened
 individually (SOS-hosted, so script-blocked); that their live results are on
 the SOS ENR is presumed, not verified per county.
 
+### Past election reports for the 15 non-itemized large counties (2026-11-01)
+
+Zero reports alone are weak evidence, so `tools/past_reports.py` checked
+what each county actually published for the Nov 4, 2025 and May 5, 2026
+elections. It looks inside the first contest block for vote-type columns.
+Raw output: `tools/past_reports.json`.
+
+| County | Past reports show | Election-night split likely? |
+|---|---|---|
+| **Allen** | Nov 2025 **Unofficial** (election-night) PDF: TOTAL, Election Day, Absentee, Provisional (e.g. 353 = 302 + 51 + 0) | **Yes.** Posted as a Dropbox link on its BOE site; the Nov 3 link won't exist until it's posted |
+| **Clermont** | Official "Summary Group Detail" (Election Day, Absentee In-Person, Absentee Mail, Provisional) for 2024-2026. Also an election-night-timed CSV (Nov 4 2025, 6:15 AM) that couldn't be fetched (Cloudflare, and a cross-site redirect in Chrome) | Possible; unresolved |
+| **Lake** | Official "Group Detail" (Election Day, ED Paper, ABS By Mail, Early Vote, Provisional) for 2024-2026 | Official canvass only seen; election night unknown |
+| Fairfield, Richland | Total-only in every past report (Nov 2025, May 2026, May 2025) | **No.** Confident |
+| Greene | May 2026 results: total only | Probably no |
+| Medina | Nov 3 zero report total only; past PDFs had no text layer | Inconclusive |
+| Delaware | Past summaries are scans; "Key Canvass" text files didn't parse as split | Inconclusive |
+| Trumbull, Lorain, Mahoning, Portage, Wood, Wayne, Columbiana | Crawler found no past result documents | Inconclusive |
+
+So "totals only" is only confirmed for Fairfield and Richland (and probably
+Greene). The rest are unknown.
+
 ### Hamilton via Clarity (2026-11-01, link from the owner)
 
 Hamilton publishes on a Clarity/Scytl site,

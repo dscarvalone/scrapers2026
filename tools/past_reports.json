@@ -1,0 +1,1148 @@
+{
+ "Fairfield": {
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/fairfield",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/election-results/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/federal-write-in-absentee-ballots/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/legal-ads/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/election-info/election-results/archive-list-election-results/",
+    "via": "chrome"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20250506results.pdf",
+    "label": "May 6, 2025 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 192373,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 216181,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "111,349 | 0.00% | State Issue 3 | (Vote for  1) | Candidate | Total | FOR THE TAX | 0 | AGAINST THE TAX | 0 | Total Votes | 0 | Total | Times Cast | 0 | / | 41,023 | 0.00%"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 421955,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "43 | (100.00%) | Pickerington LSD Income Tax | (Vote for  1) | Candidate | Total | YES | 744 | 68.51% | NO | 342 | 31.49% | Total Votes | 1,086 | Total | Times Cast | 1,113 | /"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/fairfield/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 309920,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "6 | (100.00%) | Franklin County - Judge of Municipal Court (FTC 1/1/2026) | (Vote for  1) | Candidate | Party | Total | Jessica G. D'Varga | 677 | 100.00% | Total Votes | 677 | Total | Times Cast | 1,071 | / | 6,298 | 17.01%"
+   }
+  ]
+ },
+ "Richland": {
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/richland/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/election-results/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/federal-write-in-absentee-ballots/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/pollworker-information/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/early-voting-hours/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/voting-system/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/election-info/registration-deadlines/",
+    "via": "chrome"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Summary Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 233767,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "83 | (0.00%) | For Governor and Lieutenant Governor | (Vote for  1) | Candidate | Party | Total | Keith Faber | REP | 0 | N/A | John J. Kulewicz | DEM | 0 | N/A | Total Votes | 0 | Total"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 230335,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "(100.00%) | Lexington Local School District Proposed Income Tax 1.50 Percent Cont. Period | of Time | (Vote for  1) | 5/14/2026 10:50:05 AM | Page: | 12 | of | 13 | Candidate | Party | Total | For the Tax | 1,916 | 41.72% | Against the Tax | 2,677 | 58.28%"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 756898,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 4,
+    "likely_split": false,
+    "excerpt": "Total Votes 0 | Total | Times Cast 0 / 0 N/A | City of Galion For Mayor (Vote for 1) | Precincts Reported: 1 of 1 (100.00%) | Candidate Party Total | Thomas G Fellner 0 N/A | Total Votes 0 | Total | Times Cast 0 / 0 N/A | City of Galion For President of Council (Vote for 1) | Precincts Reported: 1 of 1 (100.00%) | Precincts Reported: 83 of 83 (100.00%) | Voters Cast: 18,245 of 77,527 (23.53%) | Summary for: All Contests, All Districts, All Tabulators, All Counting Groups | Official Canvass | November 4, 2025 | General Election"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/richland/c/elecres/20250506results.pdf",
+    "label": "May 6, 2025 Summary Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 203103,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "83 | (100.00%) | State Constitutional Amendment Public Infrastructure #2 | (Vote for  1) | Candidate | Party | Total | YES | 1,690 | 66.38% | NO | 856 | 33.62% | Total Votes | 2,546 | Total | Times Cast | 2,560"
+   }
+  ]
+ },
+ "Medina": {
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/medina",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/election-workers/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/election-results/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/registration-deadlines/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/absentee-voting/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/federal-write-in-absentee-ballots",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/election-info/election-results/archive-list-election-results/",
+    "via": "chrome"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 18366,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "0Ballots Cast - Total | Voter Turnout - Total 0.00% | Governor and Lieutenant Governor | Vote For 1 | TOTAL VOTE % | DEM Acton/ Pepper 0 | LIB Kissick/ Mills 0 | REP Ramaswamy/ McColley 0 | Write-In Totals 0 | Attorney General | Vote For 1 | TOTAL VOTE % | REP Keith Faber 0 | DEM John J. Kulewicz 0 | Auditor of State | Vote For 1 | TOTAL VOTE % | DEM Annette Blackwell 0"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20250506results.pdf",
+    "label": "May 6, 2025 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 387049,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 552596,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20260505overlap.pdf",
+    "label": "May 5, 2026 Overlap Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 202077,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 4785802,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/upload/Election_RecountOfficialResults.pdf",
+    "label": "November 4, 2025 Official Results Recount",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 21738,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/medina/c/elecres/20251104overlap.pdf",
+    "label": "November 4, 2025 Overlap Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 268111,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 12,
+    "likely_split": false,
+    "excerpt": "School District | Election Date | and Type: November 4, 2025 Office: Member of Board of Education | *Vote for 2* | The above named board of elections hereby certifies the votes cast for the candidates below for the office described above. | Indicate successful candidate(s) with an asterisk. | Candidates Jeremy R. Holly Daniel Sexton * Adam Woolfrom * | Party | Write-in (Y/N) No No No | County Votes Votes Votes Votes Votes Votes Votes Votes Votes Votes Votes Votes | Medina 289 382 307 | Ashland 204 360 233 | Lorain 114 177 146 | Totals 607 919 686 0 0 0 0 0 0 0 0 0 | Official Canvass by the Most Populous County (Candidates) | County Board of | Elections: Medina | District Number"
+   }
+  ]
+ },
+ "Trumbull": {
+  "pages": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/",
+    "via": "http"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://boe.co.trumbull.oh.gov/pdfs/Election Summary.pdf",
+    "label": "Election Results for the November 3, 2026 General Election",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 33073,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "UNOFFICIAL RESULTS | TRUMBULL COUNTY | Governor and Lieutenant Governor | Vote For 1 | TOTAL VOTE % | DEM Amy Acton and David Pepper 0 | LIB Don Kissick and James L. Mills 0 | REP Vivek Ramaswamy and Robert A. 0 | Write-In Totals 0 | Not Assigned 0 | Total Votes Cast 0 0.00% | Attorney General | Vote For 1 | TOTAL VOTE % | REP Keith Faber 0 | DEM John J. Kulewicz 0 | Total Votes Cast 0 0.00% | Auditor of State"
+   }
+  ]
+ },
+ "Lorain": {
+  "pages": [
+   {
+    "url": "https://www.voteloraincountyohio.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/elections-results-search",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2026-primary-election-information",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2025-primary%2Fspecial-election-information",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2024-primary-election-information",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2023-august-special-election",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2022-general-election-information",
+    "via": "http"
+   },
+   {
+    "url": "https://www.voteloraincountyohio.gov/election-results-1/2025-general-election-information",
+    "via": "http"
+   }
+  ],
+  "docs": []
+ },
+ "Lake": {
+  "pages": [
+   {
+    "url": "https://www.lakecountyohio.gov/boe/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/election-results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/election-results-archive/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/99result-internet_files.zip",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/03072000.zip",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/11072000.zip",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/05082001.zip",
+    "via": "http"
+   },
+   {
+    "url": "https://www.lakecountyohio.gov/boe/wp-content/uploads/sites/12/2021/04/11062001.zip",
+    "via": "http"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/06/16114325/Group-Detail.pdf",
+    "label": "Official Results Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 546476,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Official Results | Lake County | Dem Governor and Lieutenant Governor | Vote For 1 | Election | Day ProvisionalEarly VoteTOTAL Election | Day Paper | Regular | ABS By | Mail | VOTE % | Amy Acton and David Pepper 16,637 12,528 7 2,354 1,675 73 | 100.00% | 100.00%Total Votes Cast 16,637 12,528 7 2,354 1,675 73 | Precincts Reporting 163 of 163 | Dem Attorney General | Vote For 1 | Election"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/11/30144848/Official-Group-Detail.pdf",
+    "label": "Official Results Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 234746,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Official Results | Lake County | Judge of Municipal Court FTC 1/1/26 Mentor Municipal Court | Vote For 1 | Election | Day ProvisionalEarly VoteTOTAL Election | Day Paper | Regular | ABS By | Mail | VOTE % | John Trebets 10,198 7,979 0 1,360 825 34 | 100.00% | 100.00%Total Votes Cast 10,198 7,979 0 1,360 825 34 | Precincts Reporting 39 of 39 | Mayor Eastlake City | Vote For 1 | Election"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/05/30144914/Group-Detail-Report.pdf",
+    "label": "Official Results Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 21849,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Official Results | Lake County | Mayor Eastlake City | Vote For 1 | Election | Day ProvisionalEarly VoteTOTAL Election | Day Paper | Regular | ABS By | Mail | VOTE % | Laura A. DePledge 715 623 0 28 63 1 | 30.19% | Carolyn Kinkoph 171 153 0 8 10 0 | 7.22% | Kevin J. Kostelnik 656 579 1 24 51 1 | 27.70% | John Meyers 19 16 0 0 3 0"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/01/30144935/Group-Detail.pdf",
+    "label": "Official Results Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 71035,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Official Results | Lake County | President and Vice President | Vote For 1 | Regular | ABS By | Mail | Early VoteElection | Day Paper | Election | DayTOTAL Provisional | Richard Duncan 316 190 0 38 85 3 | Kamala D. Harris 54,484 25,065 15 13,927 14,727 750 | Chase Oliver 595 385 0 67 136 7 | Peter Sonski 216 127 0 32 55 2 | Candidate Withdrawn 306 218 0 43 42 3 | Donald J. Trump 72,924 41,257 28 18,468 12,017 1,154 | Write-In Totals 318 177 0 45 92 4"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2026/06/16114341/Lakes-County-Official-Precinct-Summary-Group-Detail.pdf",
+    "label": "Precinct-by-Precinct Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 14987539,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Voter Turnout - Republican 60.00% | Voter Turnout - Libertarian 0.00% | Voter Turnout - Nonpartisan 0.00% | Vote For 1 | Dem Governor and Lieutenant Governor | ProvisionalVOTE %TOTAL Election | Day | Regular | ABS By | Mail | Early VoteElection | Day Paper | Amy Acton and David Pepper 62 47 0 2 13 0 | 100.00% | 013204762Total Votes Cast | 100.00% | Vote For 1 | Dem Attorney General"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/11/30144848/Lake-Countys-Official-Precinct-Report.pdf",
+    "label": "Precinct-by-Precinct Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 3143080,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Registered Voters - Total 1,010 | 206Ballots Cast - Total 178 0 13 14 1 | Voter Turnout - Total 20.40% | Vote For 1 | Mayor Eastlake City | ProvisionalVOTE %TOTAL Election | Day | Regular | ABS By | Mail | Early VoteElection | Day Paper | Laura A. DePledge 100 87 0 4 8 1 | 51.02% | Kevin J. Kostelnik 96 83 0 7 6 0 | 48.98% | 114110170196Total Votes Cast | 100.00%"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/05/30144913/Lake-Countys-Precinct-Summary.pdf",
+    "label": "Precinct-by-Precinct Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 765112,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "Registered Voters - Total 1,075 | 122Ballots Cast - Total 109 0 3 10 | Voter Turnout - Total 11.35% | Vote For 1 | Mayor Eastlake City | VOTE %TOTAL Election | Day | Regular | ABS By | Mail | Early VoteElection | Day Paper | Laura A. DePledge 22 20 0 0 2 | 18.03% | Carolyn Kinkoph 17 15 0 0 2 | 13.93% | Kevin J. Kostelnik 25 23 0 0 2 | 20.49%"
+   },
+   {
+    "url": "https://wpassets.lakecountyohio.gov/wp-content/uploads/sites/12/2025/07/30144908/23-Gen-Precinct-Results-updated.pdf",
+    "label": "Precinct-by-Precinct Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 2919858,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Early",
+     "Provisional"
+    ],
+    "max_numeric_cols": 6,
+    "likely_split": true,
+    "excerpt": "Registered Voters - Total 1,059 | 397Ballots Cast - Total 340 1 22 29 5 | Voter Turnout - Total 37.49% | Vote For 1 | Judge of Municipal Court FTC 1/1/24 Willoughby Municipal Court | ProvisionalVOTE %TOTAL Election | Day | ABS By | MailEarly VoteElection | Day Paper | Marisa L. Cornachio 181 152 0 13 14 2 | 54.35% | Michael P. Germano 152 131 0 6 12 3 | 45.65% | 526190283333Total Votes Cast | 100.00% | Vote For 1 | Member of Council Eastlake Ward 1"
+   }
+  ]
+ },
+ "Mahoning": {
+  "pages": [
+   {
+    "url": "https://vote.mahoningcountyoh.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://vote.mahoningcountyoh.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
+    "via": "http"
+   }
+  ],
+  "docs": []
+ },
+ "Delaware": {
+  "pages": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/event/official-canvass-3/",
+    "via": "http"
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/data/pastresults/",
+    "via": "http"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2026/05/SKM_C550i_M26051911100.pdf",
+    "label": "Summary Report",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 3018076,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2025/11/SKM_C550i_M25111811100.pdf",
+    "label": "Summary Report",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 821450,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2026/05/Number_Key_Canvass_418-3.txt",
+    "label": "Key Canvass",
+    "status": 200,
+    "type": "text/plain",
+    "bytes": 1093455,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Ed"
+    ],
+    "max_numeric_cols": 52442,
+    "likely_split": true,
+    "excerpt": "NUMBERED KEY CANVASS Delaware County Primary Election May 5, 2026 RUN DATE:05/19/26 12:12 PM May 05, 2026 REPORT PAGE 1/588 STATISTICS TOTAL PERCENT TOTAL PERCENT 01 = REGISTERED VOTERS - TOTAL 166234 03 = VOTER TURNOUT - TOTAL 24.40 02 = BALLOTS CAST - TOTAL 40561 - - - - - - - - - 01 02 03 - - - - - - - - - 00100 001 Ashley 671 . 151 22.50 00200 002 Berkshire A 1237 . 281 22.72 00300 003 Berkshire B 1295 . 232 17.92 00400 004 Berkshire C 812 . 216 26.60 00500 005 Berkshire D 1007 . 270 26.81 00600 006 Berkshire E 283 . 97 34.28 00700 007 Berlin A 829 . 220 26.54 00800 008 Berlin B 756 . 160 21.16 00900 009 Berlin C 809 . 144 17.80 01000 010 Berlin D 1254 . 331 26.40 01100 011 Berlin E 1083 . 208 19.21 01200 012 Berlin F 1189 . 277 23.30 01300 013 Berlin G 964 . 188 19.50 01400 014 Brown 1198 . 415 34.64 01500 015 Columbus City A 1063 . 199 18.72 01600 016 Columbus City B 1063 . 194 18."
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2025/11/Number_Key_Canvass_415-1.txt",
+    "label": "Key Canvass",
+    "status": 200,
+    "type": "text/plain",
+    "bytes": 255761,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 12995,
+    "likely_split": false,
+    "excerpt": "NUMBERED KEY CANVASS Delaware County General Election November 4, 2025 RUN DATE:11/18/25 10:18 AM November 04, 2025 REPORT PAGE 1/124 STATISTICS TOTAL PERCENT TOTAL PERCENT 01 = REGISTERED VOTERS - TOTAL 164898 03 = VOTER TURNOUT - TOTAL 35.26 02 = BALLOTS CAST - TOTAL 58142 - - - - - - - - - 01 02 03 - - - - - - - - - 00100 001 Ashley 665 . 203 30.53 00200 002 Berkshire A 1179 . 357 30.28 00300 003 Berkshire B 1299 . 364 28.02 00400 004 Berkshire C 730 . 296 40.55 00500 005 Berkshire D 1011 . 428 42.33 00600 006 Berkshire E 279 . 125 44.80 00700 007 Berlin A 755 . 324 42.91 00800 008 Berlin B 761 . 302 39.68 00900 009 Berlin C 773 . 198 25.61 01000 010 Berlin D 1218 . 501 41.13 01100 011 Berlin E 1074 . 359 33.43 01200 012 Berlin F 1161 . 449 38.67 01300 013 Berlin G 926 . 361 38.98 01400 014 Brown 1189 . 558 46.93 01500 015 Columbus City A 1009 . 243 24.08 01600 016 Columbus City B 107"
+   },
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2025/05/Number_Key_Canvass_412.txt",
+    "label": "Key Canvass",
+    "status": 200,
+    "type": "text/plain",
+    "bytes": 101270,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 6349,
+    "likely_split": false,
+    "excerpt": "NUMBERED KEY CANVASS Delaware County Primary Election May 6th, 2025 RUN DATE:05/06/25 10:22 PM May 06, 2025 REPORT PAGE 1/38 STATISTICS TOTAL PERCENT TOTAL PERCENT 01 = REGISTERED VOTERS - TOTAL 166753 03 = VOTER TURNOUT - TOTAL 13.31 02 = BALLOTS CAST - TOTAL 22189 - - - - - - - - - 01 02 03 - - - - - - - - - 00100 001 Ashley 699 . 67 9.59 00200 002 Berkshire A 1114 . 71 6.37 00300 003 Berkshire B 1272 . 80 6.29 00400 004 Berkshire C 686 . 75 10.93 00500 005 Berkshire D 1000 . 90 9.00 00600 006 Berkshire E 281 . 36 12.81 00700 007 Berlin A 702 . 91 12.96 00800 008 Berlin B 774 . 71 9.17 00900 009 Berlin C 772 . 54 6.99 01000 010 Berlin D 1221 . 150 12.29 01100 011 Berlin E 1101 . 98 8.90 01200 012 Berlin F 1169 . 111 9.50 01300 013 Berlin G 892 . 81 9.08 01400 014 Brown 1201 . 228 18.98 01500 015 Columbus City A 1032 . 96 9.30 01600 016 Columbus City B 1119 . 63 5.63 01700 017 Columbus "
+   }
+  ]
+ },
+ "Clermont": {
+  "pages": [
+   {
+    "url": "https://boe.clermontcountyohio.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/election_results/index.php",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/Clermont",
+    "via": "http-error"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://boe.clermontcountyohio.gov/2015 May 5 - Special Election - Clermont Voters only - Unofficial Results.pdf?t=202501281057010",
+    "label": "2015 May 5 Special Election -Clermont Voters Only - Unofficial Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 15484,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/2015 May 5 - Special Election - Warren County Unofficial Results.pdf?t=202501281058320",
+    "label": "2015 May 5 Special elections - Warren County Unofficial Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 218296,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/OfficialGroupDetail.pdf?t=202605201226100",
+    "label": "2026 May 5 Primary Election - Summary Group Detail - Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 557595,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "In-Person",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "OFFICIAL RESULTS | Clermont County, Ohio | Dem For Governor and Lieutenant Governor | Vote For 1 | Election | Day | Absentee | In-PersonTOTAL Absentee | Mail ProvisionalVOTE % | Amy Acton and David Pepper 9,204 7,058 807 1,312 27 | 100.00% | 100.00%Total Votes Cast 9,204 7,058 807 1,312 27 | Overvotes 0 0 0 0 0 | Undervotes 506 391 48 66 1 | Contest Totals 9,710 7,449 855 1,378 28 | Precincts Reporting 168 of 168 | Dem For Attorney General | Vote For 1"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/officialgroups2025SPE.pdf?t=202511040603150",
+    "label": "2025 May 6 - Special Election - Summary Group Detail - Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 45294,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "In-Person",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "OFFICIAL RESULTS | Clermont County, Ohio | State Issue 2 | Vote For 1 | Election | Day | Absentee | In-PersonTOTAL Absentee | Mail ProvisionalVOTE % | No 10,334 8,862 351 1,080 41 | 53.16% | Yes 9,104 7,634 498 942 30 | 46.84% | 100.00%Total Votes Cast 19,438 16,496 849 2,022 71 | Overvotes 2 2 0 0 0 | Undervotes 308 273 12 22 1 | Contest Totals 19,748 16,771 861 2,044 72 | Precincts Reporting 168 of 168"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/2025GENSummayOfficialResults.pdf?t=202605061321470",
+    "label": "2025 November 4 - General Election - Summary Group Report - Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 256656,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "In-Person",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "OFFICIAL RESULTS | Clermont County, Ohio | For Judge of Municipal Court (UTE 12-31-29) | Vote For 1 | Election | Day | Absentee | In-PersonTOTAL Absentee | Mail ProvisionalVOTE % | Nathan M. Little 21,966 18,306 1,211 2,372 77 | 100.00% | 100.00%Total Votes Cast 21,966 18,306 1,211 2,372 77 | Overvotes 0 0 0 0 0 | Undervotes 12,909 10,596 801 1,470 42 | Contest Totals 34,875 28,902 2,012 3,842 119 | Precincts Reporting 168 of 168 | For Judge of Municipal Court (UTE 1-1-28) | Vote For 1"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/2024GEN Official Results - summary group.pdf?t=202505021032320",
+    "label": "2024 General Election Summary Report Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 144945,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "In-Person",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "OFFICIAL RESULTS | Clermont County, Ohio | For President and Vice President | Vote For 1 | Election | Day | Absentee | In-PersonTOTAL Absentee | Mail ProvisionalVOTE % | Rep Donald J. Trump 76,964 46,234 11,207 18,330 1,193 | 67.11% | Dem Kamala D. Harris 36,130 17,715 9,262 8,705 448 | 31.50% | Lib Chase Oliver 657 414 143 85 15 | 0.57% | Write-In: (Invalid) 295 187 62 42 4 | 0.26% | Candidate Withdrawn 245 186 24 30 5"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/March 2024 Election Summary with Groups.pdf?t=202505021005470",
+    "label": "2024 March 19 - Primary Election - Summary Group Detail - Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 108270,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "In-Person",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "OFFICIAL RESULTS | Clermont County, Ohio | Dem For Delegates-at-Large and Alternates-at-Large to the National Convention | Vote For 1 | TOTAL VOTE % Election | Day | Absentee | Mail | Absentee | In-Person | Provisional | Joseph R. Biden Jr. 4,121 85.75% 2,796 633 679 13 | Dean Phillips 685 14.25% 547 77 58 3 | Total Votes Cast 4,806 100.00% 3,343 710 737 16 | Overvotes 1 1 0 0 0 | Undervotes 193 162 12 18 1 | Contest Totals 5,000 3,506 722 755 17 | Precincts Reporting 168 of"
+   },
+   {
+    "url": "https://boe.clermontcountyohio.gov/Official Canvass Summary with Groups.HTM?t=202606171348320",
+    "label": "2018 November 6&#160; General Election &#8211; Official Results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18"
+   }
+  ]
+ },
+ "Greene": {
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/greene/",
+    "error": "Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://www.boe.ohio.gov/greene/\", waiting until \"load\"\n"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 928194,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/greene/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 447590,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "24,154 | 26.05% | Issue 1 - Xenia CCSD Renewal Tax Levy | (Vote for  1) | Candidate | Party | Total | For the Tax Levy | 159 | Against the Tax Levy | 137 | Total Votes | 296 | Total | Times Cast | 297 | / | 1,284"
+   }
+  ]
+ },
+ "Portage": {
+  "pages": [
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/pages/voter-information",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/board-elections/pages/prior-election-results",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/election-information/pages/secretary-state",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/sites/g/files/vyhlif3706/f/uploads/boe_social_media_policy.pdf",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/election-information/pages/voter-registration-general-information",
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.portagecounty-oh.gov/election-information/pages/elector-qualifications",
+    "via": "chrome"
+   }
+  ],
+  "docs": []
+ },
+ "Wood": {
+  "pages": [
+   {
+    "url": "https://boe.woodcountyohio.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/174/Election-Results",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/174/Election-Results",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/DocumentCenter/View/414/Bloomdale-Village-Council-Recount-Results-PDF?bidId=",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/DocumentCenter/View/447/Perrysburg-Council-Recount-Results-PDF?bidId=",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/DocumentCenter/View/445/Anthony-Wayne-Board-of-Education-Recount-Results-PDF?bidId=",
+    "via": "http"
+   },
+   {
+    "url": "https://boe.woodcountyohio.gov/DocumentCenter/View/621/Milton-Twp-Recount",
+    "via": "http"
+   }
+  ],
+  "docs": []
+ },
+ "Allen": {
+  "pages": [
+   {
+    "url": "https://allen.boe.ohio.gov/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/2026/05/21/official-results-may-5-2026-primary-election/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-results/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/page/2/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/page/3/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/page/10/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://allen.boe.ohio.gov/category/election-info/page/11/",
+    "via": "chrome"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.dropbox.com/scl/fi/censmfq8302agloveystm/2025_GENERAL_UNOFFICIAL.pdf?rlkey=9rmjbdyudaep8he6snjq9wvnb&amp;dl=0",
+    "label": "November 4, 2025 General Election \u2013 Unofficial Results",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/srg6zzsrnyz1rubs18u2o/2025P_UNOFFICIAL.pdf?rlkey=4k1avze81jetdlxgwreyxh7v4&amp;dl=0",
+    "label": "May 6, 2025 Special Election Unofficial Results",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/rxurt99k6zmaf2wwpeeko/2025P_Overlaps_unofficial.pdf?rlkey=gj1rzfzw8wt0ozc2itbwbiclz&amp;dl=0",
+    "label": "May 6, 2025 Special Election Overlaps Unofficial Results",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/9v6yoqdme68qxf27fcxyg/2026_PRIMARY_SUMMARY_OFFICIAL.pdf?rlkey=vpdfzkky8uhilez5azvqvncmi&amp;dl=0",
+    "label": "Summary Results with Group",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/67invzl92dgsmncmc2fut/2026_Primary_Unofficial.pdf?rlkey=znejhvhcrbutfguqf3t56z1qo&amp;dl=0",
+    "label": "MAY 5, 2026 PRIMARY",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.dropbox.com/scl/fi/59xitvdjopmbazfn7rd6u/2025_General_Offical_Summary.pdf?rlkey=g0q3ybjlgi7pzlfd2zj2twih0&amp;dl=0",
+    "label": "2025 General Election Official Summary Results",
+    "status": 400,
+    "type": "text/html; charset=utf-8",
+    "bytes": 1005,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/allen/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/allen/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18"
+   }
+  ]
+ },
+ "Wayne": {
+  "pages": [
+   {
+    "url": "https://www.waynecountyoh.gov/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/pri26results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/gen25results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/prispec25results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/gen24results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/pri24results/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/election-results-may-03-2022-primary/",
+    "via": "http"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/election-results-past-election-results/",
+    "via": "http"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2026/05/Pri-26-Wayne-Co-Official-Canvass.pdf",
+    "label": "Complete Wayne County Official Results &#8211; Including Write-Ins",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 353148,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "4,793 | 24.81% | Northwestern LSD Proposed Tax Levy (Renewal) | (Vote for  1) | 5/20/2026 9:03:05 AM | Page: | 35 | of | 38 | Candidate | Party | Total | FOR THE TAX LEVY | 184 | AGAINST THE TAX LEVY | 132 | Total Votes | 316"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2025/11/Wayne-Official-Canvass-Signed.pdf",
+    "label": "Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 976357,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2025/11/Official-Most-Populous-Rittman-EVSD-Levy.pdf",
+    "label": "Official Most Populous Results &#8211; Issues",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 31074,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2025/05/May-2025-Signed-Official-Results.pdf",
+    "label": "May 6th, 2025 Primary/Special Election &#8211; Signed Official Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 542733,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.ohiosos.gov/assets/2026-11-statewide-issue-3-report.pdf",
+    "label": "State Issue 3 Information",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 986571,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2026/05/May-5-2026-Primary-Special-Election-Official-Canvass-Most-Populous-Issues.pdf",
+    "label": "Official Most Populous Reports &#8211; Issues",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 97477,
+    "via": "http",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2026/05/Pri26-Zero-report.pdf",
+    "label": "Zero report",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 352582,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "4,793 | 0.00% | Northwestern LSD Proposed Tax Levy (Renewal) | (Vote for  1) | 5/4/2026 11:32:10 AM | Page: | 35 | of | 38 | Candidate | Party | Total | FOR THE TAX LEVY | 0 | AGAINST THE TAX LEVY | 0 | Total Votes | 0"
+   },
+   {
+    "url": "https://www.waynecountyoh.gov/wp-content/uploads/2025/11/Zero-Report-Gen-25.pdf",
+    "label": "Zero Report",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 295196,
+    "via": "http",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 1,
+    "likely_split": false,
+    "excerpt": "3 | 0.00% | Norton City Council (4th Ward) | (Vote for  1) | Candidate | Party | Total | Rick Aspiras Jr. | REP | 0 | Rees H. Davies | REP | 0 | Total Votes | 0 | Total | Unresolved Write-In | 0"
+   }
+  ]
+ },
+ "Columbiana": {
+  "pages": [
+   {
+    "url": "https://columbiana.boe.ohio.gov/",
+    "via": "chrome"
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/elections/election-results/",
+    "via": "chrome"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2025/11/Election-Summary-Group-Detail.pdf",
+    "label": "Official Results \u2013 Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 116571,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "18,220Ballots Cast - Total 15,836 718 1,614 52 | Voter Turnout - Total 28.56% | Mayor Columbiana City | Vote For 1 | TOTAL VOTE % Election | Day | Absentee In OfficeProvisional | Rep Rick Noel 929 100.00% 833 32 63 1 | Total Votes Cast 929 100.00% 833 32 63 1 | Overvotes 0 0 0 0 0 | Undervotes 314 275 15 24 0 | Contest Totals 1,243 1,108 47 87 1 | Member of Council Columbiana City | Vote For 3 | TOTAL VOTE % Election | Day | Absentee In OfficeProvisional | Rep Amanda Banner 781 35.61% 696 29 55 1"
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2025/05/Election-Summary-Group-Detail.pdf",
+    "label": "Official Results \u2013 Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 12894,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [
+     "Absentee",
+     "Provisional"
+    ],
+    "max_numeric_cols": 5,
+    "likely_split": true,
+    "excerpt": "Voter Turnout - Republican 52.81% | Voter Turnout - Nonpartisan 4.79% | Rep President of Council Salem City | Vote For 1 | TOTAL VOTE % Election | Day | Absentee In OfficeProvisional | Evan Newman 828 100.00% 694 38 93 3 | Total Votes Cast 828 100.00% 694 38 93 3 | Rep Treasurer Salem City | Vote For 1 | TOTAL VOTE % Election | Day | Absentee In OfficeProvisional | Tod A. Mumpire 805 100.00% 672 38 92 3 | Total Votes Cast 805 100.00% 672 38 92 3 | Rep Member of Council at Large Salem City | Vote For 3"
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/05/Election-Summary.pdf",
+    "label": "Official Results \u2013 Summary",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 59558,
+    "via": "chrome",
+    "contest_found": true,
+    "method_header_words": [],
+    "max_numeric_cols": 3,
+    "likely_split": false,
+    "excerpt": "Voter Turnout - Libertarian 0.00% | Voter Turnout - Nonpartisan 0.16% | Dem Governor and Lieutenant Governor | Vote For 1 | TOTAL VOTE % | Amy Acton and David Pepper 3,554 100.00% | Total Votes Cast 3,554 100.00% | Overvotes 0 | Undervotes 200 | Contest Totals 3,754 | Dem Attorney General | Vote For 1 | TOTAL VOTE % | Elliot Forhan 1,365 40.99% | John J. Kulewicz 1,965 59.01% | Total Votes Cast 3,330 100.00% | Overvotes 6 | Undervotes 418"
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2026/05/Overlaps-with-Most-Populous-5.5.2026-.pdf",
+    "label": "Official Results \u2013 With Overlapping County Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 426842,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2025/11/Overlaps-PDF-Final.pdf",
+    "label": "Official Results \u2013 With Overlapping County Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 2462737,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2025/05/Overlap-Summary-2025-Prim-Spec.pdf",
+    "label": "Official Results \u2013 With Overlapping County Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 265110,
+    "via": "chrome",
+    "contest_found": false
+   },
+   {
+    "url": "https://www.boe.ohio.gov/columbiana/c/elecres/20251104results.pdf",
+    "label": "(standard SOS path) 20251104 results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/columbiana/c/elecres/20260505results.pdf",
+    "label": "(standard SOS path) 20260505 results",
+    "error": "Page.evaluate: TypeError: Failed to fetch\n    at eval (eval at evaluate (:370:30), <anonymous>:1:25)\n    at UtilityScript.evaluate (<anonymous>:377:18"
+   }
+  ]
+ }
+}
