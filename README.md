@@ -198,7 +198,7 @@ agent sandbox. Keep the Mac plugged in and online.
 |---|---|---|
 | Before 6:00 PM | `git pull` | Picks up the bot's and the loop's commits |
 | 6:00 PM | Actions schedule starts (every 5 min) | Cuyahoga, Franklin, Montgomery, Summit, Pickaway and Hocking scraped in Actions (Hamilton runs in the local loop) |
-| 7:00 PM | `tools/sos_chrome.sh` | A separate Chrome window opens on Butler's ENR page. If it shows "Verify you are human", click it. Leave it open all night |
+| 7:00 PM | `tools/sos_chrome.sh` | A separate Chrome instance opens **in the background** with 3 tabs (SOS ENR, SOS statewide, an SOS BOE page). Look through them once for "Verify you are human" and click it if shown, then minimize the window or leave it behind your work. The loop reuses those tabs and opens any new one in the background, so nothing pops up or takes focus. Leave it open all night |
 | 7:00 PM, **before the first results at ~7:30** | `tools/local_loop.sh` (enter token once) | Every 5 min: SOS ENR + PDF counties + statewide totals + timing snapshot, commit, push. Allen logs "not posted yet" until its link appears. **It must be running before the first absentee release**: the before/on-Election-Day estimate for totals-only counties reads the statewide snapshots taken while they have 0 precincts in. A county missed in that window shows `timing_source = none` |
 | ~8:30 PM, after the first absentee uploads | In a second Terminal tab: `.venv/bin/python -m tools.recheck_zero_reports --make-scrapers` | Lists every still-unknown SOS-hosted county as no_file / total_only / SPLIT, and writes scrapers for the SPLIT ones (the loop picks them up next cycle). Takes ~5 min |
 | ~9:30 PM | Run the recheck again, then commit the new scraper folders: `git add counties/ && git commit -m "Election-night recheck: new counties" && git push origin main` (or let the loop push on its next commit) | Catches counties that post later |
@@ -218,6 +218,7 @@ reports split votes. If one posts a split PDF, add it with
 edit `URL`/`PAGE` in the generated `scraper.py` to the county's link.
 
 If something breaks:
+- **A browser window pops up every cycle**: the SOS Chrome window isn't open, so the statewide step is launching its own temporary Chromium (the log says so). Run `tools/sos_chrome.sh`.
 - **"SOS Chrome window not open"** in the loop log: rerun `tools/sos_chrome.sh`.
 - **"Cloudflare check"**: click the check in that Chrome window; the next cycle retries.
 - **HTTP 429**: the loop backs off on its own. Don't restart it.

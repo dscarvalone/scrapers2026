@@ -82,7 +82,8 @@ class Fetcher:
             # One Playwright connection per process (common.sos_browser.shared):
             # Playwright's sync API refuses a second one in the same process.
             from common.sos_browser import shared
-            self.tab = shared()._browser.contexts[0].new_page()
+            # Opened in the background so the Chrome window doesn't come to the front.
+            self.tab = shared().new_background_tab()
         return self.tab
 
     def close(self):

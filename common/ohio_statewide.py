@@ -69,9 +69,29 @@ def _blocked(title: str, html_head: str) -> bool:
                                 "website maintenance"))
 
 
+def _chrome_window_open() -> bool:
+    import urllib.request
+    from common.sos_browser import CDP_URL
+    try:
+        urllib.request.urlopen(f"{CDP_URL}/json/version", timeout=3).read()
+        return True
+    except OSError:
+        return False
+
+
 def fetch_json(headless: bool = False, wait_s: int = 25) -> dict:
-    """Open the site in a real browser and return the county-level U.S. Senate
-    JSON from the site's own API."""
+    """Return the county-level U.S. Senate JSON from the site's own API.
+
+    Uses the SOS Chrome window (tools/sos_chrome.sh) when it's open: a tab
+    on the site, opened once in the background and reused, so nothing pops
+    up or takes focus. Only if that window isn't open does it launch its own
+    headed Chromium for the run (a window that appears and closes)."""
+    if _chrome_window_open():
+        from common.sos_browser import shared
+        page = shared().tab_for(SITE)
+        return _fetch_on_page(page, wait_s)
+    print("SOS Chrome window not open; launching a temporary Chromium window "
+          "(start tools/sos_chrome.sh to avoid this)", file=sys.stderr)
     from playwright.sync_api import sync_playwright  # optional dependency
 
     with sync_playwright() as p:
@@ -79,39 +99,43 @@ def fetch_json(headless: bool = False, wait_s: int = 25) -> dict:
         try:
             page = browser.new_page()
             page.goto(SITE, timeout=60_000)
-            for _ in range(wait_s):
-                if not _blocked(page.title(), page.content()[:4000]):
-                    break
-                time.sleep(1)
-            else:
-                raise ChallengeNotCleared(
-                    f"Cloudflare check on {SITE} did not clear within {wait_s}s "
-                    f"(title {page.title()!r}). Not attempting to solve it. "
-                    "Headless mode is known to be blocked; run headed.")
-            time.sleep(PAUSE)
-
-            def api(params: dict) -> dict:
-                res = page.evaluate(
-                    """async ([path, params]) => {
-                        const r = await fetch(path + '?' + new URLSearchParams(params),
-                            {headers: {'Content-Type': 'application/json; charset=utf-8'}});
-                        return {status: r.status, type: r.headers.get('content-type'),
-                                text: await r.text()};
-                    }""", [API, params])
-                if res["status"] != 200 or "json" not in (res["type"] or ""):
-                    raise RuntimeError(f"API returned {res['status']} {res['type']}: "
-                                       f"{res['text'][:200]!r}")
-                return json.loads(res["text"])
-
-            # The contest's object ID comes from the summary call, as on the site.
-            summary = api({"contestName": CONTEST, "contestObjectId": "",
-                           "resultsLevel": "", "countyId": ""})
-            oid = summary["contestList"][0]["objectId"]
-            time.sleep(PAUSE)
-            return api({"contestName": CONTEST, "contestObjectId": oid,
-                        "resultsLevel": "County", "countyId": ""})
+            return _fetch_on_page(page, wait_s)
         finally:
             browser.close()
+
+
+def _fetch_on_page(page, wait_s: int) -> dict:
+    for _ in range(wait_s):
+        if not _blocked(page.title(), page.content()[:4000]):
+            break
+        time.sleep(1)
+    else:
+        raise ChallengeNotCleared(
+            f"Cloudflare check on {SITE} did not clear within {wait_s}s "
+            f"(title {page.title()!r}). Not attempting to solve it. "
+            "Complete it in the SOS Chrome window's liveresults.ohiosos.gov tab.")
+    time.sleep(PAUSE)
+
+    def api(params: dict) -> dict:
+        res = page.evaluate(
+            """async ([path, params]) => {
+                const r = await fetch(path + '?' + new URLSearchParams(params),
+                    {cache: 'no-store', headers: {'Content-Type': 'application/json; charset=utf-8'}});
+                return {status: r.status, type: r.headers.get('content-type'),
+                        text: await r.text()};
+            }""", [API, params])
+        if res["status"] != 200 or "json" not in (res["type"] or ""):
+            raise RuntimeError(f"API returned {res['status']} {res['type']}: "
+                               f"{res['text'][:200]!r}")
+        return json.loads(res["text"])
+
+    # The contest's object ID comes from the summary call, as on the site.
+    summary = api({"contestName": CONTEST, "contestObjectId": "",
+                   "resultsLevel": "", "countyId": ""})
+    oid = summary["contestList"][0]["objectId"]
+    time.sleep(PAUSE)
+    return api({"contestName": CONTEST, "contestObjectId": oid,
+                "resultsLevel": "County", "countyId": ""})
 
 
 def parse(data: dict, fetched_at: str) -> list[dict]:

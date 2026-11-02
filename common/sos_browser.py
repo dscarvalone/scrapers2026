@@ -84,16 +84,33 @@ class SOSBrowser:
                 f"tools/sos_chrome.sh (from Terminal) and keep it open. ({e})") from None
         if not self._browser.contexts:
             raise RuntimeError("Connected to Chrome but it has no browser context")
+        # One tab on the host so fetch() is same-origin. Reused if the window
+        # already has one; otherwise opened IN THE BACKGROUND (no focus change).
+        self._page = self.tab_for(START_PAGE)
+
+    def tab_for(self, page_url: str):
+        """A tab on page_url's host, reused across fetches. A new tab is opened
+        in the background (CDP Target.createTarget, background=true), so the
+        Chrome window doesn't come to the front or take keyboard focus. If
+        Cloudflare asks for a check, the person completes it in that tab."""
+        host = urlparse(page_url).netloc
+        for p in self._browser.contexts[0].pages:
+            if urlparse(p.url).netloc == host:
+                return p
+        return self.new_background_tab(page_url)
+
+    def new_background_tab(self, url: str = "about:blank"):
+        """Open a tab without bringing the Chrome window to the front."""
         ctx = self._browser.contexts[0]
-        pages = [p for p in ctx.pages if urlparse(p.url).netloc == HOST]
-        if pages:
-            self._page = pages[0]
-        else:
-            # Open one tab on the host so fetch() is same-origin. This is a
-            # page load a person would make; if Cloudflare asks for a check,
-            # the person completes it in the window.
-            self._page = ctx.new_page()
-            self._page.goto(START_PAGE, timeout=60_000)
+        cdp = self._browser.new_browser_cdp_session()
+        try:
+            with ctx.expect_page(timeout=30_000) as info:
+                cdp.send("Target.createTarget", {"url": url, "background": True})
+            page = info.value
+        finally:
+            cdp.detach()
+        page.wait_for_load_state("domcontentloaded", timeout=60_000)
+        return page
 
     def __exit__(self, *exc):
         # Disconnect only; never close the person's Chrome window.
@@ -179,21 +196,20 @@ def fetch_file_via_page(url: str, page_url: str) -> bytes:
     if urlparse(url).netloc != urlparse(page_url).netloc:
         raise ValueError("url and page_url must be on the same host")
     br = shared()
-    tab = br._browser.contexts[0].new_page()
-    try:
-        tab.goto(page_url, timeout=60_000)
-        time.sleep(PAUSE)
-        r = tab.evaluate(_JS_BYTES, url)
-        if r["status"] == 429:
-            raise RateLimited(f"HTTP 429 (rate limited): {url}")
-        data = base64.b64decode(r["b64"])
-        if _is_challenge(r["status"], r["type"], data[:5000].decode("utf-8", "ignore")):
-            raise ChallengeNotCleared(f"Cloudflare check on {url}. Complete it in the Chrome window, then rerun.")
-        if r["status"] != 200:
-            raise RuntimeError(f"{r['status']} for {url}")
-        return data
-    finally:
-        tab.close()   # our own tab only
+    # One background tab per host, reused every cycle (the 8 SOS PDF counties
+    # share www.boe.ohio.gov). Opening and closing a tab per county each
+    # cycle pulled the Chrome window to the front.
+    tab = br.tab_for(page_url)
+    time.sleep(PAUSE)
+    r = tab.evaluate(_JS_BYTES, url)
+    if r["status"] == 429:
+        raise RateLimited(f"HTTP 429 (rate limited): {url}")
+    data = base64.b64decode(r["b64"])
+    if _is_challenge(r["status"], r["type"], data[:5000].decode("utf-8", "ignore")):
+        raise ChallengeNotCleared(f"Cloudflare check on {url}. Complete it in the Chrome window, then rerun.")
+    if r["status"] != 200:
+        raise RuntimeError(f"{r['status']} for {url}")
+    return data
 
 
 def fetch_bytes(url: str) -> bytes:
