@@ -47,7 +47,9 @@ from common.timing import BUCKET, CAND_COL, PARTY_COLS
 ROOT = Path(__file__).resolve().parent.parent
 LAST_VERIFIED = "2026-11-01"
 WORKBOOK = "OH_Senate_2026_vote_method.xlsx"
-ACTIONS = {"Cuyahoga", "Franklin", "Montgomery", "Summit", "Hamilton", "Pickaway", "Hocking"}
+# Counties scraped by the GitHub Actions workflow (its COUNTIES setting).
+# Hamilton moved to the local loop on 2026-11-02 (its host blocks the runners).
+ACTIONS = {"Cuyahoga", "Franklin", "Montgomery", "Summit", "Pickaway", "Hocking"}
 BUCKETS = ["eday", "evip", "vbm", "early", "provisional", "unassigned"]
 
 # --- sources tab --------------------------------------------------------

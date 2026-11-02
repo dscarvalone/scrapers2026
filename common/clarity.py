@@ -37,9 +37,13 @@ WRITE_IN = re.compile(r"\(\s*w\s*\)\s*$|^write-?in", re.I)
 
 def fetch(base: str) -> tuple[str, bytes]:
     base = base.rstrip("/")
-    ver = requests.get(f"{base}/current_ver.txt", headers=UA, timeout=30).text.strip()
+    resp = requests.get(f"{base}/current_ver.txt", headers=UA, timeout=30)
+    ver = resp.text.strip()
     if not ver.isdigit():
-        raise RuntimeError(f"Unexpected current_ver.txt: {ver[:80]!r}")
+        waf = resp.headers.get("x-amzn-waf-action") or resp.headers.get("cf-mitigated") or ""
+        raise RuntimeError(f"Unexpected current_ver.txt: {ver[:80]!r} (HTTP {resp.status_code}"
+                           + (f", bot challenge: {waf}" if waf else "")
+                           + "). Empty from GitHub Actions is expected; run this county locally.")
     time.sleep(1.1)
     r = requests.get(f"{base}/{ver}/reports/detailxml.zip", headers=UA, timeout=60)
     r.raise_for_status()

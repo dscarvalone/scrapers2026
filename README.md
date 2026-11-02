@@ -39,9 +39,9 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 |---|---|---|---|---|---|---|---|---|
 | 1 | Franklin | 487,197 | 10.5% | 10.5% | Yes | Direct | County-hosted ENR XML, Actions | Mail column (Absentee Ballots) is an inference |
 | 2 | Cuyahoga | 473,712 | 10.2% | 20.7% | Yes | Direct | Enhanced Voting Excel export, Actions | Unassigned vote types: Post Election Day; Post VBM |
-| 3 | Hamilton | 334,664 | 7.2% | 27.9% | Yes | Direct | Clarity detail XML, Actions | No committed data yet: needs one Actions run; Early not split into in-person vs mail; no provisional column |
-| 4 | Summit | 223,260 | 4.8% | 32.7% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run; Unassigned vote types: Timely Abs |
-| 5 | Montgomery | 203,312 | 4.4% | 37.1% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run; Unassigned vote types: Absentee/Early Voting/Election Day Add-In |
+| 3 | Hamilton | 334,664 | 7.2% | 27.9% | Yes | Direct | Clarity detail XML, local loop | Early not split into in-person vs mail; no provisional column |
+| 4 | Summit | 223,260 | 4.8% | 32.7% | Yes | Direct | Enhanced Voting JSON API, Actions | Unassigned vote types: Timely Abs |
+| 5 | Montgomery | 203,312 | 4.4% | 37.1% | Yes | Direct | Enhanced Voting JSON API, Actions | Unassigned vote types: Absentee/Early Voting/Election Day Add-In |
 | 6 | Lucas | 152,119 | 3.3% | 40.4% | Yes | Direct | SOS-hosted ENR XML, local loop | Mail column (Absentee Ballots) is an inference; no write-in line |
 | 7 | Stark | 148,722 | 3.2% | 43.6% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
 | 8 | Butler | 144,349 | 3.1% | 46.7% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
@@ -77,7 +77,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 38 | Belmont | 24,122 | 0.5% | 84.2% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 39 | Sandusky | 23,767 | 0.5% | 84.8% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
 | 40 | Jefferson | 23,706 | 0.5% | 85.3% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
-| 41 | Pickaway | 23,345 | 0.5% | 85.8% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run |
+| 41 | Pickaway | 23,345 | 0.5% | 85.8% | Yes | Direct | Enhanced Voting JSON API, Actions | None |
 | 42 | Scioto | 23,328 | 0.5% | 86.3% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
 | 43 | Marion | 21,414 | 0.5% | 86.7% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
 | 44 | Ashland | 21,021 | 0.5% | 87.2% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
@@ -110,7 +110,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 71 | Van Wert | 11,465 | 0.2% | 97.0% | Yes | Direct | Results PDF, local loop | None |
 | 72 | Jackson | 10,983 | 0.2% | 97.2% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 73 | Carroll | 10,566 | 0.2% | 97.5% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
-| 74 | Hocking | 10,294 | 0.2% | 97.7% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run |
+| 74 | Hocking | 10,294 | 0.2% | 97.7% | Yes | Direct | Enhanced Voting JSON API, Actions | None |
 | 75 | Gallia | 9,985 | 0.2% | 97.9% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 76 | Hardin | 9,959 | 0.2% | 98.1% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 77 | Adams | 9,878 | 0.2% | 98.3% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
@@ -144,7 +144,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | Shared parsers | `common/` | `ohio_enr.py` (Ohio ENR XML/CSV), `enhanced_voting.py`, `clarity.py`, `pdf_results.py` (PDF layouts), `sos_browser.py` (reads SOS files through a real Chrome window), `ohio_statewide.py` |
 | Research outputs | `tools/*.json` | `survey60_verdicts.json` and `past_reports.json` (past-report checks, with document URLs and excerpts), `county_survey.json` (site crawl), `enr_discovery.json` (SOS ENR election IDs), `clarity_probe.json` |
 | Research and election-night tools | `tools/*.py`, `tools/*.sh` | `local_loop.sh` (election-night loop), `sos_chrome.sh`, `recheck_zero_reports.py`, `make_pdf_scraper.py`, `make_sos_scrapers.py`, `discover_enr.py`, `survey_counties.py`, `past_reports.py`, `build_method_workbook.py`, `make_counties_md.py` |
-| GitHub Actions schedule | `.github/workflows/election-night.yml` | Scrapes the 7 counties reachable from Actions every 5 min (6 PM Nov 3 to 8 AM Nov 4 ET) and rebuilds `results/` |
+| GitHub Actions schedule | `.github/workflows/election-night.yml` | Scrapes the 6 counties reachable from Actions every 5 min (6 PM Nov 3 to 8 AM Nov 4 ET) and rebuilds `results/` |
 | Tests | `tests/` | `python -c "import tests.test_build_method_workbook as t; t.test_buckets()"` (pytest not required) |
 
 **Not in git, on purpose:**
@@ -167,9 +167,15 @@ Turnstile check. The repo owner waived the no-bypass rule for a real browser:
 `common/sos_browser.py` reads SOS files through it (same-origin fetch over
 the Chrome DevTools port, 3 s apart). So the SOS ENR counties, the PDF
 counties and the statewide totals run in `tools/local_loop.sh` on the owner's
-Mac, which commits and pushes them every 5 minutes. Counties on other hosts
-(Cuyahoga, Franklin, Hamilton, Montgomery, Summit, Pickaway, Hocking) run in
-Actions.
+Mac, which commits and pushes them every 5 minutes. So do Hamilton and
+Clermont: their own hosts serve plain HTTP to a desktop, but Hamilton's
+(CloudFront) gave GitHub's runner an empty file on the 2026-11-02 test run.
+Counties on other hosts (Cuyahoga, Franklin, Montgomery, Summit, Pickaway,
+Hocking) run in Actions; all six passed the manual run of 2026-11-02.
+
+**The local loop runs its county scrapers only while the SOS Chrome window is
+open** (it checks the Chrome debugging port first). If that window is closed,
+Hamilton and Clermont stop too, even though they don't use it.
 
 ```bash
 tools/sos_chrome.sh                      # opens the SOS Chrome window; leave it open
@@ -190,7 +196,7 @@ agent sandbox. Keep the Mac plugged in and online.
 | When | Do | Expect |
 |---|---|---|
 | Before 6:00 PM | `git pull` | Picks up the bot's and the loop's commits |
-| 6:00 PM | Actions schedule starts (every 5 min) | Cuyahoga, Franklin, Montgomery, Summit, Hamilton, Pickaway and Hocking scraped in Actions |
+| 6:00 PM | Actions schedule starts (every 5 min) | Cuyahoga, Franklin, Montgomery, Summit, Pickaway and Hocking scraped in Actions (Hamilton runs in the local loop) |
 | 7:00 PM | `tools/sos_chrome.sh` | A separate Chrome window opens on Butler's ENR page. If it shows "Verify you are human", click it. Leave it open all night |
 | 7:00 PM, **before the first results at ~7:30** | `tools/local_loop.sh` (enter token once) | Every 5 min: SOS ENR + PDF counties + statewide totals + timing snapshot, commit, push. Allen logs "not posted yet" until its link appears. **It must be running before the first absentee release**: the before/on-Election-Day estimate for totals-only counties reads the statewide snapshots taken while they have 0 precincts in. A county missed in that window shows `timing_source = none` |
 | ~8:30 PM, after the first absentee uploads | In a second Terminal tab: `.venv/bin/python -m tools.recheck_zero_reports --make-scrapers` | Lists every still-unknown SOS-hosted county as no_file / total_only / SPLIT, and writes scrapers for the SPLIT ones (the loop picks them up next cycle). Takes ~5 min |

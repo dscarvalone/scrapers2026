@@ -164,6 +164,16 @@ Franklin,Write-in,,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T1
 Franklin,Write-in,,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
 Franklin,Write-in,,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
 Franklin,Write-in,,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Hamilton,Sherrod Brown,Democratic,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Sherrod Brown,Democratic,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Jon Husted,Republican,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Jon Husted,Republican,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Greg Levy,Other-party,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Greg Levy,Other-party,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,William B. Redpath,Libertarian,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,William B. Redpath,Libertarian,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Write-in,,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
+Hamilton,Write-in,,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
 Hocking,Sherrod Brown,Democratic,Provisional,Provisional,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Sherrod Brown,Democratic,Election Day,Election Day,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
@@ -550,11 +560,6 @@ Guernsey,Jon Husted,Republican,Not split by method,(statewide total),0,0,35,sos_
 Guernsey,Greg Levy,Other-party,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Write-in,,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
-Hamilton,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,563,sos_statewide,2026-11-01T22:14:23+00:00
-Hamilton,Jon Husted,Republican,Not split by method,(statewide total),0,0,563,sos_statewide,2026-11-01T22:14:23+00:00
-Hamilton,Greg Levy,Other-party,Not split by method,(statewide total),0,0,563,sos_statewide,2026-11-01T22:14:23+00:00
-Hamilton,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,563,sos_statewide,2026-11-01T22:14:23+00:00
-Hamilton,Write-in,,Not split by method,(statewide total),0,0,563,sos_statewide,2026-11-01T22:14:23+00:00
 Hancock,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,60,sos_statewide,2026-11-01T22:14:23+00:00
 Hancock,Jon Husted,Republican,Not split by method,(statewide total),0,0,60,sos_statewide,2026-11-01T22:14:23+00:00
 Hancock,Greg Levy,Other-party,Not split by method,(statewide total),0,0,60,sos_statewide,2026-11-01T22:14:23+00:00
