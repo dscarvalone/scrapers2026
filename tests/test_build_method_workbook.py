@@ -268,3 +268,20 @@ def test_push_sheet_guards(tmp_path):
         except SystemExit as e:
             msg = str(e)
             assert {"prod": "production", "nokey": "No service-account key", "openkey": "chmod 600"}[bad_call] in msg
+
+
+# --- latest_data_as_of = last change, not last fetch -------------------------
+
+def test_changed_at(tmp_path):
+    from tools.build_method_workbook import changed_at
+    state = tmp_path / "changes.json"
+    rows = [row("Split", "Sherrod Brown", "Election Day", "Election Day", 100)]
+    first = changed_at(rows, {"Split": ("2026-11-03 20:00:00 EST", "local run")}, state)["Split"]
+    # Same numbers, later fetch: the change time stays put
+    again = changed_at(rows, {"Split": ("2026-11-03 20:05:00 EST", "local run")}, state)["Split"]
+    assert again == first
+    # New numbers: the change time becomes that fetch's time
+    rows2 = [row("Split", "Sherrod Brown", "Election Day", "Election Day", 150)]
+    moved = changed_at(rows2, {"Split": ("2026-11-03 20:10:00 EST", "local run")}, state)["Split"]
+    assert moved == "2026-11-03 20:10:00 EST"
+    assert changed_at(rows2, {"Split": ("2026-11-03 20:15:00 EST", "local run")}, state)["Split"] == moved

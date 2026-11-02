@@ -25,6 +25,12 @@ Where the numbers come from (method_source):
   totals_only     no split yet: toplines only.
 The Statewide row sums every county's toplines; its method columns sum only
 the counties that have that method (coverage in `notes`).
+
+latest_data_as_of = the last time this county's Senate numbers CHANGED (ET),
+not the last time we fetched them: for itemized counties from
+tools/build_method_workbook.changed_at (a per-county record of the numbers),
+for the rest from the statewide snapshot log. The Statewide row shows the
+most recent county change.
 """
 
 from __future__ import annotations
@@ -173,7 +179,10 @@ def county_rows(reg: list[dict], wide: list[dict], timing: list[dict], fetched: 
         elif s:
             _fill_toplines(out, s["votes"])
             out["precincts_reported"], out["precincts_total"] = s["precincts_reported"], s["precincts_total"]
-            out["latest_data_as_of"] = _parse_time(s["fetched_at"])
+            # Last CHANGE of this county's statewide totals: the timing model's
+            # as_of is its latest entry in results/statewide_snapshots.csv,
+            # which logs a county only when its numbers change.
+            out["latest_data_as_of"] = _parse_time(t.get("as_of") or "") or _parse_time(s["fetched_at"])
             if t.get("timing_source") == "first_drop":
                 out["method_source"] = "first_drop"
                 out["has_mail_inperson_split"] = False

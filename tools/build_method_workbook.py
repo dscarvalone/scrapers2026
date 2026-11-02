@@ -26,6 +26,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import re
 import subprocess
@@ -219,6 +220,52 @@ def fetched_at(county_dir: Path, from_output: bool) -> tuple[str, str]:
     return "", ""
 
 
+def _commit_time(path: Path) -> str:
+    try:
+        iso = subprocess.run(["git", "log", "-1", "--format=%cI", "--", str(path.relative_to(ROOT))],
+                             cwd=ROOT, capture_output=True, text=True, timeout=20).stdout.strip()
+    except (OSError, subprocess.SubprocessError, ValueError):
+        return ""
+    return datetime.fromisoformat(iso).astimezone(ET).strftime("%Y-%m-%d %H:%M:%S %Z") if iso else ""
+
+
+def changed_at(long_rows: list[dict], fetched: dict[str, tuple[str, str]], state_path: Path) -> dict[str, str]:
+    """{county: ET time its Senate numbers last CHANGED}, for itemized counties.
+
+    Keeps a small record (state_path, outside git) of each county's Senate
+    numbers. When this build's numbers differ from the record, the change time
+    becomes the time those numbers were fetched; otherwise the recorded time
+    stays. A county seen for the first time is seeded with the git commit time
+    of its data file (committed only when the numbers change), else its fetch time.
+    """
+    import hashlib
+    try:
+        state = json.loads(state_path.read_text())
+    except (OSError, ValueError):
+        state = {}
+    by: dict[str, list] = {}
+    for r in long_rows:
+        by.setdefault(r["county"], []).append((r["candidate"], r["method_county_label"], int(r["votes"]),
+                                               str(r["precincts_reported"])))
+    out = {}
+    for c, rows in by.items():
+        key = hashlib.sha1(repr(sorted(rows)).encode()).hexdigest()
+        prev = state.get(c)
+        fetched_c = fetched.get(c, ("", ""))[0]
+        if prev is None:
+            slug = c.lower().replace(" ", "_")
+            seed = _commit_time(senate.COUNTIES_DIR / slug / "data" / "summary_wide.csv") or fetched_c
+            state[c] = {"key": key, "changed_at": seed}
+        elif prev["key"] != key:
+            state[c] = {"key": key, "changed_at": fetched_c or prev["changed_at"]}
+        out[c] = state[c]["changed_at"]
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = state_path.with_name(state_path.name + ".tmp")
+    tmp.write_text(json.dumps(state, indent=1, sort_keys=True))
+    tmp.replace(state_path)
+    return out
+
+
 VOTE_META = ["county_fips", "county", "itemized", "fetched_at", "fetched_at_basis", "source_generated_at",
              "precincts_reported",
              "precincts_total", "early_combined_only", "unassigned_labels"]
@@ -380,7 +427,9 @@ def main(argv=None) -> int:
     sources = source_rows(reg)
     built_dt = datetime.now(ZoneInfo("America/New_York")).replace(tzinfo=None, microsecond=0)
     built = built_dt.strftime("%Y-%m-%d %H:%M ET")
-    results = county_format.county_rows(reg, wide, timing_rows, fetched,
+    # county_results.latest_data_as_of = last CHANGE of the numbers, not last fetch.
+    changes = changed_at(long_rows, fetched, args.out_dir / ".county_changes.json")
+    results = county_format.county_rows(reg, wide, timing_rows, {c: (t, "changed") for c, t in changes.items()},
                                         county_format.statewide_by_county(), built_dt)
 
     write_csv(args.out_dir / "county_results.csv", county_format.COLUMNS,
