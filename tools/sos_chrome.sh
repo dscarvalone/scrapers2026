@@ -36,9 +36,16 @@ open -g -n -a "Google Chrome" --args \
   "https://liveresults.boe.ohio.gov/ENR/butlerohenr/24/en/Index_24.html" \
   "https://liveresults.ohiosos.gov/" \
   "https://www.boe.ohio.gov/licking/election-info/election-results/"
+up=0
 for _ in $(seq 1 20); do
-  curl -s --max-time 1 "http://127.0.0.1:$PORT/json/version" >/dev/null && break
+  if curl -s --max-time 1 "http://127.0.0.1:$PORT/json/version" >/dev/null; then up=1; break; fi
   sleep 1
 done
+if [ "$up" != 1 ]; then
+  echo "Chrome did not open its debugging port on 127.0.0.1:$PORT within 20 s."
+  echo "Run this from a normal Terminal window (an agent sandbox can't start Chrome). If a"
+  echo "scrapers2026 Chrome is already open WITHOUT the port, quit that one and rerun."
+  exit 1
+fi
 echo "Chrome started in the background (debugging on 127.0.0.1:$PORT, profile $PROFILE)."
 echo "Check its tabs once for a 'Verify you are human' box, then minimize it or leave it behind your work."
