@@ -2,5 +2,8 @@ __pycache__/
 *.pyc
 .venv/
 .env
+# Google service-account keys must never be committed (tools/push_sheet.py)
+*-sa.json
+*service-account*.json
 counties/*/output/
 output/

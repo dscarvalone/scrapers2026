@@ -227,6 +227,31 @@ If something breaks:
 
 See REPORT.md.
 
+## Google Sheet updates (optional)
+
+Each loop cycle can copy `county_results.csv` into one tab of **your own**
+Google Sheet (`tools/push_sheet.py`). It replaces only that tab, creating it
+if needed, and refuses the AP aggregator's production sheet. Pull the AP
+data into your sheet read-only with `IMPORTRANGE` instead.
+
+One-time setup (~15 min):
+1. [Google Cloud console](https://console.cloud.google.com/): create a project, then enable the **Google Sheets API** (APIs & Services → Library).
+2. IAM & Admin → Service Accounts → **Create service account** (no roles needed) → its **Keys** tab → Add key → JSON. A key file downloads.
+3. Move it out of Downloads and lock it down:
+   ```bash
+   mkdir -p ~/.config/scrapers2026 && mv ~/Downloads/<key>.json ~/.config/scrapers2026/google-sa.json && chmod 600 ~/.config/scrapers2026/google-sa.json
+   ```
+4. In your Google Sheet: **Share** → paste the service account's email (`client_email` in the key file, `...@...iam.gserviceaccount.com`) → **Editor**. If your Google Workspace blocks sharing outside the organization, create the sheet in an account that allows it.
+5. Test, using the ID from the sheet's URL (`docs.google.com/spreadsheets/d/<ID>/edit`):
+   ```bash
+   GSHEET_ID=<ID> .venv/bin/python -m tools.push_sheet --check   # access test, writes nothing
+   GSHEET_ID=<ID> .venv/bin/python -m tools.push_sheet           # one real push
+   ```
+
+Election night: start the loop with `GSHEET_ID=<ID> tools/local_loop.sh`
+(`GSHEET_TAB=<name>` to use a tab other than `methods`). A failed push only
+logs a warning; the next cycle retries.
+
 ## Setup
 
 ```bash

@@ -247,3 +247,24 @@ def test_county_format_math():
     # Statewide row: toplines over all counties, precincts from the statewide site
     assert st["total_votes"] == 278 + 230 and st["precincts_total"] == 27 and st["pct_eday"] == ""
     assert st["eday_total_votes"] == 194 + 110
+
+
+# --- Google Sheet push (tools/push_sheet.py), no network --------------------
+
+def test_push_sheet_guards(tmp_path):
+    import os
+    from tools.push_sheet import PROD_IDS, push, typed
+    rows = typed([["county_fips", "reporting_unit_name", "total_votes", "two_way", "notes"],
+                  ["39001", "Adams County", "10085", "0.279692", ""]])
+    assert rows[1] == ["39001", "Adams County", 10085, 0.279692, ""]  # FIPS stays text
+    for bad_call in ("prod", "nokey", "openkey"):
+        key = tmp_path / "k.json"
+        if bad_call == "openkey":
+            key.write_text("{}")
+            os.chmod(key, 0o644)
+        try:
+            push(tmp_path / "x.csv", next(iter(PROD_IDS)) if bad_call == "prod" else "MY_SHEET", "methods", key)
+            raise AssertionError(f"{bad_call}: expected a refusal")
+        except SystemExit as e:
+            msg = str(e)
+            assert {"prod": "production", "nokey": "No service-account key", "openkey": "chmod 600"}[bad_call] in msg

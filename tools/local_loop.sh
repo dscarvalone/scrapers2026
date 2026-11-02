@@ -34,7 +34,9 @@
 #   ONCE=1    run one cycle and exit
 #   GH_TOKEN  GitHub token; if unset, prompted for (hidden) at start
 #   EXPORT_DIR  where the vote-method workbook goes   (default ../exports)
-#   BUILD_SHEET=0  skip the workbook build
+#   BUILD_SHEET=0  skip the workbook build (and the Google Sheet update)
+#   GSHEET_ID   your own Google Sheet's ID: each cycle replaces its GSHEET_TAB
+#               tab (default "methods") with county_results.csv (tools/push_sheet.py)
 #
 # The token is held only in this process's environment and passed to git
 # per command. It is never written to git config, the keychain or a file.
@@ -154,6 +156,13 @@ while :; do
     else
       log "WARNING: workbook build reported errors (see above); files hold whatever parsed."
     fi
+  fi
+
+  # 5. Optional: copy county_results.csv into one tab of the owner's own
+  #    Google Sheet (set GSHEET_ID; see README "Google Sheet updates").
+  if [ "$BUILD_SHEET" = "1" ] && [ -n "${GSHEET_ID:-}" ]; then
+    "$PY" -m tools.push_sheet "$EXPORT_DIR/county_results.csv" 2>&1 | sed 's/^/    /'
+    [ "${PIPESTATUS[0]}" = "0" ] || log "WARNING: Google Sheet update failed (see above); will retry next cycle."
   fi
 
   [ "$ONCE" = "1" ] && break
