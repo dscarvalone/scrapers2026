@@ -83,6 +83,38 @@ and the statewide fetch, then commits and pushes only those files. The
 workflow's combine step merges everything on the next bot run. The token
 needs Contents: Read and write.
 
+## Election night runbook (Nov 3, 2026, times ET)
+
+All commands run from the repo root in a normal Terminal window, not from an
+agent sandbox. Keep the Mac plugged in and online.
+
+| When | Do | Expect |
+|---|---|---|
+| Before 6:00 PM | `git pull` | Picks up the bot's and the loop's commits |
+| 6:00 PM | Actions schedule starts (every 5 min) | Cuyahoga, Franklin, Montgomery, Summit, Hamilton, Pickaway and Hocking scraped in Actions |
+| 7:00 PM | `tools/sos_chrome.sh` | A separate Chrome window opens on Butler's ENR page. If it shows "Verify you are human", click it. Leave it open all night |
+| 7:00 PM | `tools/local_loop.sh` (enter token once) | Every 5 min: SOS ENR + PDF counties + statewide totals, commit, push. Allen logs "not posted yet" until its link appears |
+| ~8:30 PM, after the first absentee uploads | In a second Terminal tab: `.venv/bin/python -m tools.recheck_zero_reports --make-scrapers` | Lists every still-unknown SOS-hosted county as no_file / total_only / SPLIT, and writes scrapers for the SPLIT ones (the loop picks them up next cycle). Takes ~5 min |
+| ~9:30 PM | Run the recheck again, then commit the new scraper folders: `git add counties/ && git commit -m "Election-night recheck: new counties" && git push origin main` (or let the loop push on its next commit) | Catches counties that post later |
+| Any time | Spot-check `results/senate_by_method_wide.csv` on GitHub | `source` column: `county_feed` (by method) or `sos_statewide` (totals only) |
+| 8:00 AM Nov 4 | Loop and schedule stop on their own | |
+
+The recheck lists counties whose BOE site isn't SOS-hosted for a manual
+look (their election-night address isn't predictable): Ottawa, Sandusky,
+Crawford, Guernsey, Hancock, Henry, Mercer, Morrow, Union, Williams,
+Clermont, Delaware, Lake, Lorain, Mahoning, Portage, Trumbull, Wayne, Wood.
+The most promising are **Clermont, Lake and Ottawa**, whose official
+reports split votes. If one posts a split PDF, add it with
+`python -m tools.make_pdf_scraper "<County>" positional "<columns>"`, then
+edit `URL`/`PAGE` in the generated `scraper.py` to the county's link.
+
+If something breaks:
+- **"SOS Chrome window not open"** in the loop log: rerun `tools/sos_chrome.sh`.
+- **"Cloudflare check"**: click the check in that Chrome window; the next cycle retries.
+- **HTTP 429**: the loop backs off on its own. Don't restart it.
+- **A county's URL changes**: fix `URL` in `counties/<county>/scraper.py` and push. The others keep running.
+- **The loop dies**: rerun `tools/local_loop.sh`. It pulls first, then carries on.
+
 See REPORT.md.
 
 ## Setup

@@ -277,7 +277,11 @@ def run(county: str, layout: str, data: bytes, out_dir: Path, source_url: str) -
         race, rows, cols = PARSERS[layout](pdf_text(data))
     if not rows:
         raise SystemExit(f"{county}: found {race!r} but no candidate rows")
-    gen = datetime.now().astimezone().isoformat(timespec="seconds")  # PDFs carry no reliable timestamp
+    # PDFs carry no reliable timestamp. Use a fingerprint of the file so the
+    # output only changes when the county posts a new PDF (a wall-clock
+    # stamp made the local loop commit every cycle).
+    import hashlib
+    gen = "pdf-sha1:" + hashlib.sha1(data).hexdigest()[:12]
     for r in rows:
         r.update(precincts_reported="", precincts_total="", generated_at=gen, source_format=f"pdf_{layout}")
     bad = [f"{r['contestant']}: {sum(r[c] for c in cols)} vs {r['total']}" for r in rows
