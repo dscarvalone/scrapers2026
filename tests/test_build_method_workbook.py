@@ -122,3 +122,21 @@ def test_snapshot_appends_only_changes(tmp_path):
     write(0, 0, "t2"); assert append_snapshot(sw, log) == 0       # unchanged: nothing appended
     write(7, 0, "t3"); assert append_snapshot(sw, log) == 1       # only A changed
     assert [r["fetched_at"] for r in read_snapshots(log)] == ["t1", "t1", "t3"]
+
+
+# --- Clermont link picker -----------------------------------------------
+
+def test_clermont_pick():
+    from counties.clermont.scraper import pick
+    zero = ("https://boe.clermontcountyohio.gov/ZeroReport2026GEN.pdf?t=1", "Zero Report")
+    old = [("https://boe.clermontcountyohio.gov/OfficialGroupDetail.pdf?t=2",
+            "2026 May 5 Primary Election - Summary Group Detail - Official Results"),
+           ("https://boe.clermontcountyohio.gov/2026%20Election%20Calendar.pdf", "2026 Election Calendar")]
+    # Before results: only the zero report qualifies (May files and the calendar don't)
+    assert pick([zero, *old]) == zero[0]
+    night = [("https://boe.clermontcountyohio.gov/2026GEN Unofficial Precinct.pdf", "2026 November 3 - Precinct Report"),
+             ("https://boe.clermontcountyohio.gov/2026GEN Unofficial Summary Group.pdf",
+              "2026 November 3 - General Election - Summary Group Detail - Unofficial Results")]
+    # Election night: the summary, never the precinct report or the zero report
+    assert pick([zero, *old, *night]).endswith("Unofficial Summary Group.pdf")
+    assert pick(old) is None

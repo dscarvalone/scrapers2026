@@ -83,6 +83,8 @@ SCRAPED_GAP = {
     "Clark": "Mail column (Absentee Ballots) is an inference",
     "Lucas": "Mail column (Absentee Ballots) is an inference; no write-in line",
     "Miami": "Column order not yet verified on real votes",
+    "Clermont": "Election-night file name unknown; scraper picks it from the results page "
+                "(until then it reads the zero report). Check the loop log for 'parsing the zero report' after 7:30 PM",
 }
 
 

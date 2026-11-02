@@ -28,12 +28,12 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 
 **Share of the expected statewide vote, by what we'll have:**
 
-- **Split by method, scraper live or waiting for a link:** 56.8% (22 counties)
+- **Split by method, scraper live or waiting for a link:** 58.8% (23 counties)
 - **Maybe on election night (precinct PDF, likely, or unknown):** 8.7% (18 counties)
-- **Gap until the official canvass (~Nov 17-24):** 13.4% (21 counties)
+- **Gap until the official canvass (~Nov 17-24):** 11.4% (20 counties)
 - **Gap with no split expected (totals only):** 21.1% (27 counties)
 
-**Before vs on Election Day (the split that matters most) covers every county:** directly from the vote-type split for the 56.8% above, and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release absentee and early ballots before any precinct, so a county's last report with 0 precincts in is its pre-Election-Day vote. The estimate fails for a county whose first report already includes precincts, and it needs the local loop running before the first results (~7:30 PM). Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).
+**Before vs on Election Day (the split that matters most) covers every county:** directly from the vote-type split for the 58.8% above, and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release absentee and early ballots before any precinct, so a county's last report with 0 precincts in is its pre-Election-Day vote. The estimate fails for a county whose first report already includes precincts, and it needs the local loop running before the first results (~7:30 PM). Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).
 
 | # | County | Expected votes | % of state | Cumulative % | Split on election night | Before / on Election Day | Source (runs in) | Gap |
 |---|---|---|---|---|---|---|---|---|
@@ -49,7 +49,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 10 | Delaware | 114,490 | 2.5% | 51.9% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
 | 11 | Warren | 113,188 | 2.4% | 54.4% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
 | 12 | Lake | 104,462 | 2.3% | 56.6% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
-| 13 | Clermont | 92,894 | 2.0% | 58.6% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
+| 13 | Clermont | 92,894 | 2.0% | 58.6% | Yes | Direct | Results PDF, local loop | Election-night file name unknown; scraper picks it from the results page (until then it reads the zero report). Check the loop log for 'parsing the zero report' after 7:30 PM |
 | 14 | Mahoning | 89,694 | 1.9% | 60.6% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
 | 15 | Medina | 87,360 | 1.9% | 62.4% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 16 | Trumbull | 78,133 | 1.7% | 64.1% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
@@ -202,8 +202,10 @@ agent sandbox. Keep the Mac plugged in and online.
 The recheck lists counties whose BOE site isn't SOS-hosted for a manual
 look (their election-night address isn't predictable): Ottawa, Sandusky,
 Crawford, Guernsey, Hancock, Henry, Mercer, Morrow, Union, Williams,
-Clermont, Delaware, Lake, Lorain, Mahoning, Portage, Trumbull, Wayne, Wood.
-The most promising are **Clermont, Lake and Ottawa**, whose official
+Delaware, Lake, Lorain, Mahoning, Portage, Trumbull, Wayne, Wood.
+(Clermont, also county-hosted, now has its own scraper that finds its
+election-night PDF on its results page.)
+The most promising are **Lake and Ottawa**, whose official
 reports split votes. If one posts a split PDF, add it with
 `python -m tools.make_pdf_scraper "<County>" positional "<columns>"`, then
 edit `URL`/`PAGE` in the generated `scraper.py` to the county's link.

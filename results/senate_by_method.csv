@@ -79,6 +79,26 @@ Clark,Write-in,,Early In-Person,Early Voting,0,0,78,county_feed,2026-10-30T14:57
 Clark,Write-in,,Mail,Absentee Ballots,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
 Clark,Write-in,,Election Day,Election Day,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
 Clark,Write-in,,Provisional,Provisional,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
+Clermont,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Sherrod Brown,Democratic,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Sherrod Brown,Democratic,Early In-Person,Absentee In - Person,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Jon Husted,Republican,Election Day,Election Day,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Jon Husted,Republican,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Jon Husted,Republican,Early In-Person,Absentee In - Person,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Greg Levy,Other-party,Election Day,Election Day,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Greg Levy,Other-party,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Greg Levy,Other-party,Early In-Person,Absentee In - Person,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,William B. Redpath,Libertarian,Election Day,Election Day,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,William B. Redpath,Libertarian,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,William B. Redpath,Libertarian,Early In-Person,Absentee In - Person,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Write-in,,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Write-in,,Early In-Person,Absentee In - Person,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:83e9d3affa11
 Cuyahoga,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,
 Cuyahoga,Sherrod Brown,Democratic,Early In-Person,Early In-Person,0,,,county_feed,
 Cuyahoga,Sherrod Brown,Democratic,Mail,Vote By Mail,0,,,county_feed,
@@ -360,11 +380,6 @@ Champaign,Jon Husted,Republican,Not split by method,(statewide total),0,0,31,sos
 Champaign,Greg Levy,Other-party,Not split by method,(statewide total),0,0,31,sos_statewide,2026-11-01T22:14:23+00:00
 Champaign,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,31,sos_statewide,2026-11-01T22:14:23+00:00
 Champaign,Write-in,,Not split by method,(statewide total),0,0,31,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Jon Husted,Republican,Not split by method,(statewide total),0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Greg Levy,Other-party,Not split by method,(statewide total),0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Write-in,,Not split by method,(statewide total),0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
 Clinton,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Clinton,Jon Husted,Republican,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Clinton,Greg Levy,Other-party,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00

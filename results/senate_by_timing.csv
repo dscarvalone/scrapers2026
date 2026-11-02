@@ -11,7 +11,7 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39019,Carroll,itemized,2026-10-26T19:00:14.287-04:00,0,23,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39021,Champaign,none,2026-11-01 17:14:23 EST,0,31,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39023,Clark,itemized,2026-10-30T14:57:13.507-04:00,0,78,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
-39025,Clermont,none,2026-11-01 17:14:23 EST,0,168,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39025,Clermont,itemized,pdf-sha1:83e9d3affa11,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39027,Clinton,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39029,Columbiana,none,2026-11-01 17:14:23 EST,0,73,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39031,Coshocton,none,2026-11-01 17:14:23 EST,0,23,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,

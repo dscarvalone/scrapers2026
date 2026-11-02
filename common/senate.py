@@ -67,6 +67,8 @@ METHOD_MAP = {
     "Absentee Mail": "Mail",                # Licking, Madison, Van Wert, Preble
     "Absentee Mail Out": "Mail",            # Athens
     "Absentee In Office": "Early In-Person",  # Athens
+    "Absentee In - Person": "Early In-Person",  # Clermont (positional parser joins "In-Person" with spaces)
+    "Absentee In-Person": "Early In-Person",    # Clermont, if the hyphen extracts intact
     "Absentee Early": "Early In-Person",    # Preble
     # Preble's "Absentee Late" (likely mail ballots arriving after Election
     # Day) is deliberately left unmapped, like Summit's Timely Absentee.

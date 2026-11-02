@@ -59,11 +59,11 @@ Clark,Jon Husted,Republican,0,0,0,,0,,,,,0,0,78,county_feed,2026-10-30T14:57:13.
 Clark,Greg Levy,Other-party,0,0,0,,0,,,,,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
 Clark,William B. Redpath,Libertarian,0,0,0,,0,,,,,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
 Clark,Write-in,,0,0,0,,0,,,,,0,0,78,county_feed,2026-10-30T14:57:13.507-04:00
-Clermont,Sherrod Brown,Democratic,,,,,,0,,,,0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Jon Husted,Republican,,,,,,0,,,,0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Greg Levy,Other-party,,,,,,0,,,,0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,William B. Redpath,Libertarian,,,,,,0,,,,0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
-Clermont,Write-in,,,,,,,0,,,,0,0,168,sos_statewide,2026-11-01T22:14:23+00:00
+Clermont,Sherrod Brown,Democratic,0,0,0,,0,,,,,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Jon Husted,Republican,0,0,0,,0,,,,,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Greg Levy,Other-party,0,0,0,,0,,,,,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,William B. Redpath,Libertarian,0,0,0,,0,,,,,0,,,county_feed,pdf-sha1:83e9d3affa11
+Clermont,Write-in,,0,0,0,,0,,,,,0,,,county_feed,pdf-sha1:83e9d3affa11
 Clinton,Sherrod Brown,Democratic,,,,,,0,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Clinton,Jon Husted,Republican,,,,,,0,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Clinton,Greg Levy,Other-party,,,,,,0,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00

@@ -61,6 +61,8 @@ SCRAPED = {
     "Carroll": ("Election Day→eday; Early Voting→evip; Mail Ballots→vbm; Provisional→provisional", "", ""),
     "Clark": ("Election Day→eday; Early Voting→evip; Absentee Ballots→vbm; Provisional→provisional", "",
               "Absentee Ballots = mail (inferred: separate Early Voting column)"),
+    "Clermont": ("Election Day→eday; Absentee In-Person→evip; Absentee Mail→vbm; Provisional→provisional", "",
+                 "Election-night file name not known in advance; scraper picks it from the results page"),
     "Cuyahoga": ("Election Day→eday; Early In-Person→evip; Vote By Mail→vbm; Provisional→provisional",
                  "Post Election Day; Post VBM", "Post* columns go to unassigned pending county definition"),
     "Erie": ("Election Day→eday; Absentee→early*; Provisional→provisional", "", ""),
@@ -97,7 +99,6 @@ EXPECTED = {
     "Logan": "Election Day→eday; Early In-Person→evip; Absentee→vbm; Provisional→provisional; 17 Year Old unmapped",
     "Tuscarawas": "Election Day→eday; Absentee→early*; Provisional→provisional; ED Central Count, Absentee after ED unmapped",
     "Lake": "Election Day (+Paper)→eday; Early Vote→evip; ABS By Mail→vbm; Provisional→provisional",
-    "Clermont": "Election Day→eday; Absentee In-Person→evip; Absentee Mail→vbm; Provisional→provisional",
     "Medina": "Election Day→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional",
     "Columbiana": "Election Day→eday; In Office→evip; Absentee→vbm; Provisional→provisional",
 }

@@ -8,11 +8,11 @@ in-person, mail, provisional). Every county has **totals** from the SOS statewid
 
 | Group | Counties |
 |---|---|
-| Itemized by vote method, scraper live | 21 |
+| Itemized by vote method, scraper live | 22 |
 | Itemized, scraper waiting for the election-night link | 1 |
 | Split exists on election night, only in a precinct PDF (not scraped) | 3 |
 | Likely split on election night (past election-night reports were) | 5 |
-| Split only in the official canvass (~Nov 17-24), or only in some elections | 21 |
+| Split only in the official canvass (~Nov 17-24), or only in some elections | 20 |
 | Totals only, confirmed (Nov 3 zero report and past reports) | 9 |
 | Totals only, likely (no past report was split) | 18 |
 | Unknown (no past results found to check) | 10 |
@@ -24,7 +24,7 @@ mapping (eday, evip = early in-person, vbm = mail, provisional; `early*` = the c
 only a combined early/absentee number); **Evidence** is the basis for the verdict, with the
 underlying document URLs in `tools/past_reports.json` and `tools/survey60_verdicts.json`.
 
-## Itemized by vote method, scraper live (21)
+## Itemized by vote method, scraper live (22)
 
 Expected: Election night (scraper live). Nov 3: Monitor loop output.
 
@@ -34,6 +34,7 @@ Expected: Election night (scraper live). Nov 3: Monitor loop output.
 | Butler | 39017 | SOS-hosted ENR XML (liveresults.boe.ohio.gov) | Local loop (Chrome) | Election Day→eday; Early Voting→evip; Absentee Voting→vbm; Provisional→provisional | Absentee Voting = mail (ENR page setting hdnMailVote) | [counties/butler/](counties/butler/) |
 | Carroll | 39019 | SOS-hosted ENR XML (liveresults.boe.ohio.gov) | Local loop (Chrome) | Election Day→eday; Early Voting→evip; Mail Ballots→vbm; Provisional→provisional |  | [counties/carroll/](counties/carroll/) |
 | Clark | 39023 | SOS-hosted ENR XML (liveresults.boe.ohio.gov) | Local loop (Chrome) | Election Day→eday; Early Voting→evip; Absentee Ballots→vbm; Provisional→provisional | Absentee Ballots = mail (inferred: separate Early Voting column) | [counties/clark/](counties/clark/) |
+| Clermont | 39025 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee In-Person→evip; Absentee Mail→vbm; Provisional→provisional | Election-night file name not known in advance; scraper picks it from the results page | [counties/clermont/](counties/clermont/) |
 | Cuyahoga | 39035 | Enhanced Voting Excel export | GitHub Actions | Election Day→eday; Early In-Person→evip; Vote By Mail→vbm; Provisional→provisional | Unassigned: Post Election Day; Post VBM; Post* columns go to unassigned pending county definition | [counties/cuyahoga/](counties/cuyahoga/) |
 | Erie | 39043 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee→early*; Provisional→provisional |  | [counties/erie/](counties/erie/) |
 | Franklin | 39049 | County-hosted ENR XML | GitHub Actions | Election Day→eday; Early Voting→evip; Absentee Ballots→vbm; Provisional→provisional | Absentee Ballots = mail (inferred: separate Early Voting column) | [counties/franklin/](counties/franklin/) |
@@ -82,7 +83,7 @@ Expected: Election night, likely (past election-night reports split). Nov 3: Rec
 | Logan | 39091 | Election Day→eday; Early In-Person→evip; Absentee→vbm; Provisional→provisional; 17 Year Old unmapped | https://www.boe.ohio.gov/logan/ | May 2025 Results Report: 'Election Day 17 Year OldAbsenteeTOTAL Early In-Person Provisional / Silas Augsburger 71 33 34 2 2 0'; May 2026/Nov 2025 Official Canvass also split. Nov 3 2026 results.pdf linked but not parsed |
 | Tuscarawas | 39157 | Election Day→eday; Absentee→early*; Provisional→provisional; ED Central Count, Absentee after ED unmapped | https://www.boe.ohio.gov/tuscarawas/ | Nov 4 2025 'General Election' results: 'ED Central Count Provisional Absentee Election Day TOTAL Absentee after ED / REP Justin David Perkowski 1,813 1,387 410 11 0 5'. May 2026 report total-only. Nov 3 2026 results.pdf 404. |
 
-## Split only in the official canvass (~Nov 17-24), or only in some elections (21)
+## Split only in the official canvass (~Nov 17-24), or only in some elections (20)
 
 Expected: Official canvass, ~Nov 17-24. Nov 3: Recheck 8:30 + 9:30 PM; else wait for canvass.
 
@@ -91,7 +92,6 @@ Expected: Official canvass, ~Nov 17-24. Nov 3: Recheck 8:30 + 9:30 PM; else wait
 | Ashtabula | 39007 |  | https://www.boe.ohio.gov/ashtabula/ | Nov 3 2026 zero report (20261103results.pdf, 'Unofficial Results') is TOTAL VOTE % only; May 2026 official: 'Provisional Absentee Early Voting Election Day TOTAL ... Amy Acton 5,202 4,016 751 414 20'. Nov 2025/May 2025 official total-only. |
 | Belmont | 39013 |  | https://www.boe.ohio.gov/belmont/ | Nov 3 2026 zero report (20261103results.pdf) is total-only: 'Candidate / Party / Total / Keith Faber / REP / 0'. May 5 2026 report (dated 5/14/2026) split: 'Candidate / Party / Election Day / Absentee / Provisional / Total / For the Tax Levy / 848 / 619'. Nov 4 2025 and May 6 2025 reports total-only. |
 | Champaign | 39021 |  | https://www.boe.ohio.gov/champaign/ | Nov 2025: 'Mary Ann Collier / 1018 / 58.64% / 50 / 692 / 272 / 4' under EV/PR headers; but Nov 3 2026 zero report and May 2025/May 2026 results are Votes/Vote% only |
-| Clermont | 39025 | Election Day→eday; Absentee In-Person→evip; Absentee Mail→vbm; Provisional→provisional | https://boe.clermontcountyohio.gov/election_results/index.php | Official summary-with-groups split every election checked (Mar 2024 to May 2026): Election Day / Absentee Mail / Absentee In-Person / Provisional. Election-night format not found. |
 | Clinton | 39027 |  | https://www.boe.ohio.gov/clinton/ | Nov 3 2026 'Unofficial Canvass Summary Report - Zero Report' is 'Choice Votes ... Total 0' only; past results: 'Choice Votes AB ED EV PR ... YES 2020 60 1503 445 12' (May 2025; also May 2026, Nov 2025). |
 | Columbiana | 39029 | Election Day→eday; In Office→evip; Absentee→vbm; Provisional→provisional | https://www.columbiana.boe.ohio.gov/ | Nov 2025 and May 2025 official Election-Summary-Group-Detail split Election Day / Absentee / In Office / Provisional; May 2026 summary TOTAL only. |
 | Fayette | 39047 |  | https://www.boe.ohio.gov/fayette/ | Nov 3 2026 results.pdf returns 200 but no extractable text (likely image PDF). May 2025 Official Canvass: 'TOTAL VOTE % Election Day / Absentee In Office / Absentee Mail / Provisional / Yes 727 ... 521 151 55 0'. |
