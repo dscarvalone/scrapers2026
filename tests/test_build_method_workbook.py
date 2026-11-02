@@ -167,3 +167,41 @@ def test_save_senate_only(tmp_path):
     except RuntimeError:
         pass
     assert [r["contestant"] for r in csv.DictReader(dst.open())] == ["Sherrod Brown", "Jon Husted"]
+
+
+def test_brown_husted_gate(tmp_path):
+    import csv
+    from common.senate import save_senate_only
+    src, dst = tmp_path / "latest.csv", tmp_path / "data.csv"
+    cols = ["race", "contestant", "party", "Election Day", "Mail", "total"]
+    def write(rows):
+        with src.open("w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=cols)
+            w.writeheader()
+            for who, ed, mail, tot, party in rows:
+                w.writerow({"race": "U.S. Senator", "contestant": who, "party": party,
+                            "Election Day": ed, "Mail": mail, "total": tot})
+    def refused():
+        try:
+            save_senate_only(src, dst)
+        except RuntimeError as e:
+            return str(e)
+        return ""
+    good = [("Sherrod Brown", 5, 5, 10, ""), ("Jon Husted", 3, 4, 7, ""), ("Write-in", 1, 0, 1, "")]
+    write(good)
+    assert save_senate_only(src, dst) == 3
+    # Party-prefixed names (Franklin) still count as Brown / Husted
+    write([("Dem Sherrod Brown", 1, 1, 2, "Dem"), ("Rep Jon Husted", 1, 0, 1, "Rep")])
+    assert save_senate_only(src, dst) == 2
+    write(good)
+    save_senate_only(src, dst)
+    # Husted missing -> refused, last good file kept
+    write([("Sherrod Brown", 5, 5, 10, "")])
+    assert "missing Jon Husted" in refused()
+    # Brown's vote types don't add up -> refused
+    write([("Sherrod Brown", 5, 4, 10, ""), ("Jon Husted", 3, 4, 7, "")])
+    assert "Sherrod Brown: vote types sum to 9" in refused()
+    assert len(list(csv.DictReader(dst.open()))) == 3  # still the good file
+    # A write-in mismatch only warns: saved
+    write([("Sherrod Brown", 5, 5, 10, ""), ("Jon Husted", 3, 4, 7, ""), ("Write-in", 1, 1, 1, "")])
+    assert save_senate_only(src, dst) == 3

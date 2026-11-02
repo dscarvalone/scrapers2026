@@ -125,11 +125,67 @@ NON_METHOD_COLS = {
 }
 
 
+# The candidates the checks are about. A county update that lacks either one,
+# or where either one's vote types don't add up to their total, is refused
+# (the last good file is kept). Other lines (Levy, Redpath, write-ins) only warn.
+REQUIRED = ("Sherrod Brown", "Jon Husted")
+
+
+def candidate_of(row: dict, name_col: str) -> str | None:
+    """Canonical candidate name for a feed row, or None if not a known candidate."""
+    key = " ".join((row.get(name_col) or "").split()).lower()
+    # Some ENR installs (Franklin) prefix the name with the party code
+    # from the party column: "Dem Sherrod Brown", "Opc Greg Levy".
+    party_code = (row.get("party") or "").strip().lower()
+    if party_code and key.startswith(party_code + " ") and key not in CANDIDATES:
+        key = key[len(party_code) + 1:]
+    return CANDIDATES[key][0] if key in CANDIDATES else None
+
+
+def _methods_sum(row: dict, fields: list[str]) -> int:
+    return sum(int(row[m] or 0) for m in fields if m not in NON_METHOD_COLS)
+
+
+def check_senate_rows(rows: list[dict], fields: list[str], where: str) -> list[str]:
+    """Hard problems with Brown and Husted (raise on these); prints warnings
+    for the other candidates. `rows` are one county's Senate-race rows."""
+    name_col = "choice" if "choice" in fields else "contestant"
+    cands = [r for r in rows if r.get("row_type", "candidate") == "candidate"]
+    seen: dict[str, dict] = {}
+    problems = []
+    for r in cands:
+        name = candidate_of(r, name_col)
+        if name is None:
+            problems.append(f"unexpected Senate candidate {r.get(name_col)!r}")
+            continue
+        try:
+            total, msum = int(r["total"] or 0), _methods_sum(r, fields)
+        except ValueError as e:
+            msg = f"{name}: non-numeric votes ({e})"
+            if name in REQUIRED:
+                problems.append(msg)
+            else:
+                print(f"WARNING {where}: {msg}", file=sys.stderr)
+            continue
+        if msum != total:
+            msg = f"{name}: vote types sum to {msum:,}, total is {total:,}"
+            if name in REQUIRED:
+                problems.append(msg)
+            else:
+                print(f"WARNING {where}: {msg}", file=sys.stderr)
+        seen[name] = r
+    missing = [n for n in REQUIRED if n not in seen]
+    if missing:
+        problems.append(f"missing {' and '.join(missing)}")
+    return problems
+
+
 def save_senate_only(src: Path, dst: Path) -> int:
     """Copy a county's scraper output to its committed data file, keeping only
     the U.S. Senate race (every row of that race, including Cuyahoga's ballots
     cast / over / under rows). Raises, and leaves `dst` untouched, unless the
-    file holds exactly one U.S. Senate race. Returns the number of rows kept."""
+    file holds exactly one U.S. Senate race with Brown and Husted present and
+    each one's vote types adding up to their total. Returns rows kept."""
     with src.open(encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         fields = reader.fieldnames or []
@@ -140,6 +196,9 @@ def save_senate_only(src: Path, dst: Path) -> int:
     if len(races) != 1:
         raise RuntimeError(f"{src}: expected 1 U.S. Senate race, found {sorted(races) or 'none'}; "
                            f"{dst} left as is")
+    problems = check_senate_rows(keep, fields, str(src.parent.parent.name))
+    if problems:
+        raise RuntimeError(f"{src}: " + "; ".join(problems) + f"; {dst} left as is")
     tmp = dst.with_name(dst.name + ".tmp")
     dst.parent.mkdir(parents=True, exist_ok=True)
     with tmp.open("w", encoding="utf-8", newline="") as f:
@@ -163,24 +222,19 @@ def county_rows(county: str, path: Path) -> list[dict]:
     if len(races) != 1:
         raise RuntimeError(f"{county}: expected 1 U.S. Senate race, found {sorted(races) or 'none'}")
 
+    problems = check_senate_rows(senate, list(rows[0]), county)
+    if problems:
+        raise RuntimeError(f"{county}: " + "; ".join(problems))
+
     out = []
     for r in senate:
         if r.get("row_type", "candidate") != "candidate":
             continue  # Cuyahoga's Ballots Cast / Over / Under rows
-        key = " ".join(r[name_col].split()).lower()
-        # Some ENR installs (Franklin) prefix the name with the party code
-        # from the party column: "Dem Sherrod Brown", "Opc Greg Levy".
-        party_code = (r.get("party") or "").strip().lower()
-        if party_code and key.startswith(party_code + " ") and key not in CANDIDATES:
-            key = key[len(party_code) + 1:]
-        if key not in CANDIDATES:
-            raise RuntimeError(f"{county}: unexpected Senate candidate {r[name_col]!r}")
-        name, party = CANDIDATES[key]
-        method_sum = 0
+        name = candidate_of(r, name_col)
+        party = next(p for n, p in CANDIDATES.values() if n == name)
         mapping = {**METHOD_MAP, **EV_METHOD_MAP} if r.get("source_format") == "enhanced_voting" else METHOD_MAP
         for m in methods:
             votes = int(r[m] or 0)
-            method_sum += votes
             out.append({
                 "county": county.replace("_", " ").title(),  # van_wert -> Van Wert
                 "candidate": name,
@@ -193,16 +247,21 @@ def county_rows(county: str, path: Path) -> list[dict]:
                 "source_generated_at": r.get("generated_at", ""),
                 "source": "county_feed",
             })
-        if method_sum != int(r["total"] or 0):
-            print(f"WARNING {county} / {name}: methods sum to {method_sum}, county total {r['total']}",
-                  file=sys.stderr)
-    return out
+    return out  # sums already checked above (hard for Brown/Husted, warning for the rest)
 
 
 def statewide_rows(path: Path, have: set[str]) -> tuple[list[dict], list[str]]:
     """Long rows (method = UNSPLIT) for counties NOT in `have`, plus all
     statewide rows (for cross_check)."""
     rows = list(csv.DictReader(path.open(encoding="utf-8")))
+    have_req: dict[str, set] = {}
+    for r in rows:
+        have_req.setdefault(r["county"].strip(), set()).add(r["candidate"])
+    gaps = [f"{c} (missing {' and '.join(n for n in REQUIRED if n not in s)})"
+            for c, s in have_req.items() if not set(REQUIRED) <= s]
+    if gaps or len(have_req) != 88:
+        raise RuntimeError(f"statewide: {len(have_req)} counties; Brown/Husted missing in: "
+                           + (", ".join(gaps) or "none"))
     out = []
     for r in rows:
         county = r["county"].strip()
@@ -232,9 +291,11 @@ def cross_check(long_rows: list[dict], statewide: list[dict]) -> list[str]:
     for r in statewide:
         k = (r["county"].strip().lower(), r["candidate"])
         if k in feed and feed[k] != int(r["votes"] or 0):
-            problems.append(f"{r['county']} / {r['candidate']}: county feed {feed[k]}, "
-                            f"statewide {r['votes']}")
-    return problems
+            tag = "" if r["candidate"] in REQUIRED else " (minor candidate)"
+            problems.append(f"{r['county']} / {r['candidate']}{tag}: county feed {feed[k]:,}, "
+                            f"statewide {int(r['votes'] or 0):,}")
+    # Brown/Husted first: those are the mismatches that matter.
+    return sorted(problems, key=lambda p: "(minor candidate)" in p)
 
 
 def to_wide(long_rows: list[dict]):

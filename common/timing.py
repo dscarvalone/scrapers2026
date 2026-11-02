@@ -230,8 +230,9 @@ def timing_rows(reg: list[dict], long_rows: list[dict], drops: dict[str, dict]) 
                 _add(out, "pre_eday", cand, v)
             for cand, v in d["latest"].items():
                 _add(out, "eday", cand, v - d["pre"].get(cand, 0))
-            if any(out[f"eday_{p}_votes"] < 0 for p in PARTY_COLS):
-                notes.append("ANOMALY: a candidate's total fell after the first drop; split not usable")
+            minor_down = [p for p in ("breakout_1", "breakout_2", "other") if out[f"eday_{p}_votes"] < 0]
+            if any(out[f"eday_{p}_votes"] < 0 for p in ("dem", "gop")):
+                notes.append("ANOMALY: Brown's or Husted's total fell after the first drop; split not usable")
                 for t in ("pre_eday", "eday"):
                     for p in ["total", *PARTY_COLS]:
                         out[f"{t}_{p}_votes"] = ""
@@ -241,6 +242,9 @@ def timing_rows(reg: list[dict], long_rows: list[dict], drops: dict[str, dict]) 
                              "eday = growth since, incl. any absentee/provisional added later")
                 if d["status"] == "first_drop_pre_only":
                     notes.append("no Election Day precincts reported yet")
+                if minor_down:
+                    notes.append("minor-candidate total fell after the first drop (" + ", ".join(minor_down)
+                                 + "); their eday column is negative, Brown/Husted unaffected")
         else:
             out["timing_source"] = "none"
             if d:

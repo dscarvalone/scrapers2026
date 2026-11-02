@@ -284,10 +284,20 @@ def run(county: str, layout: str, data: bytes, out_dir: Path, source_url: str) -
     gen = "pdf-sha1:" + hashlib.sha1(data).hexdigest()[:12]
     for r in rows:
         r.update(precincts_reported="", precincts_total="", generated_at=gen, source_format=f"pdf_{layout}")
-    bad = [f"{r['contestant']}: {sum(r[c] for c in cols)} vs {r['total']}" for r in rows
-           if sum(r[c] for c in cols) != r["total"]]
+    mismatched = [r for r in rows if sum(r[c] for c in cols) != r["total"]]
+    # Only Brown and Husted block the update (tools/save_senate.py applies the
+    # same rule); a write-in or minor-candidate mismatch is a warning.
+    key = lambda r: " ".join(r["contestant"].split()).lower()
+    bad = [f"{r['contestant']}: {sum(r[c] for c in cols)} vs {r['total']}" for r in mismatched
+           if key(r) in ("sherrod brown", "jon husted")]
+    minor = [f"{r['contestant']}: {sum(r[c] for c in cols)} vs {r['total']}" for r in mismatched
+             if key(r) not in ("sherrod brown", "jon husted")]
+    if minor:
+        print("WARNING (minor candidates, not blocking): vote types don't sum to total: "
+              + "; ".join(minor), file=sys.stderr)
     print(f"{county}: {layout} PDF, {race!r}, {len(rows)} candidates ({source_url})", file=sys.stderr)
-    print(("WARNING: vote types don't sum to total: " + "; ".join(bad)) if bad else "Vote-type sums match totals.",
+    print(("ERROR: Brown/Husted vote types don't sum to total: " + "; ".join(bad)) if bad
+          else "Vote-type sums match totals for Brown and Husted.",
           file=sys.stderr)
     fields = ["race", "contestant", *cols, *TAIL]
     stamp = datetime.now().strftime("%Y%m%d_%H%M%S")
