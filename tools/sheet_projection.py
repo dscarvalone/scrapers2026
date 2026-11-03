@@ -1,28 +1,32 @@
 """Build the 'projection' tab of the owner's election-night Google Sheet.
 
-The post-election playbook, as formulas (reads 'validations', so it updates
-with the data):
-  a) a cutoff (default 90%) on Eday votes counted / the model's expected Eday
-     votes; a county at or above it is "done";
-  b) counties grouped done / not done;
-  c) and by group (base / swing / rurals, from 'grouping');
-  d) what's left of Eday, by algebra: done -> 0 left; not done -> expected Eday
-     minus counted, at the county's current Eday 2-way share (the model's
-     expected Eday share until any Eday votes are counted). E-night projected
-     margin = current margin (AP) + that Eday-left margin.
-  e) mail scenarios: per group, outstanding mail ballots and an assumed Brown
-     2-way share of them -> mail margin -> final projected margin.
+Laid out like the owner's earlier model: a Mail block and an Eday block, one
+row per group (base / swing / rurals) plus a total, with columns
+    votes in | Dem in | Rep in | expected votes | % of expected in |
+    Dem % | Rep % | margin | outstanding | Dem outstanding | Rep outstanding |
+    margin change
+then a projected-margin rollup and the county detail the blocks are built from.
 
-A county with no Eday count at all (no split and no first-drop estimate) is
-"no Eday count": it is NOT extrapolated (no borrowed or modelled split), and
-the summary shows how much of the expected vote that leaves out.
+Method (the post-election playbook):
+  a) Eday: a county is "done" when Eday votes counted >= cutoff (B2, default
+     90%) x the model's expected Eday votes; done counties have 0 outstanding.
+  b/c) counties grouped by done status and by group.
+  d) Eday outstanding = sum over not-done counties of max(0, expected - counted);
+     split at the group's current Eday Dem % / Rep %. A group with no Eday
+     votes counted yet gets no split (blank, "not projected"): no model shares.
+  e) Mail outstanding = max(0, expected - counted) per county, at the group's
+     current mail Dem % / Rep %, or at the Brown 2-way assumption typed in
+     column N (an input, kept on rebuild).
+Dem % / Rep % are shares of all votes (minor candidates included), as in the
+owner's sheet.
 
-Inputs (B2, and the scenario table) are kept on rebuild. Outstanding mail
-defaults to 0: type the boards' outstanding absentee counts once posted.
-The share defaults to the model's vote-weighted expected mail 2-way share for
-the group (falling back to its expected total 2-way share).
+No imputation: a county with no Eday count (no split and no first-drop
+estimate) is left out of the Eday block, expected votes included, and the
+block shows how much of the expected vote that leaves out. The Mail block uses
+only counties that report mail separately. Early in-person votes are counted
+before Election Day, so they need no outstanding estimate.
 
-Writes only the 'projection' tab (plus its group-colour shading).
+Reads 'validations', so it updates with the data. Writes only this tab.
 Usage:
     GSHEET_ID=<id> python -m tools.sheet_projection
 """
@@ -39,75 +43,104 @@ from tools.sheet_validations import FIRST, KEY, LAST
 TAB = "projection"
 N = LAST - FIRST + 1
 GROUPS = ["base", "swing", "rurals"]
+V = "validations"
 
 CUTOFF = "$B$2"
-SCEN0 = 5          # scenario rows 5-7 (base, swing, rurals), total row 8
-SUM0 = 12          # summary rows 12-15 (FINAL, base, swing, rurals)
-HDR = 17           # county table header row
-C0 = HDR + 1       # first county row (18)
-C1 = C0 + N - 1    # last county row
-V = "validations"
+MAIL_H, MAIL0 = 4, 5        # mail block: header row 4, groups 5-7, total 8
+EDAY_H, EDAY0 = 11, 12      # eday block: header row 11, groups 12-14, total 15
+PROJ_H, PROJ0 = 18, 19      # projection: header row 18, groups 19-21, total 22
+DET_H, C0 = 25, 26          # county detail: header row 25, counties 26..
+C1 = C0 + N - 1
+NCOLS = 17
+
+BLOCK_COLS = ["votes in", "Dem in", "Rep in", "expected votes", "% of expected in", "Dem %", "Rep %",
+              "Margin", "Outstanding", "Dem outstanding", "Rep outstanding", "Margin change"]
+
+# county detail columns
+DET = ["Group", "FIPS", "County", "Eday votes in", "Dem Eday", "Rep Eday", "Expected Eday votes",
+       "% of expected Eday", "Status", "Eday outstanding", "Mail votes in", "Dem mail", "Rep mail",
+       "Mail expected votes", "Mail outstanding", "Current margin (AP)", "Expected total votes"]
+
+
+def rng_(col: str) -> str:
+    return f"${col}${C0}:${col}${C1}"
 
 
 def county_row(r: int, v: int) -> list:
     return [
-        f"={V}!A{v}",                                                    # A group
-        f"={V}!B{v}",                                                    # B FIPS
-        f"={V}!C{v}",                                                    # C county
-        f'=IF({V}!P{v}="","",{V}!P{v})',                                 # D Eday votes counted
-        f'=IF({V}!Q{v}="","",{V}!Q{v})',                                 # E expected Eday votes
-        f'=IF(OR(D{r}="",E{r}="",N(E{r})=0),"",D{r}/E{r})',              # F % of expected
-        f'=IF(F{r}="","no Eday count",IF(F{r}>={CUTOFF},"done","not done"))',  # G status
-        f"=N({V}!AQ{v})-N({V}!AR{v})",                                   # H current margin (AP)
-        f'=IF({V}!J{v}<>"",{V}!J{v},IF({V}!K{v}<>"",{V}!K{v},""))',      # I Eday 2-way share used
-        f'=IF({V}!J{v}<>"","counted",IF({V}!K{v}<>"","model",""))',      # J share source
-        f'=IF(G{r}="no Eday count","",IF(G{r}="done",0,MAX(0,E{r}-D{r})))',    # K Eday votes left
-        f'=IF(OR(K{r}="",I{r}=""),"",(2*I{r}-1)*K{r})',                  # L Eday-left margin
-        f"=H{r}+N(L{r})",                                                # M E-night projected margin
-        f'=N({V}!U{v})',                                                 # N expected total votes
+        f"={V}!A{v}", f"={V}!B{v}", f"={V}!C{v}",
+        f'=IF({V}!P{v}="","",{V}!P{v})',                                       # D Eday in
+        f'=IF(D{r}="","",N({V}!AI{v}))',                                       # E Dem Eday
+        f'=IF(D{r}="","",N({V}!AJ{v}))',                                       # F Rep Eday
+        f'=IF({V}!Q{v}="","",{V}!Q{v})',                                       # G expected Eday
+        f'=IF(OR(D{r}="",G{r}="",N(G{r})=0),"",D{r}/G{r})',                    # H % of expected
+        f'=IF(H{r}="","no Eday count",IF(H{r}>={CUTOFF},"done","not done"))',  # I status
+        f'=IF(I{r}="no Eday count","",IF(I{r}="done",0,MAX(0,G{r}-D{r})))',    # J Eday outstanding
+        f'=IF({V}!AE{v}="","",{V}!AE{v})',                                     # K mail in
+        f'=IF(K{r}="","",N({V}!AY{v}))',                                       # L Dem mail
+        f'=IF(K{r}="","",N({V}!AZ{v}))',                                       # M Rep mail
+        f'=IF(K{r}="","",N({V}!AF{v}))',                                       # N mail expected
+        f'=IF(K{r}="","",MAX(0,N{r}-K{r}))',                                   # O mail outstanding
+        f"=N({V}!AQ{v})-N({V}!AR{v})",                                         # P current margin
+        f"=N({V}!U{v})",                                                       # Q expected total
     ]
 
 
-COUNTY_HDR = ["Group", "FIPS", "County", "Eday votes counted", "Expected Eday votes",
-              "% of expected Eday", "Status", "Current margin (AP)", "Eday 2-way share used",
-              "Share from", "Eday votes left", "Eday-left margin", "E-night projected margin",
-              "Expected total votes"]
+def S(col: str, r: int, extra: str = "") -> str:
+    return f"SUMIFS({rng_(col)},{rng_('A')},$A{r}{extra})"
 
 
-def scen_row(r: int, g: str, kept: dict) -> list:
-    gr = f"{V}!$A${FIRST}:$A${LAST}"
-    s = lambda col: f"SUMIFS({V}!${col}${FIRST}:${col}${LAST},{gr},$A{r})"
-    default_share = (f"=IFERROR({s('BA')}/({s('BA')}+{s('BB')}),"
-                     f"IFERROR({s('AS')}/({s('AS')}+{s('AT')}),0.5))")
-    return [g,
-            f"={s('AF')}",                                   # B model's expected mail ballots (context)
-            kept.get((r, "C"), 0),                           # C outstanding mail ballots (input)
-            kept.get((r, "D"), default_share),               # D Brown 2-way share of it (input)
-            f"=(2*N(D{r})-1)*N(C{r})"]                       # E mail margin
+def eday_row(r: int) -> list:
+    counted = f',{rng_("I")},"<>no Eday count"'
+    return [
+        None,
+        f"={S('D', r)}", f"={S('E', r)}", f"={S('F', r)}",
+        f"={S('G', r, counted)}",
+        f'=IFERROR(B{r}/E{r},"")',
+        f'=IF(B{r}>0,C{r}/B{r},"")',
+        f'=IF(B{r}>0,D{r}/B{r},"")',
+        f'=IF(G{r}="","",G{r}-H{r})',
+        f"={S('J', r)}",
+        f'=IF(G{r}="","",J{r}*G{r})', f'=IF(H{r}="","",J{r}*H{r})',
+        f'=IF(K{r}="","",K{r}-L{r})',
+        f'=IF(B{r}>0,"counted Eday","no Eday votes yet: not projected")',
+        f'=COUNTIFS({rng_("A")},$A{r},{rng_("I")},"done")&" done / "&COUNTIFS({rng_("A")},$A{r},{rng_("I")},'
+        f'"not done")&" not done / "&COUNTIFS({rng_("A")},$A{r},{rng_("I")},"no Eday count")&" no count"',
+        f'=IFERROR(1-{S("Q", r, counted)}/{S("Q", r)},"")',
+    ]
 
 
-def summary_row(r: int, g: str) -> list:
-    crit = '"?*"' if g == "FINAL" else f"$A{r}"
-    A, G = f"$A${C0}:$A${C1}", f"$G${C0}:$G${C1}"
-
-    def cnt(status):
-        return f'=COUNTIFS({A},{crit},{G},"{status}")'
-
-    def sm(col, status=None):
-        st = f',{G},"{status}"' if status else ""
-        return f"SUMIFS(${col}${C0}:${col}${C1},{A},{crit}{st})"
-
-    mail = f"=SUM(E{SCEN0}:E{SCEN0 + 2})" if g == "FINAL" else \
-        f"=IFERROR(INDEX($E${SCEN0}:$E${SCEN0 + 2},MATCH($A{r},$A${SCEN0}:$A${SCEN0 + 2},0)),0)"
-    return [g, cnt("done"), cnt("not done"), cnt("no Eday count"),
-            f'=IFERROR({sm("N", "no Eday count")}/{sm("N")},"")',
-            f"={sm('H')}", f"={sm('K')}", f"={sm('L')}", f"={sm('M')}",
-            mail, f"=I{r}+J{r}"]
+def mail_row(r: int, kept_input) -> list:
+    a = f"N{r}"
+    return [
+        None,
+        f"={S('K', r)}", f"={S('L', r)}", f"={S('M', r)}", f"={S('N', r)}",
+        f'=IFERROR(B{r}/E{r},"")',
+        f'=IF(B{r}>0,C{r}/B{r},"")', f'=IF(B{r}>0,D{r}/B{r},"")',
+        f'=IF(G{r}="","",G{r}-H{r})',
+        f"={S('O', r)}",
+        f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*{a},IF(G{r}="","",J{r}*G{r}))',
+        f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*(1-{a}),IF(H{r}="","",J{r}*H{r}))',
+        f'=IF(K{r}="","",K{r}-L{r})',
+        kept_input,
+        f'=SUMPRODUCT(({rng_("A")}=$A{r})*({rng_("K")}<>""))&" of "&COUNTIF({rng_("A")},$A{r})&" counties"',
+    ]
 
 
-SUMMARY_HDR = ["Group", "Counties done", "Not done", "No Eday count", "Expected vote not projected",
-               "Current margin (AP)", "Eday votes left", "Eday-left margin", "E-night projected margin",
-               "Mail margin (scenario)", "Final projected margin"]
+def total_row(r: int, first: int, eday: bool) -> list:
+    last = first + 2
+    sm = lambda c: f"=SUM({c}{first}:{c}{last})"
+    row = [None, sm("B"), sm("C"), sm("D"), sm("E"), f'=IFERROR(B{r}/E{r},"")',
+           f'=IFERROR(C{r}/B{r},"")', f'=IFERROR(D{r}/B{r},"")', f'=IF(G{r}="","",G{r}-H{r})',
+           sm("J"), sm("K"), sm("L"), sm("M")]
+    if eday:
+        row += ["",
+                f'=COUNTIF({rng_("I")},"done")&" done / "&COUNTIF({rng_("I")},"not done")&" not done / "'
+                f'&COUNTIF({rng_("I")},"no Eday count")&" no count"',
+                f'=IFERROR(1-SUMIFS({rng_("Q")},{rng_("I")},"<>no Eday count")/SUM({rng_("Q")}),"")']
+    else:
+        row += ["", f'=COUNT({rng_("K")})&" of {N} counties"']
+    return row
 
 
 def build(sheet_id: str) -> None:
@@ -117,50 +150,74 @@ def build(sheet_id: str) -> None:
     api = f"https://sheets.googleapis.com/v4/spreadsheets/{sheet_id}"
     sheets = s.get(api, params={"fields": "sheets(properties,conditionalFormats)"}).json()["sheets"]
     tab = next((x for x in sheets if x["properties"]["title"] == TAB), None)
-    kept: dict = {}
+    cutoff, mail_in = 0.9, {}
     if tab is None:
         gid = s.post(api + ":batchUpdate", json={"requests": [{"addSheet": {"properties": {"title": TAB}}}]}
                      ).json()["replies"][0]["addSheet"]["properties"]["sheetId"]
         ncf = 0
     else:
         gid, ncf = tab["properties"]["sheetId"], len(tab.get("conditionalFormats", []))
-        # keep the owner's inputs
-        cur = s.get(f"{api}/values/{TAB}!A1:E{SCEN0 + 2}", params={"valueRenderOption": "FORMULA"}).json()
-        vals = cur.get("values", [])
-        if len(vals) >= 2 and len(vals[1]) >= 2 and vals[1][1] != "":
-            kept[(2, "B")] = vals[1][1]
-        for r in range(SCEN0, SCEN0 + 3):
-            row = vals[r - 1] if len(vals) >= r else []
-            for i, col in ((2, "C"), (3, "D")):
-                if len(row) > i and row[i] != "":
-                    kept[(r, col)] = row[i]
+        cur = s.get(f"{api}/values/{TAB}!A1:N{MAIL0 + 2}", params={"valueRenderOption": "UNFORMATTED_VALUE"}
+                    ).json().get("values", [])
+        cur = [r + [""] * (14 - len(r)) for r in cur]
+        if len(cur) >= 2 and isinstance(cur[1][1], (int, float)):
+            cutoff = cur[1][1]
+        for i in range(3):  # Brown 2-way assumption inputs (only if this layout's header is there)
+            if len(cur) > MAIL0 - 1 + i and len(cur) >= MAIL_H and "assumption" in str(cur[MAIL_H - 1][13]):
+                val = cur[MAIL0 - 1 + i][13]
+                if isinstance(val, (int, float)):
+                    mail_in[i] = val
 
-    rows: list[list] = [[""] * 14 for _ in range(C1)]
-    rows[0][0] = ("E-night projection: counties at or above the cutoff (Eday votes counted / model's expected "
-                  "Eday votes) are done; the rest get expected-minus-counted Eday votes at their current Eday "
-                  "share. Then mail scenarios.")
-    rows[1][0:3] = ["Done cutoff (% of expected Eday)", kept.get((2, "B"), 0.9),
-                    "<- input. Counties with no Eday count are not extrapolated (see 'Expected vote not projected')."]
-    rows[3][0:5] = ["Mail scenario", "Model's expected mail ballots", "Outstanding mail ballots (input)",
-                    "Brown 2-way share of it (input)", "Mail margin"]
+    rows = [[""] * NCOLS for _ in range(C1)]
+    rows[0][0] = "E-night projection (formulas; updates with the data)"
+    rows[1][0:3] = ["Eday done cutoff", cutoff,
+                    "<- input: a county with Eday votes counted at or above this share of its expected Eday "
+                    "votes is done (0 outstanding)."]
+    rows[MAIL_H - 1] = ["Mail"] + ["Mail " + c if i in (0, 3) else c.replace("in", "mail in") if i in (1, 2)
+                                   else c for i, c in enumerate(BLOCK_COLS)] + \
+        ["Brown 2-way assumption (optional input)", "Counties reporting mail", "", "", "", ""]
     for i, g in enumerate(GROUPS):
-        rows[SCEN0 - 1 + i][0:5] = scen_row(SCEN0 + i, g, kept)
-    rows[SCEN0 + 2][0:5] = ["Total", f"=SUM(B{SCEN0}:B{SCEN0 + 2})", f"=SUM(C{SCEN0}:C{SCEN0 + 2})", "",
-                            f"=SUM(E{SCEN0}:E{SCEN0 + 2})"]
-    rows[SCEN0 + 3][0] = ("Outstanding mail: type the boards' outstanding absentee counts once posted. "
-                          "Share defaults to the model's expected mail 2-way share for the group; type over it "
-                          "to try a scenario.")
-    rows[SUM0 - 2][0:11] = SUMMARY_HDR
-    for i, g in enumerate(["FINAL"] + GROUPS):
-        rows[SUM0 - 1 + i][0:11] = summary_row(SUM0 + i, g)
-    rows[HDR - 1] = COUNTY_HDR
+        r = MAIL0 + i
+        rows[r - 1] = mail_row(r, mail_in.get(i, "")) + [""] * 4
+        rows[r - 1][0] = g
+    rows[MAIL0 + 2] = total_row(MAIL0 + 3, MAIL0, False) + [""] * 5
+    rows[MAIL0 + 2][0] = "Total"
+    rows[MAIL0 + 3][0] = ("Mail: only counties that report mail separately. Outstanding = expected minus counted "
+                          "(0 if over). With an assumption in column N, outstanding mail is split at that Brown "
+                          "2-way share instead of the current mail shares.")
+
+    rows[EDAY_H - 1] = ["Eday"] + ["Eday " + c if i in (0, 3) else c.replace("in", "Eday in") if i in (1, 2)
+                                   else c for i, c in enumerate(BLOCK_COLS)] + \
+        ["Share from", "Counties", "Expected vote not covered", "", "", ""]
+    for i, g in enumerate(GROUPS):
+        r = EDAY0 + i
+        rows[r - 1] = eday_row(r) + [""] * 3
+        rows[r - 1][0] = g
+    rows[EDAY0 + 2] = total_row(EDAY0 + 3, EDAY0, True) + [""] * 3
+    rows[EDAY0 + 2][0] = "Total"
+    rows[EDAY0 + 3][0] = ("Eday: counties with an Eday count only (itemized or first drop); others are left out, "
+                          "expected votes included, and counted under 'Expected vote not covered'. "
+                          "Done counties have 0 outstanding.")
+
+    rows[PROJ_H - 1][0:6] = ["Projected margin", "Current margin (AP)", "Eday margin change",
+                             "Mail margin change", "Projected margin", "Expected vote without an Eday count"]
+    for i, g in enumerate(GROUPS):
+        r = PROJ0 + i
+        rows[r - 1][0:6] = [g, f"={S('P', r)}", f"=N(M{EDAY0 + i})", f"=N(M{MAIL0 + i})",
+                            f"=B{r}+C{r}+D{r}", f"=P{EDAY0 + i}"]
+    t = PROJ0 + 3
+    rows[t - 1][0:6] = ["Total", f"=SUM(B{PROJ0}:B{t - 1})", f"=SUM(C{PROJ0}:C{t - 1})",
+                        f"=SUM(D{PROJ0}:D{t - 1})", f"=B{t}+C{t}+D{t}", f"=P{EDAY0 + 3}"]
+
+    rows[DET_H - 1] = DET
     for k in range(N):
         rows[C0 - 1 + k] = county_row(C0 + k, FIRST + k)
 
     req = [{"deleteConditionalFormatRule": {"sheetId": gid, "index": 0}} for _ in range(ncf)]
     req += [{"updateCells": {"range": {"sheetId": gid}, "fields": "userEnteredValue,userEnteredFormat"}},
+            {"unmergeCells": {"range": {"sheetId": gid}}},
             {"updateSheetProperties": {"properties": {"sheetId": gid, "gridProperties": {
-                "rowCount": C1, "columnCount": 14, "frozenRowCount": 0, "frozenColumnCount": 3}},
+                "rowCount": C1, "columnCount": NCOLS, "frozenRowCount": 0, "frozenColumnCount": 1}},
                 "fields": "gridProperties(rowCount,columnCount,frozenRowCount,frozenColumnCount)"}}]
     s.post(api + ":batchUpdate", json={"requests": req}).raise_for_status()
     s.put(f"{api}/values/{TAB}!A1", params={"valueInputOption": "USER_ENTERED"},
@@ -174,48 +231,60 @@ def build(sheet_id: str) -> None:
                                "cell": {"userEnteredFormat": {"numberFormat": {"type": typ, "pattern": pattern}}},
                                "fields": "userEnteredFormat.numberFormat"}}
 
-    def bold(r0, r1, c0, c1):
-        return {"repeatCell": {"range": rng(r0, r1, c0, c1),
-                               "cell": {"userEnteredFormat": {"textFormat": {"bold": True}, "wrapStrategy": "WRAP"}},
-                               "fields": "userEnteredFormat(textFormat,wrapStrategy)"}}
+    def cell(r0, r1, c0, c1, fmt_, fields):
+        return {"repeatCell": {"range": rng(r0, r1, c0, c1), "cell": {"userEnteredFormat": fmt_}, "fields": fields}}
 
-    input_bg = {"red": 1, "green": 0.95, "blue": 0.8}
+    hdr = {"textFormat": {"bold": True}, "wrapStrategy": "WRAP", "verticalAlignment": "BOTTOM",
+           "backgroundColor": {"red": 0.95, "green": 0.95, "blue": 0.95}}
+    hdr_f = "userEnteredFormat(textFormat,wrapStrategy,verticalAlignment,backgroundColor)"
+    input_bg = {"backgroundColor": {"red": 1, "green": 0.95, "blue": 0.8}}
     margin = "+#,##0;-#,##0;0"
-    req = [bold(0, 1, 0, 1), bold(1, 2, 0, 1), bold(3, 4, 0, 5), bold(SUM0 - 2, SUM0 - 1, 0, 11),
-           bold(HDR - 1, HDR, 0, 14), bold(SUM0 - 1, SUM0, 0, 11),
-           fmt(1, 2, 1, 2, "0%", "PERCENT"),
-           fmt(SCEN0 - 1, SCEN0 + 2, 1, 3, "#,##0"), fmt(SCEN0 - 1, SCEN0 + 2, 3, 4, "0.0%", "PERCENT"),
-           fmt(SCEN0 - 1, SCEN0 + 2, 4, 5, margin), fmt(SCEN0 + 2, SCEN0 + 3, 1, 3, "#,##0"),
-           fmt(SCEN0 + 2, SCEN0 + 3, 4, 5, margin), bold(SCEN0 + 2, SCEN0 + 3, 0, 5),
-           fmt(SUM0 - 1, SUM0 + 3, 4, 5, "0%", "PERCENT"), fmt(SUM0 - 1, SUM0 + 3, 5, 6, margin),
-           fmt(SUM0 - 1, SUM0 + 3, 6, 7, "#,##0"), fmt(SUM0 - 1, SUM0 + 3, 7, 11, margin),
-           fmt(C0 - 1, C1, 3, 5, "#,##0"), fmt(C0 - 1, C1, 5, 6, "0%", "PERCENT"),
-           fmt(C0 - 1, C1, 7, 8, margin), fmt(C0 - 1, C1, 8, 9, "0.0%", "PERCENT"),
-           fmt(C0 - 1, C1, 10, 11, "#,##0"), fmt(C0 - 1, C1, 11, 13, margin), fmt(C0 - 1, C1, 13, 14, "#,##0"),
-           {"repeatCell": {"range": rng(1, 2, 1, 2), "cell": {"userEnteredFormat": {"backgroundColor": input_bg}},
-                           "fields": "userEnteredFormat.backgroundColor"}},
-           {"repeatCell": {"range": rng(SCEN0 - 1, SCEN0 + 2, 2, 4),
-                           "cell": {"userEnteredFormat": {"backgroundColor": input_bg}},
-                           "fields": "userEnteredFormat.backgroundColor"}},
-           {"updateBorders": {"range": rng(SUM0 - 1, SUM0, 0, 11), "bottom": {"style": "SOLID"}}}]
-    # status colours
+    pts = "+0.0%;-0.0%;0.0%"
+    req = [cell(0, 1, 0, 1, {"textFormat": {"bold": True, "fontSize": 12}}, "userEnteredFormat.textFormat"),
+           cell(1, 2, 0, 1, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
+           fmt(1, 2, 1, 2, "0%", "PERCENT"), cell(1, 2, 1, 2, input_bg, "userEnteredFormat.backgroundColor")]
+    for h, first, extra in ((MAIL_H, MAIL0, 2), (EDAY_H, EDAY0, 3)):
+        r0, r1 = first - 1, first + 3  # 3 groups + total
+        req += [cell(h - 1, h, 0, 13 + extra, hdr, hdr_f),
+                fmt(r0, r1, 1, 5, "#,##0"), fmt(r0, r1, 5, 8, "0.0%", "PERCENT"), fmt(r0, r1, 8, 9, pts, "PERCENT"),
+                fmt(r0, r1, 9, 12, "#,##0"), fmt(r0, r1, 12, 13, margin),
+                cell(r1 - 1, r1, 0, 13 + extra, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
+                {"updateBorders": {"range": rng(r1 - 1, r1, 0, 13 + extra), "top": {"style": "SOLID"}}},
+                cell(r1, r1 + 1, 0, 1, {"textFormat": {"italic": True, "foregroundColor":
+                                         {"red": 0.4, "green": 0.4, "blue": 0.4}}}, "userEnteredFormat.textFormat")]
+    req += [fmt(MAIL0 - 1, MAIL0 + 2, 13, 14, "0.0%", "PERCENT"),
+            cell(MAIL0 - 1, MAIL0 + 2, 13, 14, input_bg, "userEnteredFormat.backgroundColor"),
+            fmt(EDAY0 - 1, EDAY0 + 3, 15, 16, "0%", "PERCENT"),
+            cell(PROJ_H - 1, PROJ_H, 0, 6, hdr, hdr_f),
+            fmt(PROJ0 - 1, PROJ0 + 3, 1, 5, margin), fmt(PROJ0 - 1, PROJ0 + 3, 5, 6, "0%", "PERCENT"),
+            cell(PROJ0 + 2, PROJ0 + 3, 0, 6, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
+            {"updateBorders": {"range": rng(PROJ0 + 2, PROJ0 + 3, 0, 6), "top": {"style": "SOLID"}}},
+            cell(PROJ0 - 1, PROJ0 + 3, 4, 5, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
+            cell(DET_H - 1, DET_H, 0, NCOLS, hdr, hdr_f),
+            fmt(C0 - 1, C1, 3, 7, "#,##0"), fmt(C0 - 1, C1, 7, 8, "0%", "PERCENT"),
+            fmt(C0 - 1, C1, 9, 15, "#,##0"), fmt(C0 - 1, C1, 15, 16, margin), fmt(C0 - 1, C1, 16, 17, "#,##0"),
+            {"updateDimensionProperties": {"range": {"sheetId": gid, "dimension": "COLUMNS", "startIndex": 0,
+                                                     "endIndex": 1}, "properties": {"pixelSize": 150},
+                                           "fields": "pixelSize"}},
+            {"updateDimensionProperties": {"range": {"sheetId": gid, "dimension": "COLUMNS", "startIndex": 1,
+                                                     "endIndex": NCOLS}, "properties": {"pixelSize": 105},
+                                           "fields": "pixelSize"}},
+            {"updateDimensionProperties": {"range": {"sheetId": gid, "dimension": "COLUMNS", "startIndex": 14,
+                                                     "endIndex": 15}, "properties": {"pixelSize": 230},
+                                           "fields": "pixelSize"}}]
     for status, col in (("done", {"red": 0.72, "green": 0.88, "blue": 0.8}),
                         ("not done", {"red": 1, "green": 0.9, "blue": 0.6}),
                         ("no Eday count", {"red": 0.85, "green": 0.85, "blue": 0.85})):
         req.append({"addConditionalFormatRule": {"index": 0, "rule": {
-            "ranges": [rng(C0 - 1, C1, 6, 7)],
+            "ranges": [rng(C0 - 1, C1, 8, 9)],
             "booleanRule": {"condition": {"type": "TEXT_EQ", "values": [{"userEnteredValue": status}]},
                             "format": {"backgroundColor": col}}}}})
-    # group colours (shared palette): scenario + summary labels, and county names by column A
-    req += group_shading_rules(gid, [(SCEN0 - 1, SCEN0 + 2, 0, 1), (SUM0, SUM0 + 3, 0, 1),
-                                     (C0 - 1, C1, 2, 3, "A")])
-    req.append({"updateDimensionProperties": {"range": {"sheetId": gid, "dimension": "COLUMNS",
-                                                        "startIndex": 0, "endIndex": 14},
-                                              "properties": {"pixelSize": 120}, "fields": "pixelSize"}})
+    req += group_shading_rules(gid, [(MAIL0 - 1, MAIL0 + 2, 0, 1), (EDAY0 - 1, EDAY0 + 2, 0, 1),
+                                     (PROJ0 - 1, PROJ0 + 2, 0, 1), (C0 - 1, C1, 2, 3, "A")])
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
         raise SystemExit(f"Format request failed: {r.status_code} {r.text[:400]}")
-    print(f"projection: {N} counties, cutoff {rows[1][1]}, inputs kept: {sorted(kept)} -> {sheet_id}")
+    print(f"projection: mail + Eday blocks, cutoff {cutoff}, mail assumptions kept {mail_in} -> {sheet_id}")
 
 
 def main(argv=None) -> int:
