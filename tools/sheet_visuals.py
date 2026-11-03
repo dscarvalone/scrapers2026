@@ -14,9 +14,9 @@ that read the 'validations' tab, so they update with it (no rebuild needed):
    x = expected 2-way, y = actual 2-way, size = votes counted for that
    method, colour = method (Eday blue, Early red, In-person early yellow, Mail green).
 
-Each group/method gets a line of best fit in its own colour: vote-weighted
-least squares over that group's plotted points, drawn across the group's x
-range. Google's bubble chart has no trendlines (and the API can't set them on
+Lines of best fit are vote-weighted least squares, drawn across the plotted
+x range: chart 1 has ONE line over all counties (its own colour, green);
+chart 2 has one per method, in that method's colour. Google's bubble chart has no trendlines (and the API can't set them on
 any chart), so each line is a dense row of tiny points carrying the group's
 own label, which gives it the group's colour. The fits are live formulas, in
 the fit tables at the right of the tab (n, weighted means, slope, x range).
@@ -65,16 +65,18 @@ def L(i: int) -> str:
     return s
 
 
-def layout(ngroups: int, nrows_data: int) -> dict:
+def layout(nanchors: int, nfits: int, nrows_data: int) -> dict:
     """Row numbers (1-based) of each part of a data block."""
     anchors = 2
-    fits = anchors + ngroups
-    data = fits + ngroups * FIT_PTS
+    fits = anchors + nanchors
+    data = fits + nfits * FIT_PTS
     return {"anchors": anchors, "fits": fits, "data": data, "end": data + nrows_data - 1}
 
 
-def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float) -> tuple[list, list]:
-    """Fit table at column t for data block at column b. Returns (table rows, per-group cell refs)."""
+def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float,
+              by_group: bool = True) -> tuple[list, list]:
+    """Fit table at column t for data block at column b. Returns (table rows, per-group cell refs).
+    by_group=False: one fit over every plotted point (the label in `groups` is just a name)."""
     g, x, y, w = L(b + 1 if b == B1 else b), L(b + 2), L(b + 3), L(b + 4)
     d0, d1 = lay["data"], lay["end"]
     hdr = ["Fit: group", "n", "mean x", "mean y", "slope", "x min", "x max"]
@@ -84,8 +86,8 @@ def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float) -
         c = {k: f"{L(t + j)}{r}" for j, k in enumerate(["g", "n", "mx", "my", "b", "x0", "x1"])}
 
         def F(col):
-            return (f'FILTER(${col}${d0}:${col}${d1}, ${g}${d0}:${g}${d1}={c["g"]}, '
-                    f'${y}${d0}:${y}${d1}<>"")')
+            cond = f'${g}${d0}:${g}${d1}={c["g"]}, ' if by_group else ""
+            return f'FILTER(${col}${d0}:${col}${d1}, {cond}${y}${d0}:${y}${d1}<>"")'
         rows.append([
             grp,
             f'=IFERROR(ROWS({F(x)}),0)',
@@ -117,10 +119,23 @@ def fit_rows(groups: list[str], refs: list[dict], fallback_y: float, chart: int)
     return anchors, fits
 
 
+FIT1_LABEL = "best fit (all counties)"
+
+
 def block1(groups_by_county: list[str]) -> tuple[list, list]:
-    lay = layout(len(GROUP_ORDER), N)
-    table, refs = fit_table(T1, B1, GROUP_ORDER, lay, 0)
-    anchors, fits = fit_rows(GROUP_ORDER, refs, 0, 1)
+    """Chart 1: one vote-weighted fit over every plotted county. Group anchors sit
+    under each group's first plotted county (fallback 50%, 0 if it has none)."""
+    lay = layout(len(GROUP_ORDER), 1, N)
+    table, refs = fit_table(T1, B1, [FIT1_LABEL], lay, 0, by_group=False)
+    _, fits = fit_rows([FIT1_LABEL], refs, 0, 1)
+    d0, d1 = lay["data"], lay["end"]
+    gc, xc, yc = L(B1 + 1), L(B1 + 2), L(B1 + 3)
+    anchors = []
+    for grp in GROUP_ORDER:
+        def first(col):
+            return (f'INDEX(FILTER(${col}${d0}:${col}${d1}, ${gc}${d0}:${gc}${d1}="{grp}", '
+                    f'${yc}${d0}:${yc}${d1}<>""),1)')
+        anchors.append(["", grp, f"=IFERROR({first(xc)},0.5)", f"=IFERROR({first(yc)},0)", 0])
     rows = [["County", "Group", "Expected Dem 2-way", "Eday turnout delta", "Eday votes"]] + anchors + fits
     order = sorted(range(N), key=lambda k: (GROUP_ORDER.index(groups_by_county[k])
                                             if groups_by_county[k] in GROUP_ORDER else 9, k))
@@ -135,7 +150,7 @@ def block1(groups_by_county: list[str]) -> tuple[list, list]:
 
 def block2() -> tuple[list, list]:
     labels = [m[0] for m in METHODS]
-    lay = layout(len(labels), N * len(METHODS))
+    lay = layout(len(labels), len(labels), N * len(METHODS))
     table, refs = fit_table(T2, B2, labels, lay, 0.5)
     anchors, fits = fit_rows(labels, refs, 0.5, 2)
     rows = [["Method", "County", "Expected Dem 2-way", "Actual Dem 2-way", "Votes"]] + anchors + fits
@@ -223,7 +238,7 @@ def build(sheet_id: str) -> None:
 
     req.append(bubble("Eday turnout vs expected, by county partisanship",
                       "x: model's expected Dem 2-way share | y: Eday votes vs model's expected Eday votes "
-                      "(0 = on expectation) | size: Eday votes counted | lines: vote-weighted best fit per group",
+                      "(0 = on expectation) | size: Eday votes counted | line: vote-weighted best fit, all counties",
                       B1, B1 + 1, B1, n1, 0))
     req.append(bubble("Actual vs expected Dem 2-way share, by vote method",
                       "x: model's expected Dem 2-way | y: actual Dem 2-way | size: votes counted for that method "
