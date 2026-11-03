@@ -47,7 +47,7 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39091,Logan,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39093,Lorain,none,2026-11-01 17:14:23 EST,0,210,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39095,Lucas,itemized,2026-10-28T14:08:15.089-04:00,0,280,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
-39097,Madison,itemized,pdf-sha1:58b021acf521,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
+39097,Madison,itemized,pdf-sha1:fe9bc9fcabe2,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39099,Mahoning,none,2026-11-01 17:14:23 EST,0,212,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39101,Marion,none,2026-11-01 17:14:23 EST,0,45,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39103,Medina,none,2026-11-01 17:14:23 EST,0,124,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
