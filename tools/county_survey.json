@@ -528,28 +528,32 @@
    {
     "url": "https://www.voteloraincountyohio.gov/",
     "via": "http",
-    "chars": 1070053
+    "chars": 1080592
    },
    {
     "url": "https://www.voteloraincountyohio.gov/elections-results-search",
     "via": "http",
-    "chars": 911911
+    "chars": 914568
    },
    {
     "url": "https://www.voteloraincountyohio.gov/election-results-1/2026-primary-election-information",
     "via": "http",
-    "chars": 870509
+    "chars": 870587
    },
    {
     "url": "https://www.voteloraincountyohio.gov/election-results-1/2025-primary%2Fspecial-election-information",
     "via": "http",
-    "chars": 872949
+    "chars": 872953
    }
   ],
   "nov_links": [
    {
     "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
     "label": "2026 General Election - Polling Places"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/lorain/c/elecres/20261103results.pdf",
+    "label": "Results"
    },
    {
     "url": "https://www.voteloraincountyohio.gov/_files/ugd/2568d0_20882cb56fc54c93a333418bab0f157a.pdf",
@@ -582,6 +586,11 @@
     ],
     "senate_excerpt": "",
     "chars": 7052
+   },
+   {
+    "url": "https://www.boe.ohio.gov/lorain/c/elecres/20261103results.pdf",
+    "label": "Results",
+    "error": "No Chrome debugging port at http://127.0.0.1:9333. Start the window with tools/sos_chrome.sh (from Terminal) and keep it open. (BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9333\nCall l"
    }
   ]
  },
@@ -660,18 +669,7 @@
    {
     "url": "https://www.ohiosos.gov/elections/voting-schedule",
     "label": "Early Voting Hours for November 3, 2026 General Election",
-    "status": 200,
-    "type": "text/html; charset=utf-8",
-    "bytes": 332312,
-    "via": "chrome",
-    "has_senate": false,
-    "has_husted": false,
-    "method_words_near_senate": [],
-    "method_words_anywhere": [
-     "Absentee"
-    ],
-    "senate_excerpt": "",
-    "chars": 1268
+    "error": "No Chrome debugging port at http://127.0.0.1:9333. Start the window with tools/sos_chrome.sh (from Terminal) and keep it open. (BrowserType.connect_over_cdp: connect ECONNREFUSED 127.0.0.1:9333\nCall l"
    }
   ]
  },
@@ -682,15 +680,19 @@
    {
     "url": "https://vote.delawarecountyohio.gov/",
     "via": "http",
-    "chars": 80927
+    "chars": 81252
    },
    {
     "url": "https://vote.delawarecountyohio.gov/data/pastresults/",
     "via": "http",
-    "chars": 169114
+    "chars": 169126
    }
   ],
   "nov_links": [
+   {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2026/11/SKM_C750i_M26110312550.pdf",
+    "label": "November 3, 2026 General Election Zero Report"
+   },
    {
     "url": "https://vote.delawarecountyohio.gov/event/regular-board-meeting-and-general-election-day/",
     "label": "3       Tuesday, November 3, 2026   6:30 am - 7:30 pm      Regular Board Meeting"
@@ -699,11 +701,25 @@
   "live_links": [],
   "docs": [
    {
+    "url": "https://vote.delawarecountyohio.gov/wp-content/uploads/2026/11/SKM_C750i_M26110312550.pdf",
+    "label": "November 3, 2026 General Election Zero Report",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 409460,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 5
+   },
+   {
     "url": "https://vote.delawarecountyohio.gov/event/regular-board-meeting-and-general-election-day/",
     "label": "3       Tuesday, November 3, 2026   6:30 am - 7:30 pm      Regular Board Meeting",
     "status": 200,
     "type": "text/html; charset=UTF-8",
-    "bytes": 81163,
+    "bytes": 81094,
     "via": "http",
     "has_senate": false,
     "has_husted": false,
@@ -1265,12 +1281,12 @@
    {
     "url": "https://www.portagecounty-oh.gov/board-elections",
     "via": "chrome",
-    "chars": 111747
+    "chars": 77034
    },
    {
     "url": "https://www.portagecounty-oh.gov/board-elections",
     "via": "chrome",
-    "chars": 101733
+    "chars": 72472
    },
    {
     "url": "https://www.portagecounty-oh.gov/board-elections/pages/voter-information",
@@ -1279,8 +1295,8 @@
    },
    {
     "url": "https://www.portagecounty-oh.gov/board-elections/pages/current-election",
-    "via": "http",
-    "chars": 80137
+    "via": "chrome",
+    "chars": 91865
    }
   ],
   "nov_links": [
@@ -1634,7 +1650,7 @@
     "label": "UOCAVA Notice \u00a0\u2013\u00a0Federal Write-In Absentee Ballot (FWAB)",
     "status": 200,
     "type": "text/html; charset=utf-8",
-    "bytes": 217060,
+    "bytes": 218788,
     "via": "http",
     "has_senate": false,
     "has_husted": false,
@@ -1652,22 +1668,22 @@
    {
     "url": "https://www.waynecountyoh.gov/",
     "via": "http",
-    "chars": 193703
+    "chars": 193693
    },
    {
     "url": "https://www.waynecountyoh.gov/pri26results/",
     "via": "http",
-    "chars": 179468
+    "chars": 179454
    },
    {
     "url": "https://www.waynecountyoh.gov/gen25results/",
     "via": "http",
-    "chars": 180261
+    "chars": 180247
    },
    {
     "url": "https://www.waynecountyoh.gov/prispec25results/",
     "via": "http",
-    "chars": 180487
+    "chars": 180473
    }
   ],
   "nov_links": [
@@ -1706,12 +1722,12 @@
    {
     "url": "https://columbiana.boe.ohio.gov/",
     "via": "chrome",
-    "chars": 95825
+    "chars": 95728
    },
    {
     "url": "https://columbiana.boe.ohio.gov/elections/election-results/",
     "via": "chrome",
-    "chars": 110612
+    "chars": 110630
    },
    {
     "url": "https://columbiana.boe.ohio.gov/wp-content/uploads/2020/11/Columbianas-Official-Canvass.htm",
@@ -2056,7 +2072,7 @@
    {
     "url": "https://www.boe.ohio.gov/belmont/",
     "via": "chrome",
-    "chars": 47977
+    "chars": 47996
    },
    {
     "url": "https://www.boe.ohio.gov/belmont/election-info/",
@@ -2085,7 +2101,7 @@
    {
     "url": "https://www.boe.ohio.gov/champaign/",
     "via": "chrome",
-    "chars": 47904
+    "chars": 48313
    },
    {
     "url": "https://www.boe.ohio.gov/champaign/election-info/",
@@ -2292,12 +2308,12 @@
    {
     "url": "https://crawfordcountyohioboe.gov/",
     "via": "http",
-    "chars": 90121
+    "chars": 90060
    },
    {
     "url": "https://crawfordcountyohioboe.gov/election-results/",
     "via": "http",
-    "chars": 90649
+    "chars": 90742
    }
   ],
   "nov_links": [
@@ -2308,6 +2324,14 @@
    {
     "url": "https://crawfordcountyohioboe.gov/wp-content/uploads/46-Day-notice-11-3-2026.pdf",
     "label": "46 Day Federal Write-In Absentee Ballot for General Election November 3, 2026"
+   },
+   {
+    "url": "https://crawfordcountyohioboe.gov/wp-content/uploads/av-list-11-3-2026.xls",
+    "label": ""
+   },
+   {
+    "url": "https://crawfordcountyohioboe.gov/wp-content/uploads/av-list-11-3-2026.xls",
+    "label": "Cumulative Daily List of Absentee/ Early Voters as of November 3, 2026"
    }
   ],
   "live_links": [],
@@ -2351,6 +2375,20 @@
     ],
     "senate_excerpt": "ne 1A (11.0), Crestline 2A (12.1-2), Crestline 3A (13.0), Crestline 4A (14.0), Galion 1A (15.1-2), Galion 1B (16.1-2-3), Galion 2A (17.1-2-3), Galion 2B (18.1-2), Galion 3A (19.0), Galion 3B (20.0), Galion 4A (21.0), Galion 4B (22.0), Galion 4C (23.0), Auburn Twp (24.1-2-3- 4), Bucyrus Twp (25.1-2-3), Chatfield Twp (26.1-2-3), Cranberry Twp (27.1-2-3), Dallas Twp (29.1-2-3), Holmes-Texas (30.1-2-3-4), Jefferson Twp (34.1-2-3-4), Liberty Twp (35.1-2), Lykens-Tod (37.1-2- 3), Polk Twp (40.0), Sandusky-Whetstone North (41.1-2-3-4-5), Vernon Twp (44.1-2- 3), Whetstone Twp South (46.1-2) Seth Walsh Treasurer of State FTC 1/11/2027 Democratic Crawford County Wide: Bucyrus 1A (01.1- 2), Bucyrus 1B ",
     "chars": 48170
+   },
+   {
+    "url": "https://crawfordcountyohioboe.gov/wp-content/uploads/av-list-11-3-2026.xls",
+    "label": "",
+    "status": 200,
+    "type": "application/vnd.ms-excel",
+    "bytes": 2574848,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 1487582
    }
   ]
  },
@@ -2416,7 +2454,7 @@
    {
     "url": "https://www.boe.ohio.gov/fayette/",
     "via": "chrome",
-    "chars": 47152
+    "chars": 46401
    },
    {
     "url": "https://www.boe.ohio.gov/fayette/election-info/",
@@ -2945,7 +2983,7 @@
    {
     "url": "https://henrycountyohio.gov/231/Board-of-Elections",
     "via": "http",
-    "chars": 142382
+    "chars": 142380
    },
    {
     "url": "https://henrycountyohio.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
@@ -2974,7 +3012,7 @@
    {
     "url": "https://www.boe.ohio.gov/highland/",
     "via": "chrome",
-    "chars": 51488
+    "chars": 50361
    },
    {
     "url": "https://www.boe.ohio.gov/highland/election-info/",
@@ -3059,12 +3097,12 @@
    {
     "url": "https://www.huron.boe.ohio.gov/election-results/",
     "via": "chrome",
-    "chars": 142165
+    "chars": 142132
    },
    {
     "url": "https://www.huron.boe.ohio.gov/event/board-meeting-regular-meeting-to-certify-general-election-results/",
     "via": "chrome",
-    "chars": 112495
+    "chars": 112528
    }
   ],
   "nov_links": [
@@ -3331,7 +3369,7 @@
    {
     "url": "https://www.boe.ohio.gov/knox",
     "via": "chrome",
-    "chars": 60599
+    "chars": 60618
    }
   ],
   "nov_links": [
@@ -4266,7 +4304,7 @@
    {
     "url": "https://www.boe.ohio.gov/shelby",
     "via": "chrome",
-    "chars": 54122
+    "chars": 56096
    },
    {
     "url": "https://www.boe.ohio.gov/shelby/election-info/",
@@ -4397,7 +4435,7 @@
    {
     "url": "https://www.boe.ohio.gov/vinton/",
     "via": "chrome",
-    "chars": 48787
+    "chars": 49096
    },
    {
     "url": "https://www.boe.ohio.gov/vinton/election-info/",
@@ -4493,7 +4531,7 @@
    {
     "url": "https://www.williamscountyoh.gov/150/Board-of-Elections",
     "via": "http",
-    "chars": 116750
+    "chars": 116748
    },
    {
     "url": "https://www.williamscountyoh.gov/Search/Index?departmentId=-1&module=0&page=1&perPage=10",
@@ -4572,7 +4610,7 @@
    {
     "url": "https://www.boe.ohio.gov/wyandot",
     "via": "chrome",
-    "chars": 45086
+    "chars": 43353
    },
    {
     "url": "https://www.boe.ohio.gov/wyandot/election-info/",

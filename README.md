@@ -45,8 +45,8 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 6 | Lucas | 152,119 | 3.3% | 40.4% | Yes | Direct | SOS-hosted ENR XML, local loop | Mail column (Absentee Ballots) is an inference; no write-in line |
 | 7 | Stark | 148,722 | 3.2% | 43.6% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
 | 8 | Butler | 144,349 | 3.1% | 46.7% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
-| 9 | Lorain | 129,115 | 2.8% | 49.5% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
-| 10 | Delaware | 114,490 | 2.5% | 51.9% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
+| 9 | Lorain | 129,115 | 2.8% | 49.5% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
+| 10 | Delaware | 114,490 | 2.5% | 51.9% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 11 | Warren | 113,188 | 2.4% | 54.4% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
 | 12 | Lake | 104,462 | 2.3% | 56.6% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
 | 13 | Clermont | 92,894 | 2.0% | 58.6% | Yes | Direct | Results PDF, local loop | Election-night file name unknown; scraper picks it from the results page (until then it reads the zero report). Check the loop log for 'parsing the zero report' after 7:30 PM |

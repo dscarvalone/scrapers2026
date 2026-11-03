@@ -14,8 +14,8 @@ in-person, mail, provisional). Every county has **totals** from the SOS statewid
 | Split exists on election night, but in a scanned PDF (not scraped) | 2 |
 | Likely split on election night (past election-night reports were) | 5 |
 | Split only in the official canvass (~Nov 17-24), or only in some elections | 17 |
-| Totals only, confirmed (Nov 3 zero report and past reports) | 14 |
-| Totals only, likely (no past report was split) | 13 |
+| Totals only, confirmed (Nov 3 zero report and past reports) | 16 |
+| Totals only, likely (no past report was split) | 11 |
 | Unknown (no past results found to check) | 9 |
 
 Column meanings: **Source** is where the split comes from; **Runs in** is where its scraper runs
@@ -119,7 +119,7 @@ Expected: Official canvass, ~Nov 17-24. Nov 3: Recheck 8:30 + 9:30 PM; else wait
 | Sandusky | 39143 |  | https://sanduskycountyoh.gov/index.php?page=board-of-elections | Nov 2025 Official Results: 'Election Day Absentee TOTAL In Office Provisional / Rep Ronald Smith 530 463 26 40 1'; no Nov 3 2026 results doc posted yet |
 | Vinton | 39163 |  | https://www.boe.ohio.gov/vinton/ | No Nov 3 2026 doc (404). Nov 2025: 'TOTAL VOTE % In Person Early Vote Election Day Absentee Provisional / Michael L. Claar 47 49.47% 4 41 2 0'. |
 
-## Totals only, confirmed (Nov 3 zero report and past reports) (14)
+## Totals only, confirmed (Nov 3 zero report and past reports) (16)
 
 Expected: Not expected. Nov 3: None (totals only).
 
@@ -129,10 +129,12 @@ Expected: Not expected. Nov 3: None (totals only).
 | Ashland | 39005 |  | https://www.boe.ohio.gov/ashland | Nov 3 ZERO REPORT: 'Amy Acton and David Pepper (D) 0 0% ... 0Total Votes'; May 2026 and Nov 2025 results also single total column |
 | Brown | 39015 |  | https://www.boe.ohio.gov/brown/ | Zero report: 'Amy Acton and David Pepper (D) 0 0%' total+pct only; May 2026 'Vivek Ramaswamy ... 3,754 68.37%' total-only. |
 | Defiance | 39039 |  | https://www.boe.ohio.gov/defiance/ | Zero report: 'Vivek Ramaswamy and Robert A. McColley (R) 0 0%'; May 2026 'Amy Acton & David Pepper 1,573 100.00%' total-only. |
+| Delaware | 39041 |  | https://vote.delawarecountyohio.gov/ | Nov 3 2026 zero report (vote.delawarecountyohio.gov/wp-content/uploads/2026/11/SKM_C750i_M26110312550.pdf, scanned, OCR'd) Senate block one vote count + percent per candidate, no method columns (checked 2026-11-03 PM). |
 | Fairfield | 39045 |  | https://www.boe.ohio.gov/fairfield |  |
 | Gallia | 39053 |  | https://www.boe.ohio.gov/gallia | Choice Votes Vote % All Precincts Governor ... Amy Acton and David Pepper 0 0.00% (zero report total-only; May 2026 report also Votes/Vote% only) |
 | Holmes | 39075 |  | https://www.boe.ohio.gov/holmes | Nov 3 Training PROOF: 'Amy Acton and David Pepper (D) 0 0%'; May 2026 'McColley 1,886 75.68%' and Nov 2025 also total-only |
 | Jefferson | 39081 |  | https://www.boe.ohio.gov/jefferson/ | Nov 3 2026 zero report Senate block Votes / Vote % only (2026-11-03 recheck). |
+| Lorain | 39093 |  | https://www.voteloraincountyohio.gov/elections-results-search | Nov 3 2026 results PDF (boe.ohio.gov/lorain/c/elecres/20261103results.pdf, linked from the county site, fetched via the Chrome window) Senate block TOTAL column only (checked 2026-11-03 PM). |
 | Meigs | 39105 |  | https://www.boe.ohio.gov/meigs/ | Governor and Lieutenant Governor ... Amy Acton and David Pepper (D) 0 0% ... 0Total Votes (total-only; May 2026 and Nov 2025 also total-only). NOTE: posted zero report is headed 'Holmes County ... TRAINING PROOF'. |
 | Portage | 39133 |  | https://www.portagecounty-oh.gov/board-elections | Nov 3 2026 zero report (board-elections/files/zero-report-11326, scanned PDF fetched via the Chrome window, OCR'd) Senate block TOTAL column only (checked 2026-11-03 AM). Site still returns HTTP 403 to plain requests. |
 | Richland | 39139 |  | https://www.boe.ohio.gov/richland/ |  |
@@ -140,18 +142,16 @@ Expected: Not expected. Nov 3: None (totals only).
 | Trumbull | 39155 |  | https://boe.co.trumbull.oh.gov/ | Nov 3 2026 Election Summary.pdf Senate block TOTAL VOTE % only (rechecked 2026-11-02). |
 | Wayne | 39169 |  | https://www.WayneCountyOH.gov | Nov 3 2026 zero report (wp-content/uploads/2026/11/Gen-26-Summary-Zero-Report.pdf) Senate block Candidate / Party / Total only (checked 2026-11-02). |
 
-## Totals only, likely (no past report was split) (13)
+## Totals only, likely (no past report was split) (11)
 
 Expected: Not expected. Nov 3: Recheck 8:30 + 9:30 PM in case format changed.
 
 | County | FIPS | Expected buckets | Results page | Evidence |
 |---|---|---|---|---|
 | Crawford | 39033 |  | https://crawfordcountyohioboe.gov/ | UNOFFICIAL RESULTS ... Governor and Lieutenant Governor / Vote For 1 / TOTAL VOTE % / Amy Acton and David Pepper 1,244 100.00% (all past unofficial/official reports total-only; no Nov 3 2026 results doc, only FWAB notices) |
-| Delaware | 39041 |  | https://vote.delawarecountyohio.gov/ | Nov 2025 official summary (scanned, read by eye) total-only; May 2026 Number Key Canvass is by precinct with no vote-type split. |
 | Guernsey | 39059 |  | https://boe.guernseycounty.gov/ | Unofficial Nov 2025 summary 'Candidate / Party / Total / Michael A. Sikora / DEM / 510'; county posts a separate absentee-only unofficial report, not columns. No Nov 3 2026 result doc yet. |
 | Harrison | 39067 |  | https://www.boe.ohio.gov/harrison/ | May 2026: 'Candidate / Party / Total / YES / 228 / NO / 114'; Nov 2025 likewise total-only; Nov 3 2026 results.pdf 404 |
 | Lawrence | 39087 |  | https://www.boe.ohio.gov/lawrence/ | Nov 3 2026 results/precinct PDFs linked but return 404. Past official reports 'TOTAL VOTE % / Bob Cleary 1,016 15.02%' total-only. |
-| Lorain | 39093 |  | https://www.voteloraincountyohio.gov/elections-results-search | Nov 2025 and May 2026 official Summary Reports TOTAL only; precinct canvass has no vote-type columns. |
 | Mahoning | 39099 |  | https://vote.mahoningcountyoh.gov | May 2026 'Final Unofficial with Write-ins' summary TOTAL only. |
 | Marion | 39101 |  | https://www.boe.ohio.gov/marion | Nov 3 2026 zero report (image PDF, OCR), Election Summary format: 'U.S. Senate (UTE 1-3-2029) ... Total Votes 0 / Sherrod Brown (D) 0 / Jon Husted (R) 0 0%' total-only; past reports are image PDFs, not checked |
 | Monroe | 39111 |  | https://www.boe.ohio.gov/monroe/ | No Nov 3 2026 doc readable. May 2026: 'TOTAL VOTE % / Amy Acton and David Pepper 490 100.00%' total-only. |
