@@ -11,8 +11,9 @@ one of three paths, decided by what it reports (all formulas, reading
                outstanding = expected Eday - counted, at the county's own Eday
                share "so far" or of its "latest batch" (B3).
   totals only  votes but no Eday split (its first report already mixed early
-               and Election Day). Done when total counted >= cutoff x expected
-               total. Not done: outstanding = expected total - counted, at the
+               and Election Day). Never marked done: its count can't be split
+               into Early (a known ballot count) and Eday, so any shortfall may
+               be Early ballots. Outstanding = expected total - counted, at the
                county's latest-batch share (the votes added by its last change
                in the SOS totals: what is coming in now); its current total
                share if there is no batch.
@@ -31,8 +32,7 @@ Early block: counties with an Early count; outstanding = expected Early minus
 counted, at the group's current Early shares or the Brown 2-way assumption
 typed in column N. No done cutoff here: the model's expected Early is the
 literal count of early ballots submitted (known), so any shortfall is real
-outstanding vote. For the same reason a done totals-only county keeps
-max(0, expected Early - counted) outstanding. Totals-only counties have no Early count, so their
+outstanding vote. Totals-only counties have no Early count, so their
 outstanding (above) already includes any Early votes: nothing is counted twice.
 
 Layout: inputs; then Eday, Totals-only and Early blocks by group (votes in |
@@ -132,10 +132,10 @@ def county_row(r: int, v: int) -> list:
         "Dem total": f"=N({mlook('dem_votes', r)})", "Rep total": f"=N({mlook('gop_votes', r)})",
         "Expected total": f'=IF({tot},N({V}!U{v}),"")',
         "% of exp. total": f'=IF(AND({tot},N({k["Expected total"]})>0),{k["Total votes in"]}/{k["Expected total"]},"")',
-        "Totals status": f'=IF({k["% of exp. total"]}="","",IF({k["% of exp. total"]}>={CUTOFF},"done","not done"))',
-        # done: the Early ballots are a known count, so any shortfall against them is still outstanding
-        "Totals outstanding": f'=IF({tot},IF({k["Totals status"]}="done",MAX(0,N({V}!S{v})-{k["Total votes in"]}),'
-                              f'MAX(0,{k["Expected total"]}-{k["Total votes in"]})),"")',
+        "Totals status": f'=IF({tot},"open","")',  # never marked done: Eday/Early mix unknown
+        # never done: the counted votes can't be split into Early (a known ballot count) and Eday,
+        # so a shortfall against expected may be Early ballots still to count
+        "Totals outstanding": f'=IF({tot},MAX(0,{k["Expected total"]}-{k["Total votes in"]}),"")',
         "Totals out Dem": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_dem},""))',
         "Totals out Rep": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_rep},""))',
         "Early votes in": f'=IF({V}!R{v}="","",{V}!R{v})',
@@ -186,10 +186,11 @@ def block_row(r: int, kind: str, assumption=None) -> list:
     else:
         st = "Eday status" if kind == "eday" else "Totals status"
         pv = "Eday count" if kind == "eday" else "totals only"
-        row += [f"={S(dout, r, path)}", f"={S(rout, r, path)}", f"=K{r}-L{r}",
-                f'=COUNTIFS({rng_("Group")},$A{r},{rng_("Path")},"{pv}")&" counties: "'
-                f'&COUNTIFS({rng_("Group")},$A{r},{rng_(st)},"done")&" done / "'
-                f'&COUNTIFS({rng_("Group")},$A{r},{rng_(st)},"not done")&" not done"']
+        cnt = (f'COUNTIFS({rng_("Group")},$A{r},{rng_("Path")},"{pv}")&" counties: "'
+               f'&COUNTIFS({rng_("Group")},$A{r},{rng_(st)},"done")&" done / "'
+               f'&COUNTIFS({rng_("Group")},$A{r},{rng_(st)},"not done")&" not done"') if kind == "eday" else \
+              f'COUNTIFS({rng_("Group")},$A{r},{rng_("Path")},"{pv}")&" counties (never marked done)"'
+        row += [f"={S(dout, r, path)}", f"={S(rout, r, path)}", f"=K{r}-L{r}", "=" + cnt]
     return row
 
 
@@ -204,7 +205,8 @@ def total_row(r: int, first: int, kind: str) -> list:
         pv = "Eday count" if kind == "eday" else "totals only"
         st = "Eday status" if kind == "eday" else "Totals status"
         row += [f'=COUNTIF({rng_("Path")},"{pv}")&" counties: "&COUNTIF({rng_(st)},"done")&" done / "'
-                f'&COUNTIF({rng_(st)},"not done")&" not done"']
+                f'&COUNTIF({rng_(st)},"not done")&" not done"' if kind == "eday" else
+                f'=COUNTIF({rng_("Path")},"{pv}")&" counties (never marked done)"']
     return row
 
 
@@ -251,8 +253,8 @@ def build(sheet_id: str) -> None:
     rows[0][0] = "E-night projection (formulas; updates with the data). Every county takes one path: Eday count / " \
                  "totals only / no votes (see column D of the detail)."
     rows[1][0:3] = ["Done cutoff (% of expected)", cutoff,
-                    "<- input: done when votes counted reach this share of the model's expected votes "
-                    "(Eday votes for Eday-count counties, total votes for totals-only counties). Done = 0 outstanding."]
+                    "<- input: an Eday-count county is done (0 Eday outstanding) when its Eday votes counted reach "
+                    "this share of the model's expected Eday votes. Totals-only counties are never marked done."]
     rows[2][0:3] = ["Eday share basis", basis,
                     "<- input: 'so far' = each county's Eday share to date; 'latest batch' = the share of the votes "
                     "its last SOS update added. Totals-only counties always use their latest batch."]
@@ -269,9 +271,9 @@ def build(sheet_id: str) -> None:
     for i, g in enumerate(GROUPS):
         rows[TOT0 - 1 + i] = [g] + block_row(TOT0 + i, "totals")[1:] + [""] * (NCOLS - 14)
     rows[TOT0 + 2] = ["Total"] + total_row(TOT0 + 3, TOT0, "totals")[1:] + [""] * (NCOLS - 14)
-    rows[TOT0 + 3][0] = ("Totals only: counties with votes but no Eday split. Outstanding = expected total minus "
-                         "counted; once done, expected Early (a known ballot count) minus counted, never less. "
-                         "Split at each county's latest-batch share (current total share if it has no batch).")
+    rows[TOT0 + 3][0] = ("Totals only: counties with votes but no Eday split. Never marked done (their count can't "
+                         "be split into Early, a known ballot count, and Eday): outstanding = expected total minus "
+                         "counted, split at each county's latest-batch share (current total share if no batch).")
 
     rows[EARLY_H - 1] = block_header("Early", "early") + [""] * (NCOLS - 15)
     for i, g in enumerate(GROUPS):

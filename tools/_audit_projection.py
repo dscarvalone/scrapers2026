@@ -76,9 +76,8 @@ for k, v in enumerate(Vd):
     e["Total votes in"], e["Dem total"], e["Rep total"] = tot_in, num(m.get("dem_votes")), num(m.get("gop_votes"))
     e["Expected total"] = num(g("U")) if tot else ""
     e["% of exp. total"] = tot_in / e["Expected total"] if tot and num(e["Expected total"]) > 0 else ""
-    e["Totals status"] = "" if e["% of exp. total"] == "" else ("done" if e["% of exp. total"] >= cut else "not done")
-    e["Totals outstanding"] = ("" if not tot else max(0, num(g("S")) - tot_in) if e["Totals status"] == "done"
-                               else max(0, e["Expected total"] - tot_in))
+    e["Totals status"] = "open" if tot else ""
+    e["Totals outstanding"] = max(0, e["Expected total"] - tot_in) if tot else ""
     if num(bt) > 0:
         tds, trs = bd / bt, br / bt
     elif tot_in > 0:
