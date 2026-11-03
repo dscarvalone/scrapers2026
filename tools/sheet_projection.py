@@ -29,7 +29,10 @@ precincts reporting.
 
 Early block: counties with an Early count; outstanding = expected Early minus
 counted, at the group's current Early shares or the Brown 2-way assumption
-typed in column N. Totals-only counties have no Early count, so their
+typed in column N. No done cutoff here: the model's expected Early is the
+literal count of early ballots submitted (known), so any shortfall is real
+outstanding vote. For the same reason a done totals-only county keeps
+max(0, expected Early - counted) outstanding. Totals-only counties have no Early count, so their
 outstanding (above) already includes any Early votes: nothing is counted twice.
 
 Layout: inputs; then Eday, Totals-only and Early blocks by group (votes in |
@@ -130,7 +133,9 @@ def county_row(r: int, v: int) -> list:
         "Expected total": f'=IF({tot},N({V}!U{v}),"")',
         "% of exp. total": f'=IF(AND({tot},N({k["Expected total"]})>0),{k["Total votes in"]}/{k["Expected total"]},"")',
         "Totals status": f'=IF({k["% of exp. total"]}="","",IF({k["% of exp. total"]}>={CUTOFF},"done","not done"))',
-        "Totals outstanding": f'=IF({tot},IF({k["Totals status"]}="done",0,MAX(0,{k["Expected total"]}-{k["Total votes in"]})),"")',
+        # done: the Early ballots are a known count, so any shortfall against them is still outstanding
+        "Totals outstanding": f'=IF({tot},IF({k["Totals status"]}="done",MAX(0,N({V}!S{v})-{k["Total votes in"]}),'
+                              f'MAX(0,{k["Expected total"]}-{k["Total votes in"]})),"")',
         "Totals out Dem": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_dem},""))',
         "Totals out Rep": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_rep},""))',
         "Early votes in": f'=IF({V}!R{v}="","",{V}!R{v})',
@@ -265,8 +270,8 @@ def build(sheet_id: str) -> None:
         rows[TOT0 - 1 + i] = [g] + block_row(TOT0 + i, "totals")[1:] + [""] * (NCOLS - 14)
     rows[TOT0 + 2] = ["Total"] + total_row(TOT0 + 3, TOT0, "totals")[1:] + [""] * (NCOLS - 14)
     rows[TOT0 + 3][0] = ("Totals only: counties with votes but no Eday split. Outstanding = expected total minus "
-                         "counted, 0 once done, split at each county's latest-batch share (current total share if "
-                         "it has no batch). Includes any outstanding Early votes for these counties.")
+                         "counted; once done, expected Early (a known ballot count) minus counted, never less. "
+                         "Split at each county's latest-batch share (current total share if it has no batch).")
 
     rows[EARLY_H - 1] = block_header("Early", "early") + [""] * (NCOLS - 15)
     for i, g in enumerate(GROUPS):

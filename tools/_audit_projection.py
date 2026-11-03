@@ -77,7 +77,7 @@ for k, v in enumerate(Vd):
     e["Expected total"] = num(g("U")) if tot else ""
     e["% of exp. total"] = tot_in / e["Expected total"] if tot and num(e["Expected total"]) > 0 else ""
     e["Totals status"] = "" if e["% of exp. total"] == "" else ("done" if e["% of exp. total"] >= cut else "not done")
-    e["Totals outstanding"] = ("" if not tot else 0 if e["Totals status"] == "done"
+    e["Totals outstanding"] = ("" if not tot else max(0, num(g("S")) - tot_in) if e["Totals status"] == "done"
                                else max(0, e["Expected total"] - tot_in))
     if num(bt) > 0:
         tds, trs = bd / bt, br / bt
