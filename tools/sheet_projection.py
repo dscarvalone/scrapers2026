@@ -1,6 +1,6 @@
 """Build the 'projection' tab of the owner's election-night Google Sheet.
 
-Laid out like the owner's earlier model: a Mail block and an Eday block, one
+Laid out like the owner's earlier model: an Early block and an Eday block, one
 row per group (base / swing / rurals) plus a total, with columns
     votes in | Dem in | Rep in | expected votes | % of expected in |
     Dem % | Rep % | margin | outstanding | Dem outstanding | Rep outstanding |
@@ -14,17 +14,17 @@ Method (the post-election playbook):
   d) Eday outstanding = sum over not-done counties of max(0, expected - counted);
      split at the group's current Eday Dem % / Rep %. A group with no Eday
      votes counted yet gets no split (blank, "not projected"): no model shares.
-  e) Mail outstanding = max(0, expected - counted) per county, at the group's
-     current mail Dem % / Rep %, or at the Brown 2-way assumption typed in
-     column N (an input, kept on rebuild).
+  e) Early outstanding = max(0, expected - counted) per county, at the group's
+     current Early Dem % / Rep %, or at the Brown 2-way assumption typed in
+     column N (an input, kept on rebuild). Early = everything cast before
+     Election Day: in-person early and mail together (Ohio reports both).
 Dem % / Rep % are shares of all votes (minor candidates included), as in the
 owner's sheet.
 
 No imputation: a county with no Eday count (no split and no first-drop
 estimate) is left out of the Eday block, expected votes included, and the
-block shows how much of the expected vote that leaves out. The Mail block uses
-only counties that report mail separately. Early in-person votes are counted
-before Election Day, so they need no outstanding estimate.
+block shows how much of the expected vote that leaves out. The Early block
+works the same way: counties with an Early count only (itemized or first drop).
 
 Reads 'validations', so it updates with the data. Writes only this tab.
 Usage:
@@ -46,7 +46,7 @@ GROUPS = ["base", "swing", "rurals"]
 V = "validations"
 
 CUTOFF = "$B$2"
-MAIL_H, MAIL0 = 4, 5        # mail block: header row 4, groups 5-7, total 8
+MAIL_H, MAIL0 = 4, 5        # Early block: header row 4, groups 5-7, total 8
 EDAY_H, EDAY0 = 11, 12      # eday block: header row 11, groups 12-14, total 15
 PROJ_H, PROJ0 = 18, 19      # projection: header row 18, groups 19-21, total 22
 DET_H, C0 = 25, 26          # county detail: header row 25, counties 26..
@@ -58,8 +58,8 @@ BLOCK_COLS = ["votes in", "Dem in", "Rep in", "expected votes", "% of expected i
 
 # county detail columns
 DET = ["Group", "FIPS", "County", "Eday votes in", "Dem Eday", "Rep Eday", "Expected Eday votes",
-       "% of expected Eday", "Status", "Eday outstanding", "Mail votes in", "Dem mail", "Rep mail",
-       "Mail expected votes", "Mail outstanding", "Current margin (AP)", "Expected total votes"]
+       "% of expected Eday", "Status", "Eday outstanding", "Early votes in", "Dem Early", "Rep Early",
+       "Early expected votes", "Early outstanding", "Current margin (AP)", "Expected total votes"]
 
 
 def rng_(col: str) -> str:
@@ -76,11 +76,11 @@ def county_row(r: int, v: int) -> list:
         f'=IF(OR(D{r}="",G{r}="",N(G{r})=0),"",D{r}/G{r})',                    # H % of expected
         f'=IF(H{r}="","no Eday count",IF(H{r}>={CUTOFF},"done","not done"))',  # I status
         f'=IF(I{r}="no Eday count","",IF(I{r}="done",0,MAX(0,G{r}-D{r})))',    # J Eday outstanding
-        f'=IF({V}!AE{v}="","",{V}!AE{v})',                                     # K mail in
-        f'=IF(K{r}="","",N({V}!AY{v}))',                                       # L Dem mail
-        f'=IF(K{r}="","",N({V}!AZ{v}))',                                       # M Rep mail
-        f'=IF(K{r}="","",N({V}!AF{v}))',                                       # N mail expected
-        f'=IF(K{r}="","",MAX(0,N{r}-K{r}))',                                   # O mail outstanding
+        f'=IF({V}!R{v}="","",{V}!R{v})',                                       # K Early in
+        f'=IF(K{r}="","",N({V}!AM{v}))',                                       # L Dem Early
+        f'=IF(K{r}="","",N({V}!AN{v}))',                                       # M Rep Early
+        f'=IF(K{r}="","",N({V}!S{v}))',                                        # N Early expected
+        f'=IF(K{r}="","",MAX(0,N{r}-K{r}))',                                   # O Early outstanding
         f"=N({V}!AQ{v})-N({V}!AR{v})",                                         # P current margin
         f"=N({V}!U{v})",                                                       # Q expected total
     ]
@@ -124,6 +124,7 @@ def mail_row(r: int, kept_input) -> list:
         f'=IF(K{r}="","",K{r}-L{r})',
         kept_input,
         f'=SUMPRODUCT(({rng_("A")}=$A{r})*({rng_("K")}<>""))&" of "&COUNTIF({rng_("A")},$A{r})&" counties"',
+        f'=IFERROR(1-SUMPRODUCT(({rng_("A")}=$A{r})*({rng_("K")}<>""),{rng_("Q")})/{S("Q", r)},"")',
     ]
 
 
@@ -139,7 +140,8 @@ def total_row(r: int, first: int, eday: bool) -> list:
                 f'&COUNTIF({rng_("I")},"no Eday count")&" no count"',
                 f'=IFERROR(1-SUMIFS({rng_("Q")},{rng_("I")},"<>no Eday count")/SUM({rng_("Q")}),"")']
     else:
-        row += ["", f'=COUNT({rng_("K")})&" of {N} counties"']
+        row += ["", f'=COUNT({rng_("K")})&" of {N} counties"',
+                f'=IFERROR(1-SUMPRODUCT(({rng_("K")}<>"")*{rng_("Q")})/SUM({rng_("Q")}),"")']
     return row
 
 
@@ -173,18 +175,20 @@ def build(sheet_id: str) -> None:
     rows[1][0:3] = ["Eday done cutoff", cutoff,
                     "<- input: a county with Eday votes counted at or above this share of its expected Eday "
                     "votes is done (0 outstanding)."]
-    rows[MAIL_H - 1] = ["Mail"] + ["Mail " + c if i in (0, 3) else c.replace("in", "mail in") if i in (1, 2)
-                                   else c for i, c in enumerate(BLOCK_COLS)] + \
-        ["Brown 2-way assumption (optional input)", "Counties reporting mail", "", "", "", ""]
+    rows[MAIL_H - 1] = ["Early"] + ["Early " + c if i in (0, 3) else c.replace("in", "Early in") if i in (1, 2)
+                                    else c for i, c in enumerate(BLOCK_COLS)] + \
+        ["Brown 2-way assumption for outstanding Early (optional input)", "Counties with an Early count",
+         "Expected vote not covered", "", ""]
     for i, g in enumerate(GROUPS):
         r = MAIL0 + i
-        rows[r - 1] = mail_row(r, mail_in.get(i, "")) + [""] * 4
+        rows[r - 1] = mail_row(r, mail_in.get(i, "")) + [""] * 3
         rows[r - 1][0] = g
-    rows[MAIL0 + 2] = total_row(MAIL0 + 3, MAIL0, False) + [""] * 5
+    rows[MAIL0 + 2] = total_row(MAIL0 + 3, MAIL0, False) + [""] * 3
     rows[MAIL0 + 2][0] = "Total"
-    rows[MAIL0 + 3][0] = ("Mail: only counties that report mail separately. Outstanding = expected minus counted "
-                          "(0 if over). With an assumption in column N, outstanding mail is split at that Brown "
-                          "2-way share instead of the current mail shares.")
+    rows[MAIL0 + 3][0] = ("Early = in-person early + mail. Counties with an Early count only (itemized or first "
+                          "drop); others are left out, expected votes included. Outstanding = expected minus "
+                          "counted (0 if over). With an assumption in column N, outstanding Early is split at that "
+                          "Brown 2-way share instead of the current Early shares.")
 
     rows[EDAY_H - 1] = ["Eday"] + ["Eday " + c if i in (0, 3) else c.replace("in", "Eday in") if i in (1, 2)
                                    else c for i, c in enumerate(BLOCK_COLS)] + \
@@ -200,7 +204,7 @@ def build(sheet_id: str) -> None:
                           "Done counties have 0 outstanding.")
 
     rows[PROJ_H - 1][0:6] = ["Projected margin", "Current margin (AP)", "Eday margin change",
-                             "Mail margin change", "Projected margin", "Expected vote without an Eday count"]
+                             "Early margin change", "Projected margin", "Expected vote without an Eday count"]
     for i, g in enumerate(GROUPS):
         r = PROJ0 + i
         rows[r - 1][0:6] = [g, f"={S('P', r)}", f"=N(M{EDAY0 + i})", f"=N(M{MAIL0 + i})",
@@ -243,7 +247,7 @@ def build(sheet_id: str) -> None:
     req = [cell(0, 1, 0, 1, {"textFormat": {"bold": True, "fontSize": 12}}, "userEnteredFormat.textFormat"),
            cell(1, 2, 0, 1, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
            fmt(1, 2, 1, 2, "0%", "PERCENT"), cell(1, 2, 1, 2, input_bg, "userEnteredFormat.backgroundColor")]
-    for h, first, extra in ((MAIL_H, MAIL0, 2), (EDAY_H, EDAY0, 3)):
+    for h, first, extra in ((MAIL_H, MAIL0, 3), (EDAY_H, EDAY0, 3)):
         r0, r1 = first - 1, first + 3  # 3 groups + total
         req += [cell(h - 1, h, 0, 13 + extra, hdr, hdr_f),
                 fmt(r0, r1, 1, 5, "#,##0"), fmt(r0, r1, 5, 8, "0.0%", "PERCENT"), fmt(r0, r1, 8, 9, pts, "PERCENT"),
@@ -252,7 +256,7 @@ def build(sheet_id: str) -> None:
                 {"updateBorders": {"range": rng(r1 - 1, r1, 0, 13 + extra), "top": {"style": "SOLID"}}},
                 cell(r1, r1 + 1, 0, 1, {"textFormat": {"italic": True, "foregroundColor":
                                          {"red": 0.4, "green": 0.4, "blue": 0.4}}}, "userEnteredFormat.textFormat")]
-    req += [fmt(MAIL0 - 1, MAIL0 + 2, 13, 14, "0.0%", "PERCENT"),
+    req += [fmt(MAIL0 - 1, MAIL0 + 2, 13, 14, "0.0%", "PERCENT"), fmt(MAIL0 - 1, MAIL0 + 3, 15, 16, "0%", "PERCENT"),
             cell(MAIL0 - 1, MAIL0 + 2, 13, 14, input_bg, "userEnteredFormat.backgroundColor"),
             fmt(EDAY0 - 1, EDAY0 + 3, 15, 16, "0%", "PERCENT"),
             cell(PROJ_H - 1, PROJ_H, 0, 6, hdr, hdr_f),
@@ -284,7 +288,7 @@ def build(sheet_id: str) -> None:
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
         raise SystemExit(f"Format request failed: {r.status_code} {r.text[:400]}")
-    print(f"projection: mail + Eday blocks, cutoff {cutoff}, mail assumptions kept {mail_in} -> {sheet_id}")
+    print(f"projection: Early + Eday blocks, cutoff {cutoff}, Early assumptions kept {mail_in} -> {sheet_id}")
 
 
 def main(argv=None) -> int:

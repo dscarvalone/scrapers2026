@@ -1,4 +1,4 @@
-"""Audit the projection tab: recompute the county detail, the Mail and Eday
+"""Audit the projection tab: recompute the county detail, the Early and Eday
 blocks and the projected-margin rollup in Python from the validations tab and
 the tab's own inputs, and compare with what the sheet shows.
 
@@ -54,10 +54,10 @@ for k, v in enumerate(Vd):
     H = "" if D == "" or G == "" or num(G) == 0 else D / G
     I = "no Eday count" if H == "" else ("done" if H >= cut else "not done")
     J = "" if I == "no Eday count" else (0 if I == "done" else max(0, G - D))
-    K = g("AE")
-    Lm = "" if K == "" else num(g("AY"))
-    M = "" if K == "" else num(g("AZ"))
-    Nx = "" if K == "" else num(g("AF"))
+    K = g("R")
+    Lm = "" if K == "" else num(g("AM"))
+    M = "" if K == "" else num(g("AN"))
+    Nx = "" if K == "" else num(g("S"))
     O = "" if K == "" else max(0, Nx - K)
     Pm = num(g("AQ")) - num(g("AR"))
     Q = num(g("U"))
@@ -98,7 +98,8 @@ for i, grp in enumerate(GROUPS):
     me = block(sub, "mail", mr[13])
     ee = block(sub, "eday")
     for j, e in enumerate(me):
-        check((grp, "mail", j), e, mr[1 + j])
+        check((grp, "early", j), e, mr[1 + j])
+    check((grp, "early not covered"), 1 - sum(x["Q"] for x in sub if x["hasK"]) / sum(x["Q"] for x in sub), mr[15])
     for j, e in enumerate(ee):
         check((grp, "eday", j), e, er[1 + j])
     nc = sum(x["Q"] for x in sub if x["st"] == "no Eday count")
