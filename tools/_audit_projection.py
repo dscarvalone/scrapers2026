@@ -26,7 +26,7 @@ def ci(c):
     return n - 1
 
 
-P = [r + [""] * (NCOLS - len(r)) for r in get(f"projection!A1:AH{C1}")]
+P = [r + [""] * (NCOLS - len(r)) for r in get(f"projection!A1:AK{C1}")]
 Vd = [r + [""] * (60 - len(r)) for r in get(f"validations!A{FIRST}:BH{LAST}")]
 mh = get("methods!1:1")[0]
 MR = {r[2]: dict(zip(mh, r)) for r in get("methods!A2:ZZ90") if len(r) > 2}
@@ -86,12 +86,16 @@ for k, v in enumerate(Vd):
         tds = trs = ""
     for name, sh in (("Totals out Dem", tds), ("Totals out Rep", trs)):
         e[name] = "" if e["Totals outstanding"] == "" or sh == "" else e["Totals outstanding"] * sh
-    has_early = g("R") != ""
-    e["Early votes in"] = g("R") if has_early else ""
-    e["Dem Early"] = num(g("AM")) if has_early else ""
-    e["Rep Early"] = num(g("AN")) if has_early else ""
-    e["Expected Early"] = num(g("S")) if has_early else ""
-    e["Early outstanding"] = max(0, e["Expected Early"] - e["Early votes in"]) if has_early else ""
+    scope = not tot
+    e["Early votes in"] = num(g("R")) if scope else ""
+    e["Dem Early"] = num(g("AM")) if scope else ""
+    e["Rep Early"] = num(g("AN")) if scope else ""
+    e["Expected Early"] = num(g("S")) if scope else ""
+    e["Early outstanding"] = max(0, e["Expected Early"] - e["Early votes in"]) if scope else ""
+    shared = scope and e["Early votes in"] > 0
+    e["Early out Dem"] = e["Early outstanding"] * e["Dem Early"] / e["Early votes in"] if shared else ""
+    e["Early out Rep"] = e["Early outstanding"] * e["Rep Early"] / e["Early votes in"] if shared else ""
+    e["Early out not projected"] = "" if not scope else (0 if shared else e["Early outstanding"])
     if eday:
         e["Share used"] = ("Eday: latest batch" if use_batch else
                            "Eday so far" if num(e["Eday votes in"]) > 0 else "no Eday votes yet")
@@ -120,25 +124,24 @@ def block(sub, kind, assumption=""):
         keys = ("Total votes in", "Dem total", "Rep total", "Expected total", "Totals outstanding", "Totals out Dem",
                 "Totals out Rep")
     else:
-        keys = ("Early votes in", "Dem Early", "Rep Early", "Expected Early", "Early outstanding")
+        sub = [x for x in sub if x["Path"] != "totals only"]
+        keys = ("Early votes in", "Dem Early", "Rep Early", "Expected Early", "Early outstanding", "Early out Dem",
+                "Early out Rep")
     sums = [sum(num(x[k]) for x in sub) for k in keys]
     B, C, D, E, J = sums[:5]
     F = B / E if E else ""
     G = C / B if B > 0 else ""
     H = D / B if B > 0 else ""
     I = "" if G == "" else G - H
-    if kind == "early":
-        if assumption != "":
-            tw = 1 if G == "" else G + H
-            K, Lr = J * tw * assumption, J * tw * (1 - assumption)
-        else:
-            K = "" if G == "" else J * G
-            Lr = "" if H == "" else J * H
-        Mc = "" if K == "" else K - Lr
+    if kind == "early" and assumption != "":
+        tw = 1 if G == "" else G + H
+        K, Lr = J * tw * assumption, J * tw * (1 - assumption)
     else:
         K, Lr = sums[5], sums[6]
-        Mc = K - Lr
-    return [B, C, D, E, F, G, H, I, J, K, Lr, Mc]
+    out = [B, C, D, E, F, G, H, I, J, K, Lr, K - Lr]
+    if kind == "early":
+        out.append(0 if assumption != "" else sum(num(x["Early out not projected"]) for x in sub))
+    return out
 
 
 ch = {"eday": {}, "totals": {}, "early": {}}
@@ -147,8 +150,10 @@ for i, grp in enumerate(GROUPS):
     for kind, first in (("eday", EDAY0), ("totals", TOT0), ("early", EARLY0)):
         row = P[first - 1 + i]
         exp = block(sub, kind, row[13] if kind == "early" else "")
-        for j, e in enumerate(exp):
+        for j, e in enumerate(exp[:12]):
             check((grp, kind, j), e, row[1 + j])
+        if kind == "early":
+            check((grp, "early not projected"), exp[12], row[15])
         ch[kind][grp] = num(exp[11])
     pr = P[PROJ0 - 1 + i]
     cur = sum(x["Current margin"] for x in sub)

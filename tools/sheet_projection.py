@@ -28,12 +28,15 @@ candidates included); nothing is borrowed from other counties, no history,
 no regression. "Done" uses closeness to the model's expected votes, not
 precincts reporting.
 
-Early block: counties with an Early count; outstanding = expected Early minus
-counted, at the group's current Early shares or the Brown 2-way assumption
-typed in column N. No done cutoff here: the model's expected Early is the
-literal count of early ballots submitted (known), so any shortfall is real
-outstanding vote. Totals-only counties have no Early count, so their
-outstanding (above) already includes any Early votes: nothing is counted twice.
+Early block: every county NOT on the totals-only path (pre-results: all 88).
+The model's expected Early is the literal count of early ballots submitted
+(in-person early + mail; known), so outstanding = expected Early - counted,
+with no done cutoff. Dem/Rep outstanding are county by county at the county's
+own Early share; a county with no Early votes counted yet has its outstanding
+Early counted but not projected (column P), unless a Brown 2-way assumption is
+typed in column N, which then applies to the group's whole outstanding Early.
+Totals-only counties' Early ballots are inside their totals outstanding, so
+nothing is counted twice.
 
 Layout: inputs; then Eday, Totals-only and Early blocks by group (votes in |
 Dem in | Rep in | expected | % of expected in | Dem % | Rep % | margin |
@@ -66,7 +69,7 @@ EARLY_H, EARLY0 = 22, 23    # Early block: header 22, groups 23-25, total 26, no
 PROJ_H, PROJ0 = 30, 31      # projected margin: header 30, groups 31-33, total 34
 DET_H, C0 = 37, 38          # county detail
 C1 = C0 + N - 1
-NCOLS = 34
+NCOLS = 37
 
 BLOCK_COLS = ["votes in", "Dem in", "Rep in", "expected votes", "% of expected in", "Dem %", "Rep %",
               "Margin", "Outstanding", "Dem outstanding", "Rep outstanding", "Margin change"]
@@ -77,6 +80,7 @@ DET = ["Group", "FIPS", "County", "Path",
        "Total votes in", "Dem total", "Rep total", "Expected total", "% of exp. total", "Totals status",
        "Totals outstanding", "Totals out Dem", "Totals out Rep",
        "Early votes in", "Dem Early", "Rep Early", "Expected Early", "Early outstanding",
+       "Early out Dem", "Early out Rep", "Early out not projected",
        "Batch Dem", "Batch Rep", "Batch total", "Batch as of", "Share used",
        "Current margin", "Expected total (coverage)"]
 COL = {name: i for i, name in enumerate(DET)}
@@ -138,11 +142,17 @@ def county_row(r: int, v: int) -> list:
         "Totals outstanding": f'=IF({tot},MAX(0,{k["Expected total"]}-{k["Total votes in"]}),"")',
         "Totals out Dem": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_dem},""))',
         "Totals out Rep": f'=IF({k["Totals outstanding"]}="","",IFERROR({k["Totals outstanding"]}*{tot_rep},""))',
-        "Early votes in": f'=IF({V}!R{v}="","",{V}!R{v})',
+        "Early votes in": f'=IF({tot},"",N({V}!R{v}))',
         "Dem Early": f'=IF({k["Early votes in"]}="","",N({V}!AM{v}))',
         "Rep Early": f'=IF({k["Early votes in"]}="","",N({V}!AN{v}))',
         "Expected Early": f'=IF({k["Early votes in"]}="","",N({V}!S{v}))',
         "Early outstanding": f'=IF({k["Early votes in"]}="","",MAX(0,{k["Expected Early"]}-{k["Early votes in"]}))',
+        "Early out Dem": f'=IF(OR({k["Early outstanding"]}="",N({k["Early votes in"]})=0),"",'
+                         f'{k["Early outstanding"]}*{k["Dem Early"]}/{k["Early votes in"]})',
+        "Early out Rep": f'=IF(OR({k["Early outstanding"]}="",N({k["Early votes in"]})=0),"",'
+                         f'{k["Early outstanding"]}*{k["Rep Early"]}/{k["Early votes in"]})',
+        "Early out not projected": f'=IF({k["Early outstanding"]}="","",IF(N({k["Early votes in"]})>0,0,'
+                                   f'{k["Early outstanding"]}))',
         "Batch Dem": f"={mlook('batch_dem_votes', r)}",
         "Batch Rep": f"={mlook('batch_gop_votes', r)}",
         "Batch total": f"={mlook('batch_total_votes', r)}",
@@ -178,11 +188,12 @@ def block_row(r: int, kind: str, assumption=None) -> list:
            f'=IF(G{r}="","",G{r}-H{r})', f"={S(out, r, path)}"]
     if kind == "early":
         a = f"N{r}"
-        row += [f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*{a},IF(G{r}="","",J{r}*G{r}))',
-                f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*(1-{a}),IF(H{r}="","",J{r}*H{r}))',
-                f'=IF(K{r}="","",K{r}-L{r})', assumption if assumption is not None else "",
-                f'=SUMPRODUCT(({rng_("Group")}=$A{r})*({rng_("Early votes in")}<>""))&" of "'
-                f'&COUNTIF({rng_("Group")},$A{r})&" counties"']
+        row += [f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*{a},{S("Early out Dem", r)})',
+                f'=IF({a}<>"",J{r}*IF(G{r}="",1,G{r}+H{r})*(1-{a}),{S("Early out Rep", r)})',
+                f"=K{r}-L{r}", assumption if assumption is not None else "",
+                f'=COUNTIFS({rng_("Group")},$A{r},{rng_("Early votes in")},">0")&" of "'
+                f'&COUNTIFS({rng_("Group")},$A{r},{rng_("Path")},"<>totals only")&" counties with Early votes counted"',
+                f'=IF({a}<>"",0,{S("Early out not projected", r)})']
     else:
         st = "Eday status" if kind == "eday" else "Totals status"
         pv = "Eday count" if kind == "eday" else "totals only"
@@ -200,7 +211,8 @@ def total_row(r: int, first: int, kind: str) -> list:
     row = [None, sm("B"), sm("C"), sm("D"), sm("E"), f'=IFERROR(B{r}/E{r},"")', f'=IFERROR(C{r}/B{r},"")',
            f'=IFERROR(D{r}/B{r},"")', f'=IF(G{r}="","",G{r}-H{r})', sm("J"), sm("K"), sm("L"), sm("M")]
     if kind == "early":
-        row += ["", f'=COUNT({rng_("Early votes in")})&" of {N} counties"']
+        row += ["", f'=COUNTIF({rng_("Early votes in")},">0")&" of "&COUNTIF({rng_("Path")},"<>totals only")'
+                    f'&" counties with Early votes counted"', f"=SUM(P{first}:P{last})"]
     else:
         pv = "Eday count" if kind == "eday" else "totals only"
         st = "Eday status" if kind == "eday" else "Totals status"
@@ -214,7 +226,8 @@ def block_header(label: str, kind: str) -> list:
     pre = {"eday": "Eday ", "totals": "", "early": "Early "}[kind]
     cols = [(pre + c if i in (0, 3) else c.replace("in", pre + "in") if i in (1, 2) and pre else c)
             for i, c in enumerate(BLOCK_COLS)]
-    tail = (["Brown 2-way assumption for outstanding Early (optional input)", "Counties with an Early count"]
+    tail = (["Brown 2-way assumption for outstanding Early (optional input)", "Counties with Early votes counted",
+             "Early outstanding not projected (no Early votes counted yet)"]
             if kind == "early" else ["Counties"])
     return [label] + cols + tail
 
@@ -275,13 +288,13 @@ def build(sheet_id: str) -> None:
                          "be split into Early, a known ballot count, and Eday): outstanding = expected total minus "
                          "counted, split at each county's latest-batch share (current total share if no batch).")
 
-    rows[EARLY_H - 1] = block_header("Early", "early") + [""] * (NCOLS - 15)
+    rows[EARLY_H - 1] = block_header("Early", "early") + [""] * (NCOLS - 16)
     for i, g in enumerate(GROUPS):
-        rows[EARLY0 - 1 + i] = [g] + block_row(EARLY0 + i, "early", early_in.get(i, ""))[1:] + [""] * (NCOLS - 15)
-    rows[EARLY0 + 2] = ["Total"] + total_row(EARLY0 + 3, EARLY0, "early")[1:] + [""] * (NCOLS - 15)
-    rows[EARLY0 + 3][0] = ("Early = in-person early + mail, counties with an Early count. Outstanding = expected "
-                           "Early minus counted, split at the group's current Early shares, or at the Brown 2-way "
-                           "assumption in column N.")
+        rows[EARLY0 - 1 + i] = [g] + block_row(EARLY0 + i, "early", early_in.get(i, ""))[1:] + [""] * (NCOLS - 16)
+    rows[EARLY0 + 2] = ["Total"] + total_row(EARLY0 + 3, EARLY0, "early")[1:] + [""] * (NCOLS - 16)
+    rows[EARLY0 + 3][0] = ("Early = in-person early + mail (a known ballot count), every county not on the "
+                           "totals-only path. Outstanding = expected Early minus counted, split at each county's own "
+                           "Early share; no share yet = not projected (column P), unless column N has an assumption.")
 
     rows[PROJ_H - 1][0:7] = ["Projected margin", "Current margin (our feed)", "Eday margin change",
                              "Totals-only margin change", "Early margin change", "Projected margin",
@@ -336,7 +349,7 @@ def build(sheet_id: str) -> None:
                "condition": {"type": "ONE_OF_LIST", "values": [{"userEnteredValue": "so far"},
                                                               {"userEnteredValue": "latest batch"}]},
                "showCustomUi": True, "strict": True}}}]
-    for h, first, width in ((EDAY_H, EDAY0, 14), (TOT_H, TOT0, 14), (EARLY_H, EARLY0, 15)):
+    for h, first, width in ((EDAY_H, EDAY0, 14), (TOT_H, TOT0, 14), (EARLY_H, EARLY0, 16)):
         r0, r1 = first - 1, first + 3
         req += [cell(h - 1, h, 0, width, hdr, hdr_f),
                 fmt(r0, r1, 1, 5, "#,##0"), fmt(r0, r1, 5, 8, "0.0%", "PERCENT"), fmt(r0, r1, 8, 9, pts, "PERCENT"),
@@ -344,7 +357,7 @@ def build(sheet_id: str) -> None:
                 cell(r1 - 1, r1, 0, width, {"textFormat": {"bold": True}}, "userEnteredFormat.textFormat"),
                 {"updateBorders": {"range": rng(r1 - 1, r1, 0, width), "top": {"style": "SOLID"}}},
                 cell(r1, r1 + 1, 0, 1, italic, "userEnteredFormat.textFormat")]
-    req += [fmt(EARLY0 - 1, EARLY0 + 2, 13, 14, "0.0%", "PERCENT"),
+    req += [fmt(EARLY0 - 1, EARLY0 + 2, 13, 14, "0.0%", "PERCENT"), fmt(EARLY0 - 1, EARLY0 + 3, 15, 16, "#,##0"),
             cell(EARLY0 - 1, EARLY0 + 2, 13, 14, yellow, "userEnteredFormat.backgroundColor"),
             cell(PROJ_H - 1, PROJ_H, 0, 7, hdr, hdr_f),
             fmt(PROJ0 - 1, PROJ0 + 3, 1, 6, margin), fmt(PROJ0 - 1, PROJ0 + 3, 6, 7, "0%", "PERCENT"),
