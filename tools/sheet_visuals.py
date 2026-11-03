@@ -53,9 +53,10 @@ GROUP_ORDER = ["base", "rurals", "swing"]
 METHODS = [("Eday", "J", "K", "P"), ("Early", "L", "M", "R")]
 
 # column positions (0-based): data blocks and fit tables
-B1, B2 = 25, 31           # chart data: Z..AD and AF..AJ (+ empty label column AK)
-T1, T2 = 37, 45           # fit tables: AL..AR and AT..AZ
-NCOLS = T2 + 7
+B1, B2 = 25, 31           # chart data: Z..AD and AF..AJ; chart 2 legend AK, blank labels AL
+T1, T2 = 38, 48           # fit tables: AM..AU and AW..BE
+FIT_COLS = ["g", "n", "mx", "my", "b", "x0", "x1", "r2", "leg"]
+NCOLS = T2 + len(FIT_COLS)
 
 
 def L(i: int) -> str:
@@ -75,16 +76,20 @@ def layout(nanchors: int, nfits: int, nrows_data: int) -> dict:
 
 
 def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float,
-              by_group: bool = True) -> tuple[list, list]:
+              by_group: bool = True, legend: str = "{g}") -> tuple[list, list]:
     """Fit table at column t for data block at column b. Returns (table rows, per-group cell refs).
-    by_group=False: one fit over every plotted point (the label in `groups` is just a name)."""
+    by_group=False: one fit over every plotted point (the label in `groups` is just a name).
+    R-squared is the weighted one (same vote weights as the fit): b^2 * Sxx / Syy.
+    `legend` is the legend text, with {g} for the group key and the R-squared appended."""
     g, x, y, w = L(b + 1 if b == B1 else b), L(b + 2), L(b + 3), L(b + 4)
     d0, d1 = lay["data"], lay["end"]
-    hdr = ["Fit: group", "n", "mean x", "mean y", "slope", "x min", "x max"]
+    hdr = ["Fit: group", "n", "mean x", "mean y", "slope", "x min", "x max", "R²", "legend"]
     rows, refs = [hdr], []
     for i, grp in enumerate(groups):
         r = i + 2
-        c = {k: f"{L(t + j)}{r}" for j, k in enumerate(["g", "n", "mx", "my", "b", "x0", "x1"])}
+        c = {k: f"{L(t + j)}{r}" for j, k in enumerate(FIT_COLS)}
+        abs_ = {k: "$" + L(t + j) + "$" + str(r) for j, k in enumerate(FIT_COLS)}
+        c["leg_abs"] = abs_["leg"]
 
         def F(col):
             cond = f'${g}${d0}:${g}${d1}={c["g"]}, ' if by_group else ""
@@ -98,6 +103,10 @@ def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float,
             f'SUMPRODUCT(ws,(xs-{c["mx"]})*(ys-{c["my"]}))/SUMPRODUCT(ws,(xs-{c["mx"]})^2)),"")',
             f'=IFERROR(MIN({F(x)}),"")',
             f'=IFERROR(MAX({F(x)}),"")',
+            f'=IFERROR(LET(xs,{F(x)},ys,{F(y)},ws,{F(w)},'
+            f'{c["b"]}^2*SUMPRODUCT(ws,(xs-{c["mx"]})^2)/SUMPRODUCT(ws,(ys-{c["my"]})^2)),"")',
+            '="' + legend.format(g=grp) + '"&IF(' + c["r2"] + '="",""," (fit R² = "&TEXT(' + c["r2"]
+            + ',"0.00")&")")',
         ])
         refs.append(c)
     return rows, refs
@@ -120,15 +129,18 @@ def fit_rows(groups: list[str], refs: list[dict], fallback_y: float, chart: int)
     return anchors, fits
 
 
-FIT1_LABEL = "best fit (all counties)"
+FIT1_LABEL = "all counties"
 
 
 def block1(groups_by_county: list[str]) -> tuple[list, list]:
     """Chart 1: one vote-weighted fit over every plotted county. Group anchors sit
-    under each group's first plotted county (fallback 50%, 0 if it has none)."""
+    under each group's first plotted county (fallback 50%, 0 if it has none).
+    The fit rows' group label is the legend cell (with R²), so its legend entry shows the R²."""
     lay = layout(len(GROUP_ORDER), 1, N)
-    table, refs = fit_table(T1, B1, [FIT1_LABEL], lay, 0, by_group=False)
+    table, refs = fit_table(T1, B1, [FIT1_LABEL], lay, 0, by_group=False, legend="best fit, all counties")
     _, fits = fit_rows([FIT1_LABEL], refs, 0, 1)
+    for row in fits:
+        row[1] = "=" + refs[0]["leg_abs"]
     d0, d1 = lay["data"], lay["end"]
     gc, xc, yc = L(B1 + 1), L(B1 + 2), L(B1 + 3)
     anchors = []
@@ -164,7 +176,11 @@ def block2() -> tuple[list, list]:
                          f"=IF({ok},validations!{a}{v}-validations!{e}{v},\"\")",
                          f"=IF({ok},validations!{n}{v},\"\")"])
     assert len(rows) == lay["end"], (len(rows), lay)
-    return rows, table
+    # legend column (AK): each row's method label with its fit R², from the fit table.
+    # Colours/legend come from this column; the fit FILTERs use the plain method key in AF.
+    leg = {lab: c["leg_abs"] for lab, c in zip(labels, refs)}
+    legend_col = [["Legend"]] + [["=" + leg[r[0]]] for r in rows[1:]]
+    return rows, table, legend_col
 
 
 def build(sheet_id: str) -> None:
@@ -184,7 +200,7 @@ def build(sheet_id: str) -> None:
     groups = [r[0] if r else "" for r in s.get(f"{api}/values/validations!A{FIRST}:A{LAST}").json()["values"]]
     groups += [""] * (N - len(groups))
     b1, t1 = block1(groups)
-    b2, t2 = block2()
+    b2, t2, legend2 = block2()
     nrows = max(len(b1), len(b2)) + 2
 
     req = [{"deleteEmbeddedObject": {"objectId": c}} for c in charts]
@@ -196,7 +212,7 @@ def build(sheet_id: str) -> None:
     # chart 2's label column: a single space per row. The chart refuses to draw
     # ("Column 1 must be numeric") if its label column holds no text at all.
     labels2 = [["Label"]] + [[" "] for _ in range(len(b2) - 1)]
-    for col, data in ((B1, b1), (B2, b2), (B2 + 5, labels2), (T1, t1), (T2, t2)):
+    for col, data in ((B1, b1), (B2, b2), (B2 + 5, legend2), (B2 + 6, labels2), (T1, t1), (T2, t2)):
         s.put(f"{api}/values/{TAB}!{L(col)}1", params={"valueInputOption": "USER_ENTERED"},
               json={"values": data}).raise_for_status()
     s.put(f"{api}/values/{TAB}!{L(B1)}{nrows}", params={"valueInputOption": "RAW"},
@@ -223,6 +239,7 @@ def build(sheet_id: str) -> None:
            fmt(T2 + 2, T2 + 3, "0.0%", "PERCENT", 5), fmt(T2 + 3, T2 + 4, "+0.0%;-0.0%", "PERCENT", 5),
            fmt(T2 + 4, T2 + 5, "0.00", "NUMBER", 5),
            fmt(T2 + 5, T2 + 7, "0.0%", "PERCENT", 5),
+           fmt(T1 + 7, T1 + 8, "0.00", "NUMBER", 4), fmt(T2 + 7, T2 + 8, "0.00", "NUMBER", 5),
            {"repeatCell": {"range": rng(B1, NCOLS, 0, 1),
                            "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
                            "fields": "userEnteredFormat.textFormat.bold"}}]
@@ -247,7 +264,7 @@ def build(sheet_id: str) -> None:
     req.append(bubble("Dem 2-way share vs expected, by vote method",
                       "x: model's expected Dem 2-way | y: actual minus expected Dem 2-way (0 = on expectation, "
                       "above = Brown beating the model) | size: votes counted | lines: vote-weighted best fit per method",
-                      B2, B2, B2 + 5, n2, 30))
+                      B2, B2 + 5, B2 + 6, n2, 30))
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
         raise SystemExit(f"Chart request failed: {r.status_code} {r.text[:500]}")
