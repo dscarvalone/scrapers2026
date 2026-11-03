@@ -24,7 +24,7 @@ r.raise_for_status()
 with tempfile.TemporaryDirectory() as d:
     pdf = os.path.join(d, "t.pdf")
     open(pdf, "wb").write(r.content)
-    subprocess.run(["pdftoppm", "-r", "150", "-f", "1", "-l", "1", "-png", pdf, os.path.join(d, "p")], check=True)
+    subprocess.run(["pdftoppm", "-r", os.environ.get("RENDER_DPI", "150"), "-f", "1", "-l", "1", "-png", pdf, os.path.join(d, "p")], check=True)
     png = next(os.path.join(d, f) for f in os.listdir(d) if f.endswith(".png"))
     im = Image.open(png)
     w, h = im.size

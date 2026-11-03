@@ -1,21 +1,30 @@
 """Build the 'visuals' tab of the owner's election-night Google Sheet.
 
 Two vote-weighted bubble charts, fed by formula data blocks on the same tab
-that read the 'validations' tab (so they update with it):
+that read the 'validations' tab, so they update with it (no rebuild needed):
 
 1. Eday turnout vs expected, by county partisanship.
    x = the model's expected Dem 2-way share (validations O, Total expected)
    y = Eday turnout delta = our Eday votes / the model's expected Eday votes - 1
        (validations G - 1); 0 = on expectation
-   size = Eday votes counted; colour = group (base / swing / rurals)
+   size = Eday votes counted; colour = group (base blue, rurals red, swing yellow)
    Only counties with Eday votes counted are plotted.
 
 2. Actual vs expected Dem 2-way share, by vote method.
    x = expected 2-way, y = actual 2-way, size = votes counted for that
-   method, colour = method (Eday blue, Early red, In-person early yellow,
-   Mail green; colours follow the order groups first appear). A row of tiny
-   orange points along y = x is the reference line: above it, Brown is
-   beating the model for that county and method.
+   method, colour = method (Eday blue, Early red, In-person early yellow, Mail green).
+
+Each group/method gets a line of best fit in its own colour: vote-weighted
+least squares over that group's plotted points, drawn across the group's x
+range. Google's bubble chart has no trendlines (and the API can't set them on
+any chart), so each line is a dense row of tiny points carrying the group's
+own label, which gives it the group's colour. The fits are live formulas, in
+the fit tables at the right of the tab (n, weighted means, slope, x range).
+
+Stability rows: one tiny ANCHOR point per group comes first, so colours never
+depend on which counties have reported (bubble colours follow first
+appearance) and the chart always has numbers to draw. Each anchor sits on its
+group's fit line once there is one.
 
 Mid-count, chart 1 mostly shows how far each county's Eday count has got;
 read it as turnout once a county is fully in.
@@ -35,13 +44,17 @@ from tools.sheet_validations import FIRST, KEY, LAST
 
 TAB = "visuals"
 N = LAST - FIRST + 1  # 88 counties
+FIT_PTS = 150         # points per best-fit line (dense, so the dots read as a solid line)
 
-# data block 1 at columns Z..AD (25..29), block 2 at AF..AJ (31..35)
-B1, B2 = 25, 31
+GROUP_ORDER = ["base", "rurals", "swing"]
 # validations columns for chart 2: method -> (actual share, expected share, votes)
 METHODS = [("Eday", "J", "K", "P"), ("Early", "L", "M", "R"),
            ("In-person early", "V", "W", "AB"), ("Mail", "Y", "Z", "AE")]
-REF = [round(0.1 + 0.025 * i, 3) for i in range(33)]  # y = x reference points, 10%..90%
+
+# column positions (0-based): data blocks and fit tables
+B1, B2 = 25, 31           # chart data: Z..AD and AF..AJ (+ empty label column AK)
+T1, T2 = 37, 45           # fit tables: AL..AR and AT..AZ
+NCOLS = T2 + 7
 
 
 def L(i: int) -> str:
@@ -52,52 +65,88 @@ def L(i: int) -> str:
     return s
 
 
-GROUP_ORDER = ["base", "rurals", "swing"]  # bubble colours follow first appearance: blue, red, yellow
+def layout(ngroups: int, nrows_data: int) -> dict:
+    """Row numbers (1-based) of each part of a data block."""
+    anchors = 2
+    fits = anchors + ngroups
+    data = fits + ngroups * FIT_PTS
+    return {"anchors": anchors, "fits": fits, "data": data, "end": data + nrows_data - 1}
 
 
-# Fixed rows that keep the charts stable whatever has reported:
-#  - one tiny ANCHOR point per colour group, first, so colours never depend on
-#    which counties have votes yet (bubble colours follow first appearance) and
-#    every numeric column always has a number (an all-blank column errors);
-#  - a reference line of tiny dots, last;
-#  - one SCALE dot whose size is 30 until any votes are counted, then 1, so the
-#    reference dots stay small before results (bubble sizes are relative).
-REF1 = [round(0.2 + 0.025 * i, 3) for i in range(27)]  # y = 0 line, x 20%..85%
+def fit_table(t: int, b: int, groups: list[str], lay: dict, fallback_y: float) -> tuple[list, list]:
+    """Fit table at column t for data block at column b. Returns (table rows, per-group cell refs)."""
+    g, x, y, w = L(b + 1 if b == B1 else b), L(b + 2), L(b + 3), L(b + 4)
+    d0, d1 = lay["data"], lay["end"]
+    hdr = ["Fit: group", "n", "mean x", "mean y", "slope", "x min", "x max"]
+    rows, refs = [hdr], []
+    for i, grp in enumerate(groups):
+        r = i + 2
+        c = {k: f"{L(t + j)}{r}" for j, k in enumerate(["g", "n", "mx", "my", "b", "x0", "x1"])}
+
+        def F(col):
+            return (f'FILTER(${col}${d0}:${col}${d1}, ${g}${d0}:${g}${d1}={c["g"]}, '
+                    f'${y}${d0}:${y}${d1}<>"")')
+        rows.append([
+            grp,
+            f'=IFERROR(ROWS({F(x)}),0)',
+            f'=IFERROR(SUMPRODUCT({F(w)},{F(x)})/SUM({F(w)}),"")',
+            f'=IFERROR(SUMPRODUCT({F(w)},{F(y)})/SUM({F(w)}),"")',
+            f'=IFERROR(LET(xs,{F(x)},ys,{F(y)},ws,{F(w)},'
+            f'SUMPRODUCT(ws,(xs-{c["mx"]})*(ys-{c["my"]}))/SUMPRODUCT(ws,(xs-{c["mx"]})^2)),"")',
+            f'=IFERROR(MIN({F(x)}),"")',
+            f'=IFERROR(MAX({F(x)}),"")',
+        ])
+        refs.append(c)
+    return rows, refs
 
 
-def block1(groups: list[str]) -> list[list]:
-    rows = [["County", "Group", "Expected Dem 2-way", "Eday turnout delta", "Eday votes"]]
-    rows += [["", g, 0.5, 0, 1] for g in GROUP_ORDER]
-    first = len(rows) + 1
-    order = sorted(range(N), key=lambda k: (GROUP_ORDER.index(groups[k]) if groups[k] in GROUP_ORDER else 9, k))
+def fit_rows(groups: list[str], refs: list[dict], fallback_y: float, chart: int) -> tuple[list, list]:
+    """Anchor rows and best-fit line rows for a data block."""
+    def blank_row(grp, x, y):
+        return (["", grp, x, y, 0] if chart == 1 else [grp, "", x, y, 0])
+
+    anchors, fits = [], []
+    for grp, c in zip(groups, refs):
+        ok = f'{c["b"]}<>""'
+        anchors.append(blank_row(grp, f'=IF({ok},{c["x0"]},0.5)',
+                                 f'=IF({ok},{c["my"]}+{c["b"]}*({c["x0"]}-{c["mx"]}),{fallback_y})'))
+        for i in range(FIT_PTS):
+            xf = f'{c["x0"]}+({c["x1"]}-{c["x0"]})*{i}/{FIT_PTS - 1}'
+            fits.append(blank_row(grp, f'=IF({ok},{xf},"")',
+                                  f'=IF({ok},{c["my"]}+{c["b"]}*({xf}-{c["mx"]}),"")'))
+    return anchors, fits
+
+
+def block1(groups_by_county: list[str]) -> tuple[list, list]:
+    lay = layout(len(GROUP_ORDER), N)
+    table, refs = fit_table(T1, B1, GROUP_ORDER, lay, 0)
+    anchors, fits = fit_rows(GROUP_ORDER, refs, 0, 1)
+    rows = [["County", "Group", "Expected Dem 2-way", "Eday turnout delta", "Eday votes"]] + anchors + fits
+    order = sorted(range(N), key=lambda k: (GROUP_ORDER.index(groups_by_county[k])
+                                            if groups_by_county[k] in GROUP_ORDER else 9, k))
     for k in order:
         v = FIRST + k
         ok = f"AND(validations!G{v}<>\"\",N(validations!P{v})>0)"
         rows.append([f"=validations!C{v}", f"=validations!A{v}", f"=IF({ok},validations!O{v},\"\")",
                      f"=IF({ok},validations!G{v}-1,\"\")", f"=IF({ok},validations!P{v},\"\")"])
-    last = len(rows)
-    rows += [["", "expected (0)", x, 0, 1] for x in REF1]
-    vcol = L(B1 + 4)
-    rows.append(["", "expected (0)", REF1[0], 0, f"=IF(MAX({vcol}{first}:{vcol}{last})=0,30,1)"])
-    return rows
+    assert len(rows) == lay["end"], (len(rows), lay)
+    return rows, table
 
 
-def block2() -> list[list]:
-    rows = [["Method", "County", "Expected Dem 2-way", "Actual Dem 2-way", "Votes"]]
-    rows += [[lab, "", 0.5, 0.5, 1] for lab, _, _, _ in METHODS]
-    first = len(rows) + 1
+def block2() -> tuple[list, list]:
+    labels = [m[0] for m in METHODS]
+    lay = layout(len(labels), N * len(METHODS))
+    table, refs = fit_table(T2, B2, labels, lay, 0.5)
+    anchors, fits = fit_rows(labels, refs, 0.5, 2)
+    rows = [["Method", "County", "Expected Dem 2-way", "Actual Dem 2-way", "Votes"]] + anchors + fits
     for lab, a, e, n in METHODS:
         for k in range(N):
             v = FIRST + k
             ok = f"AND(validations!{a}{v}<>\"\",validations!{e}{v}<>\"\",N(validations!{n}{v})>0)"
             rows.append([lab, f"=validations!C{v}", f"=IF({ok},validations!{e}{v},\"\")",
                          f"=IF({ok},validations!{a}{v},\"\")", f"=IF({ok},validations!{n}{v},\"\")"])
-    last = len(rows)
-    for x in REF:
-        rows.append(["y = x", "", x, x, 1])
-    vcol = L(B2 + 4)
-    rows.append(["y = x", "", REF[0], REF[0], f"=IF(MAX({vcol}{first}:{vcol}{last})=0,30,1)"])
-    return rows
+    assert len(rows) == lay["end"], (len(rows), lay)
+    return rows, table
 
 
 def build(sheet_id: str) -> None:
@@ -116,20 +165,25 @@ def build(sheet_id: str) -> None:
 
     groups = [r[0] if r else "" for r in s.get(f"{api}/values/validations!A{FIRST}:A{LAST}").json()["values"]]
     groups += [""] * (N - len(groups))
-    b1, b2 = block1(groups), block2()
-    nrows = max(len(b1), len(b2))
+    b1, t1 = block1(groups)
+    b2, t2 = block2()
+    nrows = max(len(b1), len(b2)) + 2
+
     req = [{"deleteEmbeddedObject": {"objectId": c}} for c in charts]
     req += [{"updateCells": {"range": {"sheetId": gid}, "fields": "userEnteredValue,userEnteredFormat"}},
             {"updateSheetProperties": {"properties": {"sheetId": gid, "gridProperties": {
-                "rowCount": nrows + 2, "columnCount": B2 + 6}},
+                "rowCount": nrows, "columnCount": NCOLS}},
                 "fields": "gridProperties(rowCount,columnCount)"}}]
     s.post(api + ":batchUpdate", json={"requests": req}).raise_for_status()
-    for col, data in ((B1, b1), (B2, b2)):
+    # chart 2's label column: a single space per row. The chart refuses to draw
+    # ("Column 1 must be numeric") if its label column holds no text at all.
+    labels2 = [["Label"]] + [[" "] for _ in range(len(b2) - 1)]
+    for col, data in ((B1, b1), (B2, b2), (B2 + 5, labels2), (T1, t1), (T2, t2)):
         s.put(f"{api}/values/{TAB}!{L(col)}1", params={"valueInputOption": "USER_ENTERED"},
               json={"values": data}).raise_for_status()
-    s.put(f"{api}/values/{TAB}!{L(B1)}{nrows + 2}", params={"valueInputOption": "RAW"},
-          json={"values": [["Chart data: formulas reading the validations tab. Rebuilt by tools/sheet_visuals.py."]]}
-          ).raise_for_status()
+    s.put(f"{api}/values/{TAB}!{L(B1)}{nrows}", params={"valueInputOption": "RAW"},
+          json={"values": [["Chart data and fits: formulas reading the validations tab. "
+                            "Rebuilt by tools/sheet_visuals.py."]]}).raise_for_status()
 
     def rng(c0, c1, r0=0, r1=None):
         return {"sheetId": gid, "startRowIndex": r0, "endRowIndex": r1 or nrows,
@@ -138,26 +192,30 @@ def build(sheet_id: str) -> None:
     def src(c, n):  # data rows only: a header row would show up as an extra legend entry
         return {"sourceRange": {"sources": [rng(c, c + 1, 1, n)]}}
 
-    def fmt(c0, c1, pattern, typ):
-        return {"repeatCell": {"range": rng(c0, c1, 1, nrows),
+    def fmt(c0, c1, pattern, typ, r1=None):
+        return {"repeatCell": {"range": rng(c0, c1, 1, r1),
                                "cell": {"userEnteredFormat": {"numberFormat": {"type": typ, "pattern": pattern}}},
                                "fields": "userEnteredFormat.numberFormat"}}
 
     req = [fmt(B1 + 2, B1 + 3, "0%", "PERCENT"), fmt(B1 + 3, B1 + 4, "+0%;-0%;0%", "PERCENT"),
            fmt(B1 + 4, B1 + 5, "#,##0", "NUMBER"), fmt(B2 + 2, B2 + 4, "0%", "PERCENT"),
            fmt(B2 + 4, B2 + 5, "#,##0", "NUMBER"),
-           {"repeatCell": {"range": rng(B1, B2 + 5, 0, 1),
+           fmt(T1 + 2, T1 + 3, "0.0%", "PERCENT", 4), fmt(T1 + 3, T1 + 4, "+0.0%;-0.0%", "PERCENT", 4),
+           fmt(T1 + 4, T1 + 5, "0.00", "NUMBER", 4), fmt(T1 + 5, T1 + 7, "0.0%", "PERCENT", 4),
+           fmt(T2 + 2, T2 + 4, "0.0%", "PERCENT", 5), fmt(T2 + 4, T2 + 5, "0.00", "NUMBER", 5),
+           fmt(T2 + 5, T2 + 7, "0.0%", "PERCENT", 5),
+           {"repeatCell": {"range": rng(B1, NCOLS, 0, 1),
                            "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
                            "fields": "userEnteredFormat.textFormat.bold"}}]
     n1, n2 = len(b1), len(b2)
 
-    def bubble(title, subtitle, c, n, labels, row):
-        spec = {"domain": src(c + 2, n), "series": src(c + 3, n), "groupIds": src(c if c == B2 else c + 1, n),
-                "bubbleSizes": src(c + 4, n), "bubbleOpacity": 0.6, "bubbleMinRadiusSize": 3,
-                "bubbleMaxRadiusSize": 40, "legendPosition": "RIGHT_LEGEND",
+    def bubble(title, subtitle, c, gcol, labels, n, row):
+        spec = {"domain": src(c + 2, n), "series": src(c + 3, n), "groupIds": src(gcol, n),
+                "bubbleSizes": src(c + 4, n), "bubbleLabels": src(labels, n), "bubbleOpacity": 0.6,
+                "bubbleMinRadiusSize": 4, "bubbleMaxRadiusSize": 40, "legendPosition": "RIGHT_LEGEND",
+                # no outline: at line-dot size a black outline is all you would see
+                "bubbleBorderColorStyle": {"rgbColor": {"red": 1, "green": 1, "blue": 1, "alpha": 0}},
                 "bubbleTextStyle": {"fontSize": 8}}
-        # the API requires a label column; chart 2 points at an empty one (column after its data)
-        spec["bubbleLabels"] = src(c if labels else c + 5, n)
         return {"addChart": {"chart": {
             "spec": {"title": title, "subtitle": subtitle, "bubbleChart": spec},
             "position": {"overlayPosition": {"anchorCell": {"sheetId": gid, "rowIndex": row, "columnIndex": 0},
@@ -165,16 +223,16 @@ def build(sheet_id: str) -> None:
 
     req.append(bubble("Eday turnout vs expected, by county partisanship",
                       "x: model's expected Dem 2-way share | y: Eday votes vs model's expected Eday votes "
-                      "| size: Eday votes counted | colour: group | small green dots = on expectation (0)",
-                      B1, n1, True, 0))
+                      "(0 = on expectation) | size: Eday votes counted | lines: vote-weighted best fit per group",
+                      B1, B1 + 1, B1, n1, 0))
     req.append(bubble("Actual vs expected Dem 2-way share, by vote method",
                       "x: model's expected Dem 2-way | y: actual Dem 2-way | size: votes counted for that method "
-                      "| small orange dots = the y = x line (above it = Brown beating the model)",
-                      B2, n2, False, 30))
+                      "| lines: vote-weighted best fit per method",
+                      B2, B2, B2 + 5, n2, 30))
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
         raise SystemExit(f"Chart request failed: {r.status_code} {r.text[:500]}")
-    print(f"visuals: 2 bubble charts, {n1 - 1} county rows + {n2 - 1} method rows -> {sheet_id}")
+    print(f"visuals: 2 bubble charts with best-fit lines -> {sheet_id}")
 
 
 def main(argv=None) -> int:
