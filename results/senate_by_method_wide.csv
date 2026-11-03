@@ -139,11 +139,11 @@ Geauga,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,79,sos_statewide,2026-11-01T22:14
 Geauga,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
 Geauga,William B. Redpath,Libertarian,,,,,,0,,,,,,,,0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
 Geauga,Write-in,,,,,,,0,,,,,,,,0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Sherrod Brown,Democratic,,,,,,0,,,,,,,,0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,William B. Redpath,Libertarian,,,,,,0,,,,,,,,0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Write-in,,,,,,,0,,,,,,,,0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
+Greene,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,0,0,0,,0,,,,,,,,,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
 Guernsey,Sherrod Brown,Democratic,,,,,,0,,,,,,,,0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
@@ -363,11 +363,11 @@ Scioto,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,77,sos_statewide,2026-11-01T22:14
 Scioto,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
 Scioto,William B. Redpath,Libertarian,,,,,,0,,,,,,,,0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
 Scioto,Write-in,,,,,,,0,,,,,,,,0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Sherrod Brown,Democratic,,,,,,0,,,,,,,,0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,William B. Redpath,Libertarian,,,,,,0,,,,,,,,0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Write-in,,,,,,,0,,,,,,,,0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
+Seneca,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Write-in,,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
 Shelby,Sherrod Brown,Democratic,,,,,,0,,,,,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Shelby,Jon Husted,Republican,,,,,,0,,,,,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Shelby,Greg Levy,Other-party,,,,,,0,,,,,,,,0,0,36,sos_statewide,2026-11-01T22:14:23+00:00

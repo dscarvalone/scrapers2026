@@ -108,6 +108,20 @@ EV_METHOD_MAP = {
     "Mail Absentee": "Mail",                  # Pickaway
 }
 
+# Per-county overrides, for labels that mean different things in different
+# counties. Keyed by county folder name.
+COUNTY_METHOD_MAP = {
+    # Seneca's Nov 2026 report has Election Day / Absentee / Provisional /
+    # Early Vote. With early in-person in its own column, "Absentee" is the
+    # mailed ballots (ASSUMPTION, as for Franklin and Clark).
+    # (The positional parser labels the "Early Vote" column "Early".)
+    "seneca": {"Absentee": "Mail", "Early": "Early In-Person", "Early Vote": "Early In-Person"},
+    # Greene (Enhanced Voting, Nov 2026): Polling / Polling Paper / Early
+    # Voting / Absentee / Provisional. Both "Polling" groups are ballots cast
+    # at the polling place on Election Day (paper = hand-counted/emergency).
+    "greene": {"Polling": "Election Day", "Polling Paper": "Election Day"},
+}
+
 METHOD_ORDER = [
     "Election Day", "Early In-Person", "Mail",
     "Absentee (early in-person + mail)", "Provisional", UNSPLIT,
@@ -233,6 +247,7 @@ def county_rows(county: str, path: Path) -> list[dict]:
         name = candidate_of(r, name_col)
         party = next(p for n, p in CANDIDATES.values() if n == name)
         mapping = {**METHOD_MAP, **EV_METHOD_MAP} if r.get("source_format") == "enhanced_voting" else METHOD_MAP
+        mapping = {**mapping, **COUNTY_METHOD_MAP.get(county.lower(), {})}
         for m in methods:
             votes = int(r[m] or 0)
             out.append({

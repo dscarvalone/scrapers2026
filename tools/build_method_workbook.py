@@ -51,7 +51,7 @@ LAST_VERIFIED = "2026-11-01"
 WORKBOOK = "OH_Senate_2026_vote_method.xlsx"
 # Counties scraped by the GitHub Actions workflow (its COUNTIES setting).
 # Hamilton moved to the local loop on 2026-11-02 (its host blocks the runners).
-ACTIONS = {"Cuyahoga", "Franklin", "Montgomery", "Summit", "Pickaway", "Hocking"}
+ACTIONS = {"Cuyahoga", "Franklin", "Montgomery", "Summit", "Pickaway", "Hocking", "Greene"}
 BUCKETS = ["eday", "evip", "vbm", "early", "provisional", "unassigned"]
 
 # --- sources tab --------------------------------------------------------
@@ -72,6 +72,9 @@ SCRAPED = {
     "Erie": ("Election Day→eday; Absentee→early*; Provisional→provisional", "", ""),
     "Franklin": ("Election Day→eday; Early Voting→evip; Absentee Ballots→vbm; Provisional→provisional", "",
                  "Absentee Ballots = mail (inferred: separate Early Voting column)"),
+    "Greene": ("Polling→eday; Polling Paper→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional", "",
+               "Polling Paper counted as Election Day (paper ballots at the polls). Added 2026-11-03: county posted "
+               "its Enhanced Voting link the night before"),
     "Hamilton": ("Election→eday; Early→early*", "", "No provisional column; Early not defined by county, kept combined"),
     "Hocking": ("Election Day→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional", "", ""),
     "Licking": ("Election Day→eday; Absentee Office→evip; Absentee Mail→vbm; Provisional→provisional", "", ""),
@@ -86,6 +89,8 @@ SCRAPED = {
     "Pickaway": ("Election Day→eday; In Office Absentee→evip; Mail Absentee→vbm; Provisional→provisional", "", ""),
     "Preble": ("Election Day→eday; Absentee Early→evip; Absentee Mail→vbm; Provisional→provisional",
                "Absentee Late", "Absentee Late goes to unassigned (likely late-arriving mail)"),
+    "Seneca": ("Election Day→eday; Early Vote→evip; Absentee→vbm; Provisional→provisional", "",
+               "Absentee = mail (inferred: separate Early Vote column). Added 2026-11-03 from its Nov 3 zero report"),
     "Stark": ("Election Day→eday; Early In Person→evip; Vote by Mail→vbm; Provisional→provisional", "", ""),
     "Summit": ("Polls→eday; Abs Walk-in→evip; Abs Mail→vbm; Provisional→provisional",
                "Timely Abs", "Timely Abs goes to unassigned (likely late-arriving mail)"),
@@ -110,6 +115,7 @@ SPLIT_EXPECTED = {
     "n/a_scraped": "Election night (scraper live)",
     "yes_election_night": "Election night (link not posted yet)",
     "yes_nov3_precinct_only": "Election night, precinct PDF only (parser not built)",
+    "yes_nov3_scanned": "Election night, but in a scanned PDF (OCR parser not built)",
     "likely_yes_election_night": "Election night, likely (past election-night reports split)",
     "official_canvass_only": "Official canvass, ~Nov 17-24",
     "confirmed_no": "Not expected",
@@ -120,6 +126,7 @@ NOV3_ACTION = {
     "n/a_scraped": "Monitor loop output",
     "yes_election_night": "Scraper picks up link automatically",
     "yes_nov3_precinct_only": "Build precinct-summing parser, or totals only",
+    "yes_nov3_scanned": "Read the scanned PDF by hand, or totals only",
     "likely_yes_election_night": "Recheck 8:30 + 9:30 PM (recheck_zero_reports --make-scrapers)",
     "official_canvass_only": "Recheck 8:30 + 9:30 PM; else wait for canvass",
     "confirmed_no": "None (totals only)",

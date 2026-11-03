@@ -28,12 +28,12 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 
 **Share of the expected statewide vote, by what we'll have:**
 
-- **Split by method, scraper live or waiting for a link:** 58.8% (23 counties)
-- **Maybe on election night (precinct PDF, likely, or unknown):** 8.7% (18 counties)
-- **Gap until the official canvass (~Nov 17-24):** 11.4% (20 counties)
-- **Gap with no split expected (totals only):** 21.1% (27 counties)
+- **Split by method, scraper live or waiting for a link:** 60.8% (25 counties)
+- **Maybe on election night (precinct or scanned PDF, likely, or unknown):** 9.1% (20 counties)
+- **Gap until the official canvass (~Nov 17-24):** 10.6% (17 counties)
+- **Gap with no split expected (totals only):** 19.5% (26 counties)
 
-**Before vs on Election Day (the split that matters most) covers every county:** directly from the vote-type split for the 58.8% above, and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release absentee and early ballots before any precinct, so a county's last report with 0 precincts in is its pre-Election-Day vote. The estimate fails for a county whose first report already includes precincts, and it needs the local loop running before the first results (~7:30 PM). Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).
+**Before vs on Election Day (the split that matters most) covers every county:** directly from the vote-type split for the 60.8% above, and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release absentee and early ballots before any precinct, so a county's last report with 0 precincts in is its pre-Election-Day vote. The estimate fails for a county whose first report already includes precincts, and it needs the local loop running before the first results (~7:30 PM). Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).
 
 | # | County | Expected votes | % of state | Cumulative % | Split on election night | Before / on Election Day | Source (runs in) | Gap |
 |---|---|---|---|---|---|---|---|---|
@@ -52,9 +52,9 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 13 | Clermont | 92,894 | 2.0% | 58.6% | Yes | Direct | Results PDF, local loop | Election-night file name unknown; scraper picks it from the results page (until then it reads the zero report). Check the loop log for 'parsing the zero report' after 7:30 PM |
 | 14 | Mahoning | 89,694 | 1.9% | 60.6% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
 | 15 | Medina | 87,360 | 1.9% | 62.4% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
-| 16 | Trumbull | 78,133 | 1.7% | 64.1% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
+| 16 | Trumbull | 78,133 | 1.7% | 64.1% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 17 | Licking | 75,053 | 1.6% | 65.7% | Yes | Direct | Results PDF, local loop | None |
-| 18 | Greene | 73,017 | 1.6% | 67.3% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
+| 18 | Greene | 73,017 | 1.6% | 67.3% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run |
 | 19 | Portage | 67,867 | 1.5% | 68.8% | **Unknown** | Estimate (first drop) | Statewide totals only | Nothing to check in advance; recheck on Nov 3. County-hosted site: the Nov 3 recheck is manual |
 | 20 | Fairfield | 67,377 | 1.5% | 70.2% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 21 | Wood | 56,125 | 1.2% | 71.4% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
@@ -62,7 +62,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 23 | Miami | 47,017 | 1.0% | 73.5% | Yes | Direct | Results PDF, local loop | Column order not yet verified on real votes |
 | 24 | Richland | 46,541 | 1.0% | 74.5% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 25 | Geauga | 46,030 | 1.0% | 75.5% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
-| 26 | Wayne | 41,839 | 0.9% | 76.4% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
+| 26 | Wayne | 41,839 | 0.9% | 76.4% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 27 | Columbiana | 36,494 | 0.8% | 77.2% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 28 | Allen | 35,682 | 0.8% | 78.0% | Yes, once posted | Direct | Results PDF, local loop | Scraper waits for the election-night PDF link; Early not split into in-person vs mail |
 | 29 | Ashtabula | 34,728 | 0.7% | 78.7% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
@@ -76,16 +76,16 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 37 | Washington | 24,812 | 0.5% | 83.7% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
 | 38 | Belmont | 24,122 | 0.5% | 84.2% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 39 | Sandusky | 23,767 | 0.5% | 84.8% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
-| 40 | Jefferson | 23,706 | 0.5% | 85.3% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
+| 40 | Jefferson | 23,706 | 0.5% | 85.3% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 41 | Pickaway | 23,345 | 0.5% | 85.8% | Yes | Direct | Enhanced Voting JSON API, Actions | None |
-| 42 | Scioto | 23,328 | 0.5% | 86.3% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
+| 42 | Scioto | 23,328 | 0.5% | 86.3% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 43 | Marion | 21,414 | 0.5% | 86.7% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
 | 44 | Ashland | 21,021 | 0.5% | 87.2% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 45 | Huron | 20,879 | 0.4% | 87.6% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 46 | Athens | 20,746 | 0.4% | 88.1% | Yes | Direct | Results PDF, local loop | None |
 | 47 | Darke | 20,678 | 0.4% | 88.5% | Likely | Estimate (first drop) | Statewide totals only | No scraper yet; the 8:30/9:30 PM recheck builds one if the Nov 3 file is split |
 | 48 | Lawrence | 20,430 | 0.4% | 89.0% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |
-| 49 | Seneca | 20,255 | 0.4% | 89.4% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
+| 49 | Seneca | 20,255 | 0.4% | 89.4% | Yes | Direct | Results PDF, local loop | None |
 | 50 | Auglaize | 19,981 | 0.4% | 89.8% | Likely | Estimate (first drop) | Statewide totals only | No scraper yet; the 8:30/9:30 PM recheck builds one if the Nov 3 file is split |
 | 51 | Ottawa | 19,963 | 0.4% | 90.3% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24. County-hosted site: the Nov 3 recheck is manual |
 | 52 | Shelby | 19,690 | 0.4% | 90.7% | **In precinct PDF only** | Estimate (first drop) | Statewide totals only | Split only in the precinct PDF; summing parser not built, so totals only for now |
@@ -112,9 +112,9 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 73 | Carroll | 10,566 | 0.2% | 97.5% | Yes | Direct | SOS-hosted ENR XML, local loop | None |
 | 74 | Hocking | 10,294 | 0.2% | 97.7% | Yes | Direct | Enhanced Voting JSON API, Actions | None |
 | 75 | Gallia | 9,985 | 0.2% | 97.9% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
-| 76 | Hardin | 9,959 | 0.2% | 98.1% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
+| 76 | Hardin | 9,959 | 0.2% | 98.1% | **In scanned PDF only** | Estimate (first drop) | Statewide totals only | Split is in a scanned (image) PDF; no OCR parser, so totals only unless read by hand |
 | 77 | Adams | 9,878 | 0.2% | 98.3% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
-| 78 | Fayette | 9,591 | 0.2% | 98.5% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
+| 78 | Fayette | 9,591 | 0.2% | 98.5% | **In scanned PDF only** | Estimate (first drop) | Statewide totals only | Split is in a scanned (image) PDF; no OCR parser, so totals only unless read by hand |
 | 79 | Holmes | 9,367 | 0.2% | 98.7% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 80 | Pike | 9,325 | 0.2% | 98.9% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 81 | Wyandot | 8,768 | 0.2% | 99.1% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes |

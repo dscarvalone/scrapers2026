@@ -1,0 +1,501 @@
+{
+ "results": {
+  "Auglaize": {
+   "url": "https://www.boe.ohio.gov/auglaize/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/auglaize/c/elecres/20261103results.pdf",
+   "lean": "likely_yes"
+  },
+  "Coshocton": {
+   "url": "https://www.boe.ohio.gov/coshocton/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/coshocton/c/elecres/20261103results.pdf",
+   "lean": "likely_yes"
+  },
+  "Darke": {
+   "url": "https://www.boe.ohio.gov/darke/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/darke/c/elecres/20261103results.pdf",
+   "lean": "likely_yes"
+  },
+  "Logan": {
+   "url": "https://www.boe.ohio.gov/logan/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/logan/c/elecres/20261103results.pdf",
+   "lean": "likely_yes"
+  },
+  "Tuscarawas": {
+   "url": "https://www.boe.ohio.gov/tuscarawas/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/tuscarawas/c/elecres/20261103results.pdf",
+   "lean": "likely_yes"
+  },
+  "Ashtabula": {
+   "url": "https://www.boe.ohio.gov/ashtabula/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (UTE 1-3-2029)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Summary Results Report', '2026 General Election', 'November 3, 2026', 'Unofficial Results', 'Ashtabula"
+   },
+   "lean": "possible"
+  },
+  "Belmont": {
+   "url": "https://www.boe.ohio.gov/belmont/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "Two numbers under 'Total' in row 'Times Cast 0 / 42,349 0.00%'",
+    "dominion": "Dominion header changed near the Senate race: ['0', 'Total Votes', '0', 'Total', 'Unresolved Write-In', '0', 'Total', 'Times Cast', '0', '/', '42,349'"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Champaign": {
+   "url": "https://www.boe.ohio.gov/champaign/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "United States Senator (Vote for 1)",
+   "cols": [
+    "precincts",
+    "reported",
+    "out",
+    "of"
+   ],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in",
+    "Total"
+   ],
+   "senate_votes": 0,
+   "status": "SPLIT",
+   "sum_ok": true,
+   "lean": "possible"
+  },
+  "Clinton": {
+   "url": "https://www.boe.ohio.gov/clinton/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "U.S. Senate (Vote for 1)",
+   "cols": [
+    "precincts",
+    "reported",
+    "out",
+    "of"
+   ],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in",
+    "Total"
+   ],
+   "senate_votes": 0,
+   "status": "SPLIT",
+   "sum_ok": true,
+   "lean": "possible"
+  },
+  "Fayette": {
+   "url": "https://www.boe.ohio.gov/fayette/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Geauga": {
+   "url": "https://www.boe.ohio.gov/geauga/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown - DEM",
+    "Jon Husted - REP",
+    "Greg Levy - OTHER",
+    "William B. Redpath - LIB",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['TOTAL', 'Jennifer Brunner -DEM 0', \"Colleen O'Donnell - REP 0\", 'Overvotes 0', 'Undervotes 0', 'Report"
+   },
+   "lean": "possible"
+  },
+  "Hardin": {
+   "url": "https://www.boe.ohio.gov/hardin/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Huron": {
+   "url": "https://www.boe.ohio.gov/huron/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/huron/c/elecres/20261103results.pdf",
+   "lean": "possible"
+  },
+  "Jackson": {
+   "url": "https://www.boe.ohio.gov/jackson/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Morgan": {
+   "url": "https://www.boe.ohio.gov/morgan/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (Unexpired term ending 1-3-2029)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['TOTAL', 'Vote For 1', 'For Justice of the Supreme Court', 'REP Daniel R. Hawkins 0', 'DEM Marilyn Zaya"
+   },
+   "lean": "possible"
+  },
+  "Noble": {
+   "url": "https://www.boe.ohio.gov/noble/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "U.S. Senator UTE 1-3-29",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "OP Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Dem Marilyn Zayas 0', 'Overvotes 0', 'Undervotes 0', 'Contest Totals 0', 'Justice of the Supreme Court"
+   },
+   "lean": "possible"
+  },
+  "Pike": {
+   "url": "https://www.boe.ohio.gov/pike/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Ross": {
+   "url": "https://www.boe.ohio.gov/ross/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "possible"
+  },
+  "Seneca": {
+   "url": "https://www.boe.ohio.gov/seneca/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "U.S. Senator UTE 1-3-29",
+   "cols": [
+    "Election Day",
+    "Absentee",
+    "Provisional",
+    "Early"
+   ],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "SPLIT",
+   "sum_ok": true,
+   "lean": "possible"
+  },
+  "Vinton": {
+   "url": "https://www.boe.ohio.gov/vinton/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/vinton/c/elecres/20261103results.pdf",
+   "lean": "possible"
+  },
+  "Harrison": {
+   "url": "https://www.boe.ohio.gov/harrison/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/harrison/c/elecres/20261103results.pdf",
+   "lean": "leaning_no"
+  },
+  "Jefferson": {
+   "url": "https://www.boe.ohio.gov/jefferson/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No TOTAL column under 'UNITED STATES SENATOR (Vote for 1)': []",
+    "dominion": "Dominion header changed near the Senate race: ['0', '0.00%', 'JUSTICE OF THE SUPREME COURT 1-2-2027 (Vote for 1)', 'Jennifer Brunner', '0', '0.00%', \""
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Lawrence": {
+   "url": "https://www.boe.ohio.gov/lawrence/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/lawrence/c/elecres/20261103results.pdf",
+   "lean": "leaning_no"
+  },
+  "Marion": {
+   "url": "https://www.boe.ohio.gov/marion/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Monroe": {
+   "url": "https://www.boe.ohio.gov/monroe/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "No U.S. Senate race in the report"
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Muskingum": {
+   "url": "https://www.boe.ohio.gov/muskingum/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "PDF has no usable text layer (scanned?)"
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Scioto": {
+   "url": "https://www.boe.ohio.gov/scioto/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "Two numbers under 'Total' in row 'Times Cast 0 / 42,744 0.00%'",
+    "dominion": "No U.S. Senate race in the report"
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Washington": {
+   "url": "https://www.boe.ohio.gov/washington/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/washington/c/elecres/20261103results.pdf",
+   "lean": "leaning_no"
+  },
+  "Wyandot": {
+   "url": "https://www.boe.ohio.gov/wyandot/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/wyandot/c/elecres/20261103results.pdf",
+   "lean": "leaning_no"
+  },
+  "Fulton": {
+   "url": "https://www.boe.ohio.gov/fulton/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/fulton/c/elecres/20261103results.pdf",
+   "lean": "no_evidence"
+  },
+  "Knox": {
+   "url": "https://www.boe.ohio.gov/knox/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/knox/c/elecres/20261103results.pdf",
+   "lean": "no_evidence"
+  },
+  "Perry": {
+   "url": "https://www.boe.ohio.gov/perry/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/perry/c/elecres/20261103results.pdf",
+   "lean": "no_evidence"
+  },
+  "Columbiana": {
+   "url": "https://www.boe.ohio.gov/columbiana/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/columbiana/c/elecres/20261103results.pdf",
+   "lean": ""
+  },
+  "Greene": {
+   "url": "https://www.boe.ohio.gov/greene/c/elecres/20261103results.pdf",
+   "status": "no_file",
+   "detail": "404 for https://www.boe.ohio.gov/greene/c/elecres/20261103results.pdf",
+   "lean": ""
+  },
+  "Highland": {
+   "url": "https://www.boe.ohio.gov/highland/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "No U.S. Senate race in the report"
+   },
+   "status": "unparsed",
+   "lean": ""
+  },
+  "Medina": {
+   "url": "https://www.boe.ohio.gov/medina/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "U.S. Senator (UTE 1-3-29)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['REP Daniel R. Hawkins 0', 'DEM Marilyn Zayas 0', 'ZERO REPORT - 09/18/2026 04:08PM  8Page 1 of', 'Nove"
+   },
+   "lean": ""
+  },
+  "Putnam": {
+   "url": "https://www.boe.ohio.gov/putnam/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (UTE 1-3-2029)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Dem Marilyn Zayas 0', 'Overvotes 0', 'Undervotes 0', 'Precincts Reporting 0 of 25', 'For Justice of th"
+   },
+   "lean": ""
+  },
+  "Shelby": {
+   "url": "https://www.boe.ohio.gov/shelby/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (UTE 1-3-29)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Undervotes 0', 'Precincts Reporting 0 of 36', 'TOTAL', 'Vote For 1', 'For Justice of the Supreme Court"
+   },
+   "lean": ""
+  }
+ },
+ "manual": [
+  {
+   "county": "Ottawa",
+   "boe_url": "https://boe.ottawa.oh.gov",
+   "lean": "possible",
+   "sos": false
+  },
+  {
+   "county": "Sandusky",
+   "boe_url": "https://sanduskycountyoh.gov/index.php?page=board-of-elections",
+   "lean": "possible",
+   "sos": false
+  },
+  {
+   "county": "Crawford",
+   "boe_url": "https://crawfordcountyohioboe.gov/",
+   "lean": "leaning_no",
+   "sos": false
+  },
+  {
+   "county": "Guernsey",
+   "boe_url": "https://boe.guernseycounty.gov/",
+   "lean": "leaning_no",
+   "sos": false
+  },
+  {
+   "county": "Hancock",
+   "boe_url": "https://hancockcountyohioelections.gov/",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Henry",
+   "boe_url": "https://henrycountyohio.gov/231/Board-of-Elections",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Mercer",
+   "boe_url": "https://elections.mercercountyohio.gov/",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Morrow",
+   "boe_url": "https://boe.morrowcountyohio.gov",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Union",
+   "boe_url": "https://www.unioncountyohio.gov/board-of-elections",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Williams",
+   "boe_url": "https://www.williamscountyoh.gov/150/Board-of-Elections",
+   "lean": "no_evidence",
+   "sos": false
+  },
+  {
+   "county": "Delaware",
+   "boe_url": "https://vote.delawarecountyohio.gov/",
+   "lean": "",
+   "sos": false
+  },
+  {
+   "county": "Lake",
+   "boe_url": "https://www.lakecountyohio.gov/lakeelections",
+   "lean": "",
+   "sos": false
+  },
+  {
+   "county": "Lorain",
+   "boe_url": "https://www.voteloraincountyohio.gov/",
+   "lean": "",
+   "sos": false
+  },
+  {
+   "county": "Mahoning",
+   "boe_url": "https://vote.mahoningcountyoh.gov",
+   "lean": "",
+   "sos": false
+  },
+  {
+   "county": "Portage",
+   "boe_url": "https://www.portagecounty-oh.gov/board-elections",
+   "lean": "",
+   "sos": false
+  }
+ ]
+}

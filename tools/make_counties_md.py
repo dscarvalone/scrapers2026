@@ -21,6 +21,7 @@ GROUPS = [
     ("n/a_scraped", "Itemized by vote method, scraper live"),
     ("yes_election_night", "Itemized, scraper waiting for the election-night link"),
     ("yes_nov3_precinct_only", "Split exists on election night, only in a precinct PDF (not scraped)"),
+    ("yes_nov3_scanned", "Split exists on election night, but in a scanned PDF (not scraped)"),
     ("likely_yes_election_night", "Likely split on election night (past election-night reports were)"),
     ("official_canvass_only", "Split only in the official canvass (~Nov 17-24), or only in some elections"),
     ("confirmed_no", "Totals only, confirmed (Nov 3 zero report and past reports)"),
@@ -58,6 +59,7 @@ STATUS = {
     "n/a_scraped": "Yes",
     "yes_election_night": "Yes, once posted",
     "yes_nov3_precinct_only": "In precinct PDF only",
+    "yes_nov3_scanned": "In scanned PDF only",
     "likely_yes_election_night": "Likely",
     "official_canvass_only": "No (canvass only)",
     "confirmed_no": "No",
@@ -67,6 +69,7 @@ STATUS = {
 GAP = {
     "yes_election_night": "Scraper waits for the election-night PDF link",
     "yes_nov3_precinct_only": "Split only in the precinct PDF; summing parser not built, so totals only for now",
+    "yes_nov3_scanned": "Split is in a scanned (image) PDF; no OCR parser, so totals only unless read by hand",
     "likely_yes_election_night": "No scraper yet; the 8:30/9:30 PM recheck builds one if the Nov 3 file is split",
     "official_canvass_only": "Totals only on election night; split expected in the official canvass ~Nov 17-24",
     "confirmed_no": "No split published; totals only",
@@ -107,9 +110,9 @@ def readme_summary(rows: list[dict]) -> str:
            f"- **Split by method, scraper live or waiting for a link:** "
            f"{share({'n/a_scraped', 'yes_election_night'}):.1f}% "
            f"({sum(r['history_split'] in ('n/a_scraped', 'yes_election_night') for r in rows)} counties)",
-           f"- **Maybe on election night (precinct PDF, likely, or unknown):** "
-           f"{share({'yes_nov3_precinct_only', 'likely_yes_election_night', 'no_history_found'}):.1f}% "
-           f"({sum(r['history_split'] in ('yes_nov3_precinct_only', 'likely_yes_election_night', 'no_history_found') for r in rows)} counties)",
+           f"- **Maybe on election night (precinct or scanned PDF, likely, or unknown):** "
+           f"{share({'yes_nov3_precinct_only', 'yes_nov3_scanned', 'likely_yes_election_night', 'no_history_found'}):.1f}% "
+           f"({sum(r['history_split'] in ('yes_nov3_precinct_only', 'yes_nov3_scanned', 'likely_yes_election_night', 'no_history_found') for r in rows)} counties)",
            f"- **Gap until the official canvass (~Nov 17-24):** {share({'official_canvass_only'}):.1f}% "
            f"({sum(r['history_split'] == 'official_canvass_only' for r in rows)} counties)",
            f"- **Gap with no split expected (totals only):** {share({'confirmed_no', 'likely_no'}):.1f}% "
@@ -148,7 +151,7 @@ def readme_summary(rows: list[dict]) -> str:
             if r["boe_host"] == "county" and hs not in ("confirmed_no",):
                 gap += ". County-hosted site: the Nov 3 recheck is manual"
         status = STATUS[hs]
-        if status.startswith("No") or status == "Unknown" or status == "In precinct PDF only":
+        if status.startswith("No") or status == "Unknown" or status in ("In precinct PDF only", "In scanned PDF only"):
             status = f"**{status}**"
         timing_col = "Direct" if c in SCRAPED else "Estimate (first drop)"
         out.append(f"| {i} | {c} | {v:,} | {100 * v / total:.1f}% | {cum:.1f}% | {status} | {timing_col} | {src} | {gap} |")

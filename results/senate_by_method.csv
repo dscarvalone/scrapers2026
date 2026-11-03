@@ -164,6 +164,31 @@ Franklin,Write-in,,Early In-Person,Early Voting,0,0,889,county_feed,2026-10-26T1
 Franklin,Write-in,,Mail,Absentee Ballots,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
 Franklin,Write-in,,Election Day,Election Day,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
 Franklin,Write-in,,Provisional,Provisional,0,0,889,county_feed,2026-10-26T10:59:29.402-04:00
+Greene,Sherrod Brown,Democratic,Election Day,Polling,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Sherrod Brown,Democratic,Election Day,Polling Paper,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Sherrod Brown,Democratic,Mail,Absentee,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Sherrod Brown,Democratic,Provisional,Provisional,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,Election Day,Polling,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,Election Day,Polling Paper,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,Early In-Person,Early Voting,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,Mail,Absentee,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Jon Husted,Republican,Provisional,Provisional,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,Election Day,Polling,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,Election Day,Polling Paper,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,Early In-Person,Early Voting,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,Mail,Absentee,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Greg Levy,Other-party,Provisional,Provisional,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,Election Day,Polling,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,Election Day,Polling Paper,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,Early In-Person,Early Voting,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,Mail,Absentee,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,William B. Redpath,Libertarian,Provisional,Provisional,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,Election Day,Polling,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,Election Day,Polling Paper,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,Early In-Person,Early Voting,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,Mail,Absentee,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
+Greene,Write-in,,Provisional,Provisional,0,0,151,county_feed,2026-11-02T22:27:39.2660296Z
 Hamilton,Sherrod Brown,Democratic,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
 Hamilton,Sherrod Brown,Democratic,Absentee (early in-person + mail),Early,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
 Hamilton,Jon Husted,Republican,Election Day,Election,0,0,563,county_feed,10/22/2026 5:07:37 PM EDT
@@ -365,6 +390,26 @@ Preble,Write-in,,Early In-Person,Absentee Early,0,,,county_feed,pdf-sha1:f784191
 Preble,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:f784191712f5
 Preble,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:f784191712f5
 Preble,Write-in,,Absentee Late,Absentee Late,0,,,county_feed,pdf-sha1:f784191712f5
+Seneca,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Sherrod Brown,Democratic,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Sherrod Brown,Democratic,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Jon Husted,Republican,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Jon Husted,Republican,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Jon Husted,Republican,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Greg Levy,Other-party,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Greg Levy,Other-party,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Greg Levy,Other-party,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,William B. Redpath,Libertarian,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,William B. Redpath,Libertarian,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,William B. Redpath,Libertarian,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Write-in,,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
+Seneca,Write-in,,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
 Stark,Sherrod Brown,Democratic,Early In-Person,Early In Person,0,0,274,county_feed,2026-10-23T10:07:03.530-04:00
 Stark,Sherrod Brown,Democratic,Mail,Vote by Mail,0,0,274,county_feed,2026-10-23T10:07:03.530-04:00
 Stark,Sherrod Brown,Democratic,Election Day,Election Day,0,0,274,county_feed,2026-10-23T10:07:03.530-04:00
@@ -550,11 +595,6 @@ Geauga,Jon Husted,Republican,Not split by method,(statewide total),0,0,79,sos_st
 Geauga,Greg Levy,Other-party,Not split by method,(statewide total),0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
 Geauga,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
 Geauga,Write-in,,Not split by method,(statewide total),0,0,79,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Jon Husted,Republican,Not split by method,(statewide total),0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Greg Levy,Other-party,Not split by method,(statewide total),0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
-Greene,Write-in,,Not split by method,(statewide total),0,0,151,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Jon Husted,Republican,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
 Guernsey,Greg Levy,Other-party,Not split by method,(statewide total),0,0,35,sos_statewide,2026-11-01T22:14:23+00:00
@@ -725,11 +765,6 @@ Scioto,Jon Husted,Republican,Not split by method,(statewide total),0,0,77,sos_st
 Scioto,Greg Levy,Other-party,Not split by method,(statewide total),0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
 Scioto,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
 Scioto,Write-in,,Not split by method,(statewide total),0,0,77,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Jon Husted,Republican,Not split by method,(statewide total),0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Greg Levy,Other-party,Not split by method,(statewide total),0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,William B. Redpath,Libertarian,Not split by method,(statewide total),0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
-Seneca,Write-in,,Not split by method,(statewide total),0,0,51,sos_statewide,2026-11-01T22:14:23+00:00
 Shelby,Sherrod Brown,Democratic,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Shelby,Jon Husted,Republican,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00
 Shelby,Greg Levy,Other-party,Not split by method,(statewide total),0,0,36,sos_statewide,2026-11-01T22:14:23+00:00

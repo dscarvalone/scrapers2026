@@ -24,7 +24,7 @@ env:
   # hamilton is NOT listed either: its Clarity host (CloudFront) returned an
   # empty current_ver.txt to the runner on the manual run of 2026-11-02, so it
   # runs in tools/local_loop.sh instead.
-  COUNTIES: "cuyahoga franklin montgomery summit pickaway hocking"
+  COUNTIES: "cuyahoga franklin montgomery summit pickaway hocking greene"
 
 jobs:
   scrape:

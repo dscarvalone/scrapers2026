@@ -8,13 +8,14 @@ in-person, mail, provisional). Every county has **totals** from the SOS statewid
 
 | Group | Counties |
 |---|---|
-| Itemized by vote method, scraper live | 22 |
+| Itemized by vote method, scraper live | 24 |
 | Itemized, scraper waiting for the election-night link | 1 |
 | Split exists on election night, only in a precinct PDF (not scraped) | 3 |
+| Split exists on election night, but in a scanned PDF (not scraped) | 2 |
 | Likely split on election night (past election-night reports were) | 5 |
-| Split only in the official canvass (~Nov 17-24), or only in some elections | 20 |
-| Totals only, confirmed (Nov 3 zero report and past reports) | 9 |
-| Totals only, likely (no past report was split) | 18 |
+| Split only in the official canvass (~Nov 17-24), or only in some elections | 17 |
+| Totals only, confirmed (Nov 3 zero report and past reports) | 13 |
+| Totals only, likely (no past report was split) | 13 |
 | Unknown (no past results found to check) | 10 |
 
 Column meanings: **Source** is where the split comes from; **Runs in** is where its scraper runs
@@ -24,7 +25,7 @@ mapping (eday, evip = early in-person, vbm = mail, provisional; `early*` = the c
 only a combined early/absentee number); **Evidence** is the basis for the verdict, with the
 underlying document URLs in `tools/past_reports.json` and `tools/survey60_verdicts.json`.
 
-## Itemized by vote method, scraper live (22)
+## Itemized by vote method, scraper live (24)
 
 Expected: Election night (scraper live). Nov 3: Monitor loop output.
 
@@ -38,6 +39,7 @@ Expected: Election night (scraper live). Nov 3: Monitor loop output.
 | Cuyahoga | 39035 | Enhanced Voting Excel export | GitHub Actions | Election Day→eday; Early In-Person→evip; Vote By Mail→vbm; Provisional→provisional | Unassigned: Post Election Day; Post VBM; Post* columns go to unassigned pending county definition | [counties/cuyahoga/](counties/cuyahoga/) |
 | Erie | 39043 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee→early*; Provisional→provisional |  | [counties/erie/](counties/erie/) |
 | Franklin | 39049 | County-hosted ENR XML | GitHub Actions | Election Day→eday; Early Voting→evip; Absentee Ballots→vbm; Provisional→provisional | Absentee Ballots = mail (inferred: separate Early Voting column) | [counties/franklin/](counties/franklin/) |
+| Greene | 39057 | Enhanced Voting JSON API | GitHub Actions | Polling→eday; Polling Paper→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional | Polling Paper counted as Election Day (paper ballots at the polls). Added 2026-11-03: county posted its Enhanced Voting link the night before | [counties/greene/](counties/greene/) |
 | Hamilton | 39061 | Clarity detail XML | Local loop (Chrome) | Election→eday; Early→early* | No provisional column; Early not defined by county, kept combined | [counties/hamilton/](counties/hamilton/) |
 | Hocking | 39073 | Enhanced Voting JSON API | GitHub Actions | Election Day→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional |  | [counties/hocking/](counties/hocking/) |
 | Licking | 39089 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee Office→evip; Absentee Mail→vbm; Provisional→provisional |  | [counties/licking/](counties/licking/) |
@@ -48,6 +50,7 @@ Expected: Election night (scraper live). Nov 3: Monitor loop output.
 | Paulding | 39125 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee→early*; Provisional→provisional |  | [counties/paulding/](counties/paulding/) |
 | Pickaway | 39129 | Enhanced Voting JSON API | GitHub Actions | Election Day→eday; In Office Absentee→evip; Mail Absentee→vbm; Provisional→provisional |  | [counties/pickaway/](counties/pickaway/) |
 | Preble | 39135 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Absentee Early→evip; Absentee Mail→vbm; Provisional→provisional | Unassigned: Absentee Late; Absentee Late goes to unassigned (likely late-arriving mail) | [counties/preble/](counties/preble/) |
+| Seneca | 39147 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Early Vote→evip; Absentee→vbm; Provisional→provisional | Absentee = mail (inferred: separate Early Vote column). Added 2026-11-03 from its Nov 3 zero report | [counties/seneca/](counties/seneca/) |
 | Stark | 39151 | SOS-hosted ENR XML (liveresults.boe.ohio.gov) | Local loop (Chrome) | Election Day→eday; Early In Person→evip; Vote by Mail→vbm; Provisional→provisional |  | [counties/stark/](counties/stark/) |
 | Summit | 39153 | Enhanced Voting JSON API | GitHub Actions | Polls→eday; Abs Walk-in→evip; Abs Mail→vbm; Provisional→provisional | Unassigned: Timely Abs; Timely Abs goes to unassigned (likely late-arriving mail) | [counties/summit/](counties/summit/) |
 | Van Wert | 39161 | Results PDF (positional parser) | Local loop (Chrome) | Election Day→eday; Early Voting→evip; Absentee Mail→vbm; Provisional→provisional |  | [counties/van_wert/](counties/van_wert/) |
@@ -71,6 +74,15 @@ Expected: Election night, precinct PDF only (parser not built). Nov 3: Build pre
 | Putnam | 39137 | Election Day→eday; Absentee→early*; Provisional→provisional (precinct PDF) | https://www.boe.ohio.gov/putnam | Nov 3 2026 Precinct Detail zero report (includes Senate/Husted): 'For Attorney General Vote For 1 TOTAL VOTE % Election Day Absentee Provisional Rep Keith Faber 0 0 0 0'. Same header on every contest. The cumulative 20261103results.pdf is total-only. |
 | Shelby | 39149 | Election Day→eday; In-Office→evip; Mail→vbm; Prov→provisional (precinct PDF) | https://www.boe.ohio.gov/shelby | For Attorney General Vote For 1 TOTAL VOTE % Election Day In-Office Mail Prov Rep Keith Faber 0 0 0 0 0 (precinct-detail zero report split; cumulative zero report is total-only; May 2026 results split the same way) |
 
+## Split exists on election night, but in a scanned PDF (not scraped) (2)
+
+Expected: Election night, but in a scanned PDF (OCR parser not built). Nov 3: Read the scanned PDF by hand, or totals only.
+
+| County | FIPS | Expected buckets | Results page | Evidence |
+|---|---|---|---|---|
+| Fayette | 39047 |  | https://www.boe.ohio.gov/fayette/ | Nov 3 2026 zero report (20261103results.pdf, scanned, read by OCR 2026-11-03): Senate block TOTAL / Election Day / Absentee In Office / Absentee Mail / Provisional. No text layer, so not scraped. |
+| Hardin | 39065 |  | https://www.boe.ohio.gov/hardin/ | Nov 3 2026 zero report (20261103results.pdf, scanned, read by OCR 2026-11-03): Senate block Election Day / Absentee by Mail / Provisional / Absentee ICX / Total. No text layer, so not scraped. |
+
 ## Likely split on election night (past election-night reports were) (5)
 
 Expected: Election night, likely (past election-night reports split). Nov 3: Recheck 8:30 + 9:30 PM (recheck_zero_reports --make-scrapers).
@@ -83,34 +95,31 @@ Expected: Election night, likely (past election-night reports split). Nov 3: Rec
 | Logan | 39091 | Election Day→eday; Early In-Person→evip; Absentee→vbm; Provisional→provisional; 17 Year Old unmapped | https://www.boe.ohio.gov/logan/ | May 2025 Results Report: 'Election Day 17 Year OldAbsenteeTOTAL Early In-Person Provisional / Silas Augsburger 71 33 34 2 2 0'; May 2026/Nov 2025 Official Canvass also split. Nov 3 2026 results.pdf linked but not parsed |
 | Tuscarawas | 39157 | Election Day→eday; Absentee→early*; Provisional→provisional; ED Central Count, Absentee after ED unmapped | https://www.boe.ohio.gov/tuscarawas/ | Nov 4 2025 'General Election' results: 'ED Central Count Provisional Absentee Election Day TOTAL Absentee after ED / REP Justin David Perkowski 1,813 1,387 410 11 0 5'. May 2026 report total-only. Nov 3 2026 results.pdf 404. |
 
-## Split only in the official canvass (~Nov 17-24), or only in some elections (20)
+## Split only in the official canvass (~Nov 17-24), or only in some elections (17)
 
 Expected: Official canvass, ~Nov 17-24. Nov 3: Recheck 8:30 + 9:30 PM; else wait for canvass.
 
 | County | FIPS | Expected buckets | Results page | Evidence |
 |---|---|---|---|---|
-| Ashtabula | 39007 |  | https://www.boe.ohio.gov/ashtabula/ | Nov 3 2026 zero report (20261103results.pdf, 'Unofficial Results') is TOTAL VOTE % only; May 2026 official: 'Provisional Absentee Early Voting Election Day TOTAL ... Amy Acton 5,202 4,016 751 414 20'. Nov 2025/May 2025 official total-only. |
-| Belmont | 39013 |  | https://www.boe.ohio.gov/belmont/ | Nov 3 2026 zero report (20261103results.pdf) is total-only: 'Candidate / Party / Total / Keith Faber / REP / 0'. May 5 2026 report (dated 5/14/2026) split: 'Candidate / Party / Election Day / Absentee / Provisional / Total / For the Tax Levy / 848 / 619'. Nov 4 2025 and May 6 2025 reports total-only. |
-| Champaign | 39021 |  | https://www.boe.ohio.gov/champaign/ | Nov 2025: 'Mary Ann Collier / 1018 / 58.64% / 50 / 692 / 272 / 4' under EV/PR headers; but Nov 3 2026 zero report and May 2025/May 2026 results are Votes/Vote% only |
-| Clinton | 39027 |  | https://www.boe.ohio.gov/clinton/ | Nov 3 2026 'Unofficial Canvass Summary Report - Zero Report' is 'Choice Votes ... Total 0' only; past results: 'Choice Votes AB ED EV PR ... YES 2020 60 1503 445 12' (May 2025; also May 2026, Nov 2025). |
+| Ashtabula | 39007 |  | https://www.boe.ohio.gov/ashtabula/ | Nov 3 2026 unofficial zero report Senate block TOTAL only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
+| Belmont | 39013 |  | https://www.boe.ohio.gov/belmont/ | Nov 3 2026 zero report Senate block Candidate / Party / Total only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
+| Champaign | 39021 |  | https://www.boe.ohio.gov/champaign/ | Nov 3 2026 zero report Senate block Votes / Vote % only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
+| Clinton | 39027 |  | https://www.boe.ohio.gov/clinton/ | Nov 3 2026 zero report Senate block total only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
 | Columbiana | 39029 | Election Day→eday; In Office→evip; Absentee→vbm; Provisional→provisional | https://www.columbiana.boe.ohio.gov/ | Nov 2025 and May 2025 official Election-Summary-Group-Detail split Election Day / Absentee / In Office / Provisional; May 2026 summary TOTAL only. |
-| Fayette | 39047 |  | https://www.boe.ohio.gov/fayette/ | Nov 3 2026 results.pdf returns 200 but no extractable text (likely image PDF). May 2025 Official Canvass: 'TOTAL VOTE % Election Day / Absentee In Office / Absentee Mail / Provisional / Yes 727 ... 521 151 55 0'. |
-| Geauga | 39055 |  | https://www.boe.ohio.gov/geauga/ | Only OFFICIAL 'Results by Groups' split: 'Election Day Provisional Mail In Absentee In Office Absentee 4 Day Absentee ... Christopher Grau 738 474 159 104 1 0'. Standard results.pdf total-only. Nov 3 2026 results.pdf 404; Nov 3 2026 Results by Groups is an empty 35-char placeholder. |
-| Hardin | 39065 |  | https://www.boe.ohio.gov/hardin/ | Nov 3 2026 results.pdf 200 but no extractable text. May 2025 (5/15/2025 report): 'Candidate Party Election Day Absentee by Mail Provisional Absentee ICX Total'. Nov 2025 report (Precincts Reported 0 of 4) total-only. |
+| Geauga | 39055 |  | https://www.boe.ohio.gov/geauga/ | Nov 3 2026 zero report Senate block TOTAL only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
 | Huron | 39077 |  | https://www.huron.boe.ohio.gov | No Nov 3 2026 results doc yet. May 2026 OFFICIAL: 'EV / PR ... Amy Acton and David Pepper / 2113 / 100.00% / 181 / 1356 / 569 / 7'. Unofficial canvass PDFs had no extractable text; May 2025 official total-only. |
-| Jackson | 39079 |  | https://www.boe.ohio.gov/jackson/ | Nov 3 2026 zero report (image PDF, OCR) total-only: 'US SENATE UNEXPIRED TERM... Sherrod Brown 0 0.00%'. But Nov 4 2025 amended official: 'Votes Vote % AB ED EV PR / Daniel D. Fulks 532 100.00% 23 289 213'. May 2026 official total-only |
+| Jackson | 39079 |  | https://www.boe.ohio.gov/jackson/ | Nov 3 2026 zero report (scanned, OCR 2026-11-03): Statement of Votes Cast, Votes / Vote % only. Past official canvasses were split, so the split is expected only in the canvass. |
 | Lake | 39085 | Election Day (+Paper)→eday; Early Vote→evip; ABS By Mail→vbm; Provisional→provisional | https://www.lakecountyohio.gov/boe/election-results/ | Official Group Detail canvass split every election checked (May 2025, Nov 2025, May 2026; 2024 general): Election Day / Election Day Paper / ABS By Mail / Early Vote / Provisional. Election-night summary format not found. |
-| Medina | 39103 | Election Day→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional | https://www.boe.ohio.gov/medina | May 2026 official canvass (scanned PDF, read by eye) split Absentee / Early Voting / Election Day / Provisional. Nov 3 2026 zero report is TOTAL only. |
-| Morgan | 39115 |  | https://www.boe.ohio.gov/morgan/ | May 2025 (dated 05/14/2025): 'TOTAL Election Day AbsenteeProvisional / YES 603 386 210 7'; but Nov 3 2026 zero report ('DEM Amy Acton and 0'), May 2026 and Nov 2025 are total-only |
-| Noble | 39121 |  | https://www.boe.ohio.gov/noble/ | All Results ... TOTAL VOTE % Election Day / Absentee Provisional / Isaac Antill 181 16.05% / 113 66 2 (Nov 2025 & May 2025 split; but Nov 3 2026 zero report and May 2026 official canvass are total-only) |
+| Medina | 39103 | Election Day→eday; Early Voting→evip; Absentee→vbm; Provisional→provisional | https://www.boe.ohio.gov/medina | Nov 3 2026 zero report Senate block TOTAL only (2026-11-03 recheck); its split appears only in the official canvass. Past official canvasses were split, so the split is expected only in the canvass. |
+| Morgan | 39115 |  | https://www.boe.ohio.gov/morgan/ | Nov 3 2026 zero report Senate block TOTAL only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
+| Noble | 39121 |  | https://www.boe.ohio.gov/noble/ | Nov 3 2026 zero report Senate block TOTAL only (2026-11-03 recheck). Past official canvasses were split, so the split is expected only in the canvass. |
 | Ottawa | 39123 |  | https://boe.ottawa.oh.gov | Official Canvass group-detail split: 'TOTAL VOTE % Election Day / Absentee Provisional ... Contest Totals 741 557 178 6'. Plain official summaries total-only. No Nov 3 2026 doc on current-results page. |
-| Pike | 39131 |  | https://www.boe.ohio.gov/pike/ | Nov 3 2026 zero report (OCR) total-only: 'U.S. Senator (Vote for 1) Sherrod Brown 0 / Jon Husted 0'. Nov 2025: 'EV / PR ... Jennifer Chandler / 128 / 21.59% / 3 / 100 / 24 / 1' and May 2025 split; May 2026 total-only |
+| Pike | 39131 |  | https://www.boe.ohio.gov/pike/ | Nov 3 2026 zero report (scanned, OCR 2026-11-03): Statement of Votes Cast, Choice / Votes only. Past official canvasses were split, so the split is expected only in the canvass. |
 | Ross | 39141 |  | https://www.boe.ohio.gov/ross/ | No Nov 3 2026 doc readable. OFFICIAL May 2026: 'Provisional Absentee Election Day TOTAL / Amy Acton and David Pepper 3,151 1,996 1,138 17'; Nov 2025 official also split. |
 | Sandusky | 39143 |  | https://sanduskycountyoh.gov/index.php?page=board-of-elections | Nov 2025 Official Results: 'Election Day Absentee TOTAL In Office Provisional / Rep Ronald Smith 530 463 26 40 1'; no Nov 3 2026 results doc posted yet |
-| Seneca | 39147 |  | https://www.boe.ohio.gov/seneca/ | May 2026 Official Canvass: 'Election Day Provisional TOTAL Absentee Early Vote / Amy Acton and David Pepper 2,162 1,522 162 13 465'; Nov 2025 'All Results' also split (ED/Absentee/Provisional); May 2025 total-only; Nov 3 2026 results.pdf 404 |
 | Vinton | 39163 |  | https://www.boe.ohio.gov/vinton/ | No Nov 3 2026 doc (404). Nov 2025: 'TOTAL VOTE % In Person Early Vote Election Day Absentee Provisional / Michael L. Claar 47 49.47% 4 41 2 0'. |
 
-## Totals only, confirmed (Nov 3 zero report and past reports) (9)
+## Totals only, confirmed (Nov 3 zero report and past reports) (13)
 
 Expected: Not expected. Nov 3: None (totals only).
 
@@ -123,10 +132,14 @@ Expected: Not expected. Nov 3: None (totals only).
 | Fairfield | 39045 |  | https://www.boe.ohio.gov/fairfield |  |
 | Gallia | 39053 |  | https://www.boe.ohio.gov/gallia | Choice Votes Vote % All Precincts Governor ... Amy Acton and David Pepper 0 0.00% (zero report total-only; May 2026 report also Votes/Vote% only) |
 | Holmes | 39075 |  | https://www.boe.ohio.gov/holmes | Nov 3 Training PROOF: 'Amy Acton and David Pepper (D) 0 0%'; May 2026 'McColley 1,886 75.68%' and Nov 2025 also total-only |
+| Jefferson | 39081 |  | https://www.boe.ohio.gov/jefferson/ | Nov 3 2026 zero report Senate block Votes / Vote % only (2026-11-03 recheck). |
 | Meigs | 39105 |  | https://www.boe.ohio.gov/meigs/ | Governor and Lieutenant Governor ... Amy Acton and David Pepper (D) 0 0% ... 0Total Votes (total-only; May 2026 and Nov 2025 also total-only). NOTE: posted zero report is headed 'Holmes County ... TRAINING PROOF'. |
 | Richland | 39139 |  | https://www.boe.ohio.gov/richland/ |  |
+| Scioto | 39145 |  | https://www.boe.ohio.gov/scioto/ | Nov 3 2026 zero report Senate block Candidate / Party / Total only (2026-11-03 recheck). |
+| Trumbull | 39155 |  | https://boe.co.trumbull.oh.gov/ | Nov 3 2026 Election Summary.pdf Senate block TOTAL VOTE % only (rechecked 2026-11-02). |
+| Wayne | 39169 |  | https://www.WayneCountyOH.gov | Nov 3 2026 zero report (wp-content/uploads/2026/11/Gen-26-Summary-Zero-Report.pdf) Senate block Candidate / Party / Total only (checked 2026-11-02). |
 
-## Totals only, likely (no past report was split) (18)
+## Totals only, likely (no past report was split) (13)
 
 Expected: Not expected. Nov 3: Recheck 8:30 + 9:30 PM in case format changed.
 
@@ -134,20 +147,15 @@ Expected: Not expected. Nov 3: Recheck 8:30 + 9:30 PM in case format changed.
 |---|---|---|---|---|
 | Crawford | 39033 |  | https://crawfordcountyohioboe.gov/ | UNOFFICIAL RESULTS ... Governor and Lieutenant Governor / Vote For 1 / TOTAL VOTE % / Amy Acton and David Pepper 1,244 100.00% (all past unofficial/official reports total-only; no Nov 3 2026 results doc, only FWAB notices) |
 | Delaware | 39041 |  | https://vote.delawarecountyohio.gov/ | Nov 2025 official summary (scanned, read by eye) total-only; May 2026 Number Key Canvass is by precinct with no vote-type split. |
-| Greene | 39057 |  | https://www.boe.ohio.gov/greene/ | Nov 2025 FINAL official canvass 'Group Detail Report' (scanned, read by eye): counting groups in turnout only, contests Total only. May 2026 TOTAL only. |
 | Guernsey | 39059 |  | https://boe.guernseycounty.gov/ | Unofficial Nov 2025 summary 'Candidate / Party / Total / Michael A. Sikora / DEM / 510'; county posts a separate absentee-only unofficial report, not columns. No Nov 3 2026 result doc yet. |
 | Harrison | 39067 |  | https://www.boe.ohio.gov/harrison/ | May 2026: 'Candidate / Party / Total / YES / 228 / NO / 114'; Nov 2025 likewise total-only; Nov 3 2026 results.pdf 404 |
-| Jefferson | 39081 |  | https://www.boe.ohio.gov/jefferson/ | Unofficial Canvass Zero Report ... GOVERNOR (Vote for 1) Amy Acton and David Pepper 0 0.00% (total-only; May 2026 and Nov 2025 also total-only, but May 2025 cumulative was split with EV/PR columns) |
 | Lawrence | 39087 |  | https://www.boe.ohio.gov/lawrence/ | Nov 3 2026 results/precinct PDFs linked but return 404. Past official reports 'TOTAL VOTE % / Bob Cleary 1,016 15.02%' total-only. |
 | Lorain | 39093 |  | https://www.voteloraincountyohio.gov/elections-results-search | Nov 2025 and May 2026 official Summary Reports TOTAL only; precinct canvass has no vote-type columns. |
 | Mahoning | 39099 |  | https://vote.mahoningcountyoh.gov | May 2026 'Final Unofficial with Write-ins' summary TOTAL only. |
 | Marion | 39101 |  | https://www.boe.ohio.gov/marion | Nov 3 2026 zero report (image PDF, OCR), Election Summary format: 'U.S. Senate (UTE 1-3-2029) ... Total Votes 0 / Sherrod Brown (D) 0 / Jon Husted (R) 0 0%' total-only; past reports are image PDFs, not checked |
 | Monroe | 39111 |  | https://www.boe.ohio.gov/monroe/ | No Nov 3 2026 doc readable. May 2026: 'TOTAL VOTE % / Amy Acton and David Pepper 490 100.00%' total-only. |
 | Muskingum | 39119 |  | https://www.boe.ohio.gov/muskingum/ | Nov 3 2026 results.pdf is a placeholder ('Absentee and unofficial results will be posted November 3rd, 2026 After 7:30 p.m.'). May 2026 amended canvass lists Election Day/Vote by Mail/Provisional/Early Vote only in a voters-cast statistics table; Nov 2025 'Candidate Party Total' total-only |
-| Scioto | 39145 |  | https://www.boe.ohio.gov/scioto/ | Nov 3 2026 'Unoficial Zero Report': 'CandidatePartyTotal Amy Acton and David Pepper Dem 0'. Past official reports flagged ABSENTEE/ELECTION DAY/PROVISIONAL but first-contest excerpts are 'CandidatePartyTotal' total-only (words likely from a later counting-group section). |
-| Trumbull | 39155 |  | https://boe.co.trumbull.oh.gov/ |  |
 | Washington | 39167 |  | https://www.boe.ohio.gov/washington | Nov 3 2026 results/precinct/overlap all 404. May 2026: 'Vivek Ramaswamy & Robert A. McColley / 4,897 68.88%' total-only; Nov 2025 total-only |
-| Wayne | 39169 |  | https://www.WayneCountyOH.gov | Nov 2025 Statement of Votes Cast is by precinct with no counting-group split; zero reports and May 2026 canvass TOTAL only. |
 | Wood | 39173 |  | https://boe.woodcountyohio.gov/ | May 2026 official results: counting groups appear in the turnout table only; every contest 'Candidate Total'. |
 | Wyandot | 39175 |  | https://www.boe.ohio.gov/wyandot | Official canvass reports Nov 4 2025 and May 5 2026 total-only: 'TOTAL VOTE % / Rep Tom Karcher 1,038 26.98%'. No Nov 3 2026 doc found. |
 
