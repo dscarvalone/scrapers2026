@@ -42,6 +42,7 @@ import os
 import sys
 
 from tools.push_sheet import PROD_IDS, session
+from tools.sheet_palette import CHART2_PADDING, OPACITY
 from tools.sheet_validations import FIRST, KEY, LAST
 
 TAB = "visuals"
@@ -67,9 +68,9 @@ def L(i: int) -> str:
     return s
 
 
-def layout(nanchors: int, nfits: int, nrows_data: int) -> dict:
-    """Row numbers (1-based) of each part of a data block."""
-    anchors = 2
+def layout(nanchors: int, nfits: int, nrows_data: int, npad: int = 0) -> dict:
+    """Row numbers (1-based) of each part of a data block (after `npad` colour-padding rows)."""
+    anchors = 2 + npad
     fits = anchors + nanchors
     data = fits + nfits * FIT_PTS
     return {"anchors": anchors, "fits": fits, "data": data, "end": data + nrows_data - 1}
@@ -163,11 +164,15 @@ def block1(groups_by_county: list[str]) -> tuple[list, list]:
 
 def block2() -> tuple[list, list]:
     labels = [m[0] for m in METHODS]
-    lay = layout(len(labels), len(labels), N * len(METHODS))
+    lay = layout(len(labels), len(labels), N * len(METHODS), CHART2_PADDING)
     table, refs = fit_table(T2, B2, labels, lay, 0)
     table[0][3] = "avg delta (vote-weighted)"
     anchors, fits = fit_rows(labels, refs, 0, 2)
-    rows = [["Method", "County", "Expected Dem 2-way", "Dem 2-way delta vs expected", "Votes"]] + anchors + fits
+    # colour padding: groups with no points, first, so Eday/Early take theme accents 5 and 6
+    # (accents 1-4 are base / rurals / swing / chart-1 fit; see tools/sheet_palette.py)
+    pad = [[f"_pad{i}", "", "", "", ""] for i in range(CHART2_PADDING)]
+    rows = ([["Method", "County", "Expected Dem 2-way", "Dem 2-way delta vs expected", "Votes"]] + pad
+            + anchors + fits)
     for lab, a, e, n in METHODS:
         for k in range(N):
             v = FIRST + k
@@ -179,8 +184,15 @@ def block2() -> tuple[list, list]:
     # legend column (AK): each row's method label with its fit R², from the fit table.
     # Colours/legend come from this column; the fit FILTERs use the plain method key in AF.
     leg = {lab: c["leg_abs"] for lab, c in zip(labels, refs)}
-    legend_col = [["Legend"]] + [["=" + leg[r[0]]] for r in rows[1:]]
-    return rows, table, legend_col
+    legend_col = [["Legend"]] + [["=" + leg[r[0]]] if r[0] in leg else [r[0]] for r in rows[1:]]
+    # chart 2 has no legend (the colour-padding groups would show in it); instead each fit
+    # line's last (right-hand) point carries its label, e.g. "Eday (fit R² = 0.03)".
+    # Every other row's label is a single space: the chart won't draw with an all-empty label column.
+    label_col = [["Label"]] + [[" "] for _ in rows[1:]]
+    first_fit = 1 + CHART2_PADDING + len(labels)  # list index of the first fit row
+    for i, lab in enumerate(labels):
+        label_col[first_fit + (i + 1) * FIT_PTS - 1] = ["=" + leg[lab]]
+    return rows, table, legend_col, label_col
 
 
 def build(sheet_id: str) -> None:
@@ -200,7 +212,7 @@ def build(sheet_id: str) -> None:
     groups = [r[0] if r else "" for r in s.get(f"{api}/values/validations!A{FIRST}:A{LAST}").json()["values"]]
     groups += [""] * (N - len(groups))
     b1, t1 = block1(groups)
-    b2, t2, legend2 = block2()
+    b2, t2, legend2, labels2 = block2()
     nrows = max(len(b1), len(b2)) + 2
 
     req = [{"deleteEmbeddedObject": {"objectId": c}} for c in charts]
@@ -209,9 +221,6 @@ def build(sheet_id: str) -> None:
                 "rowCount": nrows, "columnCount": NCOLS}},
                 "fields": "gridProperties(rowCount,columnCount)"}}]
     s.post(api + ":batchUpdate", json={"requests": req}).raise_for_status()
-    # chart 2's label column: a single space per row. The chart refuses to draw
-    # ("Column 1 must be numeric") if its label column holds no text at all.
-    labels2 = [["Label"]] + [[" "] for _ in range(len(b2) - 1)]
     for col, data in ((B1, b1), (B2, b2), (B2 + 5, legend2), (B2 + 6, labels2), (T1, t1), (T2, t2)):
         s.put(f"{api}/values/{TAB}!{L(col)}1", params={"valueInputOption": "USER_ENTERED"},
               json={"values": data}).raise_for_status()
@@ -245,10 +254,10 @@ def build(sheet_id: str) -> None:
                            "fields": "userEnteredFormat.textFormat.bold"}}]
     n1, n2 = len(b1), len(b2)
 
-    def bubble(title, subtitle, c, gcol, labels, n, row):
+    def bubble(title, subtitle, c, gcol, labels, n, row, legend="RIGHT_LEGEND"):
         spec = {"domain": src(c + 2, n), "series": src(c + 3, n), "groupIds": src(gcol, n),
-                "bubbleSizes": src(c + 4, n), "bubbleLabels": src(labels, n), "bubbleOpacity": 0.6,
-                "bubbleMinRadiusSize": 4, "bubbleMaxRadiusSize": 40, "legendPosition": "RIGHT_LEGEND",
+                "bubbleSizes": src(c + 4, n), "bubbleLabels": src(labels, n), "bubbleOpacity": OPACITY,
+                "bubbleMinRadiusSize": 4, "bubbleMaxRadiusSize": 40, "legendPosition": legend,
                 # no outline: at line-dot size a black outline is all you would see
                 "bubbleBorderColorStyle": {"rgbColor": {"red": 1, "green": 1, "blue": 1, "alpha": 0}},
                 "bubbleTextStyle": {"fontSize": 8}}
@@ -262,9 +271,9 @@ def build(sheet_id: str) -> None:
                       "(0 = on expectation) | size: Eday votes counted | line: vote-weighted best fit, all counties",
                       B1, B1 + 1, B1, n1, 0))
     req.append(bubble("Dem 2-way share vs expected, by vote method",
-                      "x: model's expected Dem 2-way | y: actual minus expected Dem 2-way (0 = on expectation, "
-                      "above = Brown beating the model) | size: votes counted | lines: vote-weighted best fit per method",
-                      B2, B2 + 5, B2 + 6, n2, 30))
+                      "teal = Eday, orange = Early (best-fit lines labelled at right) | x: model's expected "
+                      "Dem 2-way | y: actual minus expected (above 0 = Brown beating the model) | size: votes counted",
+                      B2, B2 + 5, B2 + 6, n2, 30, legend="NO_LEGEND"))
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
         raise SystemExit(f"Chart request failed: {r.status_code} {r.text[:500]}")

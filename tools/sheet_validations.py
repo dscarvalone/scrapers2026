@@ -29,6 +29,7 @@ import sys
 from pathlib import Path
 
 from tools.push_sheet import PROD_IDS, session
+from tools.sheet_palette import group_shading_rules
 
 TAB = "validations"
 KEY = Path.home() / ".config/scrapers2026/google-sa.json"
@@ -200,6 +201,9 @@ def build(sheet_id: str) -> None:
     for c in (3, 6, 9, 15, 21, 27, SOURCE_COL):
         req.append({"updateBorders": {"range": rng(0, nrows, c, c + 1), "left": {"style": "SOLID_MEDIUM"}}})
     req.append({"updateBorders": {"range": rng(5, 6, 0, SOURCE_COL + 1), "bottom": {"style": "SOLID_MEDIUM"}}})
+    # group colours, shared with the charts and Topline (tools/sheet_palette.py)
+    # county names (column C) by the group in column A, which the owner keeps hidden
+    req += group_shading_rules(gid, [(3, 6, 2, 3), (FIRST - 1, nrows, 2, 3, "A")])
     req.append({"updateDimensionProperties": {"range": {"sheetId": gid, "dimension": "COLUMNS",
                                                         "startIndex": SOURCE_COL + 1, "endIndex": NCOLS},
                                               "properties": {"hiddenByUser": True}, "fields": "hiddenByUser"}})
