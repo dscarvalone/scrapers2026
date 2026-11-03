@@ -29,9 +29,9 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 **Share of the expected statewide vote, by what we'll have:**
 
 - **Split by method, scraper live or waiting for a link:** 60.8% (25 counties)
-- **Maybe on election night (precinct or scanned PDF, likely, or unknown):** 9.1% (20 counties)
+- **Maybe on election night (precinct or scanned PDF, likely, or unknown):** 7.6% (19 counties)
 - **Gap until the official canvass (~Nov 17-24):** 10.6% (17 counties)
-- **Gap with no split expected (totals only):** 19.5% (26 counties)
+- **Gap with no split expected (totals only):** 21.0% (27 counties)
 
 **Before vs on Election Day (the split that matters most) covers every county:** directly from the vote-type split for the 60.8% above, and as a **first-drop estimate** for the rest (`common/timing.py`): Ohio counties release absentee and early ballots before any precinct, so a county's last report with 0 precincts in is its pre-Election-Day vote. The estimate fails for a county whose first report already includes precincts, and it needs the local loop running before the first results (~7:30 PM). Mail vs in-person is a bonus where the county reports it (`has_mail_inperson_split`).
 
@@ -54,8 +54,8 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | 15 | Medina | 87,360 | 1.9% | 62.4% | **No (canvass only)** | Estimate (first drop) | Statewide totals only | Totals only on election night; split expected in the official canvass ~Nov 17-24 |
 | 16 | Trumbull | 78,133 | 1.7% | 64.1% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 17 | Licking | 75,053 | 1.6% | 65.7% | Yes | Direct | Results PDF, local loop | None |
-| 18 | Greene | 73,017 | 1.6% | 67.3% | Yes | Direct | Enhanced Voting JSON API, Actions | No committed data yet: needs one Actions run |
-| 19 | Portage | 67,867 | 1.5% | 68.8% | **Unknown** | Estimate (first drop) | Statewide totals only | Nothing to check in advance; recheck on Nov 3. County-hosted site: the Nov 3 recheck is manual |
+| 18 | Greene | 73,017 | 1.6% | 67.3% | Yes | Direct | Enhanced Voting JSON API, Actions | None |
+| 19 | Portage | 67,867 | 1.5% | 68.8% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 20 | Fairfield | 67,377 | 1.5% | 70.2% | **No** | Estimate (first drop) | Statewide totals only | No split published; totals only |
 | 21 | Wood | 56,125 | 1.2% | 71.4% | **No (likely)** | Estimate (first drop) | Statewide totals only | No past report split; totals only unless the Nov 3 format changes. County-hosted site: the Nov 3 recheck is manual |
 | 22 | Clark | 49,627 | 1.1% | 72.5% | Yes | Direct | SOS-hosted ENR XML, local loop | Mail column (Absentee Ballots) is an inference |

@@ -14,9 +14,9 @@ in-person, mail, provisional). Every county has **totals** from the SOS statewid
 | Split exists on election night, but in a scanned PDF (not scraped) | 2 |
 | Likely split on election night (past election-night reports were) | 5 |
 | Split only in the official canvass (~Nov 17-24), or only in some elections | 17 |
-| Totals only, confirmed (Nov 3 zero report and past reports) | 13 |
+| Totals only, confirmed (Nov 3 zero report and past reports) | 14 |
 | Totals only, likely (no past report was split) | 13 |
-| Unknown (no past results found to check) | 10 |
+| Unknown (no past results found to check) | 9 |
 
 Column meanings: **Source** is where the split comes from; **Runs in** is where its scraper runs
 on election night (GitHub Actions on schedule, or `tools/local_loop.sh` on the owner's Mac
@@ -119,7 +119,7 @@ Expected: Official canvass, ~Nov 17-24. Nov 3: Recheck 8:30 + 9:30 PM; else wait
 | Sandusky | 39143 |  | https://sanduskycountyoh.gov/index.php?page=board-of-elections | Nov 2025 Official Results: 'Election Day Absentee TOTAL In Office Provisional / Rep Ronald Smith 530 463 26 40 1'; no Nov 3 2026 results doc posted yet |
 | Vinton | 39163 |  | https://www.boe.ohio.gov/vinton/ | No Nov 3 2026 doc (404). Nov 2025: 'TOTAL VOTE % In Person Early Vote Election Day Absentee Provisional / Michael L. Claar 47 49.47% 4 41 2 0'. |
 
-## Totals only, confirmed (Nov 3 zero report and past reports) (13)
+## Totals only, confirmed (Nov 3 zero report and past reports) (14)
 
 Expected: Not expected. Nov 3: None (totals only).
 
@@ -134,6 +134,7 @@ Expected: Not expected. Nov 3: None (totals only).
 | Holmes | 39075 |  | https://www.boe.ohio.gov/holmes | Nov 3 Training PROOF: 'Amy Acton and David Pepper (D) 0 0%'; May 2026 'McColley 1,886 75.68%' and Nov 2025 also total-only |
 | Jefferson | 39081 |  | https://www.boe.ohio.gov/jefferson/ | Nov 3 2026 zero report Senate block Votes / Vote % only (2026-11-03 recheck). |
 | Meigs | 39105 |  | https://www.boe.ohio.gov/meigs/ | Governor and Lieutenant Governor ... Amy Acton and David Pepper (D) 0 0% ... 0Total Votes (total-only; May 2026 and Nov 2025 also total-only). NOTE: posted zero report is headed 'Holmes County ... TRAINING PROOF'. |
+| Portage | 39133 |  | https://www.portagecounty-oh.gov/board-elections | Nov 3 2026 zero report (board-elections/files/zero-report-11326, scanned PDF fetched via the Chrome window, OCR'd) Senate block TOTAL column only (checked 2026-11-03 AM). Site still returns HTTP 403 to plain requests. |
 | Richland | 39139 |  | https://www.boe.ohio.gov/richland/ |  |
 | Scioto | 39145 |  | https://www.boe.ohio.gov/scioto/ | Nov 3 2026 zero report Senate block Candidate / Party / Total only (2026-11-03 recheck). |
 | Trumbull | 39155 |  | https://boe.co.trumbull.oh.gov/ | Nov 3 2026 Election Summary.pdf Senate block TOTAL VOTE % only (rechecked 2026-11-02). |
@@ -159,7 +160,7 @@ Expected: Not expected. Nov 3: Recheck 8:30 + 9:30 PM in case format changed.
 | Wood | 39173 |  | https://boe.woodcountyohio.gov/ | May 2026 official results: counting groups appear in the turnout table only; every contest 'Candidate Total'. |
 | Wyandot | 39175 |  | https://www.boe.ohio.gov/wyandot | Official canvass reports Nov 4 2025 and May 5 2026 total-only: 'TOTAL VOTE % / Rep Tom Karcher 1,038 26.98%'. No Nov 3 2026 doc found. |
 
-## Unknown (no past results found to check) (10)
+## Unknown (no past results found to check) (9)
 
 Expected: Unknown. Nov 3: Recheck 8:30 + 9:30 PM.
 
@@ -172,6 +173,5 @@ Expected: Unknown. Nov 3: Recheck 8:30 + 9:30 PM.
 | Mercer | 39107 |  | https://elections.mercercountyohio.gov/ | County site (mercercountyoh.gov) yielded only an early-voting-hours PDF; past_reports found no result documents. |
 | Morrow | 39117 |  | https://boe.morrowcountyohio.gov | Only 2 pages crawled; no Nov 3 2026 links and no past result reports found. |
 | Perry | 39127 |  | https://elections.perrycountyohio.gov | Only 1 page fetched; no Nov 3 links or past result reports found |
-| Portage | 39133 |  | https://www.portagecounty-oh.gov/board-elections | County site returns HTTP 403 to plain requests; past reports not checked. |
 | Union | 39159 |  | https://www.unioncountyohio.gov/board-of-elections | No Nov 3 2026 link found; only past doc (Official Canvass SOVC Nov 2025) could not be parsed. |
 | Williams | 39171 |  | https://www.williamscountyoh.gov/150/Board-of-Elections | Only Nov 3 2026 FWAB notices found; no past result reports parsed. |
