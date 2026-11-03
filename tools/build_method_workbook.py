@@ -437,7 +437,8 @@ def main(argv=None) -> int:
     # county_results.latest_data_as_of = last CHANGE of the numbers, not last fetch.
     changes = changed_at(long_rows, fetched, args.out_dir / ".county_changes.json")
     results = county_format.county_rows(reg, wide, timing_rows, {c: (t, "changed") for c, t in changes.items()},
-                                        county_format.statewide_by_county(), built_dt)
+                                        county_format.statewide_by_county(), built_dt,
+                                        timing.latest_batch(timing.read_snapshots()))
 
     write_csv(args.out_dir / "county_results.csv", county_format.COLUMNS,
               [{k: (v.strftime("%Y-%m-%d %H:%M:%S") if isinstance(v, datetime) else v) for k, v in r.items()}

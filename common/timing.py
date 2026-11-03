@@ -141,6 +141,29 @@ def append_snapshot(statewide: Path = STATEWIDE, path: Path = SNAPSHOTS) -> int:
     return len(changed)
 
 
+def latest_batch(snapshots: list[dict]) -> dict[str, dict]:
+    """Per county: the votes added by its most recent change in the statewide
+    totals (latest snapshot minus the one before; the first snapshot with votes
+    counts from zero). Brown = dem, Husted = gop, total = all candidates.
+    A change that lowers any candidate (a correction) gives no batch."""
+    by: dict[str, dict[str, list[dict]]] = {}
+    for r in snapshots:
+        by.setdefault(r["county"], {}).setdefault(r["fetched_at"], []).append(r)
+    out = {}
+    for county, snaps in by.items():
+        times = sorted(snaps)
+        votes = lambda rs: {r["candidate"]: int(r["votes"] or 0) for r in rs}
+        cur = votes(snaps[times[-1]])
+        prev = votes(snaps[times[-2]]) if len(times) > 1 else {}
+        delta = {k: v - prev.get(k, 0) for k, v in cur.items()}
+        if sum(delta.values()) <= 0 or any(v < 0 for v in delta.values()):
+            continue
+        pick = lambda name: sum(v for k, v in delta.items() if name in k.lower())
+        out[county] = {"dem": pick("brown"), "gop": pick("husted"), "total": sum(delta.values()),
+                       "at": times[-1]}
+    return out
+
+
 def first_drop(snapshots: list[dict]) -> dict[str, dict]:
     """Per county: pre-Election-Day votes by candidate from the last snapshot
     with 0 precincts reporting, and the latest totals."""

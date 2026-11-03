@@ -285,3 +285,16 @@ def test_changed_at(tmp_path):
     moved = changed_at(rows2, {"Split": ("2026-11-03 20:10:00 EST", "local run")}, state)["Split"]
     assert moved == "2026-11-03 20:10:00 EST"
     assert changed_at(rows2, {"Split": ("2026-11-03 20:15:00 EST", "local run")}, state)["Split"] == moved
+
+
+def test_latest_batch():
+    from common import timing
+    s = [snap("2026-11-04T00:30:00+00:00", "Adams", {"Sherrod Brown": 100, "Jon Husted": 200, "Greg Levy": 5}, 0),
+         snap("2026-11-04T01:00:00+00:00", "Adams", {"Sherrod Brown": 130, "Jon Husted": 290, "Greg Levy": 7}, 4),
+         snap("2026-11-04T00:30:00+00:00", "Brown", {"Sherrod Brown": 50, "Jon Husted": 60}, 0),
+         snap("2026-11-04T00:40:00+00:00", "Brown", {"Sherrod Brown": 48, "Jon Husted": 70}, 1)]
+    b = timing.latest_batch([r for x in s for r in x])
+    assert b["Adams"] == {"dem": 30, "gop": 90, "total": 122, "at": "2026-11-04T01:00:00+00:00"}
+    assert "Brown" not in b  # Brown's latest change lowered a candidate: a correction, no batch
+    one = timing.latest_batch(snap("2026-11-04T00:30:00+00:00", "Allen", {"Sherrod Brown": 10, "Jon Husted": 20}, 0))
+    assert one["Allen"]["total"] == 30  # first snapshot counts from zero

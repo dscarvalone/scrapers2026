@@ -58,7 +58,9 @@ def method_cols(m: str) -> list[str]:
             + [f"{m}_dem_margin", f"{m}_two_way"] + [f"{m}_{p}_share" for p in PARTY_COLS])
 
 
-EXTRA = ["method_source", "has_mail_inperson_split", "precincts_reported", "precincts_total", "notes"]
+EXTRA = ["method_source", "has_mail_inperson_split", "precincts_reported", "precincts_total", "notes",
+         # the county's latest change in the SOS statewide totals (common.timing.latest_batch)
+         "batch_dem_votes", "batch_gop_votes", "batch_total_votes", "batch_as_of"]
 COLUMNS = TOPLINE + [c for m in METHODS for c in method_cols(m)] + EXTRA
 
 
@@ -138,9 +140,10 @@ def statewide_by_county(path: Path = STATEWIDE) -> dict[str, dict]:
 
 
 def county_rows(reg: list[dict], wide: list[dict], timing: list[dict], fetched: dict,
-                statewide: dict[str, dict], built: datetime) -> list[dict]:
+                statewide: dict[str, dict], built: datetime, batches: dict | None = None) -> list[dict]:
     """reg: counties.csv rows; wide: votes_by_method rows; timing: votes_by_timing
-    rows; fetched: {county: (ET text, basis)}; statewide: statewide_by_county()."""
+    rows; fetched: {county: (ET text, basis)}; statewide: statewide_by_county();
+    batches: common.timing.latest_batch()."""
     wide_by = {r["county"]: r for r in wide}
     tim_by = {r["county"]: r for r in timing}
     rows = []
@@ -200,8 +203,21 @@ def county_rows(reg: list[dict], wide: list[dict], timing: list[dict], fetched: 
         for m in METHODS:
             out[f"pct_{m}"] = _ratio(out[f"{m}_total_votes"], out["total_votes"])
         out["notes"] = "; ".join(notes)
+        b = (batches or {}).get(c)
+        if b:
+            out.update(batch_dem_votes=b["dem"], batch_gop_votes=b["gop"], batch_total_votes=b["total"],
+                       batch_as_of=_utc_to_et_text(b["at"]))
         rows.append(out)
     return [statewide_row(rows, built, statewide)] + rows
+
+
+def _utc_to_et_text(s: str) -> str:
+    """Snapshot timestamp (ISO, UTC) -> 'YYYY-MM-DD HH:MM:SS' Eastern, like the other as-of columns."""
+    try:
+        from zoneinfo import ZoneInfo
+        return datetime.fromisoformat(s).astimezone(ZoneInfo("America/New_York")).strftime("%Y-%m-%d %H:%M:%S")
+    except ValueError:
+        return s
 
 
 def _int(v):

@@ -86,6 +86,13 @@ def build(sheet_id: str) -> list[dict]:
         c = g["county"]
         a = ap.get(c, {})
         votes = {p: int(a.get(f"{p}_votes") or 0) for p in PARTIES}
+        if not sum(votes.values()) and a.get("exp_total_votes"):
+            # AP has no votes yet (real pre-election feed): synthesize from the model's expectations
+            tot = round(float(a["exp_total_votes"]) * rng.uniform(0.55, 0.97))
+            share = min(0.9, max(0.1, float(a.get("exp_two_way") or 0.45) + rng.uniform(-0.04, 0.04)))
+            two = round(tot * 0.98)
+            votes = {p: 0 for p in PARTIES}
+            votes.update(dem=round(two * share), gop=two - round(two * share), other=tot - two)
         out = {k: "" for k in cf.COLUMNS}
         out.update(state_code="OH", county_fips=g["county_fips"], reporting_unit_name=f"{c} County",
                    refreshed_sheet_as_of=now, latest_data_as_of=now)
@@ -124,6 +131,18 @@ def build(sheet_id: str) -> list[dict]:
             for m in cf.METHODS:
                 out[f"pct_{m}"] = cf._ratio(out[f"{m}_total_votes"], out["total_votes"])
         out["notes"] = "TEST DATA (tools/make_test_feed.py), not real results"
+        if out["total_votes"]:
+            # simulated latest batch: 5-15% of the Eday block (or of the total for totals-only counties),
+            # Dem 2-way share within a few points of that block's
+            if src == "totals_only":
+                bd, bg = votes["dem"], votes["gop"]
+            else:
+                bd, bg = int(out["eday_dem_votes"] or 0), int(out["eday_gop_votes"] or 0)
+            frac = rng.uniform(0.05, 0.15)
+            share = min(0.95, max(0.05, bd / max(1, bd + bg) + rng.uniform(-0.03, 0.03)))
+            two = round((bd + bg) * frac)
+            out.update(batch_dem_votes=round(two * share), batch_gop_votes=two - round(two * share),
+                       batch_total_votes=round(two * 1.02), batch_as_of=now.strftime("%Y-%m-%d %H:%M:%S"))
         rows.append(out)
     sw = cf.statewide_row(rows, now)   # precincts summed from the test rows, not the real feed
     sw["notes"] = "TEST DATA; " + sw["notes"]
