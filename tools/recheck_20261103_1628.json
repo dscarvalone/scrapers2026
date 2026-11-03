@@ -1,0 +1,131 @@
+{
+ "results": {
+  "Scioto": {
+   "url": "https://www.boe.ohio.gov/scioto/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "Two numbers under 'Total' in row 'Times Cast 0 / 42,744 0.00%'",
+    "dominion": "No U.S. Senate race in the report"
+   },
+   "status": "unparsed",
+   "lean": "leaning_no"
+  },
+  "Gallia": {
+   "url": "https://www.boe.ohio.gov/gallia/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "U.S. Senator (Vote for 1), 18037 registered voters, turnout 0.00%",
+   "cols": [
+    "precincts",
+    "reported",
+    "out",
+    "of"
+   ],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in",
+    "Total",
+    "Representative to Congress (2nd District) (Vote for 1),",
+    "Jen Mazzuckelli",
+    "David J. Taylor"
+   ],
+   "senate_votes": 18037,
+   "status": "SPLIT",
+   "sum_ok": false,
+   "lean": ""
+  },
+  "Highland": {
+   "url": "https://www.boe.ohio.gov/highland/c/elecres/20261103results.pdf",
+   "errors": {
+    "positional": "No U.S. Senate race in the report",
+    "dominion": "No U.S. Senate race in the report"
+   },
+   "status": "unparsed",
+   "lean": ""
+  },
+  "Putnam": {
+   "url": "https://www.boe.ohio.gov/putnam/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (UTE 1-3-2029)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Dem Marilyn Zayas 0', 'Overvotes 0', 'Undervotes 0', 'Precincts Reporting 0 of 25', 'For Justice of th"
+   },
+   "lean": ""
+  },
+  "Shelby": {
+   "url": "https://www.boe.ohio.gov/shelby/c/elecres/20261103results.pdf",
+   "layout": "positional",
+   "race": "For U.S. Senator (UTE 1-3-29)",
+   "cols": [],
+   "candidates": [
+    "Sherrod Brown",
+    "Jon Husted",
+    "Greg Levy",
+    "William B. Redpath",
+    "Write-in"
+   ],
+   "senate_votes": 0,
+   "status": "total_only",
+   "errors": {
+    "dominion": "Dominion header changed near the Senate race: ['Undervotes 0', 'Precincts Reporting 0 of 36', 'TOTAL', 'Vote For 1', 'For Justice of the Supreme Court"
+   },
+   "lean": ""
+  }
+ },
+ "precinct": {
+  "Gallia": {
+   "url": "https://www.boe.ohio.gov/gallia/c/elecres/20261103precinct.pdf",
+   "status": "ballots_by_mode_only",
+   "cols": [
+    "Election Day",
+    "Absentee",
+    "Early",
+    "Provisional"
+   ],
+   "blocks": 0
+  },
+  "Highland": {
+   "url": "https://www.boe.ohio.gov/highland/c/elecres/20261103precinct.pdf",
+   "status": "total_only",
+   "cols": [],
+   "blocks": 31,
+   "votes_in": false
+  },
+  "Putnam": {
+   "url": "https://www.boe.ohio.gov/putnam/c/elecres/20261103precinct.pdf",
+   "status": "SPLIT",
+   "cols": [
+    "Absentee",
+    "Provisional"
+   ],
+   "blocks": 1,
+   "votes_in": false
+  },
+  "Scioto": {
+   "url": "https://www.boe.ohio.gov/scioto/c/elecres/20261103precinct.pdf",
+   "status": "total_only",
+   "cols": [],
+   "blocks": 1,
+   "votes_in": true
+  },
+  "Shelby": {
+   "url": "https://www.boe.ohio.gov/shelby/c/elecres/20261103precinct.pdf",
+   "status": "total_only",
+   "cols": [],
+   "blocks": 36,
+   "votes_in": false
+  }
+ },
+ "manual": []
+}
