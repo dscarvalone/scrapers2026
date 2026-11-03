@@ -142,6 +142,8 @@ def block1(groups_by_county: list[str]) -> tuple[list, list]:
     _, fits = fit_rows([FIT1_LABEL], refs, 0, 1)
     for row in fits:
         row[1] = "=" + refs[0]["leg_abs"]
+    # line-end label (chart 1's bubble labels come from the county column, blank on fit rows)
+    fits[-1][0] = "=" + refs[0]["leg_abs"]
     d0, d1 = lay["data"], lay["end"]
     gc, xc, yc = L(B1 + 1), L(B1 + 2), L(B1 + 3)
     anchors = []
