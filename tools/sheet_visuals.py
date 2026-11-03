@@ -55,27 +55,48 @@ def L(i: int) -> str:
 GROUP_ORDER = ["base", "rurals", "swing"]  # bubble colours follow first appearance: blue, red, yellow
 
 
+# Fixed rows that keep the charts stable whatever has reported:
+#  - one tiny ANCHOR point per colour group, first, so colours never depend on
+#    which counties have votes yet (bubble colours follow first appearance) and
+#    every numeric column always has a number (an all-blank column errors);
+#  - a reference line of tiny dots, last;
+#  - one SCALE dot whose size is 30 until any votes are counted, then 1, so the
+#    reference dots stay small before results (bubble sizes are relative).
+REF1 = [round(0.2 + 0.025 * i, 3) for i in range(27)]  # y = 0 line, x 20%..85%
+
+
 def block1(groups: list[str]) -> list[list]:
     rows = [["County", "Group", "Expected Dem 2-way", "Eday turnout delta", "Eday votes"]]
+    rows += [["", g, 0.5, 0, 1] for g in GROUP_ORDER]
+    first = len(rows) + 1
     order = sorted(range(N), key=lambda k: (GROUP_ORDER.index(groups[k]) if groups[k] in GROUP_ORDER else 9, k))
     for k in order:
         v = FIRST + k
         ok = f"AND(validations!G{v}<>\"\",N(validations!P{v})>0)"
         rows.append([f"=validations!C{v}", f"=validations!A{v}", f"=IF({ok},validations!O{v},\"\")",
                      f"=IF({ok},validations!G{v}-1,\"\")", f"=IF({ok},validations!P{v},\"\")"])
+    last = len(rows)
+    rows += [["", "expected (0)", x, 0, 1] for x in REF1]
+    vcol = L(B1 + 4)
+    rows.append(["", "expected (0)", REF1[0], 0, f"=IF(MAX({vcol}{first}:{vcol}{last})=0,30,1)"])
     return rows
 
 
 def block2() -> list[list]:
     rows = [["Method", "County", "Expected Dem 2-way", "Actual Dem 2-way", "Votes"]]
+    rows += [[lab, "", 0.5, 0.5, 1] for lab, _, _, _ in METHODS]
+    first = len(rows) + 1
     for lab, a, e, n in METHODS:
         for k in range(N):
             v = FIRST + k
             ok = f"AND(validations!{a}{v}<>\"\",validations!{e}{v}<>\"\",N(validations!{n}{v})>0)"
             rows.append([lab, f"=validations!C{v}", f"=IF({ok},validations!{e}{v},\"\")",
                          f"=IF({ok},validations!{a}{v},\"\")", f"=IF({ok},validations!{n}{v},\"\")"])
+    last = len(rows)
     for x in REF:
         rows.append(["y = x", "", x, x, 1])
+    vcol = L(B2 + 4)
+    rows.append(["y = x", "", REF[0], REF[0], f"=IF(MAX({vcol}{first}:{vcol}{last})=0,30,1)"])
     return rows
 
 
@@ -144,7 +165,7 @@ def build(sheet_id: str) -> None:
 
     req.append(bubble("Eday turnout vs expected, by county partisanship",
                       "x: model's expected Dem 2-way share | y: Eday votes vs model's expected Eday votes "
-                      "(0 = on expectation) | size: Eday votes counted | colour: group",
+                      "| size: Eday votes counted | colour: group | small green dots = on expectation (0)",
                       B1, n1, True, 0))
     req.append(bubble("Actual vs expected Dem 2-way share, by vote method",
                       "x: model's expected Dem 2-way | y: actual Dem 2-way | size: votes counted for that method "
