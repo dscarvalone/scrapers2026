@@ -12,7 +12,8 @@ that read the 'validations' tab, so they update with it (no rebuild needed):
 
 2. Actual vs expected Dem 2-way share, by vote method.
    x = expected 2-way, y = actual 2-way, size = votes counted for that
-   method, colour = method (Eday blue, Early red, In-person early yellow, Mail green).
+   method, colour = method (Eday blue, Early red). Early = everything cast
+   before Election Day (in-person early + mail).
 
 Lines of best fit are vote-weighted least squares, drawn across the plotted
 x range: chart 1 has ONE line over all counties (its own colour, green);
@@ -48,8 +49,7 @@ FIT_PTS = 150         # points per best-fit line (dense, so the dots read as a s
 
 GROUP_ORDER = ["base", "rurals", "swing"]
 # validations columns for chart 2: method -> (actual share, expected share, votes)
-METHODS = [("Eday", "J", "K", "P"), ("Early", "L", "M", "R"),
-           ("In-person early", "V", "W", "AB"), ("Mail", "Y", "Z", "AE")]
+METHODS = [("Eday", "J", "K", "P"), ("Early", "L", "M", "R")]
 
 # column positions (0-based): data blocks and fit tables
 B1, B2 = 25, 31           # chart data: Z..AD and AF..AJ (+ empty label column AK)
