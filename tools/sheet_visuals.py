@@ -10,8 +10,9 @@ that read the 'validations' tab, so they update with it (no rebuild needed):
    size = Eday votes counted; colour = group (base blue, rurals red, swing yellow)
    Only counties with Eday votes counted are plotted.
 
-2. Actual vs expected Dem 2-way share, by vote method.
-   x = expected 2-way, y = actual 2-way, size = votes counted for that
+2. Dem 2-way share vs expected, by vote method.
+   x = expected 2-way, y = actual minus expected 2-way (points; 0 = on
+   expectation, above = Brown beating the model), size = votes counted for that
    method, colour = method (Eday blue, Early red). Early = everything cast
    before Election Day (in-person early + mail).
 
@@ -151,15 +152,17 @@ def block1(groups_by_county: list[str]) -> tuple[list, list]:
 def block2() -> tuple[list, list]:
     labels = [m[0] for m in METHODS]
     lay = layout(len(labels), len(labels), N * len(METHODS))
-    table, refs = fit_table(T2, B2, labels, lay, 0.5)
-    anchors, fits = fit_rows(labels, refs, 0.5, 2)
-    rows = [["Method", "County", "Expected Dem 2-way", "Actual Dem 2-way", "Votes"]] + anchors + fits
+    table, refs = fit_table(T2, B2, labels, lay, 0)
+    table[0][3] = "avg delta (vote-weighted)"
+    anchors, fits = fit_rows(labels, refs, 0, 2)
+    rows = [["Method", "County", "Expected Dem 2-way", "Dem 2-way delta vs expected", "Votes"]] + anchors + fits
     for lab, a, e, n in METHODS:
         for k in range(N):
             v = FIRST + k
             ok = f"AND(validations!{a}{v}<>\"\",validations!{e}{v}<>\"\",N(validations!{n}{v})>0)"
             rows.append([lab, f"=validations!C{v}", f"=IF({ok},validations!{e}{v},\"\")",
-                         f"=IF({ok},validations!{a}{v},\"\")", f"=IF({ok},validations!{n}{v},\"\")"])
+                         f"=IF({ok},validations!{a}{v}-validations!{e}{v},\"\")",
+                         f"=IF({ok},validations!{n}{v},\"\")"])
     assert len(rows) == lay["end"], (len(rows), lay)
     return rows, table
 
@@ -213,11 +216,12 @@ def build(sheet_id: str) -> None:
                                "fields": "userEnteredFormat.numberFormat"}}
 
     req = [fmt(B1 + 2, B1 + 3, "0%", "PERCENT"), fmt(B1 + 3, B1 + 4, "+0%;-0%;0%", "PERCENT"),
-           fmt(B1 + 4, B1 + 5, "#,##0", "NUMBER"), fmt(B2 + 2, B2 + 4, "0%", "PERCENT"),
-           fmt(B2 + 4, B2 + 5, "#,##0", "NUMBER"),
+           fmt(B1 + 4, B1 + 5, "#,##0", "NUMBER"), fmt(B2 + 2, B2 + 3, "0%", "PERCENT"),
+           fmt(B2 + 3, B2 + 4, "+0%;-0%;0%", "PERCENT"), fmt(B2 + 4, B2 + 5, "#,##0", "NUMBER"),
            fmt(T1 + 2, T1 + 3, "0.0%", "PERCENT", 4), fmt(T1 + 3, T1 + 4, "+0.0%;-0.0%", "PERCENT", 4),
            fmt(T1 + 4, T1 + 5, "0.00", "NUMBER", 4), fmt(T1 + 5, T1 + 7, "0.0%", "PERCENT", 4),
-           fmt(T2 + 2, T2 + 4, "0.0%", "PERCENT", 5), fmt(T2 + 4, T2 + 5, "0.00", "NUMBER", 5),
+           fmt(T2 + 2, T2 + 3, "0.0%", "PERCENT", 5), fmt(T2 + 3, T2 + 4, "+0.0%;-0.0%", "PERCENT", 5),
+           fmt(T2 + 4, T2 + 5, "0.00", "NUMBER", 5),
            fmt(T2 + 5, T2 + 7, "0.0%", "PERCENT", 5),
            {"repeatCell": {"range": rng(B1, NCOLS, 0, 1),
                            "cell": {"userEnteredFormat": {"textFormat": {"bold": True}}},
@@ -240,9 +244,9 @@ def build(sheet_id: str) -> None:
                       "x: model's expected Dem 2-way share | y: Eday votes vs model's expected Eday votes "
                       "(0 = on expectation) | size: Eday votes counted | line: vote-weighted best fit, all counties",
                       B1, B1 + 1, B1, n1, 0))
-    req.append(bubble("Actual vs expected Dem 2-way share, by vote method",
-                      "x: model's expected Dem 2-way | y: actual Dem 2-way | size: votes counted for that method "
-                      "| lines: vote-weighted best fit per method",
+    req.append(bubble("Dem 2-way share vs expected, by vote method",
+                      "x: model's expected Dem 2-way | y: actual minus expected Dem 2-way (0 = on expectation, "
+                      "above = Brown beating the model) | size: votes counted | lines: vote-weighted best fit per method",
                       B2, B2, B2 + 5, n2, 30))
     r = s.post(api + ":batchUpdate", json={"requests": req})
     if r.status_code != 200:
