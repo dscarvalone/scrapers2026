@@ -1,9 +1,6 @@
-contest_id,office,choice_id,choice,party,row_type,Election Day,Early In-Person,Vote By Mail,Provisional,Post Election Day,Post VBM,total
-6,U.S. Senator (Unexpired term ending 1-3-2029),,Ballots Cast,,ballots_cast,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),13,Sherrod Brown,Democratic,candidate,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),14,Jon Husted,Republican,candidate,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),268,Greg Levy,Other-party,candidate,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),15,William B. Redpath,Libertarian,candidate,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),267,Write-in,Unaffiliated,candidate,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),,Over Votes,,over_votes,0,0,0,0,0,0,0
-6,U.S. Senator (Unexpired term ending 1-3-2029),,Under Votes,,under_votes,0,0,0,0,0,0,0
+race_id,race,contestant,party,write_in,Election Day,Early In-Person,Provisional,Post Election Day,Post VBM,Vote By Mail,total,precincts_reported,precincts_total,generated_at,source_format
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Sherrod Brown,DEM,False,0,47709,0,0,0,75499,123208,0,897,2026-11-04T02:09:52.0436427Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Jon Husted,REP,False,0,4734,0,0,0,28301,33035,0,897,2026-11-04T02:09:52.0436427Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Greg Levy,Other,False,0,891,0,0,0,1263,2154,0,897,2026-11-04T02:09:52.0436427Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),William B. Redpath,LIB,False,0,373,0,0,0,1445,1818,0,897,2026-11-04T02:09:52.0436427Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Write-in,NON,True,0,38,0,0,0,71,109,0,897,2026-11-04T02:09:52.0436427Z,enhanced_voting

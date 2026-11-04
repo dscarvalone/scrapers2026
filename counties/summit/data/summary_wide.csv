@@ -1,6 +1,6 @@
 race_id,race,contestant,party,write_in,Abs Mail,Polls,Abs Walk-in,Provisional,Timely Abs,total,precincts_reported,precincts_total,generated_at,source_format
-01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Sherrod Brown,Dem,False,0,0,0,0,0,0,0,0,2026-10-26T19:44:28.2902042Z,enhanced_voting
-01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Jon Husted,Rep,False,0,0,0,0,0,0,0,0,2026-10-26T19:44:28.2902042Z,enhanced_voting
-01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Greg Levy,OPC,False,0,0,0,0,0,0,0,0,2026-10-26T19:44:28.2902042Z,enhanced_voting
-01000000-6996-338b-796a-08df25732edd,For U.S. Senator,William B. Redpath,Lib,False,0,0,0,0,0,0,0,0,2026-10-26T19:44:28.2902042Z,enhanced_voting
-01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Write-in,X,True,0,0,0,0,0,0,0,0,2026-10-26T19:44:28.2902042Z,enhanced_voting
+01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Sherrod Brown,Dem,False,20115,21030,32377,0,0,73522,36,154,2026-11-04T02:46:23.6333781Z,enhanced_voting
+01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Jon Husted,Rep,False,10679,20573,8282,0,0,39534,36,154,2026-11-04T02:46:23.6333781Z,enhanced_voting
+01000000-6996-338b-796a-08df25732edd,For U.S. Senator,William B. Redpath,Lib,False,616,1528,390,0,0,2534,36,154,2026-11-04T02:46:23.6333781Z,enhanced_voting
+01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Greg Levy,OPC,False,476,1049,577,0,0,2102,36,154,2026-11-04T02:46:23.6333781Z,enhanced_voting
+01000000-6996-338b-796a-08df25732edd,For U.S. Senator,Write-in,X,True,28,39,21,0,0,88,36,154,2026-11-04T02:46:23.6333781Z,enhanced_voting
