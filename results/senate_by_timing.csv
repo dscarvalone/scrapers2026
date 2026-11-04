@@ -9,7 +9,7 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39015,Brown,first_drop,2026-11-03 19:50:38 EST,0,33,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",5743,1933,3555,163,92,0,0,0,0,0,0,0,,,,,,,,,,,,,5743,,
 39017,Butler,itemized,2026-09-30T09:42:47.898-04:00,0,0,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,57284,57284
 39019,Carroll,itemized,2026-11-03T19:53:36.441-05:00,0,23,1.0,True,,3578,1383,2014,96,82,3,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,3578,3575,-3
-39021,Champaign,none,2026-11-01 17:14:23 EST,0,31,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39021,Champaign,first_drop,2026-11-03 20:02:17 EST,0,31,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",6751,2660,3708,223,160,0,0,0,0,0,0,0,,,,,,,,,,,,,6751,,
 39023,Clark,itemized,2026-11-03T19:44:14.504-05:00,0,78,1.0,True,,19150,10020,8359,402,345,24,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,19150,19126,-24
 39025,Clermont,itemized,pdf-sha1:83e9d3affa11,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39027,Clinton,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
@@ -27,9 +27,9 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39051,Fulton,none,2026-11-01 17:14:23 EST,0,29,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39053,Gallia,first_drop,2026-11-03 19:56:27 EST,0,26,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",3459,1158,2172,74,55,0,0,0,0,0,0,0,,,,,,,,,,,,,3459,,
 39055,Geauga,none,2026-11-01 17:14:23 EST,0,79,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
-39057,Greene,itemized,2026-11-03T21:26:06.2629039Z,0,151,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
+39057,Greene,itemized,2026-11-03T21:26:06.2629039Z,0,151,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,33381,33381
 39059,Guernsey,first_drop,2026-11-03 19:56:27 EST,0,35,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",4823,1937,2699,115,72,0,0,0,0,0,0,0,,,,,,,,,,,,,4823,,
-39061,Hamilton,itemized,10/22/2026 5:07:37 PM EDT,0,563,,False,county reports no provisional column,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,0,119741,119741
+39061,Hamilton,itemized,11/3/2026 8:00:52 PM EST,0,563,1.0,False,county reports no provisional column,119741,85866,30527,1500,1848,0,0,0,0,0,0,0,,,,,,,,,,,,,119741,119741,0
 39063,Hancock,first_drop,2026-11-03 19:56:27 EST,0,60,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",12784,5622,6662,327,173,0,0,0,0,0,0,0,,,,,,,,,,,,,12784,,
 39065,Hardin,none,2026-11-01 17:14:23 EST,0,21,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39067,Harrison,none,2026-11-01 17:14:23 EST,0,16,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
@@ -37,12 +37,12 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39071,Highland,none,2026-11-01 17:14:23 EST,0,31,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39073,Hocking,itemized,2026-10-30T17:55:37.4395158Z,0,20,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,4988,4988
 39075,Holmes,first_drop,2026-11-03 19:50:38 EST,0,17,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",3557,1012,2430,72,43,0,0,0,0,0,0,0,,,,,,,,,,,,,3557,,
-39077,Huron,none,2026-11-01 17:14:23 EST,0,46,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39077,Huron,first_drop,2026-11-03 20:02:17 EST,0,46,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",7934,3647,3900,230,157,0,0,0,0,0,0,0,,,,,,,,,,,,,7934,,
 39079,Jackson,none,2026-11-01 17:14:23 EST,0,29,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39081,Jefferson,first_drop,2026-11-03 19:56:27 EST,0,55,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",9183,4166,4661,177,179,0,0,0,0,0,0,0,,,,,,,,,,,,,9183,,
 39083,Knox,none,2026-11-01 17:14:23 EST,0,53,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39085,Lake,first_drop,2026-11-03 19:56:27 EST,0,163,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",41588,23956,16347,701,584,0,0,0,0,0,0,0,,,,,,,,,,,,,41588,,
-39087,Lawrence,none,2026-11-01 17:14:23 EST,0,84,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39087,Lawrence,first_drop,2026-11-03 20:02:17 EST,0,84,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",6469,2666,3560,148,95,0,0,0,0,0,0,0,,,,,,,,,,,,,6469,,
 39089,Licking,itemized,pdf-sha1:7a66cd482a2d,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39091,Logan,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39093,Lorain,first_drop,2026-11-03 19:50:38 EST,0,210,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",54042,34303,18095,899,745,0,0,0,0,0,0,0,,,,,,,,,,,,,54042,,
@@ -53,37 +53,37 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39103,Medina,none,2026-11-01 17:14:23 EST,0,124,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39105,Meigs,first_drop,2026-11-03 19:56:27 EST,0,27,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",2814,1023,1679,52,60,0,0,0,0,0,0,0,,,,,,,,,,,,,2814,,
 39107,Mercer,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
-39109,Miami,itemized,pdf-sha1:1ea5d913a3b8,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
+39109,Miami,itemized,pdf-sha1:fb96a310999e,,,1.0,True,,20694,8401,11518,492,270,13,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,20694,20681,-13
 39111,Monroe,none,2026-11-01 17:14:23 EST,0,20,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39113,Montgomery,itemized,2026-11-04T00:49:29.616172Z,0,381,1.0,True,"timing assigned to unmapped vote types: Absentee Add-In→pre_eday, Early Voting Add-In→pre_eday, Election Day Add-In→eday",65341,45511,17974,907,909,40,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,65341,65301,-40
-39115,Morgan,first_drop,2026-11-03 19:56:27 EST,0,13,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",2263,789,1376,50,48,0,0,0,0,0,0,0,,,,,,,,,,,,,2263,,
+39115,Morgan,first_drop,2026-11-03 20:02:17 EST,1,13,0.9023,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later",2263,789,1376,50,48,0,245,35,192,12,6,0,,,,,,,,,,,,,2508,,
 39117,Morrow,none,2026-11-01 17:14:23 EST,0,33,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39119,Muskingum,none,2026-11-01 17:14:23 EST,0,68,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39121,Noble,first_drop,2026-11-03 19:56:27 EST,0,19,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",1991,599,1283,63,46,0,0,0,0,0,0,0,,,,,,,,,,,,,1991,,
-39123,Ottawa,none,2026-11-01 17:14:23 EST,0,36,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39123,Ottawa,first_drop,2026-11-03 20:02:17 EST,0,36,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",8123,4046,3821,159,97,0,0,0,0,0,0,0,,,,,,,,,,,,,8123,,
 39125,Paulding,itemized,pdf-sha1:956cc0a64983,,,,False,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39127,Perry,first_drop,2026-11-03 19:44:49 EST,0,33,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:44:49 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",5140,1936,2959,146,99,0,0,0,0,0,0,0,,,,,,,,,,,,,5140,,
 39129,Pickaway,itemized,2026-11-03T21:25:33.8388509Z,0,46,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
 39131,Pike,first_drop,2026-11-03 19:56:27 EST,0,22,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",4116,1601,2351,105,59,0,0,0,0,0,0,0,,,,,,,,,,,,,4116,,
 39133,Portage,first_drop,2026-11-03 19:50:38 EST,0,126,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",23272,14026,8392,445,409,0,0,0,0,0,0,0,,,,,,,,,,,,,23272,,
 39135,Preble,itemized,pdf-sha1:f784191712f5,,,,True,timing assigned to unmapped vote types: Absentee Late→pre_eday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,,
-39137,Putnam,none,2026-11-01 17:14:23 EST,0,25,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39137,Putnam,first_drop,2026-11-03 20:02:17 EST,0,25,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",6281,1447,4654,110,70,0,0,0,0,0,0,0,,,,,,,,,,,,,6281,,
 39139,Richland,none,2026-11-01 17:14:23 EST,0,83,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39141,Ross,first_drop,2026-11-03 19:50:38 EST,0,65,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",11545,5369,5813,207,156,0,0,0,0,0,0,0,,,,,,,,,,,,,11545,,
 39143,Sandusky,none,2026-11-01 17:14:23 EST,0,58,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
-39145,Scioto,none,2026-11-01 17:14:23 EST,0,77,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39145,Scioto,first_drop,2026-11-03 20:02:17 EST,0,77,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",7921,3619,4038,136,128,0,0,0,0,0,0,0,,,,,,,,,,,,,7921,,
 39147,Seneca,itemized,pdf-sha1:5cbd67100a44,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,6638,6638
 39149,Shelby,first_drop,2026-11-03 19:56:27 EST,0,36,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",7704,2383,5000,183,138,0,0,0,0,0,0,0,,,,,,,,,,,,,7704,,
 39151,Stark,itemized,2026-11-03T19:37:06.453-05:00,0,274,1.0,True,,52051,29475,20668,1059,836,13,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,52051,52038,-13
-39153,Summit,itemized,2026-11-03T20:19:24.3535177Z,0,0,,True,timing assigned to unmapped vote types: Timely Abs→pre_eday,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,73512,73512
+39153,Summit,itemized,2026-11-04T00:55:30.3306551Z,0,154,1.0,True,timing assigned to unmapped vote types: Timely Abs→pre_eday,73561,52492,18961,1006,1053,49,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,73561,73512,-49
 39155,Trumbull,first_drop,2026-11-03 19:44:49 EST,0,158,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:44:49 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",29120,17424,10628,566,502,0,0,0,0,0,0,0,,,,,,,,,,,,,29120,,
 39157,Tuscarawas,none,2026-11-01 17:14:23 EST,0,81,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
 39159,Union,first_drop,2026-11-03 19:56:27 EST,0,53,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",15539,7357,7697,269,216,0,0,0,0,0,0,0,,,,,,,,,,,,,15539,,
 39161,Van Wert,itemized,pdf-sha1:05ee2fdb407c,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,5465,5465
-39163,Vinton,none,2026-11-01 17:14:23 EST,0,20,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39163,Vinton,first_drop,2026-11-03 20:02:17 EST,0,20,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",1835,641,1093,69,32,0,0,0,0,0,0,0,,,,,,,,,,,,,1835,,
 39165,Warren,itemized,2026-11-03T19:30:53.143-05:00,0,185,1.0,True,,50630,23563,25632,872,533,30,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,50630,,
 39167,Washington,first_drop,2026-11-03 19:50:38 EST,0,50,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",11572,4967,6117,287,201,0,0,0,0,0,0,0,,,,,,,,,,,,,11572,,
 39169,Wayne,first_drop,2026-11-03 19:50:38 EST,0,66,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",3904,1842,1883,100,79,0,0,0,0,0,0,0,,,,,,,,,,,,,3904,,
 39171,Williams,none,2026-11-01 17:14:23 EST,0,26,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
-39173,Wood,none,2026-11-01 17:14:23 EST,0,99,,,no votes reported yet,,,,,,,,,,,,,,,,,,,,,,,,,0,,
+39173,Wood,first_drop,2026-11-03 20:02:17 EST,0,99,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",21710,13159,7869,367,315,0,0,0,0,0,0,0,,,,,,,,,,,,,21710,,
 39175,Wyandot,first_drop,2026-11-03 19:50:38 EST,0,23,1.0,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later; no Election Day precincts reported yet",5189,1621,2337,262,969,0,0,0,0,0,0,0,,,,,,,,,,,,,5189,,

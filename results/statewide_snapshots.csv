@@ -644,3 +644,58 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T00:56:27+00:00,Van Wert,Greg Levy,105,0,32
 2026-11-04T00:56:27+00:00,Van Wert,William B. Redpath,181,0,32
 2026-11-04T00:56:27+00:00,Van Wert,Write-in,0,0,32
+2026-11-04T01:02:17+00:00,Champaign,Sherrod Brown,2660,0,31
+2026-11-04T01:02:17+00:00,Champaign,Jon Husted,3708,0,31
+2026-11-04T01:02:17+00:00,Champaign,Greg Levy,160,0,31
+2026-11-04T01:02:17+00:00,Champaign,William B. Redpath,223,0,31
+2026-11-04T01:02:17+00:00,Champaign,Write-in,0,0,31
+2026-11-04T01:02:17+00:00,Greene,Sherrod Brown,17527,0,151
+2026-11-04T01:02:17+00:00,Greene,Jon Husted,14936,0,151
+2026-11-04T01:02:17+00:00,Greene,Greg Levy,371,0,151
+2026-11-04T01:02:17+00:00,Greene,William B. Redpath,547,0,151
+2026-11-04T01:02:17+00:00,Greene,Write-in,0,0,151
+2026-11-04T01:02:17+00:00,Huron,Sherrod Brown,3647,0,46
+2026-11-04T01:02:17+00:00,Huron,Jon Husted,3900,0,46
+2026-11-04T01:02:17+00:00,Huron,Greg Levy,157,0,46
+2026-11-04T01:02:17+00:00,Huron,William B. Redpath,230,0,46
+2026-11-04T01:02:17+00:00,Huron,Write-in,0,0,46
+2026-11-04T01:02:17+00:00,Lawrence,Sherrod Brown,2666,0,84
+2026-11-04T01:02:17+00:00,Lawrence,Jon Husted,3560,0,84
+2026-11-04T01:02:17+00:00,Lawrence,Greg Levy,95,0,84
+2026-11-04T01:02:17+00:00,Lawrence,William B. Redpath,148,0,84
+2026-11-04T01:02:17+00:00,Lawrence,Write-in,0,0,84
+2026-11-04T01:02:17+00:00,Miami,Sherrod Brown,8401,0,87
+2026-11-04T01:02:17+00:00,Miami,Jon Husted,11518,0,87
+2026-11-04T01:02:17+00:00,Miami,Greg Levy,270,0,87
+2026-11-04T01:02:17+00:00,Miami,William B. Redpath,492,0,87
+2026-11-04T01:02:17+00:00,Miami,Write-in,0,0,87
+2026-11-04T01:02:17+00:00,Morgan,Sherrod Brown,824,1,13
+2026-11-04T01:02:17+00:00,Morgan,Jon Husted,1568,1,13
+2026-11-04T01:02:17+00:00,Morgan,Greg Levy,54,1,13
+2026-11-04T01:02:17+00:00,Morgan,William B. Redpath,62,1,13
+2026-11-04T01:02:17+00:00,Morgan,Write-in,0,1,13
+2026-11-04T01:02:17+00:00,Ottawa,Sherrod Brown,4046,0,36
+2026-11-04T01:02:17+00:00,Ottawa,Jon Husted,3821,0,36
+2026-11-04T01:02:17+00:00,Ottawa,Greg Levy,97,0,36
+2026-11-04T01:02:17+00:00,Ottawa,William B. Redpath,159,0,36
+2026-11-04T01:02:17+00:00,Ottawa,Write-in,0,0,36
+2026-11-04T01:02:17+00:00,Putnam,Sherrod Brown,1447,0,25
+2026-11-04T01:02:17+00:00,Putnam,Jon Husted,4654,0,25
+2026-11-04T01:02:17+00:00,Putnam,Greg Levy,70,0,25
+2026-11-04T01:02:17+00:00,Putnam,William B. Redpath,110,0,25
+2026-11-04T01:02:17+00:00,Putnam,Write-in,0,0,25
+2026-11-04T01:02:17+00:00,Scioto,Sherrod Brown,3619,0,77
+2026-11-04T01:02:17+00:00,Scioto,Jon Husted,4038,0,77
+2026-11-04T01:02:17+00:00,Scioto,Greg Levy,128,0,77
+2026-11-04T01:02:17+00:00,Scioto,William B. Redpath,136,0,77
+2026-11-04T01:02:17+00:00,Scioto,Write-in,0,0,77
+2026-11-04T01:02:17+00:00,Vinton,Sherrod Brown,641,0,20
+2026-11-04T01:02:17+00:00,Vinton,Jon Husted,1093,0,20
+2026-11-04T01:02:17+00:00,Vinton,Greg Levy,32,0,20
+2026-11-04T01:02:17+00:00,Vinton,William B. Redpath,69,0,20
+2026-11-04T01:02:17+00:00,Vinton,Write-in,0,0,20
+2026-11-04T01:02:17+00:00,Wood,Sherrod Brown,13159,0,99
+2026-11-04T01:02:17+00:00,Wood,Jon Husted,7869,0,99
+2026-11-04T01:02:17+00:00,Wood,Greg Levy,315,0,99
+2026-11-04T01:02:17+00:00,Wood,William B. Redpath,367,0,99
+2026-11-04T01:02:17+00:00,Wood,Write-in,0,0,99
