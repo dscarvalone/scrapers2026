@@ -2624,3 +2624,18 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:43:11+00:00,Montgomery,Greg Levy,3897,381,381
 2026-11-04T03:43:11+00:00,Montgomery,William B. Redpath,5345,381,381
 2026-11-04T03:43:11+00:00,Montgomery,Write-in,0,381,381
+2026-11-04T03:50:23+00:00,Fairfield,Sherrod Brown,18420,45,111
+2026-11-04T03:50:23+00:00,Fairfield,Jon Husted,22773,45,111
+2026-11-04T03:50:23+00:00,Fairfield,Greg Levy,671,45,111
+2026-11-04T03:50:23+00:00,Fairfield,William B. Redpath,1125,45,111
+2026-11-04T03:50:23+00:00,Fairfield,Write-in,0,45,111
+2026-11-04T03:50:23+00:00,Hardin,Sherrod Brown,2519,21,21
+2026-11-04T03:50:23+00:00,Hardin,Jon Husted,5886,21,21
+2026-11-04T03:50:23+00:00,Hardin,Greg Levy,254,21,21
+2026-11-04T03:50:23+00:00,Hardin,William B. Redpath,424,21,21
+2026-11-04T03:50:23+00:00,Hardin,Write-in,0,21,21
+2026-11-04T03:50:23+00:00,Wayne,Sherrod Brown,13545,60,66
+2026-11-04T03:50:23+00:00,Wayne,Jon Husted,22934,60,66
+2026-11-04T03:50:23+00:00,Wayne,Greg Levy,789,60,66
+2026-11-04T03:50:23+00:00,Wayne,William B. Redpath,1343,60,66
+2026-11-04T03:50:23+00:00,Wayne,Write-in,0,60,66
