@@ -1114,3 +1114,43 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:40:05+00:00,Vinton,Greg Levy,82,20,20
 2026-11-04T01:40:05+00:00,Vinton,William B. Redpath,199,20,20
 2026-11-04T01:40:05+00:00,Vinton,Write-in,0,20,20
+2026-11-04T01:43:41+00:00,Adams,Sherrod Brown,1338,7,21
+2026-11-04T01:43:41+00:00,Adams,Jon Husted,2894,7,21
+2026-11-04T01:43:41+00:00,Adams,Greg Levy,105,7,21
+2026-11-04T01:43:41+00:00,Adams,William B. Redpath,155,7,21
+2026-11-04T01:43:41+00:00,Adams,Write-in,0,7,21
+2026-11-04T01:43:41+00:00,Carroll,Sherrod Brown,1500,3,23
+2026-11-04T01:43:41+00:00,Carroll,Jon Husted,2605,3,23
+2026-11-04T01:43:41+00:00,Carroll,Greg Levy,118,3,23
+2026-11-04T01:43:41+00:00,Carroll,William B. Redpath,154,3,23
+2026-11-04T01:43:41+00:00,Carroll,Write-in,0,3,23
+2026-11-04T01:43:41+00:00,Clark,Sherrod Brown,10447,4,78
+2026-11-04T01:43:41+00:00,Clark,Jon Husted,8924,4,78
+2026-11-04T01:43:41+00:00,Clark,Greg Levy,389,4,78
+2026-11-04T01:43:41+00:00,Clark,William B. Redpath,455,4,78
+2026-11-04T01:43:41+00:00,Clark,Write-in,0,4,78
+2026-11-04T01:43:41+00:00,Hardin,Sherrod Brown,1314,0,21
+2026-11-04T01:43:41+00:00,Hardin,Jon Husted,2019,0,21
+2026-11-04T01:43:41+00:00,Hardin,Greg Levy,58,0,21
+2026-11-04T01:43:41+00:00,Hardin,William B. Redpath,90,0,21
+2026-11-04T01:43:41+00:00,Hardin,Write-in,0,0,21
+2026-11-04T01:43:41+00:00,Holmes,Sherrod Brown,1012,8,17
+2026-11-04T01:43:41+00:00,Holmes,Jon Husted,2430,8,17
+2026-11-04T01:43:41+00:00,Holmes,Greg Levy,43,8,17
+2026-11-04T01:43:41+00:00,Holmes,William B. Redpath,72,8,17
+2026-11-04T01:43:41+00:00,Holmes,Write-in,0,8,17
+2026-11-04T01:43:41+00:00,Logan,Sherrod Brown,3882,14,36
+2026-11-04T01:43:41+00:00,Logan,Jon Husted,8746,14,36
+2026-11-04T01:43:41+00:00,Logan,Greg Levy,303,14,36
+2026-11-04T01:43:41+00:00,Logan,William B. Redpath,500,14,36
+2026-11-04T01:43:41+00:00,Logan,Write-in,0,14,36
+2026-11-04T01:43:41+00:00,Tuscarawas,Sherrod Brown,5682,32,81
+2026-11-04T01:43:41+00:00,Tuscarawas,Jon Husted,5770,32,81
+2026-11-04T01:43:41+00:00,Tuscarawas,Greg Levy,220,32,81
+2026-11-04T01:43:41+00:00,Tuscarawas,William B. Redpath,333,32,81
+2026-11-04T01:43:41+00:00,Tuscarawas,Write-in,0,32,81
+2026-11-04T01:43:41+00:00,Washington,Sherrod Brown,5178,36,50
+2026-11-04T01:43:41+00:00,Washington,Jon Husted,6897,36,50
+2026-11-04T01:43:41+00:00,Washington,Greg Levy,233,36,50
+2026-11-04T01:43:41+00:00,Washington,William B. Redpath,361,36,50
+2026-11-04T01:43:41+00:00,Washington,Write-in,0,36,50
