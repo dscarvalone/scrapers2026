@@ -1924,3 +1924,33 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T02:21:44+00:00,Warren,Greg Levy,1039,145,185
 2026-11-04T02:21:44+00:00,Warren,William B. Redpath,1882,145,185
 2026-11-04T02:21:44+00:00,Warren,Write-in,0,145,185
+2026-11-04T02:25:21+00:00,Ashtabula,Sherrod Brown,7474,48,104
+2026-11-04T02:25:21+00:00,Ashtabula,Jon Husted,8284,48,104
+2026-11-04T02:25:21+00:00,Ashtabula,Greg Levy,380,48,104
+2026-11-04T02:25:21+00:00,Ashtabula,William B. Redpath,576,48,104
+2026-11-04T02:25:21+00:00,Ashtabula,Write-in,0,48,104
+2026-11-04T02:25:21+00:00,Fayette,Sherrod Brown,2485,25,25
+2026-11-04T02:25:21+00:00,Fayette,Jon Husted,6083,25,25
+2026-11-04T02:25:21+00:00,Fayette,Greg Levy,194,25,25
+2026-11-04T02:25:21+00:00,Fayette,William B. Redpath,314,25,25
+2026-11-04T02:25:21+00:00,Fayette,Write-in,0,25,25
+2026-11-04T02:25:21+00:00,Harrison,Sherrod Brown,1433,16,16
+2026-11-04T02:25:21+00:00,Harrison,Jon Husted,3155,16,16
+2026-11-04T02:25:21+00:00,Harrison,Greg Levy,164,16,16
+2026-11-04T02:25:21+00:00,Harrison,William B. Redpath,275,16,16
+2026-11-04T02:25:21+00:00,Harrison,Write-in,0,16,16
+2026-11-04T02:25:21+00:00,Hocking,Sherrod Brown,2290,2,20
+2026-11-04T02:25:21+00:00,Hocking,Jon Husted,2941,2,20
+2026-11-04T02:25:21+00:00,Hocking,Greg Levy,119,2,20
+2026-11-04T02:25:21+00:00,Hocking,William B. Redpath,140,2,20
+2026-11-04T02:25:21+00:00,Hocking,Write-in,0,2,20
+2026-11-04T02:25:21+00:00,Summit,Sherrod Brown,58977,27,371
+2026-11-04T02:25:21+00:00,Summit,Jon Husted,24237,27,371
+2026-11-04T02:25:21+00:00,Summit,Greg Levy,1308,27,371
+2026-11-04T02:25:21+00:00,Summit,William B. Redpath,1338,27,371
+2026-11-04T02:25:21+00:00,Summit,Write-in,0,27,371
+2026-11-04T02:25:21+00:00,Warren,Sherrod Brown,39721,145,185
+2026-11-04T02:25:21+00:00,Warren,Jon Husted,55670,145,185
+2026-11-04T02:25:21+00:00,Warren,Greg Levy,1489,145,185
+2026-11-04T02:25:21+00:00,Warren,William B. Redpath,2626,145,185
+2026-11-04T02:25:21+00:00,Warren,Write-in,0,145,185
