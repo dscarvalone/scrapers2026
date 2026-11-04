@@ -449,3 +449,33 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T00:39:00+00:00,Stark,Greg Levy,836,0,274
 2026-11-04T00:39:00+00:00,Stark,William B. Redpath,1059,0,274
 2026-11-04T00:39:00+00:00,Stark,Write-in,0,0,274
+2026-11-04T00:44:49+00:00,Athens,Sherrod Brown,6773,0,50
+2026-11-04T00:44:49+00:00,Athens,Jon Husted,1705,0,50
+2026-11-04T00:44:49+00:00,Athens,Greg Levy,169,0,50
+2026-11-04T00:44:49+00:00,Athens,William B. Redpath,128,0,50
+2026-11-04T00:44:49+00:00,Athens,Write-in,0,0,50
+2026-11-04T00:44:49+00:00,Defiance,Sherrod Brown,3074,0,33
+2026-11-04T00:44:49+00:00,Defiance,Jon Husted,3730,0,33
+2026-11-04T00:44:49+00:00,Defiance,Greg Levy,123,0,33
+2026-11-04T00:44:49+00:00,Defiance,William B. Redpath,178,0,33
+2026-11-04T00:44:49+00:00,Defiance,Write-in,0,0,33
+2026-11-04T00:44:49+00:00,Mahoning,Sherrod Brown,21418,0,212
+2026-11-04T00:44:49+00:00,Mahoning,Jon Husted,10663,0,212
+2026-11-04T00:44:49+00:00,Mahoning,Greg Levy,534,0,212
+2026-11-04T00:44:49+00:00,Mahoning,William B. Redpath,528,0,212
+2026-11-04T00:44:49+00:00,Mahoning,Write-in,0,0,212
+2026-11-04T00:44:49+00:00,Perry,Sherrod Brown,1936,0,33
+2026-11-04T00:44:49+00:00,Perry,Jon Husted,2959,0,33
+2026-11-04T00:44:49+00:00,Perry,Greg Levy,99,0,33
+2026-11-04T00:44:49+00:00,Perry,William B. Redpath,146,0,33
+2026-11-04T00:44:49+00:00,Perry,Write-in,0,0,33
+2026-11-04T00:44:49+00:00,Summit,Sherrod Brown,52492,0,371
+2026-11-04T00:44:49+00:00,Summit,Jon Husted,18961,0,371
+2026-11-04T00:44:49+00:00,Summit,Greg Levy,1053,0,371
+2026-11-04T00:44:49+00:00,Summit,William B. Redpath,1006,0,371
+2026-11-04T00:44:49+00:00,Summit,Write-in,0,0,371
+2026-11-04T00:44:49+00:00,Trumbull,Sherrod Brown,17424,0,158
+2026-11-04T00:44:49+00:00,Trumbull,Jon Husted,10628,0,158
+2026-11-04T00:44:49+00:00,Trumbull,Greg Levy,502,0,158
+2026-11-04T00:44:49+00:00,Trumbull,William B. Redpath,566,0,158
+2026-11-04T00:44:49+00:00,Trumbull,Write-in,0,0,158
