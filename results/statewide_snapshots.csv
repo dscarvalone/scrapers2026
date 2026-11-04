@@ -2384,3 +2384,33 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:07:19+00:00,Trumbull,Greg Levy,1905,158,158
 2026-11-04T03:07:19+00:00,Trumbull,William B. Redpath,2409,158,158
 2026-11-04T03:07:19+00:00,Trumbull,Write-in,0,158,158
+2026-11-04T03:10:57+00:00,Butler,Sherrod Brown,59540,280,292
+2026-11-04T03:10:57+00:00,Butler,Jon Husted,74196,280,292
+2026-11-04T03:10:57+00:00,Butler,Greg Levy,2614,280,292
+2026-11-04T03:10:57+00:00,Butler,William B. Redpath,3814,280,292
+2026-11-04T03:10:57+00:00,Butler,Write-in,0,280,292
+2026-11-04T03:10:57+00:00,Clinton,Sherrod Brown,2715,35,36
+2026-11-04T03:10:57+00:00,Clinton,Jon Husted,4835,35,36
+2026-11-04T03:10:57+00:00,Clinton,Greg Levy,184,35,36
+2026-11-04T03:10:57+00:00,Clinton,William B. Redpath,273,35,36
+2026-11-04T03:10:57+00:00,Clinton,Write-in,0,35,36
+2026-11-04T03:10:57+00:00,Cuyahoga,Sherrod Brown,130513,68,897
+2026-11-04T03:10:57+00:00,Cuyahoga,Jon Husted,37935,68,897
+2026-11-04T03:10:57+00:00,Cuyahoga,Greg Levy,2367,68,897
+2026-11-04T03:10:57+00:00,Cuyahoga,William B. Redpath,2113,68,897
+2026-11-04T03:10:57+00:00,Cuyahoga,Write-in,0,68,897
+2026-11-04T03:10:57+00:00,Hancock,Sherrod Brown,10193,60,60
+2026-11-04T03:10:57+00:00,Hancock,Jon Husted,16996,60,60
+2026-11-04T03:10:57+00:00,Hancock,Greg Levy,526,60,60
+2026-11-04T03:10:57+00:00,Hancock,William B. Redpath,1187,60,60
+2026-11-04T03:10:57+00:00,Hancock,Write-in,0,60,60
+2026-11-04T03:10:57+00:00,Highland,Sherrod Brown,1805,9,31
+2026-11-04T03:10:57+00:00,Highland,Jon Husted,3381,9,31
+2026-11-04T03:10:57+00:00,Highland,Greg Levy,111,9,31
+2026-11-04T03:10:57+00:00,Highland,William B. Redpath,144,9,31
+2026-11-04T03:10:57+00:00,Highland,Write-in,0,9,31
+2026-11-04T03:10:57+00:00,Holmes,Sherrod Brown,1684,17,17
+2026-11-04T03:10:57+00:00,Holmes,Jon Husted,6764,17,17
+2026-11-04T03:10:57+00:00,Holmes,Greg Levy,150,17,17
+2026-11-04T03:10:57+00:00,Holmes,William B. Redpath,292,17,17
+2026-11-04T03:10:57+00:00,Holmes,Write-in,0,17,17
