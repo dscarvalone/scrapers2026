@@ -2169,3 +2169,38 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T02:43:46+00:00,Jefferson,Greg Levy,568,54,55
 2026-11-04T02:43:46+00:00,Jefferson,William B. Redpath,775,54,55
 2026-11-04T02:43:46+00:00,Jefferson,Write-in,0,54,55
+2026-11-04T02:45:36+00:00,Clermont,Sherrod Brown,26571,102,168
+2026-11-04T02:45:36+00:00,Clermont,Jon Husted,37912,102,168
+2026-11-04T02:45:36+00:00,Clermont,Greg Levy,1272,102,168
+2026-11-04T02:45:36+00:00,Clermont,William B. Redpath,2124,102,168
+2026-11-04T02:45:36+00:00,Clermont,Write-in,0,102,168
+2026-11-04T02:45:36+00:00,Fairfield,Sherrod Brown,15247,12,111
+2026-11-04T02:45:36+00:00,Fairfield,Jon Husted,15412,12,111
+2026-11-04T02:45:36+00:00,Fairfield,Greg Levy,446,12,111
+2026-11-04T02:45:36+00:00,Fairfield,William B. Redpath,662,12,111
+2026-11-04T02:45:36+00:00,Fairfield,Write-in,0,12,111
+2026-11-04T02:45:36+00:00,Geauga,Sherrod Brown,14902,78,79
+2026-11-04T02:45:36+00:00,Geauga,Jon Husted,20497,78,79
+2026-11-04T02:45:36+00:00,Geauga,Greg Levy,437,78,79
+2026-11-04T02:45:36+00:00,Geauga,William B. Redpath,1043,78,79
+2026-11-04T02:45:36+00:00,Geauga,Write-in,0,78,79
+2026-11-04T02:45:36+00:00,Licking,Sherrod Brown,30611,96,96
+2026-11-04T02:45:36+00:00,Licking,Jon Husted,39622,96,96
+2026-11-04T02:45:36+00:00,Licking,Greg Levy,1419,96,96
+2026-11-04T02:45:36+00:00,Licking,William B. Redpath,2537,96,96
+2026-11-04T02:45:36+00:00,Licking,Write-in,0,96,96
+2026-11-04T02:45:36+00:00,Montgomery,Sherrod Brown,77091,263,381
+2026-11-04T02:45:36+00:00,Montgomery,Jon Husted,47801,263,381
+2026-11-04T02:45:36+00:00,Montgomery,Greg Levy,2347,263,381
+2026-11-04T02:45:36+00:00,Montgomery,William B. Redpath,2985,263,381
+2026-11-04T02:45:36+00:00,Montgomery,Write-in,0,263,381
+2026-11-04T02:45:36+00:00,Warren,Sherrod Brown,43962,185,185
+2026-11-04T02:45:36+00:00,Warren,Jon Husted,64230,185,185
+2026-11-04T02:45:36+00:00,Warren,Greg Levy,1764,185,185
+2026-11-04T02:45:36+00:00,Warren,William B. Redpath,3131,185,185
+2026-11-04T02:45:36+00:00,Warren,Write-in,0,185,185
+2026-11-04T02:45:36+00:00,Wayne,Sherrod Brown,9111,30,66
+2026-11-04T02:45:36+00:00,Wayne,Jon Husted,11731,30,66
+2026-11-04T02:45:36+00:00,Wayne,Greg Levy,362,30,66
+2026-11-04T02:45:36+00:00,Wayne,William B. Redpath,547,30,66
+2026-11-04T02:45:36+00:00,Wayne,Write-in,0,30,66
