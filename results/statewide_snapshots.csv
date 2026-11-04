@@ -1064,3 +1064,53 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:38:16+00:00,Vinton,Greg Levy,32,20,20
 2026-11-04T01:38:16+00:00,Vinton,William B. Redpath,69,20,20
 2026-11-04T01:38:16+00:00,Vinton,Write-in,0,20,20
+2026-11-04T01:40:05+00:00,Carroll,Sherrod Brown,1383,3,23
+2026-11-04T01:40:05+00:00,Carroll,Jon Husted,2014,3,23
+2026-11-04T01:40:05+00:00,Carroll,Greg Levy,82,3,23
+2026-11-04T01:40:05+00:00,Carroll,William B. Redpath,96,3,23
+2026-11-04T01:40:05+00:00,Carroll,Write-in,0,3,23
+2026-11-04T01:40:05+00:00,Clark,Sherrod Brown,10020,4,78
+2026-11-04T01:40:05+00:00,Clark,Jon Husted,8359,4,78
+2026-11-04T01:40:05+00:00,Clark,Greg Levy,345,4,78
+2026-11-04T01:40:05+00:00,Clark,William B. Redpath,402,4,78
+2026-11-04T01:40:05+00:00,Clark,Write-in,0,4,78
+2026-11-04T01:40:05+00:00,Coshocton,Sherrod Brown,2451,5,23
+2026-11-04T01:40:05+00:00,Coshocton,Jon Husted,4607,5,23
+2026-11-04T01:40:05+00:00,Coshocton,Greg Levy,172,5,23
+2026-11-04T01:40:05+00:00,Coshocton,William B. Redpath,265,5,23
+2026-11-04T01:40:05+00:00,Coshocton,Write-in,0,5,23
+2026-11-04T01:40:05+00:00,Cuyahoga,Sherrod Brown,120991,0,897
+2026-11-04T01:40:05+00:00,Cuyahoga,Jon Husted,32848,0,897
+2026-11-04T01:40:05+00:00,Cuyahoga,Greg Levy,2116,0,897
+2026-11-04T01:40:05+00:00,Cuyahoga,William B. Redpath,1793,0,897
+2026-11-04T01:40:05+00:00,Cuyahoga,Write-in,0,0,897
+2026-11-04T01:40:05+00:00,Logan,Sherrod Brown,3349,14,36
+2026-11-04T01:40:05+00:00,Logan,Jon Husted,7088,14,36
+2026-11-04T01:40:05+00:00,Logan,Greg Levy,223,14,36
+2026-11-04T01:40:05+00:00,Logan,William B. Redpath,357,14,36
+2026-11-04T01:40:05+00:00,Logan,Write-in,0,14,36
+2026-11-04T01:40:05+00:00,Ottawa,Sherrod Brown,4858,9,36
+2026-11-04T01:40:05+00:00,Ottawa,Jon Husted,5337,9,36
+2026-11-04T01:40:05+00:00,Ottawa,Greg Levy,161,9,36
+2026-11-04T01:40:05+00:00,Ottawa,William B. Redpath,269,9,36
+2026-11-04T01:40:05+00:00,Ottawa,Write-in,0,9,36
+2026-11-04T01:40:05+00:00,Perry,Sherrod Brown,2254,7,33
+2026-11-04T01:40:05+00:00,Perry,Jon Husted,3683,7,33
+2026-11-04T01:40:05+00:00,Perry,Greg Levy,137,7,33
+2026-11-04T01:40:05+00:00,Perry,William B. Redpath,209,7,33
+2026-11-04T01:40:05+00:00,Perry,Write-in,0,7,33
+2026-11-04T01:40:05+00:00,Sandusky,Sherrod Brown,9034,58,58
+2026-11-04T01:40:05+00:00,Sandusky,Jon Husted,11982,58,58
+2026-11-04T01:40:05+00:00,Sandusky,Greg Levy,597,58,58
+2026-11-04T01:40:05+00:00,Sandusky,William B. Redpath,964,58,58
+2026-11-04T01:40:05+00:00,Sandusky,Write-in,0,58,58
+2026-11-04T01:40:05+00:00,Van Wert,Sherrod Brown,2174,22,32
+2026-11-04T01:40:05+00:00,Van Wert,Jon Husted,5608,22,32
+2026-11-04T01:40:05+00:00,Van Wert,Greg Levy,226,22,32
+2026-11-04T01:40:05+00:00,Van Wert,William B. Redpath,368,22,32
+2026-11-04T01:40:05+00:00,Van Wert,Write-in,0,22,32
+2026-11-04T01:40:05+00:00,Vinton,Sherrod Brown,1096,20,20
+2026-11-04T01:40:05+00:00,Vinton,Jon Husted,2526,20,20
+2026-11-04T01:40:05+00:00,Vinton,Greg Levy,82,20,20
+2026-11-04T01:40:05+00:00,Vinton,William B. Redpath,199,20,20
+2026-11-04T01:40:05+00:00,Vinton,Write-in,0,20,20
