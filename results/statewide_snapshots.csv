@@ -439,3 +439,13 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-01T22:14:23+00:00,Wyandot,Greg Levy,0,0,23
 2026-11-01T22:14:23+00:00,Wyandot,William B. Redpath,0,0,23
 2026-11-01T22:14:23+00:00,Wyandot,Write-in,0,0,23
+2026-11-04T00:39:00+00:00,Franklin,Sherrod Brown,126744,0,889
+2026-11-04T00:39:00+00:00,Franklin,Jon Husted,34350,0,889
+2026-11-04T00:39:00+00:00,Franklin,Greg Levy,2253,0,889
+2026-11-04T00:39:00+00:00,Franklin,William B. Redpath,1921,0,889
+2026-11-04T00:39:00+00:00,Franklin,Write-in,0,0,889
+2026-11-04T00:39:00+00:00,Stark,Sherrod Brown,29475,0,274
+2026-11-04T00:39:00+00:00,Stark,Jon Husted,20668,0,274
+2026-11-04T00:39:00+00:00,Stark,Greg Levy,836,0,274
+2026-11-04T00:39:00+00:00,Stark,William B. Redpath,1059,0,274
+2026-11-04T00:39:00+00:00,Stark,Write-in,0,0,274
