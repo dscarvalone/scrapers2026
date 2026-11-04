@@ -8,9 +8,9 @@ county_fips,county,timing_source,as_of,precincts_reported,precincts_total,pre_ed
 39013,Belmont,none,2026-11-03 21:19:54 EST,35,69,,,first report already included precincts; totals only,,,,,,,,,,,,,,,,,,,,,,,,,17264,,
 39015,Brown,first_drop,2026-11-03 21:30:44 EST,4,33,0.805,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:50:38 EST); eday = growth since, incl. any absentee/provisional added later",5743,1933,3555,163,92,0,1391,294,1001,63,33,0,,,,,,,,,,,,,7134,,
 39017,Butler,itemized,2026-11-03T21:28:22.209-05:00,0,0,0.7237,True,,57246,28560,26974,927,757,28,21855,8062,12522,775,469,27,0,0,0,0,0,0,,,,,,,79101,57284,38
-39019,Carroll,itemized,2026-11-03T20:42:14.462-05:00,3,23,0.8165,True,,3578,1383,2014,96,82,3,804,117,591,58,36,2,0,0,0,0,0,0,,,,,,,4382,3575,-3
+39019,Carroll,itemized,2026-11-03T21:33:38.105-05:00,23,23,0.3479,True,,3578,1383,2014,96,82,3,6708,1405,4706,371,209,17,0,0,0,0,0,0,,,,,,,10286,3575,-3
 39021,Champaign,first_drop,2026-11-03 21:07:15 EST,28,31,0.4584,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:02:17 EST); eday = growth since, incl. any absentee/provisional added later",6751,2660,3708,223,160,0,7975,1835,5374,469,297,0,,,,,,,,,,,,,14726,,
-39023,Clark,itemized,2026-11-03T21:05:21.595-05:00,27,78,0.661,True,,19150,10020,8359,402,345,24,9820,3377,5689,432,307,15,0,0,0,0,0,0,,,,,,,28970,19126,-24
+39023,Clark,itemized,2026-11-03T21:35:07.566-05:00,59,78,0.4589,True,,19150,10020,8359,402,345,24,22582,7298,13611,953,682,38,0,0,0,0,0,0,,,,,,,41732,19126,-24
 39025,Clermont,itemized,pdf-sha1:83e9d3affa11,,,,True,,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,0,31975,31975
 39027,Clinton,first_drop,2026-11-03 21:19:54 EST,6,36,0.8125,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 20:03:40 EST); eday = growth since, incl. any absentee/provisional added later",6506,2405,3783,181,137,0,1501,310,1052,92,47,0,,,,,,,,,,,,,8007,,
 39029,Columbiana,first_drop,2026-11-03 21:16:20 EST,73,73,0.3012,False,"estimate: pre_eday = last report with 0 precincts (2026-11-03 19:56:27 EST); eday = growth since, incl. any absentee/provisional added later",10499,4563,5535,229,172,0,24360,6365,16102,1229,664,0,,,,,,,,,,,,,34859,,
