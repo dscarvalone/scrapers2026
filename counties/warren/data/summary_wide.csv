@@ -1,6 +1,6 @@
 race_id,race,vote_for,contestant_id,contestant,party,write_in,withdrawn,Early Voting,Mail Ballots,Election Day,Provisional,total,pct,winner,race_total_votes,ballots_cast,over_votes,under_votes,blank_voted,precincts_reported,precincts_total,generated_at,source_format
-396,U.S. Senator,1,7,Jon Husted,Republican,False,False,17404,8228,38270,0,63902,56.7,False,112698,,18,866,0,184,185,2026-11-03T21:32:30.683-05:00,xml
-396,U.S. Senator,1,6,Sherrod Brown,Democratic,False,False,16025,7538,20286,0,43849,38.91,False,112698,,18,866,0,184,185,2026-11-03T21:32:30.683-05:00,xml
-396,U.S. Senator,1,646,William B. Redpath,Libertarian,False,False,485,387,2237,0,3109,2.76,False,112698,,18,866,0,184,185,2026-11-03T21:32:30.683-05:00,xml
-396,U.S. Senator,1,681,Greg Levy,Other-party candidate,False,False,308,225,1213,0,1746,1.55,False,112698,,18,866,0,184,185,2026-11-03T21:32:30.683-05:00,xml
-396,U.S. Senator,1,682,Write-in,Nonpartisan,False,False,14,16,62,0,92,0.08,False,112698,,18,866,0,184,185,2026-11-03T21:32:30.683-05:00,xml
+396,U.S. Senator,1,7,Jon Husted,Republican,False,False,17404,8228,38598,0,64230,56.75,False,113180,,18,880,0,185,185,2026-11-03T21:40:25.568-05:00,xml
+396,U.S. Senator,1,6,Sherrod Brown,Democratic,False,False,16025,7538,20399,0,43962,38.84,False,113180,,18,880,0,185,185,2026-11-03T21:40:25.568-05:00,xml
+396,U.S. Senator,1,646,William B. Redpath,Libertarian,False,False,485,387,2259,0,3131,2.77,False,113180,,18,880,0,185,185,2026-11-03T21:40:25.568-05:00,xml
+396,U.S. Senator,1,681,Greg Levy,Other-party candidate,False,False,308,225,1231,0,1764,1.56,False,113180,,18,880,0,185,185,2026-11-03T21:40:25.568-05:00,xml
+396,U.S. Senator,1,682,Write-in,Nonpartisan,False,False,14,16,63,0,93,0.08,False,113180,,18,880,0,185,185,2026-11-03T21:40:25.568-05:00,xml
