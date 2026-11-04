@@ -1,6 +1,6 @@
 race_id,race,contestant,party,write_in,Election Day,Early In-Person,Provisional,Post Election Day,Post VBM,Vote By Mail,total,precincts_reported,precincts_total,generated_at,source_format
-01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Sherrod Brown,DEM,False,93449,47709,0,0,0,75499,216657,319,897,2026-11-04T05:44:37.2464358Z,enhanced_voting
-01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Jon Husted,REP,False,46331,4734,0,0,0,28301,79366,319,897,2026-11-04T05:44:37.2464358Z,enhanced_voting
-01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Greg Levy,Other,False,3058,891,0,0,0,1263,5212,319,897,2026-11-04T05:44:37.2464358Z,enhanced_voting
-01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),William B. Redpath,LIB,False,2904,373,0,0,0,1445,4722,319,897,2026-11-04T05:44:37.2464358Z,enhanced_voting
-01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Write-in,NON,True,162,38,0,0,0,71,271,319,897,2026-11-04T05:44:37.2464358Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Sherrod Brown,DEM,False,207706,47709,0,0,0,77724,333139,897,897,2026-11-04T10:56:51.6496323Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Jon Husted,REP,False,91474,4734,0,0,0,29075,125283,897,897,2026-11-04T10:56:51.6496323Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Greg Levy,Other,False,6925,891,0,0,0,1337,9153,897,897,2026-11-04T10:56:51.6496323Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),William B. Redpath,LIB,False,6001,373,0,0,0,1539,7913,897,897,2026-11-04T10:56:51.6496323Z,enhanced_voting
+01000000-ad7d-4778-c93b-08df1fbf5787,U.S. Senator <br> (Unexpired term ending 1-3-2029),Write-in,NON,True,382,38,0,0,0,75,495,897,897,2026-11-04T10:56:51.6496323Z,enhanced_voting
