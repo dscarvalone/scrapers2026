@@ -1339,3 +1339,53 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:52:41+00:00,Wayne,Greg Levy,239,1,66
 2026-11-04T01:52:41+00:00,Wayne,William B. Redpath,343,1,66
 2026-11-04T01:52:41+00:00,Wayne,Write-in,0,1,66
+2026-11-04T01:54:37+00:00,Allen,Sherrod Brown,11066,88,88
+2026-11-04T01:54:37+00:00,Allen,Jon Husted,21992,88,88
+2026-11-04T01:54:37+00:00,Allen,Greg Levy,823,88,88
+2026-11-04T01:54:37+00:00,Allen,William B. Redpath,1337,88,88
+2026-11-04T01:54:37+00:00,Allen,Write-in,0,88,88
+2026-11-04T01:54:37+00:00,Auglaize,Sherrod Brown,2072,42,42
+2026-11-04T01:54:37+00:00,Auglaize,Jon Husted,4491,42,42
+2026-11-04T01:54:37+00:00,Auglaize,Greg Levy,102,42,42
+2026-11-04T01:54:37+00:00,Auglaize,William B. Redpath,183,42,42
+2026-11-04T01:54:37+00:00,Auglaize,Write-in,0,42,42
+2026-11-04T01:54:37+00:00,Crawford,Sherrod Brown,2091,0,35
+2026-11-04T01:54:37+00:00,Crawford,Jon Husted,3446,0,35
+2026-11-04T01:54:37+00:00,Crawford,Greg Levy,100,0,35
+2026-11-04T01:54:37+00:00,Crawford,William B. Redpath,142,0,35
+2026-11-04T01:54:37+00:00,Crawford,Write-in,0,0,35
+2026-11-04T01:54:37+00:00,Fulton,Sherrod Brown,3940,13,29
+2026-11-04T01:54:37+00:00,Fulton,Jon Husted,6477,13,29
+2026-11-04T01:54:37+00:00,Fulton,Greg Levy,185,13,29
+2026-11-04T01:54:37+00:00,Fulton,William B. Redpath,362,13,29
+2026-11-04T01:54:37+00:00,Fulton,Write-in,0,13,29
+2026-11-04T01:54:37+00:00,Geauga,Sherrod Brown,6533,27,79
+2026-11-04T01:54:37+00:00,Geauga,Jon Husted,5455,27,79
+2026-11-04T01:54:37+00:00,Geauga,Greg Levy,79,27,79
+2026-11-04T01:54:37+00:00,Geauga,William B. Redpath,168,27,79
+2026-11-04T01:54:37+00:00,Geauga,Write-in,0,27,79
+2026-11-04T01:54:37+00:00,Hamilton,Sherrod Brown,85866,39,563
+2026-11-04T01:54:37+00:00,Hamilton,Jon Husted,30527,39,563
+2026-11-04T01:54:37+00:00,Hamilton,Greg Levy,1848,39,563
+2026-11-04T01:54:37+00:00,Hamilton,William B. Redpath,1500,39,563
+2026-11-04T01:54:37+00:00,Hamilton,Write-in,0,39,563
+2026-11-04T01:54:37+00:00,Highland,Sherrod Brown,1805,0,31
+2026-11-04T01:54:37+00:00,Highland,Jon Husted,3381,0,31
+2026-11-04T01:54:37+00:00,Highland,Greg Levy,111,0,31
+2026-11-04T01:54:37+00:00,Highland,William B. Redpath,144,0,31
+2026-11-04T01:54:37+00:00,Highland,Write-in,0,0,31
+2026-11-04T01:54:37+00:00,Jefferson,Sherrod Brown,4496,17,55
+2026-11-04T01:54:37+00:00,Jefferson,Jon Husted,5346,17,55
+2026-11-04T01:54:37+00:00,Jefferson,Greg Levy,199,17,55
+2026-11-04T01:54:37+00:00,Jefferson,William B. Redpath,225,17,55
+2026-11-04T01:54:37+00:00,Jefferson,Write-in,0,17,55
+2026-11-04T01:54:37+00:00,Miami,Sherrod Brown,9477,16,87
+2026-11-04T01:54:37+00:00,Miami,Jon Husted,14673,16,87
+2026-11-04T01:54:37+00:00,Miami,Greg Levy,360,16,87
+2026-11-04T01:54:37+00:00,Miami,William B. Redpath,695,16,87
+2026-11-04T01:54:37+00:00,Miami,Write-in,0,16,87
+2026-11-04T01:54:37+00:00,Portage,Sherrod Brown,14026,15,126
+2026-11-04T01:54:37+00:00,Portage,Jon Husted,8392,15,126
+2026-11-04T01:54:37+00:00,Portage,Greg Levy,409,15,126
+2026-11-04T01:54:37+00:00,Portage,William B. Redpath,445,15,126
+2026-11-04T01:54:37+00:00,Portage,Write-in,0,15,126
