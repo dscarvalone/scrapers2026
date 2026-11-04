@@ -2439,3 +2439,33 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:14:04+00:00,Summit,Greg Levy,2788,185,371
 2026-11-04T03:14:04+00:00,Summit,William B. Redpath,3646,185,371
 2026-11-04T03:14:04+00:00,Summit,Write-in,0,185,371
+2026-11-04T03:15:53+00:00,Belmont,Sherrod Brown,7326,68,69
+2026-11-04T03:15:53+00:00,Belmont,Jon Husted,12871,68,69
+2026-11-04T03:15:53+00:00,Belmont,Greg Levy,454,68,69
+2026-11-04T03:15:53+00:00,Belmont,William B. Redpath,762,68,69
+2026-11-04T03:15:53+00:00,Belmont,Write-in,0,68,69
+2026-11-04T03:15:53+00:00,Fairfield,Sherrod Brown,15247,30,111
+2026-11-04T03:15:53+00:00,Fairfield,Jon Husted,15412,30,111
+2026-11-04T03:15:53+00:00,Fairfield,Greg Levy,446,30,111
+2026-11-04T03:15:53+00:00,Fairfield,William B. Redpath,662,30,111
+2026-11-04T03:15:53+00:00,Fairfield,Write-in,0,30,111
+2026-11-04T03:15:53+00:00,Greene,Sherrod Brown,31672,148,151
+2026-11-04T03:15:53+00:00,Greene,Jon Husted,36605,148,151
+2026-11-04T03:15:53+00:00,Greene,Greg Levy,1148,148,151
+2026-11-04T03:15:53+00:00,Greene,William B. Redpath,1979,148,151
+2026-11-04T03:15:53+00:00,Greene,Write-in,0,148,151
+2026-11-04T03:15:53+00:00,Hamilton,Sherrod Brown,112603,312,563
+2026-11-04T03:15:53+00:00,Hamilton,Jon Husted,45865,312,563
+2026-11-04T03:15:53+00:00,Hamilton,Greg Levy,2956,312,563
+2026-11-04T03:15:53+00:00,Hamilton,William B. Redpath,2623,312,563
+2026-11-04T03:15:53+00:00,Hamilton,Write-in,0,312,563
+2026-11-04T03:15:53+00:00,Lawrence,Sherrod Brown,4905,80,84
+2026-11-04T03:15:53+00:00,Lawrence,Jon Husted,8788,80,84
+2026-11-04T03:15:53+00:00,Lawrence,Greg Levy,304,80,84
+2026-11-04T03:15:53+00:00,Lawrence,William B. Redpath,509,80,84
+2026-11-04T03:15:53+00:00,Lawrence,Write-in,0,80,84
+2026-11-04T03:15:53+00:00,Montgomery,Sherrod Brown,90461,353,381
+2026-11-04T03:15:53+00:00,Montgomery,Jon Husted,60979,353,381
+2026-11-04T03:15:53+00:00,Montgomery,Greg Levy,2869,353,381
+2026-11-04T03:15:53+00:00,Montgomery,William B. Redpath,3818,353,381
+2026-11-04T03:15:53+00:00,Montgomery,Write-in,0,353,381
