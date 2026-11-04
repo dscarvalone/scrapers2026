@@ -2469,3 +2469,38 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:15:53+00:00,Montgomery,Greg Levy,2869,353,381
 2026-11-04T03:15:53+00:00,Montgomery,William B. Redpath,3818,353,381
 2026-11-04T03:15:53+00:00,Montgomery,Write-in,0,353,381
+2026-11-04T03:19:37+00:00,Fairfield,Sherrod Brown,16987,30,111
+2026-11-04T03:19:37+00:00,Fairfield,Jon Husted,19039,30,111
+2026-11-04T03:19:37+00:00,Fairfield,Greg Levy,562,30,111
+2026-11-04T03:19:37+00:00,Fairfield,William B. Redpath,917,30,111
+2026-11-04T03:19:37+00:00,Fairfield,Write-in,0,30,111
+2026-11-04T03:19:37+00:00,Hamilton,Sherrod Brown,153322,312,563
+2026-11-04T03:19:37+00:00,Hamilton,Jon Husted,78657,312,563
+2026-11-04T03:19:37+00:00,Hamilton,Greg Levy,4579,312,563
+2026-11-04T03:19:37+00:00,Hamilton,William B. Redpath,4565,312,563
+2026-11-04T03:19:37+00:00,Hamilton,Write-in,0,312,563
+2026-11-04T03:19:37+00:00,Lawrence,Sherrod Brown,5677,80,84
+2026-11-04T03:19:37+00:00,Lawrence,Jon Husted,10449,80,84
+2026-11-04T03:19:37+00:00,Lawrence,Greg Levy,386,80,84
+2026-11-04T03:19:37+00:00,Lawrence,William B. Redpath,605,80,84
+2026-11-04T03:19:37+00:00,Lawrence,Write-in,0,80,84
+2026-11-04T03:19:37+00:00,Lorain,Sherrod Brown,64244,210,210
+2026-11-04T03:19:37+00:00,Lorain,Jon Husted,47668,210,210
+2026-11-04T03:19:37+00:00,Lorain,Greg Levy,2148,210,210
+2026-11-04T03:19:37+00:00,Lorain,William B. Redpath,3135,210,210
+2026-11-04T03:19:37+00:00,Lorain,Write-in,0,210,210
+2026-11-04T03:19:37+00:00,Montgomery,Sherrod Brown,107386,353,381
+2026-11-04T03:19:37+00:00,Montgomery,Jon Husted,77498,353,381
+2026-11-04T03:19:37+00:00,Montgomery,Greg Levy,3633,353,381
+2026-11-04T03:19:37+00:00,Montgomery,William B. Redpath,5031,353,381
+2026-11-04T03:19:37+00:00,Montgomery,Write-in,0,353,381
+2026-11-04T03:19:37+00:00,Portage,Sherrod Brown,21457,107,126
+2026-11-04T03:19:37+00:00,Portage,Jon Husted,18534,107,126
+2026-11-04T03:19:37+00:00,Portage,Greg Levy,985,107,126
+2026-11-04T03:19:37+00:00,Portage,William B. Redpath,1245,107,126
+2026-11-04T03:19:37+00:00,Portage,Write-in,0,107,126
+2026-11-04T03:19:37+00:00,Wayne,Sherrod Brown,10658,48,66
+2026-11-04T03:19:37+00:00,Wayne,Jon Husted,15183,48,66
+2026-11-04T03:19:37+00:00,Wayne,Greg Levy,502,48,66
+2026-11-04T03:19:37+00:00,Wayne,William B. Redpath,783,48,66
+2026-11-04T03:19:37+00:00,Wayne,Write-in,0,48,66
