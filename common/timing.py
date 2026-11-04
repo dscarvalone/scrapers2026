@@ -207,6 +207,21 @@ def _add(out: dict, t: str, cand: str, v: int):
     out[f"{t}_total_votes"] += v
 
 
+STALE_MIN_VOTES, STALE_MIN_SHARE = 1000, 0.05
+
+
+def stale_feed(feed_total: int, sos_total: int | None) -> bool:
+    """True when the SOS statewide total for a county is well ahead of the
+    county's own feed (e.g. the county's PDF is still the zero report). Such a
+    county is handled like one with no feed: SOS toplines, and the first-drop
+    split if there is a clean one. A small lag (one batch, a minute) doesn't
+    count, so a live feed doesn't flip paths."""
+    if not sos_total:
+        return False
+    gap = sos_total - (feed_total or 0)
+    return gap > STALE_MIN_VOTES and gap > STALE_MIN_SHARE * sos_total
+
+
 def timing_rows(reg: list[dict], long_rows: list[dict], drops: dict[str, dict]) -> list[dict]:
     """One row per county. `reg` rows need county and county_fips; `long_rows`
     are common.senate.county_rows output (county feeds only)."""
@@ -221,6 +236,10 @@ def timing_rows(reg: list[dict], long_rows: list[dict], drops: dict[str, dict]) 
         d = drops.get(c)
         rs = by_county.get(c)
         notes = []
+        if rs and d and d.get("latest") and stale_feed(sum(int(r["votes"]) for r in rs), sum(d["latest"].values())):
+            notes.append(f"county feed stale ({sum(int(r['votes']) for r in rs):,} votes vs "
+                         f"{sum(d['latest'].values()):,} on the SOS site); using the SOS totals")
+            rs = None
         if rs:
             out["timing_source"] = "itemized"
             out.update(as_of=max(r["source_generated_at"] for r in rs),

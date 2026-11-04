@@ -23,6 +23,10 @@ Where the numbers come from (method_source):
                   eday and early only; evip / vbm / provisional blank.
                   Totals and precincts from the SOS statewide site.
   totals_only     no split yet: toplines only.
+A county whose own feed is stale (the SOS site is more than 1,000 votes and
+5% ahead of it, common.timing.stale_feed; e.g. its PDF is still the zero
+report) is treated as if it had no feed: first_drop or totals_only from the
+SOS site, with a note. Its own split comes back once its feed catches up.
 The Statewide row sums every county's toplines; its method columns sum only
 the counties that have that method (coverage in `notes`).
 
@@ -40,7 +44,7 @@ from datetime import datetime
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-from common.timing import CAND_COL, PARTY_COLS
+from common.timing import CAND_COL, PARTY_COLS, stale_feed
 
 ROOT = Path(__file__).resolve().parent.parent
 STATEWIDE = ROOT / "results" / "senate_statewide_by_county.csv"
@@ -154,7 +158,15 @@ def county_rows(reg: list[dict], wide: list[dict], timing: list[dict], fetched: 
                    refreshed_sheet_as_of=built)
         w, t, s = wide_by.get(c, {}), tim_by.get(c, {}), statewide.get(c)
         notes = []
-        if w.get("itemized"):
+        stale = False
+        if w.get("itemized") and s and s["votes"]:
+            feed = sum(w[f"{b}_total_votes"] or 0 for b in ("eday", "early", "provisional", "unassigned")
+                       if w.get(f"{b}_total_votes", "") != "")
+            stale = stale_feed(feed, sum(s["votes"].values()))
+            if stale and "feed stale" not in (t.get("notes") or ""):
+                notes.append(f"county feed stale ({feed:,} votes vs {sum(s['votes'].values()):,} on the SOS "
+                             "site): toplines from the SOS site, its own split not used")
+        if w.get("itemized") and not stale:
             out["method_source"] = "itemized"
             out["has_mail_inperson_split"] = bool(t.get("has_mail_inperson_split"))
             # Toplines from the same feed as the split, so methods add up.
