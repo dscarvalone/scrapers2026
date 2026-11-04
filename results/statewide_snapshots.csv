@@ -479,3 +479,73 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T00:44:49+00:00,Trumbull,Greg Levy,502,0,158
 2026-11-04T00:44:49+00:00,Trumbull,William B. Redpath,566,0,158
 2026-11-04T00:44:49+00:00,Trumbull,Write-in,0,0,158
+2026-11-04T00:50:38+00:00,Allen,Sherrod Brown,5034,0,88
+2026-11-04T00:50:38+00:00,Allen,Jon Husted,6187,0,88
+2026-11-04T00:50:38+00:00,Allen,Greg Levy,208,0,88
+2026-11-04T00:50:38+00:00,Allen,William B. Redpath,238,0,88
+2026-11-04T00:50:38+00:00,Allen,Write-in,0,0,88
+2026-11-04T00:50:38+00:00,Brown,Sherrod Brown,1933,0,33
+2026-11-04T00:50:38+00:00,Brown,Jon Husted,3555,0,33
+2026-11-04T00:50:38+00:00,Brown,Greg Levy,92,0,33
+2026-11-04T00:50:38+00:00,Brown,William B. Redpath,163,0,33
+2026-11-04T00:50:38+00:00,Brown,Write-in,0,0,33
+2026-11-04T00:50:38+00:00,Butler,Sherrod Brown,28573,0,292
+2026-11-04T00:50:38+00:00,Butler,Jon Husted,27027,0,292
+2026-11-04T00:50:38+00:00,Butler,Greg Levy,757,0,292
+2026-11-04T00:50:38+00:00,Butler,William B. Redpath,927,0,292
+2026-11-04T00:50:38+00:00,Butler,Write-in,0,0,292
+2026-11-04T00:50:38+00:00,Clark,Sherrod Brown,10020,0,78
+2026-11-04T00:50:38+00:00,Clark,Jon Husted,8359,0,78
+2026-11-04T00:50:38+00:00,Clark,Greg Levy,345,0,78
+2026-11-04T00:50:38+00:00,Clark,William B. Redpath,402,0,78
+2026-11-04T00:50:38+00:00,Clark,Write-in,0,0,78
+2026-11-04T00:50:38+00:00,Henry,Sherrod Brown,1864,0,23
+2026-11-04T00:50:38+00:00,Henry,Jon Husted,2424,0,23
+2026-11-04T00:50:38+00:00,Henry,Greg Levy,67,0,23
+2026-11-04T00:50:38+00:00,Henry,William B. Redpath,96,0,23
+2026-11-04T00:50:38+00:00,Henry,Write-in,0,0,23
+2026-11-04T00:50:38+00:00,Hocking,Sherrod Brown,2124,0,20
+2026-11-04T00:50:38+00:00,Hocking,Jon Husted,2655,0,20
+2026-11-04T00:50:38+00:00,Hocking,Greg Levy,100,0,20
+2026-11-04T00:50:38+00:00,Hocking,William B. Redpath,109,0,20
+2026-11-04T00:50:38+00:00,Hocking,Write-in,0,0,20
+2026-11-04T00:50:38+00:00,Holmes,Sherrod Brown,1012,0,17
+2026-11-04T00:50:38+00:00,Holmes,Jon Husted,2430,0,17
+2026-11-04T00:50:38+00:00,Holmes,Greg Levy,43,0,17
+2026-11-04T00:50:38+00:00,Holmes,William B. Redpath,72,0,17
+2026-11-04T00:50:38+00:00,Holmes,Write-in,0,0,17
+2026-11-04T00:50:38+00:00,Lorain,Sherrod Brown,34303,0,210
+2026-11-04T00:50:38+00:00,Lorain,Jon Husted,18095,0,210
+2026-11-04T00:50:38+00:00,Lorain,Greg Levy,745,0,210
+2026-11-04T00:50:38+00:00,Lorain,William B. Redpath,899,0,210
+2026-11-04T00:50:38+00:00,Lorain,Write-in,0,0,210
+2026-11-04T00:50:38+00:00,Montgomery,Sherrod Brown,45511,0,381
+2026-11-04T00:50:38+00:00,Montgomery,Jon Husted,17974,0,381
+2026-11-04T00:50:38+00:00,Montgomery,Greg Levy,909,0,381
+2026-11-04T00:50:38+00:00,Montgomery,William B. Redpath,907,0,381
+2026-11-04T00:50:38+00:00,Montgomery,Write-in,0,0,381
+2026-11-04T00:50:38+00:00,Portage,Sherrod Brown,14026,0,126
+2026-11-04T00:50:38+00:00,Portage,Jon Husted,8392,0,126
+2026-11-04T00:50:38+00:00,Portage,Greg Levy,409,0,126
+2026-11-04T00:50:38+00:00,Portage,William B. Redpath,445,0,126
+2026-11-04T00:50:38+00:00,Portage,Write-in,0,0,126
+2026-11-04T00:50:38+00:00,Ross,Sherrod Brown,5369,0,65
+2026-11-04T00:50:38+00:00,Ross,Jon Husted,5813,0,65
+2026-11-04T00:50:38+00:00,Ross,Greg Levy,156,0,65
+2026-11-04T00:50:38+00:00,Ross,William B. Redpath,207,0,65
+2026-11-04T00:50:38+00:00,Ross,Write-in,0,0,65
+2026-11-04T00:50:38+00:00,Washington,Sherrod Brown,4967,0,50
+2026-11-04T00:50:38+00:00,Washington,Jon Husted,6117,0,50
+2026-11-04T00:50:38+00:00,Washington,Greg Levy,201,0,50
+2026-11-04T00:50:38+00:00,Washington,William B. Redpath,287,0,50
+2026-11-04T00:50:38+00:00,Washington,Write-in,0,0,50
+2026-11-04T00:50:38+00:00,Wayne,Sherrod Brown,1842,0,66
+2026-11-04T00:50:38+00:00,Wayne,Jon Husted,1883,0,66
+2026-11-04T00:50:38+00:00,Wayne,Greg Levy,79,0,66
+2026-11-04T00:50:38+00:00,Wayne,William B. Redpath,100,0,66
+2026-11-04T00:50:38+00:00,Wayne,Write-in,0,0,66
+2026-11-04T00:50:38+00:00,Wyandot,Sherrod Brown,1621,0,23
+2026-11-04T00:50:38+00:00,Wyandot,Jon Husted,2337,0,23
+2026-11-04T00:50:38+00:00,Wyandot,Greg Levy,969,0,23
+2026-11-04T00:50:38+00:00,Wyandot,William B. Redpath,262,0,23
+2026-11-04T00:50:38+00:00,Wyandot,Write-in,0,0,23
