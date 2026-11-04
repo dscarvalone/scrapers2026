@@ -999,3 +999,68 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:34:40+00:00,Wyandot,Greg Levy,1073,13,23
 2026-11-04T01:34:40+00:00,Wyandot,William B. Redpath,434,13,23
 2026-11-04T01:34:40+00:00,Wyandot,Write-in,0,13,23
+2026-11-04T01:38:16+00:00,Allen,Sherrod Brown,10406,77,88
+2026-11-04T01:38:16+00:00,Allen,Jon Husted,19247,77,88
+2026-11-04T01:38:16+00:00,Allen,Greg Levy,733,77,88
+2026-11-04T01:38:16+00:00,Allen,William B. Redpath,1172,77,88
+2026-11-04T01:38:16+00:00,Allen,Write-in,0,77,88
+2026-11-04T01:38:16+00:00,Gallia,Sherrod Brown,1485,7,26
+2026-11-04T01:38:16+00:00,Gallia,Jon Husted,3053,7,26
+2026-11-04T01:38:16+00:00,Gallia,Greg Levy,88,7,26
+2026-11-04T01:38:16+00:00,Gallia,William B. Redpath,141,7,26
+2026-11-04T01:38:16+00:00,Gallia,Write-in,0,7,26
+2026-11-04T01:38:16+00:00,Jefferson,Sherrod Brown,4496,5,55
+2026-11-04T01:38:16+00:00,Jefferson,Jon Husted,5346,5,55
+2026-11-04T01:38:16+00:00,Jefferson,Greg Levy,199,5,55
+2026-11-04T01:38:16+00:00,Jefferson,William B. Redpath,225,5,55
+2026-11-04T01:38:16+00:00,Jefferson,Write-in,0,5,55
+2026-11-04T01:38:16+00:00,Licking,Sherrod Brown,16766,14,96
+2026-11-04T01:38:16+00:00,Licking,Jon Husted,18337,14,96
+2026-11-04T01:38:16+00:00,Licking,Greg Levy,568,14,96
+2026-11-04T01:38:16+00:00,Licking,William B. Redpath,966,14,96
+2026-11-04T01:38:16+00:00,Licking,Write-in,0,14,96
+2026-11-04T01:38:16+00:00,Meigs,Sherrod Brown,1450,13,27
+2026-11-04T01:38:16+00:00,Meigs,Jon Husted,2993,13,27
+2026-11-04T01:38:16+00:00,Meigs,Greg Levy,106,13,27
+2026-11-04T01:38:16+00:00,Meigs,William B. Redpath,137,13,27
+2026-11-04T01:38:16+00:00,Meigs,Write-in,0,13,27
+2026-11-04T01:38:16+00:00,Miami,Sherrod Brown,8932,8,87
+2026-11-04T01:38:16+00:00,Miami,Jon Husted,12717,8,87
+2026-11-04T01:38:16+00:00,Miami,Greg Levy,324,8,87
+2026-11-04T01:38:16+00:00,Miami,William B. Redpath,594,8,87
+2026-11-04T01:38:16+00:00,Miami,Write-in,0,8,87
+2026-11-04T01:38:16+00:00,Morgan,Sherrod Brown,1267,11,13
+2026-11-04T01:38:16+00:00,Morgan,Jon Husted,2765,11,13
+2026-11-04T01:38:16+00:00,Morgan,Greg Levy,104,11,13
+2026-11-04T01:38:16+00:00,Morgan,William B. Redpath,140,11,13
+2026-11-04T01:38:16+00:00,Morgan,Write-in,0,11,13
+2026-11-04T01:38:16+00:00,Muskingum,Sherrod Brown,5467,0,68
+2026-11-04T01:38:16+00:00,Muskingum,Jon Husted,6654,0,68
+2026-11-04T01:38:16+00:00,Muskingum,Greg Levy,218,0,68
+2026-11-04T01:38:16+00:00,Muskingum,William B. Redpath,290,0,68
+2026-11-04T01:38:16+00:00,Muskingum,Write-in,0,0,68
+2026-11-04T01:38:16+00:00,Ottawa,Sherrod Brown,4046,9,36
+2026-11-04T01:38:16+00:00,Ottawa,Jon Husted,3821,9,36
+2026-11-04T01:38:16+00:00,Ottawa,Greg Levy,97,9,36
+2026-11-04T01:38:16+00:00,Ottawa,William B. Redpath,159,9,36
+2026-11-04T01:38:16+00:00,Ottawa,Write-in,0,9,36
+2026-11-04T01:38:16+00:00,Preble,Sherrod Brown,2392,11,65
+2026-11-04T01:38:16+00:00,Preble,Jon Husted,5283,11,65
+2026-11-04T01:38:16+00:00,Preble,Greg Levy,134,11,65
+2026-11-04T01:38:16+00:00,Preble,William B. Redpath,266,11,65
+2026-11-04T01:38:16+00:00,Preble,Write-in,0,11,65
+2026-11-04T01:38:16+00:00,Putnam,Sherrod Brown,2422,19,25
+2026-11-04T01:38:16+00:00,Putnam,Jon Husted,9977,19,25
+2026-11-04T01:38:16+00:00,Putnam,Greg Levy,239,19,25
+2026-11-04T01:38:16+00:00,Putnam,William B. Redpath,348,19,25
+2026-11-04T01:38:16+00:00,Putnam,Write-in,0,19,25
+2026-11-04T01:38:16+00:00,Van Wert,Sherrod Brown,1629,22,32
+2026-11-04T01:38:16+00:00,Van Wert,Jon Husted,3550,22,32
+2026-11-04T01:38:16+00:00,Van Wert,Greg Levy,105,22,32
+2026-11-04T01:38:16+00:00,Van Wert,William B. Redpath,181,22,32
+2026-11-04T01:38:16+00:00,Van Wert,Write-in,0,22,32
+2026-11-04T01:38:16+00:00,Vinton,Sherrod Brown,641,20,20
+2026-11-04T01:38:16+00:00,Vinton,Jon Husted,1093,20,20
+2026-11-04T01:38:16+00:00,Vinton,Greg Levy,32,20,20
+2026-11-04T01:38:16+00:00,Vinton,William B. Redpath,69,20,20
+2026-11-04T01:38:16+00:00,Vinton,Write-in,0,20,20
