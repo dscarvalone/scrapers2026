@@ -1154,3 +1154,63 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:43:41+00:00,Washington,Greg Levy,233,36,50
 2026-11-04T01:43:41+00:00,Washington,William B. Redpath,361,36,50
 2026-11-04T01:43:41+00:00,Washington,Write-in,0,36,50
+2026-11-04T01:47:13+00:00,Adams,Sherrod Brown,1555,7,21
+2026-11-04T01:47:13+00:00,Adams,Jon Husted,3658,7,21
+2026-11-04T01:47:13+00:00,Adams,Greg Levy,158,7,21
+2026-11-04T01:47:13+00:00,Adams,William B. Redpath,228,7,21
+2026-11-04T01:47:13+00:00,Adams,Write-in,0,7,21
+2026-11-04T01:47:13+00:00,Ashtabula,Sherrod Brown,5983,23,104
+2026-11-04T01:47:13+00:00,Ashtabula,Jon Husted,4886,23,104
+2026-11-04T01:47:13+00:00,Ashtabula,Greg Levy,224,23,104
+2026-11-04T01:47:13+00:00,Ashtabula,William B. Redpath,301,23,104
+2026-11-04T01:47:13+00:00,Ashtabula,Write-in,0,23,104
+2026-11-04T01:47:13+00:00,Belmont,Sherrod Brown,4470,10,69
+2026-11-04T01:47:13+00:00,Belmont,Jon Husted,6019,10,69
+2026-11-04T01:47:13+00:00,Belmont,Greg Levy,179,10,69
+2026-11-04T01:47:13+00:00,Belmont,William B. Redpath,253,10,69
+2026-11-04T01:47:13+00:00,Belmont,Write-in,0,10,69
+2026-11-04T01:47:13+00:00,Columbiana,Sherrod Brown,9438,57,73
+2026-11-04T01:47:13+00:00,Columbiana,Jon Husted,17574,57,73
+2026-11-04T01:47:13+00:00,Columbiana,Greg Levy,692,57,73
+2026-11-04T01:47:13+00:00,Columbiana,William B. Redpath,1127,57,73
+2026-11-04T01:47:13+00:00,Columbiana,Write-in,0,57,73
+2026-11-04T01:47:13+00:00,Greene,Sherrod Brown,18014,3,151
+2026-11-04T01:47:13+00:00,Greene,Jon Husted,15592,3,151
+2026-11-04T01:47:13+00:00,Greene,Greg Levy,393,3,151
+2026-11-04T01:47:13+00:00,Greene,William B. Redpath,580,3,151
+2026-11-04T01:47:13+00:00,Greene,Write-in,0,3,151
+2026-11-04T01:47:13+00:00,Henry,Sherrod Brown,3420,23,23
+2026-11-04T01:47:13+00:00,Henry,Jon Husted,7062,23,23
+2026-11-04T01:47:13+00:00,Henry,Greg Levy,238,23,23
+2026-11-04T01:47:13+00:00,Henry,William B. Redpath,437,23,23
+2026-11-04T01:47:13+00:00,Henry,Write-in,0,23,23
+2026-11-04T01:47:13+00:00,Holmes,Sherrod Brown,1292,8,17
+2026-11-04T01:47:13+00:00,Holmes,Jon Husted,4189,8,17
+2026-11-04T01:47:13+00:00,Holmes,Greg Levy,85,8,17
+2026-11-04T01:47:13+00:00,Holmes,William B. Redpath,150,8,17
+2026-11-04T01:47:13+00:00,Holmes,Write-in,0,8,17
+2026-11-04T01:47:13+00:00,Lake,Sherrod Brown,28221,33,163
+2026-11-04T01:47:13+00:00,Lake,Jon Husted,22521,33,163
+2026-11-04T01:47:13+00:00,Lake,Greg Levy,804,33,163
+2026-11-04T01:47:13+00:00,Lake,William B. Redpath,1135,33,163
+2026-11-04T01:47:13+00:00,Lake,Write-in,0,33,163
+2026-11-04T01:47:13+00:00,Licking,Sherrod Brown,18127,26,96
+2026-11-04T01:47:13+00:00,Licking,Jon Husted,22414,26,96
+2026-11-04T01:47:13+00:00,Licking,Greg Levy,689,26,96
+2026-11-04T01:47:13+00:00,Licking,William B. Redpath,1212,26,96
+2026-11-04T01:47:13+00:00,Licking,Write-in,0,26,96
+2026-11-04T01:47:13+00:00,Muskingum,Sherrod Brown,5467,18,68
+2026-11-04T01:47:13+00:00,Muskingum,Jon Husted,6654,18,68
+2026-11-04T01:47:13+00:00,Muskingum,Greg Levy,218,18,68
+2026-11-04T01:47:13+00:00,Muskingum,William B. Redpath,290,18,68
+2026-11-04T01:47:13+00:00,Muskingum,Write-in,0,18,68
+2026-11-04T01:47:13+00:00,Tuscarawas,Sherrod Brown,8012,32,81
+2026-11-04T01:47:13+00:00,Tuscarawas,Jon Husted,10729,32,81
+2026-11-04T01:47:13+00:00,Tuscarawas,Greg Levy,428,32,81
+2026-11-04T01:47:13+00:00,Tuscarawas,William B. Redpath,778,32,81
+2026-11-04T01:47:13+00:00,Tuscarawas,Write-in,0,32,81
+2026-11-04T01:47:13+00:00,Washington,Sherrod Brown,6893,36,50
+2026-11-04T01:47:13+00:00,Washington,Jon Husted,10538,36,50
+2026-11-04T01:47:13+00:00,Washington,Greg Levy,405,36,50
+2026-11-04T01:47:13+00:00,Washington,William B. Redpath,652,36,50
+2026-11-04T01:47:13+00:00,Washington,Write-in,0,36,50
