@@ -268,8 +268,24 @@ def parse_positional(data: bytes, race_re: re.Pattern = SENATE) -> tuple[str, li
 PARSERS = {"electionware": parse_electionware, "dominion": parse_dominion, "ess_summary": parse_ess_summary}
 
 
-def run(county: str, layout: str, data: bytes, out_dir: Path, source_url: str) -> int:
-    if layout == "positional":
+def _has_text(data: bytes) -> bool:
+    try:
+        pdf_text(data)
+        return True
+    except RuntimeError:
+        return False
+
+
+def run(county: str, layout: str, data: bytes, out_dir: Path, source_url: str,
+        ocr_cols: list[str] | None = None) -> int:
+    """ocr_cols: method column names for a scanned (image-only) report; when
+    given and the PDF has no text layer, common/pdf_ocr.py reads it instead."""
+    if ocr_cols and data[:4] == b"%PDF" and not _has_text(data):
+        from common.pdf_ocr import parse_scanned
+        print(f"{county}: PDF has no text layer (scanned); using OCR", file=sys.stderr)
+        race, rows, cols = parse_scanned(data, ocr_cols)
+        layout = "ocr"
+    elif layout == "positional":
         race, rows, cols = parse_positional(data)
         if not cols:
             raise SystemExit(f"{county}: the Senate block has no vote-method columns (TOTAL only)")

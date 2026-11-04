@@ -39,10 +39,16 @@ NEEDS_LOCAL_CHROME = True  # picked up by tools/run_sos_counties.py (no Chrome n
 RESULTS_PAGE = "https://boe.clermontcountyohio.gov/election_results/index.php"
 ZERO_REPORT = "https://boe.clermontcountyohio.gov/ZeroReport2026GEN.pdf"
 UA = {"User-Agent": "scrapers2026 (election results research)"}
-NOV3 = re.compile(r"2026\s*gen|gen\w*\s*2026|nov(ember)?\.?\s*0?3,?\s*2026|11[-_/.]0?3[-_/.](20)?26", re.I)
+# The election-night label is "2026 November 3 General Election - Unofficial Results" (year first),
+# and the file name changes with each update (44of168.pdf = precincts in), so match on the label.
+NOV3 = re.compile(r"2026\s*gen|gen\w*\s*2026|nov(ember)?\.?\s*0?3,?\s*2026|2026\s*nov(ember)?\.?\s*0?3\b"
+                  r"|11[-_/.]0?3[-_/.](20)?26", re.I)
 SKIP = re.compile(r"precinct|sovc|turnout|ballots cast|calendar|overlap|canvass|write[- ]?in|populous", re.I)
 PREFER = re.compile(r"unofficial|summary|group|result", re.I)
 ZERO = re.compile(r"zero", re.I)
+# Election night 2026 the county posts copier scans (no text layer); these are
+# the zero report's column names, read by OCR (common/pdf_ocr.py).
+OCR_COLS = ["Election Day", "Absentee Mail", "Absentee In - Person", "Provisional"]
 
 
 def pdf_links(page_html: str) -> list[tuple[str, str]]:
@@ -80,7 +86,7 @@ def main(argv=None) -> int:
     args = ap.parse_args(argv)
     out = Path(__file__).resolve().parent / "output"
     if args.file:
-        return run("Clermont", "positional", Path(args.file).read_bytes(), out, args.file)
+        return run("Clermont", "positional", Path(args.file).read_bytes(), out, args.file, ocr_cols=OCR_COLS)
     url = args.url
     if not url:
         try:
@@ -90,7 +96,7 @@ def main(argv=None) -> int:
         url = url or ZERO_REPORT
     if ZERO.search(url):
         print("Clermont: no election-night report linked yet; parsing the zero report", file=sys.stderr)
-    return run("Clermont", "positional", get(url).content, out, url)
+    return run("Clermont", "positional", get(url).content, out, url, ocr_cols=OCR_COLS)
 
 
 if __name__ == "__main__":

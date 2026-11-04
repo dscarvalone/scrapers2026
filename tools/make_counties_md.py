@@ -35,6 +35,7 @@ PLATFORM = {
     "enhanced_voting_xlsx": "Enhanced Voting Excel export",
     "clarity": "Clarity detail XML",
     "pdf_positional": "Results PDF (positional parser)",
+    "pdf_ocr": "Scanned results PDF (OCR, checksum-gated)",
     "pdf_dominion": "Results PDF (Dominion layout)",
 }
 
