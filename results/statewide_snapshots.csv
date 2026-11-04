@@ -1989,3 +1989,48 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T02:28:55+00:00,Preble,Greg Levy,219,65,65
 2026-11-04T02:28:55+00:00,Preble,William B. Redpath,477,65,65
 2026-11-04T02:28:55+00:00,Preble,Write-in,0,65,65
+2026-11-04T02:30:44+00:00,Brown,Sherrod Brown,2227,4,33
+2026-11-04T02:30:44+00:00,Brown,Jon Husted,4556,4,33
+2026-11-04T02:30:44+00:00,Brown,Greg Levy,125,4,33
+2026-11-04T02:30:44+00:00,Brown,William B. Redpath,226,4,33
+2026-11-04T02:30:44+00:00,Brown,Write-in,0,4,33
+2026-11-04T02:30:44+00:00,Delaware,Sherrod Brown,41034,79,180
+2026-11-04T02:30:44+00:00,Delaware,Jon Husted,33468,79,180
+2026-11-04T02:30:44+00:00,Delaware,Greg Levy,870,79,180
+2026-11-04T02:30:44+00:00,Delaware,William B. Redpath,1380,79,180
+2026-11-04T02:30:44+00:00,Delaware,Write-in,0,79,180
+2026-11-04T02:30:44+00:00,Erie,Sherrod Brown,10820,62,62
+2026-11-04T02:30:44+00:00,Erie,Jon Husted,9300,62,62
+2026-11-04T02:30:44+00:00,Erie,Greg Levy,379,62,62
+2026-11-04T02:30:44+00:00,Erie,William B. Redpath,497,62,62
+2026-11-04T02:30:44+00:00,Erie,Write-in,0,62,62
+2026-11-04T02:30:44+00:00,Jackson,Sherrod Brown,2643,22,29
+2026-11-04T02:30:44+00:00,Jackson,Jon Husted,5508,22,29
+2026-11-04T02:30:44+00:00,Jackson,Greg Levy,178,22,29
+2026-11-04T02:30:44+00:00,Jackson,William B. Redpath,293,22,29
+2026-11-04T02:30:44+00:00,Jackson,Write-in,0,22,29
+2026-11-04T02:30:44+00:00,Mahoning,Sherrod Brown,45595,212,212
+2026-11-04T02:30:44+00:00,Mahoning,Jon Husted,39192,212,212
+2026-11-04T02:30:44+00:00,Mahoning,Greg Levy,1961,212,212
+2026-11-04T02:30:44+00:00,Mahoning,William B. Redpath,2398,212,212
+2026-11-04T02:30:44+00:00,Mahoning,Write-in,0,212,212
+2026-11-04T02:30:44+00:00,Muskingum,Sherrod Brown,8001,68,68
+2026-11-04T02:30:44+00:00,Muskingum,Jon Husted,12876,68,68
+2026-11-04T02:30:44+00:00,Muskingum,Greg Levy,493,68,68
+2026-11-04T02:30:44+00:00,Muskingum,William B. Redpath,810,68,68
+2026-11-04T02:30:44+00:00,Muskingum,Write-in,0,68,68
+2026-11-04T02:30:44+00:00,Preble,Sherrod Brown,3893,65,65
+2026-11-04T02:30:44+00:00,Preble,Jon Husted,10453,65,65
+2026-11-04T02:30:44+00:00,Preble,Greg Levy,312,65,65
+2026-11-04T02:30:44+00:00,Preble,William B. Redpath,694,65,65
+2026-11-04T02:30:44+00:00,Preble,Write-in,0,65,65
+2026-11-04T02:30:44+00:00,Stark,Sherrod Brown,33703,107,274
+2026-11-04T02:30:44+00:00,Stark,Jon Husted,27265,107,274
+2026-11-04T02:30:44+00:00,Stark,Greg Levy,1227,107,274
+2026-11-04T02:30:44+00:00,Stark,William B. Redpath,1563,107,274
+2026-11-04T02:30:44+00:00,Stark,Write-in,0,107,274
+2026-11-04T02:30:44+00:00,Williams,Sherrod Brown,3475,23,26
+2026-11-04T02:30:44+00:00,Williams,Jon Husted,7338,23,26
+2026-11-04T02:30:44+00:00,Williams,Greg Levy,305,23,26
+2026-11-04T02:30:44+00:00,Williams,William B. Redpath,443,23,26
+2026-11-04T02:30:44+00:00,Williams,Write-in,0,23,26
