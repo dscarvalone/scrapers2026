@@ -1214,3 +1214,68 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:47:13+00:00,Washington,Greg Levy,405,36,50
 2026-11-04T01:47:13+00:00,Washington,William B. Redpath,652,36,50
 2026-11-04T01:47:13+00:00,Washington,Write-in,0,36,50
+2026-11-04T01:49:04+00:00,Ashtabula,Sherrod Brown,7474,23,104
+2026-11-04T01:49:04+00:00,Ashtabula,Jon Husted,8284,23,104
+2026-11-04T01:49:04+00:00,Ashtabula,Greg Levy,380,23,104
+2026-11-04T01:49:04+00:00,Ashtabula,William B. Redpath,576,23,104
+2026-11-04T01:49:04+00:00,Ashtabula,Write-in,0,23,104
+2026-11-04T01:49:04+00:00,Belmont,Sherrod Brown,5086,10,69
+2026-11-04T01:49:04+00:00,Belmont,Jon Husted,7617,10,69
+2026-11-04T01:49:04+00:00,Belmont,Greg Levy,235,10,69
+2026-11-04T01:49:04+00:00,Belmont,William B. Redpath,357,10,69
+2026-11-04T01:49:04+00:00,Belmont,Write-in,0,10,69
+2026-11-04T01:49:04+00:00,Erie,Sherrod Brown,10820,26,62
+2026-11-04T01:49:04+00:00,Erie,Jon Husted,9300,26,62
+2026-11-04T01:49:04+00:00,Erie,Greg Levy,379,26,62
+2026-11-04T01:49:04+00:00,Erie,William B. Redpath,497,26,62
+2026-11-04T01:49:04+00:00,Erie,Write-in,0,26,62
+2026-11-04T01:49:04+00:00,Franklin,Sherrod Brown,146727,78,889
+2026-11-04T01:49:04+00:00,Franklin,Jon Husted,41607,78,889
+2026-11-04T01:49:04+00:00,Franklin,Greg Levy,2808,78,889
+2026-11-04T01:49:04+00:00,Franklin,William B. Redpath,2504,78,889
+2026-11-04T01:49:04+00:00,Franklin,Write-in,0,78,889
+2026-11-04T01:49:04+00:00,Hancock,Sherrod Brown,9097,48,60
+2026-11-04T01:49:04+00:00,Hancock,Jon Husted,14090,48,60
+2026-11-04T01:49:04+00:00,Hancock,Greg Levy,431,48,60
+2026-11-04T01:49:04+00:00,Hancock,William B. Redpath,965,48,60
+2026-11-04T01:49:04+00:00,Hancock,Write-in,0,48,60
+2026-11-04T01:49:04+00:00,Knox,Sherrod Brown,5204,11,53
+2026-11-04T01:49:04+00:00,Knox,Jon Husted,8413,11,53
+2026-11-04T01:49:04+00:00,Knox,Greg Levy,211,11,53
+2026-11-04T01:49:04+00:00,Knox,William B. Redpath,376,11,53
+2026-11-04T01:49:04+00:00,Knox,Write-in,0,11,53
+2026-11-04T01:49:04+00:00,Lawrence,Sherrod Brown,3555,32,84
+2026-11-04T01:49:04+00:00,Lawrence,Jon Husted,5600,32,84
+2026-11-04T01:49:04+00:00,Lawrence,Greg Levy,172,32,84
+2026-11-04T01:49:04+00:00,Lawrence,William B. Redpath,290,32,84
+2026-11-04T01:49:04+00:00,Lawrence,Write-in,0,32,84
+2026-11-04T01:49:04+00:00,Lorain,Sherrod Brown,37012,99,210
+2026-11-04T01:49:04+00:00,Lorain,Jon Husted,20498,99,210
+2026-11-04T01:49:04+00:00,Lorain,Greg Levy,856,99,210
+2026-11-04T01:49:04+00:00,Lorain,William B. Redpath,1100,99,210
+2026-11-04T01:49:04+00:00,Lorain,Write-in,0,99,210
+2026-11-04T01:49:04+00:00,Montgomery,Sherrod Brown,47343,88,381
+2026-11-04T01:49:04+00:00,Montgomery,Jon Husted,19695,88,381
+2026-11-04T01:49:04+00:00,Montgomery,Greg Levy,1000,88,381
+2026-11-04T01:49:04+00:00,Montgomery,William B. Redpath,1017,88,381
+2026-11-04T01:49:04+00:00,Montgomery,Write-in,0,88,381
+2026-11-04T01:49:04+00:00,Muskingum,Sherrod Brown,6501,18,68
+2026-11-04T01:49:04+00:00,Muskingum,Jon Husted,9341,18,68
+2026-11-04T01:49:04+00:00,Muskingum,Greg Levy,357,18,68
+2026-11-04T01:49:04+00:00,Muskingum,William B. Redpath,511,18,68
+2026-11-04T01:49:04+00:00,Muskingum,Write-in,0,18,68
+2026-11-04T01:49:04+00:00,Noble,Sherrod Brown,599,19,19
+2026-11-04T01:49:04+00:00,Noble,Jon Husted,1283,19,19
+2026-11-04T01:49:04+00:00,Noble,Greg Levy,46,19,19
+2026-11-04T01:49:04+00:00,Noble,William B. Redpath,63,19,19
+2026-11-04T01:49:04+00:00,Noble,Write-in,0,19,19
+2026-11-04T01:49:04+00:00,Trumbull,Sherrod Brown,30046,109,158
+2026-11-04T01:49:04+00:00,Trumbull,Jon Husted,26013,109,158
+2026-11-04T01:49:04+00:00,Trumbull,Greg Levy,1479,109,158
+2026-11-04T01:49:04+00:00,Trumbull,William B. Redpath,1789,109,158
+2026-11-04T01:49:04+00:00,Trumbull,Write-in,0,109,158
+2026-11-04T01:49:04+00:00,Union,Sherrod Brown,8702,31,53
+2026-11-04T01:49:04+00:00,Union,Jon Husted,9864,31,53
+2026-11-04T01:49:04+00:00,Union,Greg Levy,287,31,53
+2026-11-04T01:49:04+00:00,Union,William B. Redpath,422,31,53
+2026-11-04T01:49:04+00:00,Union,Write-in,0,31,53
