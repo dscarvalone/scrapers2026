@@ -2359,3 +2359,18 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:01:52+00:00,Wood,Greg Levy,790,56,99
 2026-11-04T03:01:52+00:00,Wood,William B. Redpath,1092,56,99
 2026-11-04T03:01:52+00:00,Wood,Write-in,0,56,99
+2026-11-04T03:03:41+00:00,Clark,Sherrod Brown,19722,78,78
+2026-11-04T03:03:41+00:00,Clark,Jon Husted,26179,78,78
+2026-11-04T03:03:41+00:00,Clark,Greg Levy,1250,78,78
+2026-11-04T03:03:41+00:00,Clark,William B. Redpath,1655,78,78
+2026-11-04T03:03:41+00:00,Clark,Write-in,0,78,78
+2026-11-04T03:03:41+00:00,Pickaway,Sherrod Brown,6659,43,46
+2026-11-04T03:03:41+00:00,Pickaway,Jon Husted,13198,43,46
+2026-11-04T03:03:41+00:00,Pickaway,Greg Levy,417,43,46
+2026-11-04T03:03:41+00:00,Pickaway,William B. Redpath,728,43,46
+2026-11-04T03:03:41+00:00,Pickaway,Write-in,0,43,46
+2026-11-04T03:03:41+00:00,Stark,Sherrod Brown,60104,212,274
+2026-11-04T03:03:41+00:00,Stark,Jon Husted,64913,212,274
+2026-11-04T03:03:41+00:00,Stark,Greg Levy,3126,212,274
+2026-11-04T03:03:41+00:00,Stark,William B. Redpath,4279,212,274
+2026-11-04T03:03:41+00:00,Stark,Write-in,0,212,274
