@@ -1389,3 +1389,63 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T01:54:37+00:00,Portage,Greg Levy,409,15,126
 2026-11-04T01:54:37+00:00,Portage,William B. Redpath,445,15,126
 2026-11-04T01:54:37+00:00,Portage,Write-in,0,15,126
+2026-11-04T01:58:14+00:00,Auglaize,Sherrod Brown,3950,42,42
+2026-11-04T01:58:14+00:00,Auglaize,Jon Husted,14223,42,42
+2026-11-04T01:58:14+00:00,Auglaize,Greg Levy,379,42,42
+2026-11-04T01:58:14+00:00,Auglaize,William B. Redpath,691,42,42
+2026-11-04T01:58:14+00:00,Auglaize,Write-in,0,42,42
+2026-11-04T01:58:14+00:00,Coshocton,Sherrod Brown,2451,19,23
+2026-11-04T01:58:14+00:00,Coshocton,Jon Husted,4607,19,23
+2026-11-04T01:58:14+00:00,Coshocton,Greg Levy,172,19,23
+2026-11-04T01:58:14+00:00,Coshocton,William B. Redpath,265,19,23
+2026-11-04T01:58:14+00:00,Coshocton,Write-in,0,19,23
+2026-11-04T01:58:14+00:00,Fairfield,Sherrod Brown,14318,4,111
+2026-11-04T01:58:14+00:00,Fairfield,Jon Husted,13134,4,111
+2026-11-04T01:58:14+00:00,Fairfield,Greg Levy,340,4,111
+2026-11-04T01:58:14+00:00,Fairfield,William B. Redpath,486,4,111
+2026-11-04T01:58:14+00:00,Fairfield,Write-in,0,4,111
+2026-11-04T01:58:14+00:00,Geauga,Sherrod Brown,8366,27,79
+2026-11-04T01:58:14+00:00,Geauga,Jon Husted,9942,27,79
+2026-11-04T01:58:14+00:00,Geauga,Greg Levy,208,27,79
+2026-11-04T01:58:14+00:00,Geauga,William B. Redpath,459,27,79
+2026-11-04T01:58:14+00:00,Geauga,Write-in,0,27,79
+2026-11-04T01:58:14+00:00,Hamilton,Sherrod Brown,93408,39,563
+2026-11-04T01:58:14+00:00,Hamilton,Jon Husted,37477,39,563
+2026-11-04T01:58:14+00:00,Hamilton,Greg Levy,2186,39,563
+2026-11-04T01:58:14+00:00,Hamilton,William B. Redpath,1913,39,563
+2026-11-04T01:58:14+00:00,Hamilton,Write-in,0,39,563
+2026-11-04T01:58:14+00:00,Jefferson,Sherrod Brown,5222,17,55
+2026-11-04T01:58:14+00:00,Jefferson,Jon Husted,6989,17,55
+2026-11-04T01:58:14+00:00,Jefferson,Greg Levy,283,17,55
+2026-11-04T01:58:14+00:00,Jefferson,William B. Redpath,360,17,55
+2026-11-04T01:58:14+00:00,Jefferson,Write-in,0,17,55
+2026-11-04T01:58:14+00:00,Medina,Sherrod Brown,25112,35,124
+2026-11-04T01:58:14+00:00,Medina,Jon Husted,24915,35,124
+2026-11-04T01:58:14+00:00,Medina,Greg Levy,613,35,124
+2026-11-04T01:58:14+00:00,Medina,William B. Redpath,1035,35,124
+2026-11-04T01:58:14+00:00,Medina,Write-in,0,35,124
+2026-11-04T01:58:14+00:00,Portage,Sherrod Brown,15985,15,126
+2026-11-04T01:58:14+00:00,Portage,Jon Husted,10349,15,126
+2026-11-04T01:58:14+00:00,Portage,Greg Levy,556,15,126
+2026-11-04T01:58:14+00:00,Portage,William B. Redpath,636,15,126
+2026-11-04T01:58:14+00:00,Portage,Write-in,0,15,126
+2026-11-04T01:58:14+00:00,Scioto,Sherrod Brown,4028,36,77
+2026-11-04T01:58:14+00:00,Scioto,Jon Husted,4997,36,77
+2026-11-04T01:58:14+00:00,Scioto,Greg Levy,170,36,77
+2026-11-04T01:58:14+00:00,Scioto,William B. Redpath,168,36,77
+2026-11-04T01:58:14+00:00,Scioto,Write-in,0,36,77
+2026-11-04T01:58:14+00:00,Warren,Sherrod Brown,24094,79,185
+2026-11-04T01:58:14+00:00,Warren,Jon Husted,26491,79,185
+2026-11-04T01:58:14+00:00,Warren,Greg Levy,554,79,185
+2026-11-04T01:58:14+00:00,Warren,William B. Redpath,920,79,185
+2026-11-04T01:58:14+00:00,Warren,Write-in,0,79,185
+2026-11-04T01:58:14+00:00,Washington,Sherrod Brown,7788,50,50
+2026-11-04T01:58:14+00:00,Washington,Jon Husted,13423,50,50
+2026-11-04T01:58:14+00:00,Washington,Greg Levy,560,50,50
+2026-11-04T01:58:14+00:00,Washington,William B. Redpath,867,50,50
+2026-11-04T01:58:14+00:00,Washington,Write-in,0,50,50
+2026-11-04T01:58:14+00:00,Wyandot,Sherrod Brown,2675,23,23
+2026-11-04T01:58:14+00:00,Wyandot,Jon Husted,5610,23,23
+2026-11-04T01:58:14+00:00,Wyandot,Greg Levy,1146,23,23
+2026-11-04T01:58:14+00:00,Wyandot,William B. Redpath,543,23,23
+2026-11-04T01:58:14+00:00,Wyandot,Write-in,0,23,23

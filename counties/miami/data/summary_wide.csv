@@ -1,6 +1,6 @@
 race,contestant,AB,ED,EV,PR,total,precincts_reported,precincts_total,generated_at,source_format
-U.S. Senator,Jon Husted,2717,1199,8801,0,12717,,,pdf-sha1:0c87d3b42da8,pdf_dominion
-U.S. Senator,Sherrod Brown,2081,531,6320,0,8932,,,pdf-sha1:0c87d3b42da8,pdf_dominion
-U.S. Senator,William B. Redpath,141,102,351,0,594,,,pdf-sha1:0c87d3b42da8,pdf_dominion
-U.S. Senator,Greg Levy,90,54,180,0,324,,,pdf-sha1:0c87d3b42da8,pdf_dominion
-U.S. Senator,Write-in,4,2,9,0,15,,,pdf-sha1:0c87d3b42da8,pdf_dominion
+U.S. Senator,Jon Husted,2717,3155,8801,0,14673,,,pdf-sha1:2a385dac9b80,pdf_dominion
+U.S. Senator,Sherrod Brown,2081,1076,6320,0,9477,,,pdf-sha1:2a385dac9b80,pdf_dominion
+U.S. Senator,William B. Redpath,141,203,351,0,695,,,pdf-sha1:2a385dac9b80,pdf_dominion
+U.S. Senator,Greg Levy,90,90,180,0,360,,,pdf-sha1:2a385dac9b80,pdf_dominion
+U.S. Senator,Write-in,4,6,9,0,19,,,pdf-sha1:2a385dac9b80,pdf_dominion
