@@ -1,6 +1,6 @@
-race,contestant,Election Day,Absentee Mail,Absentee Office,Provisional,total,precincts_reported,precincts_total,generated_at,source_format
-U.S. Senator - Unexpired Term Ending 1-3-2029,Sherrod Brown,1722,5468,9576,0,16766,,,pdf-sha1:dcc91d048c19,pdf_positional
-U.S. Senator - Unexpired Term Ending 1-3-2029,Jon Husted,4245,5361,8731,0,18337,,,pdf-sha1:dcc91d048c19,pdf_positional
-U.S. Senator - Unexpired Term Ending 1-3-2029,Greg Levy,147,210,211,0,568,,,pdf-sha1:dcc91d048c19,pdf_positional
-U.S. Senator - Unexpired Term Ending 1-3-2029,William B. Redpath,340,310,316,0,966,,,pdf-sha1:dcc91d048c19,pdf_positional
-U.S. Senator - Unexpired Term Ending 1-3-2029,Write-in,11,16,14,0,41,,,pdf-sha1:dcc91d048c19,pdf_positional
+race,contestant,Election Day,Absentee,Provisional,ED,Central Count,Absentee after ED,total,precincts_reported,precincts_total,generated_at,source_format
+United States Senator (UTE 12/31/28),Sherrod Brown,2330,5682,0,0,0,0,8012,,,pdf-sha1:2effb32d2f90,pdf_positional
+United States Senator (UTE 12/31/28),Jon Husted,4959,5770,0,0,0,0,10729,,,pdf-sha1:2effb32d2f90,pdf_positional
+United States Senator (UTE 12/31/28),William B. Redpath,445,333,0,0,0,0,778,,,pdf-sha1:2effb32d2f90,pdf_positional
+United States Senator (UTE 12/31/28),Greg Levy,208,220,0,0,0,0,428,,,pdf-sha1:2effb32d2f90,pdf_positional
+United States Senator (UTE 12/31/28),Write-in,7,4,0,0,0,0,11,,,pdf-sha1:2effb32d2f90,pdf_positional
