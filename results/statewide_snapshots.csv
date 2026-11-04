@@ -2084,3 +2084,18 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T02:34:32+00:00,Stark,Greg Levy,2121,107,274
 2026-11-04T02:34:32+00:00,Stark,William B. Redpath,2925,107,274
 2026-11-04T02:34:32+00:00,Stark,Write-in,0,107,274
+2026-11-04T02:38:11+00:00,Clark,Sherrod Brown,17318,59,78
+2026-11-04T02:38:11+00:00,Clark,Jon Husted,21970,59,78
+2026-11-04T02:38:11+00:00,Clark,Greg Levy,1027,59,78
+2026-11-04T02:38:11+00:00,Clark,William B. Redpath,1355,59,78
+2026-11-04T02:38:11+00:00,Clark,Write-in,0,59,78
+2026-11-04T02:38:11+00:00,Knox,Sherrod Brown,7632,53,53
+2026-11-04T02:38:11+00:00,Knox,Jon Husted,15218,53,53
+2026-11-04T02:38:11+00:00,Knox,Greg Levy,482,53,53
+2026-11-04T02:38:11+00:00,Knox,William B. Redpath,840,53,53
+2026-11-04T02:38:11+00:00,Knox,Write-in,0,53,53
+2026-11-04T02:38:11+00:00,Scioto,Sherrod Brown,6927,68,77
+2026-11-04T02:38:11+00:00,Scioto,Jon Husted,11474,68,77
+2026-11-04T02:38:11+00:00,Scioto,Greg Levy,440,68,77
+2026-11-04T02:38:11+00:00,Scioto,William B. Redpath,550,68,77
+2026-11-04T02:38:11+00:00,Scioto,Write-in,0,68,77
