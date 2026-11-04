@@ -1,6 +1,6 @@
 race,contestant,Election Day,Absentee,Provisional,total,precincts_reported,precincts_total,generated_at,source_format
-U.S. Senator UTE 1-3-2029,Sherrod Brown,0,8043,0,8043,,,pdf-sha1:6a7b1642b874,pdf_positional
-U.S. Senator UTE 1-3-2029,Jon Husted,0,5664,0,5664,,,pdf-sha1:6a7b1642b874,pdf_positional
-U.S. Senator UTE 1-3-2029,Greg Levy,0,200,0,200,,,pdf-sha1:6a7b1642b874,pdf_positional
-U.S. Senator UTE 1-3-2029,William B. Redpath,0,270,0,270,,,pdf-sha1:6a7b1642b874,pdf_positional
-U.S. Senator UTE 1-3-2029,Write-in,0,10,0,10,,,pdf-sha1:6a7b1642b874,pdf_positional
+U.S. Senator UTE 1-3-2029,Sherrod Brown,2777,8043,0,10820,,,pdf-sha1:b53896e55430,pdf_positional
+U.S. Senator UTE 1-3-2029,Jon Husted,3636,5664,0,9300,,,pdf-sha1:b53896e55430,pdf_positional
+U.S. Senator UTE 1-3-2029,Greg Levy,179,200,0,379,,,pdf-sha1:b53896e55430,pdf_positional
+U.S. Senator UTE 1-3-2029,William B. Redpath,227,270,0,497,,,pdf-sha1:b53896e55430,pdf_positional
+U.S. Senator UTE 1-3-2029,Write-in,5,10,0,15,,,pdf-sha1:b53896e55430,pdf_positional
