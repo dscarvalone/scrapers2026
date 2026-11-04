@@ -1,11 +1,9 @@
 name: Election night results
 
-# Cron times are UTC. Ohio is on EST (UTC-5) on Nov 3, 2026.
-# Runs every 5 min from 6:00 PM ET Nov 3 through 7:55 AM ET Nov 4.
+# Election night is over: the schedule is removed, so this only runs by hand.
+# It ran every 5 min from 6:00 PM ET Nov 3 through 7:55 AM ET Nov 4, 2026
+# (cron, UTC: "*/5 23 3 11 *" and "*/5 0-12 4 11 *").
 on:
-  schedule:
-    - cron: "*/5 23 3 11 *"    # Nov 3, 6:00-6:55 PM ET
-    - cron: "*/5 0-12 4 11 *"  # Nov 3 7:00 PM ET -> Nov 4 7:55 AM ET
   workflow_dispatch:             # "Run workflow" button for manual runs
 
 permissions:
