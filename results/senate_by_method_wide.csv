@@ -1,440 +1,440 @@
 county,candidate,party,Election Day,Early In-Person,Mail,Absentee (early in-person + mail),Provisional,Not split by method,Post Election Day,Post VBM,Absentee Add-In,Early Voting Add-In,Election Day Add-In,Absentee Late,Timely Abs,total,precincts_reported,precincts_total,source,source_generated_at
-Adams,Sherrod Brown,Democratic,,,,,,1914,,,,,,,,1914,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Jon Husted,Republican,,,,,,5055,,,,,,,,5055,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Greg Levy,Other-party,,,,,,239,,,,,,,,239,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,William B. Redpath,Libertarian,,,,,,331,,,,,,,,331,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Write-in,,,,,,,0,,,,,,,,0,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Sherrod Brown,Democratic,,,,,,11066,,,,,,,,11066,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Jon Husted,Republican,,,,,,21992,,,,,,,,21992,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Greg Levy,Other-party,,,,,,823,,,,,,,,823,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,William B. Redpath,Libertarian,,,,,,1337,,,,,,,,1337,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Write-in,,,,,,,0,,,,,,,,0,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Sherrod Brown,Democratic,,,,,,5850,,,,,,,,5850,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Jon Husted,Republican,,,,,,12685,,,,,,,,12685,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Greg Levy,Other-party,,,,,,519,,,,,,,,519,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,William B. Redpath,Libertarian,,,,,,825,,,,,,,,825,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Write-in,,,,,,,0,,,,,,,,0,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Sherrod Brown,Democratic,,,,,,9285,,,,,,,,9285,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Jon Husted,Republican,,,,,,11876,,,,,,,,11876,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Greg Levy,Other-party,,,,,,594,,,,,,,,594,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,William B. Redpath,Libertarian,,,,,,849,,,,,,,,849,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Write-in,,,,,,,0,,,,,,,,0,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Athens,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Write-in,,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Auglaize,Sherrod Brown,Democratic,,,,,,3950,,,,,,,,3950,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Jon Husted,Republican,,,,,,14223,,,,,,,,14223,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Greg Levy,Other-party,,,,,,379,,,,,,,,379,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,William B. Redpath,Libertarian,,,,,,691,,,,,,,,691,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Write-in,,,,,,,0,,,,,,,,0,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Sherrod Brown,Democratic,,,,,,6259,,,,,,,,6259,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Jon Husted,Republican,,,,,,10105,,,,,,,,10105,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Greg Levy,Other-party,,,,,,342,,,,,,,,342,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,William B. Redpath,Libertarian,,,,,,558,,,,,,,,558,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Write-in,,,,,,,0,,,,,,,,0,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Sherrod Brown,Democratic,,,,,,2699,,,,,,,,2699,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Jon Husted,Republican,,,,,,6299,,,,,,,,6299,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Greg Levy,Other-party,,,,,,186,,,,,,,,186,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,William B. Redpath,Libertarian,,,,,,348,,,,,,,,348,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Write-in,,,,,,,0,,,,,,,,0,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Butler,Sherrod Brown,Democratic,20507,0,28560,,0,,,,,,,,,49067,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Jon Husted,Republican,31147,0,26974,,0,,,,,,,,,58121,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Greg Levy,Other-party,1170,0,757,,0,,,,,,,,,1927,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,William B. Redpath,Libertarian,1835,0,927,,0,,,,,,,,,2762,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,69,0,28,,0,,,,,,,,,97,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Carroll,Sherrod Brown,Democratic,1405,891,492,,0,,,,,,,,,2788,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Jon Husted,Republican,4706,1329,685,,0,,,,,,,,,6720,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Greg Levy,Other-party,209,43,39,,0,,,,,,,,,291,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,William B. Redpath,Libertarian,371,51,45,,0,,,,,,,,,467,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Write-in,,17,3,0,,0,,,,,,,,,20,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Champaign,Sherrod Brown,Democratic,,,,,,4670,,,,,,,,4670,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Jon Husted,Republican,,,,,,9623,,,,,,,,9623,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Greg Levy,Other-party,,,,,,474,,,,,,,,474,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,William B. Redpath,Libertarian,,,,,,735,,,,,,,,735,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Write-in,,,,,,,0,,,,,,,,0,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Clark,Sherrod Brown,Democratic,7298,7432,2588,,0,,,,,,,,,17318,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Jon Husted,Republican,13611,6039,2320,,0,,,,,,,,,21970,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Greg Levy,Other-party,682,222,123,,0,,,,,,,,,1027,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,William B. Redpath,Libertarian,953,256,146,,0,,,,,,,,,1355,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Write-in,,38,15,9,,0,,,,,,,,,62,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clermont,Sherrod Brown,Democratic,11652,9115,5804,,0,,,,,,,,,26571,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Jon Husted,Republican,21983,9509,6420,,0,,,,,,,,,37912,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Greg Levy,Other-party,806,211,255,,0,,,,,,,,,1272,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,William B. Redpath,Libertarian,1463,310,351,,0,,,,,,,,,2124,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Write-in,,45,6,7,,0,,,,,,,,,58,,,county_feed,pdf-sha1:5383bf955e53
-Clinton,Sherrod Brown,Democratic,,,,,,2715,,,,,,,,2715,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Jon Husted,Republican,,,,,,4835,,,,,,,,4835,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Greg Levy,Other-party,,,,,,184,,,,,,,,184,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,William B. Redpath,Libertarian,,,,,,273,,,,,,,,273,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Write-in,,,,,,,0,,,,,,,,0,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Sherrod Brown,Democratic,,,,,,10928,,,,,,,,10928,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Jon Husted,Republican,,,,,,21637,,,,,,,,21637,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Greg Levy,Other-party,,,,,,836,,,,,,,,836,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,William B. Redpath,Libertarian,,,,,,1458,,,,,,,,1458,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Write-in,,,,,,,0,,,,,,,,0,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Sherrod Brown,Democratic,,,,,,3439,,,,,,,,3439,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Jon Husted,Republican,,,,,,7466,,,,,,,,7466,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Greg Levy,Other-party,,,,,,305,,,,,,,,305,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,William B. Redpath,Libertarian,,,,,,519,,,,,,,,519,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Sherrod Brown,Democratic,,,,,,4217,,,,,,,,4217,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Jon Husted,Republican,,,,,,9505,,,,,,,,9505,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Greg Levy,Other-party,,,,,,359,,,,,,,,359,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,William B. Redpath,Libertarian,,,,,,604,,,,,,,,604,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Write-in,,,,,,,0,,,,,,,,0,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Cuyahoga,Sherrod Brown,Democratic,0,47709,75499,,0,,0,0,,,,,,123208,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,0,4734,28301,,0,,0,0,,,,,,33035,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,0,891,1263,,0,,0,0,,,,,,2154,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,0,373,1445,,0,,0,0,,,,,,1818,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,0,38,71,,0,,0,0,,,,,,109,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Darke,Sherrod Brown,Democratic,,,,,,4169,,,,,,,,4169,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Jon Husted,Republican,,,,,,14682,,,,,,,,14682,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Greg Levy,Other-party,,,,,,447,,,,,,,,447,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,William B. Redpath,Libertarian,,,,,,743,,,,,,,,743,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Write-in,,,,,,,0,,,,,,,,0,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Sherrod Brown,Democratic,,,,,,4974,,,,,,,,4974,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Jon Husted,Republican,,,,,,8592,,,,,,,,8592,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Greg Levy,Other-party,,,,,,368,,,,,,,,368,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,William B. Redpath,Libertarian,,,,,,587,,,,,,,,587,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Sherrod Brown,Democratic,,,,,,53349,,,,,,,,53349,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Jon Husted,Republican,,,,,,47803,,,,,,,,47803,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Greg Levy,Other-party,,,,,,1139,,,,,,,,1139,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,William B. Redpath,Libertarian,,,,,,1995,,,,,,,,1995,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Write-in,,,,,,,0,,,,,,,,0,145,180,sos_statewide,2026-11-04T02:54:38+00:00
+Adams,Sherrod Brown,Democratic,,,,,,1914,,,,,,,,1914,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Jon Husted,Republican,,,,,,5055,,,,,,,,5055,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Greg Levy,Other-party,,,,,,239,,,,,,,,239,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,William B. Redpath,Libertarian,,,,,,331,,,,,,,,331,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Write-in,,,,,,,0,,,,,,,,0,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Sherrod Brown,Democratic,,,,,,11066,,,,,,,,11066,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Jon Husted,Republican,,,,,,21992,,,,,,,,21992,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Greg Levy,Other-party,,,,,,823,,,,,,,,823,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,William B. Redpath,Libertarian,,,,,,1337,,,,,,,,1337,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Write-in,,,,,,,0,,,,,,,,0,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Sherrod Brown,Democratic,,,,,,5850,,,,,,,,5850,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Jon Husted,Republican,,,,,,12685,,,,,,,,12685,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Greg Levy,Other-party,,,,,,519,,,,,,,,519,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,William B. Redpath,Libertarian,,,,,,825,,,,,,,,825,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Write-in,,,,,,,0,,,,,,,,0,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Sherrod Brown,Democratic,,,,,,13879,,,,,,,,13879,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Jon Husted,Republican,,,,,,16910,,,,,,,,16910,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Greg Levy,Other-party,,,,,,965,,,,,,,,965,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,William B. Redpath,Libertarian,,,,,,1262,,,,,,,,1262,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Write-in,,,,,,,0,,,,,,,,0,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Athens,Sherrod Brown,Democratic,5927,5231,1542,,0,,,,,,,,,12700,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Jon Husted,Republican,4803,790,915,,0,,,,,,,,,6508,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Greg Levy,Other-party,406,95,74,,0,,,,,,,,,575,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,William B. Redpath,Libertarian,416,52,76,,0,,,,,,,,,544,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Write-in,,38,0,0,,0,,,,,,,,,38,,,county_feed,pdf-sha1:2dc0bf015878
+Auglaize,Sherrod Brown,Democratic,,,,,,3950,,,,,,,,3950,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Jon Husted,Republican,,,,,,14223,,,,,,,,14223,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Greg Levy,Other-party,,,,,,379,,,,,,,,379,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,William B. Redpath,Libertarian,,,,,,691,,,,,,,,691,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Write-in,,,,,,,0,,,,,,,,0,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Sherrod Brown,Democratic,,,,,,7326,,,,,,,,7326,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Jon Husted,Republican,,,,,,12871,,,,,,,,12871,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Greg Levy,Other-party,,,,,,454,,,,,,,,454,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,William B. Redpath,Libertarian,,,,,,762,,,,,,,,762,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Write-in,,,,,,,0,,,,,,,,0,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Sherrod Brown,Democratic,,,,,,3791,,,,,,,,3791,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Jon Husted,Republican,,,,,,10189,,,,,,,,10189,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Greg Levy,Other-party,,,,,,330,,,,,,,,330,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,William B. Redpath,Libertarian,,,,,,637,,,,,,,,637,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Butler,Sherrod Brown,Democratic,33496,0,28825,,0,,,,,,,,,62321,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Jon Husted,Republican,50158,0,27252,,0,,,,,,,,,77410,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Greg Levy,Other-party,1981,0,779,,0,,,,,,,,,2760,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,William B. Redpath,Libertarian,3077,0,947,,0,,,,,,,,,4024,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,124,0,28,,0,,,,,,,,,152,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Carroll,Sherrod Brown,Democratic,1406,891,492,,0,,,,,,,,,2789,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Jon Husted,Republican,4706,1329,685,,0,,,,,,,,,6720,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Greg Levy,Other-party,210,43,39,,0,,,,,,,,,292,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,William B. Redpath,Libertarian,371,51,45,,0,,,,,,,,,467,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Write-in,,17,3,0,,0,,,,,,,,,20,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Champaign,Sherrod Brown,Democratic,,,,,,4670,,,,,,,,4670,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Jon Husted,Republican,,,,,,9623,,,,,,,,9623,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Greg Levy,Other-party,,,,,,474,,,,,,,,474,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,William B. Redpath,Libertarian,,,,,,735,,,,,,,,735,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Write-in,,,,,,,0,,,,,,,,0,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Clark,Sherrod Brown,Democratic,9702,7432,2588,,0,,,,,,,,,19722,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Jon Husted,Republican,17820,6039,2320,,0,,,,,,,,,26179,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Greg Levy,Other-party,905,222,123,,0,,,,,,,,,1250,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,William B. Redpath,Libertarian,1253,256,146,,0,,,,,,,,,1655,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Write-in,,46,15,9,,0,,,,,,,,,70,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clermont,Sherrod Brown,Democratic,18523,9115,5804,,0,,,,,,,,,33442,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Jon Husted,Republican,35205,9509,6420,,0,,,,,,,,,51134,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Greg Levy,Other-party,1311,211,255,,0,,,,,,,,,1777,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,William B. Redpath,Libertarian,2369,310,351,,0,,,,,,,,,3030,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Write-in,,81,6,7,,0,,,,,,,,,94,,,county_feed,pdf-sha1:95eda6abd21e
+Clinton,Sherrod Brown,Democratic,,,,,,4241,,,,,,,,4241,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Jon Husted,Republican,,,,,,10054,,,,,,,,10054,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Greg Levy,Other-party,,,,,,439,,,,,,,,439,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,William B. Redpath,Libertarian,,,,,,665,,,,,,,,665,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Write-in,,,,,,,0,,,,,,,,0,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Sherrod Brown,Democratic,,,,,,10928,,,,,,,,10928,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Jon Husted,Republican,,,,,,21637,,,,,,,,21637,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Greg Levy,Other-party,,,,,,836,,,,,,,,836,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,William B. Redpath,Libertarian,,,,,,1458,,,,,,,,1458,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Write-in,,,,,,,0,,,,,,,,0,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Sherrod Brown,Democratic,,,,,,3439,,,,,,,,3439,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Jon Husted,Republican,,,,,,7466,,,,,,,,7466,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Greg Levy,Other-party,,,,,,305,,,,,,,,305,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,William B. Redpath,Libertarian,,,,,,519,,,,,,,,519,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Sherrod Brown,Democratic,,,,,,4217,,,,,,,,4217,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Jon Husted,Republican,,,,,,9505,,,,,,,,9505,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Greg Levy,Other-party,,,,,,359,,,,,,,,359,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,William B. Redpath,Libertarian,,,,,,604,,,,,,,,604,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Write-in,,,,,,,0,,,,,,,,0,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Cuyahoga,Sherrod Brown,Democratic,93449,47709,75499,,0,,0,0,,,,,,216657,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,46331,4734,28301,,0,,0,0,,,,,,79366,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,3058,891,1263,,0,,0,0,,,,,,5212,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,2904,373,1445,,0,,0,0,,,,,,4722,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,162,38,71,,0,,0,0,,,,,,271,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Darke,Sherrod Brown,Democratic,,,,,,4169,,,,,,,,4169,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Jon Husted,Republican,,,,,,14682,,,,,,,,14682,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Greg Levy,Other-party,,,,,,447,,,,,,,,447,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,William B. Redpath,Libertarian,,,,,,743,,,,,,,,743,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Write-in,,,,,,,0,,,,,,,,0,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Sherrod Brown,Democratic,,,,,,4974,,,,,,,,4974,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Jon Husted,Republican,,,,,,8592,,,,,,,,8592,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Greg Levy,Other-party,,,,,,368,,,,,,,,368,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,William B. Redpath,Libertarian,,,,,,587,,,,,,,,587,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Sherrod Brown,Democratic,,,,,,59368,,,,,,,,59368,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Jon Husted,Republican,,,,,,54128,,,,,,,,54128,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Greg Levy,Other-party,,,,,,1368,,,,,,,,1368,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,William B. Redpath,Libertarian,,,,,,2421,,,,,,,,2421,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Write-in,,,,,,,0,,,,,,,,0,180,180,sos_statewide,2026-11-04T04:06:37+00:00
 Erie,Sherrod Brown,Democratic,7300,,,8043,0,,,,,,,,,15343,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Jon Husted,Republican,9357,,,5664,0,,,,,,,,,15021,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Greg Levy,Other-party,479,,,200,0,,,,,,,,,679,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,William B. Redpath,Libertarian,650,,,270,0,,,,,,,,,920,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Write-in,,9,,,10,0,,,,,,,,,19,,,county_feed,pdf-sha1:0c97bcd59312
-Fairfield,Sherrod Brown,Democratic,,,,,,15247,,,,,,,,15247,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Jon Husted,Republican,,,,,,15412,,,,,,,,15412,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Greg Levy,Other-party,,,,,,446,,,,,,,,446,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,William B. Redpath,Libertarian,,,,,,662,,,,,,,,662,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Write-in,,,,,,,0,,,,,,,,0,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Sherrod Brown,Democratic,,,,,,2485,,,,,,,,2485,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Jon Husted,Republican,,,,,,6083,,,,,,,,6083,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Greg Levy,Other-party,,,,,,194,,,,,,,,194,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,William B. Redpath,Libertarian,,,,,,314,,,,,,,,314,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Write-in,,,,,,,0,,,,,,,,0,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Franklin,Sherrod Brown,Democratic,122981,79019,47725,,0,,,,,,,,,249725,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Jon Husted,Republican,55271,11561,22789,,0,,,,,,,,,89621,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Greg Levy,Other-party,3658,1161,1092,,0,,,,,,,,,5911,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,William B. Redpath,Libertarian,3824,656,1265,,0,,,,,,,,,5745,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Write-in,,143,36,42,,0,,,,,,,,,221,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Fulton,Sherrod Brown,Democratic,,,,,,5743,,,,,,,,5743,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Jon Husted,Republican,,,,,,10632,,,,,,,,10632,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Greg Levy,Other-party,,,,,,334,,,,,,,,334,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,William B. Redpath,Libertarian,,,,,,650,,,,,,,,650,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Write-in,,,,,,,0,,,,,,,,0,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Sherrod Brown,Democratic,,,,,,2328,,,,,,,,2328,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Jon Husted,Republican,,,,,,5812,,,,,,,,5812,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Greg Levy,Other-party,,,,,,187,,,,,,,,187,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,William B. Redpath,Libertarian,,,,,,335,,,,,,,,335,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Write-in,,,,,,,0,,,,,,,,0,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Sherrod Brown,Democratic,,,,,,14902,,,,,,,,14902,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Jon Husted,Republican,,,,,,20497,,,,,,,,20497,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Greg Levy,Other-party,,,,,,437,,,,,,,,437,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,William B. Redpath,Libertarian,,,,,,1043,,,,,,,,1043,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Write-in,,,,,,,0,,,,,,,,0,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Greene,Sherrod Brown,Democratic,5738,13264,4263,,0,,,,,,,,,23265,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Jon Husted,Republican,10560,11190,3746,,0,,,,,,,,,25496,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,357,253,118,,0,,,,,,,,,728,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,693,355,192,,0,,,,,,,,,1240,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,0,0,0,,0,,,,,,,,,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Guernsey,Sherrod Brown,Democratic,,,,,,3845,,,,,,,,3845,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Jon Husted,Republican,,,,,,7959,,,,,,,,7959,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Greg Levy,Other-party,,,,,,323,,,,,,,,323,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,William B. Redpath,Libertarian,,,,,,562,,,,,,,,562,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Write-in,,,,,,,0,,,,,,,,0,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Hamilton,Sherrod Brown,Democratic,26737,,,85866,,,,,,,,,,112603,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Jon Husted,Republican,15337,,,30528,,,,,,,,,,45865,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Greg Levy,Other-party,1108,,,1848,,,,,,,,,,2956,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,William B. Redpath,Libertarian,1123,,,1500,,,,,,,,,,2623,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Write-in,,1,,,3,,,,,,,,,,4,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hancock,Sherrod Brown,Democratic,,,,,,10019,,,,,,,,10019,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Jon Husted,Republican,,,,,,16377,,,,,,,,16377,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Greg Levy,Other-party,,,,,,516,,,,,,,,516,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,William B. Redpath,Libertarian,,,,,,1139,,,,,,,,1139,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Write-in,,,,,,,0,,,,,,,,0,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Sherrod Brown,Democratic,,,,,,1666,,,,,,,,1666,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Jon Husted,Republican,,,,,,3439,,,,,,,,3439,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Greg Levy,Other-party,,,,,,122,,,,,,,,122,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,William B. Redpath,Libertarian,,,,,,219,,,,,,,,219,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Write-in,,,,,,,0,,,,,,,,0,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Sherrod Brown,Democratic,,,,,,1433,,,,,,,,1433,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Jon Husted,Republican,,,,,,3155,,,,,,,,3155,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Greg Levy,Other-party,,,,,,164,,,,,,,,164,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,William B. Redpath,Libertarian,,,,,,275,,,,,,,,275,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Write-in,,,,,,,0,,,,,,,,0,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Sherrod Brown,Democratic,,,,,,3420,,,,,,,,3420,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Jon Husted,Republican,,,,,,7062,,,,,,,,7062,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Greg Levy,Other-party,,,,,,238,,,,,,,,238,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,William B. Redpath,Libertarian,,,,,,437,,,,,,,,437,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Sherrod Brown,Democratic,,,,,,1805,,,,,,,,1805,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Jon Husted,Republican,,,,,,3381,,,,,,,,3381,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Greg Levy,Other-party,,,,,,111,,,,,,,,111,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,William B. Redpath,Libertarian,,,,,,144,,,,,,,,144,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Write-in,,,,,,,0,,,,,,,,0,0,31,sos_statewide,2026-11-04T02:54:38+00:00
+Fairfield,Sherrod Brown,Democratic,,,,,,18420,,,,,,,,18420,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Jon Husted,Republican,,,,,,22773,,,,,,,,22773,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Greg Levy,Other-party,,,,,,671,,,,,,,,671,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,William B. Redpath,Libertarian,,,,,,1125,,,,,,,,1125,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Write-in,,,,,,,0,,,,,,,,0,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Sherrod Brown,Democratic,,,,,,2485,,,,,,,,2485,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Jon Husted,Republican,,,,,,6083,,,,,,,,6083,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Greg Levy,Other-party,,,,,,194,,,,,,,,194,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,William B. Redpath,Libertarian,,,,,,314,,,,,,,,314,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Write-in,,,,,,,0,,,,,,,,0,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Franklin,Sherrod Brown,Democratic,221887,79019,49077,,0,,,,,,,,,349983,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Jon Husted,Republican,102011,11561,23427,,0,,,,,,,,,136999,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Greg Levy,Other-party,7036,1161,1148,,0,,,,,,,,,9345,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,William B. Redpath,Libertarian,7058,656,1311,,0,,,,,,,,,9025,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Write-in,,301,36,45,,0,,,,,,,,,382,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Fulton,Sherrod Brown,Democratic,,,,,,5743,,,,,,,,5743,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Jon Husted,Republican,,,,,,10632,,,,,,,,10632,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Greg Levy,Other-party,,,,,,334,,,,,,,,334,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,William B. Redpath,Libertarian,,,,,,650,,,,,,,,650,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Write-in,,,,,,,0,,,,,,,,0,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Sherrod Brown,Democratic,,,,,,2328,,,,,,,,2328,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Jon Husted,Republican,,,,,,5812,,,,,,,,5812,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Greg Levy,Other-party,,,,,,187,,,,,,,,187,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,William B. Redpath,Libertarian,,,,,,335,,,,,,,,335,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Write-in,,,,,,,0,,,,,,,,0,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Sherrod Brown,Democratic,,,,,,19173,,,,,,,,19173,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Jon Husted,Republican,,,,,,24531,,,,,,,,24531,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Greg Levy,Other-party,,,,,,509,,,,,,,,509,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,William B. Redpath,Libertarian,,,,,,1226,,,,,,,,1226,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Write-in,,,,,,,0,,,,,,,,0,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Greene,Sherrod Brown,Democratic,15016,13264,4413,,0,,,,,,,,,32693,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Jon Husted,Republican,23162,11190,3924,,0,,,,,,,,,38276,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,823,253,125,,0,,,,,,,,,1201,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,1529,355,205,,0,,,,,,,,,2089,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,0,0,0,,0,,,,,,,,,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Guernsey,Sherrod Brown,Democratic,,,,,,3845,,,,,,,,3845,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Jon Husted,Republican,,,,,,7959,,,,,,,,7959,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Greg Levy,Other-party,,,,,,323,,,,,,,,323,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,William B. Redpath,Libertarian,,,,,,562,,,,,,,,562,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Write-in,,,,,,,0,,,,,,,,0,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Hamilton,Sherrod Brown,Democratic,120375,,,86141,,,,,,,,,,206516,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Jon Husted,Republican,89434,,,30711,,,,,,,,,,120145,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Greg Levy,Other-party,5572,,,1861,,,,,,,,,,7433,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,William B. Redpath,Libertarian,5752,,,1514,,,,,,,,,,7266,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Write-in,,9,,,3,,,,,,,,,,12,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hancock,Sherrod Brown,Democratic,,,,,,10193,,,,,,,,10193,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Jon Husted,Republican,,,,,,16996,,,,,,,,16996,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Greg Levy,Other-party,,,,,,526,,,,,,,,526,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,William B. Redpath,Libertarian,,,,,,1187,,,,,,,,1187,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Write-in,,,,,,,0,,,,,,,,0,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Sherrod Brown,Democratic,,,,,,2519,,,,,,,,2519,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Jon Husted,Republican,,,,,,5886,,,,,,,,5886,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Greg Levy,Other-party,,,,,,254,,,,,,,,254,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,William B. Redpath,Libertarian,,,,,,424,,,,,,,,424,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Write-in,,,,,,,0,,,,,,,,0,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Sherrod Brown,Democratic,,,,,,1433,,,,,,,,1433,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Jon Husted,Republican,,,,,,3155,,,,,,,,3155,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Greg Levy,Other-party,,,,,,164,,,,,,,,164,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,William B. Redpath,Libertarian,,,,,,275,,,,,,,,275,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Write-in,,,,,,,0,,,,,,,,0,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Sherrod Brown,Democratic,,,,,,3420,,,,,,,,3420,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Jon Husted,Republican,,,,,,7062,,,,,,,,7062,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Greg Levy,Other-party,,,,,,238,,,,,,,,238,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,William B. Redpath,Libertarian,,,,,,437,,,,,,,,437,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Sherrod Brown,Democratic,,,,,,2671,,,,,,,,2671,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Jon Husted,Republican,,,,,,7706,,,,,,,,7706,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Greg Levy,Other-party,,,,,,262,,,,,,,,262,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,William B. Redpath,Libertarian,,,,,,452,,,,,,,,452,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Write-in,,,,,,,0,,,,,,,,0,9,31,sos_statewide,2026-11-04T04:06:37+00:00
 Hocking,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Write-in,,0,0,0,,0,,,,,,,,,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
-Holmes,Sherrod Brown,Democratic,,,,,,1648,,,,,,,,1648,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Jon Husted,Republican,,,,,,6439,,,,,,,,6439,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Greg Levy,Other-party,,,,,,143,,,,,,,,143,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,William B. Redpath,Libertarian,,,,,,277,,,,,,,,277,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Write-in,,,,,,,0,,,,,,,,0,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Sherrod Brown,Democratic,,,,,,5312,,,,,,,,5312,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Jon Husted,Republican,,,,,,7529,,,,,,,,7529,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Greg Levy,Other-party,,,,,,377,,,,,,,,377,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,William B. Redpath,Libertarian,,,,,,576,,,,,,,,576,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Write-in,,,,,,,0,,,,,,,,0,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Sherrod Brown,Democratic,,,,,,2643,,,,,,,,2643,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Jon Husted,Republican,,,,,,5508,,,,,,,,5508,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Greg Levy,Other-party,,,,,,178,,,,,,,,178,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,William B. Redpath,Libertarian,,,,,,293,,,,,,,,293,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Write-in,,,,,,,0,,,,,,,,0,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Sherrod Brown,Democratic,,,,,,7679,,,,,,,,7679,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Jon Husted,Republican,,,,,,13043,,,,,,,,13043,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Greg Levy,Other-party,,,,,,568,,,,,,,,568,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,William B. Redpath,Libertarian,,,,,,775,,,,,,,,775,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Write-in,,,,,,,0,,,,,,,,0,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Sherrod Brown,Democratic,,,,,,7632,,,,,,,,7632,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Jon Husted,Republican,,,,,,15218,,,,,,,,15218,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Greg Levy,Other-party,,,,,,482,,,,,,,,482,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,William B. Redpath,Libertarian,,,,,,840,,,,,,,,840,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Write-in,,,,,,,0,,,,,,,,0,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Sherrod Brown,Democratic,,,,,,42333,,,,,,,,42333,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Jon Husted,Republican,,,,,,39250,,,,,,,,39250,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Greg Levy,Other-party,,,,,,1456,,,,,,,,1456,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,William B. Redpath,Libertarian,,,,,,2271,,,,,,,,2271,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Write-in,,,,,,,0,,,,,,,,0,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Sherrod Brown,Democratic,,,,,,4905,,,,,,,,4905,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Jon Husted,Republican,,,,,,8788,,,,,,,,8788,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Greg Levy,Other-party,,,,,,304,,,,,,,,304,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,William B. Redpath,Libertarian,,,,,,509,,,,,,,,509,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Write-in,,,,,,,0,,,,,,,,0,64,84,sos_statewide,2026-11-04T02:54:38+00:00
+Holmes,Sherrod Brown,Democratic,,,,,,1684,,,,,,,,1684,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Jon Husted,Republican,,,,,,6764,,,,,,,,6764,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Greg Levy,Other-party,,,,,,150,,,,,,,,150,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,William B. Redpath,Libertarian,,,,,,292,,,,,,,,292,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Write-in,,,,,,,0,,,,,,,,0,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Sherrod Brown,Democratic,,,,,,6826,,,,,,,,6826,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Jon Husted,Republican,,,,,,11372,,,,,,,,11372,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Greg Levy,Other-party,,,,,,554,,,,,,,,554,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,William B. Redpath,Libertarian,,,,,,898,,,,,,,,898,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Write-in,,,,,,,0,,,,,,,,0,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Sherrod Brown,Democratic,,,,,,2643,,,,,,,,2643,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Jon Husted,Republican,,,,,,5508,,,,,,,,5508,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Greg Levy,Other-party,,,,,,178,,,,,,,,178,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,William B. Redpath,Libertarian,,,,,,293,,,,,,,,293,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Write-in,,,,,,,0,,,,,,,,0,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Sherrod Brown,Democratic,,,,,,7679,,,,,,,,7679,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Jon Husted,Republican,,,,,,13043,,,,,,,,13043,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Greg Levy,Other-party,,,,,,568,,,,,,,,568,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,William B. Redpath,Libertarian,,,,,,775,,,,,,,,775,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Write-in,,,,,,,0,,,,,,,,0,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Sherrod Brown,Democratic,,,,,,7632,,,,,,,,7632,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Jon Husted,Republican,,,,,,15218,,,,,,,,15218,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Greg Levy,Other-party,,,,,,482,,,,,,,,482,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,William B. Redpath,Libertarian,,,,,,840,,,,,,,,840,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Write-in,,,,,,,0,,,,,,,,0,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Sherrod Brown,Democratic,,,,,,51326,,,,,,,,51326,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Jon Husted,Republican,,,,,,49617,,,,,,,,49617,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Greg Levy,Other-party,,,,,,1875,,,,,,,,1875,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,William B. Redpath,Libertarian,,,,,,3023,,,,,,,,3023,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Write-in,,,,,,,0,,,,,,,,0,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Sherrod Brown,Democratic,,,,,,5961,,,,,,,,5961,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Jon Husted,Republican,,,,,,11023,,,,,,,,11023,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Greg Levy,Other-party,,,,,,414,,,,,,,,414,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,William B. Redpath,Libertarian,,,,,,636,,,,,,,,636,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Write-in,,,,,,,0,,,,,,,,0,84,84,sos_statewide,2026-11-04T04:06:37+00:00
 Licking,Sherrod Brown,Democratic,15393,9576,5642,,0,,,,,,,,,30611,,,county_feed,pdf-sha1:b5793b16581c
 Licking,Jon Husted,Republican,25435,8731,5456,,0,,,,,,,,,39622,,,county_feed,pdf-sha1:b5793b16581c
 Licking,Greg Levy,Other-party,988,211,220,,0,,,,,,,,,1419,,,county_feed,pdf-sha1:b5793b16581c
 Licking,William B. Redpath,Libertarian,1897,316,324,,0,,,,,,,,,2537,,,county_feed,pdf-sha1:b5793b16581c
 Licking,Write-in,,64,14,16,,0,,,,,,,,,94,,,county_feed,pdf-sha1:b5793b16581c
-Logan,Sherrod Brown,Democratic,,,,,,4647,,,,,,,,4647,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Jon Husted,Republican,,,,,,11929,,,,,,,,11929,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Greg Levy,Other-party,,,,,,419,,,,,,,,419,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,William B. Redpath,Libertarian,,,,,,796,,,,,,,,796,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Sherrod Brown,Democratic,,,,,,64244,,,,,,,,64244,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Jon Husted,Republican,,,,,,47668,,,,,,,,47668,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Greg Levy,Other-party,,,,,,2148,,,,,,,,2148,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,William B. Redpath,Libertarian,,,,,,3135,,,,,,,,3135,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Write-in,,,,,,,0,,,,,,,,0,178,210,sos_statewide,2026-11-04T02:54:38+00:00
+Logan,Sherrod Brown,Democratic,,,,,,4647,,,,,,,,4647,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Jon Husted,Republican,,,,,,11929,,,,,,,,11929,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Greg Levy,Other-party,,,,,,419,,,,,,,,419,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,William B. Redpath,Libertarian,,,,,,796,,,,,,,,796,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Sherrod Brown,Democratic,,,,,,69179,,,,,,,,69179,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Jon Husted,Republican,,,,,,54610,,,,,,,,54610,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Greg Levy,Other-party,,,,,,2438,,,,,,,,2438,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,William B. Redpath,Libertarian,,,,,,3579,,,,,,,,3579,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Write-in,,,,,,,0,,,,,,,,0,210,210,sos_statewide,2026-11-04T04:06:37+00:00
 Lucas,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
 Lucas,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
 Lucas,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
 Lucas,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
-Madison,Sherrod Brown,Democratic,1817,2197,868,,0,,,,,,,,,4882,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Jon Husted,Republican,4466,3067,1218,,0,,,,,,,,,8751,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Greg Levy,Other-party,154,93,40,,0,,,,,,,,,287,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,William B. Redpath,Libertarian,325,110,63,,0,,,,,,,,,498,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Write-in,,8,8,4,,0,,,,,,,,,20,,,county_feed,pdf-sha1:10ce4dcd3f47
-Mahoning,Sherrod Brown,Democratic,,,,,,45595,,,,,,,,45595,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Jon Husted,Republican,,,,,,39192,,,,,,,,39192,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Greg Levy,Other-party,,,,,,1961,,,,,,,,1961,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,William B. Redpath,Libertarian,,,,,,2398,,,,,,,,2398,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Write-in,,,,,,,0,,,,,,,,0,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Sherrod Brown,Democratic,,,,,,7076,,,,,,,,7076,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Jon Husted,Republican,,,,,,11480,,,,,,,,11480,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Greg Levy,Other-party,,,,,,518,,,,,,,,518,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,William B. Redpath,Libertarian,,,,,,866,,,,,,,,866,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Write-in,,,,,,,0,,,,,,,,0,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Sherrod Brown,Democratic,,,,,,36004,,,,,,,,36004,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Jon Husted,Republican,,,,,,42875,,,,,,,,42875,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Greg Levy,Other-party,,,,,,1239,,,,,,,,1239,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,William B. Redpath,Libertarian,,,,,,2214,,,,,,,,2214,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Write-in,,,,,,,0,,,,,,,,0,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Sherrod Brown,Democratic,,,,,,2159,,,,,,,,2159,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Jon Husted,Republican,,,,,,4877,,,,,,,,4877,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Greg Levy,Other-party,,,,,,179,,,,,,,,179,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,William B. Redpath,Libertarian,,,,,,290,,,,,,,,290,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Write-in,,,,,,,0,,,,,,,,0,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Sherrod Brown,Democratic,,,,,,3489,,,,,,,,3489,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Jon Husted,Republican,,,,,,13755,,,,,,,,13755,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Greg Levy,Other-party,,,,,,286,,,,,,,,286,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,William B. Redpath,Libertarian,,,,,,491,,,,,,,,491,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Miami,Sherrod Brown,Democratic,3307,6320,2081,,0,,,,,,,,,11708,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Jon Husted,Republican,10733,8801,2717,,0,,,,,,,,,22251,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Greg Levy,Other-party,346,180,90,,0,,,,,,,,,616,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,William B. Redpath,Libertarian,748,351,141,,0,,,,,,,,,1240,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Write-in,,27,9,4,,0,,,,,,,,,40,,,county_feed,pdf-sha1:804eb67e9e96
-Monroe,Sherrod Brown,Democratic,,,,,,1311,,,,,,,,1311,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Jon Husted,Republican,,,,,,3141,,,,,,,,3141,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Greg Levy,Other-party,,,,,,135,,,,,,,,135,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,William B. Redpath,Libertarian,,,,,,193,,,,,,,,193,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Write-in,,,,,,,0,,,,,,,,0,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Montgomery,Sherrod Brown,Democratic,44950,30929,14582,,0,,,,0,0,0,,,90461,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,43005,7897,10077,,0,,,,0,0,0,,,60979,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,1960,553,356,,0,,,,0,0,0,,,2869,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,2911,427,480,,0,,,,0,0,0,,,3818,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,100,28,12,,0,,,,0,0,0,,,140,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Morgan,Sherrod Brown,Democratic,,,,,,1408,,,,,,,,1408,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Jon Husted,Republican,,,,,,3125,,,,,,,,3125,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Greg Levy,Other-party,,,,,,120,,,,,,,,120,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,William B. Redpath,Libertarian,,,,,,178,,,,,,,,178,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Write-in,,,,,,,0,,,,,,,,0,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Sherrod Brown,Democratic,,,,,,3772,,,,,,,,3772,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Jon Husted,Republican,,,,,,9362,,,,,,,,9362,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Greg Levy,Other-party,,,,,,342,,,,,,,,342,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,William B. Redpath,Libertarian,,,,,,632,,,,,,,,632,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Sherrod Brown,Democratic,,,,,,9642,,,,,,,,9642,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Jon Husted,Republican,,,,,,17403,,,,,,,,17403,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Greg Levy,Other-party,,,,,,656,,,,,,,,656,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,William B. Redpath,Libertarian,,,,,,1119,,,,,,,,1119,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Write-in,,,,,,,0,,,,,,,,0,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Sherrod Brown,Democratic,,,,,,1049,,,,,,,,1049,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Jon Husted,Republican,,,,,,3114,,,,,,,,3114,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Greg Levy,Other-party,,,,,,122,,,,,,,,122,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,William B. Redpath,Libertarian,,,,,,198,,,,,,,,198,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Write-in,,,,,,,0,,,,,,,,0,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Sherrod Brown,Democratic,,,,,,7932,,,,,,,,7932,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Jon Husted,Republican,,,,,,10362,,,,,,,,10362,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Greg Levy,Other-party,,,,,,342,,,,,,,,342,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,William B. Redpath,Libertarian,,,,,,595,,,,,,,,595,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
+Madison,Sherrod Brown,Democratic,2346,2197,868,,0,,,,,,,,,5411,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Jon Husted,Republican,5649,3067,1218,,0,,,,,,,,,9934,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Greg Levy,Other-party,204,93,40,,0,,,,,,,,,337,,,county_feed,pdf-sha1:80e1932e5996
+Madison,William B. Redpath,Libertarian,401,110,63,,0,,,,,,,,,574,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Write-in,,14,8,4,,0,,,,,,,,,26,,,county_feed,pdf-sha1:80e1932e5996
+Mahoning,Sherrod Brown,Democratic,,,,,,45595,,,,,,,,45595,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Jon Husted,Republican,,,,,,39192,,,,,,,,39192,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Greg Levy,Other-party,,,,,,1961,,,,,,,,1961,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,William B. Redpath,Libertarian,,,,,,2398,,,,,,,,2398,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Write-in,,,,,,,0,,,,,,,,0,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Sherrod Brown,Democratic,,,,,,7076,,,,,,,,7076,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Jon Husted,Republican,,,,,,11480,,,,,,,,11480,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Greg Levy,Other-party,,,,,,518,,,,,,,,518,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,William B. Redpath,Libertarian,,,,,,866,,,,,,,,866,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Write-in,,,,,,,0,,,,,,,,0,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Sherrod Brown,Democratic,,,,,,36900,,,,,,,,36900,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Jon Husted,Republican,,,,,,44892,,,,,,,,44892,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Greg Levy,Other-party,,,,,,1293,,,,,,,,1293,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,William B. Redpath,Libertarian,,,,,,2339,,,,,,,,2339,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Write-in,,,,,,,0,,,,,,,,0,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Sherrod Brown,Democratic,,,,,,2159,,,,,,,,2159,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Jon Husted,Republican,,,,,,4877,,,,,,,,4877,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Greg Levy,Other-party,,,,,,179,,,,,,,,179,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,William B. Redpath,Libertarian,,,,,,290,,,,,,,,290,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Write-in,,,,,,,0,,,,,,,,0,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Sherrod Brown,Democratic,,,,,,3489,,,,,,,,3489,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Jon Husted,Republican,,,,,,13755,,,,,,,,13755,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Greg Levy,Other-party,,,,,,286,,,,,,,,286,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,William B. Redpath,Libertarian,,,,,,491,,,,,,,,491,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Miami,Sherrod Brown,Democratic,6072,6320,2081,,0,,,,,,,,,14473,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Jon Husted,Republican,17072,8801,2717,,0,,,,,,,,,28590,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Greg Levy,Other-party,599,180,90,,0,,,,,,,,,869,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,William B. Redpath,Libertarian,1212,351,141,,0,,,,,,,,,1704,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Write-in,,40,9,4,,0,,,,,,,,,53,,,county_feed,pdf-sha1:4d72e1602a67
+Monroe,Sherrod Brown,Democratic,,,,,,1311,,,,,,,,1311,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Jon Husted,Republican,,,,,,3141,,,,,,,,3141,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Greg Levy,Other-party,,,,,,135,,,,,,,,135,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,William B. Redpath,Libertarian,,,,,,193,,,,,,,,193,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Write-in,,,,,,,0,,,,,,,,0,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Montgomery,Sherrod Brown,Democratic,66446,30929,14582,,0,,,,0,0,0,,,111957,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,63656,7897,10077,,0,,,,0,0,0,,,81630,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,2988,553,356,,0,,,,0,0,0,,,3897,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,4438,427,480,,0,,,,0,0,0,,,5345,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,146,28,12,,0,,,,0,0,0,,,186,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Morgan,Sherrod Brown,Democratic,,,,,,1408,,,,,,,,1408,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Jon Husted,Republican,,,,,,3125,,,,,,,,3125,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Greg Levy,Other-party,,,,,,120,,,,,,,,120,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,William B. Redpath,Libertarian,,,,,,178,,,,,,,,178,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Write-in,,,,,,,0,,,,,,,,0,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Sherrod Brown,Democratic,,,,,,3772,,,,,,,,3772,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Jon Husted,Republican,,,,,,9362,,,,,,,,9362,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Greg Levy,Other-party,,,,,,342,,,,,,,,342,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,William B. Redpath,Libertarian,,,,,,632,,,,,,,,632,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Sherrod Brown,Democratic,,,,,,9642,,,,,,,,9642,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Jon Husted,Republican,,,,,,17403,,,,,,,,17403,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Greg Levy,Other-party,,,,,,656,,,,,,,,656,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,William B. Redpath,Libertarian,,,,,,1119,,,,,,,,1119,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Write-in,,,,,,,0,,,,,,,,0,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Sherrod Brown,Democratic,,,,,,1049,,,,,,,,1049,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Jon Husted,Republican,,,,,,3114,,,,,,,,3114,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Greg Levy,Other-party,,,,,,122,,,,,,,,122,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,William B. Redpath,Libertarian,,,,,,198,,,,,,,,198,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Write-in,,,,,,,0,,,,,,,,0,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Sherrod Brown,Democratic,,,,,,7932,,,,,,,,7932,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Jon Husted,Republican,,,,,,10362,,,,,,,,10362,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Greg Levy,Other-party,,,,,,342,,,,,,,,342,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,William B. Redpath,Libertarian,,,,,,595,,,,,,,,595,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
 Paulding,Sherrod Brown,Democratic,0,,,0,0,,,,,,,,,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Jon Husted,Republican,0,,,0,0,,,,,,,,,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Greg Levy,Other-party,0,,,0,0,,,,,,,,,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,William B. Redpath,Libertarian,0,,,0,0,,,,,,,,,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Write-in,,0,,,0,0,,,,,,,,,0,,,county_feed,pdf-sha1:956cc0a64983
-Perry,Sherrod Brown,Democratic,,,,,,3654,,,,,,,,3654,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Jon Husted,Republican,,,,,,8020,,,,,,,,8020,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Greg Levy,Other-party,,,,,,300,,,,,,,,300,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,William B. Redpath,Libertarian,,,,,,500,,,,,,,,500,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Pickaway,Sherrod Brown,Democratic,3308,2423,928,,0,,,,,,,,,6659,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Jon Husted,Republican,8871,3135,1192,,0,,,,,,,,,13198,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Greg Levy,Other-party,301,71,45,,0,,,,,,,,,417,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,William B. Redpath,Libertarian,518,140,70,,0,,,,,,,,,728,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Write-in,,31,4,1,,0,,,,,,,,,36,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pike,Sherrod Brown,Democratic,,,,,,2683,,,,,,,,2683,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Jon Husted,Republican,,,,,,5348,,,,,,,,5348,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Greg Levy,Other-party,,,,,,183,,,,,,,,183,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,William B. Redpath,Libertarian,,,,,,311,,,,,,,,311,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Write-in,,,,,,,0,,,,,,,,0,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Sherrod Brown,Democratic,,,,,,21457,,,,,,,,21457,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Jon Husted,Republican,,,,,,18534,,,,,,,,18534,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Greg Levy,Other-party,,,,,,985,,,,,,,,985,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,William B. Redpath,Libertarian,,,,,,1245,,,,,,,,1245,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Write-in,,,,,,,0,,,,,,,,0,56,126,sos_statewide,2026-11-04T02:54:38+00:00
+Perry,Sherrod Brown,Democratic,,,,,,3654,,,,,,,,3654,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Jon Husted,Republican,,,,,,8020,,,,,,,,8020,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Greg Levy,Other-party,,,,,,300,,,,,,,,300,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,William B. Redpath,Libertarian,,,,,,500,,,,,,,,500,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Write-in,,,,,,,0,,,,,,,,0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Pickaway,Sherrod Brown,Democratic,3680,2423,928,,0,,,,,,,,,7031,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Jon Husted,Republican,9599,3135,1192,,0,,,,,,,,,13926,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Greg Levy,Other-party,317,71,45,,0,,,,,,,,,433,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,William B. Redpath,Libertarian,545,140,70,,0,,,,,,,,,755,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Write-in,,32,4,1,,0,,,,,,,,,37,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pike,Sherrod Brown,Democratic,,,,,,2683,,,,,,,,2683,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Jon Husted,Republican,,,,,,5348,,,,,,,,5348,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Greg Levy,Other-party,,,,,,183,,,,,,,,183,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,William B. Redpath,Libertarian,,,,,,311,,,,,,,,311,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Write-in,,,,,,,0,,,,,,,,0,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Sherrod Brown,Democratic,,,,,,31974,,,,,,,,31974,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Jon Husted,Republican,,,,,,30196,,,,,,,,30196,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Greg Levy,Other-party,,,,,,1650,,,,,,,,1650,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,William B. Redpath,Libertarian,,,,,,2080,,,,,,,,2080,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Write-in,,,,,,,0,,,,,,,,0,126,126,sos_statewide,2026-11-04T04:06:37+00:00
 Preble,Sherrod Brown,Democratic,1798,1608,487,,0,,,,,,,0,,3893,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Jon Husted,Republican,6167,3460,826,,0,,,,,,,0,,10453,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Greg Levy,Other-party,219,69,24,,0,,,,,,,0,,312,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,William B. Redpath,Libertarian,516,129,49,,0,,,,,,,0,,694,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Write-in,,20,7,2,,0,,,,,,,0,,29,,,county_feed,pdf-sha1:4ee6fdff0dfe
-Putnam,Sherrod Brown,Democratic,,,,,,2767,,,,,,,,2767,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Jon Husted,Republican,,,,,,11891,,,,,,,,11891,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Greg Levy,Other-party,,,,,,301,,,,,,,,301,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,William B. Redpath,Libertarian,,,,,,438,,,,,,,,438,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Write-in,,,,,,,0,,,,,,,,0,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Sherrod Brown,Democratic,,,,,,15058,,,,,,,,15058,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Jon Husted,Republican,,,,,,26596,,,,,,,,26596,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Greg Levy,Other-party,,,,,,842,,,,,,,,842,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,William B. Redpath,Libertarian,,,,,,1568,,,,,,,,1568,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Write-in,,,,,,,0,,,,,,,,0,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Sherrod Brown,Democratic,,,,,,9097,,,,,,,,9097,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Jon Husted,Republican,,,,,,14390,,,,,,,,14390,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Greg Levy,Other-party,,,,,,417,,,,,,,,417,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,William B. Redpath,Libertarian,,,,,,756,,,,,,,,756,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Write-in,,,,,,,0,,,,,,,,0,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Sherrod Brown,Democratic,,,,,,9034,,,,,,,,9034,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Jon Husted,Republican,,,,,,11982,,,,,,,,11982,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Greg Levy,Other-party,,,,,,597,,,,,,,,597,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,William B. Redpath,Libertarian,,,,,,964,,,,,,,,964,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Write-in,,,,,,,0,,,,,,,,0,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Sherrod Brown,Democratic,,,,,,7464,,,,,,,,7464,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Jon Husted,Republican,,,,,,12944,,,,,,,,12944,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Greg Levy,Other-party,,,,,,487,,,,,,,,487,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,William B. Redpath,Libertarian,,,,,,603,,,,,,,,603,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Write-in,,,,,,,0,,,,,,,,0,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Seneca,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Write-in,,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:5cbd67100a44
-Shelby,Sherrod Brown,Democratic,,,,,,3928,,,,,,,,3928,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Jon Husted,Republican,,,,,,13993,,,,,,,,13993,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Greg Levy,Other-party,,,,,,411,,,,,,,,411,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,William B. Redpath,Libertarian,,,,,,649,,,,,,,,649,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Stark,Sherrod Brown,Democratic,15357,0,29636,,0,,,,,,,,,44993,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Jon Husted,Republican,24290,0,20831,,0,,,,,,,,,45121,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Greg Levy,Other-party,1203,0,855,,0,,,,,,,,,2058,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,William B. Redpath,Libertarian,1767,0,1078,,0,,,,,,,,,2845,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Write-in,,60,0,13,,0,,,,,,,,,73,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Summit,Sherrod Brown,Democratic,21030,32377,20115,,0,,,,,,,,0,73522,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,20573,8282,10679,,0,,,,,,,,0,39534,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,1049,577,476,,0,,,,,,,,0,2102,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,1528,390,616,,0,,,,,,,,0,2534,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,39,21,28,,0,,,,,,,,0,88,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Trumbull,Sherrod Brown,Democratic,,,,,,35892,,,,,,,,35892,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Jon Husted,Republican,,,,,,33726,,,,,,,,33726,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Greg Levy,Other-party,,,,,,1894,,,,,,,,1894,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,William B. Redpath,Libertarian,,,,,,2390,,,,,,,,2390,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Write-in,,,,,,,0,,,,,,,,0,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Sherrod Brown,Democratic,,,,,,11221,,,,,,,,11221,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Jon Husted,Republican,,,,,,18735,,,,,,,,18735,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Greg Levy,Other-party,,,,,,779,,,,,,,,779,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,William B. Redpath,Libertarian,,,,,,1382,,,,,,,,1382,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Write-in,,,,,,,0,,,,,,,,0,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Sherrod Brown,Democratic,,,,,,12758,,,,,,,,12758,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Jon Husted,Republican,,,,,,17020,,,,,,,,17020,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Greg Levy,Other-party,,,,,,496,,,,,,,,496,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,William B. Redpath,Libertarian,,,,,,893,,,,,,,,893,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Write-in,,,,,,,0,,,,,,,,0,53,53,sos_statewide,2026-11-04T02:54:38+00:00
+Putnam,Sherrod Brown,Democratic,,,,,,2767,,,,,,,,2767,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Jon Husted,Republican,,,,,,11891,,,,,,,,11891,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Greg Levy,Other-party,,,,,,301,,,,,,,,301,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,William B. Redpath,Libertarian,,,,,,438,,,,,,,,438,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Write-in,,,,,,,0,,,,,,,,0,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Sherrod Brown,Democratic,,,,,,15058,,,,,,,,15058,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Jon Husted,Republican,,,,,,26596,,,,,,,,26596,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Greg Levy,Other-party,,,,,,842,,,,,,,,842,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,William B. Redpath,Libertarian,,,,,,1568,,,,,,,,1568,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Write-in,,,,,,,0,,,,,,,,0,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Sherrod Brown,Democratic,,,,,,9097,,,,,,,,9097,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Jon Husted,Republican,,,,,,14390,,,,,,,,14390,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Greg Levy,Other-party,,,,,,417,,,,,,,,417,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,William B. Redpath,Libertarian,,,,,,756,,,,,,,,756,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Write-in,,,,,,,0,,,,,,,,0,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Sherrod Brown,Democratic,,,,,,9034,,,,,,,,9034,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Jon Husted,Republican,,,,,,11982,,,,,,,,11982,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Greg Levy,Other-party,,,,,,597,,,,,,,,597,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,William B. Redpath,Libertarian,,,,,,964,,,,,,,,964,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Write-in,,,,,,,0,,,,,,,,0,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Sherrod Brown,Democratic,,,,,,7464,,,,,,,,7464,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Jon Husted,Republican,,,,,,12944,,,,,,,,12944,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Greg Levy,Other-party,,,,,,487,,,,,,,,487,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,William B. Redpath,Libertarian,,,,,,603,,,,,,,,603,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Write-in,,,,,,,0,,,,,,,,0,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Seneca,Sherrod Brown,Democratic,3652,2282,978,,0,,,,,,,,,6912,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Jon Husted,Republican,7423,2154,923,,0,,,,,,,,,10500,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Greg Levy,Other-party,403,70,49,,0,,,,,,,,,522,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,William B. Redpath,Libertarian,673,101,81,,0,,,,,,,,,855,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Write-in,,11,4,7,,0,,,,,,,,,22,,,county_feed,pdf-sha1:d953c35f6667
+Shelby,Sherrod Brown,Democratic,,,,,,3928,,,,,,,,3928,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Jon Husted,Republican,,,,,,13993,,,,,,,,13993,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Greg Levy,Other-party,,,,,,411,,,,,,,,411,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,William B. Redpath,Libertarian,,,,,,649,,,,,,,,649,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Write-in,,,,,,,0,,,,,,,,0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Stark,Sherrod Brown,Democratic,34002,0,29641,,0,,,,,,,,,63643,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Jon Husted,Republican,48916,0,20843,,0,,,,,,,,,69759,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Greg Levy,Other-party,2541,0,858,,0,,,,,,,,,3399,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,William B. Redpath,Libertarian,3607,0,1079,,0,,,,,,,,,4686,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Write-in,,116,0,13,,0,,,,,,,,,129,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Summit,Sherrod Brown,Democratic,77733,32377,22780,,0,,,,,,,,0,132890,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,61490,8282,12254,,0,,,,,,,,0,82026,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,3587,577,597,,0,,,,,,,,0,4761,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,4447,390,760,,0,,,,,,,,0,5597,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,164,21,32,,0,,,,,,,,0,217,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Trumbull,Sherrod Brown,Democratic,,,,,,35990,,,,,,,,35990,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Jon Husted,Republican,,,,,,34046,,,,,,,,34046,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Greg Levy,Other-party,,,,,,1905,,,,,,,,1905,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,William B. Redpath,Libertarian,,,,,,2409,,,,,,,,2409,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Write-in,,,,,,,0,,,,,,,,0,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Sherrod Brown,Democratic,,,,,,11221,,,,,,,,11221,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Jon Husted,Republican,,,,,,18735,,,,,,,,18735,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Greg Levy,Other-party,,,,,,779,,,,,,,,779,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,William B. Redpath,Libertarian,,,,,,1382,,,,,,,,1382,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Write-in,,,,,,,0,,,,,,,,0,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Sherrod Brown,Democratic,,,,,,12758,,,,,,,,12758,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Jon Husted,Republican,,,,,,17020,,,,,,,,17020,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Greg Levy,Other-party,,,,,,496,,,,,,,,496,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,William B. Redpath,Libertarian,,,,,,893,,,,,,,,893,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Write-in,,,,,,,0,,,,,,,,0,53,53,sos_statewide,2026-11-04T04:06:37+00:00
 Van Wert,Sherrod Brown,Democratic,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,Jon Husted,Republican,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,Greg Levy,Other-party,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,William B. Redpath,Libertarian,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,Write-in,,0,0,0,,0,,,,,,,,,0,,,county_feed,pdf-sha1:05ee2fdb407c
-Vinton,Sherrod Brown,Democratic,,,,,,1096,,,,,,,,1096,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Jon Husted,Republican,,,,,,2526,,,,,,,,2526,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Greg Levy,Other-party,,,,,,82,,,,,,,,82,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,William B. Redpath,Libertarian,,,,,,199,,,,,,,,199,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Write-in,,,,,,,0,,,,,,,,0,20,20,sos_statewide,2026-11-04T02:54:38+00:00
+Vinton,Sherrod Brown,Democratic,,,,,,1096,,,,,,,,1096,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Jon Husted,Republican,,,,,,2526,,,,,,,,2526,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Greg Levy,Other-party,,,,,,82,,,,,,,,82,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,William B. Redpath,Libertarian,,,,,,199,,,,,,,,199,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Write-in,,,,,,,0,,,,,,,,0,20,20,sos_statewide,2026-11-04T04:06:37+00:00
 Warren,Sherrod Brown,Democratic,20399,16025,7538,,0,,,,,,,,,43962,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,Jon Husted,Republican,38598,17404,8228,,0,,,,,,,,,64230,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,Greg Levy,Other-party,1231,308,225,,0,,,,,,,,,1764,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,William B. Redpath,Libertarian,2259,485,387,,0,,,,,,,,,3131,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,Write-in,,63,14,16,,0,,,,,,,,,93,185,185,county_feed,2026-11-03T21:40:25.568-05:00
-Washington,Sherrod Brown,Democratic,,,,,,7788,,,,,,,,7788,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Jon Husted,Republican,,,,,,13423,,,,,,,,13423,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Greg Levy,Other-party,,,,,,560,,,,,,,,560,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,William B. Redpath,Libertarian,,,,,,867,,,,,,,,867,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Write-in,,,,,,,0,,,,,,,,0,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Sherrod Brown,Democratic,,,,,,10658,,,,,,,,10658,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Jon Husted,Republican,,,,,,15183,,,,,,,,15183,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Greg Levy,Other-party,,,,,,502,,,,,,,,502,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,William B. Redpath,Libertarian,,,,,,783,,,,,,,,783,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Write-in,,,,,,,0,,,,,,,,0,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Sherrod Brown,Democratic,,,,,,3968,,,,,,,,3968,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Jon Husted,Republican,,,,,,8619,,,,,,,,8619,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Greg Levy,Other-party,,,,,,382,,,,,,,,382,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,William B. Redpath,Libertarian,,,,,,558,,,,,,,,558,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Write-in,,,,,,,0,,,,,,,,0,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Sherrod Brown,Democratic,,,,,,17220,,,,,,,,17220,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Jon Husted,Republican,,,,,,11636,,,,,,,,11636,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Greg Levy,Other-party,,,,,,533,,,,,,,,533,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,William B. Redpath,Libertarian,,,,,,671,,,,,,,,671,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Write-in,,,,,,,0,,,,,,,,0,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Sherrod Brown,Democratic,,,,,,2675,,,,,,,,2675,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Jon Husted,Republican,,,,,,5610,,,,,,,,5610,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Greg Levy,Other-party,,,,,,1146,,,,,,,,1146,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,William B. Redpath,Libertarian,,,,,,543,,,,,,,,543,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
+Washington,Sherrod Brown,Democratic,,,,,,7788,,,,,,,,7788,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Jon Husted,Republican,,,,,,13423,,,,,,,,13423,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Greg Levy,Other-party,,,,,,560,,,,,,,,560,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,William B. Redpath,Libertarian,,,,,,867,,,,,,,,867,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Write-in,,,,,,,0,,,,,,,,0,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Sherrod Brown,Democratic,,,,,,13545,,,,,,,,13545,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Jon Husted,Republican,,,,,,22934,,,,,,,,22934,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Greg Levy,Other-party,,,,,,789,,,,,,,,789,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,William B. Redpath,Libertarian,,,,,,1343,,,,,,,,1343,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Write-in,,,,,,,0,,,,,,,,0,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Sherrod Brown,Democratic,,,,,,3968,,,,,,,,3968,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Jon Husted,Republican,,,,,,8619,,,,,,,,8619,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Greg Levy,Other-party,,,,,,382,,,,,,,,382,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,William B. Redpath,Libertarian,,,,,,558,,,,,,,,558,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Write-in,,,,,,,0,,,,,,,,0,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Sherrod Brown,Democratic,,,,,,25173,,,,,,,,25173,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Jon Husted,Republican,,,,,,21967,,,,,,,,21967,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Greg Levy,Other-party,,,,,,971,,,,,,,,971,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,William B. Redpath,Libertarian,,,,,,1462,,,,,,,,1462,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Write-in,,,,,,,0,,,,,,,,0,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Sherrod Brown,Democratic,,,,,,2675,,,,,,,,2675,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Jon Husted,Republican,,,,,,5610,,,,,,,,5610,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Greg Levy,Other-party,,,,,,1146,,,,,,,,1146,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,William B. Redpath,Libertarian,,,,,,543,,,,,,,,543,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Write-in,,,,,,,0,,,,,,,,0,23,23,sos_statewide,2026-11-04T04:06:37+00:00

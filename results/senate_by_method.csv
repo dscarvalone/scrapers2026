@@ -1,146 +1,146 @@
 county,candidate,party,method,method_county_label,votes,precincts_reported,precincts_total,source,source_generated_at
-Athens,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Sherrod Brown,Democratic,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Sherrod Brown,Democratic,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Jon Husted,Republican,Election Day,Election Day,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Jon Husted,Republican,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Jon Husted,Republican,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Greg Levy,Other-party,Election Day,Election Day,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Greg Levy,Other-party,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Greg Levy,Other-party,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,William B. Redpath,Libertarian,Election Day,Election Day,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,William B. Redpath,Libertarian,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,William B. Redpath,Libertarian,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Write-in,,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Write-in,,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Athens,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:d33e8a2bcb60
-Butler,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Sherrod Brown,Democratic,Mail,Absentee Voting,28560,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Sherrod Brown,Democratic,Election Day,Election Day,20507,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Sherrod Brown,Democratic,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Jon Husted,Republican,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Jon Husted,Republican,Mail,Absentee Voting,26974,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Jon Husted,Republican,Election Day,Election Day,31147,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Jon Husted,Republican,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Greg Levy,Other-party,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Greg Levy,Other-party,Mail,Absentee Voting,757,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Greg Levy,Other-party,Election Day,Election Day,1170,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Greg Levy,Other-party,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,William B. Redpath,Libertarian,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,William B. Redpath,Libertarian,Mail,Absentee Voting,927,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,William B. Redpath,Libertarian,Election Day,Election Day,1835,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,William B. Redpath,Libertarian,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Mail,Absentee Voting,26,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Election Day,Election Day,69,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Mail,Absentee Voting,1,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Mail,Absentee Voting,1,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Mail,Absentee Voting,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T21:36:48.013-05:00
-Carroll,Sherrod Brown,Democratic,Early In-Person,Early Voting,891,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Sherrod Brown,Democratic,Mail,Mail Ballots,492,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Sherrod Brown,Democratic,Election Day,Election Day,1405,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Sherrod Brown,Democratic,Provisional,Provisional,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Jon Husted,Republican,Early In-Person,Early Voting,1329,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Jon Husted,Republican,Mail,Mail Ballots,685,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Jon Husted,Republican,Election Day,Election Day,4706,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Jon Husted,Republican,Provisional,Provisional,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Greg Levy,Other-party,Early In-Person,Early Voting,43,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Greg Levy,Other-party,Mail,Mail Ballots,39,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Greg Levy,Other-party,Election Day,Election Day,209,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Greg Levy,Other-party,Provisional,Provisional,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,William B. Redpath,Libertarian,Early In-Person,Early Voting,51,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,William B. Redpath,Libertarian,Mail,Mail Ballots,45,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,William B. Redpath,Libertarian,Election Day,Election Day,371,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,William B. Redpath,Libertarian,Provisional,Provisional,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Write-in,,Early In-Person,Early Voting,3,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Write-in,,Mail,Mail Ballots,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Write-in,,Election Day,Election Day,17,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Carroll,Write-in,,Provisional,Provisional,0,23,23,county_feed,2026-11-03T21:33:38.105-05:00
-Clark,Sherrod Brown,Democratic,Early In-Person,Early Voting,7432,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Sherrod Brown,Democratic,Mail,Absentee Ballots,2588,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Sherrod Brown,Democratic,Election Day,Election Day,7298,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Sherrod Brown,Democratic,Provisional,Provisional,0,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Jon Husted,Republican,Early In-Person,Early Voting,6039,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Jon Husted,Republican,Mail,Absentee Ballots,2320,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Jon Husted,Republican,Election Day,Election Day,13611,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Jon Husted,Republican,Provisional,Provisional,0,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Greg Levy,Other-party,Early In-Person,Early Voting,222,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Greg Levy,Other-party,Mail,Absentee Ballots,123,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Greg Levy,Other-party,Election Day,Election Day,682,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Greg Levy,Other-party,Provisional,Provisional,0,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,William B. Redpath,Libertarian,Early In-Person,Early Voting,256,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,William B. Redpath,Libertarian,Mail,Absentee Ballots,146,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,William B. Redpath,Libertarian,Election Day,Election Day,953,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,William B. Redpath,Libertarian,Provisional,Provisional,0,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Write-in,,Early In-Person,Early Voting,15,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Write-in,,Mail,Absentee Ballots,9,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Write-in,,Election Day,Election Day,38,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clark,Write-in,,Provisional,Provisional,0,59,78,county_feed,2026-11-03T21:35:07.566-05:00
-Clermont,Jon Husted,Republican,Election Day,Election Day,21983,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Jon Husted,Republican,Mail,Absentee Mail,6420,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Jon Husted,Republican,Early In-Person,Absentee In - Person,9509,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Sherrod Brown,Democratic,Election Day,Election Day,11652,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Sherrod Brown,Democratic,Mail,Absentee Mail,5804,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Sherrod Brown,Democratic,Early In-Person,Absentee In - Person,9115,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,William B. Redpath,Libertarian,Election Day,Election Day,1463,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,William B. Redpath,Libertarian,Mail,Absentee Mail,351,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,William B. Redpath,Libertarian,Early In-Person,Absentee In - Person,310,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Greg Levy,Other-party,Election Day,Election Day,806,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Greg Levy,Other-party,Mail,Absentee Mail,255,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Greg Levy,Other-party,Early In-Person,Absentee In - Person,211,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Write-in,,Election Day,Election Day,45,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Write-in,,Mail,Absentee Mail,7,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Write-in,,Early In-Person,Absentee In - Person,6,,,county_feed,pdf-sha1:5383bf955e53
-Clermont,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:5383bf955e53
-Cuyahoga,Sherrod Brown,Democratic,Election Day,Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Sherrod Brown,Democratic,Early In-Person,Early In-Person,47709,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Sherrod Brown,Democratic,Provisional,Provisional,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Sherrod Brown,Democratic,Post Election Day,Post Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Sherrod Brown,Democratic,Post VBM,Post VBM,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Sherrod Brown,Democratic,Mail,Vote By Mail,75499,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Election Day,Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Early In-Person,Early In-Person,4734,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Provisional,Provisional,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Post Election Day,Post Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Post VBM,Post VBM,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Jon Husted,Republican,Mail,Vote By Mail,28301,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Election Day,Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Early In-Person,Early In-Person,891,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Provisional,Provisional,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Post Election Day,Post Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Post VBM,Post VBM,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Greg Levy,Other-party,Mail,Vote By Mail,1263,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Election Day,Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Early In-Person,Early In-Person,373,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Provisional,Provisional,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Post Election Day,Post Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Post VBM,Post VBM,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,William B. Redpath,Libertarian,Mail,Vote By Mail,1445,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Election Day,Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Early In-Person,Early In-Person,38,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Provisional,Provisional,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Post Election Day,Post Election Day,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Post VBM,Post VBM,0,0,897,county_feed,2026-11-04T02:09:52.0436427Z
-Cuyahoga,Write-in,,Mail,Vote By Mail,71,0,897,county_feed,2026-11-04T02:09:52.0436427Z
+Athens,Sherrod Brown,Democratic,Election Day,Election Day,5927,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Sherrod Brown,Democratic,Mail,Absentee Mail Out,1542,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Sherrod Brown,Democratic,Early In-Person,Absentee In Office,5231,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Jon Husted,Republican,Election Day,Election Day,4803,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Jon Husted,Republican,Mail,Absentee Mail Out,915,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Jon Husted,Republican,Early In-Person,Absentee In Office,790,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Greg Levy,Other-party,Election Day,Election Day,406,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Greg Levy,Other-party,Mail,Absentee Mail Out,74,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Greg Levy,Other-party,Early In-Person,Absentee In Office,95,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,William B. Redpath,Libertarian,Election Day,Election Day,416,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,William B. Redpath,Libertarian,Mail,Absentee Mail Out,76,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,William B. Redpath,Libertarian,Early In-Person,Absentee In Office,52,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Write-in,,Election Day,Election Day,38,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Write-in,,Mail,Absentee Mail Out,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Write-in,,Early In-Person,Absentee In Office,0,,,county_feed,pdf-sha1:2dc0bf015878
+Athens,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:2dc0bf015878
+Butler,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Sherrod Brown,Democratic,Mail,Absentee Voting,28825,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Sherrod Brown,Democratic,Election Day,Election Day,33496,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Sherrod Brown,Democratic,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Jon Husted,Republican,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Jon Husted,Republican,Mail,Absentee Voting,27252,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Jon Husted,Republican,Election Day,Election Day,50158,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Jon Husted,Republican,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Greg Levy,Other-party,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Greg Levy,Other-party,Mail,Absentee Voting,779,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Greg Levy,Other-party,Election Day,Election Day,1981,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Greg Levy,Other-party,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,William B. Redpath,Libertarian,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,William B. Redpath,Libertarian,Mail,Absentee Voting,947,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,William B. Redpath,Libertarian,Election Day,Election Day,3077,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,William B. Redpath,Libertarian,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Mail,Absentee Voting,26,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Election Day,Election Day,124,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Mail,Absentee Voting,1,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Mail,Absentee Voting,1,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Early In-Person,Early Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Mail,Absentee Voting,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Election Day,Election Day,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Butler,Write-in,,Provisional,Provisional,0,0,0,county_feed,2026-11-03T23:08:14.912-05:00
+Carroll,Sherrod Brown,Democratic,Early In-Person,Early Voting,891,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Sherrod Brown,Democratic,Mail,Mail Ballots,492,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Sherrod Brown,Democratic,Election Day,Election Day,1406,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Sherrod Brown,Democratic,Provisional,Provisional,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Jon Husted,Republican,Early In-Person,Early Voting,1329,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Jon Husted,Republican,Mail,Mail Ballots,685,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Jon Husted,Republican,Election Day,Election Day,4706,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Jon Husted,Republican,Provisional,Provisional,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Greg Levy,Other-party,Early In-Person,Early Voting,43,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Greg Levy,Other-party,Mail,Mail Ballots,39,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Greg Levy,Other-party,Election Day,Election Day,210,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Greg Levy,Other-party,Provisional,Provisional,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,William B. Redpath,Libertarian,Early In-Person,Early Voting,51,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,William B. Redpath,Libertarian,Mail,Mail Ballots,45,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,William B. Redpath,Libertarian,Election Day,Election Day,371,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,William B. Redpath,Libertarian,Provisional,Provisional,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Write-in,,Early In-Person,Early Voting,3,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Write-in,,Mail,Mail Ballots,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Write-in,,Election Day,Election Day,17,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Carroll,Write-in,,Provisional,Provisional,0,23,23,county_feed,2026-11-03T22:40:23.385-05:00
+Clark,Sherrod Brown,Democratic,Early In-Person,Early Voting,7432,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Sherrod Brown,Democratic,Mail,Absentee Ballots,2588,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Sherrod Brown,Democratic,Election Day,Election Day,9702,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Sherrod Brown,Democratic,Provisional,Provisional,0,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Jon Husted,Republican,Early In-Person,Early Voting,6039,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Jon Husted,Republican,Mail,Absentee Ballots,2320,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Jon Husted,Republican,Election Day,Election Day,17820,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Jon Husted,Republican,Provisional,Provisional,0,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Greg Levy,Other-party,Early In-Person,Early Voting,222,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Greg Levy,Other-party,Mail,Absentee Ballots,123,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Greg Levy,Other-party,Election Day,Election Day,905,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Greg Levy,Other-party,Provisional,Provisional,0,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,William B. Redpath,Libertarian,Early In-Person,Early Voting,256,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,William B. Redpath,Libertarian,Mail,Absentee Ballots,146,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,William B. Redpath,Libertarian,Election Day,Election Day,1253,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,William B. Redpath,Libertarian,Provisional,Provisional,0,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Write-in,,Early In-Person,Early Voting,15,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Write-in,,Mail,Absentee Ballots,9,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Write-in,,Election Day,Election Day,46,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clark,Write-in,,Provisional,Provisional,0,78,78,county_feed,2026-11-03T22:05:04.086-05:00
+Clermont,Jon Husted,Republican,Election Day,Election Day,35205,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Jon Husted,Republican,Mail,Absentee Mail,6420,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Jon Husted,Republican,Early In-Person,Absentee In - Person,9509,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Sherrod Brown,Democratic,Election Day,Election Day,18523,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Sherrod Brown,Democratic,Mail,Absentee Mail,5804,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Sherrod Brown,Democratic,Early In-Person,Absentee In - Person,9115,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,William B. Redpath,Libertarian,Election Day,Election Day,2369,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,William B. Redpath,Libertarian,Mail,Absentee Mail,351,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,William B. Redpath,Libertarian,Early In-Person,Absentee In - Person,310,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Greg Levy,Other-party,Election Day,Election Day,1311,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Greg Levy,Other-party,Mail,Absentee Mail,255,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Greg Levy,Other-party,Early In-Person,Absentee In - Person,211,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Write-in,,Election Day,Election Day,81,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Write-in,,Mail,Absentee Mail,7,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Write-in,,Early In-Person,Absentee In - Person,6,,,county_feed,pdf-sha1:95eda6abd21e
+Clermont,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:95eda6abd21e
+Cuyahoga,Sherrod Brown,Democratic,Election Day,Election Day,93449,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Sherrod Brown,Democratic,Early In-Person,Early In-Person,47709,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Sherrod Brown,Democratic,Provisional,Provisional,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Sherrod Brown,Democratic,Post Election Day,Post Election Day,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Sherrod Brown,Democratic,Post VBM,Post VBM,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Sherrod Brown,Democratic,Mail,Vote By Mail,75499,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Election Day,Election Day,46331,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Early In-Person,Early In-Person,4734,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Provisional,Provisional,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Post Election Day,Post Election Day,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Post VBM,Post VBM,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Jon Husted,Republican,Mail,Vote By Mail,28301,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Election Day,Election Day,3058,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Early In-Person,Early In-Person,891,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Provisional,Provisional,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Post Election Day,Post Election Day,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Post VBM,Post VBM,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Greg Levy,Other-party,Mail,Vote By Mail,1263,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Election Day,Election Day,2904,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Early In-Person,Early In-Person,373,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Provisional,Provisional,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Post Election Day,Post Election Day,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Post VBM,Post VBM,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,William B. Redpath,Libertarian,Mail,Vote By Mail,1445,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Election Day,Election Day,162,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Early In-Person,Early In-Person,38,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Provisional,Provisional,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Post Election Day,Post Election Day,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Post VBM,Post VBM,0,319,897,county_feed,2026-11-04T05:44:37.2464358Z
+Cuyahoga,Write-in,,Mail,Vote By Mail,71,319,897,county_feed,2026-11-04T05:44:37.2464358Z
 Erie,Sherrod Brown,Democratic,Election Day,Election Day,7300,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Sherrod Brown,Democratic,Absentee (early in-person + mail),Absentee,8043,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:0c97bcd59312
@@ -156,61 +156,61 @@ Erie,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-
 Erie,Write-in,,Election Day,Election Day,9,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Write-in,,Absentee (early in-person + mail),Absentee,10,,,county_feed,pdf-sha1:0c97bcd59312
 Erie,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:0c97bcd59312
-Franklin,Sherrod Brown,Democratic,Early In-Person,Early Voting,79019,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Sherrod Brown,Democratic,Mail,Absentee Ballots,47725,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Sherrod Brown,Democratic,Election Day,Election Day,122981,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Sherrod Brown,Democratic,Provisional,Provisional,0,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Jon Husted,Republican,Early In-Person,Early Voting,11561,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Jon Husted,Republican,Mail,Absentee Ballots,22789,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Jon Husted,Republican,Election Day,Election Day,55271,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Jon Husted,Republican,Provisional,Provisional,0,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Greg Levy,Other-party,Early In-Person,Early Voting,1161,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Greg Levy,Other-party,Mail,Absentee Ballots,1092,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Greg Levy,Other-party,Election Day,Election Day,3658,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Greg Levy,Other-party,Provisional,Provisional,0,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,William B. Redpath,Libertarian,Early In-Person,Early Voting,656,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,William B. Redpath,Libertarian,Mail,Absentee Ballots,1265,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,William B. Redpath,Libertarian,Election Day,Election Day,3824,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,William B. Redpath,Libertarian,Provisional,Provisional,0,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Write-in,,Early In-Person,Early Voting,36,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Write-in,,Mail,Absentee Ballots,42,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Write-in,,Election Day,Election Day,143,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Franklin,Write-in,,Provisional,Provisional,0,490,889,county_feed,2026-11-03T21:51:32.088-05:00
-Greene,Jon Husted,Republican,Election Day,Polling,10560,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Jon Husted,Republican,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Jon Husted,Republican,Early In-Person,Early Voting,11190,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Jon Husted,Republican,Mail,Absentee,3746,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Jon Husted,Republican,Provisional,Provisional,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Sherrod Brown,Democratic,Election Day,Polling,5738,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Sherrod Brown,Democratic,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Sherrod Brown,Democratic,Early In-Person,Early Voting,13264,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Sherrod Brown,Democratic,Mail,Absentee,4263,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Sherrod Brown,Democratic,Provisional,Provisional,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,Election Day,Polling,693,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,Early In-Person,Early Voting,355,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,Mail,Absentee,192,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,William B. Redpath,Libertarian,Provisional,Provisional,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,Election Day,Polling,357,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,Early In-Person,Early Voting,253,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,Mail,Absentee,118,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Greg Levy,Other-party,Provisional,Provisional,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,Election Day,Polling,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,Early In-Person,Early Voting,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,Mail,Absentee,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Greene,Write-in,,Provisional,Provisional,0,151,151,county_feed,2026-11-04T02:42:24.5750992Z
-Hamilton,Sherrod Brown,Democratic,Election Day,Election,26737,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Sherrod Brown,Democratic,Absentee (early in-person + mail),Early,85866,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Jon Husted,Republican,Election Day,Election,15337,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Jon Husted,Republican,Absentee (early in-person + mail),Early,30528,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Greg Levy,Other-party,Election Day,Election,1108,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Greg Levy,Other-party,Absentee (early in-person + mail),Early,1848,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,William B. Redpath,Libertarian,Election Day,Election,1123,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,William B. Redpath,Libertarian,Absentee (early in-person + mail),Early,1500,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Write-in,,Election Day,Election,1,130,563,county_feed,11/3/2026 9:30:44 PM EST
-Hamilton,Write-in,,Absentee (early in-person + mail),Early,3,130,563,county_feed,11/3/2026 9:30:44 PM EST
+Franklin,Sherrod Brown,Democratic,Early In-Person,Early Voting,79019,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Sherrod Brown,Democratic,Mail,Absentee Ballots,49077,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Sherrod Brown,Democratic,Election Day,Election Day,221887,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Sherrod Brown,Democratic,Provisional,Provisional,0,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Jon Husted,Republican,Early In-Person,Early Voting,11561,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Jon Husted,Republican,Mail,Absentee Ballots,23427,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Jon Husted,Republican,Election Day,Election Day,102011,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Jon Husted,Republican,Provisional,Provisional,0,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Greg Levy,Other-party,Early In-Person,Early Voting,1161,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Greg Levy,Other-party,Mail,Absentee Ballots,1148,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Greg Levy,Other-party,Election Day,Election Day,7036,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Greg Levy,Other-party,Provisional,Provisional,0,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,William B. Redpath,Libertarian,Early In-Person,Early Voting,656,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,William B. Redpath,Libertarian,Mail,Absentee Ballots,1311,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,William B. Redpath,Libertarian,Election Day,Election Day,7058,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,William B. Redpath,Libertarian,Provisional,Provisional,0,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Write-in,,Early In-Person,Early Voting,36,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Write-in,,Mail,Absentee Ballots,45,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Write-in,,Election Day,Election Day,301,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Franklin,Write-in,,Provisional,Provisional,0,889,889,county_feed,2026-11-04T00:07:57.209-05:00
+Greene,Jon Husted,Republican,Election Day,Polling,23122,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Jon Husted,Republican,Election Day,Polling Paper,40,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Jon Husted,Republican,Early In-Person,Early Voting,11190,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Jon Husted,Republican,Mail,Absentee,3924,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Jon Husted,Republican,Provisional,Provisional,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Sherrod Brown,Democratic,Election Day,Polling,15004,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Sherrod Brown,Democratic,Election Day,Polling Paper,12,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Sherrod Brown,Democratic,Early In-Person,Early Voting,13264,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Sherrod Brown,Democratic,Mail,Absentee,4413,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Sherrod Brown,Democratic,Provisional,Provisional,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,Election Day,Polling,1527,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,Election Day,Polling Paper,2,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,Early In-Person,Early Voting,355,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,Mail,Absentee,205,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,William B. Redpath,Libertarian,Provisional,Provisional,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,Election Day,Polling,821,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,Election Day,Polling Paper,2,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,Early In-Person,Early Voting,253,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,Mail,Absentee,125,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Greg Levy,Other-party,Provisional,Provisional,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,Election Day,Polling,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,Election Day,Polling Paper,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,Early In-Person,Early Voting,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,Mail,Absentee,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Greene,Write-in,,Provisional,Provisional,0,151,151,county_feed,2026-11-04T03:58:37.3486914Z
+Hamilton,Sherrod Brown,Democratic,Election Day,Election,120375,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Sherrod Brown,Democratic,Absentee (early in-person + mail),Early,86141,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Jon Husted,Republican,Election Day,Election,89434,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Jon Husted,Republican,Absentee (early in-person + mail),Early,30711,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Greg Levy,Other-party,Election Day,Election,5572,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Greg Levy,Other-party,Absentee (early in-person + mail),Early,1861,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,William B. Redpath,Libertarian,Election Day,Election,5752,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,William B. Redpath,Libertarian,Absentee (early in-person + mail),Early,1514,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Write-in,,Election Day,Election,9,557,563,county_feed,11/3/2026 10:53:09 PM EST
+Hamilton,Write-in,,Absentee (early in-person + mail),Early,3,557,563,county_feed,11/3/2026 10:53:09 PM EST
 Hocking,Sherrod Brown,Democratic,Provisional,Provisional,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Sherrod Brown,Democratic,Election Day,Election Day,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
 Hocking,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,0,20,county_feed,2026-10-30T17:55:37.4395158Z
@@ -267,81 +267,81 @@ Lucas,William B. Redpath,Libertarian,Early In-Person,Early Voting,0,0,280,county
 Lucas,William B. Redpath,Libertarian,Mail,Absentee Ballots,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
 Lucas,William B. Redpath,Libertarian,Election Day,Election Day,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
 Lucas,William B. Redpath,Libertarian,Provisional,Provisional,0,0,280,county_feed,2026-10-28T14:08:15.089-04:00
-Madison,Sherrod Brown,Democratic,Election Day,Election Day,1817,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Sherrod Brown,Democratic,Mail,Absentee Mail,868,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Sherrod Brown,Democratic,Early In-Person,Absentee Office,2197,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Jon Husted,Republican,Election Day,Election Day,4466,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Jon Husted,Republican,Mail,Absentee Mail,1218,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Jon Husted,Republican,Early In-Person,Absentee Office,3067,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Greg Levy,Other-party,Election Day,Election Day,154,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Greg Levy,Other-party,Mail,Absentee Mail,40,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Greg Levy,Other-party,Early In-Person,Absentee Office,93,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,William B. Redpath,Libertarian,Election Day,Election Day,325,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,William B. Redpath,Libertarian,Mail,Absentee Mail,63,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,William B. Redpath,Libertarian,Early In-Person,Absentee Office,110,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Write-in,,Election Day,Election Day,8,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Write-in,,Mail,Absentee Mail,4,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Write-in,,Early In-Person,Absentee Office,8,,,county_feed,pdf-sha1:10ce4dcd3f47
-Madison,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:10ce4dcd3f47
-Miami,Jon Husted,Republican,Mail,AB,2717,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Jon Husted,Republican,Election Day,ED,10733,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Jon Husted,Republican,Early In-Person,EV,8801,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Jon Husted,Republican,Provisional,PR,0,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Sherrod Brown,Democratic,Mail,AB,2081,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Sherrod Brown,Democratic,Election Day,ED,3307,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Sherrod Brown,Democratic,Early In-Person,EV,6320,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Sherrod Brown,Democratic,Provisional,PR,0,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,William B. Redpath,Libertarian,Mail,AB,141,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,William B. Redpath,Libertarian,Election Day,ED,748,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,William B. Redpath,Libertarian,Early In-Person,EV,351,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,William B. Redpath,Libertarian,Provisional,PR,0,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Greg Levy,Other-party,Mail,AB,90,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Greg Levy,Other-party,Election Day,ED,346,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Greg Levy,Other-party,Early In-Person,EV,180,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Greg Levy,Other-party,Provisional,PR,0,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Write-in,,Mail,AB,4,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Write-in,,Election Day,ED,27,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Write-in,,Early In-Person,EV,9,,,county_feed,pdf-sha1:804eb67e9e96
-Miami,Write-in,,Provisional,PR,0,,,county_feed,pdf-sha1:804eb67e9e96
-Montgomery,Sherrod Brown,Democratic,Mail,Absentee,14582,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Early In-Person,Early Voting,30929,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Election Day,Election Day,44950,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Provisional,Provisional,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Sherrod Brown,Democratic,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Mail,Absentee,10077,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Early In-Person,Early Voting,7897,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Election Day,Election Day,43005,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Provisional,Provisional,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Jon Husted,Republican,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Mail,Absentee,356,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Early In-Person,Early Voting,553,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Election Day,Election Day,1960,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Provisional,Provisional,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Greg Levy,Other-party,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Mail,Absentee,480,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Early In-Person,Early Voting,427,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Election Day,Election Day,2911,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Provisional,Provisional,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,William B. Redpath,Libertarian,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Mail,Absentee,12,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Early In-Person,Early Voting,28,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Election Day,Election Day,100,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Provisional,Provisional,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
-Montgomery,Write-in,,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T02:50:52.0812112Z
+Madison,Sherrod Brown,Democratic,Election Day,Election Day,2346,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Sherrod Brown,Democratic,Mail,Absentee Mail,868,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Sherrod Brown,Democratic,Early In-Person,Absentee Office,2197,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Jon Husted,Republican,Election Day,Election Day,5649,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Jon Husted,Republican,Mail,Absentee Mail,1218,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Jon Husted,Republican,Early In-Person,Absentee Office,3067,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Greg Levy,Other-party,Election Day,Election Day,204,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Greg Levy,Other-party,Mail,Absentee Mail,40,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Greg Levy,Other-party,Early In-Person,Absentee Office,93,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:80e1932e5996
+Madison,William B. Redpath,Libertarian,Election Day,Election Day,401,,,county_feed,pdf-sha1:80e1932e5996
+Madison,William B. Redpath,Libertarian,Mail,Absentee Mail,63,,,county_feed,pdf-sha1:80e1932e5996
+Madison,William B. Redpath,Libertarian,Early In-Person,Absentee Office,110,,,county_feed,pdf-sha1:80e1932e5996
+Madison,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Write-in,,Election Day,Election Day,14,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Write-in,,Mail,Absentee Mail,4,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Write-in,,Early In-Person,Absentee Office,8,,,county_feed,pdf-sha1:80e1932e5996
+Madison,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:80e1932e5996
+Miami,Jon Husted,Republican,Mail,AB,2717,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Jon Husted,Republican,Election Day,ED,17072,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Jon Husted,Republican,Early In-Person,EV,8801,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Jon Husted,Republican,Provisional,PR,0,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Sherrod Brown,Democratic,Mail,AB,2081,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Sherrod Brown,Democratic,Election Day,ED,6072,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Sherrod Brown,Democratic,Early In-Person,EV,6320,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Sherrod Brown,Democratic,Provisional,PR,0,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,William B. Redpath,Libertarian,Mail,AB,141,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,William B. Redpath,Libertarian,Election Day,ED,1212,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,William B. Redpath,Libertarian,Early In-Person,EV,351,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,William B. Redpath,Libertarian,Provisional,PR,0,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Greg Levy,Other-party,Mail,AB,90,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Greg Levy,Other-party,Election Day,ED,599,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Greg Levy,Other-party,Early In-Person,EV,180,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Greg Levy,Other-party,Provisional,PR,0,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Write-in,,Mail,AB,4,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Write-in,,Election Day,ED,40,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Write-in,,Early In-Person,EV,9,,,county_feed,pdf-sha1:4d72e1602a67
+Miami,Write-in,,Provisional,PR,0,,,county_feed,pdf-sha1:4d72e1602a67
+Montgomery,Sherrod Brown,Democratic,Mail,Absentee,14582,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Early In-Person,Early Voting,30929,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Election Day,Election Day,66446,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Provisional,Provisional,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Sherrod Brown,Democratic,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Mail,Absentee,10077,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Early In-Person,Early Voting,7897,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Election Day,Election Day,63656,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Provisional,Provisional,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Jon Husted,Republican,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Mail,Absentee,356,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Early In-Person,Early Voting,553,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Election Day,Election Day,2988,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Provisional,Provisional,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Greg Levy,Other-party,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Mail,Absentee,480,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Early In-Person,Early Voting,427,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Election Day,Election Day,4438,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Provisional,Provisional,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,William B. Redpath,Libertarian,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Mail,Absentee,12,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Early In-Person,Early Voting,28,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Election Day,Election Day,146,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Provisional,Provisional,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Absentee Add-In,Absentee Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Early Voting Add-In,Early Voting Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
+Montgomery,Write-in,,Election Day Add-In,Election Day Add-In,0,0,381,county_feed,2026-11-04T03:50:16.5417052Z
 Paulding,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Sherrod Brown,Democratic,Absentee (early in-person + mail),Absentee,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:956cc0a64983
@@ -357,26 +357,26 @@ Paulding,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,
 Paulding,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Write-in,,Absentee (early in-person + mail),Absentee,0,,,county_feed,pdf-sha1:956cc0a64983
 Paulding,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:956cc0a64983
-Pickaway,Jon Husted,Republican,Election Day,Election Day,8871,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Jon Husted,Republican,Early In-Person,In Office Absentee,3135,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Jon Husted,Republican,Mail,Mail Absentee,1192,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Jon Husted,Republican,Provisional,Provisional,0,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Sherrod Brown,Democratic,Election Day,Election Day,3308,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Sherrod Brown,Democratic,Early In-Person,In Office Absentee,2423,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Sherrod Brown,Democratic,Mail,Mail Absentee,928,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Sherrod Brown,Democratic,Provisional,Provisional,0,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,William B. Redpath,Libertarian,Election Day,Election Day,518,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,William B. Redpath,Libertarian,Early In-Person,In Office Absentee,140,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,William B. Redpath,Libertarian,Mail,Mail Absentee,70,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,William B. Redpath,Libertarian,Provisional,Provisional,0,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Greg Levy,Other-party,Election Day,Election Day,301,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Greg Levy,Other-party,Early In-Person,In Office Absentee,71,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Greg Levy,Other-party,Mail,Mail Absentee,45,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Greg Levy,Other-party,Provisional,Provisional,0,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Write-in,,Election Day,Election Day,31,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Write-in,,Early In-Person,In Office Absentee,4,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Write-in,,Mail,Mail Absentee,1,43,46,county_feed,2026-11-04T02:53:54.8450546Z
-Pickaway,Write-in,,Provisional,Provisional,0,43,46,county_feed,2026-11-04T02:53:54.8450546Z
+Pickaway,Jon Husted,Republican,Election Day,Election Day,9599,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Jon Husted,Republican,Early In-Person,In Office Absentee,3135,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Jon Husted,Republican,Mail,Mail Absentee,1192,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Jon Husted,Republican,Provisional,Provisional,0,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Sherrod Brown,Democratic,Election Day,Election Day,3680,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Sherrod Brown,Democratic,Early In-Person,In Office Absentee,2423,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Sherrod Brown,Democratic,Mail,Mail Absentee,928,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Sherrod Brown,Democratic,Provisional,Provisional,0,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,William B. Redpath,Libertarian,Election Day,Election Day,545,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,William B. Redpath,Libertarian,Early In-Person,In Office Absentee,140,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,William B. Redpath,Libertarian,Mail,Mail Absentee,70,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,William B. Redpath,Libertarian,Provisional,Provisional,0,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Greg Levy,Other-party,Election Day,Election Day,317,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Greg Levy,Other-party,Early In-Person,In Office Absentee,71,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Greg Levy,Other-party,Mail,Mail Absentee,45,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Greg Levy,Other-party,Provisional,Provisional,0,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Write-in,,Election Day,Election Day,32,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Write-in,,Early In-Person,In Office Absentee,4,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Write-in,,Mail,Mail Absentee,1,46,46,county_feed,2026-11-04T04:18:30.6257366Z
+Pickaway,Write-in,,Provisional,Provisional,0,46,46,county_feed,2026-11-04T04:18:30.6257366Z
 Preble,Jon Husted,Republican,Mail,Absentee Mail,826,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Jon Husted,Republican,Early In-Person,Absentee Early,3460,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Jon Husted,Republican,Election Day,Election Day,6167,,,county_feed,pdf-sha1:4ee6fdff0dfe
@@ -402,71 +402,71 @@ Preble,Write-in,,Early In-Person,Absentee Early,7,,,county_feed,pdf-sha1:4ee6fdf
 Preble,Write-in,,Election Day,Election Day,20,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:4ee6fdff0dfe
 Preble,Write-in,,Absentee Late,Absentee Late,0,,,county_feed,pdf-sha1:4ee6fdff0dfe
-Seneca,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Sherrod Brown,Democratic,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Sherrod Brown,Democratic,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Jon Husted,Republican,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Jon Husted,Republican,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Jon Husted,Republican,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Greg Levy,Other-party,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Greg Levy,Other-party,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Greg Levy,Other-party,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,William B. Redpath,Libertarian,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,William B. Redpath,Libertarian,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,William B. Redpath,Libertarian,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Write-in,,Election Day,Election Day,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Write-in,,Mail,Absentee,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:5cbd67100a44
-Seneca,Write-in,,Early In-Person,Early,0,,,county_feed,pdf-sha1:5cbd67100a44
-Stark,Sherrod Brown,Democratic,Early In-Person,Early In Person,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Sherrod Brown,Democratic,Mail,Vote by Mail,29636,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Sherrod Brown,Democratic,Election Day,Election Day,15357,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Sherrod Brown,Democratic,Provisional,Provisional,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Jon Husted,Republican,Early In-Person,Early In Person,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Jon Husted,Republican,Mail,Vote by Mail,20831,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Jon Husted,Republican,Election Day,Election Day,24290,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Jon Husted,Republican,Provisional,Provisional,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Greg Levy,Other-party,Early In-Person,Early In Person,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Greg Levy,Other-party,Mail,Vote by Mail,855,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Greg Levy,Other-party,Election Day,Election Day,1203,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Greg Levy,Other-party,Provisional,Provisional,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,William B. Redpath,Libertarian,Early In-Person,Early In Person,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,William B. Redpath,Libertarian,Mail,Vote by Mail,1078,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,William B. Redpath,Libertarian,Election Day,Election Day,1767,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,William B. Redpath,Libertarian,Provisional,Provisional,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Write-in,,Early In-Person,Early In Person,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Write-in,,Mail,Vote by Mail,13,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Write-in,,Election Day,Election Day,60,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Stark,Write-in,,Provisional,Provisional,0,125,274,county_feed,2026-11-03T21:32:06.138-05:00
-Summit,Sherrod Brown,Democratic,Mail,Abs Mail,20115,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Sherrod Brown,Democratic,Election Day,Polls,21030,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Sherrod Brown,Democratic,Early In-Person,Abs Walk-in,32377,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Sherrod Brown,Democratic,Provisional,Provisional,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Sherrod Brown,Democratic,Timely Abs,Timely Abs,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,Mail,Abs Mail,10679,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,Election Day,Polls,20573,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,Early In-Person,Abs Walk-in,8282,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,Provisional,Provisional,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Jon Husted,Republican,Timely Abs,Timely Abs,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,Mail,Abs Mail,616,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,Election Day,Polls,1528,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,Early In-Person,Abs Walk-in,390,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,Provisional,Provisional,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,William B. Redpath,Libertarian,Timely Abs,Timely Abs,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,Mail,Abs Mail,476,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,Election Day,Polls,1049,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,Early In-Person,Abs Walk-in,577,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,Provisional,Provisional,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Greg Levy,Other-party,Timely Abs,Timely Abs,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,Mail,Abs Mail,28,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,Election Day,Polls,39,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,Early In-Person,Abs Walk-in,21,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,Provisional,Provisional,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
-Summit,Write-in,,Timely Abs,Timely Abs,0,36,154,county_feed,2026-11-04T02:46:23.6333781Z
+Seneca,Sherrod Brown,Democratic,Election Day,Election Day,3652,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Sherrod Brown,Democratic,Mail,Absentee,978,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Sherrod Brown,Democratic,Provisional,Provisional,0,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Sherrod Brown,Democratic,Early In-Person,Early,2282,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Jon Husted,Republican,Election Day,Election Day,7423,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Jon Husted,Republican,Mail,Absentee,923,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Jon Husted,Republican,Provisional,Provisional,0,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Jon Husted,Republican,Early In-Person,Early,2154,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Greg Levy,Other-party,Election Day,Election Day,403,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Greg Levy,Other-party,Mail,Absentee,49,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Greg Levy,Other-party,Provisional,Provisional,0,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Greg Levy,Other-party,Early In-Person,Early,70,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,William B. Redpath,Libertarian,Election Day,Election Day,673,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,William B. Redpath,Libertarian,Mail,Absentee,81,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,William B. Redpath,Libertarian,Provisional,Provisional,0,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,William B. Redpath,Libertarian,Early In-Person,Early,101,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Write-in,,Election Day,Election Day,11,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Write-in,,Mail,Absentee,7,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Write-in,,Provisional,Provisional,0,,,county_feed,pdf-sha1:d953c35f6667
+Seneca,Write-in,,Early In-Person,Early,4,,,county_feed,pdf-sha1:d953c35f6667
+Stark,Sherrod Brown,Democratic,Early In-Person,Early In Person,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Sherrod Brown,Democratic,Mail,Vote by Mail,29641,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Sherrod Brown,Democratic,Election Day,Election Day,34002,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Sherrod Brown,Democratic,Provisional,Provisional,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Jon Husted,Republican,Early In-Person,Early In Person,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Jon Husted,Republican,Mail,Vote by Mail,20843,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Jon Husted,Republican,Election Day,Election Day,48916,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Jon Husted,Republican,Provisional,Provisional,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Greg Levy,Other-party,Early In-Person,Early In Person,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Greg Levy,Other-party,Mail,Vote by Mail,858,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Greg Levy,Other-party,Election Day,Election Day,2541,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Greg Levy,Other-party,Provisional,Provisional,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,William B. Redpath,Libertarian,Early In-Person,Early In Person,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,William B. Redpath,Libertarian,Mail,Vote by Mail,1079,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,William B. Redpath,Libertarian,Election Day,Election Day,3607,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,William B. Redpath,Libertarian,Provisional,Provisional,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Write-in,,Early In-Person,Early In Person,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Write-in,,Mail,Vote by Mail,13,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Write-in,,Election Day,Election Day,116,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Stark,Write-in,,Provisional,Provisional,0,268,274,county_feed,2026-11-03T22:30:20.730-05:00
+Summit,Sherrod Brown,Democratic,Mail,Abs Mail,22780,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Sherrod Brown,Democratic,Election Day,Polls,77733,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Sherrod Brown,Democratic,Early In-Person,Abs Walk-in,32377,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Sherrod Brown,Democratic,Provisional,Provisional,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Sherrod Brown,Democratic,Timely Abs,Timely Abs,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,Mail,Abs Mail,12254,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,Election Day,Polls,61490,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,Early In-Person,Abs Walk-in,8282,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,Provisional,Provisional,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Jon Husted,Republican,Timely Abs,Timely Abs,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,Mail,Abs Mail,760,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,Election Day,Polls,4447,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,Early In-Person,Abs Walk-in,390,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,Provisional,Provisional,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,William B. Redpath,Libertarian,Timely Abs,Timely Abs,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,Mail,Abs Mail,597,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,Election Day,Polls,3587,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,Early In-Person,Abs Walk-in,577,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,Provisional,Provisional,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Greg Levy,Other-party,Timely Abs,Timely Abs,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,Mail,Abs Mail,32,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,Election Day,Polls,164,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,Early In-Person,Abs Walk-in,21,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,Provisional,Provisional,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
+Summit,Write-in,,Timely Abs,Timely Abs,0,154,154,county_feed,2026-11-04T04:19:53.2471457Z
 Van Wert,Sherrod Brown,Democratic,Election Day,Election Day,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,Sherrod Brown,Democratic,Mail,Absentee Mail,0,,,county_feed,pdf-sha1:05ee2fdb407c
 Van Wert,Sherrod Brown,Democratic,Early In-Person,Early Voting,0,,,county_feed,pdf-sha1:05ee2fdb407c
@@ -507,323 +507,323 @@ Warren,Write-in,,Early In-Person,Early Voting,14,185,185,county_feed,2026-11-03T
 Warren,Write-in,,Mail,Mail Ballots,16,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,Write-in,,Election Day,Election Day,63,185,185,county_feed,2026-11-03T21:40:25.568-05:00
 Warren,Write-in,,Provisional,Provisional,0,185,185,county_feed,2026-11-03T21:40:25.568-05:00
-Adams,Sherrod Brown,Democratic,Not split by method,(statewide total),1914,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Jon Husted,Republican,Not split by method,(statewide total),5055,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Greg Levy,Other-party,Not split by method,(statewide total),239,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,William B. Redpath,Libertarian,Not split by method,(statewide total),331,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Adams,Write-in,,Not split by method,(statewide total),0,16,21,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Sherrod Brown,Democratic,Not split by method,(statewide total),11066,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Jon Husted,Republican,Not split by method,(statewide total),21992,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Greg Levy,Other-party,Not split by method,(statewide total),823,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,William B. Redpath,Libertarian,Not split by method,(statewide total),1337,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Allen,Write-in,,Not split by method,(statewide total),0,88,88,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Sherrod Brown,Democratic,Not split by method,(statewide total),5850,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Jon Husted,Republican,Not split by method,(statewide total),12685,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Greg Levy,Other-party,Not split by method,(statewide total),519,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,William B. Redpath,Libertarian,Not split by method,(statewide total),825,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashland,Write-in,,Not split by method,(statewide total),0,39,39,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Sherrod Brown,Democratic,Not split by method,(statewide total),9285,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Jon Husted,Republican,Not split by method,(statewide total),11876,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Greg Levy,Other-party,Not split by method,(statewide total),594,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,William B. Redpath,Libertarian,Not split by method,(statewide total),849,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Ashtabula,Write-in,,Not split by method,(statewide total),0,65,104,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Sherrod Brown,Democratic,Not split by method,(statewide total),3950,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Jon Husted,Republican,Not split by method,(statewide total),14223,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Greg Levy,Other-party,Not split by method,(statewide total),379,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,William B. Redpath,Libertarian,Not split by method,(statewide total),691,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Auglaize,Write-in,,Not split by method,(statewide total),0,42,42,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Sherrod Brown,Democratic,Not split by method,(statewide total),6259,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Jon Husted,Republican,Not split by method,(statewide total),10105,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Greg Levy,Other-party,Not split by method,(statewide total),342,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,William B. Redpath,Libertarian,Not split by method,(statewide total),558,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Belmont,Write-in,,Not split by method,(statewide total),0,35,69,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Sherrod Brown,Democratic,Not split by method,(statewide total),2699,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Jon Husted,Republican,Not split by method,(statewide total),6299,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Greg Levy,Other-party,Not split by method,(statewide total),186,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,William B. Redpath,Libertarian,Not split by method,(statewide total),348,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Brown,Write-in,,Not split by method,(statewide total),0,13,33,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Sherrod Brown,Democratic,Not split by method,(statewide total),4670,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Jon Husted,Republican,Not split by method,(statewide total),9623,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Greg Levy,Other-party,Not split by method,(statewide total),474,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,William B. Redpath,Libertarian,Not split by method,(statewide total),735,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Champaign,Write-in,,Not split by method,(statewide total),0,31,31,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Sherrod Brown,Democratic,Not split by method,(statewide total),2715,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Jon Husted,Republican,Not split by method,(statewide total),4835,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Greg Levy,Other-party,Not split by method,(statewide total),184,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,William B. Redpath,Libertarian,Not split by method,(statewide total),273,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Clinton,Write-in,,Not split by method,(statewide total),0,6,36,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Sherrod Brown,Democratic,Not split by method,(statewide total),10928,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Jon Husted,Republican,Not split by method,(statewide total),21637,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Greg Levy,Other-party,Not split by method,(statewide total),836,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,William B. Redpath,Libertarian,Not split by method,(statewide total),1458,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Columbiana,Write-in,,Not split by method,(statewide total),0,73,73,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Sherrod Brown,Democratic,Not split by method,(statewide total),3439,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Jon Husted,Republican,Not split by method,(statewide total),7466,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Greg Levy,Other-party,Not split by method,(statewide total),305,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,William B. Redpath,Libertarian,Not split by method,(statewide total),519,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Coshocton,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Sherrod Brown,Democratic,Not split by method,(statewide total),4217,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Jon Husted,Republican,Not split by method,(statewide total),9505,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Greg Levy,Other-party,Not split by method,(statewide total),359,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,William B. Redpath,Libertarian,Not split by method,(statewide total),604,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Crawford,Write-in,,Not split by method,(statewide total),0,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Sherrod Brown,Democratic,Not split by method,(statewide total),4169,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Jon Husted,Republican,Not split by method,(statewide total),14682,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Greg Levy,Other-party,Not split by method,(statewide total),447,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,William B. Redpath,Libertarian,Not split by method,(statewide total),743,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Darke,Write-in,,Not split by method,(statewide total),0,43,43,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Sherrod Brown,Democratic,Not split by method,(statewide total),4974,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Jon Husted,Republican,Not split by method,(statewide total),8592,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Greg Levy,Other-party,Not split by method,(statewide total),368,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,William B. Redpath,Libertarian,Not split by method,(statewide total),587,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Defiance,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Sherrod Brown,Democratic,Not split by method,(statewide total),53349,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Jon Husted,Republican,Not split by method,(statewide total),47803,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Greg Levy,Other-party,Not split by method,(statewide total),1139,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,William B. Redpath,Libertarian,Not split by method,(statewide total),1995,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Delaware,Write-in,,Not split by method,(statewide total),0,145,180,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Sherrod Brown,Democratic,Not split by method,(statewide total),15247,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Jon Husted,Republican,Not split by method,(statewide total),15412,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Greg Levy,Other-party,Not split by method,(statewide total),446,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,William B. Redpath,Libertarian,Not split by method,(statewide total),662,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fairfield,Write-in,,Not split by method,(statewide total),0,12,111,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Sherrod Brown,Democratic,Not split by method,(statewide total),2485,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Jon Husted,Republican,Not split by method,(statewide total),6083,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Greg Levy,Other-party,Not split by method,(statewide total),194,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,William B. Redpath,Libertarian,Not split by method,(statewide total),314,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fayette,Write-in,,Not split by method,(statewide total),0,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Sherrod Brown,Democratic,Not split by method,(statewide total),5743,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Jon Husted,Republican,Not split by method,(statewide total),10632,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Greg Levy,Other-party,Not split by method,(statewide total),334,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,William B. Redpath,Libertarian,Not split by method,(statewide total),650,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Fulton,Write-in,,Not split by method,(statewide total),0,29,29,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Sherrod Brown,Democratic,Not split by method,(statewide total),2328,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Jon Husted,Republican,Not split by method,(statewide total),5812,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Greg Levy,Other-party,Not split by method,(statewide total),187,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,William B. Redpath,Libertarian,Not split by method,(statewide total),335,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Gallia,Write-in,,Not split by method,(statewide total),0,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Sherrod Brown,Democratic,Not split by method,(statewide total),14902,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Jon Husted,Republican,Not split by method,(statewide total),20497,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Greg Levy,Other-party,Not split by method,(statewide total),437,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,William B. Redpath,Libertarian,Not split by method,(statewide total),1043,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Geauga,Write-in,,Not split by method,(statewide total),0,78,79,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Sherrod Brown,Democratic,Not split by method,(statewide total),3845,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Jon Husted,Republican,Not split by method,(statewide total),7959,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Greg Levy,Other-party,Not split by method,(statewide total),323,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,William B. Redpath,Libertarian,Not split by method,(statewide total),562,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Guernsey,Write-in,,Not split by method,(statewide total),0,35,35,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Sherrod Brown,Democratic,Not split by method,(statewide total),10019,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Jon Husted,Republican,Not split by method,(statewide total),16377,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Greg Levy,Other-party,Not split by method,(statewide total),516,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,William B. Redpath,Libertarian,Not split by method,(statewide total),1139,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hancock,Write-in,,Not split by method,(statewide total),0,58,60,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Sherrod Brown,Democratic,Not split by method,(statewide total),1666,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Jon Husted,Republican,Not split by method,(statewide total),3439,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Greg Levy,Other-party,Not split by method,(statewide total),122,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,William B. Redpath,Libertarian,Not split by method,(statewide total),219,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Hardin,Write-in,,Not split by method,(statewide total),0,12,21,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Sherrod Brown,Democratic,Not split by method,(statewide total),1433,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Jon Husted,Republican,Not split by method,(statewide total),3155,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Greg Levy,Other-party,Not split by method,(statewide total),164,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,William B. Redpath,Libertarian,Not split by method,(statewide total),275,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Harrison,Write-in,,Not split by method,(statewide total),0,16,16,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Sherrod Brown,Democratic,Not split by method,(statewide total),3420,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Jon Husted,Republican,Not split by method,(statewide total),7062,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Greg Levy,Other-party,Not split by method,(statewide total),238,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,William B. Redpath,Libertarian,Not split by method,(statewide total),437,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Henry,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Sherrod Brown,Democratic,Not split by method,(statewide total),1805,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Jon Husted,Republican,Not split by method,(statewide total),3381,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Greg Levy,Other-party,Not split by method,(statewide total),111,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,William B. Redpath,Libertarian,Not split by method,(statewide total),144,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Highland,Write-in,,Not split by method,(statewide total),0,0,31,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Sherrod Brown,Democratic,Not split by method,(statewide total),1648,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Jon Husted,Republican,Not split by method,(statewide total),6439,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Greg Levy,Other-party,Not split by method,(statewide total),143,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,William B. Redpath,Libertarian,Not split by method,(statewide total),277,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Holmes,Write-in,,Not split by method,(statewide total),0,16,17,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Sherrod Brown,Democratic,Not split by method,(statewide total),5312,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Jon Husted,Republican,Not split by method,(statewide total),7529,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Greg Levy,Other-party,Not split by method,(statewide total),377,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,William B. Redpath,Libertarian,Not split by method,(statewide total),576,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Huron,Write-in,,Not split by method,(statewide total),0,24,46,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Sherrod Brown,Democratic,Not split by method,(statewide total),2643,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Jon Husted,Republican,Not split by method,(statewide total),5508,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Greg Levy,Other-party,Not split by method,(statewide total),178,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,William B. Redpath,Libertarian,Not split by method,(statewide total),293,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jackson,Write-in,,Not split by method,(statewide total),0,22,29,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Sherrod Brown,Democratic,Not split by method,(statewide total),7679,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Jon Husted,Republican,Not split by method,(statewide total),13043,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Greg Levy,Other-party,Not split by method,(statewide total),568,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,William B. Redpath,Libertarian,Not split by method,(statewide total),775,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Jefferson,Write-in,,Not split by method,(statewide total),0,54,55,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Sherrod Brown,Democratic,Not split by method,(statewide total),7632,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Jon Husted,Republican,Not split by method,(statewide total),15218,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Greg Levy,Other-party,Not split by method,(statewide total),482,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,William B. Redpath,Libertarian,Not split by method,(statewide total),840,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Knox,Write-in,,Not split by method,(statewide total),0,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Sherrod Brown,Democratic,Not split by method,(statewide total),42333,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Jon Husted,Republican,Not split by method,(statewide total),39250,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Greg Levy,Other-party,Not split by method,(statewide total),1456,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,William B. Redpath,Libertarian,Not split by method,(statewide total),2271,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lake,Write-in,,Not split by method,(statewide total),0,114,163,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Sherrod Brown,Democratic,Not split by method,(statewide total),4905,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Jon Husted,Republican,Not split by method,(statewide total),8788,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Greg Levy,Other-party,Not split by method,(statewide total),304,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,William B. Redpath,Libertarian,Not split by method,(statewide total),509,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Lawrence,Write-in,,Not split by method,(statewide total),0,64,84,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Sherrod Brown,Democratic,Not split by method,(statewide total),4647,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Jon Husted,Republican,Not split by method,(statewide total),11929,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Greg Levy,Other-party,Not split by method,(statewide total),419,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,William B. Redpath,Libertarian,Not split by method,(statewide total),796,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Logan,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Sherrod Brown,Democratic,Not split by method,(statewide total),64244,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Jon Husted,Republican,Not split by method,(statewide total),47668,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Greg Levy,Other-party,Not split by method,(statewide total),2148,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,William B. Redpath,Libertarian,Not split by method,(statewide total),3135,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Lorain,Write-in,,Not split by method,(statewide total),0,178,210,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Sherrod Brown,Democratic,Not split by method,(statewide total),45595,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Jon Husted,Republican,Not split by method,(statewide total),39192,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Greg Levy,Other-party,Not split by method,(statewide total),1961,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,William B. Redpath,Libertarian,Not split by method,(statewide total),2398,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Mahoning,Write-in,,Not split by method,(statewide total),0,212,212,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Sherrod Brown,Democratic,Not split by method,(statewide total),7076,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Jon Husted,Republican,Not split by method,(statewide total),11480,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Greg Levy,Other-party,Not split by method,(statewide total),518,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,William B. Redpath,Libertarian,Not split by method,(statewide total),866,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Marion,Write-in,,Not split by method,(statewide total),0,45,45,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Sherrod Brown,Democratic,Not split by method,(statewide total),36004,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Jon Husted,Republican,Not split by method,(statewide total),42875,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Greg Levy,Other-party,Not split by method,(statewide total),1239,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,William B. Redpath,Libertarian,Not split by method,(statewide total),2214,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Medina,Write-in,,Not split by method,(statewide total),0,117,124,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Sherrod Brown,Democratic,Not split by method,(statewide total),2159,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Jon Husted,Republican,Not split by method,(statewide total),4877,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Greg Levy,Other-party,Not split by method,(statewide total),179,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,William B. Redpath,Libertarian,Not split by method,(statewide total),290,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Meigs,Write-in,,Not split by method,(statewide total),0,27,27,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Sherrod Brown,Democratic,Not split by method,(statewide total),3489,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Jon Husted,Republican,Not split by method,(statewide total),13755,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Greg Levy,Other-party,Not split by method,(statewide total),286,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,William B. Redpath,Libertarian,Not split by method,(statewide total),491,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Mercer,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Sherrod Brown,Democratic,Not split by method,(statewide total),1311,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Jon Husted,Republican,Not split by method,(statewide total),3141,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Greg Levy,Other-party,Not split by method,(statewide total),135,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,William B. Redpath,Libertarian,Not split by method,(statewide total),193,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Monroe,Write-in,,Not split by method,(statewide total),0,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Sherrod Brown,Democratic,Not split by method,(statewide total),1408,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Jon Husted,Republican,Not split by method,(statewide total),3125,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Greg Levy,Other-party,Not split by method,(statewide total),120,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,William B. Redpath,Libertarian,Not split by method,(statewide total),178,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morgan,Write-in,,Not split by method,(statewide total),0,13,13,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Sherrod Brown,Democratic,Not split by method,(statewide total),3772,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Jon Husted,Republican,Not split by method,(statewide total),9362,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Greg Levy,Other-party,Not split by method,(statewide total),342,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,William B. Redpath,Libertarian,Not split by method,(statewide total),632,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Morrow,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Sherrod Brown,Democratic,Not split by method,(statewide total),9642,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Jon Husted,Republican,Not split by method,(statewide total),17403,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Greg Levy,Other-party,Not split by method,(statewide total),656,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,William B. Redpath,Libertarian,Not split by method,(statewide total),1119,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Muskingum,Write-in,,Not split by method,(statewide total),0,68,68,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Sherrod Brown,Democratic,Not split by method,(statewide total),1049,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Jon Husted,Republican,Not split by method,(statewide total),3114,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Greg Levy,Other-party,Not split by method,(statewide total),122,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,William B. Redpath,Libertarian,Not split by method,(statewide total),198,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Noble,Write-in,,Not split by method,(statewide total),0,19,19,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Sherrod Brown,Democratic,Not split by method,(statewide total),7932,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Jon Husted,Republican,Not split by method,(statewide total),10362,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Greg Levy,Other-party,Not split by method,(statewide total),342,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,William B. Redpath,Libertarian,Not split by method,(statewide total),595,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Ottawa,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Sherrod Brown,Democratic,Not split by method,(statewide total),3654,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Jon Husted,Republican,Not split by method,(statewide total),8020,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Greg Levy,Other-party,Not split by method,(statewide total),300,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,William B. Redpath,Libertarian,Not split by method,(statewide total),500,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Perry,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Sherrod Brown,Democratic,Not split by method,(statewide total),2683,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Jon Husted,Republican,Not split by method,(statewide total),5348,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Greg Levy,Other-party,Not split by method,(statewide total),183,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,William B. Redpath,Libertarian,Not split by method,(statewide total),311,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Pike,Write-in,,Not split by method,(statewide total),0,22,22,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Sherrod Brown,Democratic,Not split by method,(statewide total),21457,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Jon Husted,Republican,Not split by method,(statewide total),18534,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Greg Levy,Other-party,Not split by method,(statewide total),985,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,William B. Redpath,Libertarian,Not split by method,(statewide total),1245,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Portage,Write-in,,Not split by method,(statewide total),0,56,126,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Sherrod Brown,Democratic,Not split by method,(statewide total),2767,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Jon Husted,Republican,Not split by method,(statewide total),11891,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Greg Levy,Other-party,Not split by method,(statewide total),301,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,William B. Redpath,Libertarian,Not split by method,(statewide total),438,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Putnam,Write-in,,Not split by method,(statewide total),0,25,25,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Sherrod Brown,Democratic,Not split by method,(statewide total),15058,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Jon Husted,Republican,Not split by method,(statewide total),26596,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Greg Levy,Other-party,Not split by method,(statewide total),842,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,William B. Redpath,Libertarian,Not split by method,(statewide total),1568,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Richland,Write-in,,Not split by method,(statewide total),0,83,83,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Sherrod Brown,Democratic,Not split by method,(statewide total),9097,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Jon Husted,Republican,Not split by method,(statewide total),14390,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Greg Levy,Other-party,Not split by method,(statewide total),417,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,William B. Redpath,Libertarian,Not split by method,(statewide total),756,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Ross,Write-in,,Not split by method,(statewide total),0,65,65,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Sherrod Brown,Democratic,Not split by method,(statewide total),9034,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Jon Husted,Republican,Not split by method,(statewide total),11982,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Greg Levy,Other-party,Not split by method,(statewide total),597,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,William B. Redpath,Libertarian,Not split by method,(statewide total),964,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Sandusky,Write-in,,Not split by method,(statewide total),0,58,58,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Sherrod Brown,Democratic,Not split by method,(statewide total),7464,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Jon Husted,Republican,Not split by method,(statewide total),12944,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Greg Levy,Other-party,Not split by method,(statewide total),487,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,William B. Redpath,Libertarian,Not split by method,(statewide total),603,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Scioto,Write-in,,Not split by method,(statewide total),0,77,77,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Sherrod Brown,Democratic,Not split by method,(statewide total),3928,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Jon Husted,Republican,Not split by method,(statewide total),13993,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Greg Levy,Other-party,Not split by method,(statewide total),411,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,William B. Redpath,Libertarian,Not split by method,(statewide total),649,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Shelby,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Sherrod Brown,Democratic,Not split by method,(statewide total),35892,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Jon Husted,Republican,Not split by method,(statewide total),33726,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Greg Levy,Other-party,Not split by method,(statewide total),1894,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,William B. Redpath,Libertarian,Not split by method,(statewide total),2390,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Trumbull,Write-in,,Not split by method,(statewide total),0,156,158,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Sherrod Brown,Democratic,Not split by method,(statewide total),11221,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Jon Husted,Republican,Not split by method,(statewide total),18735,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Greg Levy,Other-party,Not split by method,(statewide total),779,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,William B. Redpath,Libertarian,Not split by method,(statewide total),1382,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Tuscarawas,Write-in,,Not split by method,(statewide total),0,81,81,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Sherrod Brown,Democratic,Not split by method,(statewide total),12758,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Jon Husted,Republican,Not split by method,(statewide total),17020,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Greg Levy,Other-party,Not split by method,(statewide total),496,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,William B. Redpath,Libertarian,Not split by method,(statewide total),893,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Union,Write-in,,Not split by method,(statewide total),0,53,53,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Sherrod Brown,Democratic,Not split by method,(statewide total),1096,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Jon Husted,Republican,Not split by method,(statewide total),2526,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Greg Levy,Other-party,Not split by method,(statewide total),82,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,William B. Redpath,Libertarian,Not split by method,(statewide total),199,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Vinton,Write-in,,Not split by method,(statewide total),0,20,20,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Sherrod Brown,Democratic,Not split by method,(statewide total),7788,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Jon Husted,Republican,Not split by method,(statewide total),13423,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Greg Levy,Other-party,Not split by method,(statewide total),560,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,William B. Redpath,Libertarian,Not split by method,(statewide total),867,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Washington,Write-in,,Not split by method,(statewide total),0,50,50,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Sherrod Brown,Democratic,Not split by method,(statewide total),10658,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Jon Husted,Republican,Not split by method,(statewide total),15183,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Greg Levy,Other-party,Not split by method,(statewide total),502,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,William B. Redpath,Libertarian,Not split by method,(statewide total),783,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Wayne,Write-in,,Not split by method,(statewide total),0,30,66,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Sherrod Brown,Democratic,Not split by method,(statewide total),3968,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Jon Husted,Republican,Not split by method,(statewide total),8619,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Greg Levy,Other-party,Not split by method,(statewide total),382,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,William B. Redpath,Libertarian,Not split by method,(statewide total),558,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Williams,Write-in,,Not split by method,(statewide total),0,26,26,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Sherrod Brown,Democratic,Not split by method,(statewide total),17220,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Jon Husted,Republican,Not split by method,(statewide total),11636,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Greg Levy,Other-party,Not split by method,(statewide total),533,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,William B. Redpath,Libertarian,Not split by method,(statewide total),671,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wood,Write-in,,Not split by method,(statewide total),0,29,99,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Sherrod Brown,Democratic,Not split by method,(statewide total),2675,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Jon Husted,Republican,Not split by method,(statewide total),5610,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Greg Levy,Other-party,Not split by method,(statewide total),1146,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,William B. Redpath,Libertarian,Not split by method,(statewide total),543,23,23,sos_statewide,2026-11-04T02:54:38+00:00
-Wyandot,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T02:54:38+00:00
+Adams,Sherrod Brown,Democratic,Not split by method,(statewide total),1914,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Jon Husted,Republican,Not split by method,(statewide total),5055,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Greg Levy,Other-party,Not split by method,(statewide total),239,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,William B. Redpath,Libertarian,Not split by method,(statewide total),331,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Adams,Write-in,,Not split by method,(statewide total),0,16,21,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Sherrod Brown,Democratic,Not split by method,(statewide total),11066,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Jon Husted,Republican,Not split by method,(statewide total),21992,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Greg Levy,Other-party,Not split by method,(statewide total),823,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,William B. Redpath,Libertarian,Not split by method,(statewide total),1337,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Allen,Write-in,,Not split by method,(statewide total),0,88,88,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Sherrod Brown,Democratic,Not split by method,(statewide total),5850,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Jon Husted,Republican,Not split by method,(statewide total),12685,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Greg Levy,Other-party,Not split by method,(statewide total),519,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,William B. Redpath,Libertarian,Not split by method,(statewide total),825,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashland,Write-in,,Not split by method,(statewide total),0,39,39,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Sherrod Brown,Democratic,Not split by method,(statewide total),13879,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Jon Husted,Republican,Not split by method,(statewide total),16910,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Greg Levy,Other-party,Not split by method,(statewide total),965,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,William B. Redpath,Libertarian,Not split by method,(statewide total),1262,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Ashtabula,Write-in,,Not split by method,(statewide total),0,104,104,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Sherrod Brown,Democratic,Not split by method,(statewide total),3950,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Jon Husted,Republican,Not split by method,(statewide total),14223,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Greg Levy,Other-party,Not split by method,(statewide total),379,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,William B. Redpath,Libertarian,Not split by method,(statewide total),691,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Auglaize,Write-in,,Not split by method,(statewide total),0,42,42,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Sherrod Brown,Democratic,Not split by method,(statewide total),7326,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Jon Husted,Republican,Not split by method,(statewide total),12871,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Greg Levy,Other-party,Not split by method,(statewide total),454,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,William B. Redpath,Libertarian,Not split by method,(statewide total),762,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Belmont,Write-in,,Not split by method,(statewide total),0,68,69,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Sherrod Brown,Democratic,Not split by method,(statewide total),3791,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Jon Husted,Republican,Not split by method,(statewide total),10189,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Greg Levy,Other-party,Not split by method,(statewide total),330,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,William B. Redpath,Libertarian,Not split by method,(statewide total),637,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Brown,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Sherrod Brown,Democratic,Not split by method,(statewide total),4670,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Jon Husted,Republican,Not split by method,(statewide total),9623,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Greg Levy,Other-party,Not split by method,(statewide total),474,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,William B. Redpath,Libertarian,Not split by method,(statewide total),735,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Champaign,Write-in,,Not split by method,(statewide total),0,31,31,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Sherrod Brown,Democratic,Not split by method,(statewide total),4241,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Jon Husted,Republican,Not split by method,(statewide total),10054,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Greg Levy,Other-party,Not split by method,(statewide total),439,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,William B. Redpath,Libertarian,Not split by method,(statewide total),665,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Clinton,Write-in,,Not split by method,(statewide total),0,35,36,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Sherrod Brown,Democratic,Not split by method,(statewide total),10928,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Jon Husted,Republican,Not split by method,(statewide total),21637,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Greg Levy,Other-party,Not split by method,(statewide total),836,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,William B. Redpath,Libertarian,Not split by method,(statewide total),1458,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Columbiana,Write-in,,Not split by method,(statewide total),0,73,73,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Sherrod Brown,Democratic,Not split by method,(statewide total),3439,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Jon Husted,Republican,Not split by method,(statewide total),7466,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Greg Levy,Other-party,Not split by method,(statewide total),305,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,William B. Redpath,Libertarian,Not split by method,(statewide total),519,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Coshocton,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Sherrod Brown,Democratic,Not split by method,(statewide total),4217,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Jon Husted,Republican,Not split by method,(statewide total),9505,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Greg Levy,Other-party,Not split by method,(statewide total),359,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,William B. Redpath,Libertarian,Not split by method,(statewide total),604,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Crawford,Write-in,,Not split by method,(statewide total),0,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Sherrod Brown,Democratic,Not split by method,(statewide total),4169,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Jon Husted,Republican,Not split by method,(statewide total),14682,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Greg Levy,Other-party,Not split by method,(statewide total),447,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,William B. Redpath,Libertarian,Not split by method,(statewide total),743,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Darke,Write-in,,Not split by method,(statewide total),0,43,43,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Sherrod Brown,Democratic,Not split by method,(statewide total),4974,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Jon Husted,Republican,Not split by method,(statewide total),8592,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Greg Levy,Other-party,Not split by method,(statewide total),368,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,William B. Redpath,Libertarian,Not split by method,(statewide total),587,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Defiance,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Sherrod Brown,Democratic,Not split by method,(statewide total),59368,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Jon Husted,Republican,Not split by method,(statewide total),54128,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Greg Levy,Other-party,Not split by method,(statewide total),1368,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,William B. Redpath,Libertarian,Not split by method,(statewide total),2421,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Delaware,Write-in,,Not split by method,(statewide total),0,180,180,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Sherrod Brown,Democratic,Not split by method,(statewide total),18420,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Jon Husted,Republican,Not split by method,(statewide total),22773,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Greg Levy,Other-party,Not split by method,(statewide total),671,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,William B. Redpath,Libertarian,Not split by method,(statewide total),1125,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fairfield,Write-in,,Not split by method,(statewide total),0,45,111,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Sherrod Brown,Democratic,Not split by method,(statewide total),2485,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Jon Husted,Republican,Not split by method,(statewide total),6083,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Greg Levy,Other-party,Not split by method,(statewide total),194,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,William B. Redpath,Libertarian,Not split by method,(statewide total),314,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fayette,Write-in,,Not split by method,(statewide total),0,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Sherrod Brown,Democratic,Not split by method,(statewide total),5743,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Jon Husted,Republican,Not split by method,(statewide total),10632,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Greg Levy,Other-party,Not split by method,(statewide total),334,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,William B. Redpath,Libertarian,Not split by method,(statewide total),650,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Fulton,Write-in,,Not split by method,(statewide total),0,29,29,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Sherrod Brown,Democratic,Not split by method,(statewide total),2328,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Jon Husted,Republican,Not split by method,(statewide total),5812,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Greg Levy,Other-party,Not split by method,(statewide total),187,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,William B. Redpath,Libertarian,Not split by method,(statewide total),335,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Gallia,Write-in,,Not split by method,(statewide total),0,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Sherrod Brown,Democratic,Not split by method,(statewide total),19173,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Jon Husted,Republican,Not split by method,(statewide total),24531,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Greg Levy,Other-party,Not split by method,(statewide total),509,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,William B. Redpath,Libertarian,Not split by method,(statewide total),1226,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Geauga,Write-in,,Not split by method,(statewide total),0,79,79,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Sherrod Brown,Democratic,Not split by method,(statewide total),3845,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Jon Husted,Republican,Not split by method,(statewide total),7959,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Greg Levy,Other-party,Not split by method,(statewide total),323,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,William B. Redpath,Libertarian,Not split by method,(statewide total),562,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Guernsey,Write-in,,Not split by method,(statewide total),0,35,35,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Sherrod Brown,Democratic,Not split by method,(statewide total),10193,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Jon Husted,Republican,Not split by method,(statewide total),16996,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Greg Levy,Other-party,Not split by method,(statewide total),526,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,William B. Redpath,Libertarian,Not split by method,(statewide total),1187,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hancock,Write-in,,Not split by method,(statewide total),0,60,60,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Sherrod Brown,Democratic,Not split by method,(statewide total),2519,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Jon Husted,Republican,Not split by method,(statewide total),5886,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Greg Levy,Other-party,Not split by method,(statewide total),254,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,William B. Redpath,Libertarian,Not split by method,(statewide total),424,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Hardin,Write-in,,Not split by method,(statewide total),0,21,21,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Sherrod Brown,Democratic,Not split by method,(statewide total),1433,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Jon Husted,Republican,Not split by method,(statewide total),3155,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Greg Levy,Other-party,Not split by method,(statewide total),164,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,William B. Redpath,Libertarian,Not split by method,(statewide total),275,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Harrison,Write-in,,Not split by method,(statewide total),0,16,16,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Sherrod Brown,Democratic,Not split by method,(statewide total),3420,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Jon Husted,Republican,Not split by method,(statewide total),7062,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Greg Levy,Other-party,Not split by method,(statewide total),238,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,William B. Redpath,Libertarian,Not split by method,(statewide total),437,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Henry,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Sherrod Brown,Democratic,Not split by method,(statewide total),2671,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Jon Husted,Republican,Not split by method,(statewide total),7706,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Greg Levy,Other-party,Not split by method,(statewide total),262,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,William B. Redpath,Libertarian,Not split by method,(statewide total),452,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Highland,Write-in,,Not split by method,(statewide total),0,9,31,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Sherrod Brown,Democratic,Not split by method,(statewide total),1684,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Jon Husted,Republican,Not split by method,(statewide total),6764,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Greg Levy,Other-party,Not split by method,(statewide total),150,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,William B. Redpath,Libertarian,Not split by method,(statewide total),292,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Holmes,Write-in,,Not split by method,(statewide total),0,17,17,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Sherrod Brown,Democratic,Not split by method,(statewide total),6826,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Jon Husted,Republican,Not split by method,(statewide total),11372,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Greg Levy,Other-party,Not split by method,(statewide total),554,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,William B. Redpath,Libertarian,Not split by method,(statewide total),898,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Huron,Write-in,,Not split by method,(statewide total),0,46,46,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Sherrod Brown,Democratic,Not split by method,(statewide total),2643,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Jon Husted,Republican,Not split by method,(statewide total),5508,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Greg Levy,Other-party,Not split by method,(statewide total),178,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,William B. Redpath,Libertarian,Not split by method,(statewide total),293,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jackson,Write-in,,Not split by method,(statewide total),0,22,29,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Sherrod Brown,Democratic,Not split by method,(statewide total),7679,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Jon Husted,Republican,Not split by method,(statewide total),13043,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Greg Levy,Other-party,Not split by method,(statewide total),568,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,William B. Redpath,Libertarian,Not split by method,(statewide total),775,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Jefferson,Write-in,,Not split by method,(statewide total),0,54,55,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Sherrod Brown,Democratic,Not split by method,(statewide total),7632,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Jon Husted,Republican,Not split by method,(statewide total),15218,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Greg Levy,Other-party,Not split by method,(statewide total),482,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,William B. Redpath,Libertarian,Not split by method,(statewide total),840,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Knox,Write-in,,Not split by method,(statewide total),0,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Sherrod Brown,Democratic,Not split by method,(statewide total),51326,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Jon Husted,Republican,Not split by method,(statewide total),49617,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Greg Levy,Other-party,Not split by method,(statewide total),1875,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,William B. Redpath,Libertarian,Not split by method,(statewide total),3023,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lake,Write-in,,Not split by method,(statewide total),0,163,163,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Sherrod Brown,Democratic,Not split by method,(statewide total),5961,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Jon Husted,Republican,Not split by method,(statewide total),11023,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Greg Levy,Other-party,Not split by method,(statewide total),414,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,William B. Redpath,Libertarian,Not split by method,(statewide total),636,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Lawrence,Write-in,,Not split by method,(statewide total),0,84,84,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Sherrod Brown,Democratic,Not split by method,(statewide total),4647,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Jon Husted,Republican,Not split by method,(statewide total),11929,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Greg Levy,Other-party,Not split by method,(statewide total),419,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,William B. Redpath,Libertarian,Not split by method,(statewide total),796,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Logan,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Sherrod Brown,Democratic,Not split by method,(statewide total),69179,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Jon Husted,Republican,Not split by method,(statewide total),54610,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Greg Levy,Other-party,Not split by method,(statewide total),2438,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,William B. Redpath,Libertarian,Not split by method,(statewide total),3579,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Lorain,Write-in,,Not split by method,(statewide total),0,210,210,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Sherrod Brown,Democratic,Not split by method,(statewide total),45595,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Jon Husted,Republican,Not split by method,(statewide total),39192,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Greg Levy,Other-party,Not split by method,(statewide total),1961,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,William B. Redpath,Libertarian,Not split by method,(statewide total),2398,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Mahoning,Write-in,,Not split by method,(statewide total),0,212,212,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Sherrod Brown,Democratic,Not split by method,(statewide total),7076,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Jon Husted,Republican,Not split by method,(statewide total),11480,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Greg Levy,Other-party,Not split by method,(statewide total),518,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,William B. Redpath,Libertarian,Not split by method,(statewide total),866,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Marion,Write-in,,Not split by method,(statewide total),0,45,45,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Sherrod Brown,Democratic,Not split by method,(statewide total),36900,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Jon Husted,Republican,Not split by method,(statewide total),44892,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Greg Levy,Other-party,Not split by method,(statewide total),1293,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,William B. Redpath,Libertarian,Not split by method,(statewide total),2339,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Medina,Write-in,,Not split by method,(statewide total),0,124,124,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Sherrod Brown,Democratic,Not split by method,(statewide total),2159,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Jon Husted,Republican,Not split by method,(statewide total),4877,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Greg Levy,Other-party,Not split by method,(statewide total),179,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,William B. Redpath,Libertarian,Not split by method,(statewide total),290,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Meigs,Write-in,,Not split by method,(statewide total),0,27,27,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Sherrod Brown,Democratic,Not split by method,(statewide total),3489,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Jon Husted,Republican,Not split by method,(statewide total),13755,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Greg Levy,Other-party,Not split by method,(statewide total),286,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,William B. Redpath,Libertarian,Not split by method,(statewide total),491,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Mercer,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Sherrod Brown,Democratic,Not split by method,(statewide total),1311,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Jon Husted,Republican,Not split by method,(statewide total),3141,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Greg Levy,Other-party,Not split by method,(statewide total),135,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,William B. Redpath,Libertarian,Not split by method,(statewide total),193,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Monroe,Write-in,,Not split by method,(statewide total),0,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Sherrod Brown,Democratic,Not split by method,(statewide total),1408,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Jon Husted,Republican,Not split by method,(statewide total),3125,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Greg Levy,Other-party,Not split by method,(statewide total),120,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,William B. Redpath,Libertarian,Not split by method,(statewide total),178,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morgan,Write-in,,Not split by method,(statewide total),0,13,13,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Sherrod Brown,Democratic,Not split by method,(statewide total),3772,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Jon Husted,Republican,Not split by method,(statewide total),9362,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Greg Levy,Other-party,Not split by method,(statewide total),342,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,William B. Redpath,Libertarian,Not split by method,(statewide total),632,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Morrow,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Sherrod Brown,Democratic,Not split by method,(statewide total),9642,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Jon Husted,Republican,Not split by method,(statewide total),17403,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Greg Levy,Other-party,Not split by method,(statewide total),656,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,William B. Redpath,Libertarian,Not split by method,(statewide total),1119,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Muskingum,Write-in,,Not split by method,(statewide total),0,68,68,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Sherrod Brown,Democratic,Not split by method,(statewide total),1049,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Jon Husted,Republican,Not split by method,(statewide total),3114,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Greg Levy,Other-party,Not split by method,(statewide total),122,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,William B. Redpath,Libertarian,Not split by method,(statewide total),198,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Noble,Write-in,,Not split by method,(statewide total),0,19,19,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Sherrod Brown,Democratic,Not split by method,(statewide total),7932,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Jon Husted,Republican,Not split by method,(statewide total),10362,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Greg Levy,Other-party,Not split by method,(statewide total),342,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,William B. Redpath,Libertarian,Not split by method,(statewide total),595,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Ottawa,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Sherrod Brown,Democratic,Not split by method,(statewide total),3654,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Jon Husted,Republican,Not split by method,(statewide total),8020,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Greg Levy,Other-party,Not split by method,(statewide total),300,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,William B. Redpath,Libertarian,Not split by method,(statewide total),500,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Perry,Write-in,,Not split by method,(statewide total),0,33,33,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Sherrod Brown,Democratic,Not split by method,(statewide total),2683,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Jon Husted,Republican,Not split by method,(statewide total),5348,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Greg Levy,Other-party,Not split by method,(statewide total),183,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,William B. Redpath,Libertarian,Not split by method,(statewide total),311,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Pike,Write-in,,Not split by method,(statewide total),0,22,22,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Sherrod Brown,Democratic,Not split by method,(statewide total),31974,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Jon Husted,Republican,Not split by method,(statewide total),30196,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Greg Levy,Other-party,Not split by method,(statewide total),1650,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,William B. Redpath,Libertarian,Not split by method,(statewide total),2080,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Portage,Write-in,,Not split by method,(statewide total),0,126,126,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Sherrod Brown,Democratic,Not split by method,(statewide total),2767,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Jon Husted,Republican,Not split by method,(statewide total),11891,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Greg Levy,Other-party,Not split by method,(statewide total),301,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,William B. Redpath,Libertarian,Not split by method,(statewide total),438,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Putnam,Write-in,,Not split by method,(statewide total),0,25,25,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Sherrod Brown,Democratic,Not split by method,(statewide total),15058,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Jon Husted,Republican,Not split by method,(statewide total),26596,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Greg Levy,Other-party,Not split by method,(statewide total),842,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,William B. Redpath,Libertarian,Not split by method,(statewide total),1568,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Richland,Write-in,,Not split by method,(statewide total),0,83,83,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Sherrod Brown,Democratic,Not split by method,(statewide total),9097,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Jon Husted,Republican,Not split by method,(statewide total),14390,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Greg Levy,Other-party,Not split by method,(statewide total),417,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,William B. Redpath,Libertarian,Not split by method,(statewide total),756,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Ross,Write-in,,Not split by method,(statewide total),0,65,65,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Sherrod Brown,Democratic,Not split by method,(statewide total),9034,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Jon Husted,Republican,Not split by method,(statewide total),11982,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Greg Levy,Other-party,Not split by method,(statewide total),597,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,William B. Redpath,Libertarian,Not split by method,(statewide total),964,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Sandusky,Write-in,,Not split by method,(statewide total),0,58,58,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Sherrod Brown,Democratic,Not split by method,(statewide total),7464,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Jon Husted,Republican,Not split by method,(statewide total),12944,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Greg Levy,Other-party,Not split by method,(statewide total),487,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,William B. Redpath,Libertarian,Not split by method,(statewide total),603,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Scioto,Write-in,,Not split by method,(statewide total),0,77,77,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Sherrod Brown,Democratic,Not split by method,(statewide total),3928,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Jon Husted,Republican,Not split by method,(statewide total),13993,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Greg Levy,Other-party,Not split by method,(statewide total),411,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,William B. Redpath,Libertarian,Not split by method,(statewide total),649,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Shelby,Write-in,,Not split by method,(statewide total),0,36,36,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Sherrod Brown,Democratic,Not split by method,(statewide total),35990,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Jon Husted,Republican,Not split by method,(statewide total),34046,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Greg Levy,Other-party,Not split by method,(statewide total),1905,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,William B. Redpath,Libertarian,Not split by method,(statewide total),2409,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Trumbull,Write-in,,Not split by method,(statewide total),0,158,158,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Sherrod Brown,Democratic,Not split by method,(statewide total),11221,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Jon Husted,Republican,Not split by method,(statewide total),18735,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Greg Levy,Other-party,Not split by method,(statewide total),779,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,William B. Redpath,Libertarian,Not split by method,(statewide total),1382,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Tuscarawas,Write-in,,Not split by method,(statewide total),0,81,81,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Sherrod Brown,Democratic,Not split by method,(statewide total),12758,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Jon Husted,Republican,Not split by method,(statewide total),17020,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Greg Levy,Other-party,Not split by method,(statewide total),496,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,William B. Redpath,Libertarian,Not split by method,(statewide total),893,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Union,Write-in,,Not split by method,(statewide total),0,53,53,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Sherrod Brown,Democratic,Not split by method,(statewide total),1096,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Jon Husted,Republican,Not split by method,(statewide total),2526,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Greg Levy,Other-party,Not split by method,(statewide total),82,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,William B. Redpath,Libertarian,Not split by method,(statewide total),199,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Vinton,Write-in,,Not split by method,(statewide total),0,20,20,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Sherrod Brown,Democratic,Not split by method,(statewide total),7788,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Jon Husted,Republican,Not split by method,(statewide total),13423,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Greg Levy,Other-party,Not split by method,(statewide total),560,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,William B. Redpath,Libertarian,Not split by method,(statewide total),867,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Washington,Write-in,,Not split by method,(statewide total),0,50,50,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Sherrod Brown,Democratic,Not split by method,(statewide total),13545,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Jon Husted,Republican,Not split by method,(statewide total),22934,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Greg Levy,Other-party,Not split by method,(statewide total),789,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,William B. Redpath,Libertarian,Not split by method,(statewide total),1343,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Wayne,Write-in,,Not split by method,(statewide total),0,60,66,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Sherrod Brown,Democratic,Not split by method,(statewide total),3968,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Jon Husted,Republican,Not split by method,(statewide total),8619,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Greg Levy,Other-party,Not split by method,(statewide total),382,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,William B. Redpath,Libertarian,Not split by method,(statewide total),558,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Williams,Write-in,,Not split by method,(statewide total),0,26,26,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Sherrod Brown,Democratic,Not split by method,(statewide total),25173,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Jon Husted,Republican,Not split by method,(statewide total),21967,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Greg Levy,Other-party,Not split by method,(statewide total),971,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,William B. Redpath,Libertarian,Not split by method,(statewide total),1462,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wood,Write-in,,Not split by method,(statewide total),0,85,99,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Sherrod Brown,Democratic,Not split by method,(statewide total),2675,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Jon Husted,Republican,Not split by method,(statewide total),5610,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Greg Levy,Other-party,Not split by method,(statewide total),1146,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,William B. Redpath,Libertarian,Not split by method,(statewide total),543,23,23,sos_statewide,2026-11-04T04:06:37+00:00
+Wyandot,Write-in,,Not split by method,(statewide total),0,23,23,sos_statewide,2026-11-04T04:06:37+00:00
