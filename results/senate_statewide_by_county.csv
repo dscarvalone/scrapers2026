@@ -1,441 +1,441 @@
 county,candidate,votes,precincts_reported,precincts_total,write_in_detail,fetched_at
-Adams,Sherrod Brown,1555,7,21,,2026-11-04T02:30:44+00:00
-Adams,Jon Husted,3658,7,21,,2026-11-04T02:30:44+00:00
-Adams,Greg Levy,158,7,21,,2026-11-04T02:30:44+00:00
-Adams,William B. Redpath,228,7,21,,2026-11-04T02:30:44+00:00
-Adams,Write-in,0,7,21,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Allen,Sherrod Brown,11066,88,88,,2026-11-04T02:30:44+00:00
-Allen,Jon Husted,21992,88,88,,2026-11-04T02:30:44+00:00
-Allen,Greg Levy,823,88,88,,2026-11-04T02:30:44+00:00
-Allen,William B. Redpath,1337,88,88,,2026-11-04T02:30:44+00:00
-Allen,Write-in,0,88,88,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Ashland,Sherrod Brown,5850,39,39,,2026-11-04T02:30:44+00:00
-Ashland,Jon Husted,12685,39,39,,2026-11-04T02:30:44+00:00
-Ashland,Greg Levy,519,39,39,,2026-11-04T02:30:44+00:00
-Ashland,William B. Redpath,825,39,39,,2026-11-04T02:30:44+00:00
-Ashland,Write-in,0,39,39,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Ashtabula,Sherrod Brown,9285,48,104,,2026-11-04T02:30:44+00:00
-Ashtabula,Jon Husted,11876,48,104,,2026-11-04T02:30:44+00:00
-Ashtabula,Greg Levy,594,48,104,,2026-11-04T02:30:44+00:00
-Ashtabula,William B. Redpath,849,48,104,,2026-11-04T02:30:44+00:00
-Ashtabula,Write-in,0,48,104,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Athens,Sherrod Brown,12700,50,50,,2026-11-04T02:30:44+00:00
-Athens,Jon Husted,6508,50,50,,2026-11-04T02:30:44+00:00
-Athens,Greg Levy,575,50,50,,2026-11-04T02:30:44+00:00
-Athens,William B. Redpath,544,50,50,,2026-11-04T02:30:44+00:00
-Athens,Write-in,0,50,50,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Auglaize,Sherrod Brown,3950,42,42,,2026-11-04T02:30:44+00:00
-Auglaize,Jon Husted,14223,42,42,,2026-11-04T02:30:44+00:00
-Auglaize,Greg Levy,379,42,42,,2026-11-04T02:30:44+00:00
-Auglaize,William B. Redpath,691,42,42,,2026-11-04T02:30:44+00:00
-Auglaize,Write-in,0,42,42,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Belmont,Sherrod Brown,6259,35,69,,2026-11-04T02:30:44+00:00
-Belmont,Jon Husted,10105,35,69,,2026-11-04T02:30:44+00:00
-Belmont,Greg Levy,342,35,69,,2026-11-04T02:30:44+00:00
-Belmont,William B. Redpath,558,35,69,,2026-11-04T02:30:44+00:00
-Belmont,Write-in,0,35,69,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Brown,Sherrod Brown,2227,4,33,,2026-11-04T02:30:44+00:00
-Brown,Jon Husted,4556,4,33,,2026-11-04T02:30:44+00:00
-Brown,Greg Levy,125,4,33,,2026-11-04T02:30:44+00:00
-Brown,William B. Redpath,226,4,33,,2026-11-04T02:30:44+00:00
-Brown,Write-in,0,4,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Butler,Sherrod Brown,36635,82,292,,2026-11-04T02:30:44+00:00
-Butler,Jon Husted,39549,82,292,,2026-11-04T02:30:44+00:00
-Butler,Greg Levy,1226,82,292,,2026-11-04T02:30:44+00:00
-Butler,William B. Redpath,1702,82,292,,2026-11-04T02:30:44+00:00
-Butler,Write-in,0,82,292,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Carroll,Sherrod Brown,1500,3,23,,2026-11-04T02:30:44+00:00
-Carroll,Jon Husted,2605,3,23,,2026-11-04T02:30:44+00:00
-Carroll,Greg Levy,118,3,23,,2026-11-04T02:30:44+00:00
-Carroll,William B. Redpath,154,3,23,,2026-11-04T02:30:44+00:00
-Carroll,Write-in,0,3,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Champaign,Sherrod Brown,4495,28,31,,2026-11-04T02:30:44+00:00
-Champaign,Jon Husted,9082,28,31,,2026-11-04T02:30:44+00:00
-Champaign,Greg Levy,457,28,31,,2026-11-04T02:30:44+00:00
-Champaign,William B. Redpath,692,28,31,,2026-11-04T02:30:44+00:00
-Champaign,Write-in,0,28,31,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Clark,Sherrod Brown,13397,27,78,,2026-11-04T02:30:44+00:00
-Clark,Jon Husted,14048,27,78,,2026-11-04T02:30:44+00:00
-Clark,Greg Levy,652,27,78,,2026-11-04T02:30:44+00:00
-Clark,William B. Redpath,834,27,78,,2026-11-04T02:30:44+00:00
-Clark,Write-in,0,27,78,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Clermont,Sherrod Brown,20206,44,168,,2026-11-04T02:30:44+00:00
-Clermont,Jon Husted,25564,44,168,,2026-11-04T02:30:44+00:00
-Clermont,Greg Levy,799,44,168,,2026-11-04T02:30:44+00:00
-Clermont,William B. Redpath,1304,44,168,,2026-11-04T02:30:44+00:00
-Clermont,Write-in,0,44,168,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Clinton,Sherrod Brown,2715,6,36,,2026-11-04T02:30:44+00:00
-Clinton,Jon Husted,4835,6,36,,2026-11-04T02:30:44+00:00
-Clinton,Greg Levy,184,6,36,,2026-11-04T02:30:44+00:00
-Clinton,William B. Redpath,273,6,36,,2026-11-04T02:30:44+00:00
-Clinton,Write-in,0,6,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Columbiana,Sherrod Brown,10928,73,73,,2026-11-04T02:30:44+00:00
-Columbiana,Jon Husted,21637,73,73,,2026-11-04T02:30:44+00:00
-Columbiana,Greg Levy,836,73,73,,2026-11-04T02:30:44+00:00
-Columbiana,William B. Redpath,1458,73,73,,2026-11-04T02:30:44+00:00
-Columbiana,Write-in,0,73,73,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Coshocton,Sherrod Brown,3439,23,23,,2026-11-04T02:30:44+00:00
-Coshocton,Jon Husted,7466,23,23,,2026-11-04T02:30:44+00:00
-Coshocton,Greg Levy,305,23,23,,2026-11-04T02:30:44+00:00
-Coshocton,William B. Redpath,519,23,23,,2026-11-04T02:30:44+00:00
-Coshocton,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Crawford,Sherrod Brown,2961,16,35,,2026-11-04T02:30:44+00:00
-Crawford,Jon Husted,6687,16,35,,2026-11-04T02:30:44+00:00
-Crawford,Greg Levy,202,16,35,,2026-11-04T02:30:44+00:00
-Crawford,William B. Redpath,348,16,35,,2026-11-04T02:30:44+00:00
-Crawford,Write-in,0,16,35,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Cuyahoga,Sherrod Brown,123208,0,897,,2026-11-04T02:30:44+00:00
-Cuyahoga,Jon Husted,33035,0,897,,2026-11-04T02:30:44+00:00
-Cuyahoga,Greg Levy,2154,0,897,,2026-11-04T02:30:44+00:00
-Cuyahoga,William B. Redpath,1818,0,897,,2026-11-04T02:30:44+00:00
-Cuyahoga,Write-in,0,0,897,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Darke,Sherrod Brown,3057,16,43,,2026-11-04T02:30:44+00:00
-Darke,Jon Husted,8841,16,43,,2026-11-04T02:30:44+00:00
-Darke,Greg Levy,258,16,43,,2026-11-04T02:30:44+00:00
-Darke,William B. Redpath,397,16,43,,2026-11-04T02:30:44+00:00
-Darke,Write-in,0,16,43,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Defiance,Sherrod Brown,4974,33,33,,2026-11-04T02:30:44+00:00
-Defiance,Jon Husted,8592,33,33,,2026-11-04T02:30:44+00:00
-Defiance,Greg Levy,368,33,33,,2026-11-04T02:30:44+00:00
-Defiance,William B. Redpath,587,33,33,,2026-11-04T02:30:44+00:00
-Defiance,Write-in,0,33,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Delaware,Sherrod Brown,41034,79,180,,2026-11-04T02:30:44+00:00
-Delaware,Jon Husted,33468,79,180,,2026-11-04T02:30:44+00:00
-Delaware,Greg Levy,870,79,180,,2026-11-04T02:30:44+00:00
-Delaware,William B. Redpath,1380,79,180,,2026-11-04T02:30:44+00:00
-Delaware,Write-in,0,79,180,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Erie,Sherrod Brown,10820,62,62,,2026-11-04T02:30:44+00:00
-Erie,Jon Husted,9300,62,62,,2026-11-04T02:30:44+00:00
-Erie,Greg Levy,379,62,62,,2026-11-04T02:30:44+00:00
-Erie,William B. Redpath,497,62,62,,2026-11-04T02:30:44+00:00
-Erie,Write-in,0,62,62,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Fairfield,Sherrod Brown,14769,6,111,,2026-11-04T02:30:44+00:00
-Fairfield,Jon Husted,14478,6,111,,2026-11-04T02:30:44+00:00
-Fairfield,Greg Levy,387,6,111,,2026-11-04T02:30:44+00:00
-Fairfield,William B. Redpath,586,6,111,,2026-11-04T02:30:44+00:00
-Fairfield,Write-in,0,6,111,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Fayette,Sherrod Brown,2485,25,25,,2026-11-04T02:30:44+00:00
-Fayette,Jon Husted,6083,25,25,,2026-11-04T02:30:44+00:00
-Fayette,Greg Levy,194,25,25,,2026-11-04T02:30:44+00:00
-Fayette,William B. Redpath,314,25,25,,2026-11-04T02:30:44+00:00
-Fayette,Write-in,0,25,25,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Franklin,Sherrod Brown,189302,254,889,,2026-11-04T02:30:44+00:00
-Franklin,Jon Husted,62271,254,889,,2026-11-04T02:30:44+00:00
-Franklin,Greg Levy,4096,254,889,,2026-11-04T02:30:44+00:00
-Franklin,William B. Redpath,3870,254,889,,2026-11-04T02:30:44+00:00
-Franklin,Write-in,0,254,889,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Fulton,Sherrod Brown,3940,13,29,,2026-11-04T02:30:44+00:00
-Fulton,Jon Husted,6477,13,29,,2026-11-04T02:30:44+00:00
-Fulton,Greg Levy,185,13,29,,2026-11-04T02:30:44+00:00
-Fulton,William B. Redpath,362,13,29,,2026-11-04T02:30:44+00:00
-Fulton,Write-in,0,13,29,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Gallia,Sherrod Brown,1485,7,26,,2026-11-04T02:30:44+00:00
-Gallia,Jon Husted,3053,7,26,,2026-11-04T02:30:44+00:00
-Gallia,Greg Levy,88,7,26,,2026-11-04T02:30:44+00:00
-Gallia,William B. Redpath,141,7,26,,2026-11-04T02:30:44+00:00
-Gallia,Write-in,0,7,26,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Geauga,Sherrod Brown,8366,27,79,,2026-11-04T02:30:44+00:00
-Geauga,Jon Husted,9942,27,79,,2026-11-04T02:30:44+00:00
-Geauga,Greg Levy,208,27,79,,2026-11-04T02:30:44+00:00
-Geauga,William B. Redpath,459,27,79,,2026-11-04T02:30:44+00:00
-Geauga,Write-in,0,27,79,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Greene,Sherrod Brown,20570,33,151,,2026-11-04T02:30:44+00:00
-Greene,Jon Husted,20432,33,151,,2026-11-04T02:30:44+00:00
-Greene,Greg Levy,544,33,151,,2026-11-04T02:30:44+00:00
-Greene,William B. Redpath,885,33,151,,2026-11-04T02:30:44+00:00
-Greene,Write-in,0,33,151,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Guernsey,Sherrod Brown,3116,21,35,,2026-11-04T02:30:44+00:00
-Guernsey,Jon Husted,5978,21,35,,2026-11-04T02:30:44+00:00
-Guernsey,Greg Levy,221,21,35,,2026-11-04T02:30:44+00:00
-Guernsey,William B. Redpath,392,21,35,,2026-11-04T02:30:44+00:00
-Guernsey,Write-in,0,21,35,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Hamilton,Sherrod Brown,93408,39,563,,2026-11-04T02:30:44+00:00
-Hamilton,Jon Husted,37477,39,563,,2026-11-04T02:30:44+00:00
-Hamilton,Greg Levy,2186,39,563,,2026-11-04T02:30:44+00:00
-Hamilton,William B. Redpath,1913,39,563,,2026-11-04T02:30:44+00:00
-Hamilton,Write-in,0,39,563,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Hancock,Sherrod Brown,10019,58,60,,2026-11-04T02:30:44+00:00
-Hancock,Jon Husted,16377,58,60,,2026-11-04T02:30:44+00:00
-Hancock,Greg Levy,516,58,60,,2026-11-04T02:30:44+00:00
-Hancock,William B. Redpath,1139,58,60,,2026-11-04T02:30:44+00:00
-Hancock,Write-in,0,58,60,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Hardin,Sherrod Brown,1314,0,21,,2026-11-04T02:30:44+00:00
-Hardin,Jon Husted,2019,0,21,,2026-11-04T02:30:44+00:00
-Hardin,Greg Levy,58,0,21,,2026-11-04T02:30:44+00:00
-Hardin,William B. Redpath,90,0,21,,2026-11-04T02:30:44+00:00
-Hardin,Write-in,0,0,21,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Harrison,Sherrod Brown,1433,16,16,,2026-11-04T02:30:44+00:00
-Harrison,Jon Husted,3155,16,16,,2026-11-04T02:30:44+00:00
-Harrison,Greg Levy,164,16,16,,2026-11-04T02:30:44+00:00
-Harrison,William B. Redpath,275,16,16,,2026-11-04T02:30:44+00:00
-Harrison,Write-in,0,16,16,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Henry,Sherrod Brown,3420,23,23,,2026-11-04T02:30:44+00:00
-Henry,Jon Husted,7062,23,23,,2026-11-04T02:30:44+00:00
-Henry,Greg Levy,238,23,23,,2026-11-04T02:30:44+00:00
-Henry,William B. Redpath,437,23,23,,2026-11-04T02:30:44+00:00
-Henry,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Highland,Sherrod Brown,1805,0,31,,2026-11-04T02:30:44+00:00
-Highland,Jon Husted,3381,0,31,,2026-11-04T02:30:44+00:00
-Highland,Greg Levy,111,0,31,,2026-11-04T02:30:44+00:00
-Highland,William B. Redpath,144,0,31,,2026-11-04T02:30:44+00:00
-Highland,Write-in,0,0,31,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Hocking,Sherrod Brown,2290,2,20,,2026-11-04T02:30:44+00:00
-Hocking,Jon Husted,2941,2,20,,2026-11-04T02:30:44+00:00
-Hocking,Greg Levy,119,2,20,,2026-11-04T02:30:44+00:00
-Hocking,William B. Redpath,140,2,20,,2026-11-04T02:30:44+00:00
-Hocking,Write-in,0,2,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Holmes,Sherrod Brown,1292,8,17,,2026-11-04T02:30:44+00:00
-Holmes,Jon Husted,4189,8,17,,2026-11-04T02:30:44+00:00
-Holmes,Greg Levy,85,8,17,,2026-11-04T02:30:44+00:00
-Holmes,William B. Redpath,150,8,17,,2026-11-04T02:30:44+00:00
-Holmes,Write-in,0,8,17,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Huron,Sherrod Brown,5312,24,46,,2026-11-04T02:30:44+00:00
-Huron,Jon Husted,7529,24,46,,2026-11-04T02:30:44+00:00
-Huron,Greg Levy,377,24,46,,2026-11-04T02:30:44+00:00
-Huron,William B. Redpath,576,24,46,,2026-11-04T02:30:44+00:00
-Huron,Write-in,0,24,46,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Jackson,Sherrod Brown,2643,22,29,,2026-11-04T02:30:44+00:00
-Jackson,Jon Husted,5508,22,29,,2026-11-04T02:30:44+00:00
-Jackson,Greg Levy,178,22,29,,2026-11-04T02:30:44+00:00
-Jackson,William B. Redpath,293,22,29,,2026-11-04T02:30:44+00:00
-Jackson,Write-in,0,22,29,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Jefferson,Sherrod Brown,6521,37,55,,2026-11-04T02:30:44+00:00
-Jefferson,Jon Husted,10159,37,55,,2026-11-04T02:30:44+00:00
-Jefferson,Greg Levy,422,37,55,,2026-11-04T02:30:44+00:00
-Jefferson,William B. Redpath,581,37,55,,2026-11-04T02:30:44+00:00
-Jefferson,Write-in,0,37,55,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Knox,Sherrod Brown,7277,44,53,,2026-11-04T02:30:44+00:00
-Knox,Jon Husted,13584,44,53,,2026-11-04T02:30:44+00:00
-Knox,Greg Levy,421,44,53,,2026-11-04T02:30:44+00:00
-Knox,William B. Redpath,725,44,53,,2026-11-04T02:30:44+00:00
-Knox,Write-in,0,44,53,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Lake,Sherrod Brown,42333,114,163,,2026-11-04T02:30:44+00:00
-Lake,Jon Husted,39250,114,163,,2026-11-04T02:30:44+00:00
-Lake,Greg Levy,1456,114,163,,2026-11-04T02:30:44+00:00
-Lake,William B. Redpath,2271,114,163,,2026-11-04T02:30:44+00:00
-Lake,Write-in,0,114,163,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Lawrence,Sherrod Brown,4457,59,84,,2026-11-04T02:30:44+00:00
-Lawrence,Jon Husted,7767,59,84,,2026-11-04T02:30:44+00:00
-Lawrence,Greg Levy,260,59,84,,2026-11-04T02:30:44+00:00
-Lawrence,William B. Redpath,453,59,84,,2026-11-04T02:30:44+00:00
-Lawrence,Write-in,0,59,84,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Licking,Sherrod Brown,22242,55,96,,2026-11-04T02:30:44+00:00
-Licking,Jon Husted,28596,55,96,,2026-11-04T02:30:44+00:00
-Licking,Greg Levy,962,55,96,,2026-11-04T02:30:44+00:00
-Licking,William B. Redpath,1658,55,96,,2026-11-04T02:30:44+00:00
-Licking,Write-in,0,55,96,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Logan,Sherrod Brown,4647,36,36,,2026-11-04T02:30:44+00:00
-Logan,Jon Husted,11929,36,36,,2026-11-04T02:30:44+00:00
-Logan,Greg Levy,419,36,36,,2026-11-04T02:30:44+00:00
-Logan,William B. Redpath,796,36,36,,2026-11-04T02:30:44+00:00
-Logan,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Lorain,Sherrod Brown,64244,178,210,,2026-11-04T02:30:44+00:00
-Lorain,Jon Husted,47668,178,210,,2026-11-04T02:30:44+00:00
-Lorain,Greg Levy,2148,178,210,,2026-11-04T02:30:44+00:00
-Lorain,William B. Redpath,3135,178,210,,2026-11-04T02:30:44+00:00
-Lorain,Write-in,0,178,210,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Lucas,Sherrod Brown,0,0,280,,2026-11-04T02:30:44+00:00
-Lucas,Jon Husted,0,0,280,,2026-11-04T02:30:44+00:00
-Lucas,Greg Levy,0,0,280,,2026-11-04T02:30:44+00:00
-Lucas,William B. Redpath,0,0,280,,2026-11-04T02:30:44+00:00
-Lucas,Write-in,0,0,280,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Madison,Sherrod Brown,3129,1,24,,2026-11-04T02:30:44+00:00
-Madison,Jon Husted,4612,1,24,,2026-11-04T02:30:44+00:00
-Madison,Greg Levy,147,1,24,,2026-11-04T02:30:44+00:00
-Madison,William B. Redpath,192,1,24,,2026-11-04T02:30:44+00:00
-Madison,Write-in,0,1,24,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Mahoning,Sherrod Brown,45595,212,212,,2026-11-04T02:30:44+00:00
-Mahoning,Jon Husted,39192,212,212,,2026-11-04T02:30:44+00:00
-Mahoning,Greg Levy,1961,212,212,,2026-11-04T02:30:44+00:00
-Mahoning,William B. Redpath,2398,212,212,,2026-11-04T02:30:44+00:00
-Mahoning,Write-in,0,212,212,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Marion,Sherrod Brown,5176,15,45,,2026-11-04T02:30:44+00:00
-Marion,Jon Husted,6405,15,45,,2026-11-04T02:30:44+00:00
-Marion,Greg Levy,298,15,45,,2026-11-04T02:30:44+00:00
-Marion,William B. Redpath,458,15,45,,2026-11-04T02:30:44+00:00
-Marion,Write-in,0,15,45,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Medina,Sherrod Brown,33616,102,124,,2026-11-04T02:30:44+00:00
-Medina,Jon Husted,39948,102,124,,2026-11-04T02:30:44+00:00
-Medina,Greg Levy,1120,102,124,,2026-11-04T02:30:44+00:00
-Medina,William B. Redpath,2002,102,124,,2026-11-04T02:30:44+00:00
-Medina,Write-in,0,102,124,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Meigs,Sherrod Brown,2159,27,27,,2026-11-04T02:30:44+00:00
-Meigs,Jon Husted,4877,27,27,,2026-11-04T02:30:44+00:00
-Meigs,Greg Levy,179,27,27,,2026-11-04T02:30:44+00:00
-Meigs,William B. Redpath,290,27,27,,2026-11-04T02:30:44+00:00
-Meigs,Write-in,0,27,27,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Mercer,Sherrod Brown,3489,36,36,,2026-11-04T02:30:44+00:00
-Mercer,Jon Husted,13755,36,36,,2026-11-04T02:30:44+00:00
-Mercer,Greg Levy,286,36,36,,2026-11-04T02:30:44+00:00
-Mercer,William B. Redpath,491,36,36,,2026-11-04T02:30:44+00:00
-Mercer,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Miami,Sherrod Brown,11708,52,87,,2026-11-04T02:30:44+00:00
-Miami,Jon Husted,22251,52,87,,2026-11-04T02:30:44+00:00
-Miami,Greg Levy,616,52,87,,2026-11-04T02:30:44+00:00
-Miami,William B. Redpath,1240,52,87,,2026-11-04T02:30:44+00:00
-Miami,Write-in,0,52,87,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Monroe,Sherrod Brown,1311,20,20,,2026-11-04T02:30:44+00:00
-Monroe,Jon Husted,3141,20,20,,2026-11-04T02:30:44+00:00
-Monroe,Greg Levy,135,20,20,,2026-11-04T02:30:44+00:00
-Monroe,William B. Redpath,193,20,20,,2026-11-04T02:30:44+00:00
-Monroe,Write-in,0,20,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Montgomery,Sherrod Brown,77091,191,381,,2026-11-04T02:30:44+00:00
-Montgomery,Jon Husted,47801,191,381,,2026-11-04T02:30:44+00:00
-Montgomery,Greg Levy,2347,191,381,,2026-11-04T02:30:44+00:00
-Montgomery,William B. Redpath,2985,191,381,,2026-11-04T02:30:44+00:00
-Montgomery,Write-in,0,191,381,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Morgan,Sherrod Brown,1408,13,13,,2026-11-04T02:30:44+00:00
-Morgan,Jon Husted,3125,13,13,,2026-11-04T02:30:44+00:00
-Morgan,Greg Levy,120,13,13,,2026-11-04T02:30:44+00:00
-Morgan,William B. Redpath,178,13,13,,2026-11-04T02:30:44+00:00
-Morgan,Write-in,0,13,13,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Morrow,Sherrod Brown,3772,33,33,,2026-11-04T02:30:44+00:00
-Morrow,Jon Husted,9362,33,33,,2026-11-04T02:30:44+00:00
-Morrow,Greg Levy,342,33,33,,2026-11-04T02:30:44+00:00
-Morrow,William B. Redpath,632,33,33,,2026-11-04T02:30:44+00:00
-Morrow,Write-in,0,33,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Muskingum,Sherrod Brown,8001,68,68,,2026-11-04T02:30:44+00:00
-Muskingum,Jon Husted,12876,68,68,,2026-11-04T02:30:44+00:00
-Muskingum,Greg Levy,493,68,68,,2026-11-04T02:30:44+00:00
-Muskingum,William B. Redpath,810,68,68,,2026-11-04T02:30:44+00:00
-Muskingum,Write-in,0,68,68,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Noble,Sherrod Brown,1049,19,19,,2026-11-04T02:30:44+00:00
-Noble,Jon Husted,3114,19,19,,2026-11-04T02:30:44+00:00
-Noble,Greg Levy,122,19,19,,2026-11-04T02:30:44+00:00
-Noble,William B. Redpath,198,19,19,,2026-11-04T02:30:44+00:00
-Noble,Write-in,0,19,19,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Ottawa,Sherrod Brown,7932,36,36,,2026-11-04T02:30:44+00:00
-Ottawa,Jon Husted,10362,36,36,,2026-11-04T02:30:44+00:00
-Ottawa,Greg Levy,342,36,36,,2026-11-04T02:30:44+00:00
-Ottawa,William B. Redpath,595,36,36,,2026-11-04T02:30:44+00:00
-Ottawa,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Paulding,Sherrod Brown,2459,16,16,,2026-11-04T02:30:44+00:00
-Paulding,Jon Husted,5879,16,16,,2026-11-04T02:30:44+00:00
-Paulding,Greg Levy,194,16,16,,2026-11-04T02:30:44+00:00
-Paulding,William B. Redpath,399,16,16,,2026-11-04T02:30:44+00:00
-Paulding,Write-in,0,16,16,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Perry,Sherrod Brown,2254,7,33,,2026-11-04T02:30:44+00:00
-Perry,Jon Husted,3683,7,33,,2026-11-04T02:30:44+00:00
-Perry,Greg Levy,137,7,33,,2026-11-04T02:30:44+00:00
-Perry,William B. Redpath,209,7,33,,2026-11-04T02:30:44+00:00
-Perry,Write-in,0,7,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Pickaway,Sherrod Brown,4407,15,46,,2026-11-04T02:30:44+00:00
-Pickaway,Jon Husted,7724,15,46,,2026-11-04T02:30:44+00:00
-Pickaway,Greg Levy,235,15,46,,2026-11-04T02:30:44+00:00
-Pickaway,William B. Redpath,385,15,46,,2026-11-04T02:30:44+00:00
-Pickaway,Write-in,0,15,46,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Pike,Sherrod Brown,2683,22,22,,2026-11-04T02:30:44+00:00
-Pike,Jon Husted,5348,22,22,,2026-11-04T02:30:44+00:00
-Pike,Greg Levy,183,22,22,,2026-11-04T02:30:44+00:00
-Pike,William B. Redpath,311,22,22,,2026-11-04T02:30:44+00:00
-Pike,Write-in,0,22,22,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Portage,Sherrod Brown,15985,15,126,,2026-11-04T02:30:44+00:00
-Portage,Jon Husted,10349,15,126,,2026-11-04T02:30:44+00:00
-Portage,Greg Levy,556,15,126,,2026-11-04T02:30:44+00:00
-Portage,William B. Redpath,636,15,126,,2026-11-04T02:30:44+00:00
-Portage,Write-in,0,15,126,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Preble,Sherrod Brown,3893,65,65,,2026-11-04T02:30:44+00:00
-Preble,Jon Husted,10453,65,65,,2026-11-04T02:30:44+00:00
-Preble,Greg Levy,312,65,65,,2026-11-04T02:30:44+00:00
-Preble,William B. Redpath,694,65,65,,2026-11-04T02:30:44+00:00
-Preble,Write-in,0,65,65,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Putnam,Sherrod Brown,2767,25,25,,2026-11-04T02:30:44+00:00
-Putnam,Jon Husted,11891,25,25,,2026-11-04T02:30:44+00:00
-Putnam,Greg Levy,301,25,25,,2026-11-04T02:30:44+00:00
-Putnam,William B. Redpath,438,25,25,,2026-11-04T02:30:44+00:00
-Putnam,Write-in,0,25,25,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Richland,Sherrod Brown,12284,48,83,,2026-11-04T02:30:44+00:00
-Richland,Jon Husted,18694,48,83,,2026-11-04T02:30:44+00:00
-Richland,Greg Levy,563,48,83,,2026-11-04T02:30:44+00:00
-Richland,William B. Redpath,1043,48,83,,2026-11-04T02:30:44+00:00
-Richland,Write-in,0,48,83,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Ross,Sherrod Brown,9097,65,65,,2026-11-04T02:30:44+00:00
-Ross,Jon Husted,14390,65,65,,2026-11-04T02:30:44+00:00
-Ross,Greg Levy,417,65,65,,2026-11-04T02:30:44+00:00
-Ross,William B. Redpath,756,65,65,,2026-11-04T02:30:44+00:00
-Ross,Write-in,0,65,65,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Sandusky,Sherrod Brown,9034,58,58,,2026-11-04T02:30:44+00:00
-Sandusky,Jon Husted,11982,58,58,,2026-11-04T02:30:44+00:00
-Sandusky,Greg Levy,597,58,58,,2026-11-04T02:30:44+00:00
-Sandusky,William B. Redpath,964,58,58,,2026-11-04T02:30:44+00:00
-Sandusky,Write-in,0,58,58,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Scioto,Sherrod Brown,5364,36,77,,2026-11-04T02:30:44+00:00
-Scioto,Jon Husted,8660,36,77,,2026-11-04T02:30:44+00:00
-Scioto,Greg Levy,284,36,77,,2026-11-04T02:30:44+00:00
-Scioto,William B. Redpath,381,36,77,,2026-11-04T02:30:44+00:00
-Scioto,Write-in,0,36,77,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Seneca,Sherrod Brown,5476,37,51,,2026-11-04T02:30:44+00:00
-Seneca,Jon Husted,8553,37,51,,2026-11-04T02:30:44+00:00
-Seneca,Greg Levy,359,37,51,,2026-11-04T02:30:44+00:00
-Seneca,William B. Redpath,650,37,51,,2026-11-04T02:30:44+00:00
-Seneca,Write-in,0,37,51,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Shelby,Sherrod Brown,3928,36,36,,2026-11-04T02:30:44+00:00
-Shelby,Jon Husted,13993,36,36,,2026-11-04T02:30:44+00:00
-Shelby,Greg Levy,411,36,36,,2026-11-04T02:30:44+00:00
-Shelby,William B. Redpath,649,36,36,,2026-11-04T02:30:44+00:00
-Shelby,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Stark,Sherrod Brown,33703,107,274,,2026-11-04T02:30:44+00:00
-Stark,Jon Husted,27265,107,274,,2026-11-04T02:30:44+00:00
-Stark,Greg Levy,1227,107,274,,2026-11-04T02:30:44+00:00
-Stark,William B. Redpath,1563,107,274,,2026-11-04T02:30:44+00:00
-Stark,Write-in,0,107,274,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Summit,Sherrod Brown,58977,27,371,,2026-11-04T02:30:44+00:00
-Summit,Jon Husted,24237,27,371,,2026-11-04T02:30:44+00:00
-Summit,Greg Levy,1308,27,371,,2026-11-04T02:30:44+00:00
-Summit,William B. Redpath,1338,27,371,,2026-11-04T02:30:44+00:00
-Summit,Write-in,0,27,371,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Trumbull,Sherrod Brown,35892,156,158,,2026-11-04T02:30:44+00:00
-Trumbull,Jon Husted,33726,156,158,,2026-11-04T02:30:44+00:00
-Trumbull,Greg Levy,1894,156,158,,2026-11-04T02:30:44+00:00
-Trumbull,William B. Redpath,2390,156,158,,2026-11-04T02:30:44+00:00
-Trumbull,Write-in,0,156,158,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Tuscarawas,Sherrod Brown,11221,81,81,,2026-11-04T02:30:44+00:00
-Tuscarawas,Jon Husted,18735,81,81,,2026-11-04T02:30:44+00:00
-Tuscarawas,Greg Levy,779,81,81,,2026-11-04T02:30:44+00:00
-Tuscarawas,William B. Redpath,1382,81,81,,2026-11-04T02:30:44+00:00
-Tuscarawas,Write-in,0,81,81,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Union,Sherrod Brown,12758,53,53,,2026-11-04T02:30:44+00:00
-Union,Jon Husted,17020,53,53,,2026-11-04T02:30:44+00:00
-Union,Greg Levy,496,53,53,,2026-11-04T02:30:44+00:00
-Union,William B. Redpath,893,53,53,,2026-11-04T02:30:44+00:00
-Union,Write-in,0,53,53,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Van Wert,Sherrod Brown,2547,32,32,,2026-11-04T02:30:44+00:00
-Van Wert,Jon Husted,7213,32,32,,2026-11-04T02:30:44+00:00
-Van Wert,Greg Levy,278,32,32,,2026-11-04T02:30:44+00:00
-Van Wert,William B. Redpath,473,32,32,,2026-11-04T02:30:44+00:00
-Van Wert,Write-in,0,32,32,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Vinton,Sherrod Brown,1096,20,20,,2026-11-04T02:30:44+00:00
-Vinton,Jon Husted,2526,20,20,,2026-11-04T02:30:44+00:00
-Vinton,Greg Levy,82,20,20,,2026-11-04T02:30:44+00:00
-Vinton,William B. Redpath,199,20,20,,2026-11-04T02:30:44+00:00
-Vinton,Write-in,0,20,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Warren,Sherrod Brown,39721,145,185,,2026-11-04T02:30:44+00:00
-Warren,Jon Husted,55670,145,185,,2026-11-04T02:30:44+00:00
-Warren,Greg Levy,1489,145,185,,2026-11-04T02:30:44+00:00
-Warren,William B. Redpath,2626,145,185,,2026-11-04T02:30:44+00:00
-Warren,Write-in,0,145,185,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Washington,Sherrod Brown,7788,50,50,,2026-11-04T02:30:44+00:00
-Washington,Jon Husted,13423,50,50,,2026-11-04T02:30:44+00:00
-Washington,Greg Levy,560,50,50,,2026-11-04T02:30:44+00:00
-Washington,William B. Redpath,867,50,50,,2026-11-04T02:30:44+00:00
-Washington,Write-in,0,50,50,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Wayne,Sherrod Brown,9111,14,66,,2026-11-04T02:30:44+00:00
-Wayne,Jon Husted,11731,14,66,,2026-11-04T02:30:44+00:00
-Wayne,Greg Levy,362,14,66,,2026-11-04T02:30:44+00:00
-Wayne,William B. Redpath,547,14,66,,2026-11-04T02:30:44+00:00
-Wayne,Write-in,0,14,66,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Williams,Sherrod Brown,3475,23,26,,2026-11-04T02:30:44+00:00
-Williams,Jon Husted,7338,23,26,,2026-11-04T02:30:44+00:00
-Williams,Greg Levy,305,23,26,,2026-11-04T02:30:44+00:00
-Williams,William B. Redpath,443,23,26,,2026-11-04T02:30:44+00:00
-Williams,Write-in,0,23,26,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Wood,Sherrod Brown,17220,29,99,,2026-11-04T02:30:44+00:00
-Wood,Jon Husted,11636,29,99,,2026-11-04T02:30:44+00:00
-Wood,Greg Levy,533,29,99,,2026-11-04T02:30:44+00:00
-Wood,William B. Redpath,671,29,99,,2026-11-04T02:30:44+00:00
-Wood,Write-in,0,29,99,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
-Wyandot,Sherrod Brown,2675,23,23,,2026-11-04T02:30:44+00:00
-Wyandot,Jon Husted,5610,23,23,,2026-11-04T02:30:44+00:00
-Wyandot,Greg Levy,1146,23,23,,2026-11-04T02:30:44+00:00
-Wyandot,William B. Redpath,543,23,23,,2026-11-04T02:30:44+00:00
-Wyandot,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:30:44+00:00
+Adams,Sherrod Brown,1555,7,21,,2026-11-04T02:34:32+00:00
+Adams,Jon Husted,3658,7,21,,2026-11-04T02:34:32+00:00
+Adams,Greg Levy,158,7,21,,2026-11-04T02:34:32+00:00
+Adams,William B. Redpath,228,7,21,,2026-11-04T02:34:32+00:00
+Adams,Write-in,0,7,21,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Allen,Sherrod Brown,11066,88,88,,2026-11-04T02:34:32+00:00
+Allen,Jon Husted,21992,88,88,,2026-11-04T02:34:32+00:00
+Allen,Greg Levy,823,88,88,,2026-11-04T02:34:32+00:00
+Allen,William B. Redpath,1337,88,88,,2026-11-04T02:34:32+00:00
+Allen,Write-in,0,88,88,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Ashland,Sherrod Brown,5850,39,39,,2026-11-04T02:34:32+00:00
+Ashland,Jon Husted,12685,39,39,,2026-11-04T02:34:32+00:00
+Ashland,Greg Levy,519,39,39,,2026-11-04T02:34:32+00:00
+Ashland,William B. Redpath,825,39,39,,2026-11-04T02:34:32+00:00
+Ashland,Write-in,0,39,39,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Ashtabula,Sherrod Brown,9285,48,104,,2026-11-04T02:34:32+00:00
+Ashtabula,Jon Husted,11876,48,104,,2026-11-04T02:34:32+00:00
+Ashtabula,Greg Levy,594,48,104,,2026-11-04T02:34:32+00:00
+Ashtabula,William B. Redpath,849,48,104,,2026-11-04T02:34:32+00:00
+Ashtabula,Write-in,0,48,104,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Athens,Sherrod Brown,12700,50,50,,2026-11-04T02:34:32+00:00
+Athens,Jon Husted,6508,50,50,,2026-11-04T02:34:32+00:00
+Athens,Greg Levy,575,50,50,,2026-11-04T02:34:32+00:00
+Athens,William B. Redpath,544,50,50,,2026-11-04T02:34:32+00:00
+Athens,Write-in,0,50,50,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Auglaize,Sherrod Brown,3950,42,42,,2026-11-04T02:34:32+00:00
+Auglaize,Jon Husted,14223,42,42,,2026-11-04T02:34:32+00:00
+Auglaize,Greg Levy,379,42,42,,2026-11-04T02:34:32+00:00
+Auglaize,William B. Redpath,691,42,42,,2026-11-04T02:34:32+00:00
+Auglaize,Write-in,0,42,42,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Belmont,Sherrod Brown,6259,35,69,,2026-11-04T02:34:32+00:00
+Belmont,Jon Husted,10105,35,69,,2026-11-04T02:34:32+00:00
+Belmont,Greg Levy,342,35,69,,2026-11-04T02:34:32+00:00
+Belmont,William B. Redpath,558,35,69,,2026-11-04T02:34:32+00:00
+Belmont,Write-in,0,35,69,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Brown,Sherrod Brown,2227,4,33,,2026-11-04T02:34:32+00:00
+Brown,Jon Husted,4556,4,33,,2026-11-04T02:34:32+00:00
+Brown,Greg Levy,125,4,33,,2026-11-04T02:34:32+00:00
+Brown,William B. Redpath,226,4,33,,2026-11-04T02:34:32+00:00
+Brown,Write-in,0,4,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Butler,Sherrod Brown,36635,82,292,,2026-11-04T02:34:32+00:00
+Butler,Jon Husted,39549,82,292,,2026-11-04T02:34:32+00:00
+Butler,Greg Levy,1226,82,292,,2026-11-04T02:34:32+00:00
+Butler,William B. Redpath,1702,82,292,,2026-11-04T02:34:32+00:00
+Butler,Write-in,0,82,292,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Carroll,Sherrod Brown,2788,22,23,,2026-11-04T02:34:32+00:00
+Carroll,Jon Husted,6720,22,23,,2026-11-04T02:34:32+00:00
+Carroll,Greg Levy,291,22,23,,2026-11-04T02:34:32+00:00
+Carroll,William B. Redpath,467,22,23,,2026-11-04T02:34:32+00:00
+Carroll,Write-in,0,22,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Champaign,Sherrod Brown,4495,28,31,,2026-11-04T02:34:32+00:00
+Champaign,Jon Husted,9082,28,31,,2026-11-04T02:34:32+00:00
+Champaign,Greg Levy,457,28,31,,2026-11-04T02:34:32+00:00
+Champaign,William B. Redpath,692,28,31,,2026-11-04T02:34:32+00:00
+Champaign,Write-in,0,28,31,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Clark,Sherrod Brown,13397,59,78,,2026-11-04T02:34:32+00:00
+Clark,Jon Husted,14048,59,78,,2026-11-04T02:34:32+00:00
+Clark,Greg Levy,652,59,78,,2026-11-04T02:34:32+00:00
+Clark,William B. Redpath,834,59,78,,2026-11-04T02:34:32+00:00
+Clark,Write-in,0,59,78,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Clermont,Sherrod Brown,20206,44,168,,2026-11-04T02:34:32+00:00
+Clermont,Jon Husted,25564,44,168,,2026-11-04T02:34:32+00:00
+Clermont,Greg Levy,799,44,168,,2026-11-04T02:34:32+00:00
+Clermont,William B. Redpath,1304,44,168,,2026-11-04T02:34:32+00:00
+Clermont,Write-in,0,44,168,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Clinton,Sherrod Brown,2715,6,36,,2026-11-04T02:34:32+00:00
+Clinton,Jon Husted,4835,6,36,,2026-11-04T02:34:32+00:00
+Clinton,Greg Levy,184,6,36,,2026-11-04T02:34:32+00:00
+Clinton,William B. Redpath,273,6,36,,2026-11-04T02:34:32+00:00
+Clinton,Write-in,0,6,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Columbiana,Sherrod Brown,10928,73,73,,2026-11-04T02:34:32+00:00
+Columbiana,Jon Husted,21637,73,73,,2026-11-04T02:34:32+00:00
+Columbiana,Greg Levy,836,73,73,,2026-11-04T02:34:32+00:00
+Columbiana,William B. Redpath,1458,73,73,,2026-11-04T02:34:32+00:00
+Columbiana,Write-in,0,73,73,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Coshocton,Sherrod Brown,3439,23,23,,2026-11-04T02:34:32+00:00
+Coshocton,Jon Husted,7466,23,23,,2026-11-04T02:34:32+00:00
+Coshocton,Greg Levy,305,23,23,,2026-11-04T02:34:32+00:00
+Coshocton,William B. Redpath,519,23,23,,2026-11-04T02:34:32+00:00
+Coshocton,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Crawford,Sherrod Brown,2961,16,35,,2026-11-04T02:34:32+00:00
+Crawford,Jon Husted,6687,16,35,,2026-11-04T02:34:32+00:00
+Crawford,Greg Levy,202,16,35,,2026-11-04T02:34:32+00:00
+Crawford,William B. Redpath,348,16,35,,2026-11-04T02:34:32+00:00
+Crawford,Write-in,0,16,35,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Cuyahoga,Sherrod Brown,123208,0,897,,2026-11-04T02:34:32+00:00
+Cuyahoga,Jon Husted,33035,0,897,,2026-11-04T02:34:32+00:00
+Cuyahoga,Greg Levy,2154,0,897,,2026-11-04T02:34:32+00:00
+Cuyahoga,William B. Redpath,1818,0,897,,2026-11-04T02:34:32+00:00
+Cuyahoga,Write-in,0,0,897,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Darke,Sherrod Brown,3057,16,43,,2026-11-04T02:34:32+00:00
+Darke,Jon Husted,8841,16,43,,2026-11-04T02:34:32+00:00
+Darke,Greg Levy,258,16,43,,2026-11-04T02:34:32+00:00
+Darke,William B. Redpath,397,16,43,,2026-11-04T02:34:32+00:00
+Darke,Write-in,0,16,43,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Defiance,Sherrod Brown,4974,33,33,,2026-11-04T02:34:32+00:00
+Defiance,Jon Husted,8592,33,33,,2026-11-04T02:34:32+00:00
+Defiance,Greg Levy,368,33,33,,2026-11-04T02:34:32+00:00
+Defiance,William B. Redpath,587,33,33,,2026-11-04T02:34:32+00:00
+Defiance,Write-in,0,33,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Delaware,Sherrod Brown,41034,79,180,,2026-11-04T02:34:32+00:00
+Delaware,Jon Husted,33468,79,180,,2026-11-04T02:34:32+00:00
+Delaware,Greg Levy,870,79,180,,2026-11-04T02:34:32+00:00
+Delaware,William B. Redpath,1380,79,180,,2026-11-04T02:34:32+00:00
+Delaware,Write-in,0,79,180,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Erie,Sherrod Brown,15343,62,62,,2026-11-04T02:34:32+00:00
+Erie,Jon Husted,15021,62,62,,2026-11-04T02:34:32+00:00
+Erie,Greg Levy,679,62,62,,2026-11-04T02:34:32+00:00
+Erie,William B. Redpath,920,62,62,,2026-11-04T02:34:32+00:00
+Erie,Write-in,0,62,62,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Fairfield,Sherrod Brown,14769,6,111,,2026-11-04T02:34:32+00:00
+Fairfield,Jon Husted,14478,6,111,,2026-11-04T02:34:32+00:00
+Fairfield,Greg Levy,387,6,111,,2026-11-04T02:34:32+00:00
+Fairfield,William B. Redpath,586,6,111,,2026-11-04T02:34:32+00:00
+Fairfield,Write-in,0,6,111,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Fayette,Sherrod Brown,2485,25,25,,2026-11-04T02:34:32+00:00
+Fayette,Jon Husted,6083,25,25,,2026-11-04T02:34:32+00:00
+Fayette,Greg Levy,194,25,25,,2026-11-04T02:34:32+00:00
+Fayette,William B. Redpath,314,25,25,,2026-11-04T02:34:32+00:00
+Fayette,Write-in,0,25,25,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Franklin,Sherrod Brown,189302,254,889,,2026-11-04T02:34:32+00:00
+Franklin,Jon Husted,62271,254,889,,2026-11-04T02:34:32+00:00
+Franklin,Greg Levy,4096,254,889,,2026-11-04T02:34:32+00:00
+Franklin,William B. Redpath,3870,254,889,,2026-11-04T02:34:32+00:00
+Franklin,Write-in,0,254,889,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Fulton,Sherrod Brown,3940,13,29,,2026-11-04T02:34:32+00:00
+Fulton,Jon Husted,6477,13,29,,2026-11-04T02:34:32+00:00
+Fulton,Greg Levy,185,13,29,,2026-11-04T02:34:32+00:00
+Fulton,William B. Redpath,362,13,29,,2026-11-04T02:34:32+00:00
+Fulton,Write-in,0,13,29,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Gallia,Sherrod Brown,2328,26,26,,2026-11-04T02:34:32+00:00
+Gallia,Jon Husted,5812,26,26,,2026-11-04T02:34:32+00:00
+Gallia,Greg Levy,187,26,26,,2026-11-04T02:34:32+00:00
+Gallia,William B. Redpath,335,26,26,,2026-11-04T02:34:32+00:00
+Gallia,Write-in,0,26,26,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Geauga,Sherrod Brown,8366,27,79,,2026-11-04T02:34:32+00:00
+Geauga,Jon Husted,9942,27,79,,2026-11-04T02:34:32+00:00
+Geauga,Greg Levy,208,27,79,,2026-11-04T02:34:32+00:00
+Geauga,William B. Redpath,459,27,79,,2026-11-04T02:34:32+00:00
+Geauga,Write-in,0,27,79,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Greene,Sherrod Brown,20570,33,151,,2026-11-04T02:34:32+00:00
+Greene,Jon Husted,20432,33,151,,2026-11-04T02:34:32+00:00
+Greene,Greg Levy,544,33,151,,2026-11-04T02:34:32+00:00
+Greene,William B. Redpath,885,33,151,,2026-11-04T02:34:32+00:00
+Greene,Write-in,0,33,151,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Guernsey,Sherrod Brown,3116,21,35,,2026-11-04T02:34:32+00:00
+Guernsey,Jon Husted,5978,21,35,,2026-11-04T02:34:32+00:00
+Guernsey,Greg Levy,221,21,35,,2026-11-04T02:34:32+00:00
+Guernsey,William B. Redpath,392,21,35,,2026-11-04T02:34:32+00:00
+Guernsey,Write-in,0,21,35,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Hamilton,Sherrod Brown,112603,130,563,,2026-11-04T02:34:32+00:00
+Hamilton,Jon Husted,45865,130,563,,2026-11-04T02:34:32+00:00
+Hamilton,Greg Levy,2956,130,563,,2026-11-04T02:34:32+00:00
+Hamilton,William B. Redpath,2623,130,563,,2026-11-04T02:34:32+00:00
+Hamilton,Write-in,0,130,563,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Hancock,Sherrod Brown,10019,58,60,,2026-11-04T02:34:32+00:00
+Hancock,Jon Husted,16377,58,60,,2026-11-04T02:34:32+00:00
+Hancock,Greg Levy,516,58,60,,2026-11-04T02:34:32+00:00
+Hancock,William B. Redpath,1139,58,60,,2026-11-04T02:34:32+00:00
+Hancock,Write-in,0,58,60,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Hardin,Sherrod Brown,1666,12,21,,2026-11-04T02:34:32+00:00
+Hardin,Jon Husted,3439,12,21,,2026-11-04T02:34:32+00:00
+Hardin,Greg Levy,122,12,21,,2026-11-04T02:34:32+00:00
+Hardin,William B. Redpath,219,12,21,,2026-11-04T02:34:32+00:00
+Hardin,Write-in,0,12,21,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Harrison,Sherrod Brown,1433,16,16,,2026-11-04T02:34:32+00:00
+Harrison,Jon Husted,3155,16,16,,2026-11-04T02:34:32+00:00
+Harrison,Greg Levy,164,16,16,,2026-11-04T02:34:32+00:00
+Harrison,William B. Redpath,275,16,16,,2026-11-04T02:34:32+00:00
+Harrison,Write-in,0,16,16,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Henry,Sherrod Brown,3420,23,23,,2026-11-04T02:34:32+00:00
+Henry,Jon Husted,7062,23,23,,2026-11-04T02:34:32+00:00
+Henry,Greg Levy,238,23,23,,2026-11-04T02:34:32+00:00
+Henry,William B. Redpath,437,23,23,,2026-11-04T02:34:32+00:00
+Henry,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Highland,Sherrod Brown,1805,0,31,,2026-11-04T02:34:32+00:00
+Highland,Jon Husted,3381,0,31,,2026-11-04T02:34:32+00:00
+Highland,Greg Levy,111,0,31,,2026-11-04T02:34:32+00:00
+Highland,William B. Redpath,144,0,31,,2026-11-04T02:34:32+00:00
+Highland,Write-in,0,0,31,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Hocking,Sherrod Brown,2290,2,20,,2026-11-04T02:34:32+00:00
+Hocking,Jon Husted,2941,2,20,,2026-11-04T02:34:32+00:00
+Hocking,Greg Levy,119,2,20,,2026-11-04T02:34:32+00:00
+Hocking,William B. Redpath,140,2,20,,2026-11-04T02:34:32+00:00
+Hocking,Write-in,0,2,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Holmes,Sherrod Brown,1292,8,17,,2026-11-04T02:34:32+00:00
+Holmes,Jon Husted,4189,8,17,,2026-11-04T02:34:32+00:00
+Holmes,Greg Levy,85,8,17,,2026-11-04T02:34:32+00:00
+Holmes,William B. Redpath,150,8,17,,2026-11-04T02:34:32+00:00
+Holmes,Write-in,0,8,17,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Huron,Sherrod Brown,5312,24,46,,2026-11-04T02:34:32+00:00
+Huron,Jon Husted,7529,24,46,,2026-11-04T02:34:32+00:00
+Huron,Greg Levy,377,24,46,,2026-11-04T02:34:32+00:00
+Huron,William B. Redpath,576,24,46,,2026-11-04T02:34:32+00:00
+Huron,Write-in,0,24,46,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Jackson,Sherrod Brown,2643,22,29,,2026-11-04T02:34:32+00:00
+Jackson,Jon Husted,5508,22,29,,2026-11-04T02:34:32+00:00
+Jackson,Greg Levy,178,22,29,,2026-11-04T02:34:32+00:00
+Jackson,William B. Redpath,293,22,29,,2026-11-04T02:34:32+00:00
+Jackson,Write-in,0,22,29,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Jefferson,Sherrod Brown,6521,37,55,,2026-11-04T02:34:32+00:00
+Jefferson,Jon Husted,10159,37,55,,2026-11-04T02:34:32+00:00
+Jefferson,Greg Levy,422,37,55,,2026-11-04T02:34:32+00:00
+Jefferson,William B. Redpath,581,37,55,,2026-11-04T02:34:32+00:00
+Jefferson,Write-in,0,37,55,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Knox,Sherrod Brown,7277,44,53,,2026-11-04T02:34:32+00:00
+Knox,Jon Husted,13584,44,53,,2026-11-04T02:34:32+00:00
+Knox,Greg Levy,421,44,53,,2026-11-04T02:34:32+00:00
+Knox,William B. Redpath,725,44,53,,2026-11-04T02:34:32+00:00
+Knox,Write-in,0,44,53,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Lake,Sherrod Brown,42333,114,163,,2026-11-04T02:34:32+00:00
+Lake,Jon Husted,39250,114,163,,2026-11-04T02:34:32+00:00
+Lake,Greg Levy,1456,114,163,,2026-11-04T02:34:32+00:00
+Lake,William B. Redpath,2271,114,163,,2026-11-04T02:34:32+00:00
+Lake,Write-in,0,114,163,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Lawrence,Sherrod Brown,4457,59,84,,2026-11-04T02:34:32+00:00
+Lawrence,Jon Husted,7767,59,84,,2026-11-04T02:34:32+00:00
+Lawrence,Greg Levy,260,59,84,,2026-11-04T02:34:32+00:00
+Lawrence,William B. Redpath,453,59,84,,2026-11-04T02:34:32+00:00
+Lawrence,Write-in,0,59,84,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Licking,Sherrod Brown,22242,55,96,,2026-11-04T02:34:32+00:00
+Licking,Jon Husted,28596,55,96,,2026-11-04T02:34:32+00:00
+Licking,Greg Levy,962,55,96,,2026-11-04T02:34:32+00:00
+Licking,William B. Redpath,1658,55,96,,2026-11-04T02:34:32+00:00
+Licking,Write-in,0,55,96,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Logan,Sherrod Brown,4647,36,36,,2026-11-04T02:34:32+00:00
+Logan,Jon Husted,11929,36,36,,2026-11-04T02:34:32+00:00
+Logan,Greg Levy,419,36,36,,2026-11-04T02:34:32+00:00
+Logan,William B. Redpath,796,36,36,,2026-11-04T02:34:32+00:00
+Logan,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Lorain,Sherrod Brown,64244,178,210,,2026-11-04T02:34:32+00:00
+Lorain,Jon Husted,47668,178,210,,2026-11-04T02:34:32+00:00
+Lorain,Greg Levy,2148,178,210,,2026-11-04T02:34:32+00:00
+Lorain,William B. Redpath,3135,178,210,,2026-11-04T02:34:32+00:00
+Lorain,Write-in,0,178,210,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Lucas,Sherrod Brown,0,0,280,,2026-11-04T02:34:32+00:00
+Lucas,Jon Husted,0,0,280,,2026-11-04T02:34:32+00:00
+Lucas,Greg Levy,0,0,280,,2026-11-04T02:34:32+00:00
+Lucas,William B. Redpath,0,0,280,,2026-11-04T02:34:32+00:00
+Lucas,Write-in,0,0,280,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Madison,Sherrod Brown,3129,1,24,,2026-11-04T02:34:32+00:00
+Madison,Jon Husted,4612,1,24,,2026-11-04T02:34:32+00:00
+Madison,Greg Levy,147,1,24,,2026-11-04T02:34:32+00:00
+Madison,William B. Redpath,192,1,24,,2026-11-04T02:34:32+00:00
+Madison,Write-in,0,1,24,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Mahoning,Sherrod Brown,45595,212,212,,2026-11-04T02:34:32+00:00
+Mahoning,Jon Husted,39192,212,212,,2026-11-04T02:34:32+00:00
+Mahoning,Greg Levy,1961,212,212,,2026-11-04T02:34:32+00:00
+Mahoning,William B. Redpath,2398,212,212,,2026-11-04T02:34:32+00:00
+Mahoning,Write-in,0,212,212,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Marion,Sherrod Brown,5176,15,45,,2026-11-04T02:34:32+00:00
+Marion,Jon Husted,6405,15,45,,2026-11-04T02:34:32+00:00
+Marion,Greg Levy,298,15,45,,2026-11-04T02:34:32+00:00
+Marion,William B. Redpath,458,15,45,,2026-11-04T02:34:32+00:00
+Marion,Write-in,0,15,45,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Medina,Sherrod Brown,33616,102,124,,2026-11-04T02:34:32+00:00
+Medina,Jon Husted,39948,102,124,,2026-11-04T02:34:32+00:00
+Medina,Greg Levy,1120,102,124,,2026-11-04T02:34:32+00:00
+Medina,William B. Redpath,2002,102,124,,2026-11-04T02:34:32+00:00
+Medina,Write-in,0,102,124,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Meigs,Sherrod Brown,2159,27,27,,2026-11-04T02:34:32+00:00
+Meigs,Jon Husted,4877,27,27,,2026-11-04T02:34:32+00:00
+Meigs,Greg Levy,179,27,27,,2026-11-04T02:34:32+00:00
+Meigs,William B. Redpath,290,27,27,,2026-11-04T02:34:32+00:00
+Meigs,Write-in,0,27,27,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Mercer,Sherrod Brown,3489,36,36,,2026-11-04T02:34:32+00:00
+Mercer,Jon Husted,13755,36,36,,2026-11-04T02:34:32+00:00
+Mercer,Greg Levy,286,36,36,,2026-11-04T02:34:32+00:00
+Mercer,William B. Redpath,491,36,36,,2026-11-04T02:34:32+00:00
+Mercer,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Miami,Sherrod Brown,11708,52,87,,2026-11-04T02:34:32+00:00
+Miami,Jon Husted,22251,52,87,,2026-11-04T02:34:32+00:00
+Miami,Greg Levy,616,52,87,,2026-11-04T02:34:32+00:00
+Miami,William B. Redpath,1240,52,87,,2026-11-04T02:34:32+00:00
+Miami,Write-in,0,52,87,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Monroe,Sherrod Brown,1311,20,20,,2026-11-04T02:34:32+00:00
+Monroe,Jon Husted,3141,20,20,,2026-11-04T02:34:32+00:00
+Monroe,Greg Levy,135,20,20,,2026-11-04T02:34:32+00:00
+Monroe,William B. Redpath,193,20,20,,2026-11-04T02:34:32+00:00
+Monroe,Write-in,0,20,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Montgomery,Sherrod Brown,77091,191,381,,2026-11-04T02:34:32+00:00
+Montgomery,Jon Husted,47801,191,381,,2026-11-04T02:34:32+00:00
+Montgomery,Greg Levy,2347,191,381,,2026-11-04T02:34:32+00:00
+Montgomery,William B. Redpath,2985,191,381,,2026-11-04T02:34:32+00:00
+Montgomery,Write-in,0,191,381,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Morgan,Sherrod Brown,1408,13,13,,2026-11-04T02:34:32+00:00
+Morgan,Jon Husted,3125,13,13,,2026-11-04T02:34:32+00:00
+Morgan,Greg Levy,120,13,13,,2026-11-04T02:34:32+00:00
+Morgan,William B. Redpath,178,13,13,,2026-11-04T02:34:32+00:00
+Morgan,Write-in,0,13,13,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Morrow,Sherrod Brown,3772,33,33,,2026-11-04T02:34:32+00:00
+Morrow,Jon Husted,9362,33,33,,2026-11-04T02:34:32+00:00
+Morrow,Greg Levy,342,33,33,,2026-11-04T02:34:32+00:00
+Morrow,William B. Redpath,632,33,33,,2026-11-04T02:34:32+00:00
+Morrow,Write-in,0,33,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Muskingum,Sherrod Brown,9642,68,68,,2026-11-04T02:34:32+00:00
+Muskingum,Jon Husted,17403,68,68,,2026-11-04T02:34:32+00:00
+Muskingum,Greg Levy,656,68,68,,2026-11-04T02:34:32+00:00
+Muskingum,William B. Redpath,1119,68,68,,2026-11-04T02:34:32+00:00
+Muskingum,Write-in,0,68,68,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Noble,Sherrod Brown,1049,19,19,,2026-11-04T02:34:32+00:00
+Noble,Jon Husted,3114,19,19,,2026-11-04T02:34:32+00:00
+Noble,Greg Levy,122,19,19,,2026-11-04T02:34:32+00:00
+Noble,William B. Redpath,198,19,19,,2026-11-04T02:34:32+00:00
+Noble,Write-in,0,19,19,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Ottawa,Sherrod Brown,7932,36,36,,2026-11-04T02:34:32+00:00
+Ottawa,Jon Husted,10362,36,36,,2026-11-04T02:34:32+00:00
+Ottawa,Greg Levy,342,36,36,,2026-11-04T02:34:32+00:00
+Ottawa,William B. Redpath,595,36,36,,2026-11-04T02:34:32+00:00
+Ottawa,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Paulding,Sherrod Brown,2459,16,16,,2026-11-04T02:34:32+00:00
+Paulding,Jon Husted,5879,16,16,,2026-11-04T02:34:32+00:00
+Paulding,Greg Levy,194,16,16,,2026-11-04T02:34:32+00:00
+Paulding,William B. Redpath,399,16,16,,2026-11-04T02:34:32+00:00
+Paulding,Write-in,0,16,16,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Perry,Sherrod Brown,3654,33,33,,2026-11-04T02:34:32+00:00
+Perry,Jon Husted,8020,33,33,,2026-11-04T02:34:32+00:00
+Perry,Greg Levy,300,33,33,,2026-11-04T02:34:32+00:00
+Perry,William B. Redpath,500,33,33,,2026-11-04T02:34:32+00:00
+Perry,Write-in,0,33,33,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Pickaway,Sherrod Brown,4407,15,46,,2026-11-04T02:34:32+00:00
+Pickaway,Jon Husted,7724,15,46,,2026-11-04T02:34:32+00:00
+Pickaway,Greg Levy,235,15,46,,2026-11-04T02:34:32+00:00
+Pickaway,William B. Redpath,385,15,46,,2026-11-04T02:34:32+00:00
+Pickaway,Write-in,0,15,46,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Pike,Sherrod Brown,2683,22,22,,2026-11-04T02:34:32+00:00
+Pike,Jon Husted,5348,22,22,,2026-11-04T02:34:32+00:00
+Pike,Greg Levy,183,22,22,,2026-11-04T02:34:32+00:00
+Pike,William B. Redpath,311,22,22,,2026-11-04T02:34:32+00:00
+Pike,Write-in,0,22,22,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Portage,Sherrod Brown,15985,15,126,,2026-11-04T02:34:32+00:00
+Portage,Jon Husted,10349,15,126,,2026-11-04T02:34:32+00:00
+Portage,Greg Levy,556,15,126,,2026-11-04T02:34:32+00:00
+Portage,William B. Redpath,636,15,126,,2026-11-04T02:34:32+00:00
+Portage,Write-in,0,15,126,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Preble,Sherrod Brown,3893,65,65,,2026-11-04T02:34:32+00:00
+Preble,Jon Husted,10453,65,65,,2026-11-04T02:34:32+00:00
+Preble,Greg Levy,312,65,65,,2026-11-04T02:34:32+00:00
+Preble,William B. Redpath,694,65,65,,2026-11-04T02:34:32+00:00
+Preble,Write-in,0,65,65,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Putnam,Sherrod Brown,2767,25,25,,2026-11-04T02:34:32+00:00
+Putnam,Jon Husted,11891,25,25,,2026-11-04T02:34:32+00:00
+Putnam,Greg Levy,301,25,25,,2026-11-04T02:34:32+00:00
+Putnam,William B. Redpath,438,25,25,,2026-11-04T02:34:32+00:00
+Putnam,Write-in,0,25,25,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Richland,Sherrod Brown,12284,48,83,,2026-11-04T02:34:32+00:00
+Richland,Jon Husted,18694,48,83,,2026-11-04T02:34:32+00:00
+Richland,Greg Levy,563,48,83,,2026-11-04T02:34:32+00:00
+Richland,William B. Redpath,1043,48,83,,2026-11-04T02:34:32+00:00
+Richland,Write-in,0,48,83,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Ross,Sherrod Brown,9097,65,65,,2026-11-04T02:34:32+00:00
+Ross,Jon Husted,14390,65,65,,2026-11-04T02:34:32+00:00
+Ross,Greg Levy,417,65,65,,2026-11-04T02:34:32+00:00
+Ross,William B. Redpath,756,65,65,,2026-11-04T02:34:32+00:00
+Ross,Write-in,0,65,65,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Sandusky,Sherrod Brown,9034,58,58,,2026-11-04T02:34:32+00:00
+Sandusky,Jon Husted,11982,58,58,,2026-11-04T02:34:32+00:00
+Sandusky,Greg Levy,597,58,58,,2026-11-04T02:34:32+00:00
+Sandusky,William B. Redpath,964,58,58,,2026-11-04T02:34:32+00:00
+Sandusky,Write-in,0,58,58,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Scioto,Sherrod Brown,5364,68,77,,2026-11-04T02:34:32+00:00
+Scioto,Jon Husted,8660,68,77,,2026-11-04T02:34:32+00:00
+Scioto,Greg Levy,284,68,77,,2026-11-04T02:34:32+00:00
+Scioto,William B. Redpath,381,68,77,,2026-11-04T02:34:32+00:00
+Scioto,Write-in,0,68,77,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Seneca,Sherrod Brown,5476,37,51,,2026-11-04T02:34:32+00:00
+Seneca,Jon Husted,8553,37,51,,2026-11-04T02:34:32+00:00
+Seneca,Greg Levy,359,37,51,,2026-11-04T02:34:32+00:00
+Seneca,William B. Redpath,650,37,51,,2026-11-04T02:34:32+00:00
+Seneca,Write-in,0,37,51,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Shelby,Sherrod Brown,3928,36,36,,2026-11-04T02:34:32+00:00
+Shelby,Jon Husted,13993,36,36,,2026-11-04T02:34:32+00:00
+Shelby,Greg Levy,411,36,36,,2026-11-04T02:34:32+00:00
+Shelby,William B. Redpath,649,36,36,,2026-11-04T02:34:32+00:00
+Shelby,Write-in,0,36,36,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Stark,Sherrod Brown,45743,107,274,,2026-11-04T02:34:32+00:00
+Stark,Jon Husted,46148,107,274,,2026-11-04T02:34:32+00:00
+Stark,Greg Levy,2121,107,274,,2026-11-04T02:34:32+00:00
+Stark,William B. Redpath,2925,107,274,,2026-11-04T02:34:32+00:00
+Stark,Write-in,0,107,274,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Summit,Sherrod Brown,58977,27,371,,2026-11-04T02:34:32+00:00
+Summit,Jon Husted,24237,27,371,,2026-11-04T02:34:32+00:00
+Summit,Greg Levy,1308,27,371,,2026-11-04T02:34:32+00:00
+Summit,William B. Redpath,1338,27,371,,2026-11-04T02:34:32+00:00
+Summit,Write-in,0,27,371,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Trumbull,Sherrod Brown,35892,156,158,,2026-11-04T02:34:32+00:00
+Trumbull,Jon Husted,33726,156,158,,2026-11-04T02:34:32+00:00
+Trumbull,Greg Levy,1894,156,158,,2026-11-04T02:34:32+00:00
+Trumbull,William B. Redpath,2390,156,158,,2026-11-04T02:34:32+00:00
+Trumbull,Write-in,0,156,158,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Tuscarawas,Sherrod Brown,11221,81,81,,2026-11-04T02:34:32+00:00
+Tuscarawas,Jon Husted,18735,81,81,,2026-11-04T02:34:32+00:00
+Tuscarawas,Greg Levy,779,81,81,,2026-11-04T02:34:32+00:00
+Tuscarawas,William B. Redpath,1382,81,81,,2026-11-04T02:34:32+00:00
+Tuscarawas,Write-in,0,81,81,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Union,Sherrod Brown,12758,53,53,,2026-11-04T02:34:32+00:00
+Union,Jon Husted,17020,53,53,,2026-11-04T02:34:32+00:00
+Union,Greg Levy,496,53,53,,2026-11-04T02:34:32+00:00
+Union,William B. Redpath,893,53,53,,2026-11-04T02:34:32+00:00
+Union,Write-in,0,53,53,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Van Wert,Sherrod Brown,2547,32,32,,2026-11-04T02:34:32+00:00
+Van Wert,Jon Husted,7213,32,32,,2026-11-04T02:34:32+00:00
+Van Wert,Greg Levy,278,32,32,,2026-11-04T02:34:32+00:00
+Van Wert,William B. Redpath,473,32,32,,2026-11-04T02:34:32+00:00
+Van Wert,Write-in,0,32,32,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Vinton,Sherrod Brown,1096,20,20,,2026-11-04T02:34:32+00:00
+Vinton,Jon Husted,2526,20,20,,2026-11-04T02:34:32+00:00
+Vinton,Greg Levy,82,20,20,,2026-11-04T02:34:32+00:00
+Vinton,William B. Redpath,199,20,20,,2026-11-04T02:34:32+00:00
+Vinton,Write-in,0,20,20,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Warren,Sherrod Brown,39721,145,185,,2026-11-04T02:34:32+00:00
+Warren,Jon Husted,55670,145,185,,2026-11-04T02:34:32+00:00
+Warren,Greg Levy,1489,145,185,,2026-11-04T02:34:32+00:00
+Warren,William B. Redpath,2626,145,185,,2026-11-04T02:34:32+00:00
+Warren,Write-in,0,145,185,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Washington,Sherrod Brown,7788,50,50,,2026-11-04T02:34:32+00:00
+Washington,Jon Husted,13423,50,50,,2026-11-04T02:34:32+00:00
+Washington,Greg Levy,560,50,50,,2026-11-04T02:34:32+00:00
+Washington,William B. Redpath,867,50,50,,2026-11-04T02:34:32+00:00
+Washington,Write-in,0,50,50,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Wayne,Sherrod Brown,9111,14,66,,2026-11-04T02:34:32+00:00
+Wayne,Jon Husted,11731,14,66,,2026-11-04T02:34:32+00:00
+Wayne,Greg Levy,362,14,66,,2026-11-04T02:34:32+00:00
+Wayne,William B. Redpath,547,14,66,,2026-11-04T02:34:32+00:00
+Wayne,Write-in,0,14,66,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Williams,Sherrod Brown,3475,23,26,,2026-11-04T02:34:32+00:00
+Williams,Jon Husted,7338,23,26,,2026-11-04T02:34:32+00:00
+Williams,Greg Levy,305,23,26,,2026-11-04T02:34:32+00:00
+Williams,William B. Redpath,443,23,26,,2026-11-04T02:34:32+00:00
+Williams,Write-in,0,23,26,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Wood,Sherrod Brown,17220,29,99,,2026-11-04T02:34:32+00:00
+Wood,Jon Husted,11636,29,99,,2026-11-04T02:34:32+00:00
+Wood,Greg Levy,533,29,99,,2026-11-04T02:34:32+00:00
+Wood,William B. Redpath,671,29,99,,2026-11-04T02:34:32+00:00
+Wood,Write-in,0,29,99,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
+Wyandot,Sherrod Brown,2675,23,23,,2026-11-04T02:34:32+00:00
+Wyandot,Jon Husted,5610,23,23,,2026-11-04T02:34:32+00:00
+Wyandot,Greg Levy,1146,23,23,,2026-11-04T02:34:32+00:00
+Wyandot,William B. Redpath,543,23,23,,2026-11-04T02:34:32+00:00
+Wyandot,Write-in,0,23,23,Stephen Faris=0; Anthony Holliman=0; Timothy Telymonde=0,2026-11-04T02:34:32+00:00
