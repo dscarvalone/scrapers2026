@@ -1509,3 +1509,63 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T02:01:51+00:00,Williams,Greg Levy,92,7,26
 2026-11-04T02:01:51+00:00,Williams,William B. Redpath,94,7,26
 2026-11-04T02:01:51+00:00,Williams,Write-in,0,7,26
+2026-11-04T02:03:40+00:00,Clermont,Sherrod Brown,14919,0,168
+2026-11-04T02:03:40+00:00,Clermont,Jon Husted,15929,0,168
+2026-11-04T02:03:40+00:00,Clermont,Greg Levy,466,0,168
+2026-11-04T02:03:40+00:00,Clermont,William B. Redpath,661,0,168
+2026-11-04T02:03:40+00:00,Clermont,Write-in,0,0,168
+2026-11-04T02:03:40+00:00,Defiance,Sherrod Brown,4451,25,33
+2026-11-04T02:03:40+00:00,Defiance,Jon Husted,7109,25,33
+2026-11-04T02:03:40+00:00,Defiance,Greg Levy,298,25,33
+2026-11-04T02:03:40+00:00,Defiance,William B. Redpath,467,25,33
+2026-11-04T02:03:40+00:00,Defiance,Write-in,0,25,33
+2026-11-04T02:03:40+00:00,Huron,Sherrod Brown,3647,24,46
+2026-11-04T02:03:40+00:00,Huron,Jon Husted,3900,24,46
+2026-11-04T02:03:40+00:00,Huron,Greg Levy,157,24,46
+2026-11-04T02:03:40+00:00,Huron,William B. Redpath,230,24,46
+2026-11-04T02:03:40+00:00,Huron,Write-in,0,24,46
+2026-11-04T02:03:40+00:00,Knox,Sherrod Brown,5204,28,53
+2026-11-04T02:03:40+00:00,Knox,Jon Husted,8413,28,53
+2026-11-04T02:03:40+00:00,Knox,Greg Levy,211,28,53
+2026-11-04T02:03:40+00:00,Knox,William B. Redpath,376,28,53
+2026-11-04T02:03:40+00:00,Knox,Write-in,0,28,53
+2026-11-04T02:03:40+00:00,Madison,Sherrod Brown,3065,1,24
+2026-11-04T02:03:40+00:00,Madison,Jon Husted,4285,1,24
+2026-11-04T02:03:40+00:00,Madison,Greg Levy,133,1,24
+2026-11-04T02:03:40+00:00,Madison,William B. Redpath,173,1,24
+2026-11-04T02:03:40+00:00,Madison,Write-in,0,1,24
+2026-11-04T02:03:40+00:00,Meigs,Sherrod Brown,2069,25,27
+2026-11-04T02:03:40+00:00,Meigs,Jon Husted,4666,25,27
+2026-11-04T02:03:40+00:00,Meigs,Greg Levy,170,25,27
+2026-11-04T02:03:40+00:00,Meigs,William B. Redpath,278,25,27
+2026-11-04T02:03:40+00:00,Meigs,Write-in,0,25,27
+2026-11-04T02:03:40+00:00,Mercer,Sherrod Brown,2280,30,36
+2026-11-04T02:03:40+00:00,Mercer,Jon Husted,5684,30,36
+2026-11-04T02:03:40+00:00,Mercer,Greg Levy,109,30,36
+2026-11-04T02:03:40+00:00,Mercer,William B. Redpath,167,30,36
+2026-11-04T02:03:40+00:00,Mercer,Write-in,0,30,36
+2026-11-04T02:03:40+00:00,Morgan,Sherrod Brown,1408,13,13
+2026-11-04T02:03:40+00:00,Morgan,Jon Husted,3125,13,13
+2026-11-04T02:03:40+00:00,Morgan,Greg Levy,120,13,13
+2026-11-04T02:03:40+00:00,Morgan,William B. Redpath,178,13,13
+2026-11-04T02:03:40+00:00,Morgan,Write-in,0,13,13
+2026-11-04T02:03:40+00:00,Morrow,Sherrod Brown,3772,33,33
+2026-11-04T02:03:40+00:00,Morrow,Jon Husted,9362,33,33
+2026-11-04T02:03:40+00:00,Morrow,Greg Levy,342,33,33
+2026-11-04T02:03:40+00:00,Morrow,William B. Redpath,632,33,33
+2026-11-04T02:03:40+00:00,Morrow,Write-in,0,33,33
+2026-11-04T02:03:40+00:00,Ross,Sherrod Brown,6622,53,65
+2026-11-04T02:03:40+00:00,Ross,Jon Husted,8034,53,65
+2026-11-04T02:03:40+00:00,Ross,Greg Levy,232,53,65
+2026-11-04T02:03:40+00:00,Ross,William B. Redpath,342,53,65
+2026-11-04T02:03:40+00:00,Ross,Write-in,0,53,65
+2026-11-04T02:03:40+00:00,Seneca,Sherrod Brown,5476,37,51
+2026-11-04T02:03:40+00:00,Seneca,Jon Husted,8553,37,51
+2026-11-04T02:03:40+00:00,Seneca,Greg Levy,359,37,51
+2026-11-04T02:03:40+00:00,Seneca,William B. Redpath,650,37,51
+2026-11-04T02:03:40+00:00,Seneca,Write-in,0,37,51
+2026-11-04T02:03:40+00:00,Williams,Sherrod Brown,2479,7,26
+2026-11-04T02:03:40+00:00,Williams,Jon Husted,3925,7,26
+2026-11-04T02:03:40+00:00,Williams,Greg Levy,159,7,26
+2026-11-04T02:03:40+00:00,Williams,William B. Redpath,199,7,26
+2026-11-04T02:03:40+00:00,Williams,Write-in,0,7,26
