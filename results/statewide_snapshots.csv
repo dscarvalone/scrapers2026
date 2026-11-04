@@ -2594,3 +2594,33 @@ fetched_at,county,candidate,votes,precincts_reported,precincts_total
 2026-11-04T03:41:21+00:00,Wood,Greg Levy,971,85,99
 2026-11-04T03:41:21+00:00,Wood,William B. Redpath,1462,85,99
 2026-11-04T03:41:21+00:00,Wood,Write-in,0,85,99
+2026-11-04T03:43:11+00:00,Clermont,Sherrod Brown,33442,168,168
+2026-11-04T03:43:11+00:00,Clermont,Jon Husted,51134,168,168
+2026-11-04T03:43:11+00:00,Clermont,Greg Levy,1777,168,168
+2026-11-04T03:43:11+00:00,Clermont,William B. Redpath,3030,168,168
+2026-11-04T03:43:11+00:00,Clermont,Write-in,0,168,168
+2026-11-04T03:43:11+00:00,Hamilton,Sherrod Brown,191133,486,563
+2026-11-04T03:43:11+00:00,Hamilton,Jon Husted,109039,486,563
+2026-11-04T03:43:11+00:00,Hamilton,Greg Levy,6540,486,563
+2026-11-04T03:43:11+00:00,Hamilton,William B. Redpath,6490,486,563
+2026-11-04T03:43:11+00:00,Hamilton,Write-in,0,486,563
+2026-11-04T03:43:11+00:00,Hocking,Sherrod Brown,3348,20,20
+2026-11-04T03:43:11+00:00,Hocking,Jon Husted,5766,20,20
+2026-11-04T03:43:11+00:00,Hocking,Greg Levy,240,20,20
+2026-11-04T03:43:11+00:00,Hocking,William B. Redpath,356,20,20
+2026-11-04T03:43:11+00:00,Hocking,Write-in,0,20,20
+2026-11-04T03:43:11+00:00,Lawrence,Sherrod Brown,5961,84,84
+2026-11-04T03:43:11+00:00,Lawrence,Jon Husted,11023,84,84
+2026-11-04T03:43:11+00:00,Lawrence,Greg Levy,414,84,84
+2026-11-04T03:43:11+00:00,Lawrence,William B. Redpath,636,84,84
+2026-11-04T03:43:11+00:00,Lawrence,Write-in,0,84,84
+2026-11-04T03:43:11+00:00,Medina,Sherrod Brown,36900,124,124
+2026-11-04T03:43:11+00:00,Medina,Jon Husted,44892,124,124
+2026-11-04T03:43:11+00:00,Medina,Greg Levy,1293,124,124
+2026-11-04T03:43:11+00:00,Medina,William B. Redpath,2339,124,124
+2026-11-04T03:43:11+00:00,Medina,Write-in,0,124,124
+2026-11-04T03:43:11+00:00,Montgomery,Sherrod Brown,111957,381,381
+2026-11-04T03:43:11+00:00,Montgomery,Jon Husted,81630,381,381
+2026-11-04T03:43:11+00:00,Montgomery,Greg Levy,3897,381,381
+2026-11-04T03:43:11+00:00,Montgomery,William B. Redpath,5345,381,381
+2026-11-04T03:43:11+00:00,Montgomery,Write-in,0,381,381
