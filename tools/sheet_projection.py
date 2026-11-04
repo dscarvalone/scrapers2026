@@ -311,6 +311,8 @@ def build(sheet_id: str) -> None:
                         f"=SUM(E{PROJ0}:E{t - 1})", f"=B{t}+C{t}+D{t}+E{t}",
                         f'=IFERROR(SUMIFS({cov},{rng_("Path")},"no votes")/SUM({cov}),"")']
 
+    # Count of done counties, just above the "Eday status" header.
+    rows[DET_H - 2][COL["Eday status"]] = f'=COUNTIF({rng_("Eday status")},"done")&" done"'
     rows[DET_H - 1] = DET
     for k in range(N):
         rows[C0 - 1 + k] = county_row(C0 + k, FIRST + k)

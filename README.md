@@ -18,6 +18,201 @@ Goal: **2026 U.S. Senate (Ohio) results by county, split by vote method**
 Every county has Senate **totals** from the SOS statewide site. The work in
 this repo is about the vote-method **split**, which only county sources have.
 
+## Lessons from Nov 3, 2026 (read this first next cycle)
+
+Written the morning after, for the next run (~Nov 2028). The county summary
+and runbook further down are the **pre-election plan**; this section is what
+actually happened and what to do differently.
+
+### 1. Freeze the model's expectations before polls close
+
+The single biggest gap of the night: we had no saved copy of the model's
+**pre-election expectations by vote mode**, and the live sheet's fields
+changed meaning during the count.
+
+- **What to save, and when:** a copy of the DSCC election-night workbook's
+  `county_raw` tab, at least the evening before, at 6:00 PM, and at 7:25 PM
+  (before the first absentee release). Each copy should include, per county:
+  - `expected_frozen_total_votes` and `expected_frozen_two_way` (overall;
+    stay frozen all night).
+  - `eday_exp_total_votes` and `early_exp_total_votes`. Expected Early is the
+    literal count of early ballots submitted (in-person + mail), so it is
+    known, not modeled.
+  - `eday_exp_two_way`, `early_exp_two_way`, `evip_exp_two_way` and
+    `vbm_exp_two_way`, plus the `*_exp_remaining_two_way` fields.
+- **Why it matters:**
+  - **Live fields stop being priors.** During the count, the live
+    `early_exp_two_way` equaled counted + remaining, so it matched the actual
+    by construction and was useless as a prior.
+  - **Mode priors were incomplete.** In every copy we had (Oct 30 through
+    Nov 2, 11:07 PM) they covered only 24 counties (15 for EVIP/VBM).
+  - **The fix came late.** Someone fixed them for all 88 counties during the
+    night; next time, confirm all 88 are filled **before** Election Day.
+- **How:** download the workbook (File → Download → .xlsx) at those times
+  and keep the files dated. Uploaded copies from 2026 were read with
+  openpyxl, tab `county_raw`. Better: add a small script that reads the tab
+  through the Sheets API (read-only) and writes
+  `snapshots/model_<timestamp>.csv`, and run it from the loop until the
+  first results.
+- **Also freeze our own feed:** the loop's commits are the time series for
+  our numbers (`git log -- counties/<c>/data/summary_wide.csv`;
+  `tools/_eday_drift.py` replays a county's Eday batches from them).
+  `results/statewide_snapshots.csv` is the SOS time series. Don't rewrite
+  either.
+
+### 2. Which counties split results by vote mode (actual, Nov 3, 2026)
+
+Final state of the last build (`../exports/OH_Senate_2026_vote_method.xlsx`,
+`county_results` tab, `method_source`):
+
+| Outcome | Counties |
+|---|---|
+| **Own split, Early split into in-person and mail (18)** | Athens, Butler, Carroll, Clark, Clermont, Franklin, Greene, Licking, Lucas, Madison, Miami, Montgomery, Pickaway, Preble, Seneca, Stark, Summit, Warren |
+| **Own split, Early combined (2)** | Erie, Hamilton |
+| **Split exists but feed stuck (4)**: fell back to the SOS totals | Cuyahoga (until the bot's overnight runs), Hocking (EV election ID never found; endpoint returned 204), Paulding and Van Wert (PDF stayed the zero report all night) |
+| **Waited for a link that never came** | Allen (PDF never posted; treated as first drop) |
+| **Totals only, first-drop estimate (60)** | Adams, Allen, Ashland, Auglaize, Brown, Champaign, Clinton, Columbiana, Coshocton, Crawford, Darke, Defiance, Delaware, Fairfield, Fayette, Fulton, Gallia, Geauga, Guernsey, Hancock, Hardin, Henry, Highland, Holmes, Huron, Jackson, Jefferson, Knox, Lake, Lawrence, Logan, Lorain, Mahoning, Marion, Medina, Meigs, Mercer, Monroe, Morgan, Muskingum, Noble, Ottawa, Perry, Pike, Portage, Putnam, Richland, Ross, Sandusky, Scioto, Shelby, Trumbull, Tuscarawas, Union, Vinton, Washington, Wayne, Williams, Wood, Wyandot |
+| **Totals only, no clean first drop (4)**: first report already had precincts | Ashtabula, Belmont, Harrison, Morrow |
+
+The surprises:
+- **Confirmed totals only by the election-day sweeps:** Portage, Lorain and
+  Delaware.
+- **None of the "likely" or "unknown" counties split on election night.**
+  Tuscarawas, Darke, Auglaize, Logan, Coshocton, Union, Hancock, Knox and
+  the rest all stayed totals only.
+- **Gallia's precinct PDF has ballots cast by mode but no contests**, so it
+  can't give a Senate split. Shelby, Highland and Putnam split only in their
+  precinct PDFs, and the summing parser was never built.
+- **Clermont posted copier scans** (image-only PDFs, no text layer). It's
+  read by OCR now (`common/pdf_ocr.py`), checksum-gated: every cell must sum
+  to the row total. Its file name changes with every update (`44of168.pdf`
+  means 44 of 168 precincts in), and its label is year-first ("2026 November
+  3 General Election - Unofficial Results").
+- **Athens and Seneca** sat on zero reports for hours before updating.
+- **Lucas posted nothing at all** through at least 10:30 PM, in either our
+  feed or AP's. It's the largest blue county after Cuyahoga, Franklin and Hamilton.
+- **Cuyahoga's .xlsx export stayed at the zero report.** We switched it to
+  the Enhanced Voting JSON API
+  (`app.enhancedvoting.com/results/public/api/elections/cuyahoga-county-oh/GE2026/data`).
+  Its vote types include `Post Election Day` and `Post VBM`.
+- **Butler lists named write-ins** (Faris, Holliman, Telymonde) as their own
+  candidates. They now fold into Write-in with a warning.
+
+Before next cycle, redo the past-report survey (`tools/past_reports.py`,
+`tools/survey_counties.py`): sites, election IDs and file names all change.
+Treat this table as the starting hypothesis, not the answer.
+
+### 3. Pipeline lessons
+
+- **GitHub Actions cron is not reliable on election night.**
+  - **It ran late or not at all.** The scheduled bot didn't commit from
+    Nov 1 until after midnight on Nov 4, then committed at 12:58 AM and
+    9:21 AM ET. Scheduled runs on busy nights can be delayed or dropped.
+  - **Keep a local fallback.** `tools/bot_counties_local.sh` (`INTERVAL=60`)
+    runs the bot counties on the Mac. It doesn't commit, so the next morning
+    the repo diverges from the bot's commits. Run
+    `git rebase --autostash origin/main`, and keep the bot's data, which is
+    newer.
+  - **The schedule is now removed** (manual "Run workflow" only). Add it
+    back for the next election.
+- **Run long loops from your own Terminal (or tmux/launchd), not from an
+  agent session.** The fallback loop died when the agent session restarted,
+  and Cuyahoga sat frozen at Early-only for about an hour before anyone
+  noticed.
+- **Stale feeds:** an itemized county whose own total is more than 1,000
+  votes and more than 5% behind the SOS total is treated as if it had no
+  feed (`common.timing.stale_feed`). It falls back to SOS toplines and the
+  first-drop split, with a note. It caught Athens, Seneca, Van Wert, Hocking,
+  Paulding and Cuyahoga.
+- **The first-drop estimate works.** It splits pre-Election-Day from
+  Election Day using the last SOS report with 0 precincts.
+  - **Accuracy:** where a county's own split was known, it matched within
+    about 13 votes (Clermont −13, Madison −12).
+  - **Failure cases:** a county whose first report already includes
+    precincts (Ashtabula, Belmont, Harrison, Morrow), and odd drops (Monroe
+    looked wrong; Geauga, Wyandot and Darke had implausible mode splits).
+  - **Timing:** the loop must be running before ~7:30 PM, or there's no
+    0-precinct snapshot to read.
+- **Our feed vs AP:** our county feeds were usually equal to or ahead of AP
+  (9:33 PM: 57 equal, 23 ahead by 123k, 8 behind by 115k). The 8 behind
+  were all stuck scrapers.
+  - **AP's mode fields** covered only the counties where AP had a split (14
+    to 17 for Eday/Early).
+  - **Where AP lagged:** Richland, Darke and Tuscarawas, among others.
+- **"Early" means all pre-Election-Day votes**, early in-person + mail
+  (`early = evip + vbm`). In-person early is in-office absentee in most
+  county labels.
+- **Credentials:** the agent's shell has no GitHub token. Push from your own
+  Terminal. The local loop asks for a token once and holds it in memory.
+
+### 4. Projection lessons (the `projection` tab)
+
+- **"Done" by closeness to expected Eday alone is too strict.** Statewide,
+  Election Day turnout ran below the model. By about 10:15 PM, 57 counties
+  had every precinct in, but only 15 reached 95% of expected Eday. The other
+  40 kept "projecting" about 43k phantom votes, worth about −18k margin
+  because they were red.
+  - **Fix:** done = every precinct in **or** Eday ≥ cutoff (B2). Precinct
+    counts are only trustworthy once they're complete.
+  - **Watch out:** "done counties came in at 99.9% of expected Eday" is
+    biased, because only counties that reach the cutoff get marked done.
+    Calibrate on fully reported counties instead.
+- **A county's first Eday batch is not representative.** Cuyahoga's first
+  12.7k Eday votes (0 of 897 precincts) were 59.9% Brown 2-way against a
+  prior of 69.8%. Applying that "so far" share to its ~299k remaining Eday
+  understated the margin by about 35–40k. Treat a county under ~10% of
+  expected Eday with caution.
+- **A county with no votes at all is projected at zero.** That follows the
+  no-imputation rule; Lucas (about +34k at the priors) sat outside the
+  projection all night. Show any such county separately with its prior, so
+  the omission is visible.
+- **Calibration from fully reported counties, Nov 3, 2026** (vs the model's
+  frozen priors):
+  - Eday turnout came in at about 94.5% of expected; Early at about 100%.
+  - **Eday 2-way ran about 3.0 pts below prior**, and **Early about 2.7–2.9
+    pts above**. In-person early beat its prior by +4.7, mail by +1.5.
+  - The two offset: in done counties, total 2-way landed within 0.01 pts of
+    `expected_frozen_two_way`.
+- **Expected votes may exclude late mail and provisionals.** We didn't
+  confirm whether the model's expected counts include them. If not, the
+  projection is the election-night count, and the canvass adds votes that
+  usually lean Dem.
+- **Third parties:** 4.7% statewide (Redpath 2.7, Levy 1.9). Redpath tracks
+  partisanship closely (R² 0.77); Levy is flat apart from Wyandot (11.5%).
+
+### 5. Analysis scripts from the night
+
+All read the owner's sheet ("scarv E-night", `GSHEET_ID`) read-only and write
+a PNG:
+
+| Script | What it shows |
+|---|---|
+| `tools/_early_vs_prior.py` | Early 2-way actual vs `early_exp_two_way`, itemized vs first-drop, EVIP and VBM |
+| `tools/_turnout_done.py` | Turnout vs expected in done counties, by mode, against Brown share |
+| `tools/_plot_done_vs_prior.py` | Done counties: AP 2-way vs `expected_frozen_two_way` |
+| `tools/_plot_third_party.py` | Third-party share vs Brown 2-way (AP) |
+| `tools/_eday_drift.py <county...>` | A county's Eday margin batch by batch, from git history |
+| `tools/_audit_projection.py`, `tools/_audit_validations.py` | Recompute the sheet tabs in Python and list mismatches |
+
+### 6. Checklist for next cycle
+
+1. **New election IDs and URLs:** rerun `tools/discover_enr.py` and the
+   county survey. Update `counties.csv`, then `python -m tools.make_counties_md`.
+2. **Retest the bot counties' endpoints:** Enhanced Voting election slugs
+   (Cuyahoga, Summit, Montgomery, Greene, Pickaway, Hocking) and Franklin's
+   XML.
+3. **Re-add the Actions schedule** with new dates, keep the year guard
+   current, and still plan on the local fallback.
+4. **Freeze the model snapshots** in section 1, and confirm the mode priors
+   cover all 88 counties.
+5. **Fix the "done" rule** in `tools/sheet_projection.py` (precincts
+   complete or cutoff) before the night, not during it.
+6. **Do a dry run** the week before (`DRY_RUN=1 ONCE=1 tools/local_loop.sh`)
+   plus one live push to a test sheet. Run every loop from your own
+   Terminal.
+7. **Install the tools:** `gh` CLI (to check and disable Actions runs) and
+   `pytest` (the tests currently run by calling test functions directly).
+
 <!-- COUNTY-SUMMARY:START -->
 
 ## County summary (largest expected vote first)
@@ -145,7 +340,7 @@ Ordered by `exp_total_votes` from the DSCC election-night workbook's `county_raw
 | Shared parsers | `common/` | `ohio_enr.py` (Ohio ENR XML/CSV), `enhanced_voting.py`, `clarity.py`, `pdf_results.py` (PDF layouts), `sos_browser.py` (reads SOS files through a real Chrome window), `ohio_statewide.py` |
 | Research outputs | `tools/*.json` | `survey60_verdicts.json` and `past_reports.json` (past-report checks, with document URLs and excerpts), `county_survey.json` (site crawl), `enr_discovery.json` (SOS ENR election IDs), `clarity_probe.json` |
 | Research and election-night tools | `tools/*.py`, `tools/*.sh` | `local_loop.sh` (election-night loop), `sos_chrome.sh`, `recheck_zero_reports.py`, `make_pdf_scraper.py`, `make_sos_scrapers.py`, `discover_enr.py`, `survey_counties.py`, `past_reports.py`, `build_method_workbook.py`, `make_counties_md.py` |
-| GitHub Actions schedule | `.github/workflows/election-night.yml` | Scrapes the 6 counties reachable from Actions every 5 min (6 PM Nov 3 to 8 AM Nov 4 ET) and rebuilds `results/` |
+| GitHub Actions workflow | `.github/workflows/election-night.yml` | Scrapes the 6 counties reachable from Actions and rebuilds `results/`. Ran every 5 min on election night 2026; the schedule is now removed (manual "Run workflow" only). See Lessons |
 | Tests | `tests/` | `python -c "import tests.test_build_method_workbook as t; t.test_buckets()"` (pytest not required) |
 
 **Not in git, on purpose:**
@@ -269,8 +464,11 @@ python -m counties.<county>.scraper
 ## Election-night automation
 
 `.github/workflows/election-night.yml` runs every county listed in its
-`COUNTIES` setting every 5 minutes from 6 PM ET Nov 3, 2026 to 8 AM ET Nov 4.
-After scraping it rebuilds `results/`; when anything changes it commits each
+`COUNTIES` setting. On election night 2026 it ran every 5 minutes from 6 PM ET
+Nov 3 to 8 AM ET Nov 4; that schedule has been removed, so it now runs only
+from "Run workflow". Restore the `schedule:` block (the old cron lines are in
+the file's header comment) for the next election, and don't rely on it alone
+(see Lessons). After scraping it rebuilds `results/`; when anything changes it commits each
 county's `data/summary_wide.csv` and the results files, so the commit history
 is a timeline of the count. If one county fails, the others
 still run and the run is marked failed. Use "Run workflow" on the Actions tab

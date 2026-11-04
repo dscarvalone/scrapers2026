@@ -4631,5 +4631,391 @@
   "nov_links": [],
   "live_links": [],
   "docs": []
+ },
+ "Athens": {
+  "county": "Athens",
+  "boe_url": "https://www.boe.ohio.gov/athens/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/athens/",
+    "via": "chrome",
+    "chars": 52282
+   },
+   {
+    "url": "https://www.boe.ohio.gov/athens/election-info/",
+    "via": "chrome",
+    "chars": 45680
+   },
+   {
+    "url": "https://www.boe.ohio.gov/athens/election-info/candidates-and-issues/",
+    "via": "chrome",
+    "chars": 44651
+   },
+   {
+    "url": "https://www.boe.ohio.gov/athens/election-info/early-voting-hours/",
+    "via": "chrome",
+    "chars": 46246
+   }
+  ],
+  "nov_links": [],
+  "live_links": [],
+  "docs": []
+ },
+ "Madison": {
+  "county": "Madison",
+  "boe_url": "https://www.boe.ohio.gov/madison/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/madison/",
+    "via": "chrome",
+    "chars": 49946
+   },
+   {
+    "url": "https://www.boe.ohio.gov/madison/election-info/",
+    "via": "chrome",
+    "chars": 47666
+   },
+   {
+    "url": "https://www.boe.ohio.gov/madison/election-info/election-results/",
+    "via": "chrome",
+    "chars": 48991
+   },
+   {
+    "url": "https://www.boe.ohio.gov/madison/election-info/in-office-absentee-voting-hours/",
+    "via": "chrome",
+    "chars": 45943
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/madison/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/madison/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/madison/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 45248,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "0 0 0 0 Precincts Reporting 0 of 24 For Auditor of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional Dem Annette Blackwell 0 0 0 0 0 Rep Frank LaRose 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Precincts Reporting 0 of 24 For Secretary of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional Lib Tom Pruss 0 0 0 0 0 Dem Allison Russo 0 0 0 0 0 Rep Robert Sprague 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Precincts Reporting 0 of 24 For Treasurer of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional Dem Seth Walsh 0 0 0 0 0 Rep Jay Edwards 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes ",
+    "chars": 11542
+   },
+   {
+    "url": "https://www.boe.ohio.gov/madison/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 915484,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": " 0 0 0 0 Undervotes 4 0 1 3 0 For Auditor of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional Dem Annette Blackwell 64 44.76% 0 19 45 0 Rep Frank LaRose 79 55.24% 0 21 58 0 Overvotes 0 0 0 0 0 Undervotes 3 0 1 2 0 For Secretary of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Absentee Office Provisional Lib Tom Pruss 5 3.52% 0 1 4 0 Dem Allison Russo 63 44.37% 0 19 44 0 Rep Robert Sprague 74 52.11% 0 20 54 0 Overvotes 0 0 0 0 0 Undervotes 4 0 1 3 0 Precinct Summary with Group Detail - 11/03/2026 7:57 PM 1 of 103 Report generated with Electionware Copyright \u00a9 2007-2019 Precinct Summary Results Report with Group Detail 2026 General Election Novemb",
+    "chars": 160014
+   }
+  ]
+ },
+ "Seneca": {
+  "county": "Seneca",
+  "boe_url": "https://www.boe.ohio.gov/seneca/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/seneca/",
+    "via": "chrome",
+    "chars": 50497
+   },
+   {
+    "url": "https://www.boe.ohio.gov/seneca/election-info/",
+    "via": "chrome",
+    "chars": 44266
+   },
+   {
+    "url": "https://www.boe.ohio.gov/seneca/election-info/early-voting-hours/",
+    "via": "chrome",
+    "chars": 45048
+   },
+   {
+    "url": "https://www.boe.ohio.gov/seneca/election-info/election-integrity/",
+    "via": "chrome",
+    "chars": 44364
+   }
+  ],
+  "nov_links": [],
+  "live_links": [],
+  "docs": []
+ },
+ "Van Wert": {
+  "county": "Van Wert",
+  "boe_url": "https://www.boe.ohio.gov/vanwert/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/",
+    "via": "chrome",
+    "chars": 55240
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/election-info/",
+    "via": "chrome",
+    "chars": 45325
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/election-info/early-voting-hours/",
+    "via": "chrome",
+    "chars": 45912
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/election-info/election-results/",
+    "via": "chrome",
+    "chars": 49848
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results"
+   }
+  ],
+  "live_links": [],
+  "docs": [
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103results.pdf",
+    "label": "November 3, 2026 Cumulative Results",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 48295,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "method_words_anywhere": [
+     "Election Day",
+     "Absentee",
+     "Early",
+     "Mail",
+     "Provisional",
+     "Precinct",
+     "Total"
+    ],
+    "senate_excerpt": "0 0 0 Contest Totals 0 0 0 0 0 Precincts Reporting 0 of 32 Secretary of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Early Voting Provisional LIB Tom Pruss 0 0 0 0 0 DEM Allison Russo 0 0 0 0 0 REP Robert Sprague 0 0 0 0 0 Total Votes Cast 0 0 0 0 0 Overvotes 0 0 0 0 0 Undervotes 0 0 0 0 0 Contest Totals 0 0 0 0 0 Precincts Reporting 0 of 32 Election Summary with Group Detail - 09/02/2026 10:45 AM 2 of 8 Report generated with Electionware Copyright \u00a9 2007-2019 Election Summary with Group Detail Results Report General Election November 3, 2026 Van Wert County Unofficial Canvass Proof Van Wert County, Ohio Treasurer of State Vote For 1 TOTAL VOTE % Election Day Absentee Mail Early ",
+    "chars": 11410
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103precinct.pdf",
+    "label": "November 3, 2026 Precinct Detail",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/vanwert/c/elecres/20261103overlap.pdf",
+    "label": "November 3, 2026 Overlap Results",
+    "status": 404,
+    "type": "text/html",
+    "bytes": 3255,
+    "via": "chrome"
+   }
+  ]
+ },
+ "Hocking": {
+  "county": "Hocking",
+  "boe_url": "https://www.boe.ohio.gov/hocking/",
+  "pages": [
+   {
+    "url": "https://www.boe.ohio.gov/hocking/",
+    "via": "chrome",
+    "chars": 48874
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/election-info/",
+    "via": "chrome",
+    "chars": 44456
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/election-info/early-voting-hours/",
+    "via": "chrome",
+    "chars": 45403
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/election-info/election-results/",
+    "via": "chrome",
+    "chars": 47974
+   }
+  ],
+  "nov_links": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+    "label": "November 3, 2026 Election Results"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/c/upload/FWAB_11November46Day.pdf",
+    "label": "46 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Gen"
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/c/upload/FWAB_11November100Day.pdf",
+    "label": "100 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Ge"
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+    "label": "November 3, 2026 Election Results"
+   }
+  ],
+  "live_links": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+    "label": "November 3, 2026 Election Results"
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+    "label": "November 3, 2026 Election Results"
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/elections/050526PrimaryElection",
+    "label": "May 5, 2026 Election Results"
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/elections/110425GeneralElection",
+    "label": "November 4, 2025 Election Results"
+   }
+  ],
+  "docs": [
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/_20261013112017",
+    "label": "November 3, 2026 Election Results",
+    "status": 200,
+    "type": "text/html",
+    "bytes": 9684,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 22
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/c/upload/FWAB_11November46Day.pdf",
+    "label": "46 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Gen",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 514120,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": " Form No. 120 Prescribed by Secretary of State (07-22) Election Notice for use with the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Hocking County Board of Elections BOE to check one: Initial notification (to be posted 100 days prior to date of election) xxx Updated notification (to be posted 46 days prior to date of election) GENERAL ELECTION November 3, 2026 State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton and David Pepper Don Kissick and James L. Mills Vivek Ramaswamy and Robert A. McColley Governor Democratic Libertarian Republican All Write-in Candidate",
+    "chars": 5577
+   },
+   {
+    "url": "https://www.boe.ohio.gov/hocking/c/upload/FWAB_11November100Day.pdf",
+    "label": "100 Day Notice for Federal Write-in Absentee Ballots for the November 3, 2026 Ge",
+    "status": 200,
+    "type": "application/pdf",
+    "bytes": 503487,
+    "via": "chrome",
+    "has_senate": true,
+    "has_husted": true,
+    "method_words_near_senate": [
+     "Absentee",
+     "Precinct"
+    ],
+    "method_words_anywhere": [
+     "Absentee",
+     "Mail",
+     "Precinct"
+    ],
+    "senate_excerpt": " Form No. 120 Prescribed by Secretary of State (07-22) Election Notice for use with the Federal Write-In Absentee Ballot (FWAB) R.C. 3511.16 Issued by the Hocking County Board of Elections BOE to check one: XXX Initial notification (to be posted 100 days prior to date of election) Updated notification (to be posted 46 days prior to date of election) GENERAL ELECTION November 3, 2026 State Executive Offices (Governor, Attorney General, Auditor of State, Secretary of State, Treasurer of State) Name of Candidate Office Party Precincts Amy Acton and David Pepper Vivek Ramaswamy and Robert A. McColley Donald C. Kissick and James L. Mills Governor Democratic Republican Libertarian All John J. Kule",
+    "chars": 4964
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/elections/050526PrimaryElection",
+    "label": "May 5, 2026 Election Results",
+    "status": 200,
+    "type": "text/html",
+    "bytes": 9684,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 22
+   },
+   {
+    "url": "https://app.enhancedvoting.com/results/public/hocking-county-oh/elections/110425GeneralElection",
+    "label": "November 4, 2025 Election Results",
+    "status": 200,
+    "type": "text/html",
+    "bytes": 9684,
+    "via": "http",
+    "has_senate": false,
+    "has_husted": false,
+    "method_words_near_senate": [],
+    "method_words_anywhere": [],
+    "senate_excerpt": "",
+    "chars": 22
+   }
+  ]
  }
 }
