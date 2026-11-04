@@ -1,6 +1,6 @@
 race_id,race,contestant,party,write_in,Election,Early,total,precincts_reported,precincts_total,generated_at,source_format,write_in_detail
-8,For U.S. Senator (Unexpired term ending 1-3-2029),Sherrod Brown,DEM,False,67181,86141,153322,312,563,11/3/2026 10:02:32 PM EST,clarity,
-8,For U.S. Senator (Unexpired term ending 1-3-2029),Jon Husted,REP,False,47946,30711,78657,312,563,11/3/2026 10:02:32 PM EST,clarity,
-8,For U.S. Senator (Unexpired term ending 1-3-2029),Greg Levy,OTH,False,2718,1861,4579,312,563,11/3/2026 10:02:32 PM EST,clarity,
-8,For U.S. Senator (Unexpired term ending 1-3-2029),William B. Redpath,LIB,False,3051,1514,4565,312,563,11/3/2026 10:02:32 PM EST,clarity,
-8,For U.S. Senator (Unexpired term ending 1-3-2029),Write-in,,True,2,3,5,312,563,11/3/2026 10:02:32 PM EST,clarity,Anthony Holliman (W)=1; Stephen Faris (W)=3; Timothy Telymonde (W)=1
+8,For U.S. Senator (Unexpired term ending 1-3-2029),Sherrod Brown,DEM,False,104992,86141,191133,486,563,11/3/2026 10:38:30 PM EST,clarity,
+8,For U.S. Senator (Unexpired term ending 1-3-2029),Jon Husted,REP,False,78328,30711,109039,486,563,11/3/2026 10:38:30 PM EST,clarity,
+8,For U.S. Senator (Unexpired term ending 1-3-2029),Greg Levy,OTH,False,4679,1861,6540,486,563,11/3/2026 10:38:30 PM EST,clarity,
+8,For U.S. Senator (Unexpired term ending 1-3-2029),William B. Redpath,LIB,False,4976,1514,6490,486,563,11/3/2026 10:38:30 PM EST,clarity,
+8,For U.S. Senator (Unexpired term ending 1-3-2029),Write-in,,True,8,3,11,486,563,11/3/2026 10:38:30 PM EST,clarity,Anthony Holliman (W)=1; Stephen Faris (W)=8; Timothy Telymonde (W)=2
