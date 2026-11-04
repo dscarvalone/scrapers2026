@@ -170,7 +170,10 @@ def check_senate_rows(rows: list[dict], fields: list[str], where: str) -> list[s
     for r in cands:
         name = candidate_of(r, name_col)
         if name is None:
-            problems.append(f"unexpected Senate candidate {r.get(name_col)!r}")
+            # e.g. Butler lists its certified write-in candidates by name (write_in=False).
+            # Minor lines only warn; they're counted as Write-in. Brown/Husted must still be present.
+            print(f"WARNING {where}: unexpected Senate candidate {r.get(name_col)!r} counted as Write-in",
+                  file=sys.stderr)
             continue
         try:
             total, msum = int(r["total"] or 0), _methods_sum(r, fields)
@@ -244,7 +247,7 @@ def county_rows(county: str, path: Path) -> list[dict]:
     for r in senate:
         if r.get("row_type", "candidate") != "candidate":
             continue  # Cuyahoga's Ballots Cast / Over / Under rows
-        name = candidate_of(r, name_col)
+        name = candidate_of(r, name_col) or "Write-in"  # unknown names: write-in candidates (see check)
         party = next(p for n, p in CANDIDATES.values() if n == name)
         mapping = {**METHOD_MAP, **EV_METHOD_MAP} if r.get("source_format") == "enhanced_voting" else METHOD_MAP
         mapping = {**mapping, **COUNTY_METHOD_MAP.get(county.lower(), {})}
